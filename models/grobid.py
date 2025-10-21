@@ -1,22 +1,3 @@
-"""
-TODO:
-
-1. [ ] CITATIONS
-2. [ ] SECTION
-3. [ ] ARTICLE
-4. [ ] FORM
-5. [ ] SECTION
-
-- data model layer for GROBID
-- essentially each data model would represent a component that defines
-the semantic structure of academic/scholarly articles
-- useful python library reference: https://pypi.org/project/grobid/
-    - NOTE: the downside is that some data models inherit from `DataClassJSONMixin`
-    - a more useful (and up-to-date approach) would be Pydantic v2 `BaseModel`
-
-
-"""
-
 from typing import Any
 from enum import Enum
 from httpx import Headers, HTTPError
