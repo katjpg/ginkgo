@@ -5,6 +5,8 @@ description = "backend "
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "beautifulsoup4>=4.14.2",
     "langextract>=1.0.9",
+    "lxml>=6.0.2",
     "pydantic>=2.12.3",
 ]
