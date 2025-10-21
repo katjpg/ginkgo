@@ -403,10 +403,14 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "langextract" },
+    { name = "pydantic" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "langextract", specifier = ">=1.0.9" }]
+requires-dist = [
+    { name = "langextract", specifier = ">=1.0.9" },
+    { name = "pydantic", specifier = ">=2.12.3" },
+]
 
 [[package]]
 name = "google-auth"
