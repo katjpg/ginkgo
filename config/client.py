@@ -27,7 +27,7 @@ class ArXivConfig(ClientConfig):
 class GROBIDConfig(ClientConfig):
     """Configuration for GROBID API client."""
 
-    base_url: str = "https://cloud.science-miner.com/grobid"
+    base_url: str = "https://kermitt2-grobid.hf.space"
     rate_limit: float = 1.0  # NOTE: GROBID has stricter rate limits
     request_timeout: int = 60  # pdf processing tends to take longer
     api_endpoint: str = "/api/processFulltextDocument"
