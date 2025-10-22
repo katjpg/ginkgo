@@ -17,7 +17,7 @@ class LangExtractConfig(BaseSettings):
         default="gemini-2.5-flash", description="Model identifier for extraction"
     )
     extraction_passes: int = Field(
-        default=3,
+        default=2,
         ge=1,
         le=10,
         description="Number of extraction passes for improved recall",
