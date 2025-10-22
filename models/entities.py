@@ -19,8 +19,9 @@ class EntityType(str, Enum):
 class ConceptAttributes(TypedDict, total=False):
     """Attributes for CONCEPT entities."""
 
-    domain: str  # "graph-based RAG", "NLP"
-    introduces: bool  # True if novel in paper
+    type: str       # "model", "framework", "theory", "algorithm"
+    based_on: str   # name of the concept it builds on
+    novelty: str    # "novel" or "exisitng"
 
 
 class MethodAttributes(TypedDict, total=False):
