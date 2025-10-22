@@ -28,15 +28,21 @@ All excerpts used for educational purposes to demonstrate entity extraction patt
 import langextract as lx
 
 
-PROMPT = """Extract key scientific entities from academic papers in order of appearance:
+PROMPT = """Extract entities using EXACT text spans from the source:
 CONCEPT, METHOD, PROBLEM, CLAIM, FINDING, METRIC
 
 Rules:
-- Use exact text spans - never paraphrase
-- Extract only entities central to the research contribution
-- Skip general background concepts unless explicitly novel
-- Provide attributes that clarify entity role and relationships
-- No overlapping spans"""
+- Copy text verbatim - zero paraphrasing
+- Max 80 chars for concepts/methods, 150 for claims/findings
+- Extract only central contributions
+- Attributes: concise phrases (<50 chars)
+- No overlapping spans
+
+Examples of good extraction length:
+CONCEPT: "Transformer" (11 chars)
+METHOD: "multi-hop retrieval" (19 chars)  
+CLAIM: "outperforms baselines on multi-hop QA" (38 chars)
+"""
 
 
 EXAMPLES = [
@@ -47,7 +53,7 @@ EXAMPLES = [
                 extraction_class="method",
                 extraction_text="HippoRAG",
                 attributes={
-                    "purpose": "perform multi-hop retrieval",
+                    "purpose": "multi-hop retrieval",
                     "applied_to": "multi-hop QA",
                 },
             ),
@@ -55,21 +61,8 @@ EXAMPLES = [
                 extraction_class="method",
                 extraction_text="multi-hop retrieval in a single step",
                 attributes={
-                    "purpose": "retrieve all supporting passages",
-                    "applied_to": "question answering",
-                },
-            ),
-            lx.data.Extraction(
-                extraction_class="claim",
-                extraction_text="A major advantage of HippoRAG over conventional RAG methods in multi-hop QA is its ability to perform multi-hop retrieval in a single step",
-                attributes={"evidence_type": "empirical", "supports": "HippoRAG"},
-            ),
-            lx.data.Extraction(
-                extraction_class="metric",
-                extraction_text="percentage of queries where all the supporting passages are retrieved successfully",
-                attributes={
-                    "evaluates": "retrieval completeness",
-                    "direction": "higher_better",
+                    "purpose": "retrieve supporting passages",
+                    "applied_to": "QA",
                 },
             ),
             lx.data.Extraction(
@@ -83,8 +76,21 @@ EXAMPLES = [
                 attributes={"purpose": "baseline retrieval"},
             ),
             lx.data.Extraction(
+                extraction_class="metric",
+                extraction_text="percentage of queries",
+                attributes={
+                    "evaluates": "retrieval completeness",
+                    "direction": "higher_better",
+                },
+            ),
+            lx.data.Extraction(
+                extraction_class="claim",
+                extraction_text="major advantage of HippoRAG over conventional RAG methods",
+                attributes={"evidence_type": "empirical", "supports": "HippoRAG"},
+            ),
+            lx.data.Extraction(
                 extraction_class="finding",
-                extraction_text="gap between our method and ColBERTv2, using the top-5 passages, increases even more from 3% to 6% on MuSiQue",
+                extraction_text="gap increases from 3% to 6% on MuSiQue",
                 attributes={"comparison": "outperforms", "baseline": "ColBERTv2"},
             ),
             lx.data.Extraction(
@@ -111,7 +117,7 @@ EXAMPLES = [
                 extraction_text="Transformer",
                 attributes={
                     "purpose": "machine translation",
-                    "applied_to": "WMT translation tasks",
+                    "applied_to": "WMT tasks",
                 },
             ),
             lx.data.Extraction(
@@ -121,12 +127,12 @@ EXAMPLES = [
             ),
             lx.data.Extraction(
                 extraction_class="claim",
-                extraction_text="We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely",
+                extraction_text="Transformer based solely on attention mechanisms",
                 attributes={"evidence_type": "theoretical", "supports": "Transformer"},
             ),
             lx.data.Extraction(
                 extraction_class="claim",
-                extraction_text="these models to be superior in quality while being more parallelizable and requiring significantly less time to train",
+                extraction_text="superior in quality while more parallelizable",
                 attributes={"evidence_type": "empirical", "supports": "Transformer"},
             ),
             lx.data.Extraction(
@@ -140,7 +146,7 @@ EXAMPLES = [
             ),
             lx.data.Extraction(
                 extraction_class="finding",
-                extraction_text="achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU",
+                extraction_text="achieves 28.4 BLEU on WMT 2014 English-to-German",
                 attributes={
                     "comparison": "outperforms",
                     "baseline": "existing best results",
@@ -148,7 +154,7 @@ EXAMPLES = [
             ),
             lx.data.Extraction(
                 extraction_class="finding",
-                extraction_text="establishes a new single-model state-of-the-art BLEU score of 41.0",
+                extraction_text="state-of-the-art BLEU score of 41.0",
                 attributes={
                     "comparison": "outperforms",
                     "baseline": "literature best models",
@@ -158,7 +164,7 @@ EXAMPLES = [
                 extraction_class="metric",
                 extraction_text="training costs",
                 attributes={
-                    "evaluates": "training efficiency",
+                    "evaluates": "efficiency",
                     "units": "cost",
                     "direction": "lower_better",
                 },
@@ -180,7 +186,7 @@ EXAMPLES = [
                 extraction_class="problem",
                 extraction_text="do not effectively utilize limited available data",
                 attributes={
-                    "scope": "efficiency",
+                    "scope": "data efficiency",
                     "affects": "instruction-tuned approaches",
                 },
             ),
@@ -193,32 +199,32 @@ EXAMPLES = [
                 extraction_class="method",
                 extraction_text="lightweight few-shot NER framework",
                 attributes={
-                    "purpose": "address generalization and data efficiency",
+                    "purpose": "address generalization",
                     "applied_to": "domain-specific NER",
                 },
             ),
             lx.data.Extraction(
                 extraction_class="method",
-                extraction_text="instruction tuning template with a simplified output format",
+                extraction_text="instruction tuning template",
                 attributes={
-                    "purpose": "leverage large context window",
+                    "purpose": "leverage context window",
                     "applied_to": "few-shot NER",
                 },
             ),
             lx.data.Extraction(
                 extraction_class="method",
-                extraction_text="strategic data augmentation technique",
+                extraction_text="data augmentation technique",
                 attributes={
-                    "purpose": "expand training data while preserving semantic relationships",
+                    "purpose": "preserve entities while paraphrasing",
                     "applied_to": "NER training",
                 },
             ),
             lx.data.Extraction(
                 extraction_class="claim",
-                extraction_text="addresses these challenges through two key innovations",
+                extraction_text="addresses challenges through two key innovations",
                 attributes={
                     "evidence_type": "theoretical",
-                    "supports": "lightweight few-shot NER framework",
+                    "supports": "few-shot NER framework",
                 },
             ),
             lx.data.Extraction(
@@ -232,7 +238,7 @@ EXAMPLES = [
             ),
             lx.data.Extraction(
                 extraction_class="finding",
-                extraction_text="achieves performance comparable to state-of-the-art models on few-shot and zero-shot tasks",
+                extraction_text="comparable to state-of-the-art on few-shot tasks",
                 attributes={
                     "comparison": "matches",
                     "baseline": "state-of-the-art models",
@@ -258,14 +264,14 @@ EXAMPLES = [
             ),
             lx.data.Extraction(
                 extraction_class="problem",
-                extraction_text="lacks the ability to generate evidence-based responses",
+                extraction_text="lacks evidence-based responses",
                 attributes={"scope": "quality", "affects": "GraphRAG"},
             ),
             lx.data.Extraction(
                 extraction_class="method",
                 extraction_text="Triple Graph Construction",
                 attributes={
-                    "purpose": "extend GraphRAG capabilities",
+                    "purpose": "extend GraphRAG",
                     "applied_to": "medical domain",
                 },
             ),
@@ -273,13 +279,13 @@ EXAMPLES = [
                 extraction_class="method",
                 extraction_text="U-Retrieval techniques",
                 attributes={
-                    "purpose": "extend GraphRAG capabilities",
+                    "purpose": "extend GraphRAG",
                     "applied_to": "medical domain",
                 },
             ),
             lx.data.Extraction(
                 extraction_class="claim",
-                extraction_text="To extend the capabilities of GraphRAG to the medical domain, we propose unique Triple Graph Construction and U-Retrieval techniques over it",
+                extraction_text="extend GraphRAG to medical domain",
                 attributes={
                     "evidence_type": "theoretical",
                     "supports": "Triple Graph Construction",
