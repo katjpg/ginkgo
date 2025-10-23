@@ -1,6 +1,7 @@
-"""LangExtract prompts and examples for academic entity extraction.
+"""LangExtract prompts for joint entity and relationship extraction.
 
-Provides PROMPT and EXAMPLES for extracting scientific entities from academic papers.
+Provides PROMPT and EXAMPLES for extracting scientific entities AND relationships
+from academic papers in a single pass.
 
 Example Sources
 ---------------
@@ -19,36 +20,37 @@ Text excerpts are from:
 
 5. Guo et al. (2025). LightRAG: Simple and Fast Retrieval-Augmented Generation.
    arXiv:2410.05779
-
-Notes
------
-All excerpts used for educational purposes to demonstrate entity extraction patterns.
 """
 
 import langextract as lx
 
 
-PROMPT = """Extract entities using EXACT text spans from the source:
-CONTRIBUTION, PROBLEM, CLAIM, FINDING
+PROMPT = """Extract entities AND relationships using EXACT text spans:
+CONTRIBUTION, PROBLEM, CLAIM, FINDING, RELATION
 
-Entity Definitions:
-- CONTRIBUTION: Specific, named methods, models, frameworks, metrics, or algorithms
-- PROBLEM: challenges, limitations, gaps
-- CLAIM: assertions about contributions or findings
-- FINDING: empirical results, measurements, comparisons
+Entity Types:
+- CONTRIBUTION: Named methods, models, frameworks, metrics, algorithms
+- PROBLEM: Challenges, limitations, gaps
+- CLAIM: Assertions about contributions
+- FINDING: Empirical results, measurements
+- RELATION: Relationship statements between entities
+
+RELATION Attributes:
+- source: source entity text
+- target: target entity text  
+- type: relationship category (derived_from, addresses, evaluates, compares_to, supports, uses, measured_by)
+- context: optional context
 
 Rules:
 - Copy text verbatim - zero paraphrasing
-- Max 80 chars for contributions, 150 for claims/findings
-- Extract ONLY intrinsic attributes (no references to other entities)
-- **Do NOT extract general categories (e.g., "a deep learning model", "lower-tier LLM")**
-- Attributes: concise phrases (<50 chars)
-- No overlapping spans
+- Extract entities first, then relations
+- RELATION spans must contain both source and target
+- Max 80 chars for entities, 150 for relations
+- NO generic categories ("deep learning model", "lower-tier LLM")
 
 Examples:
-CONTRIBUTION: "Transformer" → category="model", novelty="novel"
-CONTRIBUTION: "BLEU" → category="metric", purpose="measure translation quality"
-FINDING: "achieves 28.4 BLEU" → comparison="achieves", value="28.4"
+CONTRIBUTION: "Transformer" → category="model"
+RELATION: "Transformer based on attention mechanisms" → source="Transformer", target="attention mechanisms", type="derived_from"
 """
 
 
@@ -62,25 +64,7 @@ EXAMPLES = [
                 attributes={
                     "category": "method",
                     "novelty": "novel",
-                    "purpose": "multi-hop retrieval",
                     "type": "retrieval",
-                },
-            ),
-            lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="multi-hop retrieval in a single step",
-                attributes={
-                    "category": "method",
-                    "purpose": "retrieve supporting passages",
-                    "type": "retrieval",
-                },
-            ),
-            lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="multi-hop reasoning",
-                attributes={
-                    "category": "technique",
-                    "novelty": "existing",
                 },
             ),
             lx.data.Extraction(
@@ -89,37 +73,49 @@ EXAMPLES = [
                 attributes={
                     "category": "method",
                     "novelty": "existing",
-                    "purpose": "retrieval",
                     "type": "retrieval",
                 },
             ),
             lx.data.Extraction(
                 extraction_class="contribution",
                 extraction_text="percentage of queries",
-                attributes={
-                    "category": "metric",
-                    "purpose": "measure retrieval completeness",
-                },
-            ),
-            lx.data.Extraction(
-                extraction_class="claim",
-                extraction_text="major advantage of HippoRAG over conventional RAG methods",
-                attributes={"evidence_type": "empirical"},
+                attributes={"category": "metric"},
             ),
             lx.data.Extraction(
                 extraction_class="finding",
                 extraction_text="gap increases from 3% to 6% on MuSiQue",
-                attributes={
-                    "comparison": "outperforms",
-                    "value": "3% to 6%",
-                },
+                attributes={"comparison": "outperforms", "value": "3% to 6%"},
             ),
             lx.data.Extraction(
                 extraction_class="finding",
                 extraction_text="from 20% to 38% on 2WikiMultiHopQA",
+                attributes={"comparison": "outperforms", "value": "20% to 38%"},
+            ),
+            lx.data.Extraction(
+                extraction_class="relation",
+                extraction_text="advantage of HippoRAG over conventional RAG methods",
                 attributes={
-                    "comparison": "outperforms",
-                    "value": "20% to 38%",
+                    "source": "HippoRAG",
+                    "target": "conventional RAG methods",
+                    "type": "compares_to",
+                },
+            ),
+            lx.data.Extraction(
+                extraction_class="relation",
+                extraction_text="gap between our method and ColBERTv2",
+                attributes={
+                    "source": "HippoRAG",
+                    "target": "ColBERTv2",
+                    "type": "compares_to",
+                },
+            ),
+            lx.data.Extraction(
+                extraction_class="relation",
+                extraction_text="measuring the percentage of queries",
+                attributes={
+                    "source": "finding",
+                    "target": "percentage of queries",
+                    "type": "measured_by",
                 },
             ),
         ],
@@ -139,20 +135,7 @@ EXAMPLES = [
             lx.data.Extraction(
                 extraction_class="contribution",
                 extraction_text="attention mechanisms",
-                attributes={
-                    "category": "technique",
-                    "novelty": "existing",
-                },
-            ),
-            lx.data.Extraction(
-                extraction_class="claim",
-                extraction_text="Transformer based solely on attention mechanisms",
-                attributes={"evidence_type": "theoretical"},
-            ),
-            lx.data.Extraction(
-                extraction_class="claim",
-                extraction_text="superior in quality while more parallelizable",
-                attributes={"evidence_type": "empirical"},
+                attributes={"category": "technique", "novelty": "existing"},
             ),
             lx.data.Extraction(
                 extraction_class="contribution",
@@ -165,25 +148,29 @@ EXAMPLES = [
             lx.data.Extraction(
                 extraction_class="finding",
                 extraction_text="achieves 28.4 BLEU on WMT 2014 English-to-German",
-                attributes={
-                    "comparison": "outperforms",
-                    "value": "28.4",
-                },
+                attributes={"comparison": "outperforms", "value": "28.4"},
             ),
             lx.data.Extraction(
                 extraction_class="finding",
                 extraction_text="state-of-the-art BLEU score of 41.0",
+                attributes={"comparison": "outperforms", "value": "41.0"},
+            ),
+            lx.data.Extraction(
+                extraction_class="relation",
+                extraction_text="Transformer, based solely on attention mechanisms",
                 attributes={
-                    "comparison": "outperforms",
-                    "value": "41.0",
+                    "source": "Transformer",
+                    "target": "attention mechanisms",
+                    "type": "derived_from",
                 },
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="training costs",
+                extraction_class="relation",
+                extraction_text="achieves 28.4 BLEU",
                 attributes={
-                    "category": "metric",
-                    "purpose": "measure efficiency",
+                    "source": "Transformer",
+                    "target": "BLEU",
+                    "type": "measured_by",
                 },
             ),
         ],
@@ -204,49 +191,44 @@ EXAMPLES = [
             lx.data.Extraction(
                 extraction_class="contribution",
                 extraction_text="lightweight few-shot NER framework",
-                attributes={
-                    "category": "framework",
-                    "novelty": "novel",
-                    "purpose": "address generalization",
-                },
+                attributes={"category": "framework", "novelty": "novel"},
             ),
             lx.data.Extraction(
                 extraction_class="contribution",
                 extraction_text="instruction tuning template",
-                attributes={
-                    "category": "method",
-                    "purpose": "leverage context window",
-                    "type": "preprocessing",
-                },
+                attributes={"category": "method", "type": "preprocessing"},
             ),
             lx.data.Extraction(
                 extraction_class="contribution",
                 extraction_text="data augmentation technique",
-                attributes={
-                    "category": "method",
-                    "purpose": "preserve entities while paraphrasing",
-                    "type": "augmentation",
-                },
-            ),
-            lx.data.Extraction(
-                extraction_class="claim",
-                extraction_text="addresses challenges through two key innovations",
-                attributes={"evidence_type": "theoretical"},
+                attributes={"category": "method", "type": "augmentation"},
             ),
             lx.data.Extraction(
                 extraction_class="contribution",
                 extraction_text="F1 score",
-                attributes={
-                    "category": "metric",
-                    "purpose": "measure NER performance",
-                },
+                attributes={"category": "metric", "purpose": "measure NER performance"},
             ),
             lx.data.Extraction(
                 extraction_class="finding",
                 extraction_text="comparable to state-of-the-art on few-shot tasks",
+                attributes={"comparison": "matches", "value": "80.1"},
+            ),
+            lx.data.Extraction(
+                extraction_class="relation",
+                extraction_text="framework that addresses these challenges",
                 attributes={
-                    "comparison": "matches",
-                    "value": "80.1",
+                    "source": "lightweight few-shot NER framework",
+                    "target": "fail to generalize",
+                    "type": "addresses",
+                },
+            ),
+            lx.data.Extraction(
+                extraction_class="relation",
+                extraction_text="attaining an average F1 score",
+                attributes={
+                    "source": "finding",
+                    "target": "F1 score",
+                    "type": "measured_by",
                 },
             ),
         ],
@@ -260,7 +242,6 @@ EXAMPLES = [
                 attributes={
                     "category": "method",
                     "novelty": "existing",
-                    "purpose": "organize RAG data into graphs",
                     "type": "retrieval",
                 },
             ),
@@ -277,38 +258,31 @@ EXAMPLES = [
             lx.data.Extraction(
                 extraction_class="contribution",
                 extraction_text="Triple Graph Construction",
-                attributes={
-                    "category": "method",
-                    "novelty": "novel",
-                    "purpose": "extend GraphRAG",
-                },
+                attributes={"category": "method", "novelty": "novel"},
             ),
             lx.data.Extraction(
                 extraction_class="contribution",
                 extraction_text="U-Retrieval techniques",
-                attributes={
-                    "category": "method",
-                    "novelty": "novel",
-                    "purpose": "extend GraphRAG",
-                },
+                attributes={"category": "method", "novelty": "novel"},
             ),
             lx.data.Extraction(
-                extraction_class="claim",
-                extraction_text="extend GraphRAG to medical domain",
-                attributes={"evidence_type": "theoretical"},
+                extraction_class="relation",
+                extraction_text="Triple Graph Construction and U-Retrieval techniques over it",
+                attributes={
+                    "source": "Triple Graph Construction",
+                    "target": "GraphRAG",
+                    "type": "derived_from",
+                },
             ),
         ],
     ),
     lx.data.ExampleData(
-        text="Retrieval-Augmented Generation (RAG) integrates user queries with a collection of pertinent documents sourced from an external knowledge database, incorporating two essential elements: the Retrieval Component and the Generation Component. 1) The retrieval component is responsible for fetching relevant documents or information from the external knowledge database. It identifies and retrieves the most pertinent data based on the input query. 2) After the retrieval process, the generation component takes the retrieved information and generates coherent, contextually relevant responses",
+        text="Retrieval-Augmented Generation (RAG) integrates user queries with a collection of pertinent documents sourced from an external knowledge database, incorporating two essential elements: the Retrieval Component and the Generation Component.",
         extractions=[
             lx.data.Extraction(
                 extraction_class="contribution",
                 extraction_text="Retrieval-Augmented Generation (RAG)",
-                attributes={
-                    "category": "framework",
-                    "novelty": "existing",
-                },
+                attributes={"category": "framework", "novelty": "existing"},
             ),
         ],
     ),
