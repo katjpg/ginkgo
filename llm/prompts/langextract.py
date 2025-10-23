@@ -29,19 +29,26 @@ import langextract as lx
 
 
 PROMPT = """Extract entities using EXACT text spans from the source:
-CONCEPT, METHOD, PROBLEM, CLAIM, FINDING, METRIC
+CONTRIBUTION, PROBLEM, CLAIM, FINDING
+
+Entity Definitions:
+- CONTRIBUTION: Specific, named methods, models, frameworks, metrics, or algorithms
+- PROBLEM: challenges, limitations, gaps
+- CLAIM: assertions about contributions or findings
+- FINDING: empirical results, measurements, comparisons
 
 Rules:
 - Copy text verbatim - zero paraphrasing
-- Max 80 chars for concepts/methods, 150 for claims/findings
-- Extract only central contributions
+- Max 80 chars for contributions, 150 for claims/findings
+- Extract ONLY intrinsic attributes (no references to other entities)
+- **Do NOT extract general categories (e.g., "a deep learning model", "lower-tier LLM")**
 - Attributes: concise phrases (<50 chars)
 - No overlapping spans
 
-Examples of good extraction length:
-CONCEPT: "Transformer" (11 chars)
-METHOD: "multi-hop retrieval" (19 chars)  
-CLAIM: "outperforms baselines on multi-hop QA" (38 chars)
+Examples:
+CONTRIBUTION: "Transformer" → category="model", novelty="novel"
+CONTRIBUTION: "BLEU" → category="metric", purpose="measure translation quality"
+FINDING: "achieves 28.4 BLEU" → comparison="achieves", value="28.4"
 """
 
 
@@ -50,53 +57,70 @@ EXAMPLES = [
         text="A major advantage of HippoRAG over conventional RAG methods in multi-hop QA is its ability to perform multi-hop retrieval in a single step. We demonstrate this by measuring the percentage of queries where all the supporting passages are retrieved successfully, a feat that can only be accomplished through successful multi-hop reasoning. Table 6 below shows that the gap between our method and ColBERTv2, using the top-5 passages, increases even more from 3% to 6% on MuSiQue and from 20% to 38% on 2WikiMultiHopQA, suggesting that large improvements come from obtaining all supporting documents rather than achieving partially retrieval on more questions.",
         extractions=[
             lx.data.Extraction(
-                extraction_class="method",
+                extraction_class="contribution",
                 extraction_text="HippoRAG",
                 attributes={
+                    "category": "method",
+                    "novelty": "novel",
                     "purpose": "multi-hop retrieval",
-                    "applied_to": "multi-hop QA",
+                    "type": "retrieval",
                 },
             ),
             lx.data.Extraction(
-                extraction_class="method",
+                extraction_class="contribution",
                 extraction_text="multi-hop retrieval in a single step",
                 attributes={
+                    "category": "method",
                     "purpose": "retrieve supporting passages",
-                    "applied_to": "QA",
+                    "type": "retrieval",
                 },
             ),
             lx.data.Extraction(
-                extraction_class="concept",
+                extraction_class="contribution",
                 extraction_text="multi-hop reasoning",
-                attributes={"type": "technique", "novelty": "existing"},
+                attributes={
+                    "category": "technique",
+                    "novelty": "existing",
+                },
             ),
             lx.data.Extraction(
-                extraction_class="method",
+                extraction_class="contribution",
                 extraction_text="ColBERTv2",
-                attributes={"purpose": "baseline retrieval"},
+                attributes={
+                    "category": "method",
+                    "novelty": "existing",
+                    "purpose": "retrieval",
+                    "type": "retrieval",
+                },
             ),
             lx.data.Extraction(
-                extraction_class="metric",
+                extraction_class="contribution",
                 extraction_text="percentage of queries",
                 attributes={
-                    "evaluates": "retrieval completeness",
-                    "direction": "higher_better",
+                    "category": "metric",
+                    "purpose": "measure retrieval completeness",
                 },
             ),
             lx.data.Extraction(
                 extraction_class="claim",
                 extraction_text="major advantage of HippoRAG over conventional RAG methods",
-                attributes={"evidence_type": "empirical", "supports": "HippoRAG"},
+                attributes={"evidence_type": "empirical"},
             ),
             lx.data.Extraction(
                 extraction_class="finding",
                 extraction_text="gap increases from 3% to 6% on MuSiQue",
-                attributes={"comparison": "outperforms", "baseline": "ColBERTv2"},
+                attributes={
+                    "comparison": "outperforms",
+                    "value": "3% to 6%",
+                },
             ),
             lx.data.Extraction(
                 extraction_class="finding",
                 extraction_text="from 20% to 38% on 2WikiMultiHopQA",
-                attributes={"comparison": "outperforms", "baseline": "ColBERTv2"},
+                attributes={
+                    "comparison": "outperforms",
+                    "value": "20% to 38%",
+                },
             ),
         ],
     ),
@@ -104,44 +128,38 @@ EXAMPLES = [
         text="We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature.",
         extractions=[
             lx.data.Extraction(
-                extraction_class="concept",
+                extraction_class="contribution",
                 extraction_text="Transformer",
                 attributes={
-                    "type": "model",
-                    "based_on": "attention mechanisms",
+                    "category": "model",
                     "novelty": "novel",
-                },
-            ),
-            lx.data.Extraction(
-                extraction_class="method",
-                extraction_text="Transformer",
-                attributes={
                     "purpose": "machine translation",
-                    "applied_to": "WMT tasks",
                 },
             ),
             lx.data.Extraction(
-                extraction_class="concept",
+                extraction_class="contribution",
                 extraction_text="attention mechanisms",
-                attributes={"type": "technique", "novelty": "existing"},
+                attributes={
+                    "category": "technique",
+                    "novelty": "existing",
+                },
             ),
             lx.data.Extraction(
                 extraction_class="claim",
                 extraction_text="Transformer based solely on attention mechanisms",
-                attributes={"evidence_type": "theoretical", "supports": "Transformer"},
+                attributes={"evidence_type": "theoretical"},
             ),
             lx.data.Extraction(
                 extraction_class="claim",
                 extraction_text="superior in quality while more parallelizable",
-                attributes={"evidence_type": "empirical", "supports": "Transformer"},
+                attributes={"evidence_type": "empirical"},
             ),
             lx.data.Extraction(
-                extraction_class="metric",
+                extraction_class="contribution",
                 extraction_text="BLEU",
                 attributes={
-                    "evaluates": "translation quality",
-                    "units": "score",
-                    "direction": "higher_better",
+                    "category": "metric",
+                    "purpose": "measure translation quality",
                 },
             ),
             lx.data.Extraction(
@@ -149,7 +167,7 @@ EXAMPLES = [
                 extraction_text="achieves 28.4 BLEU on WMT 2014 English-to-German",
                 attributes={
                     "comparison": "outperforms",
-                    "baseline": "existing best results",
+                    "value": "28.4",
                 },
             ),
             lx.data.Extraction(
@@ -157,16 +175,15 @@ EXAMPLES = [
                 extraction_text="state-of-the-art BLEU score of 41.0",
                 attributes={
                     "comparison": "outperforms",
-                    "baseline": "literature best models",
+                    "value": "41.0",
                 },
             ),
             lx.data.Extraction(
-                extraction_class="metric",
+                extraction_class="contribution",
                 extraction_text="training costs",
                 attributes={
-                    "evaluates": "efficiency",
-                    "units": "cost",
-                    "direction": "lower_better",
+                    "category": "metric",
+                    "purpose": "measure efficiency",
                 },
             ),
         ],
@@ -177,63 +194,51 @@ EXAMPLES = [
             lx.data.Extraction(
                 extraction_class="problem",
                 extraction_text="fail to generalize to domain-specific entities",
-                attributes={
-                    "scope": "generalization",
-                    "affects": "zero-shot approaches",
-                },
+                attributes={"scope": "generalization"},
             ),
             lx.data.Extraction(
                 extraction_class="problem",
                 extraction_text="do not effectively utilize limited available data",
-                attributes={
-                    "scope": "data efficiency",
-                    "affects": "instruction-tuned approaches",
-                },
+                attributes={"scope": "data efficiency"},
             ),
             lx.data.Extraction(
-                extraction_class="concept",
-                extraction_text="lightweight few-shot NER framework",
-                attributes={"type": "framework", "novelty": "novel"},
-            ),
-            lx.data.Extraction(
-                extraction_class="method",
+                extraction_class="contribution",
                 extraction_text="lightweight few-shot NER framework",
                 attributes={
+                    "category": "framework",
+                    "novelty": "novel",
                     "purpose": "address generalization",
-                    "applied_to": "domain-specific NER",
                 },
             ),
             lx.data.Extraction(
-                extraction_class="method",
+                extraction_class="contribution",
                 extraction_text="instruction tuning template",
                 attributes={
+                    "category": "method",
                     "purpose": "leverage context window",
-                    "applied_to": "few-shot NER",
+                    "type": "preprocessing",
                 },
             ),
             lx.data.Extraction(
-                extraction_class="method",
+                extraction_class="contribution",
                 extraction_text="data augmentation technique",
                 attributes={
+                    "category": "method",
                     "purpose": "preserve entities while paraphrasing",
-                    "applied_to": "NER training",
+                    "type": "augmentation",
                 },
             ),
             lx.data.Extraction(
                 extraction_class="claim",
                 extraction_text="addresses challenges through two key innovations",
-                attributes={
-                    "evidence_type": "theoretical",
-                    "supports": "few-shot NER framework",
-                },
+                attributes={"evidence_type": "theoretical"},
             ),
             lx.data.Extraction(
-                extraction_class="metric",
+                extraction_class="contribution",
                 extraction_text="F1 score",
                 attributes={
-                    "evaluates": "NER performance",
-                    "units": "percentage",
-                    "direction": "higher_better",
+                    "category": "metric",
+                    "purpose": "measure NER performance",
                 },
             ),
             lx.data.Extraction(
@@ -241,7 +246,7 @@ EXAMPLES = [
                 extraction_text="comparable to state-of-the-art on few-shot tasks",
                 attributes={
                     "comparison": "matches",
-                    "baseline": "state-of-the-art models",
+                    "value": "80.1",
                 },
             ),
         ],
@@ -250,46 +255,47 @@ EXAMPLES = [
         text="Graph-based RAG (GraphRAG) leverages LLMs to organize RAG data into graphs, showing strong potential for gaining holistic insights from long-form documents. However, its standard implementation is overly complex for general use and lacks the ability to generate evidence-based responses, limiting its effectiveness in the medical field. To extend the capabilities of GraphRAG to the medical domain, we propose unique Triple Graph Construction and U-Retrieval techniques over it",
         extractions=[
             lx.data.Extraction(
-                extraction_class="method",
+                extraction_class="contribution",
                 extraction_text="GraphRAG",
                 attributes={
+                    "category": "method",
+                    "novelty": "existing",
                     "purpose": "organize RAG data into graphs",
-                    "applied_to": "long-form documents",
+                    "type": "retrieval",
                 },
             ),
             lx.data.Extraction(
                 extraction_class="problem",
                 extraction_text="overly complex for general use",
-                attributes={"scope": "complexity", "affects": "GraphRAG"},
+                attributes={"scope": "complexity"},
             ),
             lx.data.Extraction(
                 extraction_class="problem",
                 extraction_text="lacks evidence-based responses",
-                attributes={"scope": "quality", "affects": "GraphRAG"},
+                attributes={"scope": "quality"},
             ),
             lx.data.Extraction(
-                extraction_class="method",
+                extraction_class="contribution",
                 extraction_text="Triple Graph Construction",
                 attributes={
+                    "category": "method",
+                    "novelty": "novel",
                     "purpose": "extend GraphRAG",
-                    "applied_to": "medical domain",
                 },
             ),
             lx.data.Extraction(
-                extraction_class="method",
+                extraction_class="contribution",
                 extraction_text="U-Retrieval techniques",
                 attributes={
+                    "category": "method",
+                    "novelty": "novel",
                     "purpose": "extend GraphRAG",
-                    "applied_to": "medical domain",
                 },
             ),
             lx.data.Extraction(
                 extraction_class="claim",
                 extraction_text="extend GraphRAG to medical domain",
-                attributes={
-                    "evidence_type": "theoretical",
-                    "supports": "Triple Graph Construction",
-                },
+                attributes={"evidence_type": "theoretical"},
             ),
         ],
     ),
@@ -297,9 +303,12 @@ EXAMPLES = [
         text="Retrieval-Augmented Generation (RAG) integrates user queries with a collection of pertinent documents sourced from an external knowledge database, incorporating two essential elements: the Retrieval Component and the Generation Component. 1) The retrieval component is responsible for fetching relevant documents or information from the external knowledge database. It identifies and retrieves the most pertinent data based on the input query. 2) After the retrieval process, the generation component takes the retrieved information and generates coherent, contextually relevant responses",
         extractions=[
             lx.data.Extraction(
-                extraction_class="concept",
+                extraction_class="contribution",
                 extraction_text="Retrieval-Augmented Generation (RAG)",
-                attributes={"type": "framework", "novelty": "existing"},
+                attributes={
+                    "category": "framework",
+                    "novelty": "existing",
+                },
             ),
         ],
     ),

@@ -1,3 +1,9 @@
+"""
+Two-pass system:
+- pass 1: Extract entities with intrinsic attributes only
+- pass 2: Extract relationships between entities
+"""
+
 from enum import Enum
 from typing import Any, TypedDict
 from uuid import UUID, uuid4
@@ -8,56 +14,51 @@ from pydantic import BaseModel, Field
 class EntityType(str, Enum):
     """Entity types for academic literature."""
 
-    CONCEPT = "concept"
-    METHOD = "method"
+    CONTRIBUTION = "contribution"
     PROBLEM = "problem"
     CLAIM = "claim"
     FINDING = "finding"
-    METRIC = "metric"
 
 
-class ConceptAttributes(TypedDict, total=False):
-    """Attributes for CONCEPT entities."""
+class RelationType(str, Enum):
+    """Relationship types between entities."""
 
-    type: str  # "model", "framework", "theory", "algorithm", "technique"
-    based_on: str  # name of the concept it builds on
-    novelty: str  # "novel" or "existing"
+    DERIVED_FROM = "derived_from"  # (Contribution -> Contribution)
+    ADDRESSES = "addresses"  # (Contribution -> Problem)
+    EVALUATES = "evaluates"  # (Finding -> Contribution)
+    COMPARES_TO = "compares_to"  # (Finding -> Contribution)
+    SUPPORTS = "supports"  # (Claim -> Contribution) or (Finding -> Claim)
+    USES = "uses"  # (Contribution -> Contribution)
+    MEASURED_BY = "measured_by"  # (Finding -> Contribution[category=metric])
 
 
-class MethodAttributes(TypedDict, total=False):
-    """Attributes for METHOD entities."""
+# pass 1: intrinsic attributes only
+class ContributionAttributes(TypedDict, total=False):
+    """Intrinsic attributes for CONTRIBUTION entities."""
 
-    purpose: str  # "detect communities", "retrieve information"
-    applied_to: str  # concept/problem it addresses
+    category: str  # "method", "model", "framework", "metric", "technique", "algorithm"
+    novelty: str  # "novel", "existing", "adaptation"
+    purpose: str  # "retrieve information", "measure quality"
+    type: str  # "retrieval", "generation", "preprocessing", "evaluation"
 
 
 class ProblemAttributes(TypedDict, total=False):
-    """Attributes for PROBLEM entities."""
+    """Intrinsic attributes for PROBLEM entities."""
 
     scope: str  # "computational", "quality", "scalability", "generalization"
-    affects: str  # method/concept impacted
 
 
 class ClaimAttributes(TypedDict, total=False):
-    """Attributes for CLAIM entities."""
+    """Intrinsic attributes for CLAIM entities."""
 
     evidence_type: str  # "empirical", "theoretical", "none"
-    supports: str  # method/concept/finding it asserts
 
 
 class FindingAttributes(TypedDict, total=False):
-    """Attributes for FINDING entities."""
+    """Intrinsic attributes for FINDING entities."""
 
-    comparison: str  # "outperforms", "matches", "underperforms"
-    baseline: str  # compared method/value
-
-
-class MetricAttributes(TypedDict, total=False):
-    """Attributes for METRIC entities."""
-
-    evaluates: str  # method/concept measured
-    units: str  # "tokens", "accuracy", "%", "score"
-    direction: str  # "higher_better", "lower_better"
+    comparison: str  # "outperforms", "matches", "underperforms", "achieves"
+    value: str  # "28.4 BLEU", "3% to 6%", "O(n^1.5)"
 
 
 class Entity(BaseModel):
@@ -72,11 +73,7 @@ class Entity(BaseModel):
     section_id: UUID | None = None
 
     def to_langextract_format(self) -> dict[str, str | dict]:
-        """Convert to LangExtract Extraction format.
-        
-        Returns:
-            Dictionary with extraction_class, extraction_text, and attributes.
-        """
+        """Convert to LangExtract Extraction format."""
         return {
             "extraction_class": self.entity_type.value,
             "extraction_text": self.text,
@@ -90,17 +87,7 @@ class Entity(BaseModel):
         document_id: UUID | None = None,
         section_id: UUID | None = None,
     ) -> "Entity":
-        """Create Entity from LangExtract extraction result.
-        
-        Args:
-            extraction: Dictionary from LangExtract with extraction_class, 
-                       extraction_text, and attributes.
-            document_id: Optional UUID of source document.
-            section_id: Optional UUID of source section.
-            
-        Returns:
-            Entity instance.
-        """
+        """Create Entity from LangExtract extraction result."""
         return cls(
             entity_type=EntityType(str(extraction["extraction_class"])),
             text=str(extraction["extraction_text"]),
@@ -110,12 +97,17 @@ class Entity(BaseModel):
         )
 
 
-# type hints
+class Relationship(BaseModel):
+    """Relationship between entities (extracted in Pass 2)."""
+
+    relationship_id: UUID = Field(default_factory=uuid4)
+    source_entity_id: UUID
+    target_entity_id: UUID
+    relation_type: RelationType
+    confidence: float = Field(default=1.0, ge=0.0, le=1.0)
+    document_id: UUID | None = None
+
+
 EntityAttributes = (
-    ConceptAttributes
-    | MethodAttributes
-    | ProblemAttributes
-    | ClaimAttributes
-    | FindingAttributes
-    | MetricAttributes
+    ContributionAttributes | ProblemAttributes | ClaimAttributes | FindingAttributes
 )
