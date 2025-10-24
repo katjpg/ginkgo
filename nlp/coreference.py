@@ -13,10 +13,8 @@ def learn_acronyms(entities: list[dict[str, Any]]) -> dict[str, set[str]]:
     Extract acronym definitions from entity texts.
 
     Detects patterns: "full expansion (ABC)" or "full expansion (or ABC)"
-    Learns bidirectional mappings: ABC → {full, expansion, tokens}
-
-    This implements document-intrinsic learning where acronym semantics
-    are derived from the text itself rather than external dictionaries.
+    Learns bidirectional mappings: ABC -> {full, expansion, tokens}
+    
     """
     acronym_map = {}
 
@@ -47,9 +45,6 @@ def learn_acronyms(entities: list[dict[str, Any]]) -> dict[str, set[str]]:
 def normalize_singular(word: str) -> str:
     """
     Convert plural forms to singular using morphological rules.
-
-    Handles regular plurals through suffix transformation while
-    preserving words that are already singular despite ending in 's'.
     """
     if len(word) <= 2:
         return word
