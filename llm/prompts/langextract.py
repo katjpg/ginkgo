@@ -18,7 +18,6 @@ PROMPT = textwrap.dedent(
     
     Extraction rules:
     
-    Remove quotation marks from spans.
     No overlapping spans.
     Extract first occurrence only - skip repeated mentions of same entity.
     
