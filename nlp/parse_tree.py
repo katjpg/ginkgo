@@ -8,7 +8,7 @@ nlp = spacy.load("en_core_web_sm")
 
 @dataclass
 class VerbRelation:
-    """Semantic roles extracted from verb dependency structure."""
+    """A verb-mediated relation (Subject-Verb-Object)."""
 
     verb: str
     subject_span: Span
@@ -23,6 +23,11 @@ class VerbRelation:
         elif self.subject_span == s2 and self.object_span == s1:
             return (s2, s1)
         return None
+
+
+def parse(text: str) -> Doc:
+    """Parse text into dependency structure."""
+    return nlp(text)
 
 
 def convert_entity(entity: dict[str, Any], doc: Doc) -> Span | None:
@@ -91,14 +96,14 @@ def collect_path_verbs(r1: Token, r2: Token, lca: Token) -> list[Token]:
     """Collect verbs on paths from entity roots to LCA."""
     verbs = []
 
-    # traverse from r1 to lca
+    # traverse from r1 -> lca
     current = r1
     while current and current != lca:
         if current.pos_ == "VERB":
             verbs.append(current)
         current = current.head
 
-    # traverse from r2 to lca
+    # traverse from r2 -> lca
     current = r2
     while current and current != lca:
         if current.pos_ == "VERB":
@@ -108,15 +113,45 @@ def collect_path_verbs(r1: Token, r2: Token, lca: Token) -> list[Token]:
     return verbs
 
 
-def analyze_verb(verb: Token, s1: Span, s2: Span) -> list[VerbRelation]:
+def find_syntactic_head(entity_span: Span, candidate_token: Token) -> bool:
+    """Check if a token is the syntactic head of a (larger) entity span.
+
+    Important for linking a full entity span
+    (e.g., 'the new ML model') to its syntactic argument
+    (e.g., the token 'model').
+
+    Returns true if:
+        1. The token is *inside* the span.
+        2. The token is the head of a word *inside* the span (transitive).
     """
-    Extract semantic roles from verb, handling coordination and passive voice.
-    Returns multiple relations if coordination creates parallel structures.
+    # direct containment
+    if candidate_token in entity_span:
+        return True
+
+    # transitive headship: entity modifies the candidate
+    for entity_token in entity_span:
+        current = entity_token
+        # traverse up dependency tree until reaching root
+        while current.head != current:
+            if current.head == candidate_token:
+                return True
+            current = current.head
+
+    return False
+
+
+def analyze_verb(verb: Token, s1: Span, s2: Span) -> list[VerbRelation]:
+    """Check if verb links s1 and s2 as its subject and object.
+
+    Relation-finding logic. It handles:
+    - Passive voice (e.g., "model was trained by Google")
+    - Coordination (e.g., "Google and Meta trained...")
+    - Mapping spans to roles via `find_syntactic_head`
     """
     children = {child: child.dep_ for child in verb.children}
     has_passive = any(dep == "nsubjpass" for dep in children.values())
 
-    # extract metadata once
+    # extract metadata ONCE
     is_negated = check_negation(verb)
     modality = detect_modality(verb)
 
@@ -152,15 +187,15 @@ def analyze_verb(verb: Token, s1: Span, s2: Span) -> list[VerbRelation]:
             agent_span = None
             patient_span = None
 
-            # determine which span contains each token
-            if agent_tok in s1:
+            # apply transitive head detection
+            if find_syntactic_head(s1, agent_tok):
                 agent_span = s1
-            elif agent_tok in s2:
+            elif find_syntactic_head(s2, agent_tok):
                 agent_span = s2
 
-            if patient_tok in s1:
+            if find_syntactic_head(s1, patient_tok):
                 patient_span = s1
-            elif patient_tok in s2:
+            elif find_syntactic_head(s2, patient_tok):
                 patient_span = s2
 
             if agent_span and patient_span and agent_span != patient_span:
@@ -198,8 +233,3 @@ def find_relations(s1: Span, s2: Span) -> list[VerbRelation]:
         relations.extend(analyze_verb(verb_token, s1, s2))
 
     return relations
-
-
-def parse(text: str) -> Doc:
-    """Parse text into dependency structure."""
-    return nlp(text)
