@@ -1,370 +1,375 @@
+import textwrap
 import langextract as lx
 
 
-PROMPT = """Extract research information relevant to scientific discourse including problem, claim, contribution, finding, and relation in the order they appear in the text. Do NOT extract generic entities. Do NOT paraphrase or overlap entities. Provide meaningful attributes for each entity to add context."""
+PROMPT = textwrap.dedent(
+    """\
+    Extract scientific entities from research abstracts using exact text spans.
+    
+    Entity types to extract:
+    
+    task: specific problem, objective, or goal to be accomplished
+    method: approach, technique, or procedure to complete a task; includes mathematical formalism and computational simulation
+    dataset: curated, named collection of data used for training, evaluation, or benchmarking
+    object: entity that can be studied - physical entities, phenomena, raw materials (excluding prepared datasets)
+    metric: quantitative measure used to evaluate performance or properties
+    generic: anaphoric and cataphoric references to scientific concepts (pronouns, demonstratives like "this approach", "our system", "the model")
+    other: domain-specific scientific terminology and technical concepts not fitting the primary categories
+    
+    Critical rules:
+    
+    Use exact text from the input for extraction_text. Do NOT paraphrase or rephrase.
+    Extract entities in order of appearance with no overlapping text spans.
+    Copy text verbatim as it appears in the source."""
+)
 
 
 EXAMPLES = [
     lx.data.ExampleData(
-        text="Deep learning models have revolutionized computer vision in recent years. Our proposed ResNet architecture uses residual connections to solve the degradation problem in very deep networks. We train ResNet on ImageNet and achieve 93.1% top-5 accuracy.",
+        text="Image classification remains a fundamental challenge in computer vision. We propose ResNet to address this problem. ResNet uses residual connections to enable training of very deep networks. We evaluate our approach on ImageNet and achieve 93.1% top-5 accuracy.",
         extractions=[
             lx.data.Extraction(
-                extraction_class="contribution",
+                extraction_class="task",
+                extraction_text="Image classification",
+            ),
+            lx.data.Extraction(
+                extraction_class="object",
+                extraction_text="computer vision",
+            ),
+            lx.data.Extraction(
+                extraction_class="method",
                 extraction_text="ResNet",
-                attributes={"category": "model", "novelty": "novel"},
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
+                extraction_class="generic",
+                extraction_text="this problem",
+            ),
+            lx.data.Extraction(
+                extraction_class="method",
                 extraction_text="residual connections",
-                attributes={"category": "technique", "novelty": "novel"},
             ),
             lx.data.Extraction(
-                extraction_class="problem",
-                extraction_text="degradation problem in very deep networks",
-                attributes={"scope": "training"},
+                extraction_class="generic",
+                extraction_text="our approach",
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
+                extraction_class="dataset",
                 extraction_text="ImageNet",
-                attributes={"category": "dataset"},
             ),
             lx.data.Extraction(
-                extraction_class="finding",
-                extraction_text="achieve 93.1% top-5 accuracy",
-                attributes={"value": "93.1%"},
-            ),
-            lx.data.Extraction(
-                extraction_class="relation",
-                extraction_text="ResNet uses residual connections",
-                attributes={
-                    "source": "ResNet",
-                    "target": "residual connections",
-                    "type": "uses",
-                },
+                extraction_class="metric",
+                extraction_text="top-5 accuracy",
             ),
         ],
     ),
-    
     lx.data.ExampleData(
-        text="Transformer-based models suffer from quadratic memory complexity with respect to sequence length. We propose Linformer to address this limitation. Linformer approximates self-attention using low-rank decomposition, reducing complexity from O(n²) to O(n).",
+        text="Machine translation systems struggle with long sequences due to memory constraints. We introduce Linformer to overcome this limitation. The model approximates attention using low-rank matrix decomposition. Experiments on WMT 2014 demonstrate 28.4 BLEU score while reducing computational complexity.",
         extractions=[
             lx.data.Extraction(
-                extraction_class="problem",
-                extraction_text="quadratic memory complexity with respect to sequence length",
-                attributes={"scope": "efficiency"},
+                extraction_class="task",
+                extraction_text="Machine translation",
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
+                extraction_class="task",
+                extraction_text="long sequences",
+            ),
+            lx.data.Extraction(
+                extraction_class="method",
                 extraction_text="Linformer",
-                attributes={"category": "model", "novelty": "novel"},
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="low-rank decomposition",
-                attributes={"category": "technique"},
+                extraction_class="generic",
+                extraction_text="this limitation",
             ),
             lx.data.Extraction(
-                extraction_class="finding",
-                extraction_text="reducing complexity from O(n²) to O(n)",
-                attributes={"comparison": "reduces", "value": "O(n²) to O(n)"},
+                extraction_class="generic",
+                extraction_text="The model",
             ),
             lx.data.Extraction(
-                extraction_class="relation",
-                extraction_text="Linformer to address this limitation",
-                attributes={
-                    "source": "Linformer",
-                    "target": "quadratic memory complexity",
-                    "type": "addresses",
-                },
+                extraction_class="other",
+                extraction_text="attention",
             ),
             lx.data.Extraction(
-                extraction_class="relation",
-                extraction_text="Linformer approximates self-attention using low-rank decomposition",
-                attributes={
-                    "source": "Linformer",
-                    "target": "low-rank decomposition",
-                    "type": "uses",
-                },
-            ),
-        ],
-    ),
-    
-    lx.data.ExampleData(
-        text="We claim that attention mechanisms enable models to capture long-range dependencies more effectively. To test this hypothesis, we train Transformer on WMT 2014 English-to-German. Our model achieves 28.4 BLEU, outperforming previous models by 2.0 points. These results support our claim.",
-        extractions=[
-            lx.data.Extraction(
-                extraction_class="claim",
-                extraction_text="attention mechanisms enable models to capture long-range dependencies",
-                attributes={"evidence_type": "hypothesis"},
+                extraction_class="method",
+                extraction_text="low-rank matrix decomposition",
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="Transformer",
-                attributes={"category": "model", "novelty": "novel"},
+                extraction_class="dataset",
+                extraction_text="WMT 2014",
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="WMT 2014 English-to-German",
-                attributes={"category": "dataset"},
+                extraction_class="metric",
+                extraction_text="BLEU score",
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="BLEU",
-                attributes={"category": "metric"},
-            ),
-            lx.data.Extraction(
-                extraction_class="finding",
-                extraction_text="achieves 28.4 BLEU",
-                attributes={"value": "28.4"},
-            ),
-            lx.data.Extraction(
-                extraction_class="finding",
-                extraction_text="outperforming previous models by 2.0 points",
-                attributes={"comparison": "outperforms", "value": "2.0"},
-            ),
-            lx.data.Extraction(
-                extraction_class="relation",
-                extraction_text="These results support our claim",
-                attributes={
-                    "source": "Transformer",
-                    "target": "attention mechanisms",
-                    "type": "supports",
-                },
+                extraction_class="other",
+                extraction_text="computational complexity",
             ),
         ],
     ),
-    
     lx.data.ExampleData(
-        text="Building upon GCN, we develop GraphSAINT with importance sampling to scale training to large graphs. GraphSAINT is trained on Reddit dataset. Compared to GCN, GraphSAINT achieves 97.1% F1 versus 93.2%.",
+        text="Graph neural networks analyze structured data by message passing between nodes. However, over-smoothing limits their expressiveness in deep architectures. We propose GraphSAINT using importance sampling for scalable training. Our method is evaluated on Reddit social network with 233,000 nodes, achieving 97.1% F1 score.",
         extractions=[
             lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="GCN",
-                attributes={"category": "model", "novelty": "existing"},
+                extraction_class="method",
+                extraction_text="Graph neural networks",
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
+                extraction_class="object",
+                extraction_text="structured data",
+            ),
+            lx.data.Extraction(
+                extraction_class="method",
+                extraction_text="message passing",
+            ),
+            lx.data.Extraction(
+                extraction_class="object",
+                extraction_text="nodes",
+            ),
+            lx.data.Extraction(
+                extraction_class="task",
+                extraction_text="over-smoothing",
+            ),
+            lx.data.Extraction(
+                extraction_class="other",
+                extraction_text="deep architectures",
+            ),
+            lx.data.Extraction(
+                extraction_class="method",
                 extraction_text="GraphSAINT",
-                attributes={"category": "model", "novelty": "novel"},
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
+                extraction_class="method",
                 extraction_text="importance sampling",
-                attributes={"category": "technique"},
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="Reddit dataset",
-                attributes={"category": "dataset"},
+                extraction_class="generic",
+                extraction_text="Our method",
             ),
             lx.data.Extraction(
-                extraction_class="finding",
-                extraction_text="GraphSAINT achieves 97.1% F1 versus 93.2%",
-                attributes={"comparison": "outperforms", "value": "97.1% vs 93.2%"},
+                extraction_class="dataset",
+                extraction_text="Reddit social network",
             ),
             lx.data.Extraction(
-                extraction_class="relation",
-                extraction_text="Building upon GCN, we develop GraphSAINT",
-                attributes={
-                    "source": "GraphSAINT",
-                    "target": "GCN",
-                    "type": "derived_from",
-                },
-            ),
-            lx.data.Extraction(
-                extraction_class="relation",
-                extraction_text="GraphSAINT with importance sampling",
-                attributes={
-                    "source": "GraphSAINT",
-                    "target": "importance sampling",
-                    "type": "uses",
-                },
-            ),
-            lx.data.Extraction(
-                extraction_class="relation",
-                extraction_text="trained on Reddit dataset",
-                attributes={
-                    "source": "GraphSAINT",
-                    "target": "Reddit dataset",
-                    "type": "evaluates",
-                },
-            ),
-            lx.data.Extraction(
-                extraction_class="relation",
-                extraction_text="Compared to GCN, GraphSAINT achieves 97.1%",
-                attributes={
-                    "source": "GraphSAINT",
-                    "target": "GCN",
-                    "type": "compares_to",
-                },
+                extraction_class="metric",
+                extraction_text="F1 score",
             ),
         ],
     ),
-    
     lx.data.ExampleData(
-        text="Reinforcement learning agents struggle with sparse reward environments. We hypothesize that curiosity-driven exploration improves learning efficiency. Our PPO experiments on Montezuma's Revenge show agents reach 8,500 versus 400 for baseline. This validates our hypothesis.",
+        text="Object detection in autonomous vehicles requires real-time processing. YOLO achieves this through single-pass neural architecture. The system processes frames at 45 FPS on COCO dataset. This approach balances speed and accuracy for practical deployment.",
         extractions=[
             lx.data.Extraction(
-                extraction_class="problem",
-                extraction_text="sparse reward environments",
-                attributes={"scope": "exploration"},
+                extraction_class="task",
+                extraction_text="Object detection",
             ),
             lx.data.Extraction(
-                extraction_class="claim",
-                extraction_text="curiosity-driven exploration improves learning efficiency",
-                attributes={"evidence_type": "hypothesis"},
+                extraction_class="object",
+                extraction_text="autonomous vehicles",
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="PPO",
-                attributes={"category": "algorithm"},
+                extraction_class="task",
+                extraction_text="real-time processing",
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="Montezuma's Revenge",
-                attributes={"category": "environment"},
+                extraction_class="method",
+                extraction_text="YOLO",
             ),
             lx.data.Extraction(
-                extraction_class="finding",
-                extraction_text="agents reach 8,500 versus 400",
-                attributes={"comparison": "outperforms", "value": "8,500 vs 400"},
+                extraction_class="method",
+                extraction_text="single-pass neural architecture",
             ),
             lx.data.Extraction(
-                extraction_class="relation",
-                extraction_text="PPO experiments on Montezuma's Revenge",
-                attributes={
-                    "source": "PPO",
-                    "target": "Montezuma's Revenge",
-                    "type": "evaluates",
-                },
+                extraction_class="generic",
+                extraction_text="The system",
+            ),
+            lx.data.Extraction(
+                extraction_class="metric",
+                extraction_text="FPS",
+            ),
+            lx.data.Extraction(
+                extraction_class="dataset",
+                extraction_text="COCO dataset",
+            ),
+            lx.data.Extraction(
+                extraction_class="generic",
+                extraction_text="This approach",
+            ),
+            lx.data.Extraction(
+                extraction_class="other",
+                extraction_text="speed",
+            ),
+            lx.data.Extraction(
+                extraction_class="metric",
+                extraction_text="accuracy",
             ),
         ],
     ),
-    
     lx.data.ExampleData(
-        text="Existing diffusion models require hundreds of sampling steps. DDIM addresses this through deterministic sampling trajectories. DDIM reduces steps from 1000 to 50.",
+        text="Protein structure prediction determines three-dimensional configurations from amino acid sequences. AlphaFold2 uses transformer architecture with attention mechanisms operating on residue pairs. The model achieves median GDT score of 92.4 on CASP14 benchmark, approaching experimental accuracy.",
         extractions=[
             lx.data.Extraction(
-                extraction_class="problem",
-                extraction_text="require hundreds of sampling steps",
-                attributes={"scope": "efficiency"},
+                extraction_class="task",
+                extraction_text="Protein structure prediction",
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="DDIM",
-                attributes={"category": "method", "novelty": "novel"},
+                extraction_class="object",
+                extraction_text="three-dimensional configurations",
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="deterministic sampling trajectories",
-                attributes={"category": "technique"},
+                extraction_class="object",
+                extraction_text="amino acid sequences",
             ),
             lx.data.Extraction(
-                extraction_class="finding",
-                extraction_text="DDIM reduces steps from 1000 to 50",
-                attributes={"comparison": "reduces", "value": "1000 to 50"},
+                extraction_class="method",
+                extraction_text="AlphaFold2",
             ),
             lx.data.Extraction(
-                extraction_class="relation",
-                extraction_text="DDIM addresses this through deterministic sampling",
-                attributes={
-                    "source": "DDIM",
-                    "target": "deterministic sampling trajectories",
-                    "type": "uses",
-                },
+                extraction_class="other",
+                extraction_text="transformer architecture",
+            ),
+            lx.data.Extraction(
+                extraction_class="other",
+                extraction_text="attention mechanisms",
+            ),
+            lx.data.Extraction(
+                extraction_class="object",
+                extraction_text="residue pairs",
+            ),
+            lx.data.Extraction(
+                extraction_class="generic",
+                extraction_text="The model",
+            ),
+            lx.data.Extraction(
+                extraction_class="metric",
+                extraction_text="GDT score",
+            ),
+            lx.data.Extraction(
+                extraction_class="dataset",
+                extraction_text="CASP14 benchmark",
+            ),
+            lx.data.Extraction(
+                extraction_class="metric",
+                extraction_text="experimental accuracy",
             ),
         ],
     ),
-    
     lx.data.ExampleData(
-        text="CLIP learns by aligning images with text. Zero-shot evaluation on ImageNet yields 76.2% accuracy. CLIP demonstrates strong transfer capabilities.",
+        text="Sentiment analysis classifies emotional tone in text. We fine-tune BERT on Twitter corpus containing 1.6 million tweets. Our system achieves 89.3% accuracy on test set, outperforming previous approaches by 3.2 percentage points.",
         extractions=[
             lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="CLIP",
-                attributes={"category": "model", "novelty": "novel"},
+                extraction_class="task",
+                extraction_text="Sentiment analysis",
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="ImageNet",
-                attributes={"category": "dataset"},
+                extraction_class="object",
+                extraction_text="emotional tone",
             ),
             lx.data.Extraction(
-                extraction_class="finding",
-                extraction_text="Zero-shot evaluation on ImageNet yields 76.2%",
-                attributes={"value": "76.2%"},
+                extraction_class="object",
+                extraction_text="text",
             ),
             lx.data.Extraction(
-                extraction_class="relation",
-                extraction_text="evaluation on ImageNet",
-                attributes={
-                    "source": "CLIP",
-                    "target": "ImageNet",
-                    "type": "evaluates",
-                },
-            ),
-        ],
-    ),
-    
-    lx.data.ExampleData(
-        text="CodeBERT extends BERT by pretraining on programming languages. We evaluate CodeBERT on CodeSearchNet and achieve 86.9 mean reciprocal rank. Compared to RoBERTa, CodeBERT shows 14% improvement.",
-        extractions=[
-            lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="CodeBERT",
-                attributes={"category": "model", "novelty": "novel"},
-            ),
-            lx.data.Extraction(
-                extraction_class="contribution",
+                extraction_class="method",
                 extraction_text="BERT",
-                attributes={"category": "model", "novelty": "existing"},
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="CodeSearchNet",
-                attributes={"category": "dataset"},
+                extraction_class="dataset",
+                extraction_text="Twitter corpus",
             ),
             lx.data.Extraction(
-                extraction_class="contribution",
-                extraction_text="RoBERTa",
-                attributes={"category": "model", "novelty": "existing"},
+                extraction_class="object",
+                extraction_text="tweets",
             ),
             lx.data.Extraction(
-                extraction_class="finding",
-                extraction_text="achieve 86.9 mean reciprocal rank",
-                attributes={"value": "86.9"},
+                extraction_class="generic",
+                extraction_text="Our system",
             ),
             lx.data.Extraction(
-                extraction_class="finding",
-                extraction_text="CodeBERT shows 14% improvement",
-                attributes={"comparison": "improves", "value": "14%"},
+                extraction_class="metric",
+                extraction_text="accuracy",
+            ),
+        ],
+    ),
+    lx.data.ExampleData(
+        text="Speech recognition converts audio signals into text transcriptions. DeepSpeech employs recurrent neural networks with connectionist temporal classification loss. The model is trained on LibriSpeech dataset and evaluated using word error rate metric.",
+        extractions=[
+            lx.data.Extraction(
+                extraction_class="task",
+                extraction_text="Speech recognition",
             ),
             lx.data.Extraction(
-                extraction_class="relation",
-                extraction_text="CodeBERT extends BERT",
-                attributes={
-                    "source": "CodeBERT",
-                    "target": "BERT",
-                    "type": "derived_from",
-                },
+                extraction_class="object",
+                extraction_text="audio signals",
             ),
             lx.data.Extraction(
-                extraction_class="relation",
-                extraction_text="evaluate CodeBERT on CodeSearchNet",
-                attributes={
-                    "source": "CodeBERT",
-                    "target": "CodeSearchNet",
-                    "type": "evaluates",
-                },
+                extraction_class="object",
+                extraction_text="text transcriptions",
             ),
             lx.data.Extraction(
-                extraction_class="relation",
-                extraction_text="Compared to RoBERTa",
-                attributes={
-                    "source": "CodeBERT",
-                    "target": "RoBERTa",
-                    "type": "compares_to",
-                },
+                extraction_class="method",
+                extraction_text="DeepSpeech",
+            ),
+            lx.data.Extraction(
+                extraction_class="other",
+                extraction_text="recurrent neural networks",
+            ),
+            lx.data.Extraction(
+                extraction_class="other",
+                extraction_text="connectionist temporal classification loss",
+            ),
+            lx.data.Extraction(
+                extraction_class="generic",
+                extraction_text="The model",
+            ),
+            lx.data.Extraction(
+                extraction_class="dataset",
+                extraction_text="LibriSpeech dataset",
+            ),
+            lx.data.Extraction(
+                extraction_class="metric",
+                extraction_text="word error rate",
+            ),
+        ],
+    ),
+    lx.data.ExampleData(
+        text="Reinforcement learning enables agents to learn optimal policies through environmental interaction. PPO stabilizes training using clipped surrogate objectives. We test this algorithm on Atari games, measuring performance by average episode reward across 49 environments.",
+        extractions=[
+            lx.data.Extraction(
+                extraction_class="task",
+                extraction_text="Reinforcement learning",
+            ),
+            lx.data.Extraction(
+                extraction_class="object",
+                extraction_text="agents",
+            ),
+            lx.data.Extraction(
+                extraction_class="other",
+                extraction_text="optimal policies",
+            ),
+            lx.data.Extraction(
+                extraction_class="object",
+                extraction_text="environmental interaction",
+            ),
+            lx.data.Extraction(
+                extraction_class="method",
+                extraction_text="PPO",
+            ),
+            lx.data.Extraction(
+                extraction_class="other",
+                extraction_text="clipped surrogate objectives",
+            ),
+            lx.data.Extraction(
+                extraction_class="generic",
+                extraction_text="this algorithm",
+            ),
+            lx.data.Extraction(
+                extraction_class="dataset",
+                extraction_text="Atari games",
+            ),
+            lx.data.Extraction(
+                extraction_class="metric",
+                extraction_text="episode reward",
             ),
         ],
     ),
