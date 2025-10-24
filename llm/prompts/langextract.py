@@ -6,23 +6,33 @@ PROMPT = textwrap.dedent(
     """\
     Extract scientific entities from research abstracts using exact text spans.
     
-    Entity types to extract:
+    Entity types:
     
-    task: specific problem, objective, or goal to be accomplished
-    method: approach, technique, or procedure to complete a task; includes mathematical formalism and computational simulation
-    dataset: curated, named collection of data used for training, evaluation, or benchmarking
-    object: entity that can be studied - physical entities, phenomena, raw materials (excluding prepared datasets)
-    metric: quantitative measure used to evaluate performance or properties
-    generic: anaphoric and cataphoric references to scientific concepts (pronouns, demonstratives like "this approach", "our system", "the model")
-    other: domain-specific scientific terminology and technical concepts not fitting the primary categories
+    task: specific research problems (e.g., "image classification", "named entity recognition")
+    method: named systems/algorithms (e.g., "BERT", "ResNet", "Belief propagation algorithm")
+    dataset: named benchmark collections (e.g., "ImageNet", "CoNLL2003")
+    object: domain-specific entities being studied (e.g., "proteins", "biomedical entities")
+    metric: performance measures (e.g., "F1 score", "accuracy", "BLEU")
+    generic: anaphoric references with determiners (e.g., "this approach", "our model")
+    other: technical concepts providing context (e.g., "neural architecture", "attention mechanism")
     
-    Critical rules:
+    Extraction rules:
     
-    Use exact text from the input for extraction_text. Do NOT paraphrase or rephrase.
-    Extract entities in order of appearance with no overlapping text spans.
-    Copy text verbatim as it appears in the source."""
+    Remove quotation marks from spans.
+    No overlapping spans.
+    Extract first occurrence only - skip repeated mentions of same entity.
+    
+    Do NOT extract:
+    - Meta-discourse: "literature review", "related works", "prior work"
+    - Meta-linguistic: "abbreviation", "definition", "term", "word", "full name"
+    - Generic processes: "manual review", "rules", "normalization", "clean-up work"
+    - Gerund processes: "normalized entities", "extracted features"
+    - Entity type lists: when describing what a system/dataset extracts (e.g., "extracts person and location" Do NOT extract "person" and "location")
+    - Standalone task verbs: "evaluation", "analysis", "testing", "method", without specific context
+    - Vague references: "the machine", "methods" without determiner
+    
+    Generic type: Only "this/our/the/these" + noun referring to specific prior contribution."""
 )
-
 
 EXAMPLES = [
     lx.data.ExampleData(
@@ -370,6 +380,27 @@ EXAMPLES = [
             lx.data.Extraction(
                 extraction_class="metric",
                 extraction_text="episode reward",
+            ),
+        ],
+    ),
+    lx.data.ExampleData(
+        text="CoNLL2003 only requires the extraction of person, organizations, and locations from the news. We propose biomedicine NER for academic papers.",
+        extractions=[
+            lx.data.Extraction(
+                extraction_class="dataset",
+                extraction_text="CoNLL2003",
+            ),
+            lx.data.Extraction(
+                extraction_class="object",
+                extraction_text="news",
+            ),
+            lx.data.Extraction(
+                extraction_class="task",
+                extraction_text="biomedicine NER",
+            ),
+            lx.data.Extraction(
+                extraction_class="object",
+                extraction_text="academic papers",
             ),
         ],
     ),
