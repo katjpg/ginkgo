@@ -1,11 +1,4 @@
 import re
-
-# NOTE: so LLMs work best with minimal preprocessing (for extraction)
-# although I should prioritize fixing parsing errors 
-# (e.g., urls, concatenation, and so forth)
-
-
-import re
 from collections import Counter
 
 
