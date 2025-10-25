@@ -19,8 +19,13 @@ def normalize_whitespace(text: str) -> str:
 
 def fix_concatenation(text: str) -> str:
     """Fix parsing concatenation errors while preserving intentional camelCase."""
+    # fix doubled capitals at word start
     text = re.sub(r'\b([A-Z])\1([a-z])', r'\1\2', text)
-    text = re.sub(r'(?<=[a-z]{4,})([A-Z][a-z])', r' \1', text)
+    
+    # fix concatenated words using capturing group instead of variable-width lookbehind
+    # captures lowercase sequence and capital letter, adds space between them
+    text = re.sub(r'([a-z]{4,})([A-Z][a-z])', r'\1 \2', text)
+    
     return text
 
 
