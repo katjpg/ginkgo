@@ -19,7 +19,18 @@ PROMPT = textwrap.dedent(
     Extraction rules:
     
     No overlapping spans.
-    Extract first occurrence only - skip repeated mentions of same entity.
+    - Extract first occurrence only and skip repeated mentions of same entity.
+    
+    Span boundaries:
+    - Extract entity mentions WITHOUT surrounding punctuation (quotes, parentheses)
+    - For acronyms with expansions like "Retrieval-Augmented Generation (RAG)", extract ONLY the primary form
+    - For methods with years like "BERT (2018)", extract ONLY the method name
+    - Strip leading/trailing punctuation from extracted spans
+    
+    Acronym handling:
+    - If full form appears: extract full form on first mention (e.g., "Retrieval-Augmented Generation")
+    - If acronym appears: extract acronym only (e.g., "RAG")
+    - Do NOT extract "X (Y)" format - choose one or the other based on context
     
     Do NOT extract:
     - Meta-discourse: "literature review", "related works", "prior work"
