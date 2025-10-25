@@ -6,7 +6,6 @@ from spacy.tokens import Doc, Span
 from config.llm import LangExtractConfig
 from config.nlp import SectionConfig
 from llm.prompts.langextract import PROMPT, EXAMPLES
-from nlp.syntactic import find_relations
 
 
 class SemanticExtractor:
@@ -51,7 +50,6 @@ class SemanticExtractor:
         start_char = entity["char_interval"]["start_pos"]
         end_char = entity["char_interval"]["end_pos"]
         
-        # find overlapping tokens
         indices = []
         for token in doc:
             token_start = token.idx
@@ -76,37 +74,16 @@ class SemanticExtractor:
         
         return entity_spans
     
-    def analyze_syntactic_density(self, entity_spans: list[tuple[dict, Span]]) -> dict[str, Any]:
-        """Compute syntactic connection density between entities."""
-        syntactic_pairs = 0
-        total_pairs = 0
-        
-        for i, (_, s1) in enumerate(entity_spans):
-            for _, s2 in entity_spans[i+1:]:
-                total_pairs += 1
-                if find_relations(s1, s2):
-                    syntactic_pairs += 1
-        
-        return {
-            "total_pairs": total_pairs,
-            "connected_pairs": syntactic_pairs,
-            "density": syntactic_pairs / total_pairs if total_pairs > 0 else 0.0
-        }
-    
     def process_section(self, text: str, doc: Doc, section_config: SectionConfig) -> dict[str, Any]:
-        """Process section for entity extraction and syntactic analysis."""
+        """Process section for entity extraction."""
         entities = self.extract_entities(text, section_config)
         entity_spans = self.convert_to_spans(entities, doc)
-        syntactic_metrics = self.analyze_syntactic_density(entity_spans)
         
         return {
             "entities": entities,
             "metadata": {
                 "total_entities": len(entities),
-                "span_conversions": len(entity_spans),
-                "syntactic_density": syntactic_metrics["density"],
-                "connected_pairs": syntactic_metrics["connected_pairs"],
-                "total_pairs": syntactic_metrics["total_pairs"]
+                "span_conversions": len(entity_spans)
             }
         }
 
