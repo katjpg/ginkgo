@@ -10,16 +10,15 @@ class ClientConfig(BaseModel):
     max_retries: int = Field(default=3, description="Maximum retry attempts")
     user_agent: str = "GinkgoClient/1.0"
 
-
 class ArXivConfig(ClientConfig):
     """Configuration for arXiv API client."""
 
-    base_url: str = "http://export.arxiv.org/api/query"
-    pdf_base_url: str = "http://arxiv.org/pdf"
+    base_url: str = "https://export.arxiv.org/api/query"  
+    pdf_base_url: str = "https://arxiv.org/pdf"  
     namespaces: dict[str, str] = Field(
         default_factory=lambda: {
-            "atom": "http://www.w3.org/2005/Atom",
-            "arxiv": "http://arxiv.org/schemas/atom",
+            "atom": "http://www.w3.org/2005/Atom", 
+            "arxiv": "http://arxiv.org/schemas/atom", 
         }
     )
 
