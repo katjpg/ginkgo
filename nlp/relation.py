@@ -1,5 +1,3 @@
-"""Relation extraction between entities."""
-
 from typing import Any
 import json
 
