@@ -95,47 +95,6 @@ class RelationExtractor:
                 'reasoning': f'Classification error: {str(e)}'
             }
 
-
-def bootstrap_examples(entities: list[dict], doc: Doc, n: int = 5) -> list[dict]:
-    """Generate initial examples from entity types."""
-    pairs = create_pairs(entities, doc)
-    pairs = filter_by_type(pairs)
-    
-    if not pairs:
-        return []
-    
-    # group by type combination
-    by_type = {}
-    for pair in pairs:
-        type_key = (pair['head']['type'], pair['tail']['type'])
-        if type_key not in by_type:
-            by_type[type_key] = []
-        by_type[type_key].append(pair)
-    
-    # select diverse examples
-    examples = []
-    for type_combo, type_pairs in by_type.items():
-        if len(examples) >= n:
-            break
-        
-        # prefer pairs with rich syntactic features
-        selected = None
-        for pair in type_pairs:
-            if pair.get('syntax') and 'via' in pair['syntax']:
-                selected = pair
-                break
-        
-        if selected is None and type_pairs:
-            selected = type_pairs[0]
-        
-        if selected:
-            # add placeholder relation for example format
-            selected['relation'] = 'unknown'
-            examples.append(selected)
-    
-    return examples
-
-
 def extract_with_aggregation(entities: list[dict], doc: Doc, extractor: RelationExtractor) -> list[dict]:
     """Extract relations with mention aggregation."""
     pairs = create_pairs(entities, doc)
