@@ -1,4 +1,4 @@
-# ginkgo
+# ginkgo 🌱
 
 > a research tool for scientific information extraction and knowledge graph construction.
 
