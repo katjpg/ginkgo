@@ -1,6 +1,6 @@
 """Relation extraction between entities."""
 
-from typing import Any, Optional
+from typing import Any
 import json
 
 from spacy.tokens import Doc
