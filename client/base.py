@@ -19,7 +19,7 @@ class BaseClient(ABC):
         self.session = httpx.Client(
             headers={"User-Agent": config.user_agent},
             timeout=config.request_timeout,
-            follow_redirects=True 
+            follow_redirects=True,
         )
         self.async_session: httpx.AsyncClient | None = None
 

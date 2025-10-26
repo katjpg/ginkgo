@@ -6,12 +6,14 @@ from pydantic import BaseModel, Field, field_validator, ConfigDict
 
 class PageRange(BaseModel):
     """Page boundaries from biblScope XML."""
+
     from_page: int
     to_page: int
 
 
 class Scope(BaseModel):
     """Bibliographic scope from biblScope tags."""
+
     volume: int | None = None
     pages: PageRange | None = None
 
@@ -22,6 +24,7 @@ class Scope(BaseModel):
 
 class Date(BaseModel):
     """Date from 'when' attribute."""
+
     year: str
     month: str | None = None
     day: str | None = None
@@ -29,6 +32,7 @@ class Date(BaseModel):
 
 class PersonName(BaseModel):
     """Person name from persName tag."""
+
     surname: str
     first_name: str | None = None
 
@@ -41,6 +45,7 @@ class PersonName(BaseModel):
 
 class Affiliation(BaseModel):
     """Author affiliation data."""
+
     department: str | None = None
     institution: str | None = None
     laboratory: str | None = None
@@ -52,6 +57,7 @@ class Affiliation(BaseModel):
 
 class Author(BaseModel):
     """Author with affiliations."""
+
     person_name: PersonName
     affiliations: list[Affiliation] = Field(default_factory=list)
     email: str | None = None
@@ -59,6 +65,7 @@ class Author(BaseModel):
 
 class CitationIDs(BaseModel):
     """External identifiers from idno tags."""
+
     DOI: str | None = None
     arXiv: str | None = None
 
@@ -69,6 +76,7 @@ class CitationIDs(BaseModel):
 
 class Citation(BaseModel):
     """Bibliography entry from biblStruct."""
+
     title: str
     authors: list[Author] = Field(default_factory=list)
     date: Date | None = None
@@ -82,6 +90,7 @@ class Citation(BaseModel):
 
 class Marker(str, Enum):
     """Reference marker types."""
+
     bibr = "bibr"
     figure = "figure"
     table = "table"
@@ -91,6 +100,7 @@ class Marker(str, Enum):
 
 class Ref(BaseModel):
     """Reference position in text."""
+
     start: int
     end: int
     marker: Marker | None = None
@@ -99,6 +109,7 @@ class Ref(BaseModel):
 
 class RefText(BaseModel):
     """Paragraph with embedded references."""
+
     text: str
     refs: list[Ref] = Field(default_factory=list)
 
@@ -114,12 +125,13 @@ class RefText(BaseModel):
         for start, end in ranges:
             text += self.text[left_bound:start].rstrip()
             left_bound = end
-        text += self.text[ranges[-1][1]:].rstrip()
+        text += self.text[ranges[-1][1] :].rstrip()
         return text
 
 
 class Section(BaseModel):
     """Document section with paragraphs."""
+
     title: str
     paragraphs: list[RefText] = Field(default_factory=list)
 
@@ -133,6 +145,7 @@ class Section(BaseModel):
 
 class Table(BaseModel):
     """Table from figure tag."""
+
     heading: str
     description: str | None = None
     rows: list[list[str]] = Field(default_factory=list)
@@ -140,6 +153,7 @@ class Table(BaseModel):
 
 class Article(BaseModel):
     """Parsed scholarly article."""
+
     bibliography: Citation
     keywords: set[str]
     citations: dict[str, Citation]
@@ -150,6 +164,7 @@ class Article(BaseModel):
 
 class File(BaseModel):
     """PDF file for GROBID processing."""
+
     payload: bytes
     file_name: str | None = None
     mime_type: str | None = None
@@ -161,6 +176,7 @@ class File(BaseModel):
 
 class Form(BaseModel):
     """GROBID processFulltextDocument form data."""
+
     file: File
     segment_sentences: bool | None = None
     consolidate_header: int | None = None
@@ -181,33 +197,36 @@ class Form(BaseModel):
         """Split into files dict and data dict for httpx.post()."""
         # file content goes in files parameter
         files = {"input": self.file.to_tuple()}
-        
+
         # scalar values go in data parameter as strings
         data = {}
-        
+
         if self.segment_sentences is not None:
             data["segmentSentences"] = "1" if self.segment_sentences else "0"
-        
+
         if self.consolidate_header is not None:
             data["consolidateHeader"] = str(self.consolidate_header)
-        
+
         if self.consolidate_citations is not None:
             data["consolidateCitations"] = str(self.consolidate_citations)
-        
+
         if self.include_raw_citations is not None:
             data["includeRawCitations"] = "1" if self.include_raw_citations else "0"
-        
+
         if self.include_raw_affiliations is not None:
-            data["includeRawAffiliations"] = "1" if self.include_raw_affiliations else "0"
-        
+            data["includeRawAffiliations"] = (
+                "1" if self.include_raw_affiliations else "0"
+            )
+
         if self.tei_coordinates is not None:
             data["teiCoordinates"] = self.tei_coordinates
-        
+
         return files, data
 
 
 class Response(BaseModel):
     """GROBID API response."""
+
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
     status_code: int

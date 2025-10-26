@@ -9,6 +9,7 @@ from models.grobid import Form, Response
 
 class GROBIDClientError(Exception):
     """GROBID client error."""
+
     pass
 
 
@@ -30,10 +31,10 @@ class GROBIDClient(BaseClient):
     def process_pdf(self, form: Form) -> Response:
         """Process PDF and return TEI XML response."""
         self.rate_limiter.wait()
-        
+
         # separate file and data fields for multipart encoding
         files, data = form.to_files_and_data()
-        
+
         last_error: Exception | None = None
 
         for attempt in range(self.config.max_retries):
@@ -41,7 +42,7 @@ class GROBIDClient(BaseClient):
                 response = self.session.post(
                     self.config.full_url,
                     files=files,
-                    data=data  # scalar fields go here, not in files
+                    data=data,  # scalar fields go here, not in files
                 )
                 return self._build_response(response)
 
@@ -59,10 +60,10 @@ class GROBIDClient(BaseClient):
     async def process_pdf_async(self, form: Form) -> Response:
         """Process PDF asynchronously."""
         self.rate_limiter.wait()
-        
+
         # separate file and data fields for multipart encoding
         files, data = form.to_files_and_data()
-        
+
         async_client = self._get_async_session()
         last_error: Exception | None = None
 
@@ -71,7 +72,7 @@ class GROBIDClient(BaseClient):
                 response = await async_client.post(
                     self.config.full_url,
                     files=files,
-                    data=data  # scalar fields go here, not in files
+                    data=data,  # scalar fields go here, not in files
                 )
                 return self._build_response(response)
 

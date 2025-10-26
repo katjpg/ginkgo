@@ -60,9 +60,7 @@ class GeminiConfig(BaseSettings):
     top_p: float = Field(
         default=0.95, ge=0.0, le=1.0, description="Nucleus sampling threshold"
     )
-    top_k: int = Field(
-        default=40, ge=1, le=100, description="Top-k sampling parameter"
-    )
+    top_k: int = Field(default=40, ge=1, le=100, description="Top-k sampling parameter")
     max_output_tokens: int = Field(
         default=2048,
         ge=100,
