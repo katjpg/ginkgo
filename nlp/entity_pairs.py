@@ -101,16 +101,15 @@ def filter_by_type(pairs: list[dict]) -> list[dict]:
         pairs: List of entity pair dictionaries
         
     Returns:
-        Filtered list containing only semantically possible type combinations
+        Filtered list containing only semantically plausible type combinations
     """
     filtered = []
     
     for pair in pairs:
         type_tuple = (pair['head']['type'], pair['tail']['type'])
-        reverse_tuple = (pair['tail']['type'], pair['head']['type'])
         
-        # check both orderings since some relations are symmetric
-        if type_tuple in VALID_TYPE_PAIRS or reverse_tuple in VALID_TYPE_PAIRS:
+        # only check forward direction - relations are directional
+        if type_tuple in VALID_TYPE_PAIRS:
             filtered.append(pair)
     
     return filtered
