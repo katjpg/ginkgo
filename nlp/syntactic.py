@@ -226,3 +226,185 @@ def find_relations(s1: Span, s2: Span) -> list[VerbRelation]:
         relations.extend(analyze_verb(verb_token, s1, s2))
     
     return relations
+
+def find_sdp(t1: Token, t2: Token) -> list[Token]:
+    """Extract shortest dependency path between tokens.
+    
+    Finds the minimal grammatical path connecting two entities by traversing
+    up from each token to their lca, then combining the paths.
+    
+    Args:
+        t1: First token (typically entity root)
+        t2: Second token (typically entity root)
+        
+    Returns:
+        List of tokens forming the shortest dependency path, empty if no path exists
+    """
+    lca = find_lca(t1, t2)
+    if not lca:
+        return []
+    
+    path = []
+    
+    # traverse from first token up to LCA
+    curr = t1
+    while curr != lca:
+        path.append(curr)
+        curr = curr.head
+    
+    # add the LCA itself
+    path.append(lca)
+    
+    # collect path from second token to LCA (will reverse later)
+    down_path = []
+    curr = t2
+    while curr != lca:
+        down_path.append(curr)
+        curr = curr.head
+    
+    # add reversed path from LCA to second token
+    path.extend(reversed(down_path))
+    
+    return path
+
+
+def get_1hop(sdp: list[Token]) -> list[Token]:
+    """Get 1-hop neighbors from shortest dependency path.
+    
+    Identifies tokens exactly one dependency edge away from any SDP token.
+    
+    Focuses on modifiers (negation, adjectives, compounds) that specify
+    entity meaning + eliminates noise. 
+    
+    Captures important context like "linear" in "linear regression" or "speaker" in
+    "speaker verification".
+    
+    Args:
+        sdp: List of tokens forming the shortest dependency path
+        
+    Returns:
+        List of 1-hop neighbor tokens with semantically important dependency types
+    """
+    neighbors = []
+    sdp_set = set(sdp)
+    
+    # dependency types that typically carry important semantic information
+    important_deps = {
+        'neg',      # negation (critical for meaning)
+        'amod',     # adjectival modifier (e.g., "linear" regression)
+        'advmod',   # adverbial modifier (e.g., "significantly" improves)
+        'compound', # compound modifier (e.g., "speaker" verification)
+        'nummod'    # numeric modifier (e.g., "three" methods)
+    }
+    
+    for token in sdp:
+        for child in token.children:
+            # only include children not already in SDP and with important dependency types
+            if child not in sdp_set and child.dep_ in important_deps:
+                neighbors.append(child)
+    
+    return neighbors
+
+
+def extract_path(t1: Token, t2: Token) -> dict:
+    """Extract structured SDP features for entity pair.
+    
+    Transforms raw dependency parsing into machine-readable features that capture
+    syntactic relationships. 
+    
+    Structures information about verbs, prepositions,
+    and negation for downstream relation extraction processing.
+    
+    Args:
+        t1: First entity's root token
+        t2: Second entity's root token
+        
+    Returns:
+        Dictionary containing:
+        - sdp: List of token texts in shortest path
+        - context: List of 1-hop neighbor token texts
+        - verb: First verb in path (if any)
+        - preps: All prepositions in path
+        - negated: Boolean indicating negation presence
+    """
+    sdp = find_sdp(t1, t2)
+    
+    # handle case where no path exists (e.g., disconnected parse)
+    if not sdp:
+        return {
+            'sdp': [],
+            'context': [],
+            'verb': None,
+            'preps': [],
+            'negated': False
+        }
+    
+    # get contextual modifiers
+    context = get_1hop(sdp)
+    
+    # extract linguistic features from path
+    sdp_texts = [t.text for t in sdp]
+    context_texts = [t.text for t in context]
+    
+    # find first verb in path (often the main predicate)
+    verb = None
+    for token in sdp:
+        if token.pos_ == 'VERB':
+            verb = token.text
+            break
+    
+    # collect prepositions (indicate relationships like "of", "in", "for")
+    preps = [t.text for t in sdp if t.pos_ == 'ADP']
+    
+    # check for negation in both path and context
+    negated = any(t.dep_ == 'neg' for t in context)
+    
+    return {
+        'sdp': sdp_texts,
+        'context': context_texts,
+        'verb': verb,
+        'preps': preps,
+        'negated': negated
+    }
+
+
+def verbalize_path(t1: Token, t2: Token) -> str:
+    """Convert dependency path to natural language summary.
+    
+    Transforms tree structures into interpretable descriptions that LLMs can
+    understand.
+    
+    Args:
+        t1: First entity's root token
+        t2: Second entity's root token
+        
+    Returns:
+        Natural language description of the syntactic relationship,
+        e.g., "via 'improves' using 'on'; (negated)" or "no connection"
+    """
+    features = extract_path(t1, t2)
+    
+    # handle disconnected entities
+    if not features['sdp']:
+        return "no connection"
+    
+    parts = []
+    
+    # describe verb-mediated relationship
+    if features['verb']:
+        parts.append(f"via '{features['verb']}'")
+    
+    # describe prepositional relationships
+    if features['preps']:
+        preps_str = ', '.join(f"'{p}'" for p in features['preps'])
+        parts.append(f"using {preps_str}")
+    
+    # flag negation as it critically changes meaning
+    if features['negated']:
+        parts.append("(negated)")
+    
+    # combine parts or indicate direct connection
+    if parts:
+        return "; ".join(parts)
+    else:
+        return "direct connection"
