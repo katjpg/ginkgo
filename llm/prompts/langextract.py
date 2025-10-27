@@ -3,7 +3,7 @@ import langextract as lx
 
 PROMPT = textwrap.dedent(
     """\
-    You are a PhD researcher that extracts contextually rich scientific entities from research text. Return each entity with its type and exact text span.
+    You are a PhD researcher that extracts contextually rich scientific discourse entities from research text. Return each entity with its type and exact text span.
     
     ENTITY TYPES:
     
@@ -14,15 +14,15 @@ PROMPT = textwrap.dedent(
     
     3. metric - Specific performance measures used to evaluate the research, including named metrics with established definitions or clear task-specific formulations.
     
-    4. task - Concrete research problems or well-defined objectives, including named benchmark tasks, or domain-specific problem formulations.
+    4. task - Specific research problems or well-defined objectives, including domain-specific problem formulations.
     
-    5. object - Domain-specific subject matter being investigated or phenomena that are unique to this research area.
-       Only extract objects that provide meaningful context for specific methods.
+    5. object - Domain-specific subject matter, phenomena, or entities that are being investigated, studied, or are the main focus of the research. 
+    Not generic computational infrastructure.
     
     6. generic - Anaphoric references that clearly refer to a specific previously mentioned named entity.
        Must have determiner AND reference a specific named entity mentioned earlier.
     
-    7. other - Specific theory, frameworks, components, or domain concepts.
+    7. other - Specific theory, frameworks, or domain concepts.
     
     EXTRACTION RULES:
     - Extract ALL occurrences of each entity.
