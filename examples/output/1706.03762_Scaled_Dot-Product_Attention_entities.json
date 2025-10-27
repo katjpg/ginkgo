@@ -1,0 +1,290 @@
+[
+  {
+    "text": "Scaled Dot-Product Attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 34,
+      "end_pos": 62
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "queries",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 97,
+      "end_pos": 104
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "keys",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 109,
+      "end_pos": 113
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "values",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 136,
+      "end_pos": 142
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the dot products",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 172,
+      "end_pos": 188
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the query",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 192,
+      "end_pos": 201
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "all keys",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 207,
+      "end_pos": 215
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the softmax function",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1309,
+      "end_pos": 1329
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the weights",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 278,
+      "end_pos": 289
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the values",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 293,
+      "end_pos": 303
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the attention function",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 329,
+      "end_pos": 351
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "a set of queries",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 355,
+      "end_pos": 371
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "The keys",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 421,
+      "end_pos": 429
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "The values",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 293,
+      "end_pos": 303
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the matrix of outputs",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 500,
+      "end_pos": 521
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "additive attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 577,
+      "end_pos": 595
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "dot-product (multiplicative) attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 604,
+      "end_pos": 642
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "Dot-product attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 644,
+      "end_pos": 665
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "our algorithm",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 682,
+      "end_pos": 695
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "scaling factor",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 712,
+      "end_pos": 726
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "Additive attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 733,
+      "end_pos": 751
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "compatibility function",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 765,
+      "end_pos": 787
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "feed-forward network",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 796,
+      "end_pos": 816
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "single hidden layer",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 824,
+      "end_pos": 843
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "dot-product attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 898,
+      "end_pos": 919
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "additive attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 577,
+      "end_pos": 595
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "dot product attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1151,
+      "end_pos": 1172
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the two mechanisms",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1082,
+      "end_pos": 1100
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "additive attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1120,
+      "end_pos": 1138
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "dot product attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1151,
+      "end_pos": 1172
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the dot products",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1259,
+      "end_pos": 1275
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the softmax function",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1309,
+      "end_pos": 1329
+    },
+    "section": "Scaled Dot-Product Attention"
+  }
+]

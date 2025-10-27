@@ -1,0 +1,56 @@
+[
+  {
+    "text": "Adam optimizer",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 12,
+      "end_pos": 26
+    },
+    "section": "Optimizer"
+  },
+  {
+    "text": "\u03b2 1",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 36,
+      "end_pos": 39
+    },
+    "section": "Optimizer"
+  },
+  {
+    "text": "\u03b2 2",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 47,
+      "end_pos": 50
+    },
+    "section": "Optimizer"
+  },
+  {
+    "text": "\u03f5",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 62,
+      "end_pos": 63
+    },
+    "section": "Optimizer"
+  },
+  {
+    "text": "learning rate",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 87,
+      "end_pos": 100
+    },
+    "section": "Optimizer"
+  },
+  {
+    "text": "warmup_steps",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 228,
+      "end_pos": 240
+    },
+    "section": "Optimizer"
+  }
+]

@@ -1,0 +1,2984 @@
+[
+  {
+    "text": "Recurrent neural networks",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 0,
+      "end_pos": 25
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "long short-term memory",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 27,
+      "end_pos": 49
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "gated recurrent",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 58,
+      "end_pos": 73
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "sequence modeling",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 171,
+      "end_pos": 188
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "transduction problems",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 193,
+      "end_pos": 214
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "language modeling",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 223,
+      "end_pos": 240
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "machine translation",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 245,
+      "end_pos": 264
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "recurrent language models",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 338,
+      "end_pos": 363
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "encoder-decoder architectures",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 368,
+      "end_pos": 397
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "Recurrent models",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 409,
+      "end_pos": 425
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "sequences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 171,
+      "end_pos": 179
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "input",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 489,
+      "end_pos": 494
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "output sequences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 499,
+      "end_pos": 515
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "sequence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 586,
+      "end_pos": 594
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "hidden states",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 598,
+      "end_pos": 611
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "input",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 489,
+      "end_pos": 494
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "position",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 472,
+      "end_pos": 481
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "hidden state",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 647,
+      "end_pos": 659
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "input",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 674,
+      "end_pos": 679
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "position",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 684,
+      "end_pos": 692
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "sequence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 171,
+      "end_pos": 179
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "sequence lengths",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 815,
+      "end_pos": 831
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "examples",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 877,
+      "end_pos": 885
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "factorization tricks",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 973,
+      "end_pos": 993
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "conditional computation",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1002,
+      "end_pos": 1025
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "model performance",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1052,
+      "end_pos": 1069
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "Attention mechanisms",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1165,
+      "end_pos": 1185
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "sequence modeling",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1229,
+      "end_pos": 1246
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "transduction models",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1251,
+      "end_pos": 1270
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "dependencies",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1310,
+      "end_pos": 1322
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "sequences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 171,
+      "end_pos": 179
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "input sequences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1363,
+      "end_pos": 1368
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "output sequences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1372,
+      "end_pos": 1388
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "attention mechanisms",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1438,
+      "end_pos": 1458
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "recurrent network",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1490,
+      "end_pos": 1507
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "Transformer",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1537,
+      "end_pos": 1548
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "model architecture",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1552,
+      "end_pos": 1570
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "recurrence",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1581,
+      "end_pos": 1591
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "attention mechanism",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1165,
+      "end_pos": 1185
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "dependencies",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1310,
+      "end_pos": 1322
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "input",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 489,
+      "end_pos": 494
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "output",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 499,
+      "end_pos": 505
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "The Transformer",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1533,
+      "end_pos": 1548
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "translation quality",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 1803,
+      "end_pos": 1822
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "Extended Neural GPU",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 77,
+      "end_pos": 96
+    },
+    "section": "Background"
+  },
+  {
+    "text": "ByteNet",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 102,
+      "end_pos": 109
+    },
+    "section": "Background"
+  },
+  {
+    "text": "ConvS2S",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 118,
+      "end_pos": 125
+    },
+    "section": "Background"
+  },
+  {
+    "text": "convolutional neural networks",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 147,
+      "end_pos": 176
+    },
+    "section": "Background"
+  },
+  {
+    "text": "these models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 286,
+      "end_pos": 298
+    },
+    "section": "Background"
+  },
+  {
+    "text": "learning dependencies",
+    "type": "task",
+    "char_interval": null,
+    "section": "Background"
+  },
+  {
+    "text": "Transformer",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 581,
+      "end_pos": 592
+    },
+    "section": "Background"
+  },
+  {
+    "text": "attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 713,
+      "end_pos": 722
+    },
+    "section": "Background"
+  },
+  {
+    "text": "Multi-Head Attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 772,
+      "end_pos": 792
+    },
+    "section": "Background"
+  },
+  {
+    "text": "Self-attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 822,
+      "end_pos": 836
+    },
+    "section": "Background"
+  },
+  {
+    "text": "intra-attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 855,
+      "end_pos": 870
+    },
+    "section": "Background"
+  },
+  {
+    "text": "reading comprehension",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1075,
+      "end_pos": 1096
+    },
+    "section": "Background"
+  },
+  {
+    "text": "abstractive summarization",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1098,
+      "end_pos": 1123
+    },
+    "section": "Background"
+  },
+  {
+    "text": "textual entailment",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1125,
+      "end_pos": 1143
+    },
+    "section": "Background"
+  },
+  {
+    "text": "learning task-independent sentence representations",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1148,
+      "end_pos": 1198
+    },
+    "section": "Background"
+  },
+  {
+    "text": "End-to-end memory networks",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1212,
+      "end_pos": 1238
+    },
+    "section": "Background"
+  },
+  {
+    "text": "recurrent attention mechanism",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1254,
+      "end_pos": 1283
+    },
+    "section": "Background"
+  },
+  {
+    "text": "language question answering",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1368,
+      "end_pos": 1395
+    },
+    "section": "Background"
+  },
+  {
+    "text": "language modeling",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1400,
+      "end_pos": 1417
+    },
+    "section": "Background"
+  },
+  {
+    "text": "Transformer",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1472,
+      "end_pos": 1483
+    },
+    "section": "Background"
+  },
+  {
+    "text": "self-attention",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1536,
+      "end_pos": 1550
+    },
+    "section": "Background"
+  },
+  {
+    "text": "RNs",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1632,
+      "end_pos": 1635
+    },
+    "section": "Background"
+  },
+  {
+    "text": "convolution",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1639,
+      "end_pos": 1650
+    },
+    "section": "Background"
+  },
+  {
+    "text": "neural sequence transduction models",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 17,
+      "end_pos": 52
+    },
+    "section": "Model Architecture"
+  },
+  {
+    "text": "encoder-decoder structure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 61,
+      "end_pos": 86
+    },
+    "section": "Model Architecture"
+  },
+  {
+    "text": "the encoder",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 102,
+      "end_pos": 113
+    },
+    "section": "Model Architecture"
+  },
+  {
+    "text": "input sequence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 122,
+      "end_pos": 136
+    },
+    "section": "Model Architecture"
+  },
+  {
+    "text": "symbol representations",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 140,
+      "end_pos": 162
+    },
+    "section": "Model Architecture"
+  },
+  {
+    "text": "sequence of continuous representations",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 184,
+      "end_pos": 222
+    },
+    "section": "Model Architecture"
+  },
+  {
+    "text": "z",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 223,
+      "end_pos": 224
+    },
+    "section": "Model Architecture"
+  },
+  {
+    "text": "the decoder",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 253,
+      "end_pos": 264
+    },
+    "section": "Model Architecture"
+  },
+  {
+    "text": "output sequence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 283,
+      "end_pos": 298
+    },
+    "section": "Model Architecture"
+  },
+  {
+    "text": "symbols",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 318,
+      "end_pos": 325
+    },
+    "section": "Model Architecture"
+  },
+  {
+    "text": "the model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 362,
+      "end_pos": 371
+    },
+    "section": "Model Architecture"
+  },
+  {
+    "text": "self-attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 549,
+      "end_pos": 563
+    },
+    "section": "Model Architecture"
+  },
+  {
+    "text": "point-wise, fully connected layers",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 568,
+      "end_pos": 602
+    },
+    "section": "Model Architecture"
+  },
+  {
+    "text": "the encoder",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 612,
+      "end_pos": 623
+    },
+    "section": "Model Architecture"
+  },
+  {
+    "text": "the decoder",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 253,
+      "end_pos": 264
+    },
+    "section": "Model Architecture"
+  },
+  {
+    "text": "encoder",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 0,
+      "end_pos": 7
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "layers",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 63,
+      "end_pos": 69
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "multi-head self-attention mechanism",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 117,
+      "end_pos": 152
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "fully connected feed-forward network",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 195,
+      "end_pos": 231
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "residual connection",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 245,
+      "end_pos": 264
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "layer normalization",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 316,
+      "end_pos": 335
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "Layer Norm",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 381,
+      "end_pos": 391
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "outputs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 353,
+      "end_pos": 359
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "decoder",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 629,
+      "end_pos": 636
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "layers",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 63,
+      "end_pos": 69
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "sub-layers",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 292,
+      "end_pos": 302
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "multi-head attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 816,
+      "end_pos": 836
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "output",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 846,
+      "end_pos": 852
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "residual connections",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 909,
+      "end_pos": 929
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "layer normalization",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 973,
+      "end_pos": 992
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "self-attention sub-layer",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1013,
+      "end_pos": 1037
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "masking",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1125,
+      "end_pos": 1132
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "output embeddings",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1162,
+      "end_pos": 1179
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "predictions",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1225,
+      "end_pos": 1236
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "outputs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1281,
+      "end_pos": 1288
+    },
+    "section": "Encoder and Decoder Stacks"
+  },
+  {
+    "text": "attention function",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 3,
+      "end_pos": 21
+    },
+    "section": "Attention"
+  },
+  {
+    "text": "query",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 52,
+      "end_pos": 57
+    },
+    "section": "Attention"
+  },
+  {
+    "text": "key-value pairs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 71,
+      "end_pos": 86
+    },
+    "section": "Attention"
+  },
+  {
+    "text": "output",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 93,
+      "end_pos": 99
+    },
+    "section": "Attention"
+  },
+  {
+    "text": "query",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 111,
+      "end_pos": 116
+    },
+    "section": "Attention"
+  },
+  {
+    "text": "keys",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 118,
+      "end_pos": 122
+    },
+    "section": "Attention"
+  },
+  {
+    "text": "values",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 124,
+      "end_pos": 130
+    },
+    "section": "Attention"
+  },
+  {
+    "text": "output",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 136,
+      "end_pos": 142
+    },
+    "section": "Attention"
+  },
+  {
+    "text": "vectors",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 151,
+      "end_pos": 158
+    },
+    "section": "Attention"
+  },
+  {
+    "text": "output",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 164,
+      "end_pos": 170
+    },
+    "section": "Attention"
+  },
+  {
+    "text": "values",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 75,
+      "end_pos": 80
+    },
+    "section": "Attention"
+  },
+  {
+    "text": "query",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 52,
+      "end_pos": 57
+    },
+    "section": "Attention"
+  },
+  {
+    "text": "key",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 71,
+      "end_pos": 74
+    },
+    "section": "Attention"
+  },
+  {
+    "text": "Scaled Dot-Product Attention",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 201,
+      "end_pos": 229
+    },
+    "section": "Attention"
+  },
+  {
+    "text": "Multi-Head Attention",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 230,
+      "end_pos": 250
+    },
+    "section": "Attention"
+  },
+  {
+    "text": "Scaled Dot-Product Attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 34,
+      "end_pos": 62
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "queries",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 97,
+      "end_pos": 104
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "keys",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 109,
+      "end_pos": 113
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "values",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 136,
+      "end_pos": 142
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the dot products",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 172,
+      "end_pos": 188
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the query",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 192,
+      "end_pos": 201
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "all keys",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 207,
+      "end_pos": 215
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the softmax function",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1309,
+      "end_pos": 1329
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the weights",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 278,
+      "end_pos": 289
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the values",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 293,
+      "end_pos": 303
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the attention function",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 329,
+      "end_pos": 351
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "a set of queries",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 355,
+      "end_pos": 371
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "The keys",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 421,
+      "end_pos": 429
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "The values",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 293,
+      "end_pos": 303
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the matrix of outputs",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 500,
+      "end_pos": 521
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "additive attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 577,
+      "end_pos": 595
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "dot-product (multiplicative) attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 604,
+      "end_pos": 642
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "Dot-product attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 644,
+      "end_pos": 665
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "our algorithm",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 682,
+      "end_pos": 695
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "scaling factor",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 712,
+      "end_pos": 726
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "Additive attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 733,
+      "end_pos": 751
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "compatibility function",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 765,
+      "end_pos": 787
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "feed-forward network",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 796,
+      "end_pos": 816
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "single hidden layer",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 824,
+      "end_pos": 843
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "dot-product attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 898,
+      "end_pos": 919
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "additive attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 577,
+      "end_pos": 595
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "dot product attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1151,
+      "end_pos": 1172
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the two mechanisms",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1082,
+      "end_pos": 1100
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "additive attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1120,
+      "end_pos": 1138
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "dot product attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1151,
+      "end_pos": 1172
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the dot products",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1259,
+      "end_pos": 1275
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "the softmax function",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1309,
+      "end_pos": 1329
+    },
+    "section": "Scaled Dot-Product Attention"
+  },
+  {
+    "text": "attention function",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 31,
+      "end_pos": 49
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "keys",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 76,
+      "end_pos": 80
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "values",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 82,
+      "end_pos": 88
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "queries",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 93,
+      "end_pos": 100
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "linear projections",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 206,
+      "end_pos": 224
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "these projected versions",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 282,
+      "end_pos": 306
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "queries",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 310,
+      "end_pos": 317
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "keys",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 319,
+      "end_pos": 323
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "values",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 328,
+      "end_pos": 334
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "attention function",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 355,
+      "end_pos": 373
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "output values",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 413,
+      "end_pos": 426
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "Multi-head attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 532,
+      "end_pos": 552
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "the model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 560,
+      "end_pos": 569
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "information",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 591,
+      "end_pos": 602
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "representation subspaces",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 618,
+      "end_pos": 642
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "attention head",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 681,
+      "end_pos": 695
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "parameter matrices",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 754,
+      "end_pos": 772
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "attention layers",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 811,
+      "end_pos": 827
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "heads",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 832,
+      "end_pos": 837
+    },
+    "section": "Multi-Head Attention"
+  },
+  {
+    "text": "Transformer",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 4,
+      "end_pos": 15
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "multi-head attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 21,
+      "end_pos": 41
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "encoder-decoder attention",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 73,
+      "end_pos": 98
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "queries",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 112,
+      "end_pos": 119
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "keys",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 173,
+      "end_pos": 177
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "values",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 182,
+      "end_pos": 188
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "encoder",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 217,
+      "end_pos": 224
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "every position in the decoder",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 238,
+      "end_pos": 267
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "all positions in the input sequence",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 283,
+      "end_pos": 318
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "encoder-decoder attention mechanisms",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 344,
+      "end_pos": 380
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "sequence-to-sequence models",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 384,
+      "end_pos": 411
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "self-attention layers",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 452,
+      "end_pos": 473
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "keys",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 512,
+      "end_pos": 516
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "values",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 518,
+      "end_pos": 524
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "queries",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 529,
+      "end_pos": 536
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "the encoder",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 613,
+      "end_pos": 624
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "Each position in the encoder",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 626,
+      "end_pos": 654
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "all positions in the previous layer of the encoder",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 669,
+      "end_pos": 719
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "self-attention layers",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 734,
+      "end_pos": 755
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "each position in the decoder",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 777,
+      "end_pos": 805
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "all positions in the decoder",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 819,
+      "end_pos": 847
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "leftward information flow",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 902,
+      "end_pos": 927
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "auto-regressive property",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 959,
+      "end_pos": 983
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "scaled dot-product attention",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1013,
+      "end_pos": 1041
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "softmax",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1104,
+      "end_pos": 1111
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "values",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1077,
+      "end_pos": 1083
+    },
+    "section": "Applications of Attention in our Model"
+  },
+  {
+    "text": "attention sub-layers",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 15,
+      "end_pos": 35
+    },
+    "section": "Position-wise Feed-Forward Networks"
+  },
+  {
+    "text": "fully connected feed-forward network",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 94,
+      "end_pos": 130
+    },
+    "section": "Position-wise Feed-Forward Networks"
+  },
+  {
+    "text": "ReLU activation",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 245,
+      "end_pos": 260
+    },
+    "section": "Position-wise Feed-Forward Networks"
+  },
+  {
+    "text": "linear transformations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 215,
+      "end_pos": 237
+    },
+    "section": "Position-wise Feed-Forward Networks"
+  },
+  {
+    "text": "convolutions",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 439,
+      "end_pos": 451
+    },
+    "section": "Position-wise Feed-Forward Networks"
+  },
+  {
+    "text": "d model",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 514,
+      "end_pos": 521
+    },
+    "section": "Position-wise Feed-Forward Networks"
+  },
+  {
+    "text": "d f f",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 568,
+      "end_pos": 573
+    },
+    "section": "Position-wise Feed-Forward Networks"
+  },
+  {
+    "text": "sequence transduction models",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 19,
+      "end_pos": 47
+    },
+    "section": "Embeddings and Softmax"
+  },
+  {
+    "text": "input tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 90,
+      "end_pos": 102
+    },
+    "section": "Embeddings and Softmax"
+  },
+  {
+    "text": "output tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 107,
+      "end_pos": 120
+    },
+    "section": "Embeddings and Softmax"
+  },
+  {
+    "text": "vectors",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 124,
+      "end_pos": 131
+    },
+    "section": "Embeddings and Softmax"
+  },
+  {
+    "text": "linear transformation",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 184,
+      "end_pos": 205
+    },
+    "section": "Embeddings and Softmax"
+  },
+  {
+    "text": "softmax function",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 210,
+      "end_pos": 226
+    },
+    "section": "Embeddings and Softmax"
+  },
+  {
+    "text": "our model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 299,
+      "end_pos": 308
+    },
+    "section": "Embeddings and Softmax"
+  },
+  {
+    "text": "weight matrix",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 328,
+      "end_pos": 341
+    },
+    "section": "Embeddings and Softmax"
+  },
+  {
+    "text": "embedding layers",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 358,
+      "end_pos": 374
+    },
+    "section": "Embeddings and Softmax"
+  },
+  {
+    "text": "pre-softmax linear transformation",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 383,
+      "end_pos": 416
+    },
+    "section": "Embeddings and Softmax"
+  },
+  {
+    "text": "weights",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 477,
+      "end_pos": 484
+    },
+    "section": "Embeddings and Softmax"
+  },
+  {
+    "text": "our model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 6,
+      "end_pos": 15
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "recurrence",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 28,
+      "end_pos": 38
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "convolution",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 46,
+      "end_pos": 57
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "the model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 72,
+      "end_pos": 81
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "the sequence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 110,
+      "end_pos": 122
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "positional encodings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 248,
+      "end_pos": 268
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "input embeddings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 277,
+      "end_pos": 293
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "encoder",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 316,
+      "end_pos": 323
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "decoder stacks",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 328,
+      "end_pos": 342
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "positional encodings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 348,
+      "end_pos": 368
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "embeddings",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 408,
+      "end_pos": 418
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "positional encodings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 477,
+      "end_pos": 497
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "sine and cosine functions",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 542,
+      "end_pos": 567
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "position",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 611,
+      "end_pos": 619
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "dimension",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 633,
+      "end_pos": 642
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "positional encoding",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 675,
+      "end_pos": 694
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "sinusoid",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 712,
+      "end_pos": 720
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "positional encodings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 248,
+      "end_pos": 268
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "the model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 852,
+      "end_pos": 861
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "relative positions",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 891,
+      "end_pos": 909
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "PE pos+k",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 943,
+      "end_pos": 950
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "PE pos",
+    "type": "other",
+    "char_interval": null,
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "learned positional embeddings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1035,
+      "end_pos": 1064
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "the two versions",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1092,
+      "end_pos": 1108
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "sinusoidal version",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1178,
+      "end_pos": 1196
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "the model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1218,
+      "end_pos": 1227
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "sequence lengths",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1246,
+      "end_pos": 1262
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "self-attention layers",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 46,
+      "end_pos": 67
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "recurrent and convolutional layers",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 75,
+      "end_pos": 109
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "sequence of symbol representations",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 156,
+      "end_pos": 190
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "sequence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 218,
+      "end_pos": 226
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "hidden layer",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 291,
+      "end_pos": 303
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "sequence transduction",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 317,
+      "end_pos": 338
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "self-attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 381,
+      "end_pos": 395
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "computational complexity",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 443,
+      "end_pos": 467
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "computation",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 504,
+      "end_pos": 515
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "sequential operations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 579,
+      "end_pos": 600
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "path length",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 628,
+      "end_pos": 639
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "long-range dependencies",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 648,
+      "end_pos": 671
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "Learning long-range dependencies",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 688,
+      "end_pos": 720
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "paths",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 862,
+      "end_pos": 867
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "signals",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 889,
+      "end_pos": 896
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "network",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 921,
+      "end_pos": 928
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "path length",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1115,
+      "end_pos": 1126
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "self-attention layer",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1243,
+      "end_pos": 1263
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "recurrent layer",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1357,
+      "end_pos": 1372
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "computational complexity",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1422,
+      "end_pos": 1446
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "self-attention layers",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1448,
+      "end_pos": 1469
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "recurrent layers",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1486,
+      "end_pos": 1502
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "sentence representations",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1617,
+      "end_pos": 1641
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "machine translations",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1677,
+      "end_pos": 1697
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "word-piece",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1707,
+      "end_pos": 1717
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "byte-pair",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1726,
+      "end_pos": 1735
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "computational performance",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1768,
+      "end_pos": 1793
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "long sequences",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1819,
+      "end_pos": 1833
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "self-attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1835,
+      "end_pos": 1849
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "neighborhood",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1892,
+      "end_pos": 1904
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "input sequence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1922,
+      "end_pos": 1936
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "output position",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1968,
+      "end_pos": 1983
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "the maximum path length",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2005,
+      "end_pos": 2028
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "this approach",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2063,
+      "end_pos": 2076
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "convolutional layer",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2110,
+      "end_pos": 2129
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "contiguous kernels",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2284,
+      "end_pos": 2302
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "dilated convolutions",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2335,
+      "end_pos": 2355
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "Convolutional layers",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2248,
+      "end_pos": 2268
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "recurrent layers",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2501,
+      "end_pos": 2517
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "Separable convolutions",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2537,
+      "end_pos": 2559
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "separable convolution",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2664,
+      "end_pos": 2685
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "self-attention",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2719,
+      "end_pos": 2733
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "point-wise feed-forward layer",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2746,
+      "end_pos": 2775
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "our model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2801,
+      "end_pos": 2810
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "self-attention",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2829,
+      "end_pos": 2843
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "our models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2801,
+      "end_pos": 2810
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "attention heads",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 3007,
+      "end_pos": 3022
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "attention distributions",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2894,
+      "end_pos": 2917
+    },
+    "section": "Why Self-Attention"
+  },
+  {
+    "text": "WMT 2014 English-German dataset",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 27,
+      "end_pos": 58
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "sentence pairs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 91,
+      "end_pos": 105
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "byte-pair encoding",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 136,
+      "end_pos": 154
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "vocabulary",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 191,
+      "end_pos": 201
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "WMT 2014 English-French dataset",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 278,
+      "end_pos": 309
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "word-piece vocabulary",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 368,
+      "end_pos": 389
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "Sentence pairs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 395,
+      "end_pos": 409
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "sentence pairs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 503,
+      "end_pos": 517
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 556,
+      "end_pos": 562
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 580,
+      "end_pos": 586
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "machine",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 29,
+      "end_pos": 36
+    },
+    "section": "Hardware and Schedule"
+  },
+  {
+    "text": "NVIDIA P100 GPUs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 44,
+      "end_pos": 60
+    },
+    "section": "Hardware and Schedule"
+  },
+  {
+    "text": "our models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 11,
+      "end_pos": 21
+    },
+    "section": "Hardware and Schedule"
+  },
+  {
+    "text": "our base models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 66,
+      "end_pos": 81
+    },
+    "section": "Hardware and Schedule"
+  },
+  {
+    "text": "seconds",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 174,
+      "end_pos": 181
+    },
+    "section": "Hardware and Schedule"
+  },
+  {
+    "text": "the base models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 194,
+      "end_pos": 209
+    },
+    "section": "Hardware and Schedule"
+  },
+  {
+    "text": "steps",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 233,
+      "end_pos": 238
+    },
+    "section": "Hardware and Schedule"
+  },
+  {
+    "text": "hours",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 245,
+      "end_pos": 250
+    },
+    "section": "Hardware and Schedule"
+  },
+  {
+    "text": "our big models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 256,
+      "end_pos": 270
+    },
+    "section": "Hardware and Schedule"
+  },
+  {
+    "text": "seconds",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 331,
+      "end_pos": 338
+    },
+    "section": "Hardware and Schedule"
+  },
+  {
+    "text": "The big models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 340,
+      "end_pos": 354
+    },
+    "section": "Hardware and Schedule"
+  },
+  {
+    "text": "steps",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 380,
+      "end_pos": 385
+    },
+    "section": "Hardware and Schedule"
+  },
+  {
+    "text": "days",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 391,
+      "end_pos": 395
+    },
+    "section": "Hardware and Schedule"
+  },
+  {
+    "text": "Adam optimizer",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 12,
+      "end_pos": 26
+    },
+    "section": "Optimizer"
+  },
+  {
+    "text": "\u03b2 1",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 36,
+      "end_pos": 39
+    },
+    "section": "Optimizer"
+  },
+  {
+    "text": "\u03b2 2",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 47,
+      "end_pos": 50
+    },
+    "section": "Optimizer"
+  },
+  {
+    "text": "\u03f5",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 62,
+      "end_pos": 63
+    },
+    "section": "Optimizer"
+  },
+  {
+    "text": "learning rate",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 87,
+      "end_pos": 100
+    },
+    "section": "Optimizer"
+  },
+  {
+    "text": "warmup_steps",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 228,
+      "end_pos": 240
+    },
+    "section": "Optimizer"
+  },
+  {
+    "text": "regularization",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 25,
+      "end_pos": 39
+    },
+    "section": "Regularization"
+  },
+  {
+    "text": "Residual Dropout",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 57,
+      "end_pos": 73
+    },
+    "section": "Regularization"
+  },
+  {
+    "text": "dropout",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 83,
+      "end_pos": 90
+    },
+    "section": "Regularization"
+  },
+  {
+    "text": "sub-layer",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 117,
+      "end_pos": 126
+    },
+    "section": "Regularization"
+  },
+  {
+    "text": "sub-layer input",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 154,
+      "end_pos": 169
+    },
+    "section": "Regularization"
+  },
+  {
+    "text": "dropout",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 208,
+      "end_pos": 215
+    },
+    "section": "Regularization"
+  },
+  {
+    "text": "sums of the embeddings",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 223,
+      "end_pos": 245
+    },
+    "section": "Regularization"
+  },
+  {
+    "text": "positional encodings",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 254,
+      "end_pos": 274
+    },
+    "section": "Regularization"
+  },
+  {
+    "text": "encoder",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 287,
+      "end_pos": 294
+    },
+    "section": "Regularization"
+  },
+  {
+    "text": "decoder stacks",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 299,
+      "end_pos": 313
+    },
+    "section": "Regularization"
+  },
+  {
+    "text": "P drop",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 352,
+      "end_pos": 358
+    },
+    "section": "Regularization"
+  },
+  {
+    "text": "label smoothing",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 29,
+      "end_pos": 44
+    },
+    "section": "Label Smoothing"
+  },
+  {
+    "text": "perplexity",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 81,
+      "end_pos": 91
+    },
+    "section": "Label Smoothing"
+  },
+  {
+    "text": "the model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 96,
+      "end_pos": 105
+    },
+    "section": "Label Smoothing"
+  },
+  {
+    "text": "accuracy",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 145,
+      "end_pos": 153
+    },
+    "section": "Label Smoothing"
+  },
+  {
+    "text": "BLEU score",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 158,
+      "end_pos": 168
+    },
+    "section": "Label Smoothing"
+  }
+]

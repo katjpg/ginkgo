@@ -1,0 +1,92 @@
+[
+  {
+    "text": "WMT 2014 English-German dataset",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 27,
+      "end_pos": 58
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "sentence pairs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 91,
+      "end_pos": 105
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "byte-pair encoding",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 136,
+      "end_pos": 154
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "vocabulary",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 191,
+      "end_pos": 201
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "WMT 2014 English-French dataset",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 278,
+      "end_pos": 309
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "word-piece vocabulary",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 368,
+      "end_pos": 389
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "Sentence pairs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 395,
+      "end_pos": 409
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "sentence pairs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 503,
+      "end_pos": 517
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 556,
+      "end_pos": 562
+    },
+    "section": "Training Data and Batching"
+  },
+  {
+    "text": "tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 580,
+      "end_pos": 586
+    },
+    "section": "Training Data and Batching"
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "text": "our model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 6,
+      "end_pos": 15
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "recurrence",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 28,
+      "end_pos": 38
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "convolution",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 46,
+      "end_pos": 57
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "the model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 72,
+      "end_pos": 81
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "the sequence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 110,
+      "end_pos": 122
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "positional encodings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 248,
+      "end_pos": 268
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "input embeddings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 277,
+      "end_pos": 293
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "encoder",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 316,
+      "end_pos": 323
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "decoder stacks",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 328,
+      "end_pos": 342
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "positional encodings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 348,
+      "end_pos": 368
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "embeddings",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 408,
+      "end_pos": 418
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "positional encodings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 477,
+      "end_pos": 497
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "sine and cosine functions",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 542,
+      "end_pos": 567
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "position",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 611,
+      "end_pos": 619
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "dimension",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 633,
+      "end_pos": 642
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "positional encoding",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 675,
+      "end_pos": 694
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "sinusoid",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 712,
+      "end_pos": 720
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "positional encodings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 248,
+      "end_pos": 268
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "the model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 852,
+      "end_pos": 861
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "relative positions",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 891,
+      "end_pos": 909
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "PE pos+k",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 943,
+      "end_pos": 950
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "PE pos",
+    "type": "other",
+    "char_interval": null,
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "learned positional embeddings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1035,
+      "end_pos": 1064
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "the two versions",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1092,
+      "end_pos": 1108
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "sinusoidal version",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1178,
+      "end_pos": 1196
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "the model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1218,
+      "end_pos": 1227
+    },
+    "section": "Positional Encoding"
+  },
+  {
+    "text": "sequence lengths",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1246,
+      "end_pos": 1262
+    },
+    "section": "Positional Encoding"
+  }
+]
