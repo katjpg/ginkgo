@@ -14,7 +14,7 @@ class LangExtractConfig(BaseSettings):
 
     api_key: str
     model_id: str = Field(
-        default="gemini-2.5-flash", description="Model identifier for extraction"
+        default="gemini-2.5-flash-lite", description="Model identifier for extraction"
     )
     extraction_passes: int = Field(
         default=2,
@@ -48,7 +48,7 @@ class GeminiConfig(BaseSettings):
 
     api_key: str
     model_id: str = Field(
-        default="gemini-2.5-flash",
+        default="gemini-2.5-flash-lite",
         description="Model identifier for relation extraction",
     )
     temperature: float = Field(
