@@ -23,7 +23,7 @@ class LangExtractConfig(BaseSettings):
         description="Number of extraction passes for improved recall",
     )
     max_workers: int = Field(
-        default=20,
+        default=10,
         ge=1,
         le=100,
         description="Number of parallel workers for processing",
