@@ -1,417 +1,193 @@
 import textwrap
 import langextract as lx
 
-
 PROMPT = textwrap.dedent(
     """\
-    Extract scientific entities from research abstracts using exact text spans.
+    Extract scientific entities from research text. Return each entity with its type and exact text span.
     
-    Entity types:
+    ENTITY TYPES:
     
-    task: specific research problems (e.g., "image classification", "named entity recognition")
-    method: named systems/algorithms (e.g., "BERT", "ResNet", "Belief propagation algorithm")
-    dataset: named benchmark collections (e.g., "ImageNet", "CoNLL2003")
-    object: domain-specific entities being studied (e.g., "proteins", "biomedical entities")
-    metric: performance measures (e.g., "F1 score", "accuracy", "BLEU")
-    generic: anaphoric references with determiners (e.g., "this approach", "our model")
-    other: technical concepts providing context (e.g., "neural architecture", "attention mechanism")
+    1. method - Named algorithms, models, systems with proper names, or model categories
+       Extract: BERT, ResNet-50, Mask R-CNN, AlphaFold2, GPT-4, BiLSTM-CRF, LLM, Graph neural networks
+       Note: LLM is METHOD not OBJECT (it is a category of models)
     
-    Extraction rules:
+    2. dataset - Named benchmark collections or corpora
+       Extract: ImageNet, CoNLL2003, HotpotQA, MNIST, WMT 2014, COCO, Cityscapes
     
-    No overlapping spans.
-    - Extract first occurrence only and skip repeated mentions of same entity.
+    3. metric - Specific performance measures
+       Extract: F1 score, accuracy, BLEU, precision, recall, mAP, top-5 accuracy, GDT-TS
     
-    Span boundaries:
-    - Extract entity mentions WITHOUT surrounding punctuation (quotes, parentheses)
-    - For acronyms with expansions like "Retrieval-Augmented Generation (RAG)", extract ONLY the primary form
-    - For methods with years like "BERT (2018)", extract ONLY the method name
-    - Strip leading/trailing punctuation from extracted spans
+    4. task - Specific research problems or objectives
+       Extract: named entity recognition, image classification, question answering, protein folding
     
-    Acronym handling:
-    - If full form appears: extract full form on first mention (e.g., "Retrieval-Augmented Generation")
-    - If acronym appears: extract acronym only (e.g., "RAG")
-    - Do NOT extract "X (Y)" format - choose one or the other based on context
+    5. object - Domain entities being studied or manipulated
+       Extract: proteins, knowledge graphs, neural networks, amino acid sequences, queries, entities
     
-    Do NOT extract:
-    - Meta-discourse: "literature review", "related works", "prior work"
-    - Meta-linguistic: "abbreviation", "definition", "term", "word", "full name"
-    - Generic processes: "manual review", "rules", "normalization", "clean-up work"
-    - Gerund processes: "normalized entities", "extracted features"
-    - Entity type lists: when describing what a system/dataset extracts (e.g., "extracts person and location" Do NOT extract "person" and "location")
-    - Standalone task verbs: "evaluation", "analysis", "testing", "method", without specific context
-    - Vague references: "the machine", "methods" without determiner
+    6. generic - Anaphoric references that clearly refer to a specific previously mentioned named entity
+       Extract: this approach, our method, The model, these results, Our experiments
+       Must have determiner AND reference a specific named entity mentioned earlier
+       Do NOT extract: overall workflow, design rationale, each component, the following, an example
     
-    Generic type: Only "this/our/the/these" + noun referring to specific prior contribution."""
+    7. other - Named technical concepts with proper nouns or well-defined technical terms
+       Extract: transformer architecture, attention mechanisms, residual connections, Adam optimizer, C-HNSW index
+       Must contain specific identifiers or be well-defined named concepts
+       Do NOT extract: graph-based RAG approach, neural network-based method (descriptive phrases)
+    
+    EXTRACTION RULES:
+    
+    Extract ALL occurrences of each entity to enable frequency-based filtering.
+    
+    Extract exact text spans without surrounding punctuation, quotes, or parentheses.
+    
+    For acronyms with expansions like "Retrieval-Augmented Generation (RAG)", extract ONLY the full form OR acronym, not both.
+    
+    When an entity fits multiple types, use the highest priority type from the list above.
+    
+    SKIP THESE:
+    
+    Abstract nouns: efficiency, reusability, performance, infrastructure, speed
+    Generic plurals: models, methods, datasets, features, parameters, vectors, architectures
+    Section labels or abbreviations: VR, LR, AR, C1, C2, Section 3
+    Figure or table references: Figure 3, Table 1, Figure 2a
+    Evaluation dimensions: Comprehensiveness, Diversity, Empowerment, Overall
+    Discourse markers: the following, an example, overall workflow, design rationale, each component
+    Descriptive method phrases: graph-based RAG approach, neural network-based method, traditional methods
+    Variables or symbols: x, y, threshold, weight, alpha, beta
+    Process descriptions: training process, evaluation phase, indexing stage
+    Adjective plus generic noun: traditional methods, deep learning models, pre-trained models
+    Meta-discourse: prior work, related work, literature review
+    Vague descriptors: relevant information, high-level, state-of-the-art
+    Generic technical terms: query vector, weight matrix, loss function, exact matching
+    
+    OUTPUT FORMAT:
+    
+    Return entities in order of appearance with type and exact text.
+    """
 )
 
 EXAMPLES = [
     lx.data.ExampleData(
         text="Image classification remains a fundamental challenge in computer vision. We propose ResNet to address this problem. ResNet uses residual connections to enable training of very deep networks. We evaluate our approach on ImageNet and achieve 93.1% top-5 accuracy.",
         extractions=[
-            lx.data.Extraction(
-                extraction_class="task",
-                extraction_text="Image classification",
-            ),
-            lx.data.Extraction(
-                extraction_class="object",
-                extraction_text="computer vision",
-            ),
-            lx.data.Extraction(
-                extraction_class="method",
-                extraction_text="ResNet",
-            ),
-            lx.data.Extraction(
-                extraction_class="generic",
-                extraction_text="this problem",
-            ),
-            lx.data.Extraction(
-                extraction_class="method",
-                extraction_text="residual connections",
-            ),
-            lx.data.Extraction(
-                extraction_class="generic",
-                extraction_text="our approach",
-            ),
-            lx.data.Extraction(
-                extraction_class="dataset",
-                extraction_text="ImageNet",
-            ),
-            lx.data.Extraction(
-                extraction_class="metric",
-                extraction_text="top-5 accuracy",
-            ),
+            lx.data.Extraction(extraction_class="task", extraction_text="Image classification"),
+            lx.data.Extraction(extraction_class="method", extraction_text="ResNet"),
+            lx.data.Extraction(extraction_class="generic", extraction_text="this problem"),
+            lx.data.Extraction(extraction_class="method", extraction_text="ResNet"),
+            lx.data.Extraction(extraction_class="other", extraction_text="residual connections"),
+            lx.data.Extraction(extraction_class="object", extraction_text="deep networks"),
+            lx.data.Extraction(extraction_class="generic", extraction_text="our approach"),
+            lx.data.Extraction(extraction_class="dataset", extraction_text="ImageNet"),
+            lx.data.Extraction(extraction_class="metric", extraction_text="top-5 accuracy"),
         ],
     ),
     lx.data.ExampleData(
-        text="Machine translation systems struggle with long sequences due to memory constraints. We introduce Linformer to overcome this limitation. The model approximates attention using low-rank matrix decomposition. Experiments on WMT 2014 demonstrate 28.4 BLEU score while reducing computational complexity.",
+        text="Named entity recognition extracts entities from text. We introduce BiLSTM-CRF using contextualized embeddings. The model achieves 91.2% F1 on CoNLL2003.",
         extractions=[
-            lx.data.Extraction(
-                extraction_class="task",
-                extraction_text="Machine translation",
-            ),
-            lx.data.Extraction(
-                extraction_class="task",
-                extraction_text="long sequences",
-            ),
-            lx.data.Extraction(
-                extraction_class="method",
-                extraction_text="Linformer",
-            ),
-            lx.data.Extraction(
-                extraction_class="generic",
-                extraction_text="this limitation",
-            ),
-            lx.data.Extraction(
-                extraction_class="generic",
-                extraction_text="The model",
-            ),
-            lx.data.Extraction(
-                extraction_class="other",
-                extraction_text="attention",
-            ),
-            lx.data.Extraction(
-                extraction_class="method",
-                extraction_text="low-rank matrix decomposition",
-            ),
-            lx.data.Extraction(
-                extraction_class="dataset",
-                extraction_text="WMT 2014",
-            ),
-            lx.data.Extraction(
-                extraction_class="metric",
-                extraction_text="BLEU score",
-            ),
-            lx.data.Extraction(
-                extraction_class="other",
-                extraction_text="computational complexity",
-            ),
+            lx.data.Extraction(extraction_class="task", extraction_text="Named entity recognition"),
+            lx.data.Extraction(extraction_class="object", extraction_text="entities"),
+            lx.data.Extraction(extraction_class="object", extraction_text="text"),
+            lx.data.Extraction(extraction_class="method", extraction_text="BiLSTM-CRF"),
+            lx.data.Extraction(extraction_class="other", extraction_text="contextualized embeddings"),
+            lx.data.Extraction(extraction_class="generic", extraction_text="The model"),
+            lx.data.Extraction(extraction_class="metric", extraction_text="F1"),
+            lx.data.Extraction(extraction_class="dataset", extraction_text="CoNLL2003"),
         ],
     ),
     lx.data.ExampleData(
-        text="Graph neural networks analyze structured data by message passing between nodes. However, over-smoothing limits their expressiveness in deep architectures. We propose GraphSAINT using importance sampling for scalable training. Our method is evaluated on Reddit social network with 233,000 nodes, achieving 97.1% F1 score.",
+        text="Graph neural networks process relational data through message passing. GCN aggregates features using spectral convolution. Our experiments on Cora dataset show 81.5% classification accuracy.",
         extractions=[
-            lx.data.Extraction(
-                extraction_class="method",
-                extraction_text="Graph neural networks",
-            ),
-            lx.data.Extraction(
-                extraction_class="object",
-                extraction_text="structured data",
-            ),
-            lx.data.Extraction(
-                extraction_class="method",
-                extraction_text="message passing",
-            ),
-            lx.data.Extraction(
-                extraction_class="object",
-                extraction_text="nodes",
-            ),
-            lx.data.Extraction(
-                extraction_class="task",
-                extraction_text="over-smoothing",
-            ),
-            lx.data.Extraction(
-                extraction_class="other",
-                extraction_text="deep architectures",
-            ),
-            lx.data.Extraction(
-                extraction_class="method",
-                extraction_text="GraphSAINT",
-            ),
-            lx.data.Extraction(
-                extraction_class="method",
-                extraction_text="importance sampling",
-            ),
-            lx.data.Extraction(
-                extraction_class="generic",
-                extraction_text="Our method",
-            ),
-            lx.data.Extraction(
-                extraction_class="dataset",
-                extraction_text="Reddit social network",
-            ),
-            lx.data.Extraction(
-                extraction_class="metric",
-                extraction_text="F1 score",
-            ),
+            lx.data.Extraction(extraction_class="method", extraction_text="Graph neural networks"),
+            lx.data.Extraction(extraction_class="object", extraction_text="relational data"),
+            lx.data.Extraction(extraction_class="other", extraction_text="message passing"),
+            lx.data.Extraction(extraction_class="method", extraction_text="GCN"),
+            lx.data.Extraction(extraction_class="other", extraction_text="spectral convolution"),
+            lx.data.Extraction(extraction_class="generic", extraction_text="Our experiments"),
+            lx.data.Extraction(extraction_class="dataset", extraction_text="Cora dataset"),
+            lx.data.Extraction(extraction_class="metric", extraction_text="classification accuracy"),
         ],
     ),
     lx.data.ExampleData(
-        text="Object detection in autonomous vehicles requires real-time processing. YOLO achieves this through single-pass neural architecture. The system processes frames at 45 FPS on COCO dataset. This approach balances speed and accuracy for practical deployment.",
+        text="Question answering systems retrieve information to answer queries. BERT-QA uses transformer encoders for passage ranking. We evaluate on SQuAD 2.0 achieving 89.8% exact match and 92.3% F1.",
         extractions=[
-            lx.data.Extraction(
-                extraction_class="task",
-                extraction_text="Object detection",
-            ),
-            lx.data.Extraction(
-                extraction_class="object",
-                extraction_text="autonomous vehicles",
-            ),
-            lx.data.Extraction(
-                extraction_class="task",
-                extraction_text="real-time processing",
-            ),
-            lx.data.Extraction(
-                extraction_class="method",
-                extraction_text="YOLO",
-            ),
-            lx.data.Extraction(
-                extraction_class="method",
-                extraction_text="single-pass neural architecture",
-            ),
-            lx.data.Extraction(
-                extraction_class="generic",
-                extraction_text="The system",
-            ),
-            lx.data.Extraction(
-                extraction_class="metric",
-                extraction_text="FPS",
-            ),
-            lx.data.Extraction(
-                extraction_class="dataset",
-                extraction_text="COCO dataset",
-            ),
-            lx.data.Extraction(
-                extraction_class="generic",
-                extraction_text="This approach",
-            ),
-            lx.data.Extraction(
-                extraction_class="other",
-                extraction_text="speed",
-            ),
-            lx.data.Extraction(
-                extraction_class="metric",
-                extraction_text="accuracy",
-            ),
+            lx.data.Extraction(extraction_class="task", extraction_text="Question answering"),
+            lx.data.Extraction(extraction_class="object", extraction_text="queries"),
+            lx.data.Extraction(extraction_class="method", extraction_text="BERT-QA"),
+            lx.data.Extraction(extraction_class="other", extraction_text="transformer encoders"),
+            lx.data.Extraction(extraction_class="task", extraction_text="passage ranking"),
+            lx.data.Extraction(extraction_class="dataset", extraction_text="SQuAD 2.0"),
+            lx.data.Extraction(extraction_class="metric", extraction_text="exact match"),
+            lx.data.Extraction(extraction_class="metric", extraction_text="F1"),
         ],
     ),
     lx.data.ExampleData(
-        text="Protein structure prediction determines three-dimensional configurations from amino acid sequences. AlphaFold2 uses transformer architecture with attention mechanisms operating on residue pairs. The model achieves median GDT score of 92.4 on CASP14 benchmark, approaching experimental accuracy.",
+        text="Protein folding predicts three-dimensional structures from amino acid sequences. AlphaFold2 leverages attention mechanisms and multiple sequence alignments. The system obtains median GDT-TS of 92.4 on CASP14.",
         extractions=[
-            lx.data.Extraction(
-                extraction_class="task",
-                extraction_text="Protein structure prediction",
-            ),
-            lx.data.Extraction(
-                extraction_class="object",
-                extraction_text="three-dimensional configurations",
-            ),
-            lx.data.Extraction(
-                extraction_class="object",
-                extraction_text="amino acid sequences",
-            ),
-            lx.data.Extraction(
-                extraction_class="method",
-                extraction_text="AlphaFold2",
-            ),
-            lx.data.Extraction(
-                extraction_class="other",
-                extraction_text="transformer architecture",
-            ),
-            lx.data.Extraction(
-                extraction_class="other",
-                extraction_text="attention mechanisms",
-            ),
-            lx.data.Extraction(
-                extraction_class="object",
-                extraction_text="residue pairs",
-            ),
-            lx.data.Extraction(
-                extraction_class="generic",
-                extraction_text="The model",
-            ),
-            lx.data.Extraction(
-                extraction_class="metric",
-                extraction_text="GDT score",
-            ),
-            lx.data.Extraction(
-                extraction_class="dataset",
-                extraction_text="CASP14 benchmark",
-            ),
-            lx.data.Extraction(
-                extraction_class="metric",
-                extraction_text="experimental accuracy",
-            ),
+            lx.data.Extraction(extraction_class="task", extraction_text="Protein folding"),
+            lx.data.Extraction(extraction_class="object", extraction_text="three-dimensional structures"),
+            lx.data.Extraction(extraction_class="object", extraction_text="amino acid sequences"),
+            lx.data.Extraction(extraction_class="method", extraction_text="AlphaFold2"),
+            lx.data.Extraction(extraction_class="other", extraction_text="attention mechanisms"),
+            lx.data.Extraction(extraction_class="other", extraction_text="multiple sequence alignments"),
+            lx.data.Extraction(extraction_class="generic", extraction_text="The system"),
+            lx.data.Extraction(extraction_class="metric", extraction_text="GDT-TS"),
+            lx.data.Extraction(extraction_class="dataset", extraction_text="CASP14"),
         ],
     ),
     lx.data.ExampleData(
-        text="Sentiment analysis classifies emotional tone in text. We fine-tune BERT on Twitter corpus containing 1.6 million tweets. Our system achieves 89.3% accuracy on test set, outperforming previous approaches by 3.2 percentage points.",
+        text="Object detection localizes and classifies objects in images. YOLO performs single-stage detection using convolutional layers. This approach processes frames at 45 FPS on COCO achieving 33.0 mAP.",
         extractions=[
-            lx.data.Extraction(
-                extraction_class="task",
-                extraction_text="Sentiment analysis",
-            ),
-            lx.data.Extraction(
-                extraction_class="object",
-                extraction_text="emotional tone",
-            ),
-            lx.data.Extraction(
-                extraction_class="object",
-                extraction_text="text",
-            ),
-            lx.data.Extraction(
-                extraction_class="method",
-                extraction_text="BERT",
-            ),
-            lx.data.Extraction(
-                extraction_class="dataset",
-                extraction_text="Twitter corpus",
-            ),
-            lx.data.Extraction(
-                extraction_class="object",
-                extraction_text="tweets",
-            ),
-            lx.data.Extraction(
-                extraction_class="generic",
-                extraction_text="Our system",
-            ),
-            lx.data.Extraction(
-                extraction_class="metric",
-                extraction_text="accuracy",
-            ),
+            lx.data.Extraction(extraction_class="task", extraction_text="Object detection"),
+            lx.data.Extraction(extraction_class="object", extraction_text="objects"),
+            lx.data.Extraction(extraction_class="object", extraction_text="images"),
+            lx.data.Extraction(extraction_class="method", extraction_text="YOLO"),
+            lx.data.Extraction(extraction_class="task", extraction_text="single-stage detection"),
+            lx.data.Extraction(extraction_class="other", extraction_text="convolutional layers"),
+            lx.data.Extraction(extraction_class="generic", extraction_text="This approach"),
+            lx.data.Extraction(extraction_class="metric", extraction_text="FPS"),
+            lx.data.Extraction(extraction_class="dataset", extraction_text="COCO"),
+            lx.data.Extraction(extraction_class="metric", extraction_text="mAP"),
         ],
     ),
     lx.data.ExampleData(
-        text="Speech recognition converts audio signals into text transcriptions. DeepSpeech employs recurrent neural networks with connectionist temporal classification loss. The model is trained on LibriSpeech dataset and evaluated using word error rate metric.",
+        text="Machine translation converts text between languages. Transformer architecture uses self-attention for sequence modeling. We train on WMT 2014 English-German obtaining 28.4 BLEU score.",
         extractions=[
-            lx.data.Extraction(
-                extraction_class="task",
-                extraction_text="Speech recognition",
-            ),
-            lx.data.Extraction(
-                extraction_class="object",
-                extraction_text="audio signals",
-            ),
-            lx.data.Extraction(
-                extraction_class="object",
-                extraction_text="text transcriptions",
-            ),
-            lx.data.Extraction(
-                extraction_class="method",
-                extraction_text="DeepSpeech",
-            ),
-            lx.data.Extraction(
-                extraction_class="other",
-                extraction_text="recurrent neural networks",
-            ),
-            lx.data.Extraction(
-                extraction_class="other",
-                extraction_text="connectionist temporal classification loss",
-            ),
-            lx.data.Extraction(
-                extraction_class="generic",
-                extraction_text="The model",
-            ),
-            lx.data.Extraction(
-                extraction_class="dataset",
-                extraction_text="LibriSpeech dataset",
-            ),
-            lx.data.Extraction(
-                extraction_class="metric",
-                extraction_text="word error rate",
-            ),
+            lx.data.Extraction(extraction_class="task", extraction_text="Machine translation"),
+            lx.data.Extraction(extraction_class="object", extraction_text="text"),
+            lx.data.Extraction(extraction_class="object", extraction_text="languages"),
+            lx.data.Extraction(extraction_class="other", extraction_text="Transformer architecture"),
+            lx.data.Extraction(extraction_class="other", extraction_text="self-attention"),
+            lx.data.Extraction(extraction_class="task", extraction_text="sequence modeling"),
+            lx.data.Extraction(extraction_class="dataset", extraction_text="WMT 2014 English-German"),
+            lx.data.Extraction(extraction_class="metric", extraction_text="BLEU score"),
         ],
     ),
     lx.data.ExampleData(
-        text="Reinforcement learning enables agents to learn optimal policies through environmental interaction. PPO stabilizes training using clipped surrogate objectives. We test this algorithm on Atari games, measuring performance by average episode reward across 49 environments.",
+        text="Semantic segmentation assigns class labels to each pixel. U-Net employs encoder-decoder architecture with skip connections. The model is trained on Cityscapes and evaluated using mean IoU metric.",
         extractions=[
-            lx.data.Extraction(
-                extraction_class="task",
-                extraction_text="Reinforcement learning",
-            ),
-            lx.data.Extraction(
-                extraction_class="object",
-                extraction_text="agents",
-            ),
-            lx.data.Extraction(
-                extraction_class="other",
-                extraction_text="optimal policies",
-            ),
-            lx.data.Extraction(
-                extraction_class="object",
-                extraction_text="environmental interaction",
-            ),
-            lx.data.Extraction(
-                extraction_class="method",
-                extraction_text="PPO",
-            ),
-            lx.data.Extraction(
-                extraction_class="other",
-                extraction_text="clipped surrogate objectives",
-            ),
-            lx.data.Extraction(
-                extraction_class="generic",
-                extraction_text="this algorithm",
-            ),
-            lx.data.Extraction(
-                extraction_class="dataset",
-                extraction_text="Atari games",
-            ),
-            lx.data.Extraction(
-                extraction_class="metric",
-                extraction_text="episode reward",
-            ),
+            lx.data.Extraction(extraction_class="task", extraction_text="Semantic segmentation"),
+            lx.data.Extraction(extraction_class="object", extraction_text="class labels"),
+            lx.data.Extraction(extraction_class="object", extraction_text="pixel"),
+            lx.data.Extraction(extraction_class="method", extraction_text="U-Net"),
+            lx.data.Extraction(extraction_class="other", extraction_text="encoder-decoder architecture"),
+            lx.data.Extraction(extraction_class="other", extraction_text="skip connections"),
+            lx.data.Extraction(extraction_class="generic", extraction_text="The model"),
+            lx.data.Extraction(extraction_class="dataset", extraction_text="Cityscapes"),
+            lx.data.Extraction(extraction_class="metric", extraction_text="mean IoU"),
         ],
     ),
     lx.data.ExampleData(
-        text="CoNLL2003 only requires the extraction of person, organizations, and locations from the news. We propose biomedicine NER for academic papers.",
+        text="Drug discovery identifies compounds that bind to target proteins. We apply DockNet for molecular docking predictions. Our method outperforms AutoDock Vina on PDBbind dataset with RMSD below 2 angstroms.",
         extractions=[
-            lx.data.Extraction(
-                extraction_class="dataset",
-                extraction_text="CoNLL2003",
-            ),
-            lx.data.Extraction(
-                extraction_class="object",
-                extraction_text="news",
-            ),
-            lx.data.Extraction(
-                extraction_class="task",
-                extraction_text="biomedicine NER",
-            ),
-            lx.data.Extraction(
-                extraction_class="object",
-                extraction_text="academic papers",
-            ),
+            lx.data.Extraction(extraction_class="task", extraction_text="Drug discovery"),
+            lx.data.Extraction(extraction_class="object", extraction_text="compounds"),
+            lx.data.Extraction(extraction_class="object", extraction_text="target proteins"),
+            lx.data.Extraction(extraction_class="method", extraction_text="DockNet"),
+            lx.data.Extraction(extraction_class="task", extraction_text="molecular docking predictions"),
+            lx.data.Extraction(extraction_class="generic", extraction_text="Our method"),
+            lx.data.Extraction(extraction_class="method", extraction_text="AutoDock Vina"),
+            lx.data.Extraction(extraction_class="dataset", extraction_text="PDBbind dataset"),
+            lx.data.Extraction(extraction_class="metric", extraction_text="RMSD"),
         ],
     ),
 ]
+
