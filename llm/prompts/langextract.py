@@ -3,11 +3,11 @@ import langextract as lx
 
 PROMPT = textwrap.dedent(
     """\
-    Extract meaningful scientific entities from research text. Return each entity with its type and exact text span.
+    Extract contextually rich scientific entities from research text. Return each entity with its type and exact text span.
     
     ENTITY TYPES:
     
-    1. method - Named algorithms, models, systems with proper names, or model categories.
+    1. method - Specific named algorithms, models, or techniques that can be trained, executed, or implemented as complete standalone systems.
        Do NOT extract descriptive method phrases including graph-based RAG approach, neural network-based method, traditional methods.
     
     2. dataset - Named benchmark collections or corpora.
@@ -22,7 +22,7 @@ PROMPT = textwrap.dedent(
     6. generic - Anaphoric references that clearly refer to a specific previously mentioned named entity.
        Must have determiner AND reference a specific named entity mentioned earlier.
     
-    7. other - Named technical concepts with proper nouns or well-defined technical terms.
+    7. other - Specific theory, frameworks, components, or domain concepts.
     
     EXTRACTION RULES:
     - Extract ALL occurrences of each entity.
@@ -39,7 +39,7 @@ PROMPT = textwrap.dedent(
     - Section labels, abbreviations, or references: VR, AR, C1, C2, Section 3, Table 1, Figure 2a.
     - Generic metrics: Comprehensiveness, Diversity, Empowerment, Overall.
     - Discourse markers: the following, an example, overall workflow, design rationale, each component.
-    - Descriptive method phrases: graph-based RAG approach, neural network-based method, traditional methods.
+    - Descriptive method phrases: graph-based RAG approach, neural network-based method, LLM-based methods.
     - Variables or symbols: x, y, threshold, weight, alpha, beta.
     - Process descriptions: training process, evaluation phase, indexing stage.
     - Meta-discourse: prior work, related work, literature review.
