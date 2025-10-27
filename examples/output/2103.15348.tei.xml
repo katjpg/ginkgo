@@ -1,0 +1,1433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">LayoutParser: A Unified Toolkit for Deep Learning Based Document Image Analysis</title>
+				<funder>
+					<orgName type="full">Harvard Data Science Initiative and Harvard Catalyst</orgName>
+				</funder>
+				<funder ref="#_Bw4B3JK">
+					<orgName type="full">National Science Foundation</orgName>
+					<orgName type="abbreviated">NSF</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Zejiang</forename><surname>Shen</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Allen Institute for AI</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ruochen</forename><surname>Zhang</surname></persName>
+							<email>ruochenzhang@brown.edu</email>
+							<affiliation key="aff1">
+								<orgName type="institution">Brown University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Melissa</forename><surname>Dell</surname></persName>
+							<email>melissadell@fas.harvard.edu</email>
+							<affiliation key="aff2">
+								<orgName type="institution">Harvard University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Benjamin</forename><surname>Charles</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Germain</forename><surname>Lee</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="institution">University of Washington</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jacob</forename><surname>Carlson</surname></persName>
+							<email>jacobcarlson@fas.harvard.edu</email>
+							<affiliation key="aff2">
+								<orgName type="institution">Harvard University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Weining</forename><surname>Li</surname></persName>
+							<affiliation key="aff4">
+								<orgName type="institution">University of Waterloo</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">LayoutParser: A Unified Toolkit for Deep Learning Based Document Image Analysis</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">8A76CB6228E109450992BC097DBD1A51</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2-SNAPSHOT" ident="GROBID" when="2025-10-27T03:36+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Document Image Analysis</term>
+					<term>Deep Learning</term>
+					<term>Layout Analysis</term>
+					<term>Character Recognition</term>
+					<term>Open Source library</term>
+					<term>Toolkit</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p><s>Recent advances in document image analysis (DIA) have been primarily driven by the application of neural networks.</s><s>Ideally, research outcomes could be easily deployed in production and extended for further investigation.</s><s>However, various factors like loosely organized codebases and sophisticated model configurations complicate the easy reuse of important innovations by a wide audience.</s><s>Though there have been on-going efforts to improve reusability and simplify deep learning (DL) model development in disciplines like natural language processing and computer vision, none of them are optimized for challenges in the domain of DIA.</s><s>This represents a major gap in the existing toolkit, as DIA is central to academic research across a wide range of disciplines in the social sciences and humanities.</s><s>This paper introduces LayoutParser, an open-source library for streamlining the usage of DL in DIA research and applications.</s><s>The core LayoutParser library comes with a set of simple and intuitive interfaces for applying and customizing DL models for layout detection, character recognition, and many other document processing tasks.</s><s>To promote extensibility, LayoutParser also incorporates a community platform for sharing both pre-trained models and full document digitization pipelines.</s><s>We demonstrate that LayoutParser is helpful for both lightweight and large-scale digitization pipelines in real-word use cases.</s><s>The library is publicly available at <ref type="url" target="https://layout-parser.github.io">https://layout-parser.github.io</ref>.</s></p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p><s>Deep Learning(DL)-based approaches are the state-of-the-art for a wide range of document image analysis (DIA) tasks including document image classification <ref type="bibr">[11,</ref> arXiv:2103.15348v2</s><s>[cs.CV] 21 Jun 2021 37], layout detection <ref type="bibr" target="#b37">[38,</ref><ref type="bibr" target="#b21">22]</ref>, table detection <ref type="bibr" target="#b25">[26]</ref>, and scene text detection <ref type="bibr" target="#b3">[4]</ref>.</s><s>A generalized learning-based framework dramatically reduces the need for the manual specification of complicated rules, which is the status quo with traditional methods.</s><s>DL has the potential to transform DIA pipelines and benefit a broad spectrum of large-scale document digitization projects.</s></p><p><s>However, there are several practical difficulties for taking advantages of recent advances in DL-based methods: 1) DL models are notoriously convoluted for reuse and extension.</s><s>Existing models are developed using distinct frameworks like TensorFlow <ref type="bibr" target="#b0">[1]</ref> or PyTorch <ref type="bibr" target="#b23">[24]</ref>, and the high-level parameters can be obfuscated by implementation details <ref type="bibr" target="#b7">[8]</ref>.</s><s>It can be a time-consuming and frustrating experience to debug, reproduce, and adapt existing models for DIA, and many researchers who would benefit the most from using these methods lack the technical background to implement them from scratch.</s><s>2) Document images contain diverse and disparate patterns across domains, and customized training is often required to achieve a desirable detection accuracy.</s><s>Currently there is no full-fledged infrastructure for easily curating the target document image datasets and fine-tuning or re-training the models.</s><s>3) DIA usually requires a sequence of models and other processing to obtain the final outputs.</s><s>Often research teams use DL models and then perform further document analyses in separate processes, and these pipelines are not documented in any central location (and often not documented at all).</s><s>This makes it difficult for research teams to learn about how full pipelines are implemented and leads them to invest significant resources in reinventing the DIA wheel.</s></p><p><s>LayoutParser provides a unified toolkit to support DL-based document image analysis and processing.</s><s>To address the aforementioned challenges, LayoutParser is built with the following components:</s></p><p><s>1.</s><s>An off-the-shelf toolkit for applying DL models for layout detection, character recognition, and other DIA tasks (Section 3) 2. A rich repository of pre-trained neural network models (Model Zoo) that underlies the off-the-shelf usage 3. Comprehensive tools for efficient document image data annotation and model tuning to support different levels of customization 4. A DL model hub and community platform for the easy sharing, distribution, and discussion of DIA models and pipelines, to promote reusability, reproducibility, and extensibility (Section 4)</s></p><p><s>The library implements simple and intuitive Python APIs without sacrificing generalizability and versatility, and can be easily installed via pip.</s><s>Its convenient functions for handling document image data can be seamlessly integrated with existing DIA pipelines.</s><s>With detailed documentations and carefully curated tutorials, we hope this tool will benefit a variety of end-users, and will lead to advances in applications in both industry and academic research.</s></p><p><s>LayoutParser is well aligned with recent efforts for improving DL model reusability in other disciplines like natural language processing <ref type="bibr" target="#b7">[8,</ref><ref type="bibr" target="#b33">34]</ref> and computer vision <ref type="bibr" target="#b34">[35]</ref>, but with a focus on unique challenges in DIA.</s><s>We show LayoutParser can be applied in sophisticated and large-scale digitization projects that require precision, efficiency, and robustness, as well as simple and lightweight document processing tasks focusing on efficacy and flexibility (Section 5).</s><s>LayoutParser is being actively maintained, and support for more deep learning models and novel methods in text-based layout analysis methods <ref type="bibr" target="#b36">[37,</ref><ref type="bibr" target="#b33">34]</ref> is planned.</s></p><p><s>The rest of the paper is organized as follows.</s><s>Section 2 provides an overview of related work.</s><s>The core LayoutParser library, DL Model Zoo, and customized model training are described in Section 3, and the DL model hub and community platform are detailed in Section 4. Section 5 shows two examples of how LayoutParser can be used in practical DIA projects, and Section 6 concludes.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Related Work</head><p><s>Recently, various DL models and datasets have been developed for layout analysis tasks.</s><s>The dhSegment <ref type="bibr" target="#b21">[22]</ref> utilizes fully convolutional networks <ref type="bibr" target="#b19">[20]</ref> for segmentation tasks on historical documents.</s><s>Object detection-based methods like Faster R-CNN <ref type="bibr" target="#b27">[28]</ref> and Mask R-CNN <ref type="bibr" target="#b11">[12]</ref> are used for identifying document elements <ref type="bibr" target="#b37">[38]</ref> and detecting tables <ref type="bibr" target="#b29">[30,</ref><ref type="bibr" target="#b25">26]</ref>.</s><s>Most recently, Graph Neural Networks <ref type="bibr" target="#b28">[29]</ref> have also been used in table detection <ref type="bibr" target="#b26">[27]</ref>.</s><s>However, these models are usually implemented individually and there is no unified framework to load and use such models.</s></p><p><s>There has been a surge of interest in creating open-source tools for document image processing: a search of document image analysis in Github leads to 5M relevant code pieces<ref type="foot" target="#foot_0">foot_0</ref> ; yet most of them rely on traditional rule-based methods or provide limited functionalities.</s><s>The closest prior research to our work is the OCR-D project<ref type="foot" target="#foot_1">foot_1</ref> , which also tries to build a complete toolkit for DIA.</s><s>However, similar to the platform developed by Neudecker et al. <ref type="bibr" target="#b20">[21]</ref>, it is designed for analyzing historical documents, and provides no supports for recent DL models.</s><s>The DocumentLayoutAnalysis project 8 focuses on processing born-digital PDF documents via analyzing the stored PDF data.</s><s>Repositories like DeepLayout 9 and Detectron2-PubLayNet 10 are individual deep learning models trained on layout analysis datasets without support for the full DIA pipeline.</s><s>The Document Analysis and Exploitation (DAE) platform <ref type="bibr" target="#b14">[15]</ref> and the DeepDIVA project <ref type="bibr" target="#b1">[2]</ref> aim to improve the reproducibility of DIA methods (or DL models), yet they are not actively maintained.</s><s>OCR engines like Tesseract <ref type="bibr" target="#b13">[14]</ref>, easyOCR 11 and paddleOCR 12 usually do not come with comprehensive functionalities for other DIA tasks like layout analysis.</s></p><p><s>Recent years have also seen numerous efforts to create libraries for promoting reproducibility and reusability in the field of DL.</s><s>Libraries like Dectectron2 <ref type="bibr" target="#b34">[35]</ref>, Fig. <ref type="figure">1</ref>: The overall architecture of LayoutParser.</s><s>For an input document image, the core LayoutParser library provides a set of off-the-shelf tools for layout detection, OCR, visualization, and storage, backed by a carefully designed layout data structure.</s><s>LayoutParser also supports high level customization via efficient layout annotation and model training functions.</s><s>These improve model accuracy on the target samples.</s><s>The community platform enables the easy sharing of DIA models and whole digitization pipelines to promote reusability and reproducibility.</s><s>A collection of detailed documentation, tutorials and exemplar projects make LayoutParser easy to learn and use.</s></p><formula xml:id="formula_0">Efficient</formula><p><s>AllenNLP <ref type="bibr" target="#b7">[8]</ref> and transformers <ref type="bibr" target="#b33">[34]</ref> have provided the community with complete DL-based support for developing and deploying models for general computer vision and natural language processing problems.</s><s>LayoutParser, on the other hand, specializes specifically in DIA tasks.</s><s>LayoutParser is also equipped with a community platform inspired by established model hubs such as Torch Hub <ref type="bibr" target="#b22">[23]</ref> and TensorFlow Hub <ref type="bibr" target="#b0">[1]</ref>.</s><s>It enables the sharing of pretrained models as well as full document processing pipelines that are unique to DIA tasks.</s></p><p><s>There have been a variety of document data collections to facilitate the development of DL models.</s><s>Some examples include PRImA <ref type="bibr" target="#b2">[3]</ref>(magazine layouts), PubLayNet <ref type="bibr" target="#b37">[38]</ref>(academic paper layouts), Table Bank <ref type="bibr" target="#b17">[18]</ref>(tables in academic papers), Newspaper Navigator Dataset <ref type="bibr" target="#b15">[16,</ref><ref type="bibr" target="#b16">17]</ref>(newspaper figure layouts) and HJDataset <ref type="bibr" target="#b30">[31]</ref>(historical Japanese document layouts).</s><s>A spectrum of models trained on these datasets are currently available in the LayoutParser model zoo to support different use cases.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">The Core LayoutParser Library</head><p><s>At the core of LayoutParser is an off-the-shelf toolkit that streamlines DLbased document image analysis.</s><s>Five components support a simple interface with comprehensive functionalities: 1) The layout detection models enable using pre-trained or self-trained DL models for layout detection with just four lines of code.</s></p><p><s>2) The detected layout information is stored in carefully engineered PubLayNet <ref type="bibr" target="#b37">[38]</ref> F / M M Layouts of modern scientific documents PRImA <ref type="bibr" target="#b2">[3]</ref> M -Layouts of scanned modern magazines and scientific reports Newspaper <ref type="bibr" target="#b16">[17]</ref> F -Layouts of scanned US newspapers from the 20th century TableBank <ref type="bibr" target="#b17">[18]</ref> F F Table <ref type="table">region</ref> on modern scientific and business document HJDataset <ref type="bibr" target="#b30">[31]</ref> F / M -Layouts of history Japanese documents 1 For each dataset, we train several models of different sizes for different needs (the trade-off between accuracy vs. computational cost).</s><s>For "base model" and "large model", we refer to using the ResNet 50 or ResNet 101 backbones <ref type="bibr" target="#b12">[13]</ref>, respectively.</s><s>One can train models of different architectures, like Faster R-CNN <ref type="bibr" target="#b27">[28]</ref> (F) and Mask R-CNN <ref type="bibr" target="#b11">[12]</ref> (M).</s><s>For example, an F in the Large Model column indicates it has a Faster R-CNN model trained using the ResNet 101 backbone.</s><s>The platform is maintained and a number of additions will be made to the model zoo in coming months.</s></p><p><s>layout data structures, which are optimized for efficiency and versatility.</s><s>3) When necessary, users can employ existing or customized OCR models via the unified API provided in the OCR module.</s><s>4) LayoutParser comes with a set of utility functions for the visualization and storage of the layout data.</s><s>5) LayoutParser is also highly customizable, via its integration with functions for layout data annotation and model training.</s><s>We now provide detailed descriptions for each component.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Layout Detection Models</head><p><s>In LayoutParser, a layout model takes a document image as an input and generates a list of rectangular boxes for the target content regions.</s><s>Different from traditional methods, it relies on deep convolutional neural networks rather than manually curated rules to identify content regions.</s><s>It is formulated as an object detection problem and state-of-the-art models like Faster R-CNN <ref type="bibr" target="#b27">[28]</ref> and Mask R-CNN <ref type="bibr" target="#b11">[12]</ref> are used.</s><s>This yields prediction results of high accuracy and makes it possible to build a concise, generalized interface for layout detection.</s><s>LayoutParser, built upon Detectron2 <ref type="bibr" target="#b34">[35]</ref>, provides a minimal API that can perform layout detection with only four lines of code in Python:</s></p><p><s>import layoutparser as lp image = cv2 .</s><s>imread ( " image_file " ) # load images model = lp .</s><s>Dete ctro n2Lay outM odel ( " lp :// PubLayNet / f as t er _r c nn _R _ 50 _ FP N_ 3 x / config " ) layout = model .</s><s>detect ( image )</s></p><p><s>LayoutParser provides a wealth of pre-trained model weights using various datasets covering different languages, time periods, and document types.</s><s>Due to domain shift <ref type="bibr" target="#b6">[7]</ref>, the prediction performance can notably drop when models are applied to target samples that are significantly different from the training dataset.</s><s>As document structures and layouts vary greatly in different domains, it is important to select models trained on a dataset similar to the test samples.</s><s>A semantic syntax is used for initializing the model weights in LayoutParser, using both the dataset name and model name lp://&lt;dataset-name&gt;/&lt;model-architecture-name&gt;.</s><s>Shown in Table <ref type="table" target="#tab_1">1</ref>, LayoutParser currently hosts 9 pre-trained models trained on 5 different datasets.</s><s>Description of the training dataset is provided alongside with the trained models such that users can quickly identify the most suitable models for their tasks.</s><s>Additionally, when such a model is not readily available, LayoutParser also supports training customized layout models and community sharing of the models (detailed in Section 3.5).</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Layout Data Structures</head><p><s>A critical feature of LayoutParser is the implementation of a series of data structures and operations that can be used to efficiently process and manipulate the layout elements.</s><s>In document image analysis pipelines, various post-processing on the layout analysis model outputs is usually required to obtain the final outputs.</s><s>Traditionally, this requires exporting DL model outputs and then loading the results into other pipelines.</s><s>All model outputs from LayoutParser will be stored in carefully engineered data types optimized for further processing, which makes it possible to build an end-to-end document digitization pipeline within LayoutParser.</s><s>There are three key components in the data structure, namely the Coordinate system, the TextBlock, and the Layout.</s><s>They provide different levels of abstraction for the layout data, and a set of APIs are supported for transformations or operations on these classes.</s></p><p><s>Coordinates are the cornerstones for storing layout information.</s><s>Currently, three types of Coordinate data structures are provided in LayoutParser, shown in Figure <ref type="figure" target="#fig_0">2</ref>. Interval and Rectangle are the most common data types and support specifying 1D or 2D regions within a document.</s><s>They are parameterized with 2 and 4 parameters.</s><s>A Quadrilateral class is also implemented to support a more generalized representation of rectangular regions when the document is skewed or distorted, where the 4 corner points can be specified and a total of 8 degrees of freedom are supported.</s><s>A wide collection of transformations like shift, pad, and scale, and operations like intersect, union, and is_in, are supported for these classes.</s><s>Notably, it is common to separate a segment of the image and analyze it individually.</s><s>LayoutParser provides full support for this scenario via image cropping operations crop_image and coordinate transformations like relative_to and condition_on that transform coordinates to and from their relative representations.</s><s>We refer readers to Table <ref type="table" target="#tab_2">2</ref> for a more detailed description of these operations <ref type="foot" target="#foot_2">13</ref> .</s></p><p><s>Based on Coordinates, we implement the TextBlock class that stores both the positional and extra features of individual layout elements.</s><s>It also supports specifying the reading orders via setting the parent field to the index of the parent object.</s><s>A Layout class is built that takes in a list of TextBlocks and supports processing the elements in batch.</s><s>Layout can also be nested to support hierarchical layout structures.</s><s>They support the same operations and transformations as the Coordinate classes, minimizing both learning and deployment effort.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">OCR</head><p><s>LayoutParser provides a unified interface for existing OCR tools.</s><s>Though there are many OCR tools available, they are usually configured differently with distinct APIs or protocols for using them.</s><s>It can be inefficient to add new OCR tools into an existing pipeline, and difficult to make direct comparisons among the available tools to find the best option for a particular project.</s><s>To this end, LayoutParser builds a series of wrappers among existing OCR engines, and provides nearly the same syntax for using them.</s><s>It supports a plug-and-play style of using OCR engines, making it effortless to switch, evaluate, and compare different OCR modules: ocr_agent = lp .</s><s>TesseractAgent () # Can be easily switched to other OCR software tokens = ocr_agent .</s><s>detect ( image )</s></p><p><s>The OCR outputs will also be stored in the aforementioned layout data structures and can be seamlessly incorporated into the digitization pipeline.</s><s>Currently LayoutParser supports the Tesseract and Google Cloud Vision OCR engines.</s></p><p><s>LayoutParser also comes with a DL-based CNN-RNN OCR model <ref type="bibr" target="#b5">[6]</ref> trained with the Connectionist Temporal Classification (CTC) loss <ref type="bibr" target="#b9">[10]</ref>.</s><s>It can be used like the other OCR modules, and can be easily trained on customized datasets.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4">Storage and visualization</head><p><s>The end goal of DIA is to transform the image-based document data into a structured database.</s><s>LayoutParser supports exporting layout data into different formats like JSON, csv, and will add the support for the METS/ALTO XML format <ref type="foot" target="#foot_3">14</ref> .</s><s>It can also load datasets from layout analysis-specific formats like COCO <ref type="bibr" target="#b37">[38]</ref> and the Page Format <ref type="bibr" target="#b24">[25]</ref> for training layout models (Section 3.5).</s><s>Visualization of the layout detection results is critical for both presentation and debugging.</s><s>LayoutParser is built with an integrated API for displaying the layout information along with the original document image.</s><s>Shown in Figure <ref type="figure" target="#fig_1">3</ref>, it enables presenting layout data with rich meta information and features in different modes.</s><s>More detailed information can be found in the online LayoutParser documentation page.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5">Customized Model Training</head><p><s>Besides the off-the-shelf library, LayoutParser is also highly customizable with supports for highly unique and challenging document analysis tasks.</s><s>Target document images can be vastly different from the existing datasets for training layout models, which leads to low layout detection accuracy.</s><s>Training data can also be highly sensitive and not sharable publicly.</s><s>To overcome these challenges, LayoutParser is built with rich features for efficient data annotation and customized model training.</s></p><p><s>LayoutParser incorporates a toolkit optimized for annotating document layouts using object-level active learning <ref type="bibr" target="#b31">[32]</ref>.</s><s>With the help from a layout detection model trained along with labeling, only the most important layout objects within each image, rather than the whole image, are required for labeling.</s><s>The rest of the regions are automatically annotated with high confidence predictions from the layout detection model.</s><s>This allows a layout dataset to be created more efficiently with only around 60% of the labeling budget.</s></p><p><s>After the training dataset is curated, LayoutParser supports different modes for training the layout models.</s><s>Fine-tuning can be used for training models on a small newly-labeled dataset by initializing the model with existing pre-trained weights.</s><s>Training from scratch can be helpful when the source dataset and target are significantly different and a large training set is available.</s><s>However, as suggested in Studer et al.'s work <ref type="bibr" target="#b32">[33]</ref>, loading pre-trained weights on large-scale datasets like ImageNet <ref type="bibr" target="#b4">[5]</ref>, even from totally different domains, can still boost model performance.</s><s>Through the integrated API provided by LayoutParser, users can easily compare model performances on the benchmark datasets.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">LayoutParser Community Platform</head><p><s>Another focus of LayoutParser is promoting the reusability of layout detection models and full digitization pipelines.</s><s>Similar to many existing deep learning libraries, LayoutParser comes with a community model hub for distributing layout models.</s><s>End-users can upload their self-trained models to the model hub, and these models can be loaded into a similar interface as the currently available LayoutParser pre-trained models.</s><s>For example, the model trained on the News Navigator dataset <ref type="bibr" target="#b16">[17]</ref> has been incorporated in the model hub.</s></p><p><s>Beyond DL models, LayoutParser also promotes the sharing of entire document digitization pipelines.</s><s>For example, sometimes the pipeline requires the combination of multiple DL models to achieve better accuracy.</s><s>Currently, pipelines are mainly described in academic papers and implementations are often not publicly available.</s><s>To this end, the LayoutParser community platform also enables the sharing of layout pipelines to promote the discussion and reuse of techniques.</s><s>For each shared pipeline, it has a dedicated project page, with links to the source code, documentation, and an outline of the approaches.</s><s>A discussion panel is provided for exchanging ideas.</s><s>Combined with the core LayoutParser library, users can easily build reusable components based on the shared pipelines and apply them to solve their unique problems.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Use Cases</head><p><s>The core objective of LayoutParser is to make it easier to create both large-scale and light-weight document digitization pipelines.</s><s>Large-scale document processing focuses on precision, efficiency, and robustness.</s><s>The target documents may have complicated structures, and may require training multiple layout detection models to achieve the optimal accuracy.</s><s>Light-weight pipelines are built for relatively simple documents, with an emphasis on development ease, speed and flexibility.</s><s>Ideally one only needs to use existing resources, and model training should be avoided.</s><s>Through two exemplar projects, we show how practitioners in both academia and industry can easily build such pipelines using LayoutParser and extract high-quality structured document data for their downstream tasks.</s><s>The source code for these projects will be publicly available in the LayoutParser community hub.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1">A Comprehensive Historical Document Digitization Pipeline</head><p><s>The digitization of historical documents can unlock valuable data that can shed light on many important social, economic, and historical questions.</s><s>Yet due to scan noises, page wearing, and the prevalence of complicated layout structures, obtaining a structured representation of historical document scans is often extremely complicated.</s><s>In this example, LayoutParser was used to develop a comprehensive pipeline, shown in Figure <ref type="figure" target="#fig_3">5</ref>, to generate high-quality structured data from historical Japanese firm financial tables with complicated layouts.</s><s>The pipeline applies two layout models to identify different levels of document structures and two customized OCR engines for optimized character recognition accuracy.</s></p><p><s>As shown in Figure <ref type="figure" target="#fig_2">4</ref> (a), the document contains columns of text written vertically <ref type="foot" target="#foot_4">15</ref> , a common style in Japanese.</s><s>Due to scanning noise and archaic printing technology, the columns can be skewed or have variable widths, and hence cannot be easily identified via rule-based methods.</s><s>Within each column, words are separated by white spaces of variable size, and the vertical positions of objects can be an indicator of their layout type.</s></p><p><s>To decipher the complicated layout structure, two object detection models have been trained to recognize individual columns and tokens, respectively.</s><s>A small training set (400 images with approximately 100 annotations each) is curated via the active learning based annotation tool <ref type="bibr" target="#b31">[32]</ref> in LayoutParser.</s><s>The models learn to identify both the categories and regions for each token or column via their distinct visual features.</s><s>The layout data structure enables easy grouping of the tokens within each column, and rearranging columns to achieve the correct reading orders based on the horizontal position.</s><s>Errors are identified and rectified via checking the consistency of the model predictions.</s><s>Therefore, though trained on a small dataset, the pipeline achieves a high level of layout detection accuracy: it achieves a 96.97 AP <ref type="bibr" target="#b18">[19]</ref> score across 5 categories for the column detection model, and a 89.23 AP across 4 categories for the token detection model.</s></p><p><s>A combination of character recognition methods is developed to tackle the unique challenges in this document.</s><s>In our experiments, we found that irregular spacing between the tokens led to a low character recognition recall rate, whereas existing OCR models tend to perform better on densely-arranged texts.</s><s>To overcome this challenge, we create a document reorganization algorithm that rearranges the text based on the token bounding boxes detected in the layout analysis step. Figure <ref type="figure" target="#fig_2">4</ref> (b) illustrates the generated image of dense text, which is sent to the OCR APIs as a whole to reduce the transaction costs.</s><s>The flexible coordinate system in LayoutParser is used to transform the OCR results relative to their original positions on the page.</s><s>Additionally, it is common for historical documents to use unique fonts with different glyphs, which significantly degrades the accuracy of OCR models trained on modern texts.</s><s>In this document, a special flat font is used for printing numbers and could not be detected by off-the-shelf OCR engines.</s><s>Using the highly flexible functionalities from LayoutParser, a pipeline approach is constructed that achieves a high recognition accuracy with minimal effort.</s><s>As the characters have unique visual structures and are usually clustered together, we train the layout model to identify number regions with a dedicated category.</s><s>Subsequently, LayoutParser crops images within these regions, and identifies characters within them using a self-trained OCR model based on a CNN-RNN <ref type="bibr" target="#b5">[6]</ref>.</s><s>The model detects a total of 15 possible categories, and achieves a 0.98 Jaccard score <ref type="foot" target="#foot_5">16</ref> and a 0.17 average Levinstein distances <ref type="foot" target="#foot_6">17</ref> for token prediction on the test set.</s></p><p><s>Overall, it is possible to create an intricate and highly accurate digitization pipeline for large-scale digitization using LayoutParser.</s><s>The pipeline avoids specifying the complicated rules used in traditional methods, is straightforward to develop, and is robust to outliers.</s><s>The DL models also generate fine-grained results that enable creative approaches like page reorganization for OCR.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2">A light-weight Visual Table Extractor</head><p><s>Detecting tables and parsing their structures (table extraction) are of central importance for many document digitization tasks.</s><s>Many previous works <ref type="bibr" target="#b25">[26,</ref><ref type="bibr" target="#b29">30,</ref><ref type="bibr" target="#b26">27]</ref> and tools <ref type="foot" target="#foot_7">18</ref> have been developed to identify and parse table structures.</s><s>Yet they might require training complicated models from scratch, or are only applicable for born-digital PDF documents.</s><s>In this section, we show how LayoutParser can help build a light-weight accurate visual table extractor for legal docket tables using the existing resources with minimal effort.</s></p><p><s>The extractor uses a pre-trained layout detection model for identifying the table regions and some simple rules for pairing the rows and the columns in the PDF image.</s><s>Mask R-CNN <ref type="bibr" target="#b11">[12]</ref> trained on the PubLayNet dataset <ref type="bibr" target="#b37">[38]</ref> from the LayoutParser Model Zoo can be used for detecting table regions.</s><s>By filtering out model predictions of low confidence and removing overlapping predictions, LayoutParser can identify the tabular regions on each page, which significantly simplifies the subsequent steps.</s><s>By applying the line detection functions within the tabular segments, provided in the utility module from LayoutParser, the pipeline can identify the three distinct columns in the tables.</s><s>A row clustering method is then applied via analyzing the y coordinates of token bounding boxes in the left-most column, which are obtained from the OCR engines.</s><s>A non-maximal suppression algorithm is used to remove duplicated rows with extremely small gaps.</s><s>Shown in Figure <ref type="figure" target="#fig_4">6</ref>, the built pipeline can detect tables at different positions on a page accurately.</s><s>Continued tables from different pages are concatenated, and a structured table representation has been easily created.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">Conclusion</head><p><s>LayoutParser provides a comprehensive toolkit for deep learning-based document image analysis.</s><s>The off-the-shelf library is easy to install, and can be used to build flexible and accurate pipelines for processing documents with complicated structures.</s><s>It also supports high-level customization and enables easy labeling and training of DL models on unique document image datasets.</s><s>The LayoutParser community platform facilitates sharing DL models and DIA pipelines, inviting discussion and promoting code reproducibility and reusability.</s><s>The LayoutParser team is committed to keeping the library updated continuously and bringing the most recent advances in DL-based DIA, such as multi-modal document modeling <ref type="bibr" target="#b36">[37,</ref><ref type="bibr" target="#b35">36,</ref><ref type="bibr" target="#b8">9]</ref> (an upcoming priority), to a diverse audience of end-users.</s></p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 2 :</head><label>2</label><figDesc><div><p><s>Fig. 2: The relationship between the three types of layout data structures.</s><s>Coordinate supports three kinds of variation; TextBlock consists of the coordinate information and extra features like block text, types, and reading orders; a Layout object is a list of all possible layout elements, including other Layout objects.</s><s>They all support the same set of transformation and operation APIs for maximum flexibility.</s></p></div></figDesc><graphic coords="6,195.29,115.84,224.77,181.57" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 3 :</head><label>3</label><figDesc><div><p><s>Fig. 3: Layout detection and OCR results visualization generated by the LayoutParser APIs.</s><s>Mode I directly overlays the layout region bounding boxes and categories over the original image.</s><s>Mode II recreates the original document via drawing the OCR'd texts at their corresponding positions on the image canvas.</s><s>In this figure, tokens in textual regions are filtered using the API and then displayed.</s></p></div></figDesc><graphic coords="9,169.35,115.85,276.63,191.59" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 4 :</head><label>4</label><figDesc><div><p><s>Fig. 4: Illustration of (a) the original historical Japanese document with layout detection results and (b) a recreated version of the document image that achieves much better character recognition recall.</s><s>The reorganization algorithm rearranges the tokens based on the their detected bounding boxes given a maximum allowed height.</s></p></div></figDesc><graphic coords="10,134.77,115.83,345.81,158.06" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 5 :</head><label>5</label><figDesc><div><p><s>Fig. 5: Illustration of how LayoutParser helps with the historical document digitization pipeline.</s></p></div></figDesc><graphic coords="11,307.68,379.91,172.91,182.52" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 6 :</head><label>6</label><figDesc><div><p><s>Fig. 6: This lightweight table detector can identify tables (outlined in red) and cells (shaded in blue) in different locations on a page.</s><s>In very few cases (d), it might generate minor error predictions, e.g, failing to capture the top text line of a table.</s></p></div></figDesc><graphic coords="13,134.77,115.84,345.79,118.20" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 1 :</head><label>1</label><figDesc><div><p><s>Current layout detection models in the LayoutParser model zoo</s></p></div></figDesc><table><row><cell>Dataset</cell><cell>Base Model 1 Large Model Notes</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 :</head><label>2</label><figDesc><div><p><s>All operations supported by the layout elements.</s><s>The same APIs are supported across different layout element classes including Coordinate types, TextBlock and Layout.</s></p></div></figDesc><table><row><cell>Operation Name</cell><cell>Description</cell></row><row><cell cols="2">block.pad(top, bottom, right, left) Enlarge the current block according to the input</cell></row><row><cell>block.scale(fx, fy)</cell><cell>Scale the current block given the ratio in x and y direction</cell></row><row><cell>block.shift(dx, dy)</cell><cell>Move the current block with the shift distances in x and y direction</cell></row><row><cell>block1.is in(block2)</cell><cell>Whether block1 is inside of block2</cell></row><row><cell>block1.intersect(block2)</cell><cell>Return the intersection region of block1 and block2. Coordinate type to be determined based on the inputs.</cell></row><row><cell>block1.union(block2)</cell><cell>Return the union region of block1 and block2. Coordinate type to be determined based on the inputs.</cell></row><row><cell>block1.relative to(block2)</cell><cell>Convert the absolute coordinates of block1 to relative coordinates to block2</cell></row><row><cell>block1.condition on(block2)</cell><cell>Calculate the absolute coordinates of block1 given the canvas block2's absolute coordinates</cell></row><row><cell>block.crop image(image)</cell><cell>Obtain the image segments in the block region</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_0"><p><s>The number shown is obtained by specifying the search type as 'code'.</s></p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="7" xml:id="foot_1"><p><s>https://ocr-d.de/en/about</s></p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="13" xml:id="foot_2"><p><s>This is also available in the LayoutParser documentation pages.</s></p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="14" xml:id="foot_3"><p><s>https://altoxml.github.io</s></p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="15" xml:id="foot_4"><p><s>A document page consists of eight rows like this.</s><s>For simplicity we skip the row segmentation discussion and refer readers to the source code when available.</s></p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="16" xml:id="foot_5"><p><s>This measures the overlap between the detected and ground-truth characters, and the maximum is 1.</s></p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="17" xml:id="foot_6"><p><s>This measures the number of edits from the ground-truth text to the predicted text, and lower is better.</s></p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="18" xml:id="foot_7"><p><s>https://github.com/atlanhq/camelot,</s><s>https://github.com/tabulapdf/tabula</s></p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><p><s>Acknowledgements We thank the anonymous reviewers for their comments and suggestions.</s><s>This project is supported in part by <rs type="funder">NSF</rs> Grant <rs type="grantNumber">OIA-2033558</rs> and funding from the <rs type="funder">Harvard Data Science Initiative and Harvard Catalyst</rs>.</s><s><rs type="person">Zejiang Shen</rs> thanks <rs type="person">Doug Downey</rs> for suggestions.</s></p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_Bw4B3JK">
+					<idno type="grant-number">OIA-2033558</idno>
+				</org>
+			</listOrg>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><surname>Abadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Barham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Brevdo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Citro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">S</forename><surname>Corrado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Dean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Devin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ghemawat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Harp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Irving</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Isard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Jozefowicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Kaiser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kudlur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Levenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Mané</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Monga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Moore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Murray</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Olah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schuster</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Shlens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Steiner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Sutskever</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Talwar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Tucker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Vanhoucke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Vasudevan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Viégas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Warden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wattenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wicke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zheng</surname></persName>
+		</author>
+		<ptr target="https://www.tensorflow.org/,softwareavailablefromtensorflow.org" />
+		<title level="m">TensorFlow: Large-scale machine learning on heterogeneous systems</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">DeepDIVA: A Highly-Functional Python Framework for Reproducible Experiments</title>
+		<author>
+			<persName><forename type="first">Michele</forename><surname>Alberti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vinaychandran</forename><surname>Pondenkandath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcel</forename><surname>Wursch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rolf</forename><surname>Ingold</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcus</forename><surname>Liwicki</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icfhr-2018.2018.00080</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2018 16th International Conference on Frontiers in Handwriting Recognition (ICFHR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-08">2018</date>
+			<biblScope unit="page" from="423" to="428" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">A Realistic Dataset for Performance Evaluation of Document Layout Analysis</title>
+		<author>
+			<persName><forename type="first">Apostolos</forename><surname>Antonacopoulos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Bridson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christos</forename><surname>Papadopoulos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Pletschacher</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icdar.2009.271</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2009 10th International Conference on Document Analysis and Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="page" from="296" to="300" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Character Region Awareness for Text Detection</title>
+		<author>
+			<persName><forename type="first">Youngmin</forename><surname>Baek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bado</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dongyoon</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sangdoo</forename><surname>Yun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hwalsuk</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2019.00959</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-06">2019</date>
+			<biblScope unit="page" from="9357" to="9366" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">ImageNet: A Large-Scale Hierarchical Image Database</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Socher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Fei-Fei</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR09</title>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Image-to-markup generation with coarse-to-fine attention</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kanervisto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Rush</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning</title>
+		<imprint>
+			<publisher>PMLR</publisher>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="980" to="989" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Unsupervised domain adaptation by backpropagation</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ganin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lempitsky</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International conference on machine learning</title>
+		<imprint>
+			<publisher>PMLR</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="1180" to="1189" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">AllenNLP: A Deep Semantic Natural Language Processing Platform</title>
+		<author>
+			<persName><forename type="first">Matt</forename><surname>Gardner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><surname>Grus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Neumann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oyvind</forename><surname>Tafjord</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pradeep</forename><surname>Dasigi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nelson</forename><forename type="middle">F</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Peters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Schmitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luke</forename><surname>Zettlemoyer</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/w18-2501</idno>
+		<idno type="arXiv">arXiv:1803.07640</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of Workshop for NLP Open Source Software (NLP-OSS)</title>
+		<meeting>Workshop for NLP Open Source Software (NLP-OSS)</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">LAMBERT: Layout-Aware Language Modeling for Information Extraction</title>
+		<author>
+			<persName><forename type="first">Łukasz</forename><surname>Garncarek</surname></persName>
+			<idno type="ORCID">0000-0003-4811-5184</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rafał</forename><surname>Powalski</surname></persName>
+			<idno type="ORCID">0000-0001-8509-5683</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tomasz</forename><surname>Stanisławek</surname></persName>
+			<idno type="ORCID">0000-0003-1046-7563</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bartosz</forename><surname>Topolski</surname></persName>
+			<idno type="ORCID">0000-0002-7126-9424</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Halama</surname></persName>
+			<idno type="ORCID">0000-0001-9010-0205</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michał</forename><surname>Turski</surname></persName>
+			<idno type="ORCID">0000-0003-4242-9705</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Filip</forename><surname>Graliński</surname></persName>
+			<idno type="ORCID">0000-0001-8066-4533</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-86549-8_34</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="532" to="547" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Connectionist temporal classification</title>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Graves</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Santiago</forename><surname>Fernández</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faustino</forename><surname>Gomez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jürgen</forename><surname>Schmidhuber</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1143844.1143891</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 23rd international conference on Machine learning - ICML &apos;06</title>
+		<meeting>the 23rd international conference on Machine learning - ICML &apos;06</meeting>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<date type="published" when="2006">2006</date>
+			<biblScope unit="page" from="369" to="376" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Evaluation of deep convolutional nets for document image classification and retrieval</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">W</forename><surname>Harley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ufkes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">G</forename><surname>Derpanis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2015 13th International Conference on Document Analysis and Recognition (ICDAR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="991" to="995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Mask R-CNN</title>
+		<author>
+			<persName><forename type="first">Kaiming</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georgia</forename><surname>Gkioxari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Dollar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ross</forename><surname>Girshick</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv.2017.322</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-10">2017</date>
+			<biblScope unit="page" from="2961" to="2969" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Deep Residual Learning for Image Recognition</title>
+		<author>
+			<persName><forename type="first">Kaiming</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangyu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shaoqing</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2016.90</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016-06">2016</date>
+			<biblScope unit="page" from="770" to="778" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Tesseract: An open-source optical character recognition engine</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kay</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Linux J</title>
+		<imprint>
+			<biblScope unit="issue">159</biblScope>
+			<biblScope unit="page">2</biblScope>
+			<date type="published" when="2007-07">2007. Jul 2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">An open architecture for end-to-end document analysis benchmarking</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lamiroy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Lopresti</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2011 International Conference on Document Analysis and Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="42" to="47" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Newspaper Navigator: Open Faceted Search for 1.5 Million Images</title>
+		<author>
+			<persName><forename type="first">Benjamin</forename><forename type="middle">C G</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">S</forename><surname>Weld</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3379350.3416143</idno>
+		<ptr target="https://doi-org.offcampus.lib.washington.edu/10.1145/3379350.3416143" />
+	</analytic>
+	<monogr>
+		<title level="m">Adjunct Publication of the 33rd Annual ACM Symposium on User Interface Software and Technology</title>
+		<meeting><address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2020-10-20">2020</date>
+			<biblScope unit="page" from="120" to="122" />
+		</imprint>
+	</monogr>
+	<note>UIST &apos;20 Adjunct</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">The Newspaper Navigator Dataset</title>
+		<author>
+			<persName><forename type="first">Benjamin</forename><forename type="middle">Charles Germain</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jaime</forename><surname>Mears</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eileen</forename><surname>Jakeway</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meghan</forename><surname>Ferriter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Adams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nathan</forename><surname>Yarasavage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deborah</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kate</forename><surname>Zwaard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">S</forename><surname>Weld</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3340531.3412767</idno>
+		<ptr target="https://doi.org/10.1145/3340531.3412767" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 29th ACM International Conference on Information &amp; Knowledge Management</title>
+		<meeting>the 29th ACM International Conference on Information &amp; Knowledge Management<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2020-10-19">2020</date>
+			<biblScope unit="page" from="3055" to="3062" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1903.01949</idno>
+		<title level="m">Tablebank: Table benchmark for image-based table detection and recognition</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Microsoft COCO: Common Objects in Context</title>
+		<author>
+			<persName><forename type="first">Tsung-Yi</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Maire</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Serge</forename><surname>Belongie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Hays</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pietro</forename><surname>Perona</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deva</forename><surname>Ramanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Dollár</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">Lawrence</forename><surname>Zitnick</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-10602-1_48</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="740" to="755" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Fully convolutional networks for semantic segmentation</title>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Long</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evan</forename><surname>Shelhamer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Trevor</forename><surname>Darrell</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2015.7298965</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015-06">2015</date>
+			<biblScope unit="page" from="3431" to="3440" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">An experimental workflow development platform for historical document digitisation and analysis</title>
+		<author>
+			<persName><forename type="first">Clemens</forename><surname>Neudecker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sven</forename><surname>Schlarb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zeki</forename><forename type="middle">Mustafa</forename><surname>Dogan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paolo</forename><surname>Missier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shoaib</forename><surname>Sufi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katy</forename><surname>Wolstencroft</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2037342.2037370</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2011 Workshop on Historical Document Imaging and Processing</title>
+		<meeting>the 2011 Workshop on Historical Document Imaging and Processing</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2011-09-16">2011</date>
+			<biblScope unit="page" from="161" to="168" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">dhsegment: A generic deep-learning approach for document segmentation</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Oliveira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Seguin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Kaplan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2018 16th International Conference on Frontiers in Handwriting Recognition (ICFHR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="7" to="12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Paszke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gross</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chintala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Chanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Devito</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Desmaison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Antiga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Lerer</surname></persName>
+		</author>
+		<title level="m">Automatic differentiation in pytorch</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Pytorch: An imperative style, high-performance deep learning library</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Paszke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gross</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Massa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Lerer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bradbury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Chanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Killeen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Gimelshein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Antiga</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1912.01703</idno>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">The PAGE (Page Analysis and Ground-Truth Elements) Format Framework</title>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Pletschacher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Apostolos</forename><surname>Antonacopoulos</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icpr.2010.72</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2010 20th International Conference on Pattern Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2010-08">2010</date>
+			<biblScope unit="page" from="257" to="260" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">CascadeTabNet: An approach for end to end table detection and structure recognition from image-based documents</title>
+		<author>
+			<persName><forename type="first">Devashish</forename><surname>Prasad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ayan</forename><surname>Gadpal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kshitij</forename><surname>Kapadni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manish</forename><surname>Visave</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kavita</forename><surname>Sultanpure</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvprw50498.2020.00294</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-06">2020</date>
+			<biblScope unit="page" from="2439" to="2447" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Rethinking table recognition using graph neural networks</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">R</forename><surname>Qasim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Mahmood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Shafait</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2019 International Conference on Document Analysis and Recognition (ICDAR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="142" to="147" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks</title>
+		<author>
+			<persName><forename type="first">Shaoqing</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaiming</forename><surname>He</surname></persName>
+			<idno type="ORCID">0000-0001-7318-9658</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ross</forename><surname>Girshick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tpami.2016.2577031</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<title level="j" type="abbrev">IEEE Trans. Pattern Anal. Mach. Intell.</title>
+		<idno type="ISSN">0162-8828</idno>
+		<idno type="ISSNe">1939-3539</idno>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1137" to="1149" />
+			<date type="published" when="2015">2015</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The Graph Neural Network Model</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Scarselli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gori</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ah Chung Tsoi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hagenbuchner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Monfardini</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tnn.2008.2005605</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Neural Networks</title>
+		<title level="j" type="abbrev">IEEE Trans. Neural Netw.</title>
+		<idno type="ISSN">1045-9227</idno>
+		<idno type="ISSNe">1941-0093</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="61" to="80" />
+			<date type="published" when="2008">2008</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">DeepDeSRT: Deep Learning for Detection and Structure Recognition of Tables in Document Images</title>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Schreiber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Agne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivo</forename><surname>Wolf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Dengel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sheraz</forename><surname>Ahmed</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icdar.2017.192</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2017 14th IAPR International Conference on Document Analysis and Recognition (ICDAR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-11">2017</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="1162" to="1167" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">A large dataset of historical japanese documents with complex layouts</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops</title>
+		<meeting>the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops</meeting>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="548" to="549" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2010.01762</idno>
+		<title level="m">Olala: Object-level active learning based layout annotation</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">A comprehensive study of imagenet pre-training for historical document image analysis</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Studer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Alberti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Pondenkandath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Goktepe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kolonko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Liwicki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ingold</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2019 International Conference on Document Analysis and Recognition (ICDAR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="720" to="725" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Transformers: State-of-the-Art Natural Language Processing</title>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Wolf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lysandre</forename><surname>Debut</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Victor</forename><surname>Sanh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julien</forename><surname>Chaumond</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clement</forename><surname>Delangue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anthony</forename><surname>Moi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pierric</forename><surname>Cistac</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Rault</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Remi</forename><surname>Louf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Morgan</forename><surname>Funtowicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joe</forename><surname>Davison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sam</forename><surname>Shleifer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Von Platen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clara</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yacine</forename><surname>Jernite</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julien</forename><surname>Plu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Canwen</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Teven</forename><surname>Le Scao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sylvain</forename><surname>Gugger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mariama</forename><surname>Drame</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quentin</forename><surname>Lhoest</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Rush</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2020.emnlp-demos.6</idno>
+		<idno type="arXiv">arXiv:1910.03771</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations</title>
+		<meeting>the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kirillov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Massa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">Y</forename><surname>Lo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Girshick</surname></persName>
+		</author>
+		<ptr target="https://github.com/facebookresearch/detectron2" />
+		<title level="m">Detectron2</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<monogr>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Lv</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Florencio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Che</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2012.14740</idno>
+		<title level="m">Layoutlmv2: Multi-modal pre-training for visually-rich document understanding</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<monogr>
+		<title level="m" type="main">Layoutlm: Pre-training of text and layout for document image understanding</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zhou</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Publaynet: largest dataset ever for document layout analysis</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Yepes</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICDAR.2019.00166</idno>
+		<ptr target="https://doi.org/10.1109/ICDAR.2019.00166" />
+	</analytic>
+	<monogr>
+		<title level="m">2019 International Conference on Document Analysis and Recognition (ICDAR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-09">Sep 2019</date>
+			<biblScope unit="page" from="1015" to="1022" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

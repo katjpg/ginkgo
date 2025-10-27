@@ -1,0 +1,362 @@
+[
+  {
+    "text": "Layout Parser",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3,
+      "end_pos": 16
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "a layout model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 18,
+      "end_pos": 32
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "document image",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 41,
+      "end_pos": 55
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "rectangular boxes",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 92,
+      "end_pos": 109
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "content regions",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 125,
+      "end_pos": 140
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "traditional methods",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 157,
+      "end_pos": 176
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "deep convolutional neural networks",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 191,
+      "end_pos": 225
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "object detection problem",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 313,
+      "end_pos": 337
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "state-of-the-art models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 342,
+      "end_pos": 365
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "Faster R-CN",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 371,
+      "end_pos": 382
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "Mask R-CN",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 391,
+      "end_pos": 400
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "accuracy",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 454,
+      "end_pos": 462
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "layout detection",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 531,
+      "end_pos": 547
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "Detectron2",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 575,
+      "end_pos": 585
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "API",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 610,
+      "end_pos": 613
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "Python",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 680,
+      "end_pos": 686
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "lp. Dete ctro n2Lay outM odel",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 774,
+      "end_pos": 803
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "PubLayNet",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 814,
+      "end_pos": 823
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "pre-trained model weights",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 944,
+      "end_pos": 969
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "various datasets",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 976,
+      "end_pos": 992
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "languages",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1012,
+      "end_pos": 1021
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "time periods",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1023,
+      "end_pos": 1035
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "document types",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1041,
+      "end_pos": 1055
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "domain shift",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1064,
+      "end_pos": 1076
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "prediction performance",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1085,
+      "end_pos": 1107
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1130,
+      "end_pos": 1136
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "target samples",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1152,
+      "end_pos": 1166
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "training dataset",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1209,
+      "end_pos": 1225
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "document structures",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1230,
+      "end_pos": 1249
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "layouts",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1254,
+      "end_pos": 1261
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "domains",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1288,
+      "end_pos": 1295
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "a dataset",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1341,
+      "end_pos": 1350
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "test samples",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1366,
+      "end_pos": 1378
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "semantic syntax",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1382,
+      "end_pos": 1397
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "dataset name",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1474,
+      "end_pos": 1486
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "model name",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1491,
+      "end_pos": 1501
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "model-architecture-name",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1523,
+      "end_pos": 1546
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "pre-trained models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1598,
+      "end_pos": 1616
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "trained models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1717,
+      "end_pos": 1731
+    },
+    "section": "Layout Detection Models"
+  },
+  {
+    "text": "customized layout models",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1906,
+      "end_pos": 1930
+    },
+    "section": "Layout Detection Models"
+  }
+]

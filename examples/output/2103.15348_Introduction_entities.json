@@ -1,0 +1,722 @@
+[
+  {
+    "text": "Deep Learning",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 0,
+      "end_pos": 13
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "document image analysis",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 80,
+      "end_pos": 103
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "document image classification",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 126,
+      "end_pos": 155
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "layout detection",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 204,
+      "end_pos": 220
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "table detection",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 229,
+      "end_pos": 244
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "scene text detection",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 254,
+      "end_pos": 274
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "A generalized learning-based framework",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 279,
+      "end_pos": 317
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "complicated rules",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 380,
+      "end_pos": 397
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "traditional methods",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 428,
+      "end_pos": 447
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "document digitization projects",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 541,
+      "end_pos": 571
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "Existing models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 750,
+      "end_pos": 765
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "Tensor Flow",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 811,
+      "end_pos": 822
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "PyTorch",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 829,
+      "end_pos": 836
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "high-level parameters",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 850,
+      "end_pos": 871
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "implementation details",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 893,
+      "end_pos": 915
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "these methods",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1089,
+      "end_pos": 1102
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "Document images",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1167,
+      "end_pos": 1182
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "patterns",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1213,
+      "end_pos": 1221
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "customized training",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1242,
+      "end_pos": 1261
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "detection accuracy",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 1303,
+      "end_pos": 1321
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "infrastructure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1358,
+      "end_pos": 1372
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "document image datasets",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1404,
+      "end_pos": 1427
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "fine-tuning",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1432,
+      "end_pos": 1443
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "re-training",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1447,
+      "end_pos": 1458
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "the models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1459,
+      "end_pos": 1469
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "a sequence of models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1494,
+      "end_pos": 1514
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "final outputs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1550,
+      "end_pos": 1563
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "document analyses",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1625,
+      "end_pos": 1642
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "these pipelines",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1670,
+      "end_pos": 1685
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "full pipelines",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1826,
+      "end_pos": 1840
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "Layout Parser",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1934,
+      "end_pos": 1947
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "unified toolkit",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1959,
+      "end_pos": 1974
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "DL-based document image analysis and processing",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1986,
+      "end_pos": 2033
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "aforementioned challenges",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2050,
+      "end_pos": 2075
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "off-the-shelf toolkit",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2137,
+      "end_pos": 2158
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "DL models",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2172,
+      "end_pos": 2181
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "layout detection",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2186,
+      "end_pos": 2202
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "character recognition",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2204,
+      "end_pos": 2225
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "DIA tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2237,
+      "end_pos": 2246
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "pre-trained neural network models",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2283,
+      "end_pos": 2316
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "Model Zoo",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 2318,
+      "end_pos": 2327
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "document image data annotation",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2405,
+      "end_pos": 2435
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "model tuning",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2440,
+      "end_pos": 2452
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "DL model hub",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2503,
+      "end_pos": 2515
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "community platform",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2520,
+      "end_pos": 2538
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "DIA models",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2593,
+      "end_pos": 2603
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "pipelines",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2608,
+      "end_pos": 2617
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "reusability",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2630,
+      "end_pos": 2641
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "reproducibility",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2643,
+      "end_pos": 2658
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "extensibility",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2664,
+      "end_pos": 2677
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "The library",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2690,
+      "end_pos": 2701
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "Python APIs",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2734,
+      "end_pos": 2745
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "generalizability",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2766,
+      "end_pos": 2782
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "versatility",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2787,
+      "end_pos": 2798
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "pip",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2832,
+      "end_pos": 2835
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "document image data",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2875,
+      "end_pos": 2894
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "DIA pipelines",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2938,
+      "end_pos": 2951
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "this tool",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 3023,
+      "end_pos": 3032
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "end-users",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3059,
+      "end_pos": 3068
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "applications",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 3099,
+      "end_pos": 3111
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "industry",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3120,
+      "end_pos": 3128
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "academic research",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3133,
+      "end_pos": 3150
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "DL model reusability",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 3216,
+      "end_pos": 3236
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "natural language processing",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3263,
+      "end_pos": 3290
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "computer vision",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3301,
+      "end_pos": 3316
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "digitization projects",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3438,
+      "end_pos": 3459
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "precision",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 3473,
+      "end_pos": 3482
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "efficiency",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 3484,
+      "end_pos": 3494
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "robustness",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 3500,
+      "end_pos": 3510
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "document processing tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3546,
+      "end_pos": 3571
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "efficacy",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 3584,
+      "end_pos": 3592
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "flexibility",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 3597,
+      "end_pos": 3608
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "deep learning models",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 3687,
+      "end_pos": 3707
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "text-based layout analysis methods",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3729,
+      "end_pos": 3763
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "Layout Parser library",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3887,
+      "end_pos": 3908
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "DL Model Zoo",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3910,
+      "end_pos": 3922
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "customized model training",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3928,
+      "end_pos": 3953
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "DL model hub",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3990,
+      "end_pos": 4002
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "community platform",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 4007,
+      "end_pos": 4025
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "DIA projects",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 4128,
+      "end_pos": 4140
+    },
+    "section": "Introduction"
+  }
+]

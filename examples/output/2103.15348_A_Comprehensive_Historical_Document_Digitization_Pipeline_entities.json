@@ -1,0 +1,830 @@
+[
+  {
+    "text": "digitization of historical documents",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 4,
+      "end_pos": 40
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "valuable data",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 52,
+      "end_pos": 65
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "social, economic, and historical questions",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 104,
+      "end_pos": 146
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "scan noises",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 159,
+      "end_pos": 170
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "page wearing",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 172,
+      "end_pos": 184
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "complicated layout structures",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 208,
+      "end_pos": 237
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "structured representation of historical document scans",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 251,
+      "end_pos": 305
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "this example",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 341,
+      "end_pos": 353
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "Layout Parser",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 355,
+      "end_pos": 368
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "comprehensive pipeline",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 391,
+      "end_pos": 413
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "high-quality structured data",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 445,
+      "end_pos": 473
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "historical Japanese firm financial tables",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 479,
+      "end_pos": 520
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "complicated layouts",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 526,
+      "end_pos": 545
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "The pipeline",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 547,
+      "end_pos": 559
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "layout models",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 572,
+      "end_pos": 585
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "document structures",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 618,
+      "end_pos": 637
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "customized OCR engines",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 646,
+      "end_pos": 668
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "character recognition accuracy",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 683,
+      "end_pos": 713
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "the document",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 740,
+      "end_pos": 752
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "columns of text",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 762,
+      "end_pos": 777
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "archaic printing technology",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 854,
+      "end_pos": 881
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "rule-based methods",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 976,
+      "end_pos": 994
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "words",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1016,
+      "end_pos": 1021
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "white spaces",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1039,
+      "end_pos": 1051
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "objects",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1100,
+      "end_pos": 1107
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "layout type",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1137,
+      "end_pos": 1148
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "object detection models",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1200,
+      "end_pos": 1223
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "individual columns",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1255,
+      "end_pos": 1273
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1278,
+      "end_pos": 1284
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "training set",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1308,
+      "end_pos": 1320
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "active learning based annotation tool",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1393,
+      "end_pos": 1430
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "The models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1453,
+      "end_pos": 1463
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "categories",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1491,
+      "end_pos": 1501
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "regions",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1506,
+      "end_pos": 1513
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "visual features",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1558,
+      "end_pos": 1573
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "layout data structure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1579,
+      "end_pos": 1600
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "reading orders",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1704,
+      "end_pos": 1718
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "horizontal position",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1732,
+      "end_pos": 1751
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "model predictions",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1825,
+      "end_pos": 1842
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "layout detection accuracy",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 1928,
+      "end_pos": 1953
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "AP",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 1975,
+      "end_pos": 1977
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "column detection model",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2016,
+      "end_pos": 2038
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "token detection model",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2083,
+      "end_pos": 2104
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "character recognition methods",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2123,
+      "end_pos": 2152
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "this document",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2201,
+      "end_pos": 2214
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "our experiments",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2219,
+      "end_pos": 2234
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2280,
+      "end_pos": 2286
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "character recognition recall rate",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2300,
+      "end_pos": 2333
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "OCR models",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2352,
+      "end_pos": 2362
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "densely-arranged texts",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2389,
+      "end_pos": 2411
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "this challenge",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2425,
+      "end_pos": 2439
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "document reorganization algorithm",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2453,
+      "end_pos": 2486
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "text",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2507,
+      "end_pos": 2511
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "token bounding boxes",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2525,
+      "end_pos": 2545
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "layout analysis",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2562,
+      "end_pos": 2577
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "image of dense text",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2622,
+      "end_pos": 2641
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "OCR APIs",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2664,
+      "end_pos": 2672
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "transaction costs",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2698,
+      "end_pos": 2715
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "flexible coordinate system",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2721,
+      "end_pos": 2747
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "Layout Parser",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2751,
+      "end_pos": 2764
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "OCR results",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2790,
+      "end_pos": 2801
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "historical documents",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2883,
+      "end_pos": 2903
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "fonts",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2918,
+      "end_pos": 2923
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "glyphs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2939,
+      "end_pos": 2945
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "accuracy",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2980,
+      "end_pos": 2988
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "modern texts",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3014,
+      "end_pos": 3026
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "flat font",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3056,
+      "end_pos": 3065
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "numbers",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3087,
+      "end_pos": 3094
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "pipeline approach",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3215,
+      "end_pos": 3232
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "recognition accuracy",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 3269,
+      "end_pos": 3289
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "characters",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3318,
+      "end_pos": 3328
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "layout model",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3408,
+      "end_pos": 3420
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "number regions",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3433,
+      "end_pos": 3447
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "images",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3509,
+      "end_pos": 3515
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "these regions",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 3523,
+      "end_pos": 3536
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "self-trained OCR model",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3584,
+      "end_pos": 3606
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "CN-RN",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3618,
+      "end_pos": 3623
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "The model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 3628,
+      "end_pos": 3637
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "Jaccard score",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 3701,
+      "end_pos": 3714
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "Levinstein distances",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 3736,
+      "end_pos": 3756
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "token prediction",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3763,
+      "end_pos": 3779
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "test set",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 3787,
+      "end_pos": 3795
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "digitization pipeline",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3864,
+      "end_pos": 3885
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "large-scale digitization",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3890,
+      "end_pos": 3914
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "The pipeline",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 3936,
+      "end_pos": 3948
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "complicated rules",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 3971,
+      "end_pos": 3988
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "traditional methods",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3997,
+      "end_pos": 4016
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "outliers",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 4066,
+      "end_pos": 4074
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "The DL models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 4076,
+      "end_pos": 4089
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "fine-grained results",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 4104,
+      "end_pos": 4124
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "page reorganization",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 4162,
+      "end_pos": 4181
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  },
+  {
+    "text": "OCR",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 4186,
+      "end_pos": 4189
+    },
+    "section": "A Comprehensive Historical Document Digitization Pipeline"
+  }
+]

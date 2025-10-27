@@ -1,0 +1,200 @@
+[
+  {
+    "text": "Layout Parser",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 22,
+      "end_pos": 35
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "document digitization pipelines",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 101,
+      "end_pos": 132
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "Large-scale document processing",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 134,
+      "end_pos": 165
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "precision",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 177,
+      "end_pos": 186
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "efficiency",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 188,
+      "end_pos": 198
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "robustness",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 204,
+      "end_pos": 214
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "target documents",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 220,
+      "end_pos": 236
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "complicated structures",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 246,
+      "end_pos": 268
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "layout detection models",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 304,
+      "end_pos": 327
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "accuracy",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 351,
+      "end_pos": 359
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "Light-weight pipelines",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 361,
+      "end_pos": 383
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "simple documents",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 409,
+      "end_pos": 425
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "development ease",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 447,
+      "end_pos": 463
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "speed",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 465,
+      "end_pos": 470
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "flexibility",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 475,
+      "end_pos": 486
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "model training",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 542,
+      "end_pos": 556
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "such pipelines",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 680,
+      "end_pos": 694
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "structured document data",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 740,
+      "end_pos": 764
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "downstream tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 775,
+      "end_pos": 791
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "source code",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 797,
+      "end_pos": 808
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "these projects",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 813,
+      "end_pos": 827
+    },
+    "section": "Use Cases"
+  },
+  {
+    "text": "Layout Parser community hub",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 862,
+      "end_pos": 889
+    },
+    "section": "Use Cases"
+  }
+]

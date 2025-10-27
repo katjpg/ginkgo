@@ -1,0 +1,281 @@
+[
+  {
+    "text": "Layout Parser",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 17,
+      "end_pos": 30
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "reusability",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 48,
+      "end_pos": 59
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "layout detection models",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 63,
+      "end_pos": 86
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "full digitization pipelines",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 91,
+      "end_pos": 118
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "deep learning libraries",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 145,
+      "end_pos": 168
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "community model hub",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 197,
+      "end_pos": 216
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "layout models",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 234,
+      "end_pos": 247
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "self-trained models",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 276,
+      "end_pos": 295
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "the model hub",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 299,
+      "end_pos": 312
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "these models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 318,
+      "end_pos": 330
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "Layout Parser pre-trained models",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 397,
+      "end_pos": 429
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "the model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 444,
+      "end_pos": 453
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "News Navigator dataset",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 469,
+      "end_pos": 491
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "DL models",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 543,
+      "end_pos": 552
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "document digitization pipelines",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 604,
+      "end_pos": 635
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "the pipeline",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 660,
+      "end_pos": 672
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "accuracy",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 738,
+      "end_pos": 746
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "pipelines",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 759,
+      "end_pos": 768
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "academic papers",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 793,
+      "end_pos": 808
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "the Layout Parser community platform",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 876,
+      "end_pos": 912
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "layout pipelines",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 941,
+      "end_pos": 957
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "techniques",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 997,
+      "end_pos": 1007
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "project page",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1054,
+      "end_pos": 1066
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "source code",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1086,
+      "end_pos": 1097
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "documentation",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1099,
+      "end_pos": 1112
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "approaches",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1136,
+      "end_pos": 1146
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "discussion panel",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1150,
+      "end_pos": 1166
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "core Layout Parser library",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1219,
+      "end_pos": 1245
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "reusable components",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1270,
+      "end_pos": 1289
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "shared pipelines",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1303,
+      "end_pos": 1319
+    },
+    "section": "LayoutParser Community Platform"
+  },
+  {
+    "text": "problems",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1357,
+      "end_pos": 1365
+    },
+    "section": "LayoutParser Community Platform"
+  }
+]

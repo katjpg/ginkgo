@@ -1,0 +1,812 @@
+[
+  {
+    "text": "DL models",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 18,
+      "end_pos": 27
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "datasets",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 32,
+      "end_pos": 40
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "layout analysis tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 65,
+      "end_pos": 86
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "dhSegment",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 92,
+      "end_pos": 101
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "fully convolutional networks",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 115,
+      "end_pos": 143
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "segmentation tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 152,
+      "end_pos": 170
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "historical documents",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 174,
+      "end_pos": 194
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "Object detection-based methods",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 196,
+      "end_pos": 226
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "Faster R-CN",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 232,
+      "end_pos": 243
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "Mask R-CN",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 252,
+      "end_pos": 261
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "document elements",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 291,
+      "end_pos": 308
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "detecting tables",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 317,
+      "end_pos": 333
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "Graph Neural Networks",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 357,
+      "end_pos": 378
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "table detection",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 406,
+      "end_pos": 421
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "these models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 436,
+      "end_pos": 448
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "unified framework",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 502,
+      "end_pos": 519
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "open-source tools",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 596,
+      "end_pos": 613
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "document image processing",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 618,
+      "end_pos": 643
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "document image analysis",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 657,
+      "end_pos": 680
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "traditional rule-based methods",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 756,
+      "end_pos": 786
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "OCR-D project",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 869,
+      "end_pos": 874
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "toolkit",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 927,
+      "end_pos": 934
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "DIA",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 939,
+      "end_pos": 942
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "the platform",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 964,
+      "end_pos": 976
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "Neudecker et al.",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 990,
+      "end_pos": 1005
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "analyzing historical documents",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1031,
+      "end_pos": 1061
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "The Document Layout Analysis project",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1110,
+      "end_pos": 1146
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "born-digital PDF documents",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1171,
+      "end_pos": 1197
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "PDF data",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1223,
+      "end_pos": 1231
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "DeepLayout",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1251,
+      "end_pos": 1261
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "Detectron2-PubLayNet",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1268,
+      "end_pos": 1288
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "deep learning models",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1307,
+      "end_pos": 1327
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "layout analysis datasets",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1339,
+      "end_pos": 1363
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "DIA pipeline",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1393,
+      "end_pos": 1405
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "Document Analysis and Exploitation platform",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1411,
+      "end_pos": 1445
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "DeepDIVA project",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1473,
+      "end_pos": 1489
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "reproducibility",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1512,
+      "end_pos": 1527
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "DIA methods",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1531,
+      "end_pos": 1542
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "OCR engines",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1597,
+      "end_pos": 1608
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "Tesseract",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1614,
+      "end_pos": 1623
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "easyOCR",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1629,
+      "end_pos": 1636
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "paddleOCR",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1644,
+      "end_pos": 1653
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "DIA tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1722,
+      "end_pos": 1731
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "libraries",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1809,
+      "end_pos": 1818
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "reusability",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1853,
+      "end_pos": 1864
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "DL",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1881,
+      "end_pos": 1883
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "Dectectron2",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1900,
+      "end_pos": 1911
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "Layout Parser",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1952,
+      "end_pos": 1965
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "document image",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1980,
+      "end_pos": 1994
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "Layout Parser",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2005,
+      "end_pos": 2018
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "layout detection",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2069,
+      "end_pos": 2085
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "OCR",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2087,
+      "end_pos": 2090
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "visualization",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2092,
+      "end_pos": 2105
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "storage",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2111,
+      "end_pos": 2118
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "layout data structure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2151,
+      "end_pos": 2172
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "layout annotation",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2241,
+      "end_pos": 2258
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "model training functions",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2263,
+      "end_pos": 2287
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "model accuracy",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2303,
+      "end_pos": 2317
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "target samples",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2325,
+      "end_pos": 2339
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "community platform",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2345,
+      "end_pos": 2363
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "DIA models",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2392,
+      "end_pos": 2402
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "digitization pipelines",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2413,
+      "end_pos": 2435
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "reusability",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2447,
+      "end_pos": 2458
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "reproducibility",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2463,
+      "end_pos": 2478
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "AllenNLP",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2594,
+      "end_pos": 2602
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "transformers",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2610,
+      "end_pos": 2622
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "DL-based support",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2669,
+      "end_pos": 2685
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "computer vision",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2734,
+      "end_pos": 2749
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "natural language processing problems",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2754,
+      "end_pos": 2790
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "DIA tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2854,
+      "end_pos": 2863
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "model hubs",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2946,
+      "end_pos": 2956
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "Torch Hub",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2965,
+      "end_pos": 2974
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "Tensor Flow Hub",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2983,
+      "end_pos": 2998
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "pretrained models",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3029,
+      "end_pos": 3046
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "document processing pipelines",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 3063,
+      "end_pos": 3092
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "document data collections",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 3152,
+      "end_pos": 3177
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "DL models",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3211,
+      "end_pos": 3220
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "PRImA",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 3244,
+      "end_pos": 3249
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "magazine layouts",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3253,
+      "end_pos": 3269
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "PubLayNet",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 3272,
+      "end_pos": 3281
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "academic paper layouts",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3286,
+      "end_pos": 3308
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "Table Bank",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 3311,
+      "end_pos": 3321
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "tables",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3326,
+      "end_pos": 3332
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "academic papers",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3336,
+      "end_pos": 3351
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "Newspaper Navigator Dataset",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 3354,
+      "end_pos": 3381
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "newspaper figure layouts",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3389,
+      "end_pos": 3413
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "HJDataset",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 3419,
+      "end_pos": 3428
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "historical Japanese document layouts",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3433,
+      "end_pos": 3469
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "these datasets",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 3504,
+      "end_pos": 3518
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "Layout Parser model zoo",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3550,
+      "end_pos": 3573
+    },
+    "section": "Related Work"
+  }
+]

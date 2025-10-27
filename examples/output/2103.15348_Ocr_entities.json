@@ -1,0 +1,218 @@
+[
+  {
+    "text": "Layout Parser",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 0,
+      "end_pos": 13
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "unified interface",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 25,
+      "end_pos": 42
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "OCR tools",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 56,
+      "end_pos": 65
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "APIs",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 164,
+      "end_pos": 168
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "protocols",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 172,
+      "end_pos": 181
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "pipeline",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 258,
+      "end_pos": 266
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "comparisons",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 297,
+      "end_pos": 308
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "the available tools",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 315,
+      "end_pos": 334
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "wrappers",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 431,
+      "end_pos": 439
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "OCR engines",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 455,
+      "end_pos": 466
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "syntax",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 497,
+      "end_pos": 503
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "plug-and-play style",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 534,
+      "end_pos": 553
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "OCR modules",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 640,
+      "end_pos": 651
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "Tesseract Agent",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 669,
+      "end_pos": 684
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "OCR software",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 722,
+      "end_pos": 734
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "image",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 763,
+      "end_pos": 768
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "OCR outputs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 775,
+      "end_pos": 786
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "layout data structures",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 829,
+      "end_pos": 851
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "digitization pipeline",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 896,
+      "end_pos": 917
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "Tesseract",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 956,
+      "end_pos": 965
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "Google Cloud Vision OCR engines",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 970,
+      "end_pos": 1001
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "DL-based CN-RN OCR model",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1035,
+      "end_pos": 1059
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "Connectionist Temporal Classification loss",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1080,
+      "end_pos": 1117
+    },
+    "section": "Ocr"
+  },
+  {
+    "text": "customized datasets",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1206,
+      "end_pos": 1225
+    },
+    "section": "Ocr"
+  }
+]
