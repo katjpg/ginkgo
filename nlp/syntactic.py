@@ -62,24 +62,27 @@ def extract_deps(doc: Doc) -> list[dict]:
 
 
 def convert_entity(entity: dict, doc: Doc) -> Span | None:
-    start_char = entity["char_interval"]["start_pos"]
-    end_char = entity["char_interval"]["end_pos"]
-
-    indices = []
-    for token in doc:
-        token_start = token.idx
-        token_end = token.idx + len(token.text)
-
-        if not (token_end <= start_char or token_start >= end_char):
-            indices.append(token.i)
-
-    if not indices:
+    """Find entity by text matching instead of character positions."""
+    if "text" not in entity:
         return None
-
-    start_idx = min(indices)
-    end_idx = max(indices) + 1
-
-    return doc[start_idx:end_idx]
+    
+    entity_lower = entity["text"].lower()
+    
+    # 1. exact match first
+    for sent in doc.sents:
+        for i in range(len(sent)):
+            for j in range(i + 1, min(i + 10, len(sent) + 1)):
+                span = sent[i:j]
+                if span.text.lower() == entity_lower:
+                    return span
+    
+    # 2. partial match
+    for sent in doc.sents:
+        for token in sent:
+            if entity_lower in token.text.lower() or token.text.lower() in entity_lower:
+                return doc[token.i:token.i+1]
+    
+    return None
 
 
 def find_lca(t1: Token, t2: Token) -> Token | None:
