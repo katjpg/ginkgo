@@ -3,7 +3,7 @@ import langextract as lx
 
 PROMPT = textwrap.dedent(
     """\
-    You are a PhD researcher that extracts contextually rich scientific discourse entities from research text. Return each entity with its type and exact text span.
+    You are a PhD researcher that extracts contextually rich scientific entities from research text. Return each entity with its type and exact text span.
     
     ENTITY TYPES:
     
