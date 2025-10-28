@@ -59,7 +59,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		</fileDesc>
 		<encodingDesc>
 			<appInfo>
-				<application version="0.8.2-SNAPSHOT" ident="GROBID" when="2025-10-28T10:26+0000">
+				<application version="0.8.2-SNAPSHOT" ident="GROBID" when="2025-10-28T11:42+0000">
 					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
 					<ref target="https://github.com/kermitt2/grobid"/>
 				</application>
@@ -195,7 +195,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct xml:id="b2">
 	<analytic>
-		<title level="a" type="main">A framework for learning predictive structures from multiple tasks and unlabeled data</title>
+		<title level="a" type="main">Learning from Labeled and Unlabeled Data</title>
 		<author>
 			<persName><forename type="first">Rie</forename><surname>Kubota</surname></persName>
 		</author>
@@ -205,13 +205,15 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Tong</forename><surname>Zhang</surname></persName>
 		</author>
+		<idno type="DOI">10.1007/978-0-387-30164-8_459</idno>
 	</analytic>
 	<monogr>
-		<title level="j">Journal of Machine Learning Research</title>
+		<title level="m">Encyclopedia of Machine Learning</title>
 		<imprint>
-			<biblScope unit="volume">6</biblScope>
-			<biblScope unit="page" from="1817" to="1853" />
+			<publisher>Springer US</publisher>
 			<date type="published" when="2005-11">2005. Nov</date>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="584" to="584" />
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -258,14 +260,15 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Fernando</forename><surname>Pereira</surname></persName>
 		</author>
+		<idno type="DOI">10.3115/1610075.1610094</idno>
 	</analytic>
 	<monogr>
-		<title level="m">Proceedings of the 2006 conference on empirical methods in natural language processing</title>
-		<meeting>the 2006 conference on empirical methods in natural language processing</meeting>
+		<title level="m">Proceedings of the 2006 Conference on Empirical Methods in Natural Language Processing - EMNLP &apos;06</title>
+		<meeting>the 2006 Conference on Empirical Methods in Natural Language Processing - EMNLP &apos;06</meeting>
 		<imprint>
 			<publisher>Association for Computational Linguistics</publisher>
 			<date type="published" when="2006">2006</date>
-			<biblScope unit="page" from="120" to="128" />
+			<biblScope unit="page">120</biblScope>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -329,7 +332,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct xml:id="b7">
 	<analytic>
-		<title level="a" type="main">Semeval-2017 task 1: Semantic textual similarity multilingual and crosslingual focused evaluation</title>
+		<title level="a" type="main">SemEval-2017 Task 1: Semantic Textual Similarity Multilingual and Crosslingual Focused Evaluation</title>
 		<author>
 			<persName><forename type="first">Daniel</forename><surname>Cer</surname></persName>
 		</author>
@@ -345,7 +348,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Lucia</forename><surname>Specia</surname></persName>
 		</author>
-		<idno type="DOI">10.18653/v1/S17-2001</idno>
+		<idno type="DOI">10.18653/v1/s17-2001</idno>
 	</analytic>
 	<monogr>
 		<title level="m">Proceedings of the 11th International Workshop on Semantic Evaluation (SemEval-2017)</title>
@@ -436,7 +439,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct xml:id="b11">
 	<analytic>
-		<title level="a" type="main">Semi-Supervised Sequence Modeling with Cross-View Training</title>
+		<title level="a" type="main">Semi-supervised sequence modeling with cross-view training</title>
 		<author>
 			<persName><forename type="first">Kevin</forename><surname>Clark</surname></persName>
 		</author>
@@ -449,13 +452,11 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Quoc</forename><surname>Le</surname></persName>
 		</author>
-		<idno type="DOI">10.18653/v1/d18-1217</idno>
 	</analytic>
 	<monogr>
 		<title level="m">Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing</title>
 		<meeting>the 2018 Conference on Empirical Methods in Natural Language Processing</meeting>
 		<imprint>
-			<publisher>Association for Computational Linguistics</publisher>
 			<date type="published" when="2018">2018</date>
 			<biblScope unit="page" from="1914" to="1925" />
 		</imprint>
@@ -464,20 +465,19 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct xml:id="b12">
 	<analytic>
-		<title level="a" type="main">A unified architecture for natural language processing</title>
+		<title level="a" type="main">A unified architecture for natural language processing: Deep neural networks with multitask learning</title>
 		<author>
 			<persName><forename type="first">Ronan</forename><surname>Collobert</surname></persName>
 		</author>
 		<author>
 			<persName><forename type="first">Jason</forename><surname>Weston</surname></persName>
 		</author>
-		<idno type="DOI">10.1145/1390156.1390177</idno>
 	</analytic>
 	<monogr>
-		<title level="m">Proceedings of the 25th international conference on Machine learning - ICML &apos;08</title>
-		<meeting>the 25th international conference on Machine learning - ICML &apos;08</meeting>
+		<title level="m">Proceedings of the 25th international conference on Machine learning</title>
+		<meeting>the 25th international conference on Machine learning</meeting>
 		<imprint>
-			<publisher>ACM Press</publisher>
+			<publisher>ACM</publisher>
 			<date type="published" when="2008">2008</date>
 			<biblScope unit="page" from="160" to="167" />
 		</imprint>
@@ -628,7 +628,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct xml:id="b19">
 	<analytic>
-		<title level="a" type="main">Learning distributed representations of sentences from unlabelled data</title>
+		<title level="a" type="main">Learning Distributed Representations of Sentences from Unlabelled Data</title>
 		<author>
 			<persName><forename type="first">Felix</forename><surname>Hill</surname></persName>
 		</author>
@@ -638,6 +638,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Anna</forename><surname>Korhonen</surname></persName>
 		</author>
+		<idno type="DOI">10.18653/v1/n16-1162</idno>
 	</analytic>
 	<monogr>
 		<title level="m">Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies</title>
@@ -1024,7 +1025,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct xml:id="b35">
 	<analytic>
-		<title level="a" type="main">Glove: Global vectors for word representation</title>
+		<title level="a" type="main">Glove: Global Vectors for Word Representation</title>
 		<author>
 			<persName><forename type="first">Jeffrey</forename><surname>Pennington</surname></persName>
 		</author>
@@ -1034,10 +1035,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Christopher</forename><forename type="middle">D</forename><surname>Manning</surname></persName>
 		</author>
+		<idno type="DOI">10.3115/v1/d14-1162</idno>
 	</analytic>
 	<monogr>
-		<title level="m">Empirical Methods in Natural Language Processing (EMNLP)</title>
+		<title level="m">Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)</title>
+		<meeting>the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)</meeting>
 		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
 			<date type="published" when="2014">2014</date>
 			<biblScope unit="page" from="1532" to="1543" />
 		</imprint>
@@ -1059,13 +1063,10 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Russell</forename><surname>Power</surname></persName>
 		</author>
-		<idno type="DOI">10.18653/v1/p17-1161</idno>
 	</analytic>
 	<monogr>
-		<title level="m">Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</title>
-		<meeting>the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</meeting>
+		<title level="m">ACL</title>
 		<imprint>
-			<publisher>Association for Computational Linguistics</publisher>
 			<date type="published" when="2017">2017</date>
 		</imprint>
 	</monogr>
@@ -1106,7 +1107,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct xml:id="b38">
 	<analytic>
-		<title level="a" type="main">Dissecting Contextual Word Embeddings: Architecture and Representation</title>
+		<title level="a" type="main">Dissecting contextual word embeddings: Architecture and representation</title>
 		<author>
 			<persName><forename type="first">Matthew</forename><surname>Peters</surname></persName>
 		</author>
@@ -1119,13 +1120,11 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Wen-Tau</forename><surname>Yih</surname></persName>
 		</author>
-		<idno type="DOI">10.18653/v1/d18-1179</idno>
 	</analytic>
 	<monogr>
 		<title level="m">Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing</title>
 		<meeting>the 2018 Conference on Empirical Methods in Natural Language Processing</meeting>
 		<imprint>
-			<publisher>Association for Computational Linguistics</publisher>
 			<date type="published" when="2018">2018</date>
 			<biblScope unit="page" from="1499" to="1509" />
 		</imprint>
@@ -1386,12 +1385,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Pierre-Antoine</forename><surname>Manzagol</surname></persName>
 		</author>
+		<idno type="DOI">10.1145/1390156.1390294</idno>
 	</analytic>
 	<monogr>
-		<title level="m">Proceedings of the 25th international conference on Machine learning</title>
-		<meeting>the 25th international conference on Machine learning</meeting>
+		<title level="m">Proceedings of the 25th international conference on Machine learning - ICML &apos;08</title>
+		<meeting>the 25th international conference on Machine learning - ICML &apos;08</meeting>
 		<imprint>
-			<publisher>ACM</publisher>
+			<publisher>ACM Press</publisher>
 			<date type="published" when="2008">2008</date>
 			<biblScope unit="page" from="1096" to="1103" />
 		</imprint>
@@ -1400,7 +1400,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct xml:id="b49">
 	<analytic>
-		<title level="a" type="main">Glue: A multi-task benchmark and analysis platform for natural language understanding</title>
+		<title level="a" type="main">GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding</title>
 		<author>
 			<persName><forename type="first">Alex</forename><surname>Wang</surname></persName>
 		</author>
@@ -1419,14 +1419,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Samuel</forename><surname>Bowman</surname></persName>
 		</author>
-		<author>
-			<persName><forename type="first">;</forename></persName>
-		</author>
+		<idno type="DOI">10.18653/v1/w18-5446</idno>
 	</analytic>
 	<monogr>
 		<title level="m">Proceedings of the 2018 EMNLP Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP</title>
 		<meeting>the 2018 EMNLP Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP</meeting>
 		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
 			<date type="published" when="2018">2018</date>
 			<biblScope unit="page" from="353" to="355" />
 		</imprint>

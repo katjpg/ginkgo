@@ -9,47 +9,20 @@
     "section": "Feature-based Approach with BERT"
   },
   {
-    "text": "downstream task",
-    "type": "task",
+    "text": "fine-tuning approach",
+    "type": "other",
     "char_interval": {
-      "start_pos": 195,
-      "end_pos": 210
+      "start_pos": 55,
+      "end_pos": 75
     },
     "section": "Feature-based Approach with BERT"
   },
   {
     "text": "classification layer",
-    "type": "other",
+    "type": "object",
     "char_interval": {
       "start_pos": 92,
       "end_pos": 112
-    },
-    "section": "Feature-based Approach with BERT"
-  },
-  {
-    "text": "Transformer encoder architecture",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 387,
-      "end_pos": 419
-    },
-    "section": "Feature-based Approach with BERT"
-  },
-  {
-    "text": "Named Entity Recognition",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 769,
-      "end_pos": 793
-    },
-    "section": "Feature-based Approach with BERT"
-  },
-  {
-    "text": "CoNL-2003",
-    "type": "dataset",
-    "char_interval": {
-      "start_pos": 759,
-      "end_pos": 768
     },
     "section": "Feature-based Approach with BERT"
   },
@@ -63,55 +36,37 @@
     "section": "Feature-based Approach with BERT"
   },
   {
-    "text": "WordPiece model",
+    "text": "feature-based approach",
     "type": "other",
     "char_interval": {
-      "start_pos": 890,
-      "end_pos": 905
+      "start_pos": 225,
+      "end_pos": 247
     },
     "section": "Feature-based Approach with BERT"
   },
   {
-    "text": "tagging task",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 1025,
-      "end_pos": 1037
-    },
-    "section": "Feature-based Approach with BERT"
-  },
-  {
-    "text": "CRF layer",
+    "text": "Transformer encoder architecture",
     "type": "other",
     "char_interval": {
-      "start_pos": 1055,
-      "end_pos": 1064
+      "start_pos": 387,
+      "end_pos": 419
     },
     "section": "Feature-based Approach with BERT"
   },
   {
-    "text": "NER label set",
-    "type": "task",
+    "text": "task-specific model architecture",
+    "type": "other",
     "char_interval": {
-      "start_pos": 1181,
-      "end_pos": 1194
+      "start_pos": 445,
+      "end_pos": 477
     },
     "section": "Feature-based Approach with BERT"
   },
   {
-    "text": "the fine-tuning approach",
-    "type": "generic",
+    "text": "feature-based approach",
+    "type": "other",
     "char_interval": {
-      "start_pos": 51,
-      "end_pos": 75
-    },
-    "section": "Feature-based Approach with BERT"
-  },
-  {
-    "text": "the feature-based approach",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 221,
+      "start_pos": 225,
       "end_pos": 247
     },
     "section": "Feature-based Approach with BERT"
@@ -126,29 +81,173 @@
     "section": "Feature-based Approach with BERT"
   },
   {
-    "text": "contextual embeddings",
+    "text": "CoNL-2003",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 759,
+      "end_pos": 768
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "Named Entity Recognition",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 769,
+      "end_pos": 793
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "NER",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 795,
+      "end_pos": 798
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 822,
+      "end_pos": 826
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "case-preserving Word Piece model",
     "type": "other",
     "char_interval": {
-      "start_pos": 1372,
-      "end_pos": 1393
+      "start_pos": 837,
+      "end_pos": 869
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "document context",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 898,
+      "end_pos": 914
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "tagging task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 989,
+      "end_pos": 1001
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "CRF layer",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1019,
+      "end_pos": 1028
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "sub-token",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1083,
+      "end_pos": 1092
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "token-level classifier",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1113,
+      "end_pos": 1135
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "NER label set",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1145,
+      "end_pos": 1158
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "fine-tuning approach",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1174,
+      "end_pos": 1194
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "feature-based approach",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1209,
+      "end_pos": 1231
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 11,
+      "end_pos": 15
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "activations",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1250,
+      "end_pos": 1261
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1324,
+      "end_pos": 1328
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "contextual embeddings",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1336,
+      "end_pos": 1357
     },
     "section": "Feature-based Approach with BERT"
   },
   {
     "text": "BiLSTM",
-    "type": "object",
+    "type": "method",
     "char_interval": {
-      "start_pos": 1464,
-      "end_pos": 1470
+      "start_pos": 1428,
+      "end_pos": 1434
     },
     "section": "Feature-based Approach with BERT"
   },
   {
     "text": "classification layer",
-    "type": "other",
+    "type": "object",
     "char_interval": {
-      "start_pos": 1482,
-      "end_pos": 1502
+      "start_pos": 1446,
+      "end_pos": 1466
     },
     "section": "Feature-based Approach with BERT"
   },
@@ -156,17 +255,26 @@
     "text": "BERT LARGE",
     "type": "method",
     "char_interval": {
-      "start_pos": 1537,
-      "end_pos": 1547
+      "start_pos": 1502,
+      "end_pos": 1512
     },
     "section": "Feature-based Approach with BERT"
   },
   {
-    "text": "F1",
-    "type": "metric",
+    "text": "the token representations",
+    "type": "generic",
     "char_interval": {
-      "start_pos": 1750,
-      "end_pos": 1752
+      "start_pos": 1607,
+      "end_pos": 1632
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "hidden layers",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1651,
+      "end_pos": 1664
     },
     "section": "Feature-based Approach with BERT"
   },
@@ -174,8 +282,26 @@
     "text": "Transformer",
     "type": "method",
     "char_interval": {
-      "start_pos": 1719,
-      "end_pos": 1730
+      "start_pos": 1684,
+      "end_pos": 1695
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "the entire model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1738,
+      "end_pos": 1754
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "BERT",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1779,
+      "end_pos": 1783
     },
     "section": "Feature-based Approach with BERT"
   }

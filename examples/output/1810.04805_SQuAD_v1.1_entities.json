@@ -9,11 +9,11 @@
     "section": "SQuAD v1.1"
   },
   {
-    "text": "SQuAD v1.1",
+    "text": "SQuAD v 1.1",
     "type": "dataset",
     "char_interval": {
       "start_pos": 41,
-      "end_pos": 51
+      "end_pos": 52
     },
     "section": "SQuAD v1.1"
   },
@@ -21,17 +21,8 @@
     "text": "question answering",
     "type": "task",
     "char_interval": {
-      "start_pos": 13,
-      "end_pos": 31
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "question/answer pairs",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 90,
-      "end_pos": 111
+      "start_pos": 122,
+      "end_pos": 130
     },
     "section": "SQuAD v1.1"
   },
@@ -39,8 +30,8 @@
     "text": "GLUE data set",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 179,
-      "end_pos": 192
+      "start_pos": 156,
+      "end_pos": 169
     },
     "section": "SQuAD v1.1"
   },
@@ -48,8 +39,8 @@
     "text": "BERTBASE",
     "type": "method",
     "char_interval": {
-      "start_pos": 312,
-      "end_pos": 320
+      "start_pos": 289,
+      "end_pos": 297
     },
     "section": "SQuAD v1.1"
   },
@@ -57,17 +48,26 @@
     "text": "BERTLARGE",
     "type": "method",
     "char_interval": {
-      "start_pos": 325,
-      "end_pos": 334
+      "start_pos": 302,
+      "end_pos": 311
     },
     "section": "SQuAD v1.1"
   },
   {
-    "text": "Wikipedia",
+    "text": "question",
     "type": "object",
     "char_interval": {
-      "start_pos": 339,
-      "end_pos": 348
+      "start_pos": 13,
+      "end_pos": 21
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "passage",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 137,
+      "end_pos": 144
     },
     "section": "SQuAD v1.1"
   },
@@ -75,53 +75,17 @@
     "text": "predict the answer text span",
     "type": "task",
     "char_interval": {
-      "start_pos": 387,
-      "end_pos": 415
+      "start_pos": 364,
+      "end_pos": 392
     },
     "section": "SQuAD v1.1"
   },
   {
-    "text": "passage",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 423,
-      "end_pos": 430
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "Figure1",
+    "text": "the input question and passage",
     "type": "generic",
     "char_interval": {
-      "start_pos": 444,
-      "end_pos": 451
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "question answering task",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 460,
-      "end_pos": 483
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "input question",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 502,
-      "end_pos": 516
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "passage",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 521,
-      "end_pos": 528
+      "start_pos": 476,
+      "end_pos": 506
     },
     "section": "SQuAD v1.1"
   },
@@ -129,8 +93,8 @@
     "text": "A embedding",
     "type": "other",
     "char_interval": {
-      "start_pos": 586,
-      "end_pos": 597
+      "start_pos": 564,
+      "end_pos": 575
     },
     "section": "SQuAD v1.1"
   },
@@ -138,107 +102,71 @@
     "text": "B embedding",
     "type": "other",
     "char_interval": {
-      "start_pos": 624,
-      "end_pos": 635
+      "start_pos": 602,
+      "end_pos": 613
     },
     "section": "SQuAD v1.1"
   },
   {
-    "text": "start vector",
+    "text": "start vector S",
     "type": "other",
     "char_interval": {
-      "start_pos": 657,
-      "end_pos": 669
+      "start_pos": 635,
+      "end_pos": 649
     },
     "section": "SQuAD v1.1"
   },
   {
-    "text": "end vector",
+    "text": "end vector E",
     "type": "other",
     "char_interval": {
-      "start_pos": 685,
-      "end_pos": 695
+      "start_pos": 663,
+      "end_pos": 675
     },
     "section": "SQuAD v1.1"
   },
   {
-    "text": "word",
-    "type": "object",
+    "text": "dot product",
+    "type": "other",
     "char_interval": {
-      "start_pos": 743,
-      "end_pos": 747
+      "start_pos": 780,
+      "end_pos": 791
     },
     "section": "SQuAD v1.1"
   },
   {
-    "text": "answer span",
-    "type": "object",
+    "text": "softmax",
+    "type": "other",
     "char_interval": {
-      "start_pos": 773,
-      "end_pos": 784
+      "start_pos": 824,
+      "end_pos": 831
     },
     "section": "SQuAD v1.1"
   },
   {
-    "text": "words",
-    "type": "object",
+    "text": "start of the answer span",
+    "type": "other",
     "char_interval": {
-      "start_pos": 870,
-      "end_pos": 875
+      "start_pos": 738,
+      "end_pos": 762
     },
     "section": "SQuAD v1.1"
   },
   {
-    "text": "paragraph",
-    "type": "object",
+    "text": "end of the answer span",
+    "type": "other",
     "char_interval": {
-      "start_pos": 883,
-      "end_pos": 892
+      "start_pos": 933,
+      "end_pos": 955
     },
     "section": "SQuAD v1.1"
   },
   {
-    "text": "answer span",
-    "type": "object",
+    "text": "maximum scoring span",
+    "type": "task",
     "char_interval": {
-      "start_pos": 968,
-      "end_pos": 979
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "candidate span",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 996,
-      "end_pos": 1010
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "position",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 1016,
-      "end_pos": 1024
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "position",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 1030,
-      "end_pos": 1038
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "span",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 1094,
-      "end_pos": 1098
+      "start_pos": 1052,
+      "end_pos": 1072
     },
     "section": "SQuAD v1.1"
   },
@@ -246,62 +174,17 @@
     "text": "training objective",
     "type": "task",
     "char_interval": {
-      "start_pos": 1140,
-      "end_pos": 1158
+      "start_pos": 1114,
+      "end_pos": 1132
     },
     "section": "SQuAD v1.1"
   },
   {
     "text": "log-likelihoods",
-    "type": "task",
+    "type": "metric",
     "char_interval": {
-      "start_pos": 1177,
-      "end_pos": 1192
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "start",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 1208,
-      "end_pos": 1213
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "end positions",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 1218,
-      "end_pos": 1231
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "Table2",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 1312,
-      "end_pos": 1318
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "leaderboard entries",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 1329,
-      "end_pos": 1348
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "published systems",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 1377,
-      "end_pos": 1394
+      "start_pos": 1151,
+      "end_pos": 1166
     },
     "section": "SQuAD v1.1"
   },
@@ -309,26 +192,71 @@
     "text": "SQuAD",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 1500,
-      "end_pos": 1505
+      "start_pos": 1396,
+      "end_pos": 1401
     },
     "section": "SQuAD v1.1"
   },
   {
-    "text": "TriviaQA",
+    "text": "Trivia QA",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 1733,
-      "end_pos": 1741
+      "start_pos": 1623,
+      "end_pos": 1632
     },
     "section": "SQuAD v1.1"
   },
   {
-    "text": "F1",
+    "text": "SQuAD",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1654,
+      "end_pos": 1659
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "F 1",
     "type": "metric",
     "char_interval": {
-      "start_pos": 1864,
-      "end_pos": 1866
+      "start_pos": 1735,
+      "end_pos": 1738
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "F 1",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 1762,
+      "end_pos": 1765
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "F 1",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 1865,
+      "end_pos": 1868
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "SQuAD v 2.0",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1978,
+      "end_pos": 1989
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "SQuAD 1.1",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 2021,
+      "end_pos": 2030
     },
     "section": "SQuAD v1.1"
   },
@@ -336,35 +264,17 @@
     "text": "BERT",
     "type": "method",
     "char_interval": {
-      "start_pos": 1933,
-      "end_pos": 1937
+      "start_pos": 1806,
+      "end_pos": 1810
     },
     "section": "SQuAD v1.1"
   },
   {
-    "text": "SQuAD v2.0",
+    "text": "SQuAD v 1.1",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 2103,
-      "end_pos": 2113
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "SQuAD v1.1",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 2335,
-      "end_pos": 2345
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "SQuAD v1.1",
-    "type": "dataset",
-    "char_interval": {
-      "start_pos": 2335,
-      "end_pos": 2345
+      "start_pos": 2211,
+      "end_pos": 2222
     },
     "section": "SQuAD v1.1"
   },
@@ -372,8 +282,17 @@
     "text": "answer span",
     "type": "object",
     "char_interval": {
-      "start_pos": 2431,
-      "end_pos": 2442
+      "start_pos": 2308,
+      "end_pos": 2319
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "[CLS] token",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2346,
+      "end_pos": 2357
     },
     "section": "SQuAD v1.1"
   },
@@ -381,44 +300,71 @@
     "text": "answer span",
     "type": "object",
     "char_interval": {
-      "start_pos": 2526,
-      "end_pos": 2537
+      "start_pos": 2403,
+      "end_pos": 2414
     },
     "section": "SQuAD v1.1"
   },
   {
-    "text": "TriviaQA-Wiki",
+    "text": "[CLS] token",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2468,
+      "end_pos": 2479
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "no-answer span",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2525,
+      "end_pos": 2539
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "Trivia QA",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 2779,
-      "end_pos": 2792
+      "start_pos": 2604,
+      "end_pos": 2613
     },
     "section": "SQuAD v1.1"
   },
   {
-    "text": "F1",
+    "text": "Trivia QA-Wiki",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 2655,
+      "end_pos": 2669
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "answers",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2766,
+      "end_pos": 2773
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "F 1",
     "type": "metric",
     "char_interval": {
-      "start_pos": 3043,
-      "end_pos": 3045
+      "start_pos": 2918,
+      "end_pos": 2921
     },
     "section": "SQuAD v1.1"
   },
   {
-    "text": "TriviaQA data",
+    "text": "Trivia QA data",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 3062,
-      "end_pos": 3075
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "this model",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 3080,
-      "end_pos": 3090
+      "start_pos": 2938,
+      "end_pos": 2952
     },
     "section": "SQuAD v1.1"
   }

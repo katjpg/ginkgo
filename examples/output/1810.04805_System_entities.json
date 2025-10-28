@@ -1,19 +1,10 @@
 [
   {
-    "text": "The results",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 0,
-      "end_pos": 11
-    },
-    "section": "System"
-  },
-  {
-    "text": "F1",
+    "text": "F 1",
     "type": "metric",
     "char_interval": {
-      "start_pos": 209,
-      "end_pos": 211
+      "start_pos": 173,
+      "end_pos": 176
     },
     "section": "System"
   }

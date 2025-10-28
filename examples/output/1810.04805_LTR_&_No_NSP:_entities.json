@@ -27,6 +27,15 @@
     "section": "LTR & No NSP:"
   },
   {
+    "text": "downstream performance",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 238,
+      "end_pos": 260
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
     "text": "NSP task",
     "type": "task",
     "char_interval": {
@@ -36,11 +45,65 @@
     "section": "LTR & No NSP:"
   },
   {
+    "text": "this model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 276,
+      "end_pos": 286
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "Open AI GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 356,
+      "end_pos": 367
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "training dataset",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 390,
+      "end_pos": 406
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "input representation",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 412,
+      "end_pos": 432
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "fine-tuning scheme",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 442,
+      "end_pos": 460
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "NSP task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 505,
+      "end_pos": 513
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
     "text": "QNLI",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 586,
-      "end_pos": 590
+      "start_pos": 588,
+      "end_pos": 592
     },
     "section": "LTR & No NSP:"
   },
@@ -48,8 +111,8 @@
     "text": "MNLI",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 592,
-      "end_pos": 596
+      "start_pos": 594,
+      "end_pos": 598
     },
     "section": "LTR & No NSP:"
   },
@@ -57,8 +120,8 @@
     "text": "SQuAD 1.1",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 602,
-      "end_pos": 611
+      "start_pos": 604,
+      "end_pos": 613
     },
     "section": "LTR & No NSP:"
   },
@@ -66,35 +129,26 @@
     "text": "training bidirectional representations",
     "type": "task",
     "char_interval": {
-      "start_pos": 645,
-      "end_pos": 683
+      "start_pos": 647,
+      "end_pos": 685
     },
     "section": "LTR & No NSP:"
   },
   {
-    "text": "LTR model",
-    "type": "method",
+    "text": "MLM",
+    "type": "task",
     "char_interval": {
-      "start_pos": 729,
-      "end_pos": 738
-    },
-    "section": "LTR & No NSP:"
-  },
-  {
-    "text": "MLM model",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 763,
-      "end_pos": 772
+      "start_pos": 765,
+      "end_pos": 768
     },
     "section": "LTR & No NSP:"
   },
   {
     "text": "MRPC",
-    "type": "dataset",
+    "type": "task",
     "char_interval": {
-      "start_pos": 807,
-      "end_pos": 811
+      "start_pos": 809,
+      "end_pos": 813
     },
     "section": "LTR & No NSP:"
   },
@@ -102,8 +156,8 @@
     "text": "SQuAD",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 816,
-      "end_pos": 821
+      "start_pos": 818,
+      "end_pos": 823
     },
     "section": "LTR & No NSP:"
   },
@@ -111,8 +165,8 @@
     "text": "token predictions",
     "type": "task",
     "char_interval": {
-      "start_pos": 897,
-      "end_pos": 914
+      "start_pos": 899,
+      "end_pos": 916
     },
     "section": "LTR & No NSP:"
   },
@@ -120,8 +174,26 @@
     "text": "token-level hidden states",
     "type": "object",
     "char_interval": {
-      "start_pos": 926,
-      "end_pos": 951
+      "start_pos": 928,
+      "end_pos": 953
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "rightside context",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 962,
+      "end_pos": 979
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "the LTR system",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1036,
+      "end_pos": 1050
     },
     "section": "LTR & No NSP:"
   },
@@ -129,8 +201,8 @@
     "text": "BiLSTM",
     "type": "method",
     "char_interval": {
-      "start_pos": 1082,
-      "end_pos": 1088
+      "start_pos": 1084,
+      "end_pos": 1090
     },
     "section": "LTR & No NSP:"
   },
@@ -138,17 +210,35 @@
     "text": "SQuAD",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 1140,
-      "end_pos": 1145
+      "start_pos": 1142,
+      "end_pos": 1147
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "pretrained bidirectional models",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1203,
+      "end_pos": 1234
     },
     "section": "LTR & No NSP:"
   },
   {
     "text": "GLUE tasks",
-    "type": "dataset",
+    "type": "task",
     "char_interval": {
-      "start_pos": 1270,
-      "end_pos": 1280
+      "start_pos": 1272,
+      "end_pos": 1282
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "BiLSTM",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1084,
+      "end_pos": 1090
     },
     "section": "LTR & No NSP:"
   },
@@ -156,17 +246,17 @@
     "text": "LTR",
     "type": "method",
     "char_interval": {
-      "start_pos": 1344,
-      "end_pos": 1347
+      "start_pos": 1346,
+      "end_pos": 1349
     },
     "section": "LTR & No NSP:"
   },
   {
-    "text": "RTL models",
+    "text": "RTL",
     "type": "method",
     "char_interval": {
-      "start_pos": 1352,
-      "end_pos": 1362
+      "start_pos": 1354,
+      "end_pos": 1357
     },
     "section": "LTR & No NSP:"
   },
@@ -174,8 +264,8 @@
     "text": "token",
     "type": "object",
     "char_interval": {
-      "start_pos": 1382,
-      "end_pos": 1387
+      "start_pos": 1384,
+      "end_pos": 1389
     },
     "section": "LTR & No NSP:"
   },
@@ -183,8 +273,8 @@
     "text": "ELMo",
     "type": "method",
     "char_interval": {
-      "start_pos": 1431,
-      "end_pos": 1435
+      "start_pos": 1433,
+      "end_pos": 1437
     },
     "section": "LTR & No NSP:"
   },
@@ -192,8 +282,8 @@
     "text": "this",
     "type": "generic",
     "char_interval": {
-      "start_pos": 1455,
-      "end_pos": 1459
+      "start_pos": 1457,
+      "end_pos": 1461
     },
     "section": "LTR & No NSP:"
   },
@@ -201,8 +291,8 @@
     "text": "bidirectional model",
     "type": "method",
     "char_interval": {
-      "start_pos": 1494,
-      "end_pos": 1513
+      "start_pos": 1496,
+      "end_pos": 1515
     },
     "section": "LTR & No NSP:"
   },
@@ -210,8 +300,8 @@
     "text": "QA",
     "type": "task",
     "char_interval": {
-      "start_pos": 1556,
-      "end_pos": 1558
+      "start_pos": 1558,
+      "end_pos": 1560
     },
     "section": "LTR & No NSP:"
   },
@@ -219,8 +309,8 @@
     "text": "RTL model",
     "type": "method",
     "char_interval": {
-      "start_pos": 1570,
-      "end_pos": 1579
+      "start_pos": 1572,
+      "end_pos": 1581
     },
     "section": "LTR & No NSP:"
   },
@@ -228,8 +318,8 @@
     "text": "the question",
     "type": "generic",
     "char_interval": {
-      "start_pos": 1625,
-      "end_pos": 1637
+      "start_pos": 1627,
+      "end_pos": 1639
     },
     "section": "LTR & No NSP:"
   },
@@ -237,8 +327,8 @@
     "text": "deep bidirectional model",
     "type": "method",
     "char_interval": {
-      "start_pos": 1684,
-      "end_pos": 1708
+      "start_pos": 1686,
+      "end_pos": 1710
     },
     "section": "LTR & No NSP:"
   }

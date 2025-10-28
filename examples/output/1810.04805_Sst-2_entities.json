@@ -45,11 +45,20 @@
     "section": "Sst-2"
   },
   {
+    "text": "sentiment",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 165,
+      "end_pos": 174
+    },
+    "section": "Sst-2"
+  },
+  {
     "text": "CoLA The Corpus of Linguistic Acceptability",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 197,
-      "end_pos": 240
+      "start_pos": 176,
+      "end_pos": 219
     },
     "section": "Sst-2"
   },
@@ -57,17 +66,17 @@
     "text": "binary single-sentence classification",
     "type": "task",
     "char_interval": {
-      "start_pos": 246,
-      "end_pos": 283
+      "start_pos": 225,
+      "end_pos": 262
     },
     "section": "Sst-2"
   },
   {
-    "text": "predict whether an English sentence is linguistically \"acceptable\" or not",
-    "type": "task",
+    "text": "English sentence",
+    "type": "object",
     "char_interval": {
-      "start_pos": 311,
-      "end_pos": 384
+      "start_pos": 309,
+      "end_pos": 325
     },
     "section": "Sst-2"
   }

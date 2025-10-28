@@ -9,8 +9,17 @@
     "section": "Transfer Learning from Supervised Data"
   },
   {
-    "text": "natural language inference",
+    "text": "large datasets",
     "type": "dataset",
+    "char_interval": {
+      "start_pos": 79,
+      "end_pos": 93
+    },
+    "section": "Transfer Learning from Supervised Data"
+  },
+  {
+    "text": "natural language inference",
+    "type": "task",
     "char_interval": {
       "start_pos": 103,
       "end_pos": 129
@@ -21,17 +30,17 @@
     "text": "machine translation",
     "type": "task",
     "char_interval": {
-      "start_pos": 156,
-      "end_pos": 175
+      "start_pos": 134,
+      "end_pos": 153
     },
     "section": "Transfer Learning from Supervised Data"
   },
   {
-    "text": "Computer vision research",
+    "text": "Computer vision",
     "type": "task",
     "char_interval": {
-      "start_pos": 198,
-      "end_pos": 222
+      "start_pos": 155,
+      "end_pos": 170
     },
     "section": "Transfer Learning from Supervised Data"
   },
@@ -39,17 +48,17 @@
     "text": "transfer learning",
     "type": "other",
     "char_interval": {
-      "start_pos": 263,
-      "end_pos": 280
+      "start_pos": 220,
+      "end_pos": 237
     },
     "section": "Transfer Learning from Supervised Data"
   },
   {
-    "text": "pre-trained models",
-    "type": "other",
+    "text": "large pre-trained models",
+    "type": "dataset",
     "char_interval": {
-      "start_pos": 292,
-      "end_pos": 310
+      "start_pos": 243,
+      "end_pos": 267
     },
     "section": "Transfer Learning from Supervised Data"
   },
@@ -57,17 +66,17 @@
     "text": "fine-tune",
     "type": "other",
     "char_interval": {
-      "start_pos": 344,
-      "end_pos": 353
+      "start_pos": 301,
+      "end_pos": 310
     },
     "section": "Transfer Learning from Supervised Data"
   },
   {
-    "text": "Ima-geNet",
+    "text": "Ima-ge Net",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 378,
-      "end_pos": 387
+      "start_pos": 335,
+      "end_pos": 345
     },
     "section": "Transfer Learning from Supervised Data"
   }

@@ -3,26 +3,8 @@
     "text": "BERT",
     "type": "method",
     "char_interval": {
-      "start_pos": 141,
-      "end_pos": 145
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "language models",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 112,
-      "end_pos": 127
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "pre-train",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 131,
-      "end_pos": 140
+      "start_pos": 142,
+      "end_pos": 146
     },
     "section": "Pre-training BERT"
   },
@@ -30,8 +12,8 @@
     "text": "unsupervised tasks",
     "type": "task",
     "char_interval": {
-      "start_pos": 184,
-      "end_pos": 202
+      "start_pos": 185,
+      "end_pos": 203
     },
     "section": "Pre-training BERT"
   },
@@ -39,8 +21,8 @@
     "text": "Masked LM",
     "type": "task",
     "char_interval": {
-      "start_pos": 292,
-      "end_pos": 301
+      "start_pos": 294,
+      "end_pos": 303
     },
     "section": "Pre-training BERT"
   },
@@ -48,26 +30,44 @@
     "text": "a deep bidirectional model",
     "type": "generic",
     "char_interval": {
-      "start_pos": 348,
-      "end_pos": 374
+      "start_pos": 350,
+      "end_pos": 376
     },
     "section": "Pre-training BERT"
   },
   {
-    "text": "language models",
-    "type": "task",
+    "text": "a left-to-right model",
+    "type": "generic",
     "char_interval": {
-      "start_pos": 545,
-      "end_pos": 560
+      "start_pos": 415,
+      "end_pos": 436
     },
     "section": "Pre-training BERT"
   },
   {
-    "text": "language models",
-    "type": "task",
+    "text": "a left-to-right and a right-to-left model",
+    "type": "generic",
     "char_interval": {
-      "start_pos": 112,
-      "end_pos": 127
+      "start_pos": 469,
+      "end_pos": 476
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "standard conditional language models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 526,
+      "end_pos": 562
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "bidirectional conditioning",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 621,
+      "end_pos": 647
     },
     "section": "Pre-training BERT"
   },
@@ -75,8 +75,8 @@
     "text": "Transformer encoder",
     "type": "other",
     "char_interval": {
-      "start_pos": 812,
-      "end_pos": 831
+      "start_pos": 814,
+      "end_pos": 833
     },
     "section": "Pre-training BERT"
   },
@@ -84,8 +84,8 @@
     "text": "Transformer decoder",
     "type": "other",
     "char_interval": {
-      "start_pos": 890,
-      "end_pos": 909
+      "start_pos": 892,
+      "end_pos": 911
     },
     "section": "Pre-training BERT"
   },
@@ -93,26 +93,17 @@
     "text": "text generation",
     "type": "task",
     "char_interval": {
-      "start_pos": 936,
-      "end_pos": 951
+      "start_pos": 938,
+      "end_pos": 953
     },
     "section": "Pre-training BERT"
   },
   {
-    "text": "bidirectional representation",
+    "text": "deep bidirectional representation",
     "type": "task",
     "char_interval": {
-      "start_pos": 978,
-      "end_pos": 1006
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "masked tokens",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 1093,
-      "end_pos": 1106
+      "start_pos": 975,
+      "end_pos": 1008
     },
     "section": "Pre-training BERT"
   },
@@ -120,8 +111,8 @@
     "text": "masked LM",
     "type": "task",
     "char_interval": {
-      "start_pos": 1141,
-      "end_pos": 1150
+      "start_pos": 1143,
+      "end_pos": 1152
     },
     "section": "Pre-training BERT"
   },
@@ -129,71 +120,44 @@
     "text": "Cloze task",
     "type": "task",
     "char_interval": {
-      "start_pos": 1197,
-      "end_pos": 1207
+      "start_pos": 1199,
+      "end_pos": 1209
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "output softmax",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1317,
+      "end_pos": 1331
     },
     "section": "Pre-training BERT"
   },
   {
     "text": "LM",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1370,
+      "end_pos": 1372
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "denoising",
     "type": "task",
     "char_interval": {
-      "start_pos": 299,
-      "end_pos": 301
+      "start_pos": 1481,
+      "end_pos": 1490
     },
     "section": "Pre-training BERT"
   },
   {
-    "text": "hidden vectors",
+    "text": "masked words",
     "type": "object",
     "char_interval": {
-      "start_pos": 1265,
-      "end_pos": 1279
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "mask tokens",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 1301,
-      "end_pos": 1312
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "LM",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 1382,
-      "end_pos": 1384
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "WordPiece tokens",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 1432,
-      "end_pos": 1448
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "denoising auto-encoders",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 1492,
-      "end_pos": 1515
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "predict the masked words",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 1547,
-      "end_pos": 1571
+      "start_pos": 1526,
+      "end_pos": 1538
     },
     "section": "Pre-training BERT"
   },
@@ -201,8 +165,8 @@
     "text": "reconstructing the entire input",
     "type": "task",
     "char_interval": {
-      "start_pos": 1584,
-      "end_pos": 1615
+      "start_pos": 1551,
+      "end_pos": 1582
     },
     "section": "Pre-training BERT"
   },
@@ -210,17 +174,17 @@
     "text": "this",
     "type": "generic",
     "char_interval": {
-      "start_pos": 1626,
-      "end_pos": 1630
+      "start_pos": 1593,
+      "end_pos": 1597
     },
     "section": "Pre-training BERT"
   },
   {
-    "text": "a bidirectional pre-trained model",
-    "type": "generic",
+    "text": "bidirectional pre-trained model",
+    "type": "other",
     "char_interval": {
-      "start_pos": 1651,
-      "end_pos": 1684
+      "start_pos": 1620,
+      "end_pos": 1651
     },
     "section": "Pre-training BERT"
   },
@@ -228,8 +192,8 @@
     "text": "pre-training",
     "type": "other",
     "char_interval": {
-      "start_pos": 1740,
-      "end_pos": 1752
+      "start_pos": 1707,
+      "end_pos": 1719
     },
     "section": "Pre-training BERT"
   },
@@ -237,17 +201,17 @@
     "text": "fine-tuning",
     "type": "other",
     "char_interval": {
-      "start_pos": 1757,
-      "end_pos": 1768
+      "start_pos": 1724,
+      "end_pos": 1735
     },
     "section": "Pre-training BERT"
   },
   {
-    "text": "pre-training",
-    "type": "other",
+    "text": "[MASK] token",
+    "type": "object",
     "char_interval": {
-      "start_pos": 1740,
-      "end_pos": 1752
+      "start_pos": 1747,
+      "end_pos": 1759
     },
     "section": "Pre-training BERT"
   },
@@ -255,17 +219,8 @@
     "text": "fine-tuning",
     "type": "other",
     "char_interval": {
-      "start_pos": 1757,
-      "end_pos": 1768
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "the [MASK] token",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 1776,
-      "end_pos": 1792
+      "start_pos": 1783,
+      "end_pos": 1794
     },
     "section": "Pre-training BERT"
   },
@@ -273,26 +228,17 @@
     "text": "this",
     "type": "generic",
     "char_interval": {
-      "start_pos": 1841,
-      "end_pos": 1845
+      "start_pos": 1808,
+      "end_pos": 1812
     },
     "section": "Pre-training BERT"
   },
   {
-    "text": "the actual [MASK] token",
-    "type": "generic",
+    "text": "[MASK] token",
+    "type": "object",
     "char_interval": {
-      "start_pos": 1892,
-      "end_pos": 1915
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "The training data generator",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 1917,
-      "end_pos": 1944
+      "start_pos": 1870,
+      "end_pos": 1882
     },
     "section": "Pre-training BERT"
   },
@@ -300,44 +246,35 @@
     "text": "the i-th token",
     "type": "generic",
     "char_interval": {
-      "start_pos": 2009,
-      "end_pos": 2023
+      "start_pos": 1976,
+      "end_pos": 1990
     },
     "section": "Pre-training BERT"
   },
   {
-    "text": "the i-th token",
-    "type": "generic",
+    "text": "[MASK] token",
+    "type": "object",
     "char_interval": {
-      "start_pos": 2046,
-      "end_pos": 2060
+      "start_pos": 2041,
+      "end_pos": 2053
     },
     "section": "Pre-training BERT"
   },
   {
-    "text": "the [MASK] token",
-    "type": "generic",
+    "text": "random token",
+    "type": "object",
     "char_interval": {
-      "start_pos": 2070,
-      "end_pos": 2086
+      "start_pos": 2076,
+      "end_pos": 2088
     },
     "section": "Pre-training BERT"
   },
   {
-    "text": "a random token",
-    "type": "generic",
+    "text": "unchanged i-th token",
+    "type": "object",
     "char_interval": {
-      "start_pos": 2107,
-      "end_pos": 2121
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "the unchanged i-th token",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 2142,
-      "end_pos": 2166
+      "start_pos": 2113,
+      "end_pos": 2133
     },
     "section": "Pre-training BERT"
   },
@@ -345,35 +282,26 @@
     "text": "T i",
     "type": "generic",
     "char_interval": {
-      "start_pos": 2190,
-      "end_pos": 2193
+      "start_pos": 2157,
+      "end_pos": 2160
     },
     "section": "Pre-training BERT"
   },
   {
-    "text": "the original token",
-    "type": "generic",
+    "text": "original token",
+    "type": "object",
     "char_interval": {
-      "start_pos": 2218,
-      "end_pos": 2236
+      "start_pos": 2189,
+      "end_pos": 2203
     },
     "section": "Pre-training BERT"
   },
   {
     "text": "cross entropy loss",
-    "type": "metric",
+    "type": "other",
     "char_interval": {
-      "start_pos": 2242,
-      "end_pos": 2260
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "this procedure",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 2287,
-      "end_pos": 2301
+      "start_pos": 2209,
+      "end_pos": 2227
     },
     "section": "Pre-training BERT"
   },
@@ -381,8 +309,8 @@
     "text": "Next Sentence Prediction",
     "type": "task",
     "char_interval": {
-      "start_pos": 2328,
-      "end_pos": 2352
+      "start_pos": 2295,
+      "end_pos": 2319
     },
     "section": "Pre-training BERT"
   },
@@ -390,107 +318,17 @@
     "text": "NSP",
     "type": "task",
     "char_interval": {
-      "start_pos": 2354,
-      "end_pos": 2357
+      "start_pos": 2321,
+      "end_pos": 2324
     },
     "section": "Pre-training BERT"
   },
   {
-    "text": "understanding the relationship between two sentences",
+    "text": "Question Answering",
     "type": "task",
     "char_interval": {
-      "start_pos": 2473,
-      "end_pos": 2525
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "language modeling",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 2561,
-      "end_pos": 2578
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "a model",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 2598,
-      "end_pos": 2605
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "sentence relationships",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 2623,
-      "end_pos": 2645
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "next sentence prediction task",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 2676,
-      "end_pos": 2705
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "next sentence prediction",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 3048,
-      "end_pos": 3072
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "IsNext",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 2920,
-      "end_pos": 2926
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "NotNext",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 3001,
-      "end_pos": 3008
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "C",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 3034,
-      "end_pos": 3035
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "next sentence prediction",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 3048,
-      "end_pos": 3072
-    },
-    "section": "Pre-training BERT"
-  },
-  {
-    "text": "this task",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 3165,
-      "end_pos": 3174
+      "start_pos": 2366,
+      "end_pos": 2384
     },
     "section": "Pre-training BERT"
   },
@@ -498,8 +336,17 @@
     "text": "QA",
     "type": "task",
     "char_interval": {
-      "start_pos": 3202,
-      "end_pos": 3204
+      "start_pos": 2386,
+      "end_pos": 2388
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "Natural Language Inference",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2394,
+      "end_pos": 2420
     },
     "section": "Pre-training BERT"
   },
@@ -507,8 +354,107 @@
     "text": "NLI",
     "type": "task",
     "char_interval": {
-      "start_pos": 3209,
-      "end_pos": 3212
+      "start_pos": 2422,
+      "end_pos": 2425
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "sentence relationships",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2590,
+      "end_pos": 2612
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "language modeling",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2528,
+      "end_pos": 2545
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "a model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2565,
+      "end_pos": 2572
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "sentence relationships",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2590,
+      "end_pos": 2612
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "next sentence prediction",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2643,
+      "end_pos": 2667
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "pretraining",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2793,
+      "end_pos": 2804
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "sentences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2766,
+      "end_pos": 2775
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "next sentence prediction",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3017,
+      "end_pos": 3041
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "this task",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 3129,
+      "end_pos": 3138
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "QA",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3166,
+      "end_pos": 3168
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "NLI",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3173,
+      "end_pos": 3176
     },
     "section": "Pre-training BERT"
   },
@@ -516,26 +462,41 @@
     "text": "Position Embeddings",
     "type": "other",
     "char_interval": {
-      "start_pos": 3220,
-      "end_pos": 3239
+      "start_pos": 3178,
+      "end_pos": 3197
     },
     "section": "Pre-training BERT"
   },
   {
-    "text": "NSP",
+    "text": "NSP task",
     "type": "task",
     "char_interval": {
-      "start_pos": 3244,
-      "end_pos": 3247
+      "start_pos": 3202,
+      "end_pos": 3210
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "representation-learning objectives",
+    "type": "other",
+    "char_interval": null,
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "prior work",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 3333,
+      "end_pos": 3343
     },
     "section": "Pre-training BERT"
   },
   {
     "text": "sentence embeddings",
-    "type": "other",
+    "type": "object",
     "char_interval": {
-      "start_pos": 3397,
-      "end_pos": 3416
+      "start_pos": 3350,
+      "end_pos": 3369
     },
     "section": "Pre-training BERT"
   },
@@ -543,8 +504,35 @@
     "text": "BERT",
     "type": "method",
     "char_interval": {
-      "start_pos": 3461,
-      "end_pos": 3465
+      "start_pos": 3414,
+      "end_pos": 3418
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "parameters",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3433,
+      "end_pos": 3443
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "end-task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3458,
+      "end_pos": 3466
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "model parameters",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3467,
+      "end_pos": 3483
     },
     "section": "Pre-training BERT"
   }

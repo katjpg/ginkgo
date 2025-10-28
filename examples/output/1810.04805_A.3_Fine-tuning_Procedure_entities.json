@@ -9,15 +9,6 @@
     "section": "A.3 Fine-tuning Procedure"
   },
   {
-    "text": "pre-training",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 63,
-      "end_pos": 75
-    },
-    "section": "A.3 Fine-tuning Procedure"
-  },
-  {
     "text": "the batch size",
     "type": "generic",
     "char_interval": {
@@ -63,11 +54,11 @@
     "section": "A.3 Fine-tuning Procedure"
   },
   {
-    "text": "tasks",
-    "type": "task",
+    "text": "the following range of possible values",
+    "type": "generic",
     "char_interval": {
-      "start_pos": 338,
-      "end_pos": 343
+      "start_pos": 275,
+      "end_pos": 313
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -75,53 +66,26 @@
     "text": "Batch size",
     "type": "generic",
     "char_interval": {
-      "start_pos": 347,
-      "end_pos": 357
+      "start_pos": 345,
+      "end_pos": 355
     },
     "section": "A.3 Fine-tuning Procedure"
   },
   {
-    "text": "data sets",
+    "text": "large data sets",
     "type": "generic",
     "char_interval": {
-      "start_pos": 394,
-      "end_pos": 403
+      "start_pos": 386,
+      "end_pos": 401
     },
     "section": "A.3 Fine-tuning Procedure"
   },
   {
-    "text": "training examples",
+    "text": "small data sets",
     "type": "generic",
     "char_interval": {
-      "start_pos": 425,
-      "end_pos": 442
-    },
-    "section": "A.3 Fine-tuning Procedure"
-  },
-  {
-    "text": "hyperparameter choice",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 471,
-      "end_pos": 492
-    },
-    "section": "A.3 Fine-tuning Procedure"
-  },
-  {
-    "text": "data sets",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 504,
-      "end_pos": 513
-    },
-    "section": "A.3 Fine-tuning Procedure"
-  },
-  {
-    "text": "Fine-tuning",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 515,
-      "end_pos": 526
+      "start_pos": 496,
+      "end_pos": 511
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -129,8 +93,8 @@
     "text": "the above parameters",
     "type": "generic",
     "char_interval": {
-      "start_pos": 611,
-      "end_pos": 631
+      "start_pos": 609,
+      "end_pos": 629
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -138,17 +102,17 @@
     "text": "the model",
     "type": "generic",
     "char_interval": {
-      "start_pos": 643,
-      "end_pos": 652
+      "start_pos": 641,
+      "end_pos": 650
     },
     "section": "A.3 Fine-tuning Procedure"
   },
   {
-    "text": "development set",
-    "type": "dataset",
+    "text": "the development set",
+    "type": "generic",
     "char_interval": {
-      "start_pos": 679,
-      "end_pos": 694
+      "start_pos": 673,
+      "end_pos": 692
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -156,8 +120,8 @@
     "text": "BERT",
     "type": "method",
     "char_interval": {
-      "start_pos": 851,
-      "end_pos": 855
+      "start_pos": 712,
+      "end_pos": 716
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -165,53 +129,17 @@
     "text": "ELMo",
     "type": "method",
     "char_interval": {
-      "start_pos": 719,
-      "end_pos": 723
+      "start_pos": 718,
+      "end_pos": 722
     },
     "section": "A.3 Fine-tuning Procedure"
   },
   {
-    "text": "OpenAI GPT",
+    "text": "Open AI GPT",
     "type": "method",
     "char_interval": {
-      "start_pos": 728,
+      "start_pos": 727,
       "end_pos": 738
-    },
-    "section": "A.3 Fine-tuning Procedure"
-  },
-  {
-    "text": "representation learning models",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 789,
-      "end_pos": 819
-    },
-    "section": "A.3 Fine-tuning Procedure"
-  },
-  {
-    "text": "ELMo",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 830,
-      "end_pos": 834
-    },
-    "section": "A.3 Fine-tuning Procedure"
-  },
-  {
-    "text": "OpenAI GPT",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 836,
-      "end_pos": 846
-    },
-    "section": "A.3 Fine-tuning Procedure"
-  },
-  {
-    "text": "BERT",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 851,
-      "end_pos": 855
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -219,17 +147,8 @@
     "text": "the model architectures",
     "type": "generic",
     "char_interval": {
-      "start_pos": 881,
-      "end_pos": 904
-    },
-    "section": "A.3 Fine-tuning Procedure"
-  },
-  {
-    "text": "Figure3",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 927,
-      "end_pos": 934
+      "start_pos": 755,
+      "end_pos": 758
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -237,8 +156,8 @@
     "text": "the architecture differences",
     "type": "generic",
     "char_interval": {
-      "start_pos": 961,
-      "end_pos": 989
+      "start_pos": 963,
+      "end_pos": 991
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -246,26 +165,17 @@
     "text": "BERT",
     "type": "method",
     "char_interval": {
-      "start_pos": 991,
-      "end_pos": 995
+      "start_pos": 712,
+      "end_pos": 716
     },
     "section": "A.3 Fine-tuning Procedure"
   },
   {
-    "text": "OpenAI GPT",
+    "text": "Open AI GPT",
     "type": "method",
     "char_interval": {
-      "start_pos": 1000,
-      "end_pos": 1010
-    },
-    "section": "A.3 Fine-tuning Procedure"
-  },
-  {
-    "text": "finetuning approaches",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 1015,
-      "end_pos": 1036
+      "start_pos": 836,
+      "end_pos": 847
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -273,44 +183,26 @@
     "text": "ELMo",
     "type": "method",
     "char_interval": {
-      "start_pos": 1044,
-      "end_pos": 1048
+      "start_pos": 718,
+      "end_pos": 722
     },
     "section": "A.3 Fine-tuning Procedure"
   },
   {
-    "text": "feature-based approach",
-    "type": "task",
+    "text": "the model",
+    "type": "generic",
     "char_interval": {
-      "start_pos": 1054,
-      "end_pos": 1076
+      "start_pos": 882,
+      "end_pos": 891
     },
     "section": "A.3 Fine-tuning Procedure"
   },
   {
-    "text": "pre-training method",
+    "text": "Open AI GPT",
     "type": "method",
     "char_interval": {
-      "start_pos": 1107,
-      "end_pos": 1126
-    },
-    "section": "A.3 Fine-tuning Procedure"
-  },
-  {
-    "text": "BERT",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 1130,
-      "end_pos": 1134
-    },
-    "section": "A.3 Fine-tuning Procedure"
-  },
-  {
-    "text": "OpenAI GPT",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 1138,
-      "end_pos": 1148
+      "start_pos": 1002,
+      "end_pos": 1013
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -318,8 +210,8 @@
     "text": "Transformer LM",
     "type": "other",
     "char_interval": {
-      "start_pos": 1179,
-      "end_pos": 1193
+      "start_pos": 1183,
+      "end_pos": 1197
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -327,8 +219,8 @@
     "text": "large text corpus",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 1199,
-      "end_pos": 1216
+      "start_pos": 1203,
+      "end_pos": 1220
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -336,8 +228,8 @@
     "text": "the design decisions",
     "type": "generic",
     "char_interval": {
-      "start_pos": 1235,
-      "end_pos": 1255
+      "start_pos": 1239,
+      "end_pos": 1259
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -345,8 +237,8 @@
     "text": "BERT",
     "type": "method",
     "char_interval": {
-      "start_pos": 1259,
-      "end_pos": 1263
+      "start_pos": 1263,
+      "end_pos": 1267
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -354,8 +246,8 @@
     "text": "GPT",
     "type": "method",
     "char_interval": {
-      "start_pos": 1311,
-      "end_pos": 1314
+      "start_pos": 1315,
+      "end_pos": 1318
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -363,44 +255,26 @@
     "text": "the two methods",
     "type": "generic",
     "char_interval": {
-      "start_pos": 1335,
-      "end_pos": 1350
+      "start_pos": 1339,
+      "end_pos": 1354
     },
     "section": "A.3 Fine-tuning Procedure"
   },
   {
-    "text": "the core argument",
+    "text": "the bi-directionality",
     "type": "generic",
-    "char_interval": {
-      "start_pos": 1380,
-      "end_pos": 1397
-    },
-    "section": "A.3 Fine-tuning Procedure"
-  },
-  {
-    "text": "bi-directionality",
-    "type": "other",
     "char_interval": {
       "start_pos": 1423,
-      "end_pos": 1440
+      "end_pos": 1444
     },
     "section": "A.3 Fine-tuning Procedure"
   },
   {
-    "text": "pretraining tasks",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 1453,
-      "end_pos": 1470
-    },
-    "section": "A.3 Fine-tuning Procedure"
-  },
-  {
-    "text": "Section 3",
+    "text": "the two pretraining tasks",
     "type": "generic",
     "char_interval": {
-      "start_pos": 1484,
-      "end_pos": 1493
+      "start_pos": 1449,
+      "end_pos": 1474
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -408,8 +282,8 @@
     "text": "BERT",
     "type": "method",
     "char_interval": {
-      "start_pos": 1620,
-      "end_pos": 1624
+      "start_pos": 1624,
+      "end_pos": 1628
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -417,8 +291,8 @@
     "text": "GPT",
     "type": "method",
     "char_interval": {
-      "start_pos": 1629,
-      "end_pos": 1632
+      "start_pos": 1633,
+      "end_pos": 1636
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -426,8 +300,8 @@
     "text": "Books Corpus",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 1671,
-      "end_pos": 1683
+      "start_pos": 1673,
+      "end_pos": 1685
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -435,8 +309,8 @@
     "text": "Wikipedia",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 1751,
-      "end_pos": 1760
+      "start_pos": 1753,
+      "end_pos": 1762
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -471,8 +345,8 @@
     "text": "these differences",
     "type": "generic",
     "char_interval": {
-      "start_pos": 2302,
-      "end_pos": 2319
+      "start_pos": 2298,
+      "end_pos": 2315
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -480,17 +354,8 @@
     "text": "ablation experiments",
     "type": "task",
     "char_interval": {
-      "start_pos": 2332,
-      "end_pos": 2352
-    },
-    "section": "A.3 Fine-tuning Procedure"
-  },
-  {
-    "text": "pre-training tasks",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 2456,
-      "end_pos": 2474
+      "start_pos": 2328,
+      "end_pos": 2348
     },
     "section": "A.3 Fine-tuning Procedure"
   },
@@ -498,8 +363,8 @@
     "text": "bidirectionality",
     "type": "other",
     "char_interval": {
-      "start_pos": 2483,
-      "end_pos": 2499
+      "start_pos": 2479,
+      "end_pos": 2495
     },
     "section": "A.3 Fine-tuning Procedure"
   }

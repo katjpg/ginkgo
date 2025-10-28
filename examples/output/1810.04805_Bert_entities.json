@@ -27,11 +27,11 @@
     "section": "Bert"
   },
   {
-    "text": "the model",
-    "type": "generic",
+    "text": "pre-training",
+    "type": "task",
     "char_interval": {
-      "start_pos": 156,
-      "end_pos": 165
+      "start_pos": 142,
+      "end_pos": 154
     },
     "section": "Bert"
   },
@@ -41,6 +41,15 @@
     "char_interval": {
       "start_pos": 210,
       "end_pos": 228
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "finetuning",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 234,
+      "end_pos": 244
     },
     "section": "Bert"
   },
@@ -63,11 +72,11 @@
     "section": "Bert"
   },
   {
-    "text": "the pre-trained parameters",
-    "type": "generic",
+    "text": "downstream task",
+    "type": "task",
     "char_interval": {
-      "start_pos": 287,
-      "end_pos": 313
+      "start_pos": 407,
+      "end_pos": 422
     },
     "section": "Bert"
   },
@@ -93,8 +102,8 @@
     "text": "this section",
     "type": "generic",
     "char_interval": {
-      "start_pos": 604,
-      "end_pos": 616
+      "start_pos": 605,
+      "end_pos": 617
     },
     "section": "Bert"
   },
@@ -102,8 +111,53 @@
     "text": "BERT",
     "type": "method",
     "char_interval": {
-      "start_pos": 643,
-      "end_pos": 647
+      "start_pos": 644,
+      "end_pos": 648
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "different tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 684,
+      "end_pos": 699
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "pre-trained architecture",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 742,
+      "end_pos": 766
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "downstream architecture",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 781,
+      "end_pos": 804
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "Model Architecture",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 806,
+      "end_pos": 824
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 825,
+      "end_pos": 829
     },
     "section": "Bert"
   },
@@ -111,17 +165,8 @@
     "text": "Transformer encoder",
     "type": "method",
     "char_interval": {
-      "start_pos": 881,
-      "end_pos": 900
-    },
-    "section": "Bert"
-  },
-  {
-    "text": "self-attention",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 1430,
-      "end_pos": 1444
+      "start_pos": 882,
+      "end_pos": 901
     },
     "section": "Bert"
   },
@@ -129,8 +174,35 @@
     "text": "Transformers",
     "type": "method",
     "char_interval": {
-      "start_pos": 881,
-      "end_pos": 892
+      "start_pos": 882,
+      "end_pos": 893
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "model architecture",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 832,
+      "end_pos": 850
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "our implementation",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1072,
+      "end_pos": 1090
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "the model architecture",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1181,
+      "end_pos": 1203
     },
     "section": "Bert"
   },
@@ -138,8 +210,8 @@
     "text": "BERT BASE",
     "type": "method",
     "char_interval": {
-      "start_pos": 1505,
-      "end_pos": 1514
+      "start_pos": 1504,
+      "end_pos": 1513
     },
     "section": "Bert"
   },
@@ -147,26 +219,26 @@
     "text": "BERT LARGE",
     "type": "method",
     "char_interval": {
-      "start_pos": 1563,
-      "end_pos": 1573
+      "start_pos": 1562,
+      "end_pos": 1572
     },
     "section": "Bert"
   },
   {
-    "text": "BERT",
+    "text": "BERT BASE",
     "type": "method",
     "char_interval": {
-      "start_pos": 1619,
-      "end_pos": 1623
+      "start_pos": 1574,
+      "end_pos": 1583
     },
     "section": "Bert"
   },
   {
-    "text": "OpenAI GPT",
+    "text": "GPT",
     "type": "method",
     "char_interval": {
-      "start_pos": 1671,
-      "end_pos": 1681
+      "start_pos": 1634,
+      "end_pos": 1637
     },
     "section": "Bert"
   },
@@ -174,8 +246,8 @@
     "text": "BERT Transformer",
     "type": "method",
     "char_interval": {
-      "start_pos": 1732,
-      "end_pos": 1748
+      "start_pos": 1688,
+      "end_pos": 1704
     },
     "section": "Bert"
   },
@@ -183,8 +255,8 @@
     "text": "bidirectional self-attention",
     "type": "other",
     "char_interval": {
-      "start_pos": 1754,
-      "end_pos": 1782
+      "start_pos": 1710,
+      "end_pos": 1738
     },
     "section": "Bert"
   },
@@ -192,8 +264,8 @@
     "text": "GPT Transformer",
     "type": "method",
     "char_interval": {
-      "start_pos": 1794,
-      "end_pos": 1809
+      "start_pos": 1750,
+      "end_pos": 1765
     },
     "section": "Bert"
   },
@@ -201,8 +273,8 @@
     "text": "constrained self-attention",
     "type": "other",
     "char_interval": {
-      "start_pos": 1815,
-      "end_pos": 1841
+      "start_pos": 1771,
+      "end_pos": 1797
     },
     "section": "Bert"
   },
@@ -210,8 +282,8 @@
     "text": "down-stream tasks",
     "type": "task",
     "char_interval": {
-      "start_pos": 1964,
-      "end_pos": 1981
+      "start_pos": 1920,
+      "end_pos": 1937
     },
     "section": "Bert"
   },
@@ -219,8 +291,8 @@
     "text": "single sentence",
     "type": "object",
     "char_interval": {
-      "start_pos": 2050,
-      "end_pos": 2065
+      "start_pos": 2006,
+      "end_pos": 2021
     },
     "section": "Bert"
   },
@@ -228,8 +300,8 @@
     "text": "pair of sentences",
     "type": "object",
     "char_interval": {
-      "start_pos": 2072,
-      "end_pos": 2089
+      "start_pos": 2028,
+      "end_pos": 2045
     },
     "section": "Bert"
   },
@@ -237,8 +309,8 @@
     "text": "token sequence",
     "type": "object",
     "char_interval": {
-      "start_pos": 2123,
-      "end_pos": 2137
+      "start_pos": 2079,
+      "end_pos": 2093
     },
     "section": "Bert"
   },
@@ -246,8 +318,8 @@
     "text": "sentence",
     "type": "object",
     "char_interval": {
-      "start_pos": 2164,
-      "end_pos": 2172
+      "start_pos": 2120,
+      "end_pos": 2128
     },
     "section": "Bert"
   },
@@ -255,8 +327,8 @@
     "text": "span of contiguous text",
     "type": "object",
     "char_interval": {
-      "start_pos": 2194,
-      "end_pos": 2217
+      "start_pos": 2150,
+      "end_pos": 2173
     },
     "section": "Bert"
   },
@@ -264,35 +336,44 @@
     "text": "sequence",
     "type": "object",
     "char_interval": {
-      "start_pos": 2265,
-      "end_pos": 2273
+      "start_pos": 2221,
+      "end_pos": 2229
     },
     "section": "Bert"
   },
   {
-    "text": "token sequence",
+    "text": "input token sequence",
     "type": "object",
     "char_interval": {
-      "start_pos": 2295,
-      "end_pos": 2309
+      "start_pos": 2245,
+      "end_pos": 2265
     },
     "section": "Bert"
   },
   {
-    "text": "BERT",
-    "type": "method",
+    "text": "sentence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2297,
+      "end_pos": 2305
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "sentences",
+    "type": "object",
     "char_interval": {
       "start_pos": 2313,
-      "end_pos": 2317
+      "end_pos": 2322
     },
     "section": "Bert"
   },
   {
-    "text": "WordPiece embeddings",
+    "text": "Word Piece embeddings",
     "type": "other",
     "char_interval": {
-      "start_pos": 2391,
-      "end_pos": 2411
+      "start_pos": 2347,
+      "end_pos": 2368
     },
     "section": "Bert"
   },
@@ -300,8 +381,8 @@
     "text": "token",
     "type": "object",
     "char_interval": {
-      "start_pos": 2443,
-      "end_pos": 2448
+      "start_pos": 2383,
+      "end_pos": 2388
     },
     "section": "Bert"
   },
@@ -309,17 +390,35 @@
     "text": "sequence",
     "type": "object",
     "char_interval": {
-      "start_pos": 2486,
-      "end_pos": 2494
+      "start_pos": 2085,
+      "end_pos": 2093
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "token",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2411,
+      "end_pos": 2416
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "sequence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2426,
+      "end_pos": 2434
     },
     "section": "Bert"
   },
   {
     "text": "classification tasks",
-    "type": "object",
+    "type": "task",
     "char_interval": {
-      "start_pos": 2648,
-      "end_pos": 2668
+      "start_pos": 2588,
+      "end_pos": 2608
     },
     "section": "Bert"
   },
@@ -327,8 +426,8 @@
     "text": "Sentence pairs",
     "type": "object",
     "char_interval": {
-      "start_pos": 2670,
-      "end_pos": 2684
+      "start_pos": 2610,
+      "end_pos": 2624
     },
     "section": "Bert"
   },
@@ -336,8 +435,17 @@
     "text": "sequence",
     "type": "object",
     "char_interval": {
-      "start_pos": 2719,
-      "end_pos": 2727
+      "start_pos": 2659,
+      "end_pos": 2667
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "sentences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2690,
+      "end_pos": 2699
     },
     "section": "Bert"
   },
@@ -345,8 +453,8 @@
     "text": "token",
     "type": "object",
     "char_interval": {
-      "start_pos": 2812,
-      "end_pos": 2817
+      "start_pos": 2752,
+      "end_pos": 2757
     },
     "section": "Bert"
   },
@@ -354,8 +462,8 @@
     "text": "sentence A",
     "type": "object",
     "char_interval": {
-      "start_pos": 2909,
-      "end_pos": 2919
+      "start_pos": 2849,
+      "end_pos": 2859
     },
     "section": "Bert"
   },
@@ -363,8 +471,8 @@
     "text": "sentence B",
     "type": "object",
     "char_interval": {
-      "start_pos": 2923,
-      "end_pos": 2933
+      "start_pos": 2863,
+      "end_pos": 2873
     },
     "section": "Bert"
   },
@@ -372,8 +480,8 @@
     "text": "input embedding",
     "type": "object",
     "char_interval": {
-      "start_pos": 2966,
-      "end_pos": 2981
+      "start_pos": 2907,
+      "end_pos": 2922
     },
     "section": "Bert"
   },
@@ -381,17 +489,17 @@
     "text": "final hidden vector",
     "type": "object",
     "char_interval": {
-      "start_pos": 2992,
-      "end_pos": 3011
+      "start_pos": 2933,
+      "end_pos": 2952
     },
     "section": "Bert"
   },
   {
-    "text": "special [CLS] token",
+    "text": "[CLS] token",
     "type": "object",
     "char_interval": {
-      "start_pos": 3019,
-      "end_pos": 3038
+      "start_pos": 2968,
+      "end_pos": 2979
     },
     "section": "Bert"
   },
@@ -399,8 +507,8 @@
     "text": "final hidden vector",
     "type": "object",
     "char_interval": {
-      "start_pos": 3059,
-      "end_pos": 3078
+      "start_pos": 3000,
+      "end_pos": 3019
     },
     "section": "Bert"
   },
@@ -408,8 +516,8 @@
     "text": "input token",
     "type": "object",
     "char_interval": {
-      "start_pos": 3092,
-      "end_pos": 3103
+      "start_pos": 3033,
+      "end_pos": 3044
     },
     "section": "Bert"
   },
@@ -417,17 +525,17 @@
     "text": "token",
     "type": "object",
     "char_interval": {
-      "start_pos": 3119,
-      "end_pos": 3124
+      "start_pos": 3060,
+      "end_pos": 3065
     },
     "section": "Bert"
   },
   {
-    "text": "segment embeddings",
+    "text": "segment",
     "type": "object",
     "char_interval": {
-      "start_pos": 3202,
-      "end_pos": 3209
+      "start_pos": 3143,
+      "end_pos": 3150
     },
     "section": "Bert"
   },
@@ -435,8 +543,17 @@
     "text": "position embeddings",
     "type": "object",
     "char_interval": {
-      "start_pos": 3215,
-      "end_pos": 3234
+      "start_pos": 3156,
+      "end_pos": 3175
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "input representation",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3071,
+      "end_pos": 3091
     },
     "section": "Bert"
   }
