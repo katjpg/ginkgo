@@ -1,38 +1,42 @@
 from collections import Counter
+from pydantic import BaseModel, Field
 from spacy.tokens import Doc
+from typing import Literal
 import spacy
 import networkx as nx
 import re
-from typing import Any
 
 
 nlp = spacy.load("en_core_web_sm")
 STOPWORDS = nlp.Defaults.stop_words
 
-
 INFRA = {
-    "values", "keys", "queries", "query", "output", "outputs", "input", "inputs",
-    "sequence", "sequences", "layers", "layer", "vectors", "vector", "tokens", "token",
-    "parameters", "parameter", "weights", "weight", "hidden states", "hidden state",
-    "representations", "representation", "embeddings", "embedding",
-    "examples", "example", "results", "result", "performance",
-    "model", "models", "method", "methods", "approach", "approaches",
-    "system", "systems", "architecture", "architectures",
-    "data", "dataset", "datasets", "features", "feature",
-    "information", "details", "aspects", "elements", "components",
-    "symbols", "symbol", "position", "positions",
-    "encoder", "decoder", "attention", "mechanisms", "mechanism",
-    "seconds", "minutes", "hours", "steps", "iterations", "epochs", "days",
+    "value", "key", "query", "output", "input",
+    "sequence", "layer", "vector", "token",
+    "parameter", "weight", "hidden state",
+    "representation", "embedding",
+    "example", "result", "performance",
+    "model", "method", "approach",
+    "system", "architecture",
+    "data", "dataset", "feature",
+    "information", "detail", "aspect", "element", "component",
+    "symbol", "position",
+    "encoder", "decoder", "attention", "mechanism",
+    "second", "minute", "hour", "step", "iteration", "epoch", "day",
 }
 
-
 GENERIC_PATTERNS = [
-    r"^the [a-z]+$", r"^our [a-z]+s?$", r"^this [a-z]+$",
-    r"^these [a-z]+s$", r"^each [a-z]+$", r"^all [a-z]+s?$",
-    r"^every [a-z]+$", r"^[a-z]+ of [a-z]+$",
-    r"^\w{1}$", r"^[α-ωΑ-Ω]\s*\d*$",
+    re.compile(r"^the [a-z]+$"),
+    re.compile(r"^our [a-z]+s?$"),
+    re.compile(r"^this [a-z]+$"),
+    re.compile(r"^these [a-z]+s$"),
+    re.compile(r"^each [a-z]+$"),
+    re.compile(r"^all [a-z]+s?$"),
+    re.compile(r"^every [a-z]+$"),
+    re.compile(r"^[a-z]+ of [a-z]+$"),
+    re.compile(r"^\w{1}$"),
+    re.compile(r"^[α-ωΑ-Ω]\s*\d*$"),
 ]
-
 
 CONTRASTIVE_TERMS = {
     "input", "output", "source", "target", "left", "right", "forward", "backward",
@@ -42,22 +46,49 @@ CONTRASTIVE_TERMS = {
 }
 
 
-def normalize_text(text: str) -> str:
-    """Normalize text for comparison."""
-    normalized = text.lower().strip()
-    normalized = " ".join(normalized.split())
-    normalized = normalized.replace("-", " ")
-    
-    words = normalized.split()
-    normalized_words = []
-    
+EntityType = Literal["method", "task", "dataset", "metric", "object", "other"]
+
+
+class FilterConfig(BaseModel):
+    """Configuration for entity filtering pipeline."""
+    min_freq: int = Field(default=1, ge=1)
+    exclude_other: bool = True
+    use_fuzzy: bool = True
+    top_k: int | None = None
+    jaccard_threshold: float = Field(default=0.75, ge=0.0, le=1.0)
+    window_size: int = Field(default=3, ge=1)
+    pagerank_alpha: float = Field(default=0.85, ge=0.0, le=1.0)
+
+
+def lemmatize_word(word: str) -> str:
+    """Get lemma form of word using spaCy."""
+    doc = nlp(word)
+    return doc[0].lemma_ if doc else word
+
+
+def is_infra_term(text: str) -> bool:
+    """Check if text consists only of infrastructure terms."""
+    words = text.lower().split()
     for word in words:
-        if word.endswith("s") and len(word) > 3:
-            if not word.endswith(("ss", "us", "ous", "ness", "ics", "sis", "ysis", "itis", "ess", "less")):
-                word = word[:-1]
-        normalized_words.append(word)
+        lemma = lemmatize_word(word)
+        if lemma not in INFRA and word not in INFRA:
+            return False
+    return True
+
+
+def normalize_text(text: str) -> str:
+    """Normalize text by lowercasing, removing hyphens, and lemmatizing plurals."""
+    normalized = " ".join(text.lower().strip().replace("-", " ").split())
     
-    return " ".join(normalized_words)
+    words = []
+    for word in normalized.split():
+        if (word.endswith("s") and len(word) > 3 and 
+            not word.endswith(("ss", "us", "ous", "ness", "ics", "sis", "ysis", "itis", "ess", "less"))):
+            words.append(word[:-1])
+        else:
+            words.append(word)
+    
+    return " ".join(words)
 
 
 def jaccard_similarity(set1: set, set2: set) -> float:
@@ -115,7 +146,7 @@ def select_representative(entities: list[dict]) -> dict:
 
 
 def dedupe_fuzzy(entities: list[dict]) -> list[dict]:
-    """Remove fuzzy duplicates using Jaccard similarity."""
+    """Remove fuzzy duplicates using Jaccard similarity and union-find."""
     if not entities:
         return []
     
@@ -133,11 +164,13 @@ def dedupe_fuzzy(entities: list[dict]) -> list[dict]:
         parent = list(range(n))
         
         def find(x):
+            """Find root with path compression."""
             if parent[x] != x:
                 parent[x] = find(parent[x])
             return parent[x]
         
         def union(x, y):
+            """Union by root."""
             px, py = find(x), find(y)
             if px != py:
                 parent[px] = py
@@ -228,7 +261,7 @@ def is_parsing_artifact(text: str) -> bool:
 
 
 def is_incomplete_phrase(text: str) -> bool:
-    """Check if text is incomplete using POS tags."""
+    """Check if text is incomplete using POS tags and dependency patterns."""
     words = text.split()
     
     if len(words) != 2:
@@ -240,16 +273,20 @@ def is_incomplete_phrase(text: str) -> bool:
     if tags == ["ADJ", "ADJ"]:
         return True
     
-    last_word = words[-1].lower()
-    incomplete_endings = {
-        "recurrent", "convolutional", "neural", "residual", "dense",
-        "attention", "self", "multi", "cross", "bidirectional"
-    }
+    # check if last token is ADJ modifying a missing noun
+    if len(doc_snippet) == 2:
+        last_token = doc_snippet[-1]
+        if last_token.pos_ == "ADJ":
+            return True
     
-    if last_word in incomplete_endings:
+    # check if phrase ends with prefix/modifier expecting continuation
+    # e.g., "multi-head" without "attention"
+    last_word = words[-1].lower()
+    if last_word in {"multi", "self", "cross", "pre", "post", "sub"}:
         return True
     
     return False
+
 
 
 def is_valid_metric(text: str) -> bool:
@@ -293,9 +330,9 @@ def filter_lexical(entities: list[dict]) -> list[dict]:
             continue
         if text_lower.startswith(("a ", "an ", "the ")):
             continue
-        if len(words) == 1 and text_lower in INFRA:
+        if len(words) == 1 and is_infra_term(text_lower):
             continue
-        if any(re.match(pattern, text_lower) for pattern in GENERIC_PATTERNS):
+        if any(pattern.match(text_lower) for pattern in GENERIC_PATTERNS):
             continue
         if len(words) > 7:
             continue
@@ -313,11 +350,7 @@ def filter_lexical(entities: list[dict]) -> list[dict]:
                 continue
         
         if entity["type"] == "object":
-            generic_objects = {
-                "input tokens", "output tokens", "input values", "output values",
-                "sub-layer input", "sub-layer output", "sums of the embeddings"
-            }
-            if text_lower in generic_objects:
+            if is_infra_term(text_lower):
                 continue
         
         filtered.append(entity)
@@ -336,7 +369,7 @@ def filter_type(entities: list[dict], exclude_other: bool = True) -> list[dict]:
     for e in entities:
         if e["type"] == "object":
             text_lower = e["text"].lower()
-            if text_lower not in INFRA and len(e["text"].split()) >= 2:
+            if not is_infra_term(text_lower) and len(e["text"].split()) >= 2:
                 domain_objs.append(e)
     
     return [e for e in entities if e["type"] in valid] + domain_objs
@@ -363,21 +396,28 @@ def filter_freq(entities: list[dict], min_count: int = 1, strict_objects: bool =
 def build_graph(entities: list[dict], doc: Doc, window_size: int = 3) -> nx.Graph:
     """Build entity co-occurrence graph."""
     G = nx.Graph()
-    entity_map = {e["text"].lower(): e for e in entities}
+    entity_set = {e["text"].lower() for e in entities}
+    
+    entity_positions = {}
+    for sent_idx, sent in enumerate(doc.sents):
+        sent_text = sent.text.lower()
+        for entity_text in entity_set:
+            if entity_text in sent_text:
+                if entity_text not in entity_positions:
+                    entity_positions[entity_text] = []
+                entity_positions[entity_text].append(sent_idx)
     
     sents = list(doc.sents)
-    windows = [sents[i:i+window_size] for i in range(0, len(sents), window_size)]
-    
-    for window in windows:
-        window_text = " ".join(s.text for s in window).lower()
+    for i in range(0, len(sents), window_size):
+        window_range = range(i, min(i + window_size, len(sents)))
         
         window_entities = [
-            e_text for e_text in entity_map.keys()
-            if re.search(rf'\b{re.escape(e_text)}\b', window_text)
+            e_text for e_text, positions in entity_positions.items()
+            if any(pos in window_range for pos in positions)
         ]
         
-        for i, e1 in enumerate(window_entities):
-            for e2 in window_entities[i+1:]:
+        for j, e1 in enumerate(window_entities):
+            for e2 in window_entities[j+1:]:
                 if G.has_edge(e1, e2):
                     G[e1][e2]["weight"] += 1
                 else:
@@ -388,6 +428,11 @@ def build_graph(entities: list[dict], doc: Doc, window_size: int = 3) -> nx.Grap
 
 def rank_pagerank(entities: list[dict], doc: Doc) -> list[dict]:
     """Rank entities by PageRank."""
+    if len(entities) <= 1:
+        for e in entities:
+            e["pr_score"] = 1.0
+        return entities
+    
     G = build_graph(entities, doc, window_size=3)
     
     if len(G.nodes()) == 0:
@@ -446,7 +491,7 @@ def filter_pipeline(
     return entities
 
 
-def analyze_impact(original: list[dict], filtered: list[dict]) -> dict[str, Any]:
+def analyze_impact(original: list[dict], filtered: list[dict]) -> dict:
     """Compare entity distributions before and after filtering."""
     orig_counts = Counter(e["type"] for e in original)
     filt_counts = Counter(e["type"] for e in filtered)
