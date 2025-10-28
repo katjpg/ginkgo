@@ -140,7 +140,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		</fileDesc>
 		<encodingDesc>
 			<appInfo>
-				<application version="0.8.2-SNAPSHOT" ident="GROBID" when="2025-10-27T13:00+0000">
+				<application version="0.8.2-SNAPSHOT" ident="GROBID" when="2025-10-28T09:53+0000">
 					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
 					<ref target="https://github.com/kermitt2/grobid"/>
 				</application>
@@ -266,8 +266,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct xml:id="b3">
-	<monogr>
-		<title level="m" type="main">Long short-term memory-networks for machine reading</title>
+	<analytic>
+		<title level="a" type="main">Long Short-Term Memory-Networks for Machine Reading</title>
 		<author>
 			<persName><forename type="first">Jianpeng</forename><surname>Cheng</surname></persName>
 		</author>
@@ -277,8 +277,14 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Mirella</forename><surname>Lapata</surname></persName>
 		</author>
+		<idno type="DOI">10.18653/v1/d16-1053</idno>
 		<idno type="arXiv">arXiv:1601.06733</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing</title>
+		<meeting>the 2016 Conference on Empirical Methods in Natural Language Processing</meeting>
 		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
 			<date type="published" when="2016">2016</date>
 		</imprint>
 	</monogr>
@@ -392,8 +398,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct xml:id="b8">
-	<analytic>
-		<title level="a" type="main">A Convolutional Encoder Model for Neural Machine Translation</title>
+	<monogr>
+		<title level="m" type="main">Convolutional sequence to sequence learning</title>
 		<author>
 			<persName><forename type="first">Jonas</forename><surname>Gehring</surname></persName>
 		</author>
@@ -404,16 +410,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 			<persName><forename type="first">David</forename><surname>Grangier</surname></persName>
 		</author>
 		<author>
+			<persName><forename type="first">Denis</forename><surname>Yarats</surname></persName>
+		</author>
+		<author>
 			<persName><forename type="first">Yann</forename><forename type="middle">N</forename><surname>Dauphin</surname></persName>
 		</author>
-		<idno type="DOI">10.18653/v1/p17-1012</idno>
 		<idno type="arXiv">arXiv:1705.03122v2</idno>
-	</analytic>
-	<monogr>
-		<title level="m">Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</title>
-		<meeting>the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</meeting>
 		<imprint>
-			<publisher>Association for Computational Linguistics</publisher>
 			<date type="published" when="2017">2017</date>
 		</imprint>
 	</monogr>
@@ -716,25 +719,31 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct xml:id="b22">
-	<monogr>
-		<title level="m" type="main">Multi-task sequence to sequence learning</title>
+	<analytic>
+		<title level="a" type="main">Addressing the Rare Word Problem in Neural Machine Translation</title>
 		<author>
-			<persName><forename type="first">Minh-Thang</forename><surname>Luong</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Quoc</forename><forename type="middle">V</forename><surname>Le</surname></persName>
+			<persName><forename type="first">Thang</forename><surname>Luong</surname></persName>
 		</author>
 		<author>
 			<persName><forename type="first">Ilya</forename><surname>Sutskever</surname></persName>
 		</author>
 		<author>
+			<persName><forename type="first">Quoc</forename><forename type="middle">V</forename><surname>Le</surname></persName>
+		</author>
+		<author>
 			<persName><forename type="first">Oriol</forename><surname>Vinyals</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Lukasz</forename><surname>Kaiser</surname></persName>
+			<persName><forename type="first">Wojciech</forename><surname>Zaremba</surname></persName>
 		</author>
+		<idno type="DOI">10.3115/v1/p15-1002</idno>
 		<idno type="arXiv">arXiv:1511.06114</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)</title>
+		<meeting>the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)</meeting>
 		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
 			<date type="published" when="2015">2015</date>
 		</imprint>
 	</monogr>
@@ -742,10 +751,10 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct xml:id="b23">
-	<monogr>
-		<title level="m" type="main">Effective approaches to attentionbased neural machine translation</title>
+	<analytic>
+		<title level="a" type="main">Effective Approaches to Attention-based Neural Machine Translation</title>
 		<author>
-			<persName><forename type="first">Minh-Thang</forename><surname>Luong</surname></persName>
+			<persName><forename type="first">Thang</forename><surname>Luong</surname></persName>
 		</author>
 		<author>
 			<persName><forename type="first">Hieu</forename><surname>Pham</surname></persName>
@@ -753,8 +762,14 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Christopher</forename><forename type="middle">D</forename><surname>Manning</surname></persName>
 		</author>
+		<idno type="DOI">10.18653/v1/d15-1166</idno>
 		<idno type="arXiv">arXiv:1508.04025</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing</title>
+		<meeting>the 2015 Conference on Empirical Methods in Natural Language Processing</meeting>
 		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
 			<date type="published" when="2015">2015</date>
 		</imprint>
 	</monogr>
@@ -797,12 +812,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Mark</forename><surname>Johnson</surname></persName>
 		</author>
+		<idno type="DOI">10.3115/1220835.1220855</idno>
 	</analytic>
 	<monogr>
-		<title level="m">Proceedings of the Human Language Technology Conference of the NAACL, Main Conference</title>
-		<meeting>the Human Language Technology Conference of the NAACL, Main Conference</meeting>
+		<title level="m">Proceedings of the main conference on Human Language Technology Conference of the North American Chapter of the Association of Computational Linguistics -</title>
+		<meeting>the main conference on Human Language Technology Conference of the North American Chapter of the Association of Computational Linguistics</meeting>
 		<imprint>
-			<publisher>ACL</publisher>
+			<publisher>Association for Computational Linguistics</publisher>
 			<date type="published" when="2006-06">June 2006</date>
 			<biblScope unit="page" from="152" to="159" />
 		</imprint>
@@ -811,7 +827,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct xml:id="b26">
 	<analytic>
-		<title level="a" type="main">A decomposable attention model</title>
+		<title level="a" type="main">A Decomposable Attention Model for Natural Language Inference</title>
 		<author>
 			<persName><forename type="first">Ankur</forename><surname>Parikh</surname></persName>
 		</author>
@@ -824,10 +840,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Jakob</forename><surname>Uszkoreit</surname></persName>
 		</author>
+		<idno type="DOI">10.18653/v1/d16-1244</idno>
 	</analytic>
 	<monogr>
-		<title level="m">Empirical Methods in Natural Language Processing</title>
+		<title level="m">Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing</title>
+		<meeting>the 2016 Conference on Empirical Methods in Natural Language Processing</meeting>
 		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
 			<date type="published" when="2016">2016</date>
 		</imprint>
 	</monogr>
@@ -868,12 +887,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Dan</forename><surname>Klein</surname></persName>
 		</author>
+		<idno type="DOI">10.3115/1220175.1220230</idno>
 	</analytic>
 	<monogr>
-		<title level="m">Proceedings of the 21st International Conference on Computational Linguistics and 44th Annual Meeting of the ACL</title>
-		<meeting>the 21st International Conference on Computational Linguistics and 44th Annual Meeting of the ACL</meeting>
+		<title level="m">Proceedings of the 21st International Conference on Computational Linguistics and the 44th annual meeting of the ACL - ACL &apos;06</title>
+		<meeting>the 21st International Conference on Computational Linguistics and the 44th annual meeting of the ACL - ACL &apos;06</meeting>
 		<imprint>
-			<publisher>ACL</publisher>
+			<publisher>Association for Computational Linguistics</publisher>
 			<date type="published" when="2006-07">July 2006</date>
 			<biblScope unit="page" from="433" to="440" />
 		</imprint>
@@ -1027,11 +1047,15 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct xml:id="b34">
 	<monogr>
-		<title level="m" type="main">Feasibility study for low-head hydropower on the Mill River, Northampton, Massachusetts</title>
-		<idno type="DOI">10.2172/5766688</idno>
+		<title/>
+		<author>
+			<persName><surname>Curran Associates</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Inc</surname></persName>
+		</author>
 		<imprint>
 			<date type="published" when="2015">2015</date>
-			<publisher>Office of Scientific and Technical Information (OSTI)</publisher>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -1059,8 +1083,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct xml:id="b36">
-	<monogr>
-		<title level="m" type="main">Rethinking the inception architecture for computer vision</title>
+	<analytic>
+		<title level="a" type="main">Rethinking the Inception Architecture for Computer Vision</title>
 		<author>
 			<persName><forename type="first">Christian</forename><surname>Szegedy</surname></persName>
 		</author>
@@ -1071,14 +1095,20 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 			<persName><forename type="first">Sergey</forename><surname>Ioffe</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Jonathon</forename><surname>Shlens</surname></persName>
+			<persName><forename type="first">Jon</forename><surname>Shlens</surname></persName>
 		</author>
 		<author>
 			<persName><forename type="first">Zbigniew</forename><surname>Wojna</surname></persName>
 		</author>
+		<idno type="DOI">10.1109/cvpr.2016.308</idno>
 		<idno>CoRR, abs/1512.00567</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
 		<imprint>
+			<publisher>IEEE</publisher>
 			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="2818" to="2826" />
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -1155,8 +1185,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct xml:id="b39">
-	<analytic>
-		<title level="a" type="main">Deep Recurrent Models with Fast-Forward Connections for Neural Machine Translation</title>
+	<monogr>
+		<title level="m" type="main">Deep recurrent models with fast-forward connections for neural machine translation</title>
 		<author>
 			<persName><forename type="first">Jie</forename><surname>Zhou</surname></persName>
 		</author>
@@ -1172,18 +1202,9 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Wei</forename><surname>Xu</surname></persName>
 		</author>
-		<idno type="DOI">10.1162/tacl_a_00105</idno>
 		<idno>CoRR, abs/1606.04199</idno>
-	</analytic>
-	<monogr>
-		<title level="j">Transactions of the Association for Computational Linguistics</title>
-		<title level="j" type="abbrev">TACL</title>
-		<idno type="ISSNe">2307-387X</idno>
 		<imprint>
-			<biblScope unit="volume">4</biblScope>
-			<biblScope unit="page" from="371" to="383" />
-			<date type="published" when="2016-12">2016</date>
-			<publisher>MIT Press - Journals</publisher>
+			<date type="published" when="2016">2016</date>
 		</imprint>
 	</monogr>
 </biblStruct>
