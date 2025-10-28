@@ -1,0 +1,74 @@
+[
+  {
+    "text": "supervised tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 57,
+      "end_pos": 73
+    },
+    "section": "Transfer Learning from Supervised Data"
+  },
+  {
+    "text": "natural language inference",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 103,
+      "end_pos": 129
+    },
+    "section": "Transfer Learning from Supervised Data"
+  },
+  {
+    "text": "machine translation",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 156,
+      "end_pos": 175
+    },
+    "section": "Transfer Learning from Supervised Data"
+  },
+  {
+    "text": "Computer vision research",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 198,
+      "end_pos": 222
+    },
+    "section": "Transfer Learning from Supervised Data"
+  },
+  {
+    "text": "transfer learning",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 263,
+      "end_pos": 280
+    },
+    "section": "Transfer Learning from Supervised Data"
+  },
+  {
+    "text": "pre-trained models",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 292,
+      "end_pos": 310
+    },
+    "section": "Transfer Learning from Supervised Data"
+  },
+  {
+    "text": "fine-tune",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 344,
+      "end_pos": 353
+    },
+    "section": "Transfer Learning from Supervised Data"
+  },
+  {
+    "text": "Ima-geNet",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 378,
+      "end_pos": 387
+    },
+    "section": "Transfer Learning from Supervised Data"
+  }
+]

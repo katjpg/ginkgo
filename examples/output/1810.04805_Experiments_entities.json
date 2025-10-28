@@ -1,0 +1,20 @@
+[
+  {
+    "text": "BERT fine-tuning",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 28,
+      "end_pos": 44
+    },
+    "section": "Experiments"
+  },
+  {
+    "text": "NLP tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 59,
+      "end_pos": 68
+    },
+    "section": "Experiments"
+  }
+]

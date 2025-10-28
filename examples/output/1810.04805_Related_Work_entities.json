@@ -1,0 +1,11 @@
+[
+  {
+    "text": "pre-training general language representations",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 27,
+      "end_pos": 72
+    },
+    "section": "Related Work"
+  }
+]

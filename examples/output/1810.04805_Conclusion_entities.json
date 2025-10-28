@@ -1,0 +1,665 @@
+[
+  {
+    "text": "transfer learning",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 37,
+      "end_pos": 54
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "language models",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 60,
+      "end_pos": 75
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "unsupervised pre-training",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 105,
+      "end_pos": 130
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "language understanding",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 159,
+      "end_pos": 181
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "low-resource tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 232,
+      "end_pos": 250
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "deep unidirectional architectures",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 267,
+      "end_pos": 300
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "these findings",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 349,
+      "end_pos": 363
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "deep bidirectional architectures",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 367,
+      "end_pos": 399
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "the same pre-trained model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 410,
+      "end_pos": 436
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "NLP tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 475,
+      "end_pos": 484
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "Masked LM",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 486,
+      "end_pos": 495
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "Masking Procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 504,
+      "end_pos": 521
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "unlabeled sentence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 535,
+      "end_pos": 553
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "masking procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 504,
+      "end_pos": 521
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "masking procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 504,
+      "end_pos": 521
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "random masking procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 589,
+      "end_pos": 613
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "token",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 632,
+      "end_pos": 637
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "masking procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 674,
+      "end_pos": 691
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "masking procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 504,
+      "end_pos": 521
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "random word",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 848,
+      "end_pos": 859
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "masking procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 504,
+      "end_pos": 521
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "representation",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1021,
+      "end_pos": 1035
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1092,
+      "end_pos": 1101
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "Transformer encoder",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1114,
+      "end_pos": 1133
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "input token",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1309,
+      "end_pos": 1320
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "random replacement",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1344,
+      "end_pos": 1362
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1391,
+      "end_pos": 1397
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "language understanding capability",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1457,
+      "end_pos": 1490
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "language model training",
+    "type": "task",
+    "char_interval": null,
+    "section": "Conclusion"
+  },
+  {
+    "text": "masked LM",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1597,
+      "end_pos": 1606
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "tokens",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 1639,
+      "end_pos": 1645
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "the model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1725,
+      "end_pos": 1734
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "training input sequence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1752,
+      "end_pos": 1775
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "spans of text",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1791,
+      "end_pos": 1804
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "sentences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1844,
+      "end_pos": 1853
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "sentences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1910,
+      "end_pos": 1919
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "A embedding",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1979,
+      "end_pos": 1990
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "B embedding",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2019,
+      "end_pos": 2030
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "next sentence prediction",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2160,
+      "end_pos": 2184
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2248,
+      "end_pos": 2254
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "LM masking",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2260,
+      "end_pos": 2270
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "WordPiece tokenization",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2288,
+      "end_pos": 2310
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "partial word pieces",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2385,
+      "end_pos": 2404
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "corpus",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1814,
+      "end_pos": 1820
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "batch size",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2420,
+      "end_pos": 2430
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "sequences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2438,
+      "end_pos": 2447
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2469,
+      "end_pos": 2475
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1639,
+      "end_pos": 1645
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "steps",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2514,
+      "end_pos": 2519
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "epochs",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2547,
+      "end_pos": 2553
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "word corpus",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 2575,
+      "end_pos": 2586
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "Adam",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2595,
+      "end_pos": 2599
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "learning rate",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2605,
+      "end_pos": 2618
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "\u03b2 1",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2628,
+      "end_pos": 2631
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "\u03b2 2",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2639,
+      "end_pos": 2642
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "L2 weight decay",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2652,
+      "end_pos": 2667
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "learning rate warmup",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2677,
+      "end_pos": 2697
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "steps",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2720,
+      "end_pos": 2725
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "learning rate",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2751,
+      "end_pos": 2764
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "dropout probability",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2775,
+      "end_pos": 2794
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "layers",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2809,
+      "end_pos": 2815
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "gelu activation",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2826,
+      "end_pos": 2841
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "OpenAI GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2911,
+      "end_pos": 2921
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "training loss",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2927,
+      "end_pos": 2940
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "mean masked LM likelihood",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2959,
+      "end_pos": 2984
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "mean next sentence prediction likelihood",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2993,
+      "end_pos": 3033
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "BERT BASE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3047,
+      "end_pos": 3056
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "BERT LARGE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3144,
+      "end_pos": 3154
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "Each pretraining",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 3208,
+      "end_pos": 3224
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "Longer sequences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3250,
+      "end_pos": 3266
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 3308,
+      "end_pos": 3317
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "our experiments",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 3380,
+      "end_pos": 3395
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "sequence length",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3338,
+      "end_pos": 3353
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "positional embeddings",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3543,
+      "end_pos": 3564
+    },
+    "section": "Conclusion"
+  }
+]

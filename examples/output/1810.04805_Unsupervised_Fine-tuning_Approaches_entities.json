@@ -1,0 +1,128 @@
+[
+  {
+    "text": "feature-based approaches",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 12,
+      "end_pos": 36
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "word embedding parameters",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 89,
+      "end_pos": 114
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "unlabeled text",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 120,
+      "end_pos": 134
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "sentence or document encoders",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 179,
+      "end_pos": 208
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "contextual token representations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 223,
+      "end_pos": 255
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "unlabeled text",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 283,
+      "end_pos": 297
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "supervised downstream task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 319,
+      "end_pos": 345
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "these approaches",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 426,
+      "end_pos": 442
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "OpenAI GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 538,
+      "end_pos": 548
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "sentence-level tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 179,
+      "end_pos": 345
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "GLUE benchmark",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 653,
+      "end_pos": 667
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 718,
+      "end_pos": 722
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "Left-to-right language model",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 689,
+      "end_pos": 717
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "auto-encoder objectives",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 751,
+      "end_pos": 774
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  }
+]

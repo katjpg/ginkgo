@@ -1,0 +1,5840 @@
+[
+  {
+    "text": "natural language processing tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 78,
+      "end_pos": 111
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "sentence-level tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 210,
+      "end_pos": 230
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "natural language inference",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 239,
+      "end_pos": 265
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "paraphrasing",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 313,
+      "end_pos": 325
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "sentences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 400,
+      "end_pos": 409
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "token-level tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 453,
+      "end_pos": 470
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "named entity recognition",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 479,
+      "end_pos": 503
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "question answering",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 508,
+      "end_pos": 526
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "token",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 453,
+      "end_pos": 458
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "The two approaches",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1209,
+      "end_pos": 1227
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "unidirectional language models",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1298,
+      "end_pos": 1328
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "language representations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 724,
+      "end_pos": 748
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "feature-based",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 770,
+      "end_pos": 783
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "fine-tuning",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 788,
+      "end_pos": 799
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "ELMo",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 837,
+      "end_pos": 841
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "task-specific architectures",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 870,
+      "end_pos": 897
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "pre-trained representations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 915,
+      "end_pos": 942
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "fine-tuning",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 971,
+      "end_pos": 982
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "Generative Pre-trained Transformer",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1005,
+      "end_pos": 1039
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "OpenAI GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1041,
+      "end_pos": 1051
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "The two approaches",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1209,
+      "end_pos": 1227
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "objective function",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1243,
+      "end_pos": 1261
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "pre-training",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1269,
+      "end_pos": 1281
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "unidirectional language models",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1298,
+      "end_pos": 1328
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "language representations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1346,
+      "end_pos": 1370
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "current techniques",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1386,
+      "end_pos": 1404
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "fine-tuning",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1479,
+      "end_pos": 1490
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "pre-trained representations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1431,
+      "end_pos": 1458
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "language models",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1541,
+      "end_pos": 1556
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "architectures",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1607,
+      "end_pos": 1620
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "OpenAI GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1675,
+      "end_pos": 1685
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "left-toright architecture",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1705,
+      "end_pos": 1730
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "self-attention layers",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1792,
+      "end_pos": 1813
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "Transformer",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1821,
+      "end_pos": 1832
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "sentence-level tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1894,
+      "end_pos": 1914
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "token-level tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1987,
+      "end_pos": 2004
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "question answering",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2013,
+      "end_pos": 2031
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "context from both directions",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2068,
+      "end_pos": 2096
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "this paper",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2101,
+      "end_pos": 2111
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "the fine-tuning based approaches",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2124,
+      "end_pos": 2156
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2170,
+      "end_pos": 2174
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "Bidirectional Encoder Representations from Transformers",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2176,
+      "end_pos": 2231
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "unidirectionality constraint",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2274,
+      "end_pos": 2302
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "masked language model",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2315,
+      "end_pos": 2336
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "pre-training",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2344,
+      "end_pos": 2356
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "Cloze task",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2384,
+      "end_pos": 2394
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "masked language model",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2414,
+      "end_pos": 2435
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "tokens",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2463,
+      "end_pos": 2469
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "predict the original vocabulary id",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2510,
+      "end_pos": 2544
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "context",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2582,
+      "end_pos": 2589
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "language model pre-training",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2611,
+      "end_pos": 2638
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "MLM objective",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2644,
+      "end_pos": 2657
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "the representation",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2666,
+      "end_pos": 2684
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "left and the right context",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2697,
+      "end_pos": 2723
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "Transformer",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2774,
+      "end_pos": 2785
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "masked language model",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2806,
+      "end_pos": 2827
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "next sentence prediction",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2844,
+      "end_pos": 2868
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "text-pair representations",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2898,
+      "end_pos": 2923
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "our paper",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2946,
+      "end_pos": 2955
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "bidirectional pre-training",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 3007,
+      "end_pos": 3033
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "language representations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 3038,
+      "end_pos": 3062
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "language models",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3120,
+      "end_pos": 3135
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "masked language models",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3164,
+      "end_pos": 3186
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "deep bidirectional representations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 3208,
+      "end_pos": 3242
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "LMs",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3386,
+      "end_pos": 3389
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "pre-trained representations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 3406,
+      "end_pos": 3433
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "sentence-level tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3625,
+      "end_pos": 3639
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "token-level tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3644,
+      "end_pos": 3661
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "NLP tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3759,
+      "end_pos": 3768
+    },
+    "section": "Introduction"
+  },
+  {
+    "text": "pre-training general language representations",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 27,
+      "end_pos": 72
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "Learning widely applicable representations of words",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 0,
+      "end_pos": 51
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "non-neural",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 111,
+      "end_pos": 121
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "neural",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 188,
+      "end_pos": 194
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "word embeddings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 262,
+      "end_pos": 277
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "NLP systems",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 309,
+      "end_pos": 320
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "embeddings learned from scratch",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 361,
+      "end_pos": 392
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "pretrain word embedding vectors",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 418,
+      "end_pos": 449
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "language modeling objectives",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 465,
+      "end_pos": 493
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "discriminate correct from incorrect words",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 558,
+      "end_pos": 599
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "sentence embeddings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 722,
+      "end_pos": 741
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "paragraph embeddings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 790,
+      "end_pos": 810
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "train sentence representations",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 837,
+      "end_pos": 867
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "rank candidate next sentences",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 903,
+      "end_pos": 932
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "left-to-right generation of next sentence words",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 981,
+      "end_pos": 1028
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "denoising autoencoder derived objectives",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1101,
+      "end_pos": 1141
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "ELMo",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1162,
+      "end_pos": 1166
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "word embedding research",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1254,
+      "end_pos": 1277
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "context-sensitive features",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1320,
+      "end_pos": 1346
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "language model",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1388,
+      "end_pos": 1402
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "token",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1442,
+      "end_pos": 1447
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "contextual representation",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1408,
+      "end_pos": 1433
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "left-to-right representations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1476,
+      "end_pos": 1489
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "right-to-left representations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1494,
+      "end_pos": 1523
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "contextual word embeddings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1542,
+      "end_pos": 1568
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "task-specific architectures",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1583,
+      "end_pos": 1610
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "ELMo",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1612,
+      "end_pos": 1616
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "question answering",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1712,
+      "end_pos": 1730
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "sentiment analysis",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1756,
+      "end_pos": 1774
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "named entity recognition",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1801,
+      "end_pos": 1825
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "LSTMs",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2010,
+      "end_pos": 2015
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "their model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2034,
+      "end_pos": 2045
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "cloze task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2128,
+      "end_pos": 2138
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "text generation",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2180,
+      "end_pos": 2195
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "feature-based approaches",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 12,
+      "end_pos": 36
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "word embedding parameters",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 89,
+      "end_pos": 114
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "unlabeled text",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 120,
+      "end_pos": 134
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "sentence or document encoders",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 179,
+      "end_pos": 208
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "contextual token representations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 223,
+      "end_pos": 255
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "unlabeled text",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 283,
+      "end_pos": 297
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "supervised downstream task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 319,
+      "end_pos": 345
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "these approaches",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 426,
+      "end_pos": 442
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "OpenAI GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 538,
+      "end_pos": 548
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "sentence-level tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 179,
+      "end_pos": 345
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "GLUE benchmark",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 653,
+      "end_pos": 667
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 718,
+      "end_pos": 722
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "Left-to-right language model",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 689,
+      "end_pos": 717
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "auto-encoder objectives",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 751,
+      "end_pos": 774
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "supervised tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 57,
+      "end_pos": 73
+    },
+    "section": "Transfer Learning from Supervised Data"
+  },
+  {
+    "text": "natural language inference",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 103,
+      "end_pos": 129
+    },
+    "section": "Transfer Learning from Supervised Data"
+  },
+  {
+    "text": "machine translation",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 156,
+      "end_pos": 175
+    },
+    "section": "Transfer Learning from Supervised Data"
+  },
+  {
+    "text": "Computer vision research",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 198,
+      "end_pos": 222
+    },
+    "section": "Transfer Learning from Supervised Data"
+  },
+  {
+    "text": "transfer learning",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 263,
+      "end_pos": 280
+    },
+    "section": "Transfer Learning from Supervised Data"
+  },
+  {
+    "text": "pre-trained models",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 292,
+      "end_pos": 310
+    },
+    "section": "Transfer Learning from Supervised Data"
+  },
+  {
+    "text": "fine-tune",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 344,
+      "end_pos": 353
+    },
+    "section": "Transfer Learning from Supervised Data"
+  },
+  {
+    "text": "Ima-geNet",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 378,
+      "end_pos": 387
+    },
+    "section": "Transfer Learning from Supervised Data"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 13,
+      "end_pos": 17
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "pre-training",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 105,
+      "end_pos": 117
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "fine-tuning",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 122,
+      "end_pos": 133
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "the model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 156,
+      "end_pos": 165
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "pre-training tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 210,
+      "end_pos": 228
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 250,
+      "end_pos": 254
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "downstream tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 384,
+      "end_pos": 400
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "the pre-trained parameters",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 287,
+      "end_pos": 313
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "the same pre-trained parameters",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 493,
+      "end_pos": 524
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "question-answering",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 530,
+      "end_pos": 548
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "this section",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 604,
+      "end_pos": 616
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 643,
+      "end_pos": 647
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "Transformer encoder",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 881,
+      "end_pos": 900
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "self-attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1430,
+      "end_pos": 1444
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "Transformers",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 881,
+      "end_pos": 892
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "BERT BASE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1505,
+      "end_pos": 1514
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "BERT LARGE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1563,
+      "end_pos": 1573
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1619,
+      "end_pos": 1623
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "OpenAI GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1671,
+      "end_pos": 1681
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "BERT Transformer",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1732,
+      "end_pos": 1748
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "bidirectional self-attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1754,
+      "end_pos": 1782
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "GPT Transformer",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1794,
+      "end_pos": 1809
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "constrained self-attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1815,
+      "end_pos": 1841
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "down-stream tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1964,
+      "end_pos": 1981
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "single sentence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2050,
+      "end_pos": 2065
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "pair of sentences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2072,
+      "end_pos": 2089
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "token sequence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2123,
+      "end_pos": 2137
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "sentence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2164,
+      "end_pos": 2172
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "span of contiguous text",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2194,
+      "end_pos": 2217
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "sequence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2265,
+      "end_pos": 2273
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "token sequence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2295,
+      "end_pos": 2309
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2313,
+      "end_pos": 2317
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "WordPiece embeddings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2391,
+      "end_pos": 2411
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "token",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2443,
+      "end_pos": 2448
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "sequence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2486,
+      "end_pos": 2494
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "classification tasks",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2648,
+      "end_pos": 2668
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "Sentence pairs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2670,
+      "end_pos": 2684
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "sequence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2719,
+      "end_pos": 2727
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "token",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2812,
+      "end_pos": 2817
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "sentence A",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2909,
+      "end_pos": 2919
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "sentence B",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2923,
+      "end_pos": 2933
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "input embedding",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2966,
+      "end_pos": 2981
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "final hidden vector",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2992,
+      "end_pos": 3011
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "special [CLS] token",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3019,
+      "end_pos": 3038
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "final hidden vector",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3059,
+      "end_pos": 3078
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "input token",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3092,
+      "end_pos": 3103
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "token",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3119,
+      "end_pos": 3124
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "segment embeddings",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3202,
+      "end_pos": 3209
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "position embeddings",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3215,
+      "end_pos": 3234
+    },
+    "section": "Bert"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 141,
+      "end_pos": 145
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "language models",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 112,
+      "end_pos": 127
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "pre-train",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 131,
+      "end_pos": 140
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "unsupervised tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 184,
+      "end_pos": 202
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "Masked LM",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 292,
+      "end_pos": 301
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "a deep bidirectional model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 348,
+      "end_pos": 374
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "language models",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 545,
+      "end_pos": 560
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "language models",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 112,
+      "end_pos": 127
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "Transformer encoder",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 812,
+      "end_pos": 831
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "Transformer decoder",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 890,
+      "end_pos": 909
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "text generation",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 936,
+      "end_pos": 951
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "bidirectional representation",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 978,
+      "end_pos": 1006
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "masked tokens",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1093,
+      "end_pos": 1106
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "masked LM",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1141,
+      "end_pos": 1150
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "Cloze task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1197,
+      "end_pos": 1207
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "LM",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 299,
+      "end_pos": 301
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "hidden vectors",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1265,
+      "end_pos": 1279
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "mask tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1301,
+      "end_pos": 1312
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "LM",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1382,
+      "end_pos": 1384
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "WordPiece tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1432,
+      "end_pos": 1448
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "denoising auto-encoders",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1492,
+      "end_pos": 1515
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "predict the masked words",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1547,
+      "end_pos": 1571
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "reconstructing the entire input",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1584,
+      "end_pos": 1615
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "this",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1626,
+      "end_pos": 1630
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "a bidirectional pre-trained model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1651,
+      "end_pos": 1684
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "pre-training",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1740,
+      "end_pos": 1752
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "fine-tuning",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1757,
+      "end_pos": 1768
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "pre-training",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1740,
+      "end_pos": 1752
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "fine-tuning",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1757,
+      "end_pos": 1768
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "the [MASK] token",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1776,
+      "end_pos": 1792
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "this",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1841,
+      "end_pos": 1845
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "the actual [MASK] token",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1892,
+      "end_pos": 1915
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "The training data generator",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1917,
+      "end_pos": 1944
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "the i-th token",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2009,
+      "end_pos": 2023
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "the i-th token",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2046,
+      "end_pos": 2060
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "the [MASK] token",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2070,
+      "end_pos": 2086
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "a random token",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2107,
+      "end_pos": 2121
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "the unchanged i-th token",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2142,
+      "end_pos": 2166
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "T i",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2190,
+      "end_pos": 2193
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "the original token",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2218,
+      "end_pos": 2236
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "cross entropy loss",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2242,
+      "end_pos": 2260
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "this procedure",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2287,
+      "end_pos": 2301
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "Next Sentence Prediction",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2328,
+      "end_pos": 2352
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "NSP",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2354,
+      "end_pos": 2357
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "understanding the relationship between two sentences",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2473,
+      "end_pos": 2525
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "language modeling",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2561,
+      "end_pos": 2578
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "a model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2598,
+      "end_pos": 2605
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "sentence relationships",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2623,
+      "end_pos": 2645
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "next sentence prediction task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2676,
+      "end_pos": 2705
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "next sentence prediction",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3048,
+      "end_pos": 3072
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "IsNext",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2920,
+      "end_pos": 2926
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "NotNext",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 3001,
+      "end_pos": 3008
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "C",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 3034,
+      "end_pos": 3035
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "next sentence prediction",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3048,
+      "end_pos": 3072
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "this task",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 3165,
+      "end_pos": 3174
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "QA",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3202,
+      "end_pos": 3204
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "NLI",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3209,
+      "end_pos": 3212
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "Position Embeddings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 3220,
+      "end_pos": 3239
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "NSP",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 3244,
+      "end_pos": 3247
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "sentence embeddings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 3397,
+      "end_pos": 3416
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3461,
+      "end_pos": 3465
+    },
+    "section": "Pre-training BERT"
+  },
+  {
+    "text": "pre-training procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 4,
+      "end_pos": 26
+    },
+    "section": "Pre-training data"
+  },
+  {
+    "text": "language model pre-training",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 70,
+      "end_pos": 97
+    },
+    "section": "Pre-training data"
+  },
+  {
+    "text": "Books Corpus",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 138,
+      "end_pos": 150
+    },
+    "section": "Pre-training data"
+  },
+  {
+    "text": "English Wikipedia",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 186,
+      "end_pos": 203
+    },
+    "section": "Pre-training data"
+  },
+  {
+    "text": "Wikipedia",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 224,
+      "end_pos": 233
+    },
+    "section": "Pre-training data"
+  },
+  {
+    "text": "Billion Word Benchmark",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 410,
+      "end_pos": 432
+    },
+    "section": "Pre-training data"
+  },
+  {
+    "text": "long contiguous sequences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 474,
+      "end_pos": 499
+    },
+    "section": "Pre-training data"
+  },
+  {
+    "text": "downstream tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 110,
+      "end_pos": 632
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "selfattention mechanism",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 41,
+      "end_pos": 64
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "Transformer",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 72,
+      "end_pos": 83
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 91,
+      "end_pos": 95
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "text pairs",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 162,
+      "end_pos": 172
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "paraphrasing",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 839,
+      "end_pos": 851
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "entailment",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 885,
+      "end_pos": 895
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "question answering",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 927,
+      "end_pos": 945
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "text classification",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 983,
+      "end_pos": 1002
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "sequence tagging",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1006,
+      "end_pos": 1022
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "sentiment analysis",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1263,
+      "end_pos": 1281
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "The token representations",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1039,
+      "end_pos": 1064
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "the [CLS] representation",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1168,
+      "end_pos": 1192
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "the results",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1355,
+      "end_pos": 1366
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "pre-trained model",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1493,
+      "end_pos": 1510
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "BERT fine-tuning",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 28,
+      "end_pos": 44
+    },
+    "section": "Experiments"
+  },
+  {
+    "text": "NLP tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 59,
+      "end_pos": 68
+    },
+    "section": "Experiments"
+  },
+  {
+    "text": "General Language Understanding Evaluation (GLUE) benchmark",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 4,
+      "end_pos": 62
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "natural language understanding tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 110,
+      "end_pos": 146
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "GLUE datasets",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 173,
+      "end_pos": 186
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "the input sequence",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 252,
+      "end_pos": 270
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "classification layer weights",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 516,
+      "end_pos": 544
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "classification loss",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 611,
+      "end_pos": 630
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "the data",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 730,
+      "end_pos": 738
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "GLUE tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 747,
+      "end_pos": 757
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "the Dev set",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 859,
+      "end_pos": 870
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "BERT LARGE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 890,
+      "end_pos": 900
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "the Dev set",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1033,
+      "end_pos": 1044
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "random restarts",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1051,
+      "end_pos": 1066
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "the same pre-trained checkpoint",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1075,
+      "end_pos": 1106
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "classifier layer initialization",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1160,
+      "end_pos": 1191
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "BERT BASE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1233,
+      "end_pos": 1242
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "BERT LARGE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1247,
+      "end_pos": 1257
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "average accuracy improvement",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 1354,
+      "end_pos": 1382
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "BERT BASE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1426,
+      "end_pos": 1435
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "OpenAI GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1440,
+      "end_pos": 1450
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "model architecture",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1484,
+      "end_pos": 1502
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "attention masking",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1518,
+      "end_pos": 1535
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "GLUE task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1578,
+      "end_pos": 1587
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "MNLI",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1589,
+      "end_pos": 1593
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1595,
+      "end_pos": 1599
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "accuracy improvement",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 1624,
+      "end_pos": 1644
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "GLUE leaderboard",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1662,
+      "end_pos": 1678
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "BERT LARGE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1683,
+      "end_pos": 1693
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "score",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 1704,
+      "end_pos": 1709
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "OpenAI GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1731,
+      "end_pos": 1741
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "BERT LARGE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1802,
+      "end_pos": 1812
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "BERT BASE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1839,
+      "end_pos": 1848
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1860,
+      "end_pos": 1865
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "training data",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1901,
+      "end_pos": 1914
+    },
+    "section": "Glue"
+  },
+  {
+    "text": "Stanford Question Answering Dataset",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 4,
+      "end_pos": 39
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "SQuAD v1.1",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 41,
+      "end_pos": 51
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "question answering",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 13,
+      "end_pos": 31
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "question/answer pairs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 90,
+      "end_pos": 111
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "GLUE data set",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 179,
+      "end_pos": 192
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "BERTBASE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 312,
+      "end_pos": 320
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "BERTLARGE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 325,
+      "end_pos": 334
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "Wikipedia",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 339,
+      "end_pos": 348
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "predict the answer text span",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 387,
+      "end_pos": 415
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "passage",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 423,
+      "end_pos": 430
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "Figure1",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 444,
+      "end_pos": 451
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "question answering task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 460,
+      "end_pos": 483
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "input question",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 502,
+      "end_pos": 516
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "passage",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 521,
+      "end_pos": 528
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "A embedding",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 586,
+      "end_pos": 597
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "B embedding",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 624,
+      "end_pos": 635
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "start vector",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 657,
+      "end_pos": 669
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "end vector",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 685,
+      "end_pos": 695
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "word",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 743,
+      "end_pos": 747
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "answer span",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 773,
+      "end_pos": 784
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "words",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 870,
+      "end_pos": 875
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "paragraph",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 883,
+      "end_pos": 892
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "answer span",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 968,
+      "end_pos": 979
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "candidate span",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 996,
+      "end_pos": 1010
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "position",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1016,
+      "end_pos": 1024
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "position",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1030,
+      "end_pos": 1038
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "span",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1094,
+      "end_pos": 1098
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "training objective",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1140,
+      "end_pos": 1158
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "log-likelihoods",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1177,
+      "end_pos": 1192
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "start",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1208,
+      "end_pos": 1213
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "end positions",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1218,
+      "end_pos": 1231
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "Table2",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1312,
+      "end_pos": 1318
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "leaderboard entries",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1329,
+      "end_pos": 1348
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "published systems",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1377,
+      "end_pos": 1394
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "SQuAD",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1500,
+      "end_pos": 1505
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "TriviaQA",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1733,
+      "end_pos": 1741
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "F1",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 1864,
+      "end_pos": 1866
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1933,
+      "end_pos": 1937
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "SQuAD v2.0",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 2103,
+      "end_pos": 2113
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "SQuAD v1.1",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2335,
+      "end_pos": 2345
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "SQuAD v1.1",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 2335,
+      "end_pos": 2345
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "answer span",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2431,
+      "end_pos": 2442
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "answer span",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2526,
+      "end_pos": 2537
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "TriviaQA-Wiki",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 2779,
+      "end_pos": 2792
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "F1",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 3043,
+      "end_pos": 3045
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "TriviaQA data",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 3062,
+      "end_pos": 3075
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "this model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 3080,
+      "end_pos": 3090
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "The results",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 0,
+      "end_pos": 11
+    },
+    "section": "System"
+  },
+  {
+    "text": "F1",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 209,
+      "end_pos": 211
+    },
+    "section": "System"
+  },
+  {
+    "text": "Situations With Adversarial Generations (SWAG)",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 4,
+      "end_pos": 50
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "grounded commonsense inference",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 121,
+      "end_pos": 151
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "SWAG",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 45,
+      "end_pos": 49
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "sentence-pair completion",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 73,
+      "end_pos": 97
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "sentence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 183,
+      "end_pos": 191
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "choose the most plausible continuation",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 208,
+      "end_pos": 246
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "four choices",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 253,
+      "end_pos": 265
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "the model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 287,
+      "end_pos": 290
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "input sequences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 323,
+      "end_pos": 338
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "sentence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 387,
+      "end_pos": 395
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "continuation",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 234,
+      "end_pos": 246
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "sentence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 397,
+      "end_pos": 405
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "choice",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 589,
+      "end_pos": 595
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "BERT LARGE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 760,
+      "end_pos": 770
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "ESIM+ELMo",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 805,
+      "end_pos": 814
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "OpenAI GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 836,
+      "end_pos": 846
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "ablation experiments",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 28,
+      "end_pos": 48
+    },
+    "section": "Ablation Studies"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 76,
+      "end_pos": 80
+    },
+    "section": "Ablation Studies"
+  },
+  {
+    "text": "their relative importance",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 111,
+      "end_pos": 136
+    },
+    "section": "Ablation Studies"
+  },
+  {
+    "text": "ablation studies",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 149,
+      "end_pos": 165
+    },
+    "section": "Ablation Studies"
+  },
+  {
+    "text": "the importance",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 15,
+      "end_pos": 29
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 62,
+      "end_pos": 66
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "pretraining objectives",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 85,
+      "end_pos": 107
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "pretraining data",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 131,
+      "end_pos": 147
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "hyperparameters",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 173,
+      "end_pos": 188
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "BERT BASE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 192,
+      "end_pos": 201
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "NSP",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 206,
+      "end_pos": 209
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "MLM",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 273,
+      "end_pos": 276
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "next sentence prediction",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 295,
+      "end_pos": 319
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "NSP",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 322,
+      "end_pos": 325
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "Left-to-Right (LTR) LM",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 60,
+      "end_pos": 82
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "fine-tuning",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 149,
+      "end_pos": 160
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "pre-train/fine-tune mismatch",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 195,
+      "end_pos": 223
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "NSP task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 315,
+      "end_pos": 323
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "QNLI",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 586,
+      "end_pos": 590
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "MNLI",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 592,
+      "end_pos": 596
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "SQuAD 1.1",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 602,
+      "end_pos": 611
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "training bidirectional representations",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 645,
+      "end_pos": 683
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "LTR model",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 729,
+      "end_pos": 738
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "MLM model",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 763,
+      "end_pos": 772
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "MRPC",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 807,
+      "end_pos": 811
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "SQuAD",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 816,
+      "end_pos": 821
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "token predictions",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 897,
+      "end_pos": 914
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "token-level hidden states",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 926,
+      "end_pos": 951
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "BiLSTM",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1082,
+      "end_pos": 1088
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "SQuAD",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1140,
+      "end_pos": 1145
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "GLUE tasks",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1270,
+      "end_pos": 1280
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "LTR",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1344,
+      "end_pos": 1347
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "RTL models",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1352,
+      "end_pos": 1362
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "token",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1382,
+      "end_pos": 1387
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "ELMo",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1431,
+      "end_pos": 1435
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "this",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1455,
+      "end_pos": 1459
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "bidirectional model",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1494,
+      "end_pos": 1513
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "QA",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1556,
+      "end_pos": 1558
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "RTL model",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1570,
+      "end_pos": 1579
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "the question",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1625,
+      "end_pos": 1637
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "deep bidirectional model",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1684,
+      "end_pos": 1708
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "fine-tuning task accuracy",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 56,
+      "end_pos": 81
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 106,
+      "end_pos": 110
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "layers",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 145,
+      "end_pos": 151
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "hidden units",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 153,
+      "end_pos": 165
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "attention heads",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 171,
+      "end_pos": 186
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "the same hyperparameters",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 210,
+      "end_pos": 234
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "training procedure",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 239,
+      "end_pos": 257
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "GLUE tasks",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 303,
+      "end_pos": 313
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "Dev Set accuracy",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 372,
+      "end_pos": 388
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "models",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 451,
+      "end_pos": 457
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "accuracy improvement",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 475,
+      "end_pos": 495
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "MRPC",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 531,
+      "end_pos": 535
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "labeled training examples",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 557,
+      "end_pos": 582
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "pre-training tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 624,
+      "end_pos": 642
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "larger models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 444,
+      "end_pos": 457
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "significant improvements",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 707,
+      "end_pos": 731
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "Transformer",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 841,
+      "end_pos": 852
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "parameters",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 919,
+      "end_pos": 929
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "BERT BASE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1086,
+      "end_pos": 1095
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "BERT LARGE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1125,
+      "end_pos": 1135
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "machine translation",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1281,
+      "end_pos": 1300
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "language modeling",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1305,
+      "end_pos": 1322
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "LM perplexity",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 1353,
+      "end_pos": 1366
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "this",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1435,
+      "end_pos": 1439
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "model sizes",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1510,
+      "end_pos": 1521
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "small scale tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1563,
+      "end_pos": 1580
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "bi-LM",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1747,
+      "end_pos": 1752
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "featurebased approach",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1991,
+      "end_pos": 2012
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "the model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2039,
+      "end_pos": 2048
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "downstream tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2079,
+      "end_pos": 2095
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "parameters",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2165,
+      "end_pos": 2175
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "pre-trained representations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2246,
+      "end_pos": 2273
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 11,
+      "end_pos": 15
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "downstream task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 195,
+      "end_pos": 210
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "classification layer",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 92,
+      "end_pos": 112
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "Transformer encoder architecture",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 387,
+      "end_pos": 419
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "Named Entity Recognition",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 769,
+      "end_pos": 793
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "CoNL-2003",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 759,
+      "end_pos": 768
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 11,
+      "end_pos": 15
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "WordPiece model",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 890,
+      "end_pos": 905
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "tagging task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1025,
+      "end_pos": 1037
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "CRF layer",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1055,
+      "end_pos": 1064
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "NER label set",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1181,
+      "end_pos": 1194
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "the fine-tuning approach",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 51,
+      "end_pos": 75
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "the feature-based approach",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 221,
+      "end_pos": 247
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 747,
+      "end_pos": 751
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "contextual embeddings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1372,
+      "end_pos": 1393
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "BiLSTM",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1464,
+      "end_pos": 1470
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "classification layer",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1482,
+      "end_pos": 1502
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "BERT LARGE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1537,
+      "end_pos": 1547
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "F1",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 1750,
+      "end_pos": 1752
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "Transformer",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1719,
+      "end_pos": 1730
+    },
+    "section": "Feature-based Approach with BERT"
+  },
+  {
+    "text": "transfer learning",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 37,
+      "end_pos": 54
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "language models",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 60,
+      "end_pos": 75
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "unsupervised pre-training",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 105,
+      "end_pos": 130
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "language understanding",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 159,
+      "end_pos": 181
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "low-resource tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 232,
+      "end_pos": 250
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "deep unidirectional architectures",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 267,
+      "end_pos": 300
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "these findings",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 349,
+      "end_pos": 363
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "deep bidirectional architectures",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 367,
+      "end_pos": 399
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "the same pre-trained model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 410,
+      "end_pos": 436
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "NLP tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 475,
+      "end_pos": 484
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "Masked LM",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 486,
+      "end_pos": 495
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "Masking Procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 504,
+      "end_pos": 521
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "unlabeled sentence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 535,
+      "end_pos": 553
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "masking procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 504,
+      "end_pos": 521
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "masking procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 504,
+      "end_pos": 521
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "random masking procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 589,
+      "end_pos": 613
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "token",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 632,
+      "end_pos": 637
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "masking procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 674,
+      "end_pos": 691
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "masking procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 504,
+      "end_pos": 521
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "random word",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 848,
+      "end_pos": 859
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "masking procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 504,
+      "end_pos": 521
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "representation",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1021,
+      "end_pos": 1035
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1092,
+      "end_pos": 1101
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "Transformer encoder",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1114,
+      "end_pos": 1133
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "input token",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1309,
+      "end_pos": 1320
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "random replacement",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1344,
+      "end_pos": 1362
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1391,
+      "end_pos": 1397
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "language understanding capability",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1457,
+      "end_pos": 1490
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "language model training",
+    "type": "task",
+    "char_interval": null,
+    "section": "Conclusion"
+  },
+  {
+    "text": "masked LM",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1597,
+      "end_pos": 1606
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "tokens",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 1639,
+      "end_pos": 1645
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "the model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1725,
+      "end_pos": 1734
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "training input sequence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1752,
+      "end_pos": 1775
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "spans of text",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1791,
+      "end_pos": 1804
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "sentences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1844,
+      "end_pos": 1853
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "sentences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1910,
+      "end_pos": 1919
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "A embedding",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1979,
+      "end_pos": 1990
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "B embedding",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2019,
+      "end_pos": 2030
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "next sentence prediction",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2160,
+      "end_pos": 2184
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2248,
+      "end_pos": 2254
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "LM masking",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2260,
+      "end_pos": 2270
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "WordPiece tokenization",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2288,
+      "end_pos": 2310
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "partial word pieces",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2385,
+      "end_pos": 2404
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "corpus",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1814,
+      "end_pos": 1820
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "batch size",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2420,
+      "end_pos": 2430
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "sequences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2438,
+      "end_pos": 2447
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2469,
+      "end_pos": 2475
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "tokens",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1639,
+      "end_pos": 1645
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "steps",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2514,
+      "end_pos": 2519
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "epochs",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2547,
+      "end_pos": 2553
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "word corpus",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 2575,
+      "end_pos": 2586
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "Adam",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2595,
+      "end_pos": 2599
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "learning rate",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2605,
+      "end_pos": 2618
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "\u03b2 1",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2628,
+      "end_pos": 2631
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "\u03b2 2",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2639,
+      "end_pos": 2642
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "L2 weight decay",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2652,
+      "end_pos": 2667
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "learning rate warmup",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2677,
+      "end_pos": 2697
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "steps",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2720,
+      "end_pos": 2725
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "learning rate",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2751,
+      "end_pos": 2764
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "dropout probability",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2775,
+      "end_pos": 2794
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "layers",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 2809,
+      "end_pos": 2815
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "gelu activation",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2826,
+      "end_pos": 2841
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "OpenAI GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2911,
+      "end_pos": 2921
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "training loss",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2927,
+      "end_pos": 2940
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "mean masked LM likelihood",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2959,
+      "end_pos": 2984
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "mean next sentence prediction likelihood",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 2993,
+      "end_pos": 3033
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "BERT BASE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3047,
+      "end_pos": 3056
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "BERT LARGE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 3144,
+      "end_pos": 3154
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "Each pretraining",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 3208,
+      "end_pos": 3224
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "Longer sequences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3250,
+      "end_pos": 3266
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 3308,
+      "end_pos": 3317
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "our experiments",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 3380,
+      "end_pos": 3395
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "sequence length",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3338,
+      "end_pos": 3353
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "positional embeddings",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 3543,
+      "end_pos": 3564
+    },
+    "section": "Conclusion"
+  },
+  {
+    "text": "model hyperparameters",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 22,
+      "end_pos": 43
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "pre-training",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 63,
+      "end_pos": 75
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "the batch size",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 99,
+      "end_pos": 113
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "learning rate",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 115,
+      "end_pos": 128
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "number of training epochs",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 134,
+      "end_pos": 159
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "The dropout probability",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 161,
+      "end_pos": 184
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "hyperparameter values",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 221,
+      "end_pos": 242
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 338,
+      "end_pos": 343
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "Batch size",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 347,
+      "end_pos": 357
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "data sets",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 394,
+      "end_pos": 403
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "training examples",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 425,
+      "end_pos": 442
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "hyperparameter choice",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 471,
+      "end_pos": 492
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "data sets",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 504,
+      "end_pos": 513
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "Fine-tuning",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 515,
+      "end_pos": 526
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "the above parameters",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 611,
+      "end_pos": 631
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "the model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 643,
+      "end_pos": 652
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "development set",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 679,
+      "end_pos": 694
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 851,
+      "end_pos": 855
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "ELMo",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 719,
+      "end_pos": 723
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "OpenAI GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 728,
+      "end_pos": 738
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "representation learning models",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 789,
+      "end_pos": 819
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "ELMo",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 830,
+      "end_pos": 834
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "OpenAI GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 836,
+      "end_pos": 846
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 851,
+      "end_pos": 855
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "the model architectures",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 881,
+      "end_pos": 904
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "Figure3",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 927,
+      "end_pos": 934
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "the architecture differences",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 961,
+      "end_pos": 989
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 991,
+      "end_pos": 995
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "OpenAI GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1000,
+      "end_pos": 1010
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "finetuning approaches",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1015,
+      "end_pos": 1036
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "ELMo",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1044,
+      "end_pos": 1048
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "feature-based approach",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1054,
+      "end_pos": 1076
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "pre-training method",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1107,
+      "end_pos": 1126
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1130,
+      "end_pos": 1134
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "OpenAI GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1138,
+      "end_pos": 1148
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "Transformer LM",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1179,
+      "end_pos": 1193
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "large text corpus",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1199,
+      "end_pos": 1216
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "the design decisions",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1235,
+      "end_pos": 1255
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1259,
+      "end_pos": 1263
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1311,
+      "end_pos": 1314
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "the two methods",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1335,
+      "end_pos": 1350
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "the core argument",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1380,
+      "end_pos": 1397
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "bi-directionality",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1423,
+      "end_pos": 1440
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "pretraining tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1453,
+      "end_pos": 1470
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "Section 3",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1484,
+      "end_pos": 1493
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1620,
+      "end_pos": 1624
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1629,
+      "end_pos": 1632
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "Books Corpus",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1671,
+      "end_pos": 1683
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "Wikipedia",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1751,
+      "end_pos": 1760
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "sentence separator",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1790,
+      "end_pos": 1808
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "classifier token",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1821,
+      "end_pos": 1837
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "sentence A/B embeddings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1922,
+      "end_pos": 1945
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "these differences",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2302,
+      "end_pos": 2319
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "ablation experiments",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2332,
+      "end_pos": 2352
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "pre-training tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2456,
+      "end_pos": 2474
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "bidirectionality",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 2483,
+      "end_pos": 2499
+    },
+    "section": "A.3 Fine-tuning Procedure"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 32,
+      "end_pos": 36
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "different tasks",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 40,
+      "end_pos": 55
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "Our task-specific models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 80,
+      "end_pos": 104
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 133,
+      "end_pos": 137
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "output layer",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 158,
+      "end_pos": 170
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "entailment classification task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 314,
+      "end_pos": 344
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "MNLI Multi-Genre Natural Language Inference",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 239,
+      "end_pos": 282
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "entailment",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 314,
+      "end_pos": 324
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "contradiction",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 465,
+      "end_pos": 478
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "neutral",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 483,
+      "end_pos": 490
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "binary classification task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 551,
+      "end_pos": 577
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "QP Quora Question Pairs",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 522,
+      "end_pos": 545
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "binary classification task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 551,
+      "end_pos": 577
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "QNLI Question Natural Language Inference",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 689,
+      "end_pos": 729
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "Stanford Question Answering Dataset",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 750,
+      "end_pos": 785
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "binary classification task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 840,
+      "end_pos": 866
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "positive examples",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 892,
+      "end_pos": 909
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "negative examples",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 986,
+      "end_pos": 1003
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "Image classification",
+    "type": "task",
+    "char_interval": null,
+    "section": "Bert e"
+  },
+  {
+    "text": "ResNet",
+    "type": "method",
+    "char_interval": null,
+    "section": "Bert e"
+  },
+  {
+    "text": "this problem",
+    "type": "generic",
+    "char_interval": null,
+    "section": "Bert e"
+  },
+  {
+    "text": "ResNet",
+    "type": "method",
+    "char_interval": null,
+    "section": "Bert e"
+  },
+  {
+    "text": "residual connections",
+    "type": "other",
+    "char_interval": null,
+    "section": "Bert e"
+  },
+  {
+    "text": "deep networks",
+    "type": "object",
+    "char_interval": null,
+    "section": "Bert e"
+  },
+  {
+    "text": "our approach",
+    "type": "generic",
+    "char_interval": null,
+    "section": "Bert e"
+  },
+  {
+    "text": "ImageNet",
+    "type": "dataset",
+    "char_interval": null,
+    "section": "Bert e"
+  },
+  {
+    "text": "top-5 accuracy",
+    "type": "metric",
+    "char_interval": null,
+    "section": "Bert e"
+  },
+  {
+    "text": "Stanford Sentiment Treebank",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 4,
+      "end_pos": 31
+    },
+    "section": "Sst-2"
+  },
+  {
+    "text": "binary single-sentence classification",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 37,
+      "end_pos": 74
+    },
+    "section": "Sst-2"
+  },
+  {
+    "text": "sentences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 94,
+      "end_pos": 103
+    },
+    "section": "Sst-2"
+  },
+  {
+    "text": "movie reviews",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 119,
+      "end_pos": 132
+    },
+    "section": "Sst-2"
+  },
+  {
+    "text": "human annotations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 138,
+      "end_pos": 155
+    },
+    "section": "Sst-2"
+  },
+  {
+    "text": "CoLA The Corpus of Linguistic Acceptability",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 197,
+      "end_pos": 240
+    },
+    "section": "Sst-2"
+  },
+  {
+    "text": "binary single-sentence classification",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 246,
+      "end_pos": 283
+    },
+    "section": "Sst-2"
+  },
+  {
+    "text": "predict whether an English sentence is linguistically \"acceptable\" or not",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 311,
+      "end_pos": 384
+    },
+    "section": "Sst-2"
+  },
+  {
+    "text": "Semantic Textual Similarity Benchmark",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 4,
+      "end_pos": 41
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "sentence pairs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 61,
+      "end_pos": 75
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "news headlines",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 87,
+      "end_pos": 101
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "They",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 139,
+      "end_pos": 143
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "score",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 166,
+      "end_pos": 171
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "MRPC Microsoft Research Paraphrase Corpus",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 257,
+      "end_pos": 298
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "sentence pairs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 311,
+      "end_pos": 325
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "online news sources",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 355,
+      "end_pos": 374
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "human annotations",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 381,
+      "end_pos": 398
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "RTE Recognizing Textual Entailment",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 492,
+      "end_pos": 526
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "binary entailment task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 532,
+      "end_pos": 554
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "MNLI",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 566,
+      "end_pos": 570
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "WNLI Winograd NLI",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 636,
+      "end_pos": 653
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "GLUE",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 728,
+      "end_pos": 732
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "baseline accuracy",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 900,
+      "end_pos": 917
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "majority class",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 936,
+      "end_pos": 950
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "this set",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 973,
+      "end_pos": 981
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "our GLUE submission",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1012,
+      "end_pos": 1031
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "majority class",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 936,
+      "end_pos": 950
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 32,
+      "end_pos": 36
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "masked language model",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 116,
+      "end_pos": 137
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "MLM",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 139,
+      "end_pos": 142
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "masking strategies",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 63,
+      "end_pos": 70
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "pre-training",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 94,
+      "end_pos": 106
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "fine-tuning",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 345,
+      "end_pos": 356
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "NER",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 467,
+      "end_pos": 470
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "feature-based approach",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 590,
+      "end_pos": 612
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "fine-tuning",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 345,
+      "end_pos": 356
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "feature-based approach",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1148,
+      "end_pos": 1170
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1208,
+      "end_pos": 1212
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "fine-tuning",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1321,
+      "end_pos": 1332
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "masking strategies",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1369,
+      "end_pos": 1387
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "MASK strategy",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1426,
+      "end_pos": 1439
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "NER",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1499,
+      "end_pos": 1502
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "featurebased approach",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1474,
+      "end_pos": 1495
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "RND strategy",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1534,
+      "end_pos": 1546
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "our strategy",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1572,
+      "end_pos": 1584
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  }
+]

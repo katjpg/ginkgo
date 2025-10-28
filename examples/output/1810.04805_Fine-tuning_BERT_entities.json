@@ -1,0 +1,137 @@
+[
+  {
+    "text": "downstream tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 110,
+      "end_pos": 632
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "selfattention mechanism",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 41,
+      "end_pos": 64
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "Transformer",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 72,
+      "end_pos": 83
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 91,
+      "end_pos": 95
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "text pairs",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 162,
+      "end_pos": 172
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "paraphrasing",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 839,
+      "end_pos": 851
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "entailment",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 885,
+      "end_pos": 895
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "question answering",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 927,
+      "end_pos": 945
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "text classification",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 983,
+      "end_pos": 1002
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "sequence tagging",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1006,
+      "end_pos": 1022
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "sentiment analysis",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1263,
+      "end_pos": 1281
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "The token representations",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1039,
+      "end_pos": 1064
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "the [CLS] representation",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1168,
+      "end_pos": 1192
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "the results",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1355,
+      "end_pos": 1366
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "pre-trained model",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1493,
+      "end_pos": 1510
+    },
+    "section": "Fine-tuning BERT"
+  }
+]

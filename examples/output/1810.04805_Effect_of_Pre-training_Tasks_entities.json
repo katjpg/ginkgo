@@ -1,0 +1,92 @@
+[
+  {
+    "text": "the importance",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 15,
+      "end_pos": 29
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 62,
+      "end_pos": 66
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "pretraining objectives",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 85,
+      "end_pos": 107
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "pretraining data",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 131,
+      "end_pos": 147
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "hyperparameters",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 173,
+      "end_pos": 188
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "BERT BASE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 192,
+      "end_pos": 201
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "NSP",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 206,
+      "end_pos": 209
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "MLM",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 273,
+      "end_pos": 276
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "next sentence prediction",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 295,
+      "end_pos": 319
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "NSP",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 322,
+      "end_pos": 325
+    },
+    "section": "Effect of Pre-training Tasks"
+  }
+]

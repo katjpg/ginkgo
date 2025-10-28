@@ -1,0 +1,74 @@
+[
+  {
+    "text": "Stanford Sentiment Treebank",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 4,
+      "end_pos": 31
+    },
+    "section": "Sst-2"
+  },
+  {
+    "text": "binary single-sentence classification",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 37,
+      "end_pos": 74
+    },
+    "section": "Sst-2"
+  },
+  {
+    "text": "sentences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 94,
+      "end_pos": 103
+    },
+    "section": "Sst-2"
+  },
+  {
+    "text": "movie reviews",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 119,
+      "end_pos": 132
+    },
+    "section": "Sst-2"
+  },
+  {
+    "text": "human annotations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 138,
+      "end_pos": 155
+    },
+    "section": "Sst-2"
+  },
+  {
+    "text": "CoLA The Corpus of Linguistic Acceptability",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 197,
+      "end_pos": 240
+    },
+    "section": "Sst-2"
+  },
+  {
+    "text": "binary single-sentence classification",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 246,
+      "end_pos": 283
+    },
+    "section": "Sst-2"
+  },
+  {
+    "text": "predict whether an English sentence is linguistically \"acceptable\" or not",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 311,
+      "end_pos": 384
+    },
+    "section": "Sst-2"
+  }
+]

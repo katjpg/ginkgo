@@ -1,0 +1,164 @@
+[
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 32,
+      "end_pos": 36
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "different tasks",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 40,
+      "end_pos": 55
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "Our task-specific models",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 80,
+      "end_pos": 104
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 133,
+      "end_pos": 137
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "output layer",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 158,
+      "end_pos": 170
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "entailment classification task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 314,
+      "end_pos": 344
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "MNLI Multi-Genre Natural Language Inference",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 239,
+      "end_pos": 282
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "entailment",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 314,
+      "end_pos": 324
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "contradiction",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 465,
+      "end_pos": 478
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "neutral",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 483,
+      "end_pos": 490
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "binary classification task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 551,
+      "end_pos": 577
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "QP Quora Question Pairs",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 522,
+      "end_pos": 545
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "binary classification task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 551,
+      "end_pos": 577
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "QNLI Question Natural Language Inference",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 689,
+      "end_pos": 729
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "Stanford Question Answering Dataset",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 750,
+      "end_pos": 785
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "binary classification task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 840,
+      "end_pos": 866
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "positive examples",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 892,
+      "end_pos": 909
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "negative examples",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 986,
+      "end_pos": 1003
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  }
+]

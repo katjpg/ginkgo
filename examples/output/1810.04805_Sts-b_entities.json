@@ -1,0 +1,173 @@
+[
+  {
+    "text": "Semantic Textual Similarity Benchmark",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 4,
+      "end_pos": 41
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "sentence pairs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 61,
+      "end_pos": 75
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "news headlines",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 87,
+      "end_pos": 101
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "They",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 139,
+      "end_pos": 143
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "score",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 166,
+      "end_pos": 171
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "MRPC Microsoft Research Paraphrase Corpus",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 257,
+      "end_pos": 298
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "sentence pairs",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 311,
+      "end_pos": 325
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "online news sources",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 355,
+      "end_pos": 374
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "human annotations",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 381,
+      "end_pos": 398
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "RTE Recognizing Textual Entailment",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 492,
+      "end_pos": 526
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "binary entailment task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 532,
+      "end_pos": 554
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "MNLI",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 566,
+      "end_pos": 570
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "WNLI Winograd NLI",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 636,
+      "end_pos": 653
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "GLUE",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 728,
+      "end_pos": 732
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "baseline accuracy",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 900,
+      "end_pos": 917
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "majority class",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 936,
+      "end_pos": 950
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "this set",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 973,
+      "end_pos": 981
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "our GLUE submission",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 1012,
+      "end_pos": 1031
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "majority class",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 936,
+      "end_pos": 950
+    },
+    "section": "Sts-b"
+  }
+]

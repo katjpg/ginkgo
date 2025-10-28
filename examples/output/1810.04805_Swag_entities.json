@@ -1,0 +1,146 @@
+[
+  {
+    "text": "Situations With Adversarial Generations (SWAG)",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 4,
+      "end_pos": 50
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "grounded commonsense inference",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 121,
+      "end_pos": 151
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "SWAG",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 45,
+      "end_pos": 49
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "sentence-pair completion",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 73,
+      "end_pos": 97
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "sentence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 183,
+      "end_pos": 191
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "choose the most plausible continuation",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 208,
+      "end_pos": 246
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "four choices",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 253,
+      "end_pos": 265
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "the model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 287,
+      "end_pos": 290
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "input sequences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 323,
+      "end_pos": 338
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "sentence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 387,
+      "end_pos": 395
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "continuation",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 234,
+      "end_pos": 246
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "sentence",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 397,
+      "end_pos": 405
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "choice",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 589,
+      "end_pos": 595
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "BERT LARGE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 760,
+      "end_pos": 770
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "ESIM+ELMo",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 805,
+      "end_pos": 814
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "OpenAI GPT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 836,
+      "end_pos": 846
+    },
+    "section": "Swag"
+  }
+]

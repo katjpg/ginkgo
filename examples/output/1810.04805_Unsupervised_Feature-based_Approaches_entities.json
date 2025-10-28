@@ -1,0 +1,299 @@
+[
+  {
+    "text": "Learning widely applicable representations of words",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 0,
+      "end_pos": 51
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "non-neural",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 111,
+      "end_pos": 121
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "neural",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 188,
+      "end_pos": 194
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "word embeddings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 262,
+      "end_pos": 277
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "NLP systems",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 309,
+      "end_pos": 320
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "embeddings learned from scratch",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 361,
+      "end_pos": 392
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "pretrain word embedding vectors",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 418,
+      "end_pos": 449
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "language modeling objectives",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 465,
+      "end_pos": 493
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "discriminate correct from incorrect words",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 558,
+      "end_pos": 599
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "sentence embeddings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 722,
+      "end_pos": 741
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "paragraph embeddings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 790,
+      "end_pos": 810
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "train sentence representations",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 837,
+      "end_pos": 867
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "rank candidate next sentences",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 903,
+      "end_pos": 932
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "left-to-right generation of next sentence words",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 981,
+      "end_pos": 1028
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "denoising autoencoder derived objectives",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1101,
+      "end_pos": 1141
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "ELMo",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1162,
+      "end_pos": 1166
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "word embedding research",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1254,
+      "end_pos": 1277
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "context-sensitive features",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1320,
+      "end_pos": 1346
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "language model",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1388,
+      "end_pos": 1402
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "token",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 1442,
+      "end_pos": 1447
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "contextual representation",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1408,
+      "end_pos": 1433
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "left-to-right representations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1476,
+      "end_pos": 1489
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "right-to-left representations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1494,
+      "end_pos": 1523
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "contextual word embeddings",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1542,
+      "end_pos": 1568
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "task-specific architectures",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1583,
+      "end_pos": 1610
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "ELMo",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1612,
+      "end_pos": 1616
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "question answering",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1712,
+      "end_pos": 1730
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "sentiment analysis",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1756,
+      "end_pos": 1774
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "named entity recognition",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1801,
+      "end_pos": 1825
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "LSTMs",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 2010,
+      "end_pos": 2015
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "their model",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 2034,
+      "end_pos": 2045
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "cloze task",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2128,
+      "end_pos": 2138
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  },
+  {
+    "text": "text generation",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 2180,
+      "end_pos": 2195
+    },
+    "section": "Unsupervised Feature-based Approaches"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "text": "ablation experiments",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 28,
+      "end_pos": 48
+    },
+    "section": "Ablation Studies"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 76,
+      "end_pos": 80
+    },
+    "section": "Ablation Studies"
+  },
+  {
+    "text": "their relative importance",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 111,
+      "end_pos": 136
+    },
+    "section": "Ablation Studies"
+  },
+  {
+    "text": "ablation studies",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 149,
+      "end_pos": 165
+    },
+    "section": "Ablation Studies"
+  }
+]

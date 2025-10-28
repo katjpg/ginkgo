@@ -1,0 +1,65 @@
+[
+  {
+    "text": "pre-training procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 4,
+      "end_pos": 26
+    },
+    "section": "Pre-training data"
+  },
+  {
+    "text": "language model pre-training",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 70,
+      "end_pos": 97
+    },
+    "section": "Pre-training data"
+  },
+  {
+    "text": "Books Corpus",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 138,
+      "end_pos": 150
+    },
+    "section": "Pre-training data"
+  },
+  {
+    "text": "English Wikipedia",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 186,
+      "end_pos": 203
+    },
+    "section": "Pre-training data"
+  },
+  {
+    "text": "Wikipedia",
+    "type": "generic",
+    "char_interval": {
+      "start_pos": 224,
+      "end_pos": 233
+    },
+    "section": "Pre-training data"
+  },
+  {
+    "text": "Billion Word Benchmark",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 410,
+      "end_pos": 432
+    },
+    "section": "Pre-training data"
+  },
+  {
+    "text": "long contiguous sequences",
+    "type": "object",
+    "char_interval": {
+      "start_pos": 474,
+      "end_pos": 499
+    },
+    "section": "Pre-training data"
+  }
+]
