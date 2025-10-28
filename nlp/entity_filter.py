@@ -25,7 +25,7 @@ INFRA = {
     "encoder", "decoder", "attention", "mechanism", "mechanisms",
     "second", "minute", "hour", "step", "iteration", "epoch", "day",
     "task", "tasks", "batch", "rate", "corpus", "size",
-    "objective", "objectives"
+    "objective", "objectives", "experiment", "experiments", "pair", "pairs",
 }
 
 GENERIC_PATTERNS = [
