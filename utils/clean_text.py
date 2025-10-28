@@ -9,9 +9,11 @@ def normalize_ligatures(text: str) -> str:
 
 
 def remove_citations(text: str) -> str:
-    """Remove in-line citations and footnotes from the text."""
-    text = re.sub(r"(\w|\))\s?\([^)]*\d{4}[^)]*\)", r"\1", text)
+    """Remove in-line citations, author mentions like 'et al.', and footnotes."""
+    text = re.sub(r"\s?\([^)]*?\d{4}[^)]*?\)", "", text)
+    text = re.sub(r"\b[A-Z][a-zA-Z\-]+\s+et al\.?\b", "", text)
     text = re.sub(r"foot_\d+", "", text)
+    text = re.sub(r" {2,}", " ", text)
     return text
 
 
