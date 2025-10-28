@@ -13,14 +13,14 @@ class NLPConfig(BaseModel):
 
     sections: dict[str, SectionConfig] = Field(
         default_factory=lambda: {
-            "introduction": SectionConfig(extraction_passes=1, max_char_buffer=2000),
-            "related_work": SectionConfig(extraction_passes=1, max_char_buffer=2000),
-            "methods": SectionConfig(extraction_passes=1, max_char_buffer=2000),
-            "experiments": SectionConfig(extraction_passes=1, max_char_buffer=2000),
-            "results": SectionConfig(extraction_passes=1, max_char_buffer=2000),
-            "discussion": SectionConfig(extraction_passes=1, max_char_buffer=2000),
-            "conclusion": SectionConfig(extraction_passes=1, max_char_buffer=2000),
-            "default": SectionConfig(extraction_passes=1, max_char_buffer=2000),
+            "introduction": SectionConfig(extraction_passes=1, max_char_buffer=1500),
+            "related_work": SectionConfig(extraction_passes=1, max_char_buffer=1500),
+            "methods": SectionConfig(extraction_passes=1, max_char_buffer=1500),
+            "experiments": SectionConfig(extraction_passes=1, max_char_buffer=1500),
+            "results": SectionConfig(extraction_passes=1, max_char_buffer=1500),
+            "discussion": SectionConfig(extraction_passes=1, max_char_buffer=1500),
+            "conclusion": SectionConfig(extraction_passes=1, max_char_buffer=1500),
+            "default": SectionConfig(extraction_passes=1, max_char_buffer=1500),
         }
     )
 
