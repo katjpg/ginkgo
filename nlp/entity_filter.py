@@ -1,7 +1,6 @@
 from collections import Counter
 from pydantic import BaseModel, Field
 from spacy.tokens import Doc
-from spacy.symbols import NOUN
 from typing import Literal
 import spacy
 import networkx as nx
@@ -11,21 +10,22 @@ import re
 nlp = spacy.load("en_core_web_sm")
 
 STOPWORDS = nlp.Defaults.stop_words
-NOUN_POS = NOUN
 
 INFRA = {
     "value", "key", "query", "output", "input",
-    "sequence", "layer", "vector", "token",
-    "parameter", "weight", "hidden state",
-    "representation", "embedding",
-    "example", "result", "performance",
-    "model", "method", "approach",
-    "system", "architecture",
-    "data", "dataset", "feature",
+    "sequence", "sequences", "layer", "layers", "vector", "vectors", "token", "tokens",
+    "parameter", "parameters", "weight", "weights", "hidden state", "hidden states",
+    "representation", "representations", "embedding", "embeddings",
+    "example", "examples", "result", "results", "performance",
+    "model", "models", "method", "methods", "approach", "approaches",
+    "system", "systems", "architecture", "architectures",
+    "data", "dataset", "datasets", "feature", "features",
     "information", "detail", "aspect", "element", "component",
-    "symbol", "position",
-    "encoder", "decoder", "attention", "mechanism",
+    "symbol", "symbols", "position", "positions",
+    "encoder", "decoder", "attention", "mechanism", "mechanisms",
     "second", "minute", "hour", "step", "iteration", "epoch", "day",
+    "task", "tasks", "batch", "rate", "corpus", "size",
+    "objective", "objectives"
 }
 
 GENERIC_PATTERNS = [
@@ -69,13 +69,18 @@ def lemmatize_word(word: str) -> str:
     return doc[0].lemma_ if doc else word
 
 def is_infra_term(text: str) -> bool:
-    """Check if text consists only of infrastructure terms."""
+    """Check if the head word of a text is an infrastructure term."""
     words = text.lower().split()
-    for word in words:
-        lemma = lemmatize_word(word)
-        if lemma not in INFRA and word not in INFRA:
-            return False
-    return True
+    if not words:
+        return False
+    
+    last_word = words[-1]
+    lemma = lemmatize_word(last_word)
+    
+    if lemma in INFRA or last_word in INFRA:
+        return True
+    
+    return False
 
 
 def normalize_text(text: str) -> str:
@@ -87,6 +92,9 @@ def normalize_text(text: str) -> str:
         if (word.endswith("s") and len(word) > 3 and 
             not word.endswith(("ss", "us", "ous", "ness", "ics", "sis", "ysis", "itis", "ess", "less"))):
             words.append(word[:-1])
+        elif (word.endswith("ing") and len(word) > 5 and
+              not word.endswith(("sing", "ring", "king", "bring"))):
+            words.append(word[:-3])
         else:
             words.append(word)
     
@@ -108,10 +116,36 @@ def has_contrastive_difference(words1: set, words2: set) -> bool:
     return bool(diff & CONTRASTIVE_TERMS)
 
 
+def _is_acronym(text1: str, text2: str) -> bool:
+    """Check if one text is a plausible acronym for the other."""
+    if len(text1) > len(text2):
+        text1, text2 = text2, text1 
+    
+    text1_lower = text1.lower()
+    
+    if " " not in text2 or len(text1) < 2:
+        return False
+    
+    words = text2.split()
+    
+    acronym_from_words = "".join(w[0] for w in words if w)
+    if acronym_from_words.lower() == text1_lower:
+        return True
+
+    capitals_from_text = "".join(c for c in text2 if c.isupper())
+    if len(capitals_from_text) > 1 and capitals_from_text.lower() == text1_lower:
+        return True
+            
+    return False
+
+
 def should_merge(entity1: dict, entity2: dict) -> bool:
     """Determine if entities should merge using Jaccard similarity."""
     if entity1["type"] != entity2["type"]:
         return False
+
+    if _is_acronym(entity1["text"], entity2["text"]):
+        return True
     
     norm1 = normalize_text(entity1["text"])
     norm2 = normalize_text(entity2["text"])
@@ -121,17 +155,17 @@ def should_merge(entity1: dict, entity2: dict) -> bool:
     
     words1 = set(norm1.split())
     words2 = set(norm2.split())
+
+    if has_contrastive_difference(words1, words2):
+        return False
+
+    if words1.issubset(words2) or words2.issubset(words1):
+        return True
     
     similarity = jaccard_similarity(words1, words2)
     
     if similarity < 0.6:
         return False
-    
-    if has_contrastive_difference(words1, words2):
-        return False
-    
-    if words1.issubset(words2) or words2.issubset(words1):
-        return True
     
     return similarity >= 0.75
 
@@ -275,14 +309,11 @@ def is_incomplete_phrase(text: str) -> bool:
     if tags == ["ADJ", "ADJ"]:
         return True
     
-    # check if last token is ADJ modifying a missing noun
     if len(doc_snippet) == 2:
         last_token = doc_snippet[-1]
         if last_token.pos_ == "ADJ":
             return True
     
-    # check if phrase ends with prefix/modifier expecting continuation
-    # e.g., "multi-head" without "attention"
     last_word = words[-1].lower()
     if last_word in {"multi", "self", "cross", "pre", "post", "sub"}:
         return True
@@ -316,7 +347,6 @@ def is_valid_metric(text: str) -> bool:
     
     return True
 
-
 def filter_lexical(entities: list[dict]) -> list[dict]:
     """Remove stopwords and generic patterns."""
     filtered = []
@@ -347,8 +377,11 @@ def filter_lexical(entities: list[dict]) -> list[dict]:
         if is_incomplete_phrase(text):
             continue
         
+        if entity["type"] in {"method", "task"} and is_infra_term(text_lower):
+            continue
+        
         if entity["type"] == "metric":
-            if not is_valid_metric(text):
+            if not is_valid_metric(text) or is_infra_term(text_lower):
                 continue
         
         if entity["type"] == "object":
