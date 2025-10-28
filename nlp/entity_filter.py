@@ -26,6 +26,7 @@ INFRA = {
     "second", "minute", "hour", "step", "iteration", "epoch", "day",
     "task", "tasks", "batch", "rate", "corpus", "size",
     "objective", "objectives", "experiment", "experiments", "pair", "pairs",
+    "set", "sets", "improvement", "improvements",
 }
 
 GENERIC_PATTERNS = [
@@ -84,20 +85,31 @@ def is_infra_term(text: str) -> bool:
 
 
 def normalize_text(text: str) -> str:
-    """Normalize text by lowercasing, removing hyphens, and lemmatizing plurals."""
-    normalized = " ".join(text.lower().strip().replace("-", " ").split())
-    
+    """Normalize text by lowercasing, removing specific hyphens, and simple stemming."""
+    normalized = text.lower().strip()
+
+    # remove hyphens specifically after common prefixes
+    prefixes = ["pre", "fine", "multi", "cross", "self", "semi", "non", "bi", "sub"]
+    for prefix in prefixes:
+        normalized = normalized.replace(f"{prefix}-", prefix)
+
+    # handle remaining hyphens as spaces and normalize whitespace
+    normalized = " ".join(normalized.replace("-", " ").split())
+
     words = []
     for word in normalized.split():
-        if (word.endswith("s") and len(word) > 3 and 
+        # plural removal
+        if (word.endswith("s") and len(word) > 3 and
             not word.endswith(("ss", "us", "ous", "ness", "ics", "sis", "ysis", "itis", "ess", "less"))):
             words.append(word[:-1])
+        
+        # -ing removal 
         elif (word.endswith("ing") and len(word) > 5 and
               not word.endswith(("sing", "ring", "king", "bring"))):
-            words.append(word[:-3])
+             words.append(word[:-3])
         else:
             words.append(word)
-    
+
     return " ".join(words)
 
 
