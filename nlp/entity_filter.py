@@ -1,6 +1,7 @@
 from collections import Counter
 from pydantic import BaseModel, Field
 from spacy.tokens import Doc
+from spacy.symbols import NOUN
 from typing import Literal
 import spacy
 import networkx as nx
@@ -8,7 +9,9 @@ import re
 
 
 nlp = spacy.load("en_core_web_sm")
+
 STOPWORDS = nlp.Defaults.stop_words
+NOUN_POS = NOUN
 
 INFRA = {
     "value", "key", "query", "output", "input",
@@ -56,15 +59,14 @@ class FilterConfig(BaseModel):
     use_fuzzy: bool = True
     top_k: int | None = None
     jaccard_threshold: float = Field(default=0.75, ge=0.0, le=1.0)
-    window_size: int = Field(default=3, ge=1)
+    window_size: int = Field(default=10, ge=1)
     pagerank_alpha: float = Field(default=0.85, ge=0.0, le=1.0)
 
 
 def lemmatize_word(word: str) -> str:
-    """Get lemma form of word using spaCy."""
-    doc = nlp(word)
+    """Get lemma form of word using spaCy's tagger and lemmatizer."""
+    doc = nlp(word, disable=["parser", "ner"])
     return doc[0].lemma_ if doc else word
-
 
 def is_infra_term(text: str) -> bool:
     """Check if text consists only of infrastructure terms."""
@@ -426,21 +428,26 @@ def build_graph(entities: list[dict], doc: Doc, window_size: int = 3) -> nx.Grap
     return G
 
 
-def rank_pagerank(entities: list[dict], doc: Doc) -> list[dict]:
+def rank_pagerank(
+    entities: list[dict], 
+    doc: Doc, 
+    window_size: int, 
+    alpha: float
+) -> list[dict]:
     """Rank entities by PageRank."""
     if len(entities) <= 1:
         for e in entities:
             e["pr_score"] = 1.0
         return entities
     
-    G = build_graph(entities, doc, window_size=3)
+    G = build_graph(entities, doc, window_size=window_size)
     
     if len(G.nodes()) == 0:
         for e in entities:
             e["pr_score"] = 0.0
         return entities
     
-    scores = nx.pagerank(G, weight="weight", alpha=0.85)
+    scores = nx.pagerank(G, weight="weight", alpha=alpha)
     
     type_weights = {"method": 1.2, "task": 1.15, "dataset": 1.0, "metric": 1.05, "object": 0.8}
     
@@ -460,9 +467,15 @@ def rank_pagerank(entities: list[dict], doc: Doc) -> list[dict]:
     return sorted(entities, key=lambda e: e["pr_score"], reverse=True)
 
 
-def filter_pagerank(entities: list[dict], doc: Doc, top_k: int | None = None) -> list[dict]:
+def filter_pagerank(
+    entities: list[dict], 
+    doc: Doc, 
+    top_k: int | None = None,
+    window_size: int = 3,
+    alpha: float = 0.85
+) -> list[dict]:
     """Filter entities by PageRank."""
-    ranked = rank_pagerank(entities, doc)
+    ranked = rank_pagerank(entities, doc, window_size=window_size, alpha=alpha)
     
     if top_k is not None:
         return ranked[:top_k]
@@ -473,23 +486,27 @@ def filter_pagerank(entities: list[dict], doc: Doc, top_k: int | None = None) ->
 def filter_pipeline(
     entities: list[dict], 
     doc: Doc,
-    min_freq: int = 1,
-    exclude_other: bool = True,
-    use_fuzzy: bool = True,
-    top_k: int | None = None
+    config: FilterConfig
 ) -> list[dict]:
     """Entity filtering pipeline."""
     entities = filter_lexical(entities)
-    entities = filter_type(entities, exclude_other=exclude_other)
-    entities = filter_freq(entities, min_count=min_freq, strict_objects=True)
-    entities = filter_pagerank(entities, doc, top_k=None)
-    entities = dedupe_semantic(entities, use_fuzzy=use_fuzzy)
+    entities = filter_type(entities, exclude_other=config.exclude_other)
+    entities = filter_freq(entities, min_count=config.min_freq, strict_objects=True)
     
-    if top_k is not None:
-        entities = entities[:top_k]
+    entities = filter_pagerank(
+        entities, 
+        doc, 
+        top_k=None, 
+        window_size=config.window_size, 
+        alpha=config.pagerank_alpha
+    )
+    
+    entities = dedupe_semantic(entities, use_fuzzy=config.use_fuzzy)
+    
+    if config.top_k is not None:
+        entities = entities[:config.top_k]
     
     return entities
-
 
 def analyze_impact(original: list[dict], filtered: list[dict]) -> dict:
     """Compare entity distributions before and after filtering."""
