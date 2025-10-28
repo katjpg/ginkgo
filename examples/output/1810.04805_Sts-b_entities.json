@@ -10,46 +10,10 @@
   },
   {
     "text": "sentence pairs",
-    "type": "object",
+    "type": "dataset",
     "char_interval": {
       "start_pos": 61,
       "end_pos": 75
-    },
-    "section": "Sts-b"
-  },
-  {
-    "text": "news headlines",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 87,
-      "end_pos": 101
-    },
-    "section": "Sts-b"
-  },
-  {
-    "text": "score",
-    "type": "metric",
-    "char_interval": {
-      "start_pos": 148,
-      "end_pos": 153
-    },
-    "section": "Sts-b"
-  },
-  {
-    "text": "sentences",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 195,
-      "end_pos": 204
-    },
-    "section": "Sts-b"
-  },
-  {
-    "text": "semantic meaning",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 221,
-      "end_pos": 237
     },
     "section": "Sts-b"
   },
@@ -64,7 +28,7 @@
   },
   {
     "text": "sentence pairs",
-    "type": "object",
+    "type": "dataset",
     "char_interval": {
       "start_pos": 293,
       "end_pos": 307
@@ -72,37 +36,10 @@
     "section": "Sts-b"
   },
   {
-    "text": "online news sources",
-    "type": "object",
+    "text": "RTE Recognizing Textual Entailment",
+    "type": "dataset",
     "char_interval": {
-      "start_pos": 337,
-      "end_pos": 356
-    },
-    "section": "Sts-b"
-  },
-  {
-    "text": "human annotations",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 363,
-      "end_pos": 380
-    },
-    "section": "Sts-b"
-  },
-  {
-    "text": "semantically equivalent",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 423,
-      "end_pos": 446
-    },
-    "section": "Sts-b"
-  },
-  {
-    "text": "Recognizing Textual Entailment",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 452,
+      "start_pos": 448,
       "end_pos": 482
     },
     "section": "Sts-b"
@@ -126,6 +63,15 @@
     "section": "Sts-b"
   },
   {
+    "text": "training data",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 547,
+      "end_pos": 560
+    },
+    "section": "Sts-b"
+  },
+  {
     "text": "WNLI Winograd NLI",
     "type": "dataset",
     "char_interval": {
@@ -135,11 +81,20 @@
     "section": "Sts-b"
   },
   {
-    "text": "GLUE",
+    "text": "natural language inference dataset",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 591,
+      "end_pos": 625
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "GLUE webpage",
     "type": "dataset",
     "char_interval": {
       "start_pos": 631,
-      "end_pos": 635
+      "end_pos": 643
     },
     "section": "Sts-b"
   },
@@ -153,11 +108,20 @@
     "section": "Sts-b"
   },
   {
-    "text": "GLUE",
+    "text": "this set",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 764,
-      "end_pos": 768
+      "start_pos": 876,
+      "end_pos": 884
+    },
+    "section": "Sts-b"
+  },
+  {
+    "text": "GLUE submission",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 920,
+      "end_pos": 935
     },
     "section": "Sts-b"
   }

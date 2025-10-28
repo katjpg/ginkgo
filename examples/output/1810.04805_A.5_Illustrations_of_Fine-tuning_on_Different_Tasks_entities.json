@@ -27,15 +27,6 @@
     "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
   },
   {
-    "text": "sentences",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 363,
-      "end_pos": 372
-    },
-    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
-  },
-  {
     "text": "binary classification",
     "type": "task",
     "char_interval": {
@@ -77,6 +68,24 @@
     "char_interval": {
       "start_pos": 709,
       "end_pos": 744
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "positive examples",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 807,
+      "end_pos": 824
+    },
+    "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
+  },
+  {
+    "text": "negative examples",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 901,
+      "end_pos": 918
     },
     "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
   }

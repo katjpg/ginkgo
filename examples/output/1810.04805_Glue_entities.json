@@ -1,10 +1,10 @@
 [
   {
-    "text": "General Language Understanding Evaluation (GLUE)",
+    "text": "GLUE benchmark",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 4,
-      "end_pos": 52
+      "start_pos": 47,
+      "end_pos": 51
     },
     "section": "Glue"
   },
@@ -18,47 +18,29 @@
     "section": "Glue"
   },
   {
-    "text": "GLUE",
+    "text": "GLUE datasets",
     "type": "dataset",
     "char_interval": {
       "start_pos": 153,
-      "end_pos": 157
+      "end_pos": 166
     },
     "section": "Glue"
   },
   {
-    "text": "GLUE",
-    "type": "dataset",
+    "text": "BERT",
+    "type": "method",
     "char_interval": {
-      "start_pos": 213,
-      "end_pos": 217
+      "start_pos": 870,
+      "end_pos": 874
     },
     "section": "Glue"
   },
   {
-    "text": "input sequence",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 236,
-      "end_pos": 250
-    },
-    "section": "Glue"
-  },
-  {
-    "text": "aggregate representation",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 412,
-      "end_pos": 436
-    },
-    "section": "Glue"
-  },
-  {
-    "text": "classification layer weights",
+    "text": "classification layer",
     "type": "other",
     "char_interval": {
       "start_pos": 496,
-      "end_pos": 524
+      "end_pos": 516
     },
     "section": "Glue"
   },
@@ -73,19 +55,10 @@
   },
   {
     "text": "GLUE tasks",
-    "type": "task",
+    "type": "dataset",
     "char_interval": {
       "start_pos": 727,
       "end_pos": 737
-    },
-    "section": "Glue"
-  },
-  {
-    "text": "learning rate",
-    "type": "metric",
-    "char_interval": {
-      "start_pos": 787,
-      "end_pos": 800
     },
     "section": "Glue"
   },
@@ -108,20 +81,11 @@
     "section": "Glue"
   },
   {
-    "text": "Dev set",
+    "text": "fine-tuning data",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 1017,
-      "end_pos": 1024
-    },
-    "section": "Glue"
-  },
-  {
-    "text": "BERT LARGE",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 870,
-      "end_pos": 880
+      "start_pos": 1109,
+      "end_pos": 1125
     },
     "section": "Glue"
   },
@@ -135,20 +99,11 @@
     "section": "Glue"
   },
   {
-    "text": "BERT LARGE",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 1228,
-      "end_pos": 1238
-    },
-    "section": "Glue"
-  },
-  {
-    "text": "average accuracy improvement",
+    "text": "accuracy",
     "type": "metric",
     "char_interval": {
-      "start_pos": 1335,
-      "end_pos": 1363
+      "start_pos": 1343,
+      "end_pos": 1351
     },
     "section": "Glue"
   },
@@ -216,11 +171,11 @@
     "section": "Glue"
   },
   {
-    "text": "accuracy improvement",
+    "text": "accuracy",
     "type": "metric",
     "char_interval": {
       "start_pos": 1606,
-      "end_pos": 1626
+      "end_pos": 1614
     },
     "section": "Glue"
   },
@@ -243,15 +198,6 @@
     "section": "Glue"
   },
   {
-    "text": "score",
-    "type": "metric",
-    "char_interval": {
-      "start_pos": 1686,
-      "end_pos": 1691
-    },
-    "section": "Glue"
-  },
-  {
     "text": "Open AI GPT",
     "type": "method",
     "char_interval": {
@@ -261,29 +207,20 @@
     "section": "Glue"
   },
   {
-    "text": "BERT LARGE",
-    "type": "method",
+    "text": "training data",
+    "type": "dataset",
     "char_interval": {
-      "start_pos": 1785,
-      "end_pos": 1795
+      "start_pos": 1884,
+      "end_pos": 1897
     },
     "section": "Glue"
   },
   {
-    "text": "BERT BASE",
-    "type": "method",
+    "text": "model size",
+    "type": "other",
     "char_interval": {
-      "start_pos": 1822,
-      "end_pos": 1831
-    },
-    "section": "Glue"
-  },
-  {
-    "text": "tasks",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 1843,
-      "end_pos": 1848
+      "start_pos": 1913,
+      "end_pos": 1923
     },
     "section": "Glue"
   }

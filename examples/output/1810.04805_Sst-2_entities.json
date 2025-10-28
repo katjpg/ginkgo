@@ -18,42 +18,6 @@
     "section": "Sst-2"
   },
   {
-    "text": "sentences",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 94,
-      "end_pos": 103
-    },
-    "section": "Sst-2"
-  },
-  {
-    "text": "movie reviews",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 119,
-      "end_pos": 132
-    },
-    "section": "Sst-2"
-  },
-  {
-    "text": "human annotations",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 138,
-      "end_pos": 155
-    },
-    "section": "Sst-2"
-  },
-  {
-    "text": "sentiment",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 165,
-      "end_pos": 174
-    },
-    "section": "Sst-2"
-  },
-  {
     "text": "CoLA The Corpus of Linguistic Acceptability",
     "type": "dataset",
     "char_interval": {
@@ -68,15 +32,6 @@
     "char_interval": {
       "start_pos": 225,
       "end_pos": 262
-    },
-    "section": "Sst-2"
-  },
-  {
-    "text": "English sentence",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 309,
-      "end_pos": 325
     },
     "section": "Sst-2"
   }

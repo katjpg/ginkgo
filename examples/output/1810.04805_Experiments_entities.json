@@ -1,10 +1,10 @@
 [
   {
-    "text": "BERT fine-tuning",
+    "text": "BERT",
     "type": "method",
     "char_interval": {
       "start_pos": 28,
-      "end_pos": 44
+      "end_pos": 32
     },
     "section": "Experiments"
   },

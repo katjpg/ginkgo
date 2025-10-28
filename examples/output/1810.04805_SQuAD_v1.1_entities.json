@@ -18,11 +18,11 @@
     "section": "SQuAD v1.1"
   },
   {
-    "text": "question answering",
-    "type": "task",
+    "text": "question/answer pairs",
+    "type": "dataset",
     "char_interval": {
-      "start_pos": 122,
-      "end_pos": 130
+      "start_pos": 91,
+      "end_pos": 112
     },
     "section": "SQuAD v1.1"
   },
@@ -36,56 +36,20 @@
     "section": "SQuAD v1.1"
   },
   {
-    "text": "BERTBASE",
-    "type": "method",
+    "text": "Wikipedia",
+    "type": "dataset",
     "char_interval": {
-      "start_pos": 289,
-      "end_pos": 297
+      "start_pos": 316,
+      "end_pos": 325
     },
     "section": "SQuAD v1.1"
   },
   {
-    "text": "BERTLARGE",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 302,
-      "end_pos": 311
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "question",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 13,
-      "end_pos": 21
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "passage",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 137,
-      "end_pos": 144
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "predict the answer text span",
+    "text": "question answering",
     "type": "task",
     "char_interval": {
-      "start_pos": 364,
-      "end_pos": 392
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "the input question and passage",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 476,
-      "end_pos": 506
+      "start_pos": 438,
+      "end_pos": 456
     },
     "section": "SQuAD v1.1"
   },
@@ -108,29 +72,20 @@
     "section": "SQuAD v1.1"
   },
   {
-    "text": "start vector S",
+    "text": "start vector",
     "type": "other",
     "char_interval": {
       "start_pos": 635,
-      "end_pos": 649
+      "end_pos": 647
     },
     "section": "SQuAD v1.1"
   },
   {
-    "text": "end vector E",
+    "text": "end vector",
     "type": "other",
     "char_interval": {
       "start_pos": 663,
-      "end_pos": 675
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "dot product",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 780,
-      "end_pos": 791
+      "end_pos": 673
     },
     "section": "SQuAD v1.1"
   },
@@ -162,17 +117,17 @@
     "section": "SQuAD v1.1"
   },
   {
-    "text": "maximum scoring span",
-    "type": "task",
+    "text": "candidate span",
+    "type": "other",
     "char_interval": {
-      "start_pos": 1052,
-      "end_pos": 1072
+      "start_pos": 972,
+      "end_pos": 986
     },
     "section": "SQuAD v1.1"
   },
   {
     "text": "training objective",
-    "type": "task",
+    "type": "other",
     "char_interval": {
       "start_pos": 1114,
       "end_pos": 1132
@@ -181,10 +136,19 @@
   },
   {
     "text": "log-likelihoods",
-    "type": "metric",
+    "type": "other",
     "char_interval": {
       "start_pos": 1151,
       "end_pos": 1166
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "correct start and end positions",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1174,
+      "end_pos": 1205
     },
     "section": "SQuAD v1.1"
   },
@@ -194,6 +158,15 @@
     "char_interval": {
       "start_pos": 1396,
       "end_pos": 1401
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "public data",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1502,
+      "end_pos": 1513
     },
     "section": "SQuAD v1.1"
   },
@@ -212,6 +185,15 @@
     "char_interval": {
       "start_pos": 1654,
       "end_pos": 1659
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1806,
+      "end_pos": 1810
     },
     "section": "SQuAD v1.1"
   },
@@ -239,6 +221,24 @@
     "char_interval": {
       "start_pos": 1865,
       "end_pos": 1868
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "tuning data",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 1875,
+      "end_pos": 1886
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "F 1",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 1908,
+      "end_pos": 1911
     },
     "section": "SQuAD v1.1"
   },
@@ -279,51 +279,6 @@
     "section": "SQuAD v1.1"
   },
   {
-    "text": "answer span",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 2308,
-      "end_pos": 2319
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "[CLS] token",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 2346,
-      "end_pos": 2357
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "answer span",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 2403,
-      "end_pos": 2414
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "[CLS] token",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 2468,
-      "end_pos": 2479
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "no-answer span",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 2525,
-      "end_pos": 2539
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
     "text": "Trivia QA",
     "type": "dataset",
     "char_interval": {
@@ -342,20 +297,20 @@
     "section": "SQuAD v1.1"
   },
   {
-    "text": "answers",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 2766,
-      "end_pos": 2773
-    },
-    "section": "SQuAD v1.1"
-  },
-  {
-    "text": "F 1",
+    "text": "F1",
     "type": "metric",
     "char_interval": {
       "start_pos": 2918,
       "end_pos": 2921
+    },
+    "section": "SQuAD v1.1"
+  },
+  {
+    "text": "dev set",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 2898,
+      "end_pos": 2905
     },
     "section": "SQuAD v1.1"
   },

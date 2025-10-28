@@ -10,7 +10,7 @@
   },
   {
     "text": "masked language model",
-    "type": "task",
+    "type": "other",
     "char_interval": {
       "start_pos": 116,
       "end_pos": 137
@@ -27,26 +27,26 @@
     "section": "C.2 Ablation for Different Masking Procedures"
   },
   {
-    "text": "masking strategies",
+    "text": "ablation study",
     "type": "other",
     "char_interval": {
-      "start_pos": 63,
-      "end_pos": 70
+      "start_pos": 175,
+      "end_pos": 189
     },
     "section": "C.2 Ablation for Different Masking Procedures"
   },
   {
-    "text": "pre-training",
+    "text": "masking strategies",
     "type": "other",
     "char_interval": {
-      "start_pos": 94,
-      "end_pos": 106
+      "start_pos": 226,
+      "end_pos": 244
     },
     "section": "C.2 Ablation for Different Masking Procedures"
   },
   {
     "text": "fine-tuning",
-    "type": "other",
+    "type": "task",
     "char_interval": {
       "start_pos": 345,
       "end_pos": 356
@@ -72,11 +72,29 @@
     "section": "C.2 Ablation for Different Masking Procedures"
   },
   {
-    "text": "BERT",
-    "type": "method",
+    "text": "Dev results",
+    "type": "dataset",
     "char_interval": {
-      "start_pos": 32,
-      "end_pos": 36
+      "start_pos": 437,
+      "end_pos": 448
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "MNLI",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 458,
+      "end_pos": 462
+    },
+    "section": "C.2 Ablation for Different Masking Procedures"
+  },
+  {
+    "text": "NER",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 467,
+      "end_pos": 470
     },
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -117,11 +135,11 @@
     "section": "C.2 Ablation for Different Masking Procedures"
   },
   {
-    "text": "BERT",
-    "type": "method",
+    "text": "Dev set",
+    "type": "dataset",
     "char_interval": {
-      "start_pos": 1055,
-      "end_pos": 1059
+      "start_pos": 1124,
+      "end_pos": 1131
     },
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -136,7 +154,7 @@
   },
   {
     "text": "MASK strategy",
-    "type": "method",
+    "type": "other",
     "char_interval": {
       "start_pos": 1427,
       "end_pos": 1440
@@ -153,29 +171,11 @@
     "section": "C.2 Ablation for Different Masking Procedures"
   },
   {
-    "text": "featurebased approach",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 1475,
-      "end_pos": 1496
-    },
-    "section": "C.2 Ablation for Different Masking Procedures"
-  },
-  {
     "text": "RND strategy",
-    "type": "method",
+    "type": "other",
     "char_interval": {
       "start_pos": 1535,
       "end_pos": 1547
-    },
-    "section": "C.2 Ablation for Different Masking Procedures"
-  },
-  {
-    "text": "our strategy",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 1573,
-      "end_pos": 1585
     },
     "section": "C.2 Ablation for Different Masking Procedures"
   }

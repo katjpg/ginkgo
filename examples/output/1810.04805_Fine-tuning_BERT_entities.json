@@ -1,10 +1,10 @@
 [
   {
-    "text": "downstream tasks",
-    "type": "task",
+    "text": "Fine-tuning",
+    "type": "other",
     "char_interval": {
-      "start_pos": 110,
-      "end_pos": 632
+      "start_pos": 0,
+      "end_pos": 11
     },
     "section": "Fine-tuning BERT"
   },
@@ -36,8 +36,17 @@
     "section": "Fine-tuning BERT"
   },
   {
+    "text": "downstream tasks",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 110,
+      "end_pos": 120
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
     "text": "text pairs",
-    "type": "generic",
+    "type": "task",
     "char_interval": {
       "start_pos": 162,
       "end_pos": 172
@@ -45,38 +54,74 @@
     "section": "Fine-tuning BERT"
   },
   {
-    "text": "paraphrasing",
-    "type": "task",
+    "text": "bidirectional cross attention",
+    "type": "other",
     "char_interval": {
-      "start_pos": 839,
-      "end_pos": 851
+      "start_pos": 335,
+      "end_pos": 364
     },
     "section": "Fine-tuning BERT"
   },
   {
-    "text": "entailment",
-    "type": "task",
+    "text": "self-attention",
+    "type": "other",
     "char_interval": {
-      "start_pos": 885,
-      "end_pos": 895
+      "start_pos": 400,
+      "end_pos": 414
     },
     "section": "Fine-tuning BERT"
   },
   {
-    "text": "question answering",
-    "type": "task",
+    "text": "bidirectional cross attention",
+    "type": "other",
     "char_interval": {
-      "start_pos": 927,
-      "end_pos": 945
+      "start_pos": 335,
+      "end_pos": 364
     },
     "section": "Fine-tuning BERT"
   },
   {
-    "text": "text classification",
+    "text": "self-attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 494,
+      "end_pos": 508
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "text pairs",
     "type": "task",
     "char_interval": {
-      "start_pos": 983,
-      "end_pos": 1002
+      "start_pos": 162,
+      "end_pos": 172
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "bidirectional cross attention",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 530,
+      "end_pos": 559
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "taskspecific inputs and outputs",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 620,
+      "end_pos": 651
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "BERT",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 657,
+      "end_pos": 661
     },
     "section": "Fine-tuning BERT"
   },
@@ -84,8 +129,35 @@
     "text": "sequence tagging",
     "type": "task",
     "char_interval": {
-      "start_pos": 1006,
-      "end_pos": 1022
+      "start_pos": 970,
+      "end_pos": 986
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "question answering",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 891,
+      "end_pos": 909
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "classification",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 952,
+      "end_pos": 966
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "entailment",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 849,
+      "end_pos": 859
     },
     "section": "Fine-tuning BERT"
   },
@@ -93,44 +165,62 @@
     "text": "sentiment analysis",
     "type": "task",
     "char_interval": {
-      "start_pos": 1263,
-      "end_pos": 1281
+      "start_pos": 1227,
+      "end_pos": 1245
     },
     "section": "Fine-tuning BERT"
   },
   {
-    "text": "The token representations",
-    "type": "generic",
+    "text": "pre-training",
+    "type": "other",
     "char_interval": {
-      "start_pos": 1039,
-      "end_pos": 1064
+      "start_pos": 751,
+      "end_pos": 763
     },
     "section": "Fine-tuning BERT"
   },
   {
-    "text": "the [CLS] representation",
-    "type": "generic",
+    "text": "fine-tuning",
+    "type": "other",
     "char_interval": {
-      "start_pos": 1168,
-      "end_pos": 1192
-    },
-    "section": "Fine-tuning BERT"
-  },
-  {
-    "text": "the results",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 1355,
-      "end_pos": 1366
+      "start_pos": 1273,
+      "end_pos": 1284
     },
     "section": "Fine-tuning BERT"
   },
   {
     "text": "pre-trained model",
-    "type": "object",
+    "type": "method",
     "char_interval": {
-      "start_pos": 1493,
-      "end_pos": 1510
+      "start_pos": 1457,
+      "end_pos": 1474
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "task-specific details",
+    "type": "task",
+    "char_interval": {
+      "start_pos": 1492,
+      "end_pos": 1513
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "Section 4",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1550,
+      "end_pos": 1559
+    },
+    "section": "Fine-tuning BERT"
+  },
+  {
+    "text": "Appendix A.5",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1590,
+      "end_pos": 1602
     },
     "section": "Fine-tuning BERT"
   }

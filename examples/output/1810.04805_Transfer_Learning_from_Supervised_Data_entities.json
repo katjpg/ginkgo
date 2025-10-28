@@ -1,23 +1,5 @@
 [
   {
-    "text": "supervised tasks",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 57,
-      "end_pos": 73
-    },
-    "section": "Transfer Learning from Supervised Data"
-  },
-  {
-    "text": "large datasets",
-    "type": "dataset",
-    "char_interval": {
-      "start_pos": 79,
-      "end_pos": 93
-    },
-    "section": "Transfer Learning from Supervised Data"
-  },
-  {
     "text": "natural language inference",
     "type": "task",
     "char_interval": {
@@ -36,38 +18,11 @@
     "section": "Transfer Learning from Supervised Data"
   },
   {
-    "text": "Computer vision",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 155,
-      "end_pos": 170
-    },
-    "section": "Transfer Learning from Supervised Data"
-  },
-  {
     "text": "transfer learning",
     "type": "other",
     "char_interval": {
       "start_pos": 220,
       "end_pos": 237
-    },
-    "section": "Transfer Learning from Supervised Data"
-  },
-  {
-    "text": "large pre-trained models",
-    "type": "dataset",
-    "char_interval": {
-      "start_pos": 243,
-      "end_pos": 267
-    },
-    "section": "Transfer Learning from Supervised Data"
-  },
-  {
-    "text": "fine-tune",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 301,
-      "end_pos": 310
     },
     "section": "Transfer Learning from Supervised Data"
   },

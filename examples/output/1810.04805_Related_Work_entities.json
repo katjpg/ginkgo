@@ -1,9 +1,18 @@
 [
   {
-    "text": "pre-training general language representations",
-    "type": "task",
+    "text": "pre-training",
+    "type": "other",
     "char_interval": {
       "start_pos": 27,
+      "end_pos": 39
+    },
+    "section": "Related Work"
+  },
+  {
+    "text": "language representations",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 48,
       "end_pos": 72
     },
     "section": "Related Work"

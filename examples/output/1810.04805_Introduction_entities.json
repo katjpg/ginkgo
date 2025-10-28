@@ -36,15 +36,6 @@
     "section": "Introduction"
   },
   {
-    "text": "sentences",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 248,
-      "end_pos": 257
-    },
-    "section": "Introduction"
-  },
-  {
     "text": "token-level tasks",
     "type": "task",
     "char_interval": {
@@ -68,15 +59,6 @@
     "char_interval": {
       "start_pos": 356,
       "end_pos": 374
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "token",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 440,
-      "end_pos": 445
     },
     "section": "Introduction"
   },
@@ -117,15 +99,6 @@
     "section": "Introduction"
   },
   {
-    "text": "pre-trained representations",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 681,
-      "end_pos": 708
-    },
-    "section": "Introduction"
-  },
-  {
     "text": "Generative Pre-trained Transformer",
     "type": "method",
     "char_interval": {
@@ -135,83 +108,11 @@
     "section": "Introduction"
   },
   {
-    "text": "Open AI GPT",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 807,
-      "end_pos": 818
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "pre-trained parameters",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 782,
-      "end_pos": 864
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "pre-trained parameters",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 782,
-      "end_pos": 864
-    },
-    "section": "Introduction"
-  },
-  {
     "text": "language models",
     "type": "other",
     "char_interval": {
-      "start_pos": 0,
-      "end_pos": 14
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "language representations",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 512,
-      "end_pos": 536
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "current techniques",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 1131,
-      "end_pos": 1149
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "the pre-trained representations",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 677,
-      "end_pos": 708
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "the fine-tuning approaches",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 1220,
-      "end_pos": 1246
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "language models",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 1286,
-      "end_pos": 1301
+      "start_pos": 1058,
+      "end_pos": 1073
     },
     "section": "Introduction"
   },
@@ -225,20 +126,20 @@
     "section": "Introduction"
   },
   {
-    "text": "left-to-right architecture",
+    "text": "left-toright architecture",
     "type": "other",
     "char_interval": {
       "start_pos": 1451,
-      "end_pos": 1456
+      "end_pos": 1476
     },
     "section": "Introduction"
   },
   {
-    "text": "self-attention layers",
+    "text": "self-attention",
     "type": "other",
     "char_interval": {
       "start_pos": 1538,
-      "end_pos": 1559
+      "end_pos": 1552
     },
     "section": "Introduction"
   },
@@ -262,7 +163,7 @@
   },
   {
     "text": "finetuning based approaches",
-    "type": "task",
+    "type": "other",
     "char_interval": {
       "start_pos": 1680,
       "end_pos": 1707
@@ -288,24 +189,6 @@
     "section": "Introduction"
   },
   {
-    "text": "context",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 1792,
-      "end_pos": 1799
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "this paper",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 1825,
-      "end_pos": 1835
-    },
-    "section": "Introduction"
-  },
-  {
     "text": "BERT",
     "type": "method",
     "char_interval": {
@@ -324,26 +207,8 @@
     "section": "Introduction"
   },
   {
-    "text": "BERT",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 1957,
-      "end_pos": 1961
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "unidirectionality constraint",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 1998,
-      "end_pos": 2026
-    },
-    "section": "Introduction"
-  },
-  {
     "text": "masked language model",
-    "type": "method",
+    "type": "other",
     "char_interval": {
       "start_pos": 2039,
       "end_pos": 2060
@@ -352,7 +217,7 @@
   },
   {
     "text": "Cloze task",
-    "type": "other",
+    "type": "task",
     "char_interval": {
       "start_pos": 2108,
       "end_pos": 2118
@@ -360,92 +225,29 @@
     "section": "Introduction"
   },
   {
-    "text": "masked language model",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 2124,
-      "end_pos": 2145
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "input",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 2189,
-      "end_pos": 2194
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "masked word",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 2262,
-      "end_pos": 2273
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "context",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 2292,
-      "end_pos": 2299
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "language model",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 2321,
-      "end_pos": 2335
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "MLM",
-    "type": "method",
+    "text": "MLM objective",
+    "type": "other",
     "char_interval": {
       "start_pos": 2354,
-      "end_pos": 2357
+      "end_pos": 2367
     },
     "section": "Introduction"
   },
   {
-    "text": "left",
-    "type": "generic",
+    "text": "left and the right context",
+    "type": "other",
     "char_interval": {
       "start_pos": 2407,
-      "end_pos": 2411
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "right context",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 2420,
       "end_pos": 2433
     },
     "section": "Introduction"
   },
   {
     "text": "deep bidirectional Transformer",
-    "type": "method",
+    "type": "other",
     "char_interval": {
       "start_pos": 2465,
       "end_pos": 2495
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "masked language model",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 2516,
-      "end_pos": 2537
     },
     "section": "Introduction"
   },
@@ -459,26 +261,8 @@
     "section": "Introduction"
   },
   {
-    "text": "text-pair representations",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 2608,
-      "end_pos": 2633
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "our paper",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 2656,
-      "end_pos": 2665
-    },
-    "section": "Introduction"
-  },
-  {
     "text": "bidirectional pre-training",
-    "type": "task",
+    "type": "other",
     "char_interval": {
       "start_pos": 2715,
       "end_pos": 2741
@@ -487,7 +271,7 @@
   },
   {
     "text": "language representations",
-    "type": "object",
+    "type": "other",
     "char_interval": {
       "start_pos": 2746,
       "end_pos": 2770
@@ -495,11 +279,11 @@
     "section": "Introduction"
   },
   {
-    "text": "unidirectional language models",
+    "text": "language models",
     "type": "method",
     "char_interval": {
-      "start_pos": 2813,
-      "end_pos": 2843
+      "start_pos": 2800,
+      "end_pos": 2815
     },
     "section": "Introduction"
   },
@@ -507,62 +291,53 @@
     "text": "BERT",
     "type": "method",
     "char_interval": {
-      "start_pos": 2862,
-      "end_pos": 2866
+      "start_pos": 2834,
+      "end_pos": 2838
     },
     "section": "Introduction"
   },
   {
     "text": "masked language models",
-    "type": "method",
+    "type": "other",
     "char_interval": {
-      "start_pos": 2872,
-      "end_pos": 2894
+      "start_pos": 2844,
+      "end_pos": 2866
     },
     "section": "Introduction"
   },
   {
     "text": "deep bidirectional representations",
-    "type": "object",
+    "type": "other",
     "char_interval": {
-      "start_pos": 2916,
-      "end_pos": 2950
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "This",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 2952,
-      "end_pos": 2956
+      "start_pos": 2888,
+      "end_pos": 2922
     },
     "section": "Introduction"
   },
   {
     "text": "LMs",
-    "type": "method",
+    "type": "other",
     "char_interval": {
-      "start_pos": 3095,
-      "end_pos": 3098
+      "start_pos": 3059,
+      "end_pos": 3062
     },
     "section": "Introduction"
   },
   {
     "text": "pre-trained representations",
-    "type": "generic",
+    "type": "other",
     "char_interval": {
-      "start_pos": 3113,
-      "end_pos": 3140
+      "start_pos": 3077,
+      "end_pos": 3104
     },
     "section": "Introduction"
   },
   {
-    "text": "task-specific architectures",
-    "type": "task",
+    "text": "taskspecific architectures",
+    "type": "other",
     "char_interval": {
-      "start_pos": 3389,
-      "end_pos": 3416
+      "start_pos": 3149,
+      "end_pos": 3175
     },
     "section": "Introduction"
   },
@@ -570,17 +345,17 @@
     "text": "BERT",
     "type": "method",
     "char_interval": {
-      "start_pos": 3213,
-      "end_pos": 3217
+      "start_pos": 3177,
+      "end_pos": 3181
     },
     "section": "Introduction"
   },
   {
-    "text": "finetuning based representation model",
-    "type": "method",
+    "text": "representation model",
+    "type": "other",
     "char_interval": {
-      "start_pos": 3231,
-      "end_pos": 3268
+      "start_pos": 3212,
+      "end_pos": 3232
     },
     "section": "Introduction"
   },
@@ -588,8 +363,8 @@
     "text": "sentence-level tasks",
     "type": "task",
     "char_interval": {
-      "start_pos": 3332,
-      "end_pos": 3346
+      "start_pos": 3296,
+      "end_pos": 3310
     },
     "section": "Introduction"
   },
@@ -597,17 +372,8 @@
     "text": "token-level tasks",
     "type": "task",
     "char_interval": {
-      "start_pos": 3351,
-      "end_pos": 3368
-    },
-    "section": "Introduction"
-  },
-  {
-    "text": "task-specific architectures",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 3389,
-      "end_pos": 3416
+      "start_pos": 3315,
+      "end_pos": 3332
     },
     "section": "Introduction"
   },
@@ -615,17 +381,17 @@
     "text": "BERT",
     "type": "method",
     "char_interval": {
-      "start_pos": 3418,
-      "end_pos": 3422
+      "start_pos": 2834,
+      "end_pos": 2838
     },
     "section": "Introduction"
   },
   {
-    "text": "NLP tasks",
-    "type": "task",
+    "text": "task-specific architectures",
+    "type": "other",
     "char_interval": {
-      "start_pos": 3464,
-      "end_pos": 3473
+      "start_pos": 3353,
+      "end_pos": 3380
     },
     "section": "Introduction"
   }

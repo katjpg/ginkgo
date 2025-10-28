@@ -1,9 +1,18 @@
 [
   {
-    "text": "fine-tuning task accuracy",
+    "text": "fine-tuning task",
     "type": "task",
     "char_interval": {
       "start_pos": 56,
+      "end_pos": 72
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "accuracy",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 73,
       "end_pos": 81
     },
     "section": "Effect of Model Size"
@@ -18,33 +27,6 @@
     "section": "Effect of Model Size"
   },
   {
-    "text": "layers",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 145,
-      "end_pos": 151
-    },
-    "section": "Effect of Model Size"
-  },
-  {
-    "text": "hidden units",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 153,
-      "end_pos": 165
-    },
-    "section": "Effect of Model Size"
-  },
-  {
-    "text": "attention heads",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 171,
-      "end_pos": 186
-    },
-    "section": "Effect of Model Size"
-  },
-  {
     "text": "hyperparameters",
     "type": "other",
     "char_interval": {
@@ -54,8 +36,17 @@
     "section": "Effect of Model Size"
   },
   {
+    "text": "training procedure",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 239,
+      "end_pos": 257
+    },
+    "section": "Effect of Model Size"
+  },
+  {
     "text": "GLUE tasks",
-    "type": "task",
+    "type": "dataset",
     "char_interval": {
       "start_pos": 303,
       "end_pos": 313
@@ -63,29 +54,29 @@
     "section": "Effect of Model Size"
   },
   {
-    "text": "Dev Set accuracy",
-    "type": "metric",
+    "text": "Dev Set",
+    "type": "dataset",
     "char_interval": {
       "start_pos": 373,
+      "end_pos": 380
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "accuracy",
+    "type": "metric",
+    "char_interval": {
+      "start_pos": 381,
       "end_pos": 389
     },
     "section": "Effect of Model Size"
   },
   {
-    "text": "models",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 452,
-      "end_pos": 458
-    },
-    "section": "Effect of Model Size"
-  },
-  {
-    "text": "accuracy improvement",
+    "text": "accuracy",
     "type": "metric",
     "char_interval": {
       "start_pos": 476,
-      "end_pos": 496
+      "end_pos": 484
     },
     "section": "Effect of Model Size"
   },
@@ -99,10 +90,10 @@
     "section": "Effect of Model Size"
   },
   {
-    "text": "training examples",
+    "text": "labeled training examples",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 566,
+      "start_pos": 558,
       "end_pos": 583
     },
     "section": "Effect of Model Size"
@@ -127,46 +118,55 @@
   },
   {
     "text": "parameters",
-    "type": "object",
+    "type": "other",
     "char_interval": {
-      "start_pos": 901,
-      "end_pos": 911
-    },
-    "section": "Effect of Model Size"
-  },
-  {
-    "text": "BERT",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 106,
-      "end_pos": 110
+      "start_pos": 894,
+      "end_pos": 904
     },
     "section": "Effect of Model Size"
   },
   {
     "text": "parameters",
-    "type": "object",
+    "type": "other",
     "char_interval": {
-      "start_pos": 1021,
-      "end_pos": 1031
+      "start_pos": 1014,
+      "end_pos": 1024
     },
     "section": "Effect of Model Size"
   },
   {
-    "text": "BERT",
+    "text": "BERT BASE",
     "type": "method",
     "char_interval": {
-      "start_pos": 1046,
-      "end_pos": 1050
+      "start_pos": 1039,
+      "end_pos": 1048
     },
     "section": "Effect of Model Size"
   },
   {
     "text": "parameters",
-    "type": "object",
+    "type": "other",
     "char_interval": {
-      "start_pos": 1070,
-      "end_pos": 1080
+      "start_pos": 1063,
+      "end_pos": 1073
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "BERT LARGE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 1078,
+      "end_pos": 1088
+    },
+    "section": "Effect of Model Size"
+  },
+  {
+    "text": "parameters",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 1103,
+      "end_pos": 1113
     },
     "section": "Effect of Model Size"
   },
@@ -174,8 +174,8 @@
     "text": "machine translation",
     "type": "task",
     "char_interval": {
-      "start_pos": 1241,
-      "end_pos": 1260
+      "start_pos": 1234,
+      "end_pos": 1253
     },
     "section": "Effect of Model Size"
   },
@@ -183,8 +183,8 @@
     "text": "language modeling",
     "type": "task",
     "char_interval": {
-      "start_pos": 1265,
-      "end_pos": 1282
+      "start_pos": 1258,
+      "end_pos": 1275
     },
     "section": "Effect of Model Size"
   },
@@ -192,8 +192,8 @@
     "text": "LM perplexity",
     "type": "metric",
     "char_interval": {
-      "start_pos": 1313,
-      "end_pos": 1326
+      "start_pos": 1306,
+      "end_pos": 1319
     },
     "section": "Effect of Model Size"
   },
@@ -201,62 +201,44 @@
     "text": "training data",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 1339,
-      "end_pos": 1352
+      "start_pos": 1332,
+      "end_pos": 1345
     },
     "section": "Effect of Model Size"
   },
   {
-    "text": "this",
-    "type": "generic",
+    "text": "model sizes",
+    "type": "other",
     "char_interval": {
-      "start_pos": 1396,
-      "end_pos": 1400
+      "start_pos": 1464,
+      "end_pos": 1475
     },
     "section": "Effect of Model Size"
   },
   {
-    "text": "small scale tasks",
-    "type": "task",
+    "text": "pre-trained",
+    "type": "other",
     "char_interval": {
-      "start_pos": 1524,
-      "end_pos": 1541
+      "start_pos": 1582,
+      "end_pos": 1593
     },
     "section": "Effect of Model Size"
   },
   {
-    "text": "bi-LM",
-    "type": "method",
+    "text": "downstream task",
+    "type": "other",
     "char_interval": {
-      "start_pos": 1708,
-      "end_pos": 1713
+      "start_pos": 1627,
+      "end_pos": 1642
     },
     "section": "Effect of Model Size"
   },
   {
-    "text": "the downstream task impact",
-    "type": "generic",
+    "text": "pre-trained bi-LM",
+    "type": "other",
     "char_interval": {
-      "start_pos": 1651,
-      "end_pos": 1677
-    },
-    "section": "Effect of Model Size"
-  },
-  {
-    "text": "the pre-trained bi-LM size",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 1692,
-      "end_pos": 1718
-    },
-    "section": "Effect of Model Size"
-  },
-  {
-    "text": "Both of these prior works",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 1920,
-      "end_pos": 1945
+      "start_pos": 1668,
+      "end_pos": 1685
     },
     "section": "Effect of Model Size"
   },
@@ -264,35 +246,26 @@
     "text": "featurebased approach",
     "type": "other",
     "char_interval": {
-      "start_pos": 1953,
-      "end_pos": 1974
-    },
-    "section": "Effect of Model Size"
-  },
-  {
-    "text": "the model",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 2001,
-      "end_pos": 2010
+      "start_pos": 1918,
+      "end_pos": 1939
     },
     "section": "Effect of Model Size"
   },
   {
     "text": "downstream tasks",
-    "type": "task",
+    "type": "other",
     "char_interval": {
-      "start_pos": 2041,
-      "end_pos": 2057
+      "start_pos": 2006,
+      "end_pos": 2022
     },
     "section": "Effect of Model Size"
   },
   {
-    "text": "the pre-trained representations",
-    "type": "generic",
+    "text": "pre-trained representations",
+    "type": "other",
     "char_interval": {
-      "start_pos": 2139,
-      "end_pos": 2142
+      "start_pos": 2173,
+      "end_pos": 2200
     },
     "section": "Effect of Model Size"
   }

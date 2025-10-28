@@ -1,14 +1,5 @@
 [
   {
-    "text": "pre-training procedure",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 4,
-      "end_pos": 26
-    },
-    "section": "Pre-training data"
-  },
-  {
     "text": "language model pre-training",
     "type": "other",
     "char_interval": {
@@ -36,20 +27,29 @@
     "section": "Pre-training data"
   },
   {
-    "text": "Wikipedia",
-    "type": "generic",
+    "text": "text passages",
+    "type": "other",
     "char_interval": {
-      "start_pos": 206,
-      "end_pos": 215
+      "start_pos": 236,
+      "end_pos": 249
     },
     "section": "Pre-training data"
   },
   {
-    "text": "the text passages",
-    "type": "generic",
+    "text": "document-level corpus",
+    "type": "dataset",
     "char_interval": {
-      "start_pos": 232,
-      "end_pos": 249
+      "start_pos": 313,
+      "end_pos": 334
+    },
+    "section": "Pre-training data"
+  },
+  {
+    "text": "shuffled sentence-level corpus",
+    "type": "dataset",
+    "char_interval": {
+      "start_pos": 349,
+      "end_pos": 379
     },
     "section": "Pre-training data"
   },
@@ -59,15 +59,6 @@
     "char_interval": {
       "start_pos": 392,
       "end_pos": 414
-    },
-    "section": "Pre-training data"
-  },
-  {
-    "text": "long contiguous sequences",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 435,
-      "end_pos": 460
     },
     "section": "Pre-training data"
   }

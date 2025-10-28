@@ -1,19 +1,10 @@
 [
   {
-    "text": "Situations With Adversarial Generations (SWAG)",
+    "text": "SWAG dataset",
     "type": "dataset",
     "char_interval": {
-      "start_pos": 4,
-      "end_pos": 50
-    },
-    "section": "Swag"
-  },
-  {
-    "text": "sentence-pair completion examples",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 73,
-      "end_pos": 106
+      "start_pos": 45,
+      "end_pos": 49
     },
     "section": "Swag"
   },
@@ -27,11 +18,11 @@
     "section": "Swag"
   },
   {
-    "text": "choose the most plausible continuation",
+    "text": "sentence-pair completion",
     "type": "task",
     "char_interval": {
-      "start_pos": 186,
-      "end_pos": 224
+      "start_pos": 73,
+      "end_pos": 97
     },
     "section": "Swag"
   },
@@ -45,47 +36,20 @@
     "section": "Swag"
   },
   {
-    "text": "input sequences",
-    "type": "object",
+    "text": "task-specific parameters",
+    "type": "other",
     "char_interval": {
-      "start_pos": 301,
-      "end_pos": 316
+      "start_pos": 438,
+      "end_pos": 462
     },
     "section": "Swag"
   },
   {
-    "text": "sentence",
-    "type": "object",
+    "text": "softmax layer",
+    "type": "other",
     "char_interval": {
-      "start_pos": 365,
-      "end_pos": 373
-    },
-    "section": "Swag"
-  },
-  {
-    "text": "continuation",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 402,
-      "end_pos": 414
-    },
-    "section": "Swag"
-  },
-  {
-    "text": "choice",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 567,
-      "end_pos": 573
-    },
-    "section": "Swag"
-  },
-  {
-    "text": "BERT LARGE",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 739,
-      "end_pos": 749
+      "start_pos": 601,
+      "end_pos": 614
     },
     "section": "Swag"
   },
@@ -95,6 +59,15 @@
     "char_interval": {
       "start_pos": 784,
       "end_pos": 793
+    },
+    "section": "Swag"
+  },
+  {
+    "text": "BERT LARGE",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 739,
+      "end_pos": 749
     },
     "section": "Swag"
   },

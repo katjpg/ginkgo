@@ -9,28 +9,28 @@
     "section": "Unsupervised Fine-tuning Approaches"
   },
   {
-    "text": "word embedding parameters",
+    "text": "word embedding",
     "type": "other",
     "char_interval": {
       "start_pos": 89,
-      "end_pos": 114
+      "end_pos": 103
     },
     "section": "Unsupervised Fine-tuning Approaches"
   },
   {
-    "text": "unlabeled text",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 120,
-      "end_pos": 134
-    },
-    "section": "Unsupervised Fine-tuning Approaches"
-  },
-  {
-    "text": "sentence or document encoders",
-    "type": "object",
+    "text": "sentence encoders",
+    "type": "other",
     "char_interval": {
       "start_pos": 151,
+      "end_pos": 159
+    },
+    "section": "Unsupervised Fine-tuning Approaches"
+  },
+  {
+    "text": "document encoders",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 163,
       "end_pos": 180
     },
     "section": "Unsupervised Fine-tuning Approaches"
@@ -45,29 +45,11 @@
     "section": "Unsupervised Fine-tuning Approaches"
   },
   {
-    "text": "unlabeled text",
-    "type": "object",
+    "text": "language model",
+    "type": "other",
     "char_interval": {
-      "start_pos": 255,
-      "end_pos": 269
-    },
-    "section": "Unsupervised Fine-tuning Approaches"
-  },
-  {
-    "text": "supervised downstream task",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 291,
-      "end_pos": 317
-    },
-    "section": "Unsupervised Fine-tuning Approaches"
-  },
-  {
-    "text": "these approaches",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 336,
-      "end_pos": 352
+      "start_pos": 572,
+      "end_pos": 586
     },
     "section": "Unsupervised Fine-tuning Approaches"
   },
@@ -108,10 +90,10 @@
     "section": "Unsupervised Fine-tuning Approaches"
   },
   {
-    "text": "Left-to-right language model",
+    "text": "language model",
     "type": "other",
     "char_interval": {
-      "start_pos": 558,
+      "start_pos": 572,
       "end_pos": 586
     },
     "section": "Unsupervised Fine-tuning Approaches"

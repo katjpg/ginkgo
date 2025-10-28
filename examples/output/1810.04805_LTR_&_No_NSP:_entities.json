@@ -9,11 +9,20 @@
     "section": "LTR & No NSP:"
   },
   {
-    "text": "fine-tuning",
-    "type": "task",
+    "text": "MLM",
+    "type": "other",
     "char_interval": {
-      "start_pos": 149,
-      "end_pos": 160
+      "start_pos": 99,
+      "end_pos": 102
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "left-only constraint",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 108,
+      "end_pos": 128
     },
     "section": "LTR & No NSP:"
   },
@@ -27,74 +36,11 @@
     "section": "LTR & No NSP:"
   },
   {
-    "text": "downstream performance",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 238,
-      "end_pos": 260
-    },
-    "section": "LTR & No NSP:"
-  },
-  {
     "text": "NSP task",
     "type": "task",
     "char_interval": {
       "start_pos": 315,
       "end_pos": 323
-    },
-    "section": "LTR & No NSP:"
-  },
-  {
-    "text": "this model",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 276,
-      "end_pos": 286
-    },
-    "section": "LTR & No NSP:"
-  },
-  {
-    "text": "Open AI GPT",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 356,
-      "end_pos": 367
-    },
-    "section": "LTR & No NSP:"
-  },
-  {
-    "text": "training dataset",
-    "type": "dataset",
-    "char_interval": {
-      "start_pos": 390,
-      "end_pos": 406
-    },
-    "section": "LTR & No NSP:"
-  },
-  {
-    "text": "input representation",
-    "type": "other",
-    "char_interval": {
-      "start_pos": 412,
-      "end_pos": 432
-    },
-    "section": "LTR & No NSP:"
-  },
-  {
-    "text": "fine-tuning scheme",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 442,
-      "end_pos": 460
-    },
-    "section": "LTR & No NSP:"
-  },
-  {
-    "text": "NSP task",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 505,
-      "end_pos": 513
     },
     "section": "LTR & No NSP:"
   },
@@ -126,26 +72,35 @@
     "section": "LTR & No NSP:"
   },
   {
-    "text": "training bidirectional representations",
-    "type": "task",
+    "text": "bidirectional representations",
+    "type": "other",
     "char_interval": {
-      "start_pos": 647,
+      "start_pos": 656,
       "end_pos": 685
     },
     "section": "LTR & No NSP:"
   },
   {
-    "text": "MLM",
-    "type": "task",
+    "text": "LTR model",
+    "type": "method",
+    "char_interval": {
+      "start_pos": 731,
+      "end_pos": 740
+    },
+    "section": "LTR & No NSP:"
+  },
+  {
+    "text": "MLM model",
+    "type": "method",
     "char_interval": {
       "start_pos": 765,
-      "end_pos": 768
+      "end_pos": 774
     },
     "section": "LTR & No NSP:"
   },
   {
     "text": "MRPC",
-    "type": "task",
+    "type": "dataset",
     "char_interval": {
       "start_pos": 809,
       "end_pos": 813
@@ -171,17 +126,8 @@
     "section": "LTR & No NSP:"
   },
   {
-    "text": "token-level hidden states",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 928,
-      "end_pos": 953
-    },
-    "section": "LTR & No NSP:"
-  },
-  {
     "text": "rightside context",
-    "type": "object",
+    "type": "other",
     "char_interval": {
       "start_pos": 962,
       "end_pos": 979
@@ -189,56 +135,20 @@
     "section": "LTR & No NSP:"
   },
   {
-    "text": "the LTR system",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 1036,
-      "end_pos": 1050
-    },
-    "section": "LTR & No NSP:"
-  },
-  {
     "text": "BiLSTM",
     "type": "method",
     "char_interval": {
       "start_pos": 1084,
       "end_pos": 1090
-    },
-    "section": "LTR & No NSP:"
-  },
-  {
-    "text": "SQuAD",
-    "type": "dataset",
-    "char_interval": {
-      "start_pos": 1142,
-      "end_pos": 1147
-    },
-    "section": "LTR & No NSP:"
-  },
-  {
-    "text": "pretrained bidirectional models",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 1203,
-      "end_pos": 1234
     },
     "section": "LTR & No NSP:"
   },
   {
     "text": "GLUE tasks",
-    "type": "task",
+    "type": "dataset",
     "char_interval": {
       "start_pos": 1272,
       "end_pos": 1282
-    },
-    "section": "LTR & No NSP:"
-  },
-  {
-    "text": "BiLSTM",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 1084,
-      "end_pos": 1090
     },
     "section": "LTR & No NSP:"
   },
@@ -252,20 +162,11 @@
     "section": "LTR & No NSP:"
   },
   {
-    "text": "RTL",
+    "text": "RTL models",
     "type": "method",
     "char_interval": {
       "start_pos": 1354,
-      "end_pos": 1357
-    },
-    "section": "LTR & No NSP:"
-  },
-  {
-    "text": "token",
-    "type": "object",
-    "char_interval": {
-      "start_pos": 1384,
-      "end_pos": 1389
+      "end_pos": 1364
     },
     "section": "LTR & No NSP:"
   },
@@ -275,15 +176,6 @@
     "char_interval": {
       "start_pos": 1433,
       "end_pos": 1437
-    },
-    "section": "LTR & No NSP:"
-  },
-  {
-    "text": "this",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 1457,
-      "end_pos": 1461
     },
     "section": "LTR & No NSP:"
   },
@@ -311,15 +203,6 @@
     "char_interval": {
       "start_pos": 1572,
       "end_pos": 1581
-    },
-    "section": "LTR & No NSP:"
-  },
-  {
-    "text": "the question",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 1627,
-      "end_pos": 1639
     },
     "section": "LTR & No NSP:"
   },

@@ -1,14 +1,5 @@
 [
   {
-    "text": "the importance",
-    "type": "generic",
-    "char_interval": {
-      "start_pos": 15,
-      "end_pos": 29
-    },
-    "section": "Effect of Pre-training Tasks"
-  },
-  {
     "text": "BERT",
     "type": "method",
     "char_interval": {
@@ -19,7 +10,7 @@
   },
   {
     "text": "pretraining objectives",
-    "type": "task",
+    "type": "other",
     "char_interval": {
       "start_pos": 85,
       "end_pos": 107
@@ -32,6 +23,15 @@
     "char_interval": {
       "start_pos": 131,
       "end_pos": 147
+    },
+    "section": "Effect of Pre-training Tasks"
+  },
+  {
+    "text": "fine-tuning scheme",
+    "type": "other",
+    "char_interval": {
+      "start_pos": 149,
+      "end_pos": 167
     },
     "section": "Effect of Pre-training Tasks"
   },
@@ -54,20 +54,11 @@
     "section": "Effect of Pre-training Tasks"
   },
   {
-    "text": "NSP",
+    "text": "masked LM",
     "type": "task",
     "char_interval": {
-      "start_pos": 206,
-      "end_pos": 209
-    },
-    "section": "Effect of Pre-training Tasks"
-  },
-  {
-    "text": "MLM",
-    "type": "method",
-    "char_interval": {
-      "start_pos": 273,
-      "end_pos": 276
+      "start_pos": 261,
+      "end_pos": 270
     },
     "section": "Effect of Pre-training Tasks"
   },
@@ -77,15 +68,6 @@
     "char_interval": {
       "start_pos": 295,
       "end_pos": 319
-    },
-    "section": "Effect of Pre-training Tasks"
-  },
-  {
-    "text": "NSP",
-    "type": "task",
-    "char_interval": {
-      "start_pos": 322,
-      "end_pos": 325
     },
     "section": "Effect of Pre-training Tasks"
   }
