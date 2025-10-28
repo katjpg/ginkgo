@@ -1,5 +1,33 @@
 import re
+import unicodedata
 from collections import Counter
+
+
+def normalize_ligatures(text: str) -> str:
+    """Decompose ligatures (e.g., 'ﬁ' -> 'fi')."""
+    return unicodedata.normalize('NFC', text)
+
+
+def remove_citations(text: str) -> str:
+    """Remove in-line citations and footnotes from the text."""
+    text = re.sub(r"(\w|\))\s?\([^)]*\d{4}[^)]*\)", r"\1", text)
+    text = re.sub(r"foot_\d+", "", text)
+    return text
+
+
+def remove_bullets(text: str) -> str:
+    """Remove common bullet point markers."""
+    text = re.sub(r"•\s?", "", text)
+    text = re.sub(r"^\s*[\*\-]\s+", "", text, flags=re.MULTILINE)
+    text = re.sub(r"\s+[\*\-]\s+", " ", text)
+    return text
+
+
+def separate_references(text: str) -> str:
+    """Insert space between text/numbers (e.g., Figure1 -> Figure 1)."""
+    text = re.sub(r"([A-Za-z])(\d)", r"\1 \2", text)
+    text = re.sub(r"(\d\.)([A-Za-z])", r"\1 \2", text)
+    return text
 
 
 def dehyphenate(text: str) -> str:
@@ -19,13 +47,9 @@ def normalize_whitespace(text: str) -> str:
 
 def fix_concatenation(text: str) -> str:
     """Fix parsing concatenation errors while preserving intentional camelCase."""
-    # fix doubled capitals at word start
     text = re.sub(r"\b([A-Z])\1([a-z])", r"\1\2", text)
-
-    # fix concatenated words using capturing group instead of variable-width lookbehind
-    # captures lowercase sequence and capital letter, adds space between them
-    text = re.sub(r"([a-z]{4,})([A-Z][a-z])", r"\1 \2", text)
-
+    text = re.sub(r"([a-z]{3,})([A-Z][a-z])", r"\1 \2", text)
+    text = re.sub(r"([a-z]{2,})([A-Z])", r"\1 \2", text)
     return text
 
 
@@ -48,12 +72,13 @@ def clean_punctuation_artifacts(text: str) -> str:
     text = re.sub(r"[;,]\s*[;,]+", ",", text)
     text = re.sub(r"\s+[;,]\s+", " ", text)
     text = re.sub(r"\(\s*[;,]+\s*\)", "", text)
+    text = re.sub(r"([.,:;-])\1{3,}", r"\1", text)
     return re.sub(r"\s+", " ", text).strip()
 
 
 def remove_urls(text: str) -> str:
     """Remove URLs and web addresses."""
-    return re.sub(r"https?://\S+|www\.\S+", "", text)
+    return re.sub(r"httpsa?://\S+|www\.\S+", "", text)
 
 
 def remove_repeated_text(text: str, threshold_ratio: float = 0.1) -> str:
@@ -80,6 +105,10 @@ def preprocess_section(
     known_terms: set[str] | None = None,
 ) -> str:
     """Apply minimal preprocessing pipeline for scientific text extraction."""
+    text = normalize_ligatures(text)
+    text = remove_citations(text)
+    text = remove_bullets(text)
+    text = separate_references(text)
     text = dehyphenate(text)
     text = normalize_whitespace(text)
     text = fix_concatenation(text)
@@ -90,6 +119,7 @@ def preprocess_section(
     if abbrev_dict is not None:
         text = resolve_abbreviations(text, abbrev_dict)
 
+    text = re.sub(r"\s+", " ", text).strip()
     return text
 
 
@@ -103,6 +133,10 @@ def preprocess_document(
     if remove_repeated:
         text = remove_repeated_text(text)
 
+    text = normalize_ligatures(text)
+    text = remove_citations(text)
+    text = remove_bullets(text)
+    text = separate_references(text)
     text = dehyphenate(text)
     text = normalize_whitespace(text)
     text = fix_concatenation(text)
@@ -113,4 +147,5 @@ def preprocess_document(
     if abbrev_dict is not None:
         text = resolve_abbreviations(text, abbrev_dict)
 
+    text = re.sub(r"\s+", " ", text).strip()
     return text
