@@ -14,6 +14,9 @@ class SemanticExtractor:
     def __init__(self, langextract_config: LangExtractConfig):
         self.langextract_config = langextract_config
 
+    # TODO: match relation.py
+    # extract_entities -> extract 
+    # include the sentence
     def extract_entities(
         self, text: str, section_config: SectionConfig
     ) -> list[dict[str, Any]]:
