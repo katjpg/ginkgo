@@ -4,9 +4,7 @@
 
 ## Overview
 
-ginkgo extracts research concepts, discovers semantic relationships, and transforms academic papers into structured knowledge representations. Rather than classifying relations into predefined categories, ginkgo discovers what relations actually exist in scientific literature through unsupervised pattern analysis and LLM in-context learning.
-
-Built for researchers to accelerate scientific exploration and discovery.
+ginkgo extracts research concepts, discovers semantic relationships, and transforms academic papers into structured knowledge representations. Built for researchers to accelerate scientific exploration and discovery.
 
 ginkgo features a comprehensive document-level processing pipeline:
 - **Structural**: PDF parsing via GROBID to extract sections and metadata
