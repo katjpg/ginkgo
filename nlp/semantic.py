@@ -8,27 +8,25 @@ from config.nlp import SectionConfig
 from llm.prompts.langextract import PROMPT, EXAMPLES
 
 
-class SemanticExtractor:
+class EntityExtractor:
     """Extract entities from scientific text."""
 
-    def __init__(self, langextract_config: LangExtractConfig):
-        self.langextract_config = langextract_config
+    def __init__(self, config: LangExtractConfig):
+        self.config = config
+        self.model_id = config.model_id
+        self.api_key = config.api_key
+        self.max_workers = config.max_workers
 
-    # TODO: match relation.py
-    # extract_entities -> extract 
-    # include the sentence
-    def extract_entities(
-        self, text: str, section_config: SectionConfig
-    ) -> list[dict[str, Any]]:
+    def extract(self, text: str, section_config: SectionConfig) -> list[dict[str, Any]]:
         """Execute multi-pass entity extraction."""
         result = lx.extract(
             text_or_documents=text,
             prompt_description=PROMPT,
             examples=EXAMPLES,
-            model_id=self.langextract_config.model_id,
-            api_key=self.langextract_config.api_key,
+            model_id=self.model_id,
+            api_key=self.api_key,
             extraction_passes=section_config.extraction_passes,
-            max_workers=self.langextract_config.max_workers,
+            max_workers=self.max_workers,
             max_char_buffer=section_config.max_char_buffer,
         )
 
@@ -72,41 +70,73 @@ class SemanticExtractor:
 
         return doc[min(indices) : max(indices) + 1]
 
+    def get_context(self, span: Span, context_size: int = 2) -> str:
+        """Get surrounding sentences for entity span."""
+        sents = list(span.doc.sents)
+        
+        # find sentence index containing the span
+        sent_idx = None
+        for i, sent in enumerate(sents):
+            if span.start >= sent.start and span.end <= sent.end:
+                sent_idx = i
+                break
+        
+        if sent_idx is None:
+            return span.sent.text  # fallback to just the sentence
+        
+        start = max(0, sent_idx - context_size // 2)
+        end = min(len(sents), sent_idx + context_size // 2 + 1)
+        
+        return " ".join(s.text for s in sents[start:end])
+
     def convert_to_spans(
-        self, entities: list[dict], doc: Doc
-    ) -> list[tuple[dict, Span]]:
-        """Convert entities to spaCy spans."""
-        entity_spans = []
+        self, entities: list[dict], doc: Doc, context_size: int = 2
+    ) -> list[dict[str, Any]]:
+        """Convert entities to dictionaries with spans and context."""
+        results = []
+        sents = list(doc.sents)
 
         for entity in entities:
             span = self.convert_entity(entity, doc)
             if span is not None:
-                entity_spans.append((entity, span))
+                # find sentence index
+                sent_idx = 0
+                for i, sent in enumerate(sents):
+                    if span.start >= sent.start and span.end <= sent.end:
+                        sent_idx = i
+                        break
+                
+                result = dict(entity)
+                result["span"] = span
+                result["sentence_context"] = self.get_context(span, context_size)
+                result["sentence_index"] = sent_idx
+                results.append(result)
 
-        return entity_spans
+        return results
 
     def process_section(
-        self, text: str, doc: Doc, section_config: SectionConfig
+        self, text: str, doc: Doc, section_config: SectionConfig, context_size: int = 2
     ) -> dict[str, Any]:
         """Process section for entity extraction."""
-        entities = self.extract_entities(text, section_config)
-        entity_spans = self.convert_to_spans(entities, doc)
+        entities = self.extract(text, section_config)
+        processed = self.convert_to_spans(entities, doc, context_size)
 
         return {
-            "entities": entities,
+            "entities": processed,
             "metadata": {
                 "total_entities": len(entities),
-                "span_conversions": len(entity_spans),
+                "span_conversions": len(processed),
             },
         }
 
 
-def extract_semantic(
+def extract_entities(
     text: str,
     doc: Doc,
     section_config: SectionConfig,
     langextract_config: LangExtractConfig,
+    context_size: int = 2,
 ) -> dict[str, Any]:
     """Extract entities from text section."""
-    extractor = SemanticExtractor(langextract_config)
-    return extractor.process_section(text, doc, section_config)
+    extractor = EntityExtractor(langextract_config)
+    return extractor.process_section(text, doc, section_config, context_size)
