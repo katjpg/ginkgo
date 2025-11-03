@@ -6,6 +6,10 @@
       "start_pos": 28,
       "end_pos": 32
     },
+    "attributes": {},
+    "sentence_context": "In this section, we present BERT fine-tuning results on 11 NLP tasks.",
+    "sentence_index": 0,
+    "span_text": "BERT",
     "section": "Experiments"
   },
   {
@@ -15,6 +19,10 @@
       "start_pos": 59,
       "end_pos": 68
     },
+    "attributes": {},
+    "sentence_context": "In this section, we present BERT fine-tuning results on 11 NLP tasks.",
+    "sentence_index": 0,
+    "span_text": "NLP tasks",
     "section": "Experiments"
   }
 ]

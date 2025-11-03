@@ -6,6 +6,10 @@
       "start_pos": 45,
       "end_pos": 49
     },
+    "attributes": {},
+    "sentence_context": "The Situations With Adversarial Generations (SWAG) dataset contains 113k sentence-pair completion examples that evaluate grounded commonsense inference. Given a sentence, the task is to choose the most plausible continuation among four choices.",
+    "sentence_index": 0,
+    "span_text": "SWAG",
     "section": "Swag"
   },
   {
@@ -15,6 +19,10 @@
       "start_pos": 121,
       "end_pos": 151
     },
+    "attributes": {},
+    "sentence_context": "The Situations With Adversarial Generations (SWAG) dataset contains 113k sentence-pair completion examples that evaluate grounded commonsense inference. Given a sentence, the task is to choose the most plausible continuation among four choices.",
+    "sentence_index": 0,
+    "span_text": "grounded commonsense inference",
     "section": "Swag"
   },
   {
@@ -24,6 +32,10 @@
       "start_pos": 73,
       "end_pos": 97
     },
+    "attributes": {},
+    "sentence_context": "The Situations With Adversarial Generations (SWAG) dataset contains 113k sentence-pair completion examples that evaluate grounded commonsense inference. Given a sentence, the task is to choose the most plausible continuation among four choices.",
+    "sentence_index": 0,
+    "span_text": "sentence-pair completion",
     "section": "Swag"
   },
   {
@@ -33,6 +45,10 @@
       "start_pos": 269,
       "end_pos": 281
     },
+    "attributes": {},
+    "sentence_context": "Given a sentence, the task is to choose the most plausible continuation among four choices. When fine-tuning on the SWAG dataset, we construct four input sequences, each containing the concatenation of the given sentence (sentence A) and a possible continuation (sentence B). The only task-specific parameters introduced is a vector whose dot product with the [CLS] token representation C denotes a score for each choice which is normalized with a softmax layer.",
+    "sentence_index": 2,
+    "span_text": "SWAG dataset",
     "section": "Swag"
   },
   {
@@ -42,6 +58,10 @@
       "start_pos": 438,
       "end_pos": 462
     },
+    "attributes": {},
+    "sentence_context": "When fine-tuning on the SWAG dataset, we construct four input sequences, each containing the concatenation of the given sentence (sentence A) and a possible continuation (sentence B). The only task-specific parameters introduced is a vector whose dot product with the [CLS] token representation C denotes a score for each choice which is normalized with a softmax layer. We fine-tune the model for 3 epochs with a learning rate of 2e-5 and a batch size of 16.",
+    "sentence_index": 3,
+    "span_text": "task-specific parameters",
     "section": "Swag"
   },
   {
@@ -51,6 +71,10 @@
       "start_pos": 601,
       "end_pos": 614
     },
+    "attributes": {},
+    "sentence_context": "When fine-tuning on the SWAG dataset, we construct four input sequences, each containing the concatenation of the given sentence (sentence A) and a possible continuation (sentence B). The only task-specific parameters introduced is a vector whose dot product with the [CLS] token representation C denotes a score for each choice which is normalized with a softmax layer. We fine-tune the model for 3 epochs with a learning rate of 2e-5 and a batch size of 16.",
+    "sentence_index": 3,
+    "span_text": "softmax layer",
     "section": "Swag"
   },
   {
@@ -60,6 +84,10 @@
       "start_pos": 784,
       "end_pos": 793
     },
+    "attributes": {},
+    "sentence_context": "Results are presented in Table 4. BERT LARGE outperforms the authors' baseline ESIM+ELMo system by +27.1% and Open AI GPT by 8.3%.",
+    "sentence_index": 6,
+    "span_text": "ESIM+ELMo",
     "section": "Swag"
   },
   {
@@ -69,6 +97,10 @@
       "start_pos": 739,
       "end_pos": 749
     },
+    "attributes": {},
+    "sentence_context": "Results are presented in Table 4. BERT LARGE outperforms the authors' baseline ESIM+ELMo system by +27.1% and Open AI GPT by 8.3%.",
+    "sentence_index": 6,
+    "span_text": "BERT LARGE",
     "section": "Swag"
   },
   {
@@ -78,6 +110,10 @@
       "start_pos": 815,
       "end_pos": 826
     },
+    "attributes": {},
+    "sentence_context": "Results are presented in Table 4. BERT LARGE outperforms the authors' baseline ESIM+ELMo system by +27.1% and Open AI GPT by 8.3%.",
+    "sentence_index": 6,
+    "span_text": "Open AI GPT",
     "section": "Swag"
   }
 ]

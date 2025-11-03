@@ -6,6 +6,10 @@
       "start_pos": 56,
       "end_pos": 72
     },
+    "attributes": {},
+    "sentence_context": "In this section, we explore the effect of model size on fine-tuning task accuracy. We trained a number of BERT models with a differing number of layers, hidden units, and attention heads, while otherwise using the same hyperparameters and training procedure as described previously.",
+    "sentence_index": 0,
+    "span_text": "fine-tuning task",
     "section": "Effect of Model Size"
   },
   {
@@ -15,6 +19,10 @@
       "start_pos": 73,
       "end_pos": 81
     },
+    "attributes": {},
+    "sentence_context": "In this section, we explore the effect of model size on fine-tuning task accuracy. We trained a number of BERT models with a differing number of layers, hidden units, and attention heads, while otherwise using the same hyperparameters and training procedure as described previously.",
+    "sentence_index": 0,
+    "span_text": "accuracy",
     "section": "Effect of Model Size"
   },
   {
@@ -24,6 +32,10 @@
       "start_pos": 106,
       "end_pos": 110
     },
+    "attributes": {},
+    "sentence_context": "In this section, we explore the effect of model size on fine-tuning task accuracy. We trained a number of BERT models with a differing number of layers, hidden units, and attention heads, while otherwise using the same hyperparameters and training procedure as described previously. Results on selected GLUE tasks are shown in Table 6.",
+    "sentence_index": 1,
+    "span_text": "BERT",
     "section": "Effect of Model Size"
   },
   {
@@ -33,6 +45,10 @@
       "start_pos": 219,
       "end_pos": 234
     },
+    "attributes": {},
+    "sentence_context": "In this section, we explore the effect of model size on fine-tuning task accuracy. We trained a number of BERT models with a differing number of layers, hidden units, and attention heads, while otherwise using the same hyperparameters and training procedure as described previously. Results on selected GLUE tasks are shown in Table 6.",
+    "sentence_index": 1,
+    "span_text": "hyperparameters",
     "section": "Effect of Model Size"
   },
   {
@@ -42,6 +58,10 @@
       "start_pos": 239,
       "end_pos": 257
     },
+    "attributes": {},
+    "sentence_context": "In this section, we explore the effect of model size on fine-tuning task accuracy. We trained a number of BERT models with a differing number of layers, hidden units, and attention heads, while otherwise using the same hyperparameters and training procedure as described previously. Results on selected GLUE tasks are shown in Table 6.",
+    "sentence_index": 1,
+    "span_text": "training procedure",
     "section": "Effect of Model Size"
   },
   {
@@ -51,6 +71,10 @@
       "start_pos": 303,
       "end_pos": 313
     },
+    "attributes": {},
+    "sentence_context": "We trained a number of BERT models with a differing number of layers, hidden units, and attention heads, while otherwise using the same hyperparameters and training procedure as described previously. Results on selected GLUE tasks are shown in Table 6. In this table, we report the average Dev Set accuracy from 5 random restarts of fine-tuning.",
+    "sentence_index": 2,
+    "span_text": "GLUE tasks",
     "section": "Effect of Model Size"
   },
   {
@@ -60,6 +84,10 @@
       "start_pos": 373,
       "end_pos": 380
     },
+    "attributes": {},
+    "sentence_context": "Results on selected GLUE tasks are shown in Table 6. In this table, we report the average Dev Set accuracy from 5 random restarts of fine-tuning. We can see that larger models lead to a strict accuracy improvement across all four datasets, even for MRPC which only has 3,600 labeled training examples, and is substantially different from the pre-training tasks.",
+    "sentence_index": 3,
+    "span_text": "Dev Set",
     "section": "Effect of Model Size"
   },
   {
@@ -69,6 +97,10 @@
       "start_pos": 381,
       "end_pos": 389
     },
+    "attributes": {},
+    "sentence_context": "Results on selected GLUE tasks are shown in Table 6. In this table, we report the average Dev Set accuracy from 5 random restarts of fine-tuning. We can see that larger models lead to a strict accuracy improvement across all four datasets, even for MRPC which only has 3,600 labeled training examples, and is substantially different from the pre-training tasks.",
+    "sentence_index": 3,
+    "span_text": "accuracy",
     "section": "Effect of Model Size"
   },
   {
@@ -78,6 +110,10 @@
       "start_pos": 476,
       "end_pos": 484
     },
+    "attributes": {},
+    "sentence_context": "In this table, we report the average Dev Set accuracy from 5 random restarts of fine-tuning. We can see that larger models lead to a strict accuracy improvement across all four datasets, even for MRPC which only has 3,600 labeled training examples, and is substantially different from the pre-training tasks. It is also perhaps surprising that we are able to achieve such significant improvements on top of models which are already quite large relative to the existing literature.",
+    "sentence_index": 4,
+    "span_text": "accuracy",
     "section": "Effect of Model Size"
   },
   {
@@ -87,6 +123,10 @@
       "start_pos": 532,
       "end_pos": 536
     },
+    "attributes": {},
+    "sentence_context": "In this table, we report the average Dev Set accuracy from 5 random restarts of fine-tuning. We can see that larger models lead to a strict accuracy improvement across all four datasets, even for MRPC which only has 3,600 labeled training examples, and is substantially different from the pre-training tasks. It is also perhaps surprising that we are able to achieve such significant improvements on top of models which are already quite large relative to the existing literature.",
+    "sentence_index": 4,
+    "span_text": "MRPC",
     "section": "Effect of Model Size"
   },
   {
@@ -96,6 +136,10 @@
       "start_pos": 558,
       "end_pos": 583
     },
+    "attributes": {},
+    "sentence_context": "In this table, we report the average Dev Set accuracy from 5 random restarts of fine-tuning. We can see that larger models lead to a strict accuracy improvement across all four datasets, even for MRPC which only has 3,600 labeled training examples, and is substantially different from the pre-training tasks. It is also perhaps surprising that we are able to achieve such significant improvements on top of models which are already quite large relative to the existing literature.",
+    "sentence_index": 4,
+    "span_text": "labeled training examples",
     "section": "Effect of Model Size"
   },
   {
@@ -105,6 +149,10 @@
       "start_pos": 625,
       "end_pos": 643
     },
+    "attributes": {},
+    "sentence_context": "In this table, we report the average Dev Set accuracy from 5 random restarts of fine-tuning. We can see that larger models lead to a strict accuracy improvement across all four datasets, even for MRPC which only has 3,600 labeled training examples, and is substantially different from the pre-training tasks. It is also perhaps surprising that we are able to achieve such significant improvements on top of models which are already quite large relative to the existing literature.",
+    "sentence_index": 4,
+    "span_text": "pre-training tasks",
     "section": "Effect of Model Size"
   },
   {
@@ -114,6 +162,10 @@
       "start_pos": 842,
       "end_pos": 853
     },
+    "attributes": {},
+    "sentence_context": "It is also perhaps surprising that we are able to achieve such significant improvements on top of models which are already quite large relative to the existing literature. For example, the largest Transformer explored in Vaswani et al. is with 100M parameters for the encoder, and the largest Transformer we have found in the literature is (L=64, H=512, A=2) with 235M parameters. By contrast, BERT BASE contains 110M parameters and BERT LARGE contains 340M parameters.",
+    "sentence_index": 6,
+    "span_text": "Transformer",
     "section": "Effect of Model Size"
   },
   {
@@ -123,6 +175,10 @@
       "start_pos": 894,
       "end_pos": 904
     },
+    "attributes": {},
+    "sentence_context": "It is also perhaps surprising that we are able to achieve such significant improvements on top of models which are already quite large relative to the existing literature. For example, the largest Transformer explored in Vaswani et al. is with 100M parameters for the encoder, and the largest Transformer we have found in the literature is (L=64, H=512, A=2) with 235M parameters. By contrast, BERT BASE contains 110M parameters and BERT LARGE contains 340M parameters.",
+    "sentence_index": 6,
+    "span_text": "parameters",
     "section": "Effect of Model Size"
   },
   {
@@ -132,6 +188,10 @@
       "start_pos": 1014,
       "end_pos": 1024
     },
+    "attributes": {},
+    "sentence_context": "It is also perhaps surprising that we are able to achieve such significant improvements on top of models which are already quite large relative to the existing literature. For example, the largest Transformer explored in Vaswani et al. is with 100M parameters for the encoder, and the largest Transformer we have found in the literature is (L=64, H=512, A=2) with 235M parameters. By contrast, BERT BASE contains 110M parameters and BERT LARGE contains 340M parameters.",
+    "sentence_index": 6,
+    "span_text": "parameters",
     "section": "Effect of Model Size"
   },
   {
@@ -141,6 +201,10 @@
       "start_pos": 1039,
       "end_pos": 1048
     },
+    "attributes": {},
+    "sentence_context": "For example, the largest Transformer explored in Vaswani et al. is with 100M parameters for the encoder, and the largest Transformer we have found in the literature is (L=64, H=512, A=2) with 235M parameters. By contrast, BERT BASE contains 110M parameters and BERT LARGE contains 340M parameters. It has long been known that increasing the model size will lead to continual improvements on large-scale tasks such as machine translation and language modeling, which is demonstrated by the LM perplexity of held-out training data shown in Table 6.",
+    "sentence_index": 7,
+    "span_text": "BERT BASE",
     "section": "Effect of Model Size"
   },
   {
@@ -150,6 +214,10 @@
       "start_pos": 1063,
       "end_pos": 1073
     },
+    "attributes": {},
+    "sentence_context": "For example, the largest Transformer explored in Vaswani et al. is with 100M parameters for the encoder, and the largest Transformer we have found in the literature is (L=64, H=512, A=2) with 235M parameters. By contrast, BERT BASE contains 110M parameters and BERT LARGE contains 340M parameters. It has long been known that increasing the model size will lead to continual improvements on large-scale tasks such as machine translation and language modeling, which is demonstrated by the LM perplexity of held-out training data shown in Table 6.",
+    "sentence_index": 7,
+    "span_text": "parameters",
     "section": "Effect of Model Size"
   },
   {
@@ -159,6 +227,10 @@
       "start_pos": 1078,
       "end_pos": 1088
     },
+    "attributes": {},
+    "sentence_context": "For example, the largest Transformer explored in Vaswani et al. is with 100M parameters for the encoder, and the largest Transformer we have found in the literature is (L=64, H=512, A=2) with 235M parameters. By contrast, BERT BASE contains 110M parameters and BERT LARGE contains 340M parameters. It has long been known that increasing the model size will lead to continual improvements on large-scale tasks such as machine translation and language modeling, which is demonstrated by the LM perplexity of held-out training data shown in Table 6.",
+    "sentence_index": 7,
+    "span_text": "BERT LARGE",
     "section": "Effect of Model Size"
   },
   {
@@ -168,6 +240,10 @@
       "start_pos": 1103,
       "end_pos": 1113
     },
+    "attributes": {},
+    "sentence_context": "For example, the largest Transformer explored in Vaswani et al. is with 100M parameters for the encoder, and the largest Transformer we have found in the literature is (L=64, H=512, A=2) with 235M parameters. By contrast, BERT BASE contains 110M parameters and BERT LARGE contains 340M parameters. It has long been known that increasing the model size will lead to continual improvements on large-scale tasks such as machine translation and language modeling, which is demonstrated by the LM perplexity of held-out training data shown in Table 6.",
+    "sentence_index": 7,
+    "span_text": "parameters",
     "section": "Effect of Model Size"
   },
   {
@@ -177,6 +253,10 @@
       "start_pos": 1234,
       "end_pos": 1253
     },
+    "attributes": {},
+    "sentence_context": "By contrast, BERT BASE contains 110M parameters and BERT LARGE contains 340M parameters. It has long been known that increasing the model size will lead to continual improvements on large-scale tasks such as machine translation and language modeling, which is demonstrated by the LM perplexity of held-out training data shown in Table 6. However, we believe that this is the first work to demonstrate convincingly that scaling to extreme model sizes also leads to large improvements on very small scale tasks, provided that the model has been sufficiently pre-trained.. presented mixed results on the downstream task impact of increasing the pre-trained bi-LM size from two to four layers and Melamud et al. mentioned in passing that increasing hidden dimension size from 200 to 600 helped, but increasing further to 1,000 did not bring further improvements.",
+    "sentence_index": 8,
+    "span_text": "machine translation",
     "section": "Effect of Model Size"
   },
   {
@@ -186,6 +266,10 @@
       "start_pos": 1258,
       "end_pos": 1275
     },
+    "attributes": {},
+    "sentence_context": "By contrast, BERT BASE contains 110M parameters and BERT LARGE contains 340M parameters. It has long been known that increasing the model size will lead to continual improvements on large-scale tasks such as machine translation and language modeling, which is demonstrated by the LM perplexity of held-out training data shown in Table 6. However, we believe that this is the first work to demonstrate convincingly that scaling to extreme model sizes also leads to large improvements on very small scale tasks, provided that the model has been sufficiently pre-trained.. presented mixed results on the downstream task impact of increasing the pre-trained bi-LM size from two to four layers and Melamud et al. mentioned in passing that increasing hidden dimension size from 200 to 600 helped, but increasing further to 1,000 did not bring further improvements.",
+    "sentence_index": 8,
+    "span_text": "language modeling",
     "section": "Effect of Model Size"
   },
   {
@@ -195,6 +279,10 @@
       "start_pos": 1306,
       "end_pos": 1319
     },
+    "attributes": {},
+    "sentence_context": "By contrast, BERT BASE contains 110M parameters and BERT LARGE contains 340M parameters. It has long been known that increasing the model size will lead to continual improvements on large-scale tasks such as machine translation and language modeling, which is demonstrated by the LM perplexity of held-out training data shown in Table 6. However, we believe that this is the first work to demonstrate convincingly that scaling to extreme model sizes also leads to large improvements on very small scale tasks, provided that the model has been sufficiently pre-trained.. presented mixed results on the downstream task impact of increasing the pre-trained bi-LM size from two to four layers and Melamud et al. mentioned in passing that increasing hidden dimension size from 200 to 600 helped, but increasing further to 1,000 did not bring further improvements.",
+    "sentence_index": 8,
+    "span_text": "LM perplexity",
     "section": "Effect of Model Size"
   },
   {
@@ -204,6 +292,10 @@
       "start_pos": 1332,
       "end_pos": 1345
     },
+    "attributes": {},
+    "sentence_context": "By contrast, BERT BASE contains 110M parameters and BERT LARGE contains 340M parameters. It has long been known that increasing the model size will lead to continual improvements on large-scale tasks such as machine translation and language modeling, which is demonstrated by the LM perplexity of held-out training data shown in Table 6. However, we believe that this is the first work to demonstrate convincingly that scaling to extreme model sizes also leads to large improvements on very small scale tasks, provided that the model has been sufficiently pre-trained.. presented mixed results on the downstream task impact of increasing the pre-trained bi-LM size from two to four layers and Melamud et al. mentioned in passing that increasing hidden dimension size from 200 to 600 helped, but increasing further to 1,000 did not bring further improvements.",
+    "sentence_index": 8,
+    "span_text": "training data",
     "section": "Effect of Model Size"
   },
   {
@@ -213,6 +305,10 @@
       "start_pos": 1464,
       "end_pos": 1475
     },
+    "attributes": {},
+    "sentence_context": "It has long been known that increasing the model size will lead to continual improvements on large-scale tasks such as machine translation and language modeling, which is demonstrated by the LM perplexity of held-out training data shown in Table 6. However, we believe that this is the first work to demonstrate convincingly that scaling to extreme model sizes also leads to large improvements on very small scale tasks, provided that the model has been sufficiently pre-trained.. presented mixed results on the downstream task impact of increasing the pre-trained bi-LM size from two to four layers and Melamud et al. mentioned in passing that increasing hidden dimension size from 200 to 600 helped, but increasing further to 1,000 did not bring further improvements. Both of these prior works used a featurebased approach -we hypothesize that when the model is fine-tuned directly on the downstream tasks and uses only a very small number of randomly initialized additional parameters, the taskspecific models can benefit from the larger, more expressive pre-trained representations even when downstream task data is very small.",
+    "sentence_index": 9,
+    "span_text": "model sizes",
     "section": "Effect of Model Size"
   },
   {
@@ -222,6 +318,10 @@
       "start_pos": 1582,
       "end_pos": 1593
     },
+    "attributes": {},
+    "sentence_context": "It has long been known that increasing the model size will lead to continual improvements on large-scale tasks such as machine translation and language modeling, which is demonstrated by the LM perplexity of held-out training data shown in Table 6. However, we believe that this is the first work to demonstrate convincingly that scaling to extreme model sizes also leads to large improvements on very small scale tasks, provided that the model has been sufficiently pre-trained.. presented mixed results on the downstream task impact of increasing the pre-trained bi-LM size from two to four layers and Melamud et al. mentioned in passing that increasing hidden dimension size from 200 to 600 helped, but increasing further to 1,000 did not bring further improvements. Both of these prior works used a featurebased approach -we hypothesize that when the model is fine-tuned directly on the downstream tasks and uses only a very small number of randomly initialized additional parameters, the taskspecific models can benefit from the larger, more expressive pre-trained representations even when downstream task data is very small.",
+    "sentence_index": 9,
+    "span_text": "pre-trained",
     "section": "Effect of Model Size"
   },
   {
@@ -231,6 +331,10 @@
       "start_pos": 1627,
       "end_pos": 1642
     },
+    "attributes": {},
+    "sentence_context": "It has long been known that increasing the model size will lead to continual improvements on large-scale tasks such as machine translation and language modeling, which is demonstrated by the LM perplexity of held-out training data shown in Table 6. However, we believe that this is the first work to demonstrate convincingly that scaling to extreme model sizes also leads to large improvements on very small scale tasks, provided that the model has been sufficiently pre-trained.. presented mixed results on the downstream task impact of increasing the pre-trained bi-LM size from two to four layers and Melamud et al. mentioned in passing that increasing hidden dimension size from 200 to 600 helped, but increasing further to 1,000 did not bring further improvements. Both of these prior works used a featurebased approach -we hypothesize that when the model is fine-tuned directly on the downstream tasks and uses only a very small number of randomly initialized additional parameters, the taskspecific models can benefit from the larger, more expressive pre-trained representations even when downstream task data is very small.",
+    "sentence_index": 9,
+    "span_text": "downstream task",
     "section": "Effect of Model Size"
   },
   {
@@ -240,6 +344,10 @@
       "start_pos": 1668,
       "end_pos": 1685
     },
+    "attributes": {},
+    "sentence_context": "It has long been known that increasing the model size will lead to continual improvements on large-scale tasks such as machine translation and language modeling, which is demonstrated by the LM perplexity of held-out training data shown in Table 6. However, we believe that this is the first work to demonstrate convincingly that scaling to extreme model sizes also leads to large improvements on very small scale tasks, provided that the model has been sufficiently pre-trained.. presented mixed results on the downstream task impact of increasing the pre-trained bi-LM size from two to four layers and Melamud et al. mentioned in passing that increasing hidden dimension size from 200 to 600 helped, but increasing further to 1,000 did not bring further improvements. Both of these prior works used a featurebased approach -we hypothesize that when the model is fine-tuned directly on the downstream tasks and uses only a very small number of randomly initialized additional parameters, the taskspecific models can benefit from the larger, more expressive pre-trained representations even when downstream task data is very small.",
+    "sentence_index": 9,
+    "span_text": "pre-trained bi-LM",
     "section": "Effect of Model Size"
   },
   {
@@ -249,6 +357,10 @@
       "start_pos": 1918,
       "end_pos": 1939
     },
+    "attributes": {},
+    "sentence_context": "However, we believe that this is the first work to demonstrate convincingly that scaling to extreme model sizes also leads to large improvements on very small scale tasks, provided that the model has been sufficiently pre-trained.. presented mixed results on the downstream task impact of increasing the pre-trained bi-LM size from two to four layers and Melamud et al. mentioned in passing that increasing hidden dimension size from 200 to 600 helped, but increasing further to 1,000 did not bring further improvements. Both of these prior works used a featurebased approach -we hypothesize that when the model is fine-tuned directly on the downstream tasks and uses only a very small number of randomly initialized additional parameters, the taskspecific models can benefit from the larger, more expressive pre-trained representations even when downstream task data is very small.",
+    "sentence_index": 10,
+    "span_text": "featurebased approach",
     "section": "Effect of Model Size"
   },
   {
@@ -258,6 +370,10 @@
       "start_pos": 2006,
       "end_pos": 2022
     },
+    "attributes": {},
+    "sentence_context": "However, we believe that this is the first work to demonstrate convincingly that scaling to extreme model sizes also leads to large improvements on very small scale tasks, provided that the model has been sufficiently pre-trained.. presented mixed results on the downstream task impact of increasing the pre-trained bi-LM size from two to four layers and Melamud et al. mentioned in passing that increasing hidden dimension size from 200 to 600 helped, but increasing further to 1,000 did not bring further improvements. Both of these prior works used a featurebased approach -we hypothesize that when the model is fine-tuned directly on the downstream tasks and uses only a very small number of randomly initialized additional parameters, the taskspecific models can benefit from the larger, more expressive pre-trained representations even when downstream task data is very small.",
+    "sentence_index": 10,
+    "span_text": "downstream tasks",
     "section": "Effect of Model Size"
   },
   {
@@ -267,6 +383,10 @@
       "start_pos": 2173,
       "end_pos": 2200
     },
+    "attributes": {},
+    "sentence_context": "However, we believe that this is the first work to demonstrate convincingly that scaling to extreme model sizes also leads to large improvements on very small scale tasks, provided that the model has been sufficiently pre-trained.. presented mixed results on the downstream task impact of increasing the pre-trained bi-LM size from two to four layers and Melamud et al. mentioned in passing that increasing hidden dimension size from 200 to 600 helped, but increasing further to 1,000 did not bring further improvements. Both of these prior works used a featurebased approach -we hypothesize that when the model is fine-tuned directly on the downstream tasks and uses only a very small number of randomly initialized additional parameters, the taskspecific models can benefit from the larger, more expressive pre-trained representations even when downstream task data is very small.",
+    "sentence_index": 10,
+    "span_text": "pre-trained representations",
     "section": "Effect of Model Size"
   }
 ]

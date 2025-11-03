@@ -6,6 +6,10 @@
       "start_pos": 37,
       "end_pos": 54
     },
+    "attributes": {},
+    "sentence_context": "Recent empirical improvements due to transfer learning with language models have demonstrated that rich, unsupervised pre-training is an integral part of many language understanding systems. In particular, these results enable even low-resource tasks to benefit from deep unidirectional architectures.",
+    "sentence_index": 0,
+    "span_text": "transfer learning",
     "section": "Conclusion"
   },
   {
@@ -15,6 +19,10 @@
       "start_pos": 60,
       "end_pos": 75
     },
+    "attributes": {},
+    "sentence_context": "Recent empirical improvements due to transfer learning with language models have demonstrated that rich, unsupervised pre-training is an integral part of many language understanding systems. In particular, these results enable even low-resource tasks to benefit from deep unidirectional architectures.",
+    "sentence_index": 0,
+    "span_text": "language models",
     "section": "Conclusion"
   },
   {
@@ -24,6 +32,10 @@
       "start_pos": 105,
       "end_pos": 130
     },
+    "attributes": {},
+    "sentence_context": "Recent empirical improvements due to transfer learning with language models have demonstrated that rich, unsupervised pre-training is an integral part of many language understanding systems. In particular, these results enable even low-resource tasks to benefit from deep unidirectional architectures.",
+    "sentence_index": 0,
+    "span_text": "unsupervised pre-training",
     "section": "Conclusion"
   },
   {
@@ -33,6 +45,10 @@
       "start_pos": 159,
       "end_pos": 181
     },
+    "attributes": {},
+    "sentence_context": "Recent empirical improvements due to transfer learning with language models have demonstrated that rich, unsupervised pre-training is an integral part of many language understanding systems. In particular, these results enable even low-resource tasks to benefit from deep unidirectional architectures.",
+    "sentence_index": 0,
+    "span_text": "language understanding",
     "section": "Conclusion"
   },
   {
@@ -42,6 +58,10 @@
       "start_pos": 267,
       "end_pos": 300
     },
+    "attributes": {},
+    "sentence_context": "Recent empirical improvements due to transfer learning with language models have demonstrated that rich, unsupervised pre-training is an integral part of many language understanding systems. In particular, these results enable even low-resource tasks to benefit from deep unidirectional architectures. Our major contribution is further generalizing these findings to deep bidirectional architectures, allowing the same pre-trained model to successfully tackle a broad set of NLP tasks.",
+    "sentence_index": 1,
+    "span_text": "deep unidirectional architectures",
     "section": "Conclusion"
   },
   {
@@ -51,6 +71,10 @@
       "start_pos": 367,
       "end_pos": 399
     },
+    "attributes": {},
+    "sentence_context": "In particular, these results enable even low-resource tasks to benefit from deep unidirectional architectures. Our major contribution is further generalizing these findings to deep bidirectional architectures, allowing the same pre-trained model to successfully tackle a broad set of NLP tasks. Masked LM and the Masking Procedure Assuming the unlabeled sentence is my dog is hairy, and during the random masking procedure we chose the 4-th token (which corresponding to hairy), our masking procedure can be further illustrated by 80% of the time: Replace the word with the [MASK] token, e.g., my dog is hairy \u2192 10% of the time: Replace the word with a random word, e.g., my dog is hairy \u2192 my dog is apple 10% of the time: Keep the word unchanged, e.g., my dog is hairy \u2192 my dog is hairy.",
+    "sentence_index": 2,
+    "span_text": "deep bidirectional architectures",
     "section": "Conclusion"
   },
   {
@@ -60,6 +84,10 @@
       "start_pos": 475,
       "end_pos": 484
     },
+    "attributes": {},
+    "sentence_context": "In particular, these results enable even low-resource tasks to benefit from deep unidirectional architectures. Our major contribution is further generalizing these findings to deep bidirectional architectures, allowing the same pre-trained model to successfully tackle a broad set of NLP tasks. Masked LM and the Masking Procedure Assuming the unlabeled sentence is my dog is hairy, and during the random masking procedure we chose the 4-th token (which corresponding to hairy), our masking procedure can be further illustrated by 80% of the time: Replace the word with the [MASK] token, e.g., my dog is hairy \u2192 10% of the time: Replace the word with a random word, e.g., my dog is hairy \u2192 my dog is apple 10% of the time: Keep the word unchanged, e.g., my dog is hairy \u2192 my dog is hairy.",
+    "sentence_index": 2,
+    "span_text": "NLP tasks",
     "section": "Conclusion"
   },
   {
@@ -69,6 +97,10 @@
       "start_pos": 486,
       "end_pos": 495
     },
+    "attributes": {},
+    "sentence_context": "Our major contribution is further generalizing these findings to deep bidirectional architectures, allowing the same pre-trained model to successfully tackle a broad set of NLP tasks. Masked LM and the Masking Procedure Assuming the unlabeled sentence is my dog is hairy, and during the random masking procedure we chose the 4-th token (which corresponding to hairy), our masking procedure can be further illustrated by 80% of the time: Replace the word with the [MASK] token, e.g., my dog is hairy \u2192 10% of the time: Replace the word with a random word, e.g., my dog is hairy \u2192 my dog is apple 10% of the time: Keep the word unchanged, e.g., my dog is hairy \u2192 my dog is hairy. The purpose of this is to bias the representation towards the actual observed word.",
+    "sentence_index": 3,
+    "span_text": "Masked LM",
     "section": "Conclusion"
   },
   {
@@ -78,6 +110,10 @@
       "start_pos": 504,
       "end_pos": 521
     },
+    "attributes": {},
+    "sentence_context": "Our major contribution is further generalizing these findings to deep bidirectional architectures, allowing the same pre-trained model to successfully tackle a broad set of NLP tasks. Masked LM and the Masking Procedure Assuming the unlabeled sentence is my dog is hairy, and during the random masking procedure we chose the 4-th token (which corresponding to hairy), our masking procedure can be further illustrated by 80% of the time: Replace the word with the [MASK] token, e.g., my dog is hairy \u2192 10% of the time: Replace the word with a random word, e.g., my dog is hairy \u2192 my dog is apple 10% of the time: Keep the word unchanged, e.g., my dog is hairy \u2192 my dog is hairy. The purpose of this is to bias the representation towards the actual observed word.",
+    "sentence_index": 3,
+    "span_text": "Masking Procedure",
     "section": "Conclusion"
   },
   {
@@ -87,6 +123,10 @@
       "start_pos": 535,
       "end_pos": 553
     },
+    "attributes": {},
+    "sentence_context": "Our major contribution is further generalizing these findings to deep bidirectional architectures, allowing the same pre-trained model to successfully tackle a broad set of NLP tasks. Masked LM and the Masking Procedure Assuming the unlabeled sentence is my dog is hairy, and during the random masking procedure we chose the 4-th token (which corresponding to hairy), our masking procedure can be further illustrated by 80% of the time: Replace the word with the [MASK] token, e.g., my dog is hairy \u2192 10% of the time: Replace the word with a random word, e.g., my dog is hairy \u2192 my dog is apple 10% of the time: Keep the word unchanged, e.g., my dog is hairy \u2192 my dog is hairy. The purpose of this is to bias the representation towards the actual observed word.",
+    "sentence_index": 3,
+    "span_text": "unlabeled sentence",
     "section": "Conclusion"
   },
   {
@@ -96,6 +136,10 @@
       "start_pos": 589,
       "end_pos": 613
     },
+    "attributes": {},
+    "sentence_context": "Our major contribution is further generalizing these findings to deep bidirectional architectures, allowing the same pre-trained model to successfully tackle a broad set of NLP tasks. Masked LM and the Masking Procedure Assuming the unlabeled sentence is my dog is hairy, and during the random masking procedure we chose the 4-th token (which corresponding to hairy), our masking procedure can be further illustrated by 80% of the time: Replace the word with the [MASK] token, e.g., my dog is hairy \u2192 10% of the time: Replace the word with a random word, e.g., my dog is hairy \u2192 my dog is apple 10% of the time: Keep the word unchanged, e.g., my dog is hairy \u2192 my dog is hairy. The purpose of this is to bias the representation towards the actual observed word.",
+    "sentence_index": 3,
+    "span_text": "random masking procedure",
     "section": "Conclusion"
   },
   {
@@ -105,6 +149,10 @@
       "start_pos": 674,
       "end_pos": 691
     },
+    "attributes": {},
+    "sentence_context": "Our major contribution is further generalizing these findings to deep bidirectional architectures, allowing the same pre-trained model to successfully tackle a broad set of NLP tasks. Masked LM and the Masking Procedure Assuming the unlabeled sentence is my dog is hairy, and during the random masking procedure we chose the 4-th token (which corresponding to hairy), our masking procedure can be further illustrated by 80% of the time: Replace the word with the [MASK] token, e.g., my dog is hairy \u2192 10% of the time: Replace the word with a random word, e.g., my dog is hairy \u2192 my dog is apple 10% of the time: Keep the word unchanged, e.g., my dog is hairy \u2192 my dog is hairy. The purpose of this is to bias the representation towards the actual observed word.",
+    "sentence_index": 3,
+    "span_text": "masking procedure",
     "section": "Conclusion"
   },
   {
@@ -114,6 +162,10 @@
       "start_pos": 766,
       "end_pos": 770
     },
+    "attributes": {},
+    "sentence_context": "Our major contribution is further generalizing these findings to deep bidirectional architectures, allowing the same pre-trained model to successfully tackle a broad set of NLP tasks. Masked LM and the Masking Procedure Assuming the unlabeled sentence is my dog is hairy, and during the random masking procedure we chose the 4-th token (which corresponding to hairy), our masking procedure can be further illustrated by 80% of the time: Replace the word with the [MASK] token, e.g., my dog is hairy \u2192 10% of the time: Replace the word with a random word, e.g., my dog is hairy \u2192 my dog is apple 10% of the time: Keep the word unchanged, e.g., my dog is hairy \u2192 my dog is hairy. The purpose of this is to bias the representation towards the actual observed word.",
+    "sentence_index": 3,
+    "span_text": "MASK",
     "section": "Conclusion"
   },
   {
@@ -123,6 +175,10 @@
       "start_pos": 504,
       "end_pos": 521
     },
+    "attributes": {},
+    "sentence_context": "Our major contribution is further generalizing these findings to deep bidirectional architectures, allowing the same pre-trained model to successfully tackle a broad set of NLP tasks. Masked LM and the Masking Procedure Assuming the unlabeled sentence is my dog is hairy, and during the random masking procedure we chose the 4-th token (which corresponding to hairy), our masking procedure can be further illustrated by 80% of the time: Replace the word with the [MASK] token, e.g., my dog is hairy \u2192 10% of the time: Replace the word with a random word, e.g., my dog is hairy \u2192 my dog is apple 10% of the time: Keep the word unchanged, e.g., my dog is hairy \u2192 my dog is hairy. The purpose of this is to bias the representation towards the actual observed word.",
+    "sentence_index": 3,
+    "span_text": "Masking Procedure",
     "section": "Conclusion"
   },
   {
@@ -132,6 +188,10 @@
       "start_pos": 844,
       "end_pos": 855
     },
+    "attributes": {},
+    "sentence_context": "Our major contribution is further generalizing these findings to deep bidirectional architectures, allowing the same pre-trained model to successfully tackle a broad set of NLP tasks. Masked LM and the Masking Procedure Assuming the unlabeled sentence is my dog is hairy, and during the random masking procedure we chose the 4-th token (which corresponding to hairy), our masking procedure can be further illustrated by 80% of the time: Replace the word with the [MASK] token, e.g., my dog is hairy \u2192 10% of the time: Replace the word with a random word, e.g., my dog is hairy \u2192 my dog is apple 10% of the time: Keep the word unchanged, e.g., my dog is hairy \u2192 my dog is hairy. The purpose of this is to bias the representation towards the actual observed word.",
+    "sentence_index": 3,
+    "span_text": "random word",
     "section": "Conclusion"
   },
   {
@@ -141,6 +201,10 @@
       "start_pos": 504,
       "end_pos": 521
     },
+    "attributes": {},
+    "sentence_context": "Our major contribution is further generalizing these findings to deep bidirectional architectures, allowing the same pre-trained model to successfully tackle a broad set of NLP tasks. Masked LM and the Masking Procedure Assuming the unlabeled sentence is my dog is hairy, and during the random masking procedure we chose the 4-th token (which corresponding to hairy), our masking procedure can be further illustrated by 80% of the time: Replace the word with the [MASK] token, e.g., my dog is hairy \u2192 10% of the time: Replace the word with a random word, e.g., my dog is hairy \u2192 my dog is apple 10% of the time: Keep the word unchanged, e.g., my dog is hairy \u2192 my dog is hairy. The purpose of this is to bias the representation towards the actual observed word.",
+    "sentence_index": 3,
+    "span_text": "Masking Procedure",
     "section": "Conclusion"
   },
   {
@@ -150,6 +214,10 @@
       "start_pos": 1015,
       "end_pos": 1029
     },
+    "attributes": {},
+    "sentence_context": "Masked LM and the Masking Procedure Assuming the unlabeled sentence is my dog is hairy, and during the random masking procedure we chose the 4-th token (which corresponding to hairy), our masking procedure can be further illustrated by 80% of the time: Replace the word with the [MASK] token, e.g., my dog is hairy \u2192 10% of the time: Replace the word with a random word, e.g., my dog is hairy \u2192 my dog is apple 10% of the time: Keep the word unchanged, e.g., my dog is hairy \u2192 my dog is hairy. The purpose of this is to bias the representation towards the actual observed word. The advantage of this procedure is that the Transformer encoder does not know which words it will be asked to predict or which have been replaced by random words, so it is forced to keep a distributional contextual representation of every input token.",
+    "sentence_index": 4,
+    "span_text": "representation",
     "section": "Conclusion"
   },
   {
@@ -159,6 +227,10 @@
       "start_pos": 1108,
       "end_pos": 1127
     },
+    "attributes": {},
+    "sentence_context": "The purpose of this is to bias the representation towards the actual observed word. The advantage of this procedure is that the Transformer encoder does not know which words it will be asked to predict or which have been replaced by random words, so it is forced to keep a distributional contextual representation of every input token. Additionally, because random replacement only occurs for 1.5% of all tokens (i.e., 10% of 15%), this does not seem to harm the model's language understanding capability.",
+    "sentence_index": 5,
+    "span_text": "Transformer encoder",
     "section": "Conclusion"
   },
   {
@@ -168,6 +240,10 @@
       "start_pos": 1213,
       "end_pos": 1225
     },
+    "attributes": {},
+    "sentence_context": "The purpose of this is to bias the representation towards the actual observed word. The advantage of this procedure is that the Transformer encoder does not know which words it will be asked to predict or which have been replaced by random words, so it is forced to keep a distributional contextual representation of every input token. Additionally, because random replacement only occurs for 1.5% of all tokens (i.e., 10% of 15%), this does not seem to harm the model's language understanding capability.",
+    "sentence_index": 5,
+    "span_text": "random words",
     "section": "Conclusion"
   },
   {
@@ -177,6 +253,10 @@
       "start_pos": 1268,
       "end_pos": 1293
     },
+    "attributes": {},
+    "sentence_context": "The purpose of this is to bias the representation towards the actual observed word. The advantage of this procedure is that the Transformer encoder does not know which words it will be asked to predict or which have been replaced by random words, so it is forced to keep a distributional contextual representation of every input token. Additionally, because random replacement only occurs for 1.5% of all tokens (i.e., 10% of 15%), this does not seem to harm the model's language understanding capability.",
+    "sentence_index": 5,
+    "span_text": "contextual representation",
     "section": "Conclusion"
   },
   {
@@ -186,6 +266,10 @@
       "start_pos": 1303,
       "end_pos": 1314
     },
+    "attributes": {},
+    "sentence_context": "The purpose of this is to bias the representation towards the actual observed word. The advantage of this procedure is that the Transformer encoder does not know which words it will be asked to predict or which have been replaced by random words, so it is forced to keep a distributional contextual representation of every input token. Additionally, because random replacement only occurs for 1.5% of all tokens (i.e., 10% of 15%), this does not seem to harm the model's language understanding capability.",
+    "sentence_index": 5,
+    "span_text": "input token",
     "section": "Conclusion"
   },
   {
@@ -195,6 +279,10 @@
       "start_pos": 1338,
       "end_pos": 1356
     },
+    "attributes": {},
+    "sentence_context": "The advantage of this procedure is that the Transformer encoder does not know which words it will be asked to predict or which have been replaced by random words, so it is forced to keep a distributional contextual representation of every input token. Additionally, because random replacement only occurs for 1.5% of all tokens (i.e., 10% of 15%), this does not seem to harm the model's language understanding capability. In Section C.2, we evaluate the impact this procedure.",
+    "sentence_index": 6,
+    "span_text": "random replacement",
     "section": "Conclusion"
   },
   {
@@ -204,12 +292,10 @@
       "start_pos": 1451,
       "end_pos": 1484
     },
-    "section": "Conclusion"
-  },
-  {
-    "text": "language model training",
-    "type": "other",
-    "char_interval": null,
+    "attributes": {},
+    "sentence_context": "The advantage of this procedure is that the Transformer encoder does not know which words it will be asked to predict or which have been replaced by random words, so it is forced to keep a distributional contextual representation of every input token. Additionally, because random replacement only occurs for 1.5% of all tokens (i.e., 10% of 15%), this does not seem to harm the model's language understanding capability. In Section C.2, we evaluate the impact this procedure.",
+    "sentence_index": 6,
+    "span_text": "language understanding capability",
     "section": "Conclusion"
   },
   {
@@ -219,6 +305,10 @@
       "start_pos": 1591,
       "end_pos": 1600
     },
+    "attributes": {},
+    "sentence_context": "In Section C.2, we evaluate the impact this procedure. Compared to standard langauge model training, the masked LM only make predictions on 15% of tokens in each batch, which suggests that more pre-training steps may be required for the model To generate each training input sequence, we sample two spans of text from the corpus, which we refer to as \"sentences\" even though they are typically much longer than single sentences (but can be shorter also). The first sentence receives the A embedding and the second receives the B embedding.50% of the time B is the actual next sentence that follows A and 50% of the time it is a random sentence, which is done for the \"next sentence prediction\" task.",
+    "sentence_index": 8,
+    "span_text": "masked LM",
     "section": "Conclusion"
   },
   {
@@ -228,6 +318,10 @@
       "start_pos": 2154,
       "end_pos": 2178
     },
+    "attributes": {},
+    "sentence_context": "Compared to standard langauge model training, the masked LM only make predictions on 15% of tokens in each batch, which suggests that more pre-training steps may be required for the model To generate each training input sequence, we sample two spans of text from the corpus, which we refer to as \"sentences\" even though they are typically much longer than single sentences (but can be shorter also). The first sentence receives the A embedding and the second receives the B embedding.50% of the time B is the actual next sentence that follows A and 50% of the time it is a random sentence, which is done for the \"next sentence prediction\" task. They are sampled such that the combined length is \u2264 512 tokens.",
+    "sentence_index": 9,
+    "span_text": "next sentence prediction",
     "section": "Conclusion"
   },
   {
@@ -237,6 +331,10 @@
       "start_pos": 2573,
       "end_pos": 2579
     },
+    "attributes": {},
+    "sentence_context": "The LM masking is applied after Word Piece tokenization with a uniform masking rate of 15%, and no special consideration given to partial word pieces. We train with batch size of 256 sequences (256 sequences 512 tokens = 128,000 tokens/batch) for 1,000,000 steps, which is approximately 40 epochs over the 3.3 billion word corpus. We use Adam with learning rate of 1e-4, \u03b2 1 = 0.9, \u03b2 2 = 0.999, L 2 weight decay of 0.01, learning rate warmup over the first 10,000 steps, and linear decay of the learning rate.",
+    "sentence_index": 12,
+    "span_text": "corpus",
     "section": "Conclusion"
   },
   {
@@ -246,6 +344,10 @@
       "start_pos": 2588,
       "end_pos": 2592
     },
+    "attributes": {},
+    "sentence_context": "We train with batch size of 256 sequences (256 sequences 512 tokens = 128,000 tokens/batch) for 1,000,000 steps, which is approximately 40 epochs over the 3.3 billion word corpus. We use Adam with learning rate of 1e-4, \u03b2 1 = 0.9, \u03b2 2 = 0.999, L 2 weight decay of 0.01, learning rate warmup over the first 10,000 steps, and linear decay of the learning rate. We use a dropout probability of 0.1 on all layers.",
+    "sentence_index": 13,
+    "span_text": "Adam",
     "section": "Conclusion"
   },
   {
@@ -255,6 +357,10 @@
       "start_pos": 2894,
       "end_pos": 2907
     },
+    "attributes": {},
+    "sentence_context": "We use a gelu activation rather than the standard relu, following Open AI GPT. The training loss is the sum of the mean masked LM likelihood and the mean next sentence prediction likelihood. Training of BERT BASE was performed on 4 Cloud TPUs in Pod configuration (16 TPU chips total).",
+    "sentence_index": 16,
+    "span_text": "training loss",
     "section": "Conclusion"
   },
   {
@@ -264,6 +370,10 @@
       "start_pos": 2931,
       "end_pos": 2951
     },
+    "attributes": {},
+    "sentence_context": "We use a gelu activation rather than the standard relu, following Open AI GPT. The training loss is the sum of the mean masked LM likelihood and the mean next sentence prediction likelihood. Training of BERT BASE was performed on 4 Cloud TPUs in Pod configuration (16 TPU chips total).",
+    "sentence_index": 16,
+    "span_text": "masked LM likelihood",
     "section": "Conclusion"
   },
   {
@@ -273,6 +383,10 @@
       "start_pos": 2965,
       "end_pos": 3000
     },
+    "attributes": {},
+    "sentence_context": "We use a gelu activation rather than the standard relu, following Open AI GPT. The training loss is the sum of the mean masked LM likelihood and the mean next sentence prediction likelihood. Training of BERT BASE was performed on 4 Cloud TPUs in Pod configuration (16 TPU chips total).",
+    "sentence_index": 16,
+    "span_text": "next sentence prediction likelihood",
     "section": "Conclusion"
   },
   {
@@ -282,12 +396,10 @@
       "start_pos": 3014,
       "end_pos": 3023
     },
-    "section": "Conclusion"
-  },
-  {
-    "text": "pretraining data",
-    "type": "dataset",
-    "char_interval": null,
+    "attributes": {},
+    "sentence_context": "The training loss is the sum of the mean masked LM likelihood and the mean next sentence prediction likelihood. Training of BERT BASE was performed on 4 Cloud TPUs in Pod configuration (16 TPU chips total). 13Training of BERT LARGE was performed on 16 Cloud TPUs (64 TPU chips total).",
+    "sentence_index": 17,
+    "span_text": "BERT BASE",
     "section": "Conclusion"
   },
   {
@@ -297,6 +409,10 @@
       "start_pos": 3111,
       "end_pos": 3121
     },
+    "attributes": {},
+    "sentence_context": "Training of BERT BASE was performed on 4 Cloud TPUs in Pod configuration (16 TPU chips total). 13Training of BERT LARGE was performed on 16 Cloud TPUs (64 TPU chips total). Each pretraining took 4 days to complete.",
+    "sentence_index": 18,
+    "span_text": "BERT LARGE",
     "section": "Conclusion"
   }
 ]

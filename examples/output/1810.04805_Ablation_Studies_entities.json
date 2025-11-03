@@ -6,6 +6,10 @@
       "start_pos": 28,
       "end_pos": 48
     },
+    "attributes": {},
+    "sentence_context": "In this section, we perform ablation experiments over a number of facets of BERT in order to better understand their relative importance. Additional ablation studies can be found in Appendix C.",
+    "sentence_index": 0,
+    "span_text": "ablation experiments",
     "section": "Ablation Studies"
   },
   {
@@ -15,6 +19,10 @@
       "start_pos": 76,
       "end_pos": 80
     },
+    "attributes": {},
+    "sentence_context": "In this section, we perform ablation experiments over a number of facets of BERT in order to better understand their relative importance. Additional ablation studies can be found in Appendix C.",
+    "sentence_index": 0,
+    "span_text": "BERT",
     "section": "Ablation Studies"
   },
   {
@@ -24,6 +32,10 @@
       "start_pos": 149,
       "end_pos": 165
     },
+    "attributes": {},
+    "sentence_context": "In this section, we perform ablation experiments over a number of facets of BERT in order to better understand their relative importance. Additional ablation studies can be found in Appendix C.",
+    "sentence_index": 1,
+    "span_text": "ablation studies",
     "section": "Ablation Studies"
   }
 ]

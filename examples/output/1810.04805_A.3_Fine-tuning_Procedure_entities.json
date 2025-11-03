@@ -6,6 +6,10 @@
       "start_pos": 28,
       "end_pos": 43
     },
+    "attributes": {},
+    "sentence_context": "For fine-tuning, most model hyperparameters are the same as in pre-training, with the exception of the batch size, learning rate, and number of training epochs. The dropout probability was always kept at 0.1.",
+    "sentence_index": 0,
+    "span_text": "hyperparameters",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -15,6 +19,10 @@
       "start_pos": 103,
       "end_pos": 113
     },
+    "attributes": {},
+    "sentence_context": "For fine-tuning, most model hyperparameters are the same as in pre-training, with the exception of the batch size, learning rate, and number of training epochs. The dropout probability was always kept at 0.1.",
+    "sentence_index": 0,
+    "span_text": "batch size",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -24,6 +32,10 @@
       "start_pos": 115,
       "end_pos": 128
     },
+    "attributes": {},
+    "sentence_context": "For fine-tuning, most model hyperparameters are the same as in pre-training, with the exception of the batch size, learning rate, and number of training epochs. The dropout probability was always kept at 0.1.",
+    "sentence_index": 0,
+    "span_text": "learning rate",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -33,6 +45,10 @@
       "start_pos": 134,
       "end_pos": 159
     },
+    "attributes": {},
+    "sentence_context": "For fine-tuning, most model hyperparameters are the same as in pre-training, with the exception of the batch size, learning rate, and number of training epochs. The dropout probability was always kept at 0.1.",
+    "sentence_index": 0,
+    "span_text": "number of training epochs",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -42,6 +58,10 @@
       "start_pos": 165,
       "end_pos": 184
     },
+    "attributes": {},
+    "sentence_context": "For fine-tuning, most model hyperparameters are the same as in pre-training, with the exception of the batch size, learning rate, and number of training epochs. The dropout probability was always kept at 0.1. The optimal hyperparameter values are task-specific, but we found the following range of possible values to work well across all tasks: Batch size: 16, 32 We also observed that large data sets (e.g., 100k+ labeled training examples) were far less sensitive to hyperparameter choice than small data sets.",
+    "sentence_index": 1,
+    "span_text": "dropout probability",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -51,6 +71,10 @@
       "start_pos": 221,
       "end_pos": 235
     },
+    "attributes": {},
+    "sentence_context": "The dropout probability was always kept at 0.1. The optimal hyperparameter values are task-specific, but we found the following range of possible values to work well across all tasks: Batch size: 16, 32 We also observed that large data sets (e.g., 100k+ labeled training examples) were far less sensitive to hyperparameter choice than small data sets. Fine-tuning is typically very fast, so it is reasonable to simply run an exhaustive search over the above parameters and choose the model that performs best on the development set.",
+    "sentence_index": 2,
+    "span_text": "hyperparameter",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -60,6 +84,10 @@
       "start_pos": 386,
       "end_pos": 401
     },
+    "attributes": {},
+    "sentence_context": "The dropout probability was always kept at 0.1. The optimal hyperparameter values are task-specific, but we found the following range of possible values to work well across all tasks: Batch size: 16, 32 We also observed that large data sets (e.g., 100k+ labeled training examples) were far less sensitive to hyperparameter choice than small data sets. Fine-tuning is typically very fast, so it is reasonable to simply run an exhaustive search over the above parameters and choose the model that performs best on the development set.",
+    "sentence_index": 2,
+    "span_text": "large data sets",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -69,6 +97,10 @@
       "start_pos": 415,
       "end_pos": 440
     },
+    "attributes": {},
+    "sentence_context": "The dropout probability was always kept at 0.1. The optimal hyperparameter values are task-specific, but we found the following range of possible values to work well across all tasks: Batch size: 16, 32 We also observed that large data sets (e.g., 100k+ labeled training examples) were far less sensitive to hyperparameter choice than small data sets. Fine-tuning is typically very fast, so it is reasonable to simply run an exhaustive search over the above parameters and choose the model that performs best on the development set.",
+    "sentence_index": 2,
+    "span_text": "labeled training examples",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -78,6 +110,10 @@
       "start_pos": 496,
       "end_pos": 511
     },
+    "attributes": {},
+    "sentence_context": "The dropout probability was always kept at 0.1. The optimal hyperparameter values are task-specific, but we found the following range of possible values to work well across all tasks: Batch size: 16, 32 We also observed that large data sets (e.g., 100k+ labeled training examples) were far less sensitive to hyperparameter choice than small data sets. Fine-tuning is typically very fast, so it is reasonable to simply run an exhaustive search over the above parameters and choose the model that performs best on the development set.",
+    "sentence_index": 2,
+    "span_text": "small data sets",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -87,6 +123,10 @@
       "start_pos": 677,
       "end_pos": 692
     },
+    "attributes": {},
+    "sentence_context": "The optimal hyperparameter values are task-specific, but we found the following range of possible values to work well across all tasks: Batch size: 16, 32 We also observed that large data sets (e.g., 100k+ labeled training examples) were far less sensitive to hyperparameter choice than small data sets. Fine-tuning is typically very fast, so it is reasonable to simply run an exhaustive search over the above parameters and choose the model that performs best on the development set. A.4 Comparison of BERT, ELMo,and Open AI GPT Here we studies the differences in recent popular representation learning models including ELMo, Open AI GPT and BERT.",
+    "sentence_index": 3,
+    "span_text": "development set",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -96,6 +136,10 @@
       "start_pos": 712,
       "end_pos": 716
     },
+    "attributes": {},
+    "sentence_context": "Fine-tuning is typically very fast, so it is reasonable to simply run an exhaustive search over the above parameters and choose the model that performs best on the development set. A.4 Comparison of BERT, ELMo,and Open AI GPT Here we studies the differences in recent popular representation learning models including ELMo, Open AI GPT and BERT. The comparisons between the model architectures are shown visually in Figure 3.",
+    "sentence_index": 4,
+    "span_text": "BERT",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -105,6 +149,10 @@
       "start_pos": 718,
       "end_pos": 722
     },
+    "attributes": {},
+    "sentence_context": "Fine-tuning is typically very fast, so it is reasonable to simply run an exhaustive search over the above parameters and choose the model that performs best on the development set. A.4 Comparison of BERT, ELMo,and Open AI GPT Here we studies the differences in recent popular representation learning models including ELMo, Open AI GPT and BERT. The comparisons between the model architectures are shown visually in Figure 3.",
+    "sentence_index": 4,
+    "span_text": "ELMo",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -114,6 +162,10 @@
       "start_pos": 727,
       "end_pos": 738
     },
+    "attributes": {},
+    "sentence_context": "Fine-tuning is typically very fast, so it is reasonable to simply run an exhaustive search over the above parameters and choose the model that performs best on the development set. A.4 Comparison of BERT, ELMo,and Open AI GPT Here we studies the differences in recent popular representation learning models including ELMo, Open AI GPT and BERT. The comparisons between the model architectures are shown visually in Figure 3.",
+    "sentence_index": 4,
+    "span_text": "Open AI GPT",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -123,6 +175,10 @@
       "start_pos": 886,
       "end_pos": 905
     },
+    "attributes": {},
+    "sentence_context": "A.4 Comparison of BERT, ELMo,and Open AI GPT Here we studies the differences in recent popular representation learning models including ELMo, Open AI GPT and BERT. The comparisons between the model architectures are shown visually in Figure 3. Note that in addition to the architecture differences, BERT and Open AI GPT are finetuning approaches, while ELMo is a feature-based approach.",
+    "sentence_index": 5,
+    "span_text": "model architectures",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -132,6 +188,10 @@
       "start_pos": 967,
       "end_pos": 991
     },
+    "attributes": {},
+    "sentence_context": "The comparisons between the model architectures are shown visually in Figure 3. Note that in addition to the architecture differences, BERT and Open AI GPT are finetuning approaches, while ELMo is a feature-based approach. The most comparable existing pre-training method to BERT is Open AI GPT, which trains a left-to-right Transformer LM on a large text corpus.",
+    "sentence_index": 6,
+    "span_text": "architecture differences",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -141,6 +201,10 @@
       "start_pos": 1018,
       "end_pos": 1039
     },
+    "attributes": {},
+    "sentence_context": "The comparisons between the model architectures are shown visually in Figure 3. Note that in addition to the architecture differences, BERT and Open AI GPT are finetuning approaches, while ELMo is a feature-based approach. The most comparable existing pre-training method to BERT is Open AI GPT, which trains a left-to-right Transformer LM on a large text corpus.",
+    "sentence_index": 6,
+    "span_text": "finetuning approaches",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -150,6 +214,10 @@
       "start_pos": 1057,
       "end_pos": 1079
     },
+    "attributes": {},
+    "sentence_context": "The comparisons between the model architectures are shown visually in Figure 3. Note that in addition to the architecture differences, BERT and Open AI GPT are finetuning approaches, while ELMo is a feature-based approach. The most comparable existing pre-training method to BERT is Open AI GPT, which trains a left-to-right Transformer LM on a large text corpus.",
+    "sentence_index": 6,
+    "span_text": "feature-based approach",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -159,6 +227,10 @@
       "start_pos": 1110,
       "end_pos": 1129
     },
+    "attributes": {},
+    "sentence_context": "Note that in addition to the architecture differences, BERT and Open AI GPT are finetuning approaches, while ELMo is a feature-based approach. The most comparable existing pre-training method to BERT is Open AI GPT, which trains a left-to-right Transformer LM on a large text corpus. In fact, many of the design decisions in BERT were intentionally made to make it as close to GPT as possible so that the two methods could be minimally compared.",
+    "sentence_index": 7,
+    "span_text": "pre-training method",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -168,6 +240,10 @@
       "start_pos": 1141,
       "end_pos": 1152
     },
+    "attributes": {},
+    "sentence_context": "Note that in addition to the architecture differences, BERT and Open AI GPT are finetuning approaches, while ELMo is a feature-based approach. The most comparable existing pre-training method to BERT is Open AI GPT, which trains a left-to-right Transformer LM on a large text corpus. In fact, many of the design decisions in BERT were intentionally made to make it as close to GPT as possible so that the two methods could be minimally compared.",
+    "sentence_index": 7,
+    "span_text": "Open AI GPT",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -177,6 +253,10 @@
       "start_pos": 1183,
       "end_pos": 1197
     },
+    "attributes": {},
+    "sentence_context": "Note that in addition to the architecture differences, BERT and Open AI GPT are finetuning approaches, while ELMo is a feature-based approach. The most comparable existing pre-training method to BERT is Open AI GPT, which trains a left-to-right Transformer LM on a large text corpus. In fact, many of the design decisions in BERT were intentionally made to make it as close to GPT as possible so that the two methods could be minimally compared.",
+    "sentence_index": 7,
+    "span_text": "Transformer LM",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -186,6 +266,10 @@
       "start_pos": 1203,
       "end_pos": 1220
     },
+    "attributes": {},
+    "sentence_context": "Note that in addition to the architecture differences, BERT and Open AI GPT are finetuning approaches, while ELMo is a feature-based approach. The most comparable existing pre-training method to BERT is Open AI GPT, which trains a left-to-right Transformer LM on a large text corpus. In fact, many of the design decisions in BERT were intentionally made to make it as close to GPT as possible so that the two methods could be minimally compared.",
+    "sentence_index": 7,
+    "span_text": "large text corpus",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -195,6 +279,10 @@
       "start_pos": 1315,
       "end_pos": 1318
     },
+    "attributes": {},
+    "sentence_context": "The most comparable existing pre-training method to BERT is Open AI GPT, which trains a left-to-right Transformer LM on a large text corpus. In fact, many of the design decisions in BERT were intentionally made to make it as close to GPT as possible so that the two methods could be minimally compared. The core argument of this work is that the bi-directionality and the two pretraining tasks presented in Section 3.1 account for the majority of the empirical improvements, but we do note that there are several other differences between how BERT and GPT were trained: GPT is trained on the Books Corpus (800M words); BERT is trained on the Books Corpus (800M words) and Wikipedia (2,500M words).",
+    "sentence_index": 8,
+    "span_text": "GPT",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -204,6 +292,10 @@
       "start_pos": 1427,
       "end_pos": 1444
     },
+    "attributes": {},
+    "sentence_context": "In fact, many of the design decisions in BERT were intentionally made to make it as close to GPT as possible so that the two methods could be minimally compared. The core argument of this work is that the bi-directionality and the two pretraining tasks presented in Section 3.1 account for the majority of the empirical improvements, but we do note that there are several other differences between how BERT and GPT were trained: GPT is trained on the Books Corpus (800M words); BERT is trained on the Books Corpus (800M words) and Wikipedia (2,500M words). GPT uses a sentence separator ([SEP]) and classifier token",
+    "sentence_index": 9,
+    "span_text": "bi-directionality",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -213,6 +305,10 @@
       "start_pos": 1457,
       "end_pos": 1474
     },
+    "attributes": {},
+    "sentence_context": "In fact, many of the design decisions in BERT were intentionally made to make it as close to GPT as possible so that the two methods could be minimally compared. The core argument of this work is that the bi-directionality and the two pretraining tasks presented in Section 3.1 account for the majority of the empirical improvements, but we do note that there are several other differences between how BERT and GPT were trained: GPT is trained on the Books Corpus (800M words); BERT is trained on the Books Corpus (800M words) and Wikipedia (2,500M words). GPT uses a sentence separator ([SEP]) and classifier token",
+    "sentence_index": 9,
+    "span_text": "pretraining tasks",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -222,6 +318,10 @@
       "start_pos": 1624,
       "end_pos": 1628
     },
+    "attributes": {},
+    "sentence_context": "In fact, many of the design decisions in BERT were intentionally made to make it as close to GPT as possible so that the two methods could be minimally compared. The core argument of this work is that the bi-directionality and the two pretraining tasks presented in Section 3.1 account for the majority of the empirical improvements, but we do note that there are several other differences between how BERT and GPT were trained: GPT is trained on the Books Corpus (800M words); BERT is trained on the Books Corpus (800M words) and Wikipedia (2,500M words). GPT uses a sentence separator ([SEP]) and classifier token",
+    "sentence_index": 9,
+    "span_text": "BERT",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -231,6 +331,10 @@
       "start_pos": 1633,
       "end_pos": 1636
     },
+    "attributes": {},
+    "sentence_context": "In fact, many of the design decisions in BERT were intentionally made to make it as close to GPT as possible so that the two methods could be minimally compared. The core argument of this work is that the bi-directionality and the two pretraining tasks presented in Section 3.1 account for the majority of the empirical improvements, but we do note that there are several other differences between how BERT and GPT were trained: GPT is trained on the Books Corpus (800M words); BERT is trained on the Books Corpus (800M words) and Wikipedia (2,500M words). GPT uses a sentence separator ([SEP]) and classifier token",
+    "sentence_index": 9,
+    "span_text": "GPT",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -240,6 +344,10 @@
       "start_pos": 1673,
       "end_pos": 1685
     },
+    "attributes": {},
+    "sentence_context": "In fact, many of the design decisions in BERT were intentionally made to make it as close to GPT as possible so that the two methods could be minimally compared. The core argument of this work is that the bi-directionality and the two pretraining tasks presented in Section 3.1 account for the majority of the empirical improvements, but we do note that there are several other differences between how BERT and GPT were trained: GPT is trained on the Books Corpus (800M words); BERT is trained on the Books Corpus (800M words) and Wikipedia (2,500M words). GPT uses a sentence separator ([SEP]) and classifier token",
+    "sentence_index": 9,
+    "span_text": "Books Corpus",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -249,6 +357,10 @@
       "start_pos": 1753,
       "end_pos": 1762
     },
+    "attributes": {},
+    "sentence_context": "In fact, many of the design decisions in BERT were intentionally made to make it as close to GPT as possible so that the two methods could be minimally compared. The core argument of this work is that the bi-directionality and the two pretraining tasks presented in Section 3.1 account for the majority of the empirical improvements, but we do note that there are several other differences between how BERT and GPT were trained: GPT is trained on the Books Corpus (800M words); BERT is trained on the Books Corpus (800M words) and Wikipedia (2,500M words). GPT uses a sentence separator ([SEP]) and classifier token",
+    "sentence_index": 9,
+    "span_text": "Wikipedia",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -258,6 +370,10 @@
       "start_pos": 1790,
       "end_pos": 1808
     },
+    "attributes": {},
+    "sentence_context": "The core argument of this work is that the bi-directionality and the two pretraining tasks presented in Section 3.1 account for the majority of the empirical improvements, but we do note that there are several other differences between how BERT and GPT were trained: GPT is trained on the Books Corpus (800M words); BERT is trained on the Books Corpus (800M words) and Wikipedia (2,500M words). GPT uses a sentence separator ([SEP]) and classifier token ([CLS]) which are only introduced at fine-tuning time; BERT learns [SEP], [CLS] and sentence A/B embeddings during pre-training.",
+    "sentence_index": 10,
+    "span_text": "sentence separator",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -267,6 +383,10 @@
       "start_pos": 1821,
       "end_pos": 1837
     },
+    "attributes": {},
+    "sentence_context": "The core argument of this work is that the bi-directionality and the two pretraining tasks presented in Section 3.1 account for the majority of the empirical improvements, but we do note that there are several other differences between how BERT and GPT were trained: GPT is trained on the Books Corpus (800M words); BERT is trained on the Books Corpus (800M words) and Wikipedia (2,500M words). GPT uses a sentence separator ([SEP]) and classifier token ([CLS]) which are only introduced at fine-tuning time; BERT learns [SEP], [CLS] and sentence A/B embeddings during pre-training.",
+    "sentence_index": 10,
+    "span_text": "classifier token",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -276,6 +396,10 @@
       "start_pos": 1922,
       "end_pos": 1945
     },
+    "attributes": {},
+    "sentence_context": "GPT uses a sentence separator ([SEP]) and classifier token ([CLS]) which are only introduced at fine-tuning time; BERT learns [SEP], [CLS] and sentence A/B embeddings during pre-training. GPT was trained for 1M steps with a batch size of 32,000 words; BERT was trained for 1M steps with a batch size of 128,000 words.",
+    "sentence_index": 11,
+    "span_text": "sentence A/B embeddings",
     "section": "A.3 Fine-tuning Procedure"
   },
   {
@@ -285,6 +409,10 @@
       "start_pos": 2479,
       "end_pos": 2495
     },
+    "attributes": {},
+    "sentence_context": "GPT used the same learning rate of 5e-5 for all fine-tuning experiments; BERT chooses a task-specific fine-tuning learning rate which performs the best on the development set. To isolate the effect of these differences, we perform ablation experiments in Section 5.1 which demonstrate that the majority of the improvements are in fact coming from the two pre-training tasks and the bidirectionality they enable.",
+    "sentence_index": 14,
+    "span_text": "bidirectionality",
     "section": "A.3 Fine-tuning Procedure"
   }
 ]

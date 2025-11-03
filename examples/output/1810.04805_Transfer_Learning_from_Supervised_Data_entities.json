@@ -6,6 +6,10 @@
       "start_pos": 103,
       "end_pos": 129
     },
+    "attributes": {},
+    "sentence_context": "There has also been work showing effective transfer from supervised tasks with large datasets, such as natural language inference and machine translation. Computer vision research has also demonstrated the importance of transfer learning from large pre-trained models, where an effective recipe is to fine-tune models pre-trained with Ima-ge Net.",
+    "sentence_index": 0,
+    "span_text": "natural language inference",
     "section": "Transfer Learning from Supervised Data"
   },
   {
@@ -15,6 +19,10 @@
       "start_pos": 134,
       "end_pos": 153
     },
+    "attributes": {},
+    "sentence_context": "There has also been work showing effective transfer from supervised tasks with large datasets, such as natural language inference and machine translation. Computer vision research has also demonstrated the importance of transfer learning from large pre-trained models, where an effective recipe is to fine-tune models pre-trained with Ima-ge Net.",
+    "sentence_index": 0,
+    "span_text": "machine translation",
     "section": "Transfer Learning from Supervised Data"
   },
   {
@@ -24,6 +32,10 @@
       "start_pos": 220,
       "end_pos": 237
     },
+    "attributes": {},
+    "sentence_context": "There has also been work showing effective transfer from supervised tasks with large datasets, such as natural language inference and machine translation. Computer vision research has also demonstrated the importance of transfer learning from large pre-trained models, where an effective recipe is to fine-tune models pre-trained with Ima-ge Net.",
+    "sentence_index": 1,
+    "span_text": "transfer learning",
     "section": "Transfer Learning from Supervised Data"
   },
   {
@@ -33,6 +45,10 @@
       "start_pos": 335,
       "end_pos": 345
     },
+    "attributes": {},
+    "sentence_context": "There has also been work showing effective transfer from supervised tasks with large datasets, such as natural language inference and machine translation. Computer vision research has also demonstrated the importance of transfer learning from large pre-trained models, where an effective recipe is to fine-tune models pre-trained with Ima-ge Net.",
+    "sentence_index": 1,
+    "span_text": "Ima-ge Net",
     "section": "Transfer Learning from Supervised Data"
   }
 ]

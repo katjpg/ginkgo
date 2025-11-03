@@ -6,6 +6,10 @@
       "start_pos": 62,
       "end_pos": 66
     },
+    "attributes": {},
+    "sentence_context": "We demonstrate the importance of the deep bidirectionality of BERT by evaluating two pretraining objectives using exactly the same pretraining data, fine-tuning scheme, and hyperparameters as BERT BASE: No NSP: A bidirectional model which is trained using the \"masked LM\" (MLM) but without the \"next sentence prediction\" (NSP) task.",
+    "sentence_index": 0,
+    "span_text": "BERT",
     "section": "Effect of Pre-training Tasks"
   },
   {
@@ -15,6 +19,10 @@
       "start_pos": 85,
       "end_pos": 107
     },
+    "attributes": {},
+    "sentence_context": "We demonstrate the importance of the deep bidirectionality of BERT by evaluating two pretraining objectives using exactly the same pretraining data, fine-tuning scheme, and hyperparameters as BERT BASE: No NSP: A bidirectional model which is trained using the \"masked LM\" (MLM) but without the \"next sentence prediction\" (NSP) task.",
+    "sentence_index": 0,
+    "span_text": "pretraining objectives",
     "section": "Effect of Pre-training Tasks"
   },
   {
@@ -24,6 +32,10 @@
       "start_pos": 131,
       "end_pos": 147
     },
+    "attributes": {},
+    "sentence_context": "We demonstrate the importance of the deep bidirectionality of BERT by evaluating two pretraining objectives using exactly the same pretraining data, fine-tuning scheme, and hyperparameters as BERT BASE: No NSP: A bidirectional model which is trained using the \"masked LM\" (MLM) but without the \"next sentence prediction\" (NSP) task.",
+    "sentence_index": 0,
+    "span_text": "pretraining data",
     "section": "Effect of Pre-training Tasks"
   },
   {
@@ -33,6 +45,10 @@
       "start_pos": 149,
       "end_pos": 167
     },
+    "attributes": {},
+    "sentence_context": "We demonstrate the importance of the deep bidirectionality of BERT by evaluating two pretraining objectives using exactly the same pretraining data, fine-tuning scheme, and hyperparameters as BERT BASE: No NSP: A bidirectional model which is trained using the \"masked LM\" (MLM) but without the \"next sentence prediction\" (NSP) task.",
+    "sentence_index": 0,
+    "span_text": "fine-tuning scheme",
     "section": "Effect of Pre-training Tasks"
   },
   {
@@ -42,6 +58,10 @@
       "start_pos": 173,
       "end_pos": 188
     },
+    "attributes": {},
+    "sentence_context": "We demonstrate the importance of the deep bidirectionality of BERT by evaluating two pretraining objectives using exactly the same pretraining data, fine-tuning scheme, and hyperparameters as BERT BASE: No NSP: A bidirectional model which is trained using the \"masked LM\" (MLM) but without the \"next sentence prediction\" (NSP) task.",
+    "sentence_index": 0,
+    "span_text": "hyperparameters",
     "section": "Effect of Pre-training Tasks"
   },
   {
@@ -51,6 +71,10 @@
       "start_pos": 192,
       "end_pos": 201
     },
+    "attributes": {},
+    "sentence_context": "We demonstrate the importance of the deep bidirectionality of BERT by evaluating two pretraining objectives using exactly the same pretraining data, fine-tuning scheme, and hyperparameters as BERT BASE: No NSP: A bidirectional model which is trained using the \"masked LM\" (MLM) but without the \"next sentence prediction\" (NSP) task.",
+    "sentence_index": 0,
+    "span_text": "BERT BASE",
     "section": "Effect of Pre-training Tasks"
   },
   {
@@ -60,6 +84,10 @@
       "start_pos": 261,
       "end_pos": 270
     },
+    "attributes": {},
+    "sentence_context": "We demonstrate the importance of the deep bidirectionality of BERT by evaluating two pretraining objectives using exactly the same pretraining data, fine-tuning scheme, and hyperparameters as BERT BASE: No NSP: A bidirectional model which is trained using the \"masked LM\" (MLM) but without the \"next sentence prediction\" (NSP) task.",
+    "sentence_index": 1,
+    "span_text": "masked LM",
     "section": "Effect of Pre-training Tasks"
   },
   {
@@ -69,6 +97,10 @@
       "start_pos": 295,
       "end_pos": 319
     },
+    "attributes": {},
+    "sentence_context": "We demonstrate the importance of the deep bidirectionality of BERT by evaluating two pretraining objectives using exactly the same pretraining data, fine-tuning scheme, and hyperparameters as BERT BASE: No NSP: A bidirectional model which is trained using the \"masked LM\" (MLM) but without the \"next sentence prediction\" (NSP) task.",
+    "sentence_index": 1,
+    "span_text": "next sentence prediction",
     "section": "Effect of Pre-training Tasks"
   }
 ]

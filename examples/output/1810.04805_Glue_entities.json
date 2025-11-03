@@ -6,6 +6,10 @@
       "start_pos": 47,
       "end_pos": 51
     },
+    "attributes": {},
+    "sentence_context": "The General Language Understanding Evaluation (GLUE) benchmark is a collection of diverse natural language understanding tasks. Detailed descriptions of GLUE datasets are included in Appendix B.1.",
+    "sentence_index": 0,
+    "span_text": "GLUE",
     "section": "Glue"
   },
   {
@@ -15,6 +19,10 @@
       "start_pos": 90,
       "end_pos": 126
     },
+    "attributes": {},
+    "sentence_context": "The General Language Understanding Evaluation (GLUE) benchmark is a collection of diverse natural language understanding tasks. Detailed descriptions of GLUE datasets are included in Appendix B.1.",
+    "sentence_index": 0,
+    "span_text": "natural language understanding tasks",
     "section": "Glue"
   },
   {
@@ -24,6 +32,10 @@
       "start_pos": 153,
       "end_pos": 166
     },
+    "attributes": {},
+    "sentence_context": "The General Language Understanding Evaluation (GLUE) benchmark is a collection of diverse natural language understanding tasks. Detailed descriptions of GLUE datasets are included in Appendix B.1. To fine-tune on GLUE, we represent the input sequence (for single sentence or sentence pairs) as described in Section 3, and use the final hidden vector C \u2208 R H corresponding to the first input token (",
+    "sentence_index": 1,
+    "span_text": "GLUE datasets",
     "section": "Glue"
   },
   {
@@ -33,6 +45,10 @@
       "start_pos": 870,
       "end_pos": 874
     },
+    "attributes": {},
+    "sentence_context": "For each task, we selected the best fine-tuning learning rate (among 5e-5, 4e-5, 3e-5, and 2e-5) on the Dev set. Additionally, for BERT LARGE we found that finetuning was sometimes unstable on small datasets, so we ran several random restarts and selected the best model on the Dev set. With random restarts, we use the same pre-trained checkpoint but perform different fine-tuning data shuffling and classifier layer initialization.",
+    "sentence_index": 8,
+    "span_text": "BERT",
     "section": "Glue"
   },
   {
@@ -42,6 +58,10 @@
       "start_pos": 496,
       "end_pos": 516
     },
+    "attributes": {},
+    "sentence_context": "[CLS]) as the aggregate representation. The only new parameters introduced during fine-tuning are classification layer weights W \u2208 R K\u00d7H, where K is the number of labels. We compute a standard classification loss with C and W, i.e., log(softmax(CW T )).",
+    "sentence_index": 4,
+    "span_text": "classification layer",
     "section": "Glue"
   },
   {
@@ -51,6 +71,10 @@
       "start_pos": 591,
       "end_pos": 610
     },
+    "attributes": {},
+    "sentence_context": "The only new parameters introduced during fine-tuning are classification layer weights W \u2208 R K\u00d7H, where K is the number of labels. We compute a standard classification loss with C and W, i.e., log(softmax(CW T )). We use a batch size of 32 and fine-tune for 3 epochs over the data for all GLUE tasks.",
+    "sentence_index": 5,
+    "span_text": "classification loss",
     "section": "Glue"
   },
   {
@@ -60,6 +84,10 @@
       "start_pos": 727,
       "end_pos": 737
     },
+    "attributes": {},
+    "sentence_context": "We compute a standard classification loss with C and W, i.e., log(softmax(CW T )). We use a batch size of 32 and fine-tune for 3 epochs over the data for all GLUE tasks. For each task, we selected the best fine-tuning learning rate (among 5e-5, 4e-5, 3e-5, and 2e-5) on the Dev set.",
+    "sentence_index": 6,
+    "span_text": "GLUE tasks",
     "section": "Glue"
   },
   {
@@ -69,6 +97,10 @@
       "start_pos": 843,
       "end_pos": 850
     },
+    "attributes": {},
+    "sentence_context": "We use a batch size of 32 and fine-tune for 3 epochs over the data for all GLUE tasks. For each task, we selected the best fine-tuning learning rate (among 5e-5, 4e-5, 3e-5, and 2e-5) on the Dev set. Additionally, for BERT LARGE we found that finetuning was sometimes unstable on small datasets, so we ran several random restarts and selected the best model on the Dev set.",
+    "sentence_index": 7,
+    "span_text": "Dev set",
     "section": "Glue"
   },
   {
@@ -78,6 +110,10 @@
       "start_pos": 870,
       "end_pos": 880
     },
+    "attributes": {},
+    "sentence_context": "For each task, we selected the best fine-tuning learning rate (among 5e-5, 4e-5, 3e-5, and 2e-5) on the Dev set. Additionally, for BERT LARGE we found that finetuning was sometimes unstable on small datasets, so we ran several random restarts and selected the best model on the Dev set. With random restarts, we use the same pre-trained checkpoint but perform different fine-tuning data shuffling and classifier layer initialization.",
+    "sentence_index": 8,
+    "span_text": "BERT LARGE",
     "section": "Glue"
   },
   {
@@ -87,6 +123,10 @@
       "start_pos": 1109,
       "end_pos": 1125
     },
+    "attributes": {},
+    "sentence_context": "Additionally, for BERT LARGE we found that finetuning was sometimes unstable on small datasets, so we ran several random restarts and selected the best model on the Dev set. With random restarts, we use the same pre-trained checkpoint but perform different fine-tuning data shuffling and classifier layer initialization. 9 Results are presented in Table 1.",
+    "sentence_index": 9,
+    "span_text": "fine-tuning data",
     "section": "Glue"
   },
   {
@@ -96,6 +136,10 @@
       "start_pos": 1214,
       "end_pos": 1223
     },
+    "attributes": {},
+    "sentence_context": "9 Results are presented in Table 1. Both BERT BASE and BERT LARGE outperform all systems on all tasks by a substantial margin, obtaining 4.5% and 7.0% respective average accuracy improvement over the prior state of the art. Note that BERT BASE and Open AI GPT are nearly identical in terms of model architecture apart from the attention masking.",
+    "sentence_index": 11,
+    "span_text": "BERT BASE",
     "section": "Glue"
   },
   {
@@ -105,6 +149,10 @@
       "start_pos": 1343,
       "end_pos": 1351
     },
+    "attributes": {},
+    "sentence_context": "9 Results are presented in Table 1. Both BERT BASE and BERT LARGE outperform all systems on all tasks by a substantial margin, obtaining 4.5% and 7.0% respective average accuracy improvement over the prior state of the art. Note that BERT BASE and Open AI GPT are nearly identical in terms of model architecture apart from the attention masking.",
+    "sentence_index": 11,
+    "span_text": "accuracy",
     "section": "Glue"
   },
   {
@@ -114,6 +162,10 @@
       "start_pos": 1407,
       "end_pos": 1416
     },
+    "attributes": {},
+    "sentence_context": "Both BERT BASE and BERT LARGE outperform all systems on all tasks by a substantial margin, obtaining 4.5% and 7.0% respective average accuracy improvement over the prior state of the art. Note that BERT BASE and Open AI GPT are nearly identical in terms of model architecture apart from the attention masking. For the largest and most widely reported GLUE task, MNLI, BERT obtains a 4.6% absolute accuracy improvement.",
+    "sentence_index": 12,
+    "span_text": "BERT BASE",
     "section": "Glue"
   },
   {
@@ -123,6 +175,10 @@
       "start_pos": 1421,
       "end_pos": 1432
     },
+    "attributes": {},
+    "sentence_context": "Both BERT BASE and BERT LARGE outperform all systems on all tasks by a substantial margin, obtaining 4.5% and 7.0% respective average accuracy improvement over the prior state of the art. Note that BERT BASE and Open AI GPT are nearly identical in terms of model architecture apart from the attention masking. For the largest and most widely reported GLUE task, MNLI, BERT obtains a 4.6% absolute accuracy improvement.",
+    "sentence_index": 12,
+    "span_text": "Open AI GPT",
     "section": "Glue"
   },
   {
@@ -132,6 +188,10 @@
       "start_pos": 1466,
       "end_pos": 1484
     },
+    "attributes": {},
+    "sentence_context": "Both BERT BASE and BERT LARGE outperform all systems on all tasks by a substantial margin, obtaining 4.5% and 7.0% respective average accuracy improvement over the prior state of the art. Note that BERT BASE and Open AI GPT are nearly identical in terms of model architecture apart from the attention masking. For the largest and most widely reported GLUE task, MNLI, BERT obtains a 4.6% absolute accuracy improvement.",
+    "sentence_index": 12,
+    "span_text": "model architecture",
     "section": "Glue"
   },
   {
@@ -141,6 +201,10 @@
       "start_pos": 1500,
       "end_pos": 1517
     },
+    "attributes": {},
+    "sentence_context": "Both BERT BASE and BERT LARGE outperform all systems on all tasks by a substantial margin, obtaining 4.5% and 7.0% respective average accuracy improvement over the prior state of the art. Note that BERT BASE and Open AI GPT are nearly identical in terms of model architecture apart from the attention masking. For the largest and most widely reported GLUE task, MNLI, BERT obtains a 4.6% absolute accuracy improvement.",
+    "sentence_index": 12,
+    "span_text": "attention masking",
     "section": "Glue"
   },
   {
@@ -150,6 +214,10 @@
       "start_pos": 1560,
       "end_pos": 1569
     },
+    "attributes": {},
+    "sentence_context": "Note that BERT BASE and Open AI GPT are nearly identical in terms of model architecture apart from the attention masking. For the largest and most widely reported GLUE task, MNLI, BERT obtains a 4.6% absolute accuracy improvement. On the official GLUE leaderboard 10, BERT LARGE obtains a score of 80.5, compared to Open AI GPT, which obtains 72.8 as of the date of writing.",
+    "sentence_index": 13,
+    "span_text": "GLUE task",
     "section": "Glue"
   },
   {
@@ -159,6 +227,10 @@
       "start_pos": 1571,
       "end_pos": 1575
     },
+    "attributes": {},
+    "sentence_context": "Note that BERT BASE and Open AI GPT are nearly identical in terms of model architecture apart from the attention masking. For the largest and most widely reported GLUE task, MNLI, BERT obtains a 4.6% absolute accuracy improvement. On the official GLUE leaderboard 10, BERT LARGE obtains a score of 80.5, compared to Open AI GPT, which obtains 72.8 as of the date of writing.",
+    "sentence_index": 13,
+    "span_text": "MNLI",
     "section": "Glue"
   },
   {
@@ -168,6 +240,10 @@
       "start_pos": 1577,
       "end_pos": 1581
     },
+    "attributes": {},
+    "sentence_context": "Note that BERT BASE and Open AI GPT are nearly identical in terms of model architecture apart from the attention masking. For the largest and most widely reported GLUE task, MNLI, BERT obtains a 4.6% absolute accuracy improvement. On the official GLUE leaderboard 10, BERT LARGE obtains a score of 80.5, compared to Open AI GPT, which obtains 72.8 as of the date of writing.",
+    "sentence_index": 13,
+    "span_text": "BERT",
     "section": "Glue"
   },
   {
@@ -177,6 +253,10 @@
       "start_pos": 1606,
       "end_pos": 1614
     },
+    "attributes": {},
+    "sentence_context": "Note that BERT BASE and Open AI GPT are nearly identical in terms of model architecture apart from the attention masking. For the largest and most widely reported GLUE task, MNLI, BERT obtains a 4.6% absolute accuracy improvement. On the official GLUE leaderboard 10, BERT LARGE obtains a score of 80.5, compared to Open AI GPT, which obtains 72.8 as of the date of writing.",
+    "sentence_index": 13,
+    "span_text": "accuracy",
     "section": "Glue"
   },
   {
@@ -186,6 +266,10 @@
       "start_pos": 1644,
       "end_pos": 1660
     },
+    "attributes": {},
+    "sentence_context": "For the largest and most widely reported GLUE task, MNLI, BERT obtains a 4.6% absolute accuracy improvement. On the official GLUE leaderboard 10, BERT LARGE obtains a score of 80.5, compared to Open AI GPT, which obtains 72.8 as of the date of writing. We find that BERT LARGE significantly outperforms BERT BASE across all tasks, especially those with very little training data.",
+    "sentence_index": 14,
+    "span_text": "GLUE leaderboard",
     "section": "Glue"
   },
   {
@@ -195,6 +279,10 @@
       "start_pos": 1665,
       "end_pos": 1675
     },
+    "attributes": {},
+    "sentence_context": "For the largest and most widely reported GLUE task, MNLI, BERT obtains a 4.6% absolute accuracy improvement. On the official GLUE leaderboard 10, BERT LARGE obtains a score of 80.5, compared to Open AI GPT, which obtains 72.8 as of the date of writing. We find that BERT LARGE significantly outperforms BERT BASE across all tasks, especially those with very little training data.",
+    "sentence_index": 14,
+    "span_text": "BERT LARGE",
     "section": "Glue"
   },
   {
@@ -204,6 +292,10 @@
       "start_pos": 1713,
       "end_pos": 1724
     },
+    "attributes": {},
+    "sentence_context": "For the largest and most widely reported GLUE task, MNLI, BERT obtains a 4.6% absolute accuracy improvement. On the official GLUE leaderboard 10, BERT LARGE obtains a score of 80.5, compared to Open AI GPT, which obtains 72.8 as of the date of writing. We find that BERT LARGE significantly outperforms BERT BASE across all tasks, especially those with very little training data.",
+    "sentence_index": 14,
+    "span_text": "Open AI GPT",
     "section": "Glue"
   },
   {
@@ -213,6 +305,10 @@
       "start_pos": 1884,
       "end_pos": 1897
     },
+    "attributes": {},
+    "sentence_context": "On the official GLUE leaderboard 10, BERT LARGE obtains a score of 80.5, compared to Open AI GPT, which obtains 72.8 as of the date of writing. We find that BERT LARGE significantly outperforms BERT BASE across all tasks, especially those with very little training data. The effect of model size is explored more thoroughly in Section 5.2.",
+    "sentence_index": 15,
+    "span_text": "training data",
     "section": "Glue"
   },
   {
@@ -222,6 +318,10 @@
       "start_pos": 1913,
       "end_pos": 1923
     },
+    "attributes": {},
+    "sentence_context": "We find that BERT LARGE significantly outperforms BERT BASE across all tasks, especially those with very little training data. The effect of model size is explored more thoroughly in Section 5.2.",
+    "sentence_index": 16,
+    "span_text": "model size",
     "section": "Glue"
   }
 ]

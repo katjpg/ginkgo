@@ -6,6 +6,10 @@
       "start_pos": 27,
       "end_pos": 42
     },
+    "attributes": {},
+    "sentence_context": "Learning widely applicable representations of words has been an active area of research for decades, including non-neural and neural methods. Pre-trained word embeddings are an integral part of modern NLP systems, offering significant improvements over embeddings learned from scratch.",
+    "sentence_index": 0,
+    "span_text": "representations",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -15,6 +19,10 @@
       "start_pos": 154,
       "end_pos": 169
     },
+    "attributes": {},
+    "sentence_context": "Learning widely applicable representations of words has been an active area of research for decades, including non-neural and neural methods. Pre-trained word embeddings are an integral part of modern NLP systems, offering significant improvements over embeddings learned from scratch. To pretrain word embedding vectors, left-to-right language modeling objectives have been used, as well as objectives to discriminate correct from incorrect words in left and right context.",
+    "sentence_index": 1,
+    "span_text": "word embeddings",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -24,6 +32,10 @@
       "start_pos": 253,
       "end_pos": 263
     },
+    "attributes": {},
+    "sentence_context": "Learning widely applicable representations of words has been an active area of research for decades, including non-neural and neural methods. Pre-trained word embeddings are an integral part of modern NLP systems, offering significant improvements over embeddings learned from scratch. To pretrain word embedding vectors, left-to-right language modeling objectives have been used, as well as objectives to discriminate correct from incorrect words in left and right context.",
+    "sentence_index": 1,
+    "span_text": "embeddings",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -33,6 +45,10 @@
       "start_pos": 298,
       "end_pos": 320
     },
+    "attributes": {},
+    "sentence_context": "Pre-trained word embeddings are an integral part of modern NLP systems, offering significant improvements over embeddings learned from scratch. To pretrain word embedding vectors, left-to-right language modeling objectives have been used, as well as objectives to discriminate correct from incorrect words in left and right context. These approaches have been generalized to coarser granularities, such as sentence embeddings or paragraph embeddings.",
+    "sentence_index": 2,
+    "span_text": "word embedding vectors",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -42,6 +58,10 @@
       "start_pos": 336,
       "end_pos": 353
     },
+    "attributes": {},
+    "sentence_context": "Pre-trained word embeddings are an integral part of modern NLP systems, offering significant improvements over embeddings learned from scratch. To pretrain word embedding vectors, left-to-right language modeling objectives have been used, as well as objectives to discriminate correct from incorrect words in left and right context. These approaches have been generalized to coarser granularities, such as sentence embeddings or paragraph embeddings.",
+    "sentence_index": 2,
+    "span_text": "language modeling",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -51,6 +71,10 @@
       "start_pos": 548,
       "end_pos": 567
     },
+    "attributes": {},
+    "sentence_context": "To pretrain word embedding vectors, left-to-right language modeling objectives have been used, as well as objectives to discriminate correct from incorrect words in left and right context. These approaches have been generalized to coarser granularities, such as sentence embeddings or paragraph embeddings. To train sentence representations, prior work has used objectives to rank candidate next sentences, left-to-right generation of next sentence words given a representation of the previous sentence, or denoising autoencoder derived objectives.",
+    "sentence_index": 3,
+    "span_text": "sentence embeddings",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -60,6 +84,10 @@
       "start_pos": 571,
       "end_pos": 591
     },
+    "attributes": {},
+    "sentence_context": "To pretrain word embedding vectors, left-to-right language modeling objectives have been used, as well as objectives to discriminate correct from incorrect words in left and right context. These approaches have been generalized to coarser granularities, such as sentence embeddings or paragraph embeddings. To train sentence representations, prior work has used objectives to rank candidate next sentences, left-to-right generation of next sentence words given a representation of the previous sentence, or denoising autoencoder derived objectives.",
+    "sentence_index": 3,
+    "span_text": "paragraph embeddings",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -69,6 +97,10 @@
       "start_pos": 602,
       "end_pos": 626
     },
+    "attributes": {},
+    "sentence_context": "These approaches have been generalized to coarser granularities, such as sentence embeddings or paragraph embeddings. To train sentence representations, prior work has used objectives to rank candidate next sentences, left-to-right generation of next sentence words given a representation of the previous sentence, or denoising autoencoder derived objectives. ELMo and its predecessor ) generalize traditional word embedding research along a different dimension.",
+    "sentence_index": 4,
+    "span_text": "sentence representations",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -78,6 +110,10 @@
       "start_pos": 793,
       "end_pos": 814
     },
+    "attributes": {},
+    "sentence_context": "These approaches have been generalized to coarser granularities, such as sentence embeddings or paragraph embeddings. To train sentence representations, prior work has used objectives to rank candidate next sentences, left-to-right generation of next sentence words given a representation of the previous sentence, or denoising autoencoder derived objectives. ELMo and its predecessor ) generalize traditional word embedding research along a different dimension.",
+    "sentence_index": 4,
+    "span_text": "denoising autoencoder",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -87,6 +123,10 @@
       "start_pos": 835,
       "end_pos": 839
     },
+    "attributes": {},
+    "sentence_context": "To train sentence representations, prior work has used objectives to rank candidate next sentences, left-to-right generation of next sentence words given a representation of the previous sentence, or denoising autoencoder derived objectives. ELMo and its predecessor ) generalize traditional word embedding research along a different dimension. They extract context-sensitive features from a left-to-right and a right-to-left language model.",
+    "sentence_index": 5,
+    "span_text": "ELMo",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -96,6 +136,10 @@
       "start_pos": 885,
       "end_pos": 908
     },
+    "attributes": {},
+    "sentence_context": "To train sentence representations, prior work has used objectives to rank candidate next sentences, left-to-right generation of next sentence words given a representation of the previous sentence, or denoising autoencoder derived objectives. ELMo and its predecessor ) generalize traditional word embedding research along a different dimension. They extract context-sensitive features from a left-to-right and a right-to-left language model.",
+    "sentence_index": 5,
+    "span_text": "word embedding research",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -105,6 +149,10 @@
       "start_pos": 951,
       "end_pos": 977
     },
+    "attributes": {},
+    "sentence_context": "ELMo and its predecessor ) generalize traditional word embedding research along a different dimension. They extract context-sensitive features from a left-to-right and a right-to-left language model. The contextual representation of each token is the concatenation of the left-to-right and right-to-left representations.",
+    "sentence_index": 6,
+    "span_text": "context-sensitive features",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -114,6 +162,10 @@
       "start_pos": 1019,
       "end_pos": 1033
     },
+    "attributes": {},
+    "sentence_context": "ELMo and its predecessor ) generalize traditional word embedding research along a different dimension. They extract context-sensitive features from a left-to-right and a right-to-left language model. The contextual representation of each token is the concatenation of the left-to-right and right-to-left representations.",
+    "sentence_index": 6,
+    "span_text": "language model",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -123,6 +175,10 @@
       "start_pos": 1039,
       "end_pos": 1064
     },
+    "attributes": {},
+    "sentence_context": "They extract context-sensitive features from a left-to-right and a right-to-left language model. The contextual representation of each token is the concatenation of the left-to-right and right-to-left representations. When integrating contextual word embeddings with existing task-specific architectures, ELMo advances the state of the art for several major NLP benchmarks including question answering, sentiment analysis, and named entity recognition.. proposed learning contextual representations through a task to predict a single word from both left and right context using LSTMs.",
+    "sentence_index": 7,
+    "span_text": "contextual representation",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -132,6 +188,10 @@
       "start_pos": 1184,
       "end_pos": 1199
     },
+    "attributes": {},
+    "sentence_context": "The contextual representation of each token is the concatenation of the left-to-right and right-to-left representations. When integrating contextual word embeddings with existing task-specific architectures, ELMo advances the state of the art for several major NLP benchmarks including question answering, sentiment analysis, and named entity recognition.. proposed learning contextual representations through a task to predict a single word from both left and right context using LSTMs. Similar to ELMo, their model is feature-based and not deeply bidirectional.. shows that the cloze task can be used to improve the robustness of text generation models.",
+    "sentence_index": 8,
+    "span_text": "word embeddings",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -141,6 +201,10 @@
       "start_pos": 1321,
       "end_pos": 1339
     },
+    "attributes": {},
+    "sentence_context": "The contextual representation of each token is the concatenation of the left-to-right and right-to-left representations. When integrating contextual word embeddings with existing task-specific architectures, ELMo advances the state of the art for several major NLP benchmarks including question answering, sentiment analysis, and named entity recognition.. proposed learning contextual representations through a task to predict a single word from both left and right context using LSTMs. Similar to ELMo, their model is feature-based and not deeply bidirectional.. shows that the cloze task can be used to improve the robustness of text generation models.",
+    "sentence_index": 8,
+    "span_text": "question answering",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -150,6 +214,10 @@
       "start_pos": 1341,
       "end_pos": 1359
     },
+    "attributes": {},
+    "sentence_context": "The contextual representation of each token is the concatenation of the left-to-right and right-to-left representations. When integrating contextual word embeddings with existing task-specific architectures, ELMo advances the state of the art for several major NLP benchmarks including question answering, sentiment analysis, and named entity recognition.. proposed learning contextual representations through a task to predict a single word from both left and right context using LSTMs. Similar to ELMo, their model is feature-based and not deeply bidirectional.. shows that the cloze task can be used to improve the robustness of text generation models.",
+    "sentence_index": 8,
+    "span_text": "sentiment analysis",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -159,6 +227,10 @@
       "start_pos": 1365,
       "end_pos": 1389
     },
+    "attributes": {},
+    "sentence_context": "The contextual representation of each token is the concatenation of the left-to-right and right-to-left representations. When integrating contextual word embeddings with existing task-specific architectures, ELMo advances the state of the art for several major NLP benchmarks including question answering, sentiment analysis, and named entity recognition.. proposed learning contextual representations through a task to predict a single word from both left and right context using LSTMs. Similar to ELMo, their model is feature-based and not deeply bidirectional.. shows that the cloze task can be used to improve the robustness of text generation models.",
+    "sentence_index": 8,
+    "span_text": "named entity recognition",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -168,6 +240,10 @@
       "start_pos": 1455,
       "end_pos": 1476
     },
+    "attributes": {},
+    "sentence_context": "The contextual representation of each token is the concatenation of the left-to-right and right-to-left representations. When integrating contextual word embeddings with existing task-specific architectures, ELMo advances the state of the art for several major NLP benchmarks including question answering, sentiment analysis, and named entity recognition.. proposed learning contextual representations through a task to predict a single word from both left and right context using LSTMs. Similar to ELMo, their model is feature-based and not deeply bidirectional.. shows that the cloze task can be used to improve the robustness of text generation models.",
+    "sentence_index": 8,
+    "span_text": "predict a single word",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -177,6 +253,10 @@
       "start_pos": 1516,
       "end_pos": 1521
     },
+    "attributes": {},
+    "sentence_context": "The contextual representation of each token is the concatenation of the left-to-right and right-to-left representations. When integrating contextual word embeddings with existing task-specific architectures, ELMo advances the state of the art for several major NLP benchmarks including question answering, sentiment analysis, and named entity recognition.. proposed learning contextual representations through a task to predict a single word from both left and right context using LSTMs. Similar to ELMo, their model is feature-based and not deeply bidirectional.. shows that the cloze task can be used to improve the robustness of text generation models.",
+    "sentence_index": 8,
+    "span_text": "LSTMs",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -186,6 +266,10 @@
       "start_pos": 1534,
       "end_pos": 1538
     },
+    "attributes": {},
+    "sentence_context": "When integrating contextual word embeddings with existing task-specific architectures, ELMo advances the state of the art for several major NLP benchmarks including question answering, sentiment analysis, and named entity recognition.. proposed learning contextual representations through a task to predict a single word from both left and right context using LSTMs. Similar to ELMo, their model is feature-based and not deeply bidirectional.. shows that the cloze task can be used to improve the robustness of text generation models.",
+    "sentence_index": 9,
+    "span_text": "ELMo",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -195,6 +279,10 @@
       "start_pos": 1555,
       "end_pos": 1568
     },
+    "attributes": {},
+    "sentence_context": "When integrating contextual word embeddings with existing task-specific architectures, ELMo advances the state of the art for several major NLP benchmarks including question answering, sentiment analysis, and named entity recognition.. proposed learning contextual representations through a task to predict a single word from both left and right context using LSTMs. Similar to ELMo, their model is feature-based and not deeply bidirectional.. shows that the cloze task can be used to improve the robustness of text generation models.",
+    "sentence_index": 9,
+    "span_text": "feature-based",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -204,6 +292,10 @@
       "start_pos": 1577,
       "end_pos": 1597
     },
+    "attributes": {},
+    "sentence_context": "When integrating contextual word embeddings with existing task-specific architectures, ELMo advances the state of the art for several major NLP benchmarks including question answering, sentiment analysis, and named entity recognition.. proposed learning contextual representations through a task to predict a single word from both left and right context using LSTMs. Similar to ELMo, their model is feature-based and not deeply bidirectional.. shows that the cloze task can be used to improve the robustness of text generation models.",
+    "sentence_index": 9,
+    "span_text": "deeply bidirectional",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -213,6 +305,10 @@
       "start_pos": 1615,
       "end_pos": 1625
     },
+    "attributes": {},
+    "sentence_context": "When integrating contextual word embeddings with existing task-specific architectures, ELMo advances the state of the art for several major NLP benchmarks including question answering, sentiment analysis, and named entity recognition.. proposed learning contextual representations through a task to predict a single word from both left and right context using LSTMs. Similar to ELMo, their model is feature-based and not deeply bidirectional.. shows that the cloze task can be used to improve the robustness of text generation models.",
+    "sentence_index": 9,
+    "span_text": "cloze task",
     "section": "Unsupervised Feature-based Approaches"
   },
   {
@@ -222,6 +318,10 @@
       "start_pos": 1667,
       "end_pos": 1682
     },
+    "attributes": {},
+    "sentence_context": "When integrating contextual word embeddings with existing task-specific architectures, ELMo advances the state of the art for several major NLP benchmarks including question answering, sentiment analysis, and named entity recognition.. proposed learning contextual representations through a task to predict a single word from both left and right context using LSTMs. Similar to ELMo, their model is feature-based and not deeply bidirectional.. shows that the cloze task can be used to improve the robustness of text generation models.",
+    "sentence_index": 9,
+    "span_text": "text generation",
     "section": "Unsupervised Feature-based Approaches"
   }
 ]

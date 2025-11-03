@@ -6,6 +6,10 @@
       "start_pos": 27,
       "end_pos": 39
     },
+    "attributes": {},
+    "sentence_context": "There is a long history of pre-training general language representations, and we briefly review the most widely-used approaches in this section.",
+    "sentence_index": 0,
+    "span_text": "pre-training",
     "section": "Related Work"
   },
   {
@@ -15,6 +19,10 @@
       "start_pos": 48,
       "end_pos": 72
     },
+    "attributes": {},
+    "sentence_context": "There is a long history of pre-training general language representations, and we briefly review the most widely-used approaches in this section.",
+    "sentence_index": 0,
+    "span_text": "language representations",
     "section": "Related Work"
   }
 ]

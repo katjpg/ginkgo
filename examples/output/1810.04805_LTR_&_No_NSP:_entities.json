@@ -6,6 +6,10 @@
       "start_pos": 60,
       "end_pos": 82
     },
+    "attributes": {},
+    "sentence_context": "A left-context-only model which is trained using a standard Left-to-Right (LTR) LM, rather than an MLM. The left-only constraint was also applied at fine-tuning, because removing it introduced a pre-train/fine-tune mismatch that degraded downstream performance.",
+    "sentence_index": 0,
+    "span_text": "Left-to-Right (LTR) LM",
     "section": "LTR & No NSP:"
   },
   {
@@ -15,6 +19,10 @@
       "start_pos": 99,
       "end_pos": 102
     },
+    "attributes": {},
+    "sentence_context": "A left-context-only model which is trained using a standard Left-to-Right (LTR) LM, rather than an MLM. The left-only constraint was also applied at fine-tuning, because removing it introduced a pre-train/fine-tune mismatch that degraded downstream performance.",
+    "sentence_index": 0,
+    "span_text": "MLM",
     "section": "LTR & No NSP:"
   },
   {
@@ -24,6 +32,10 @@
       "start_pos": 108,
       "end_pos": 128
     },
+    "attributes": {},
+    "sentence_context": "A left-context-only model which is trained using a standard Left-to-Right (LTR) LM, rather than an MLM. The left-only constraint was also applied at fine-tuning, because removing it introduced a pre-train/fine-tune mismatch that degraded downstream performance. Additionally, this model was pre-trained without the NSP task.",
+    "sentence_index": 1,
+    "span_text": "left-only constraint",
     "section": "LTR & No NSP:"
   },
   {
@@ -33,6 +45,10 @@
       "start_pos": 195,
       "end_pos": 223
     },
+    "attributes": {},
+    "sentence_context": "A left-context-only model which is trained using a standard Left-to-Right (LTR) LM, rather than an MLM. The left-only constraint was also applied at fine-tuning, because removing it introduced a pre-train/fine-tune mismatch that degraded downstream performance. Additionally, this model was pre-trained without the NSP task.",
+    "sentence_index": 1,
+    "span_text": "pre-train/fine-tune mismatch",
     "section": "LTR & No NSP:"
   },
   {
@@ -42,6 +58,10 @@
       "start_pos": 315,
       "end_pos": 323
     },
+    "attributes": {},
+    "sentence_context": "The left-only constraint was also applied at fine-tuning, because removing it introduced a pre-train/fine-tune mismatch that degraded downstream performance. Additionally, this model was pre-trained without the NSP task. This is directly comparable to Open AI GPT, but using our larger training dataset, our input representation, and our fine-tuning scheme.",
+    "sentence_index": 2,
+    "span_text": "NSP task",
     "section": "LTR & No NSP:"
   },
   {
@@ -51,6 +71,10 @@
       "start_pos": 588,
       "end_pos": 592
     },
+    "attributes": {},
+    "sentence_context": "We first examine the impact brought by the NSP task. In Table 5, we show that removing NSP hurts performance significantly on QNLI, MNLI, and SQuAD 1.1. Next, we evaluate the impact of training bidirectional representations by comparing \"No NSP\" to \"LTR & No NSP\".",
+    "sentence_index": 5,
+    "span_text": "QNLI",
     "section": "LTR & No NSP:"
   },
   {
@@ -60,6 +84,10 @@
       "start_pos": 594,
       "end_pos": 598
     },
+    "attributes": {},
+    "sentence_context": "We first examine the impact brought by the NSP task. In Table 5, we show that removing NSP hurts performance significantly on QNLI, MNLI, and SQuAD 1.1. Next, we evaluate the impact of training bidirectional representations by comparing \"No NSP\" to \"LTR & No NSP\".",
+    "sentence_index": 5,
+    "span_text": "MNLI",
     "section": "LTR & No NSP:"
   },
   {
@@ -69,6 +97,10 @@
       "start_pos": 604,
       "end_pos": 613
     },
+    "attributes": {},
+    "sentence_context": "We first examine the impact brought by the NSP task. In Table 5, we show that removing NSP hurts performance significantly on QNLI, MNLI, and SQuAD 1.1. Next, we evaluate the impact of training bidirectional representations by comparing \"No NSP\" to \"LTR & No NSP\".",
+    "sentence_index": 5,
+    "span_text": "SQuAD 1.1",
     "section": "LTR & No NSP:"
   },
   {
@@ -78,6 +110,10 @@
       "start_pos": 656,
       "end_pos": 685
     },
+    "attributes": {},
+    "sentence_context": "In Table 5, we show that removing NSP hurts performance significantly on QNLI, MNLI, and SQuAD 1.1. Next, we evaluate the impact of training bidirectional representations by comparing \"No NSP\" to \"LTR & No NSP\". The LTR model performs worse than the MLM model on all tasks, with large drops on MRPC and SQuAD.",
+    "sentence_index": 6,
+    "span_text": "bidirectional representations",
     "section": "LTR & No NSP:"
   },
   {
@@ -87,6 +123,10 @@
       "start_pos": 731,
       "end_pos": 740
     },
+    "attributes": {},
+    "sentence_context": "Next, we evaluate the impact of training bidirectional representations by comparing \"No NSP\" to \"LTR & No NSP\". The LTR model performs worse than the MLM model on all tasks, with large drops on MRPC and SQuAD. For SQuAD it is intuitively clear that a LTR model will perform poorly at token predictions, since the token-level hidden states have no rightside context.",
+    "sentence_index": 7,
+    "span_text": "LTR model",
     "section": "LTR & No NSP:"
   },
   {
@@ -96,6 +136,10 @@
       "start_pos": 765,
       "end_pos": 774
     },
+    "attributes": {},
+    "sentence_context": "Next, we evaluate the impact of training bidirectional representations by comparing \"No NSP\" to \"LTR & No NSP\". The LTR model performs worse than the MLM model on all tasks, with large drops on MRPC and SQuAD. For SQuAD it is intuitively clear that a LTR model will perform poorly at token predictions, since the token-level hidden states have no rightside context.",
+    "sentence_index": 7,
+    "span_text": "MLM model",
     "section": "LTR & No NSP:"
   },
   {
@@ -105,6 +149,10 @@
       "start_pos": 809,
       "end_pos": 813
     },
+    "attributes": {},
+    "sentence_context": "Next, we evaluate the impact of training bidirectional representations by comparing \"No NSP\" to \"LTR & No NSP\". The LTR model performs worse than the MLM model on all tasks, with large drops on MRPC and SQuAD. For SQuAD it is intuitively clear that a LTR model will perform poorly at token predictions, since the token-level hidden states have no rightside context.",
+    "sentence_index": 7,
+    "span_text": "MRPC",
     "section": "LTR & No NSP:"
   },
   {
@@ -114,6 +162,10 @@
       "start_pos": 818,
       "end_pos": 823
     },
+    "attributes": {},
+    "sentence_context": "Next, we evaluate the impact of training bidirectional representations by comparing \"No NSP\" to \"LTR & No NSP\". The LTR model performs worse than the MLM model on all tasks, with large drops on MRPC and SQuAD. For SQuAD it is intuitively clear that a LTR model will perform poorly at token predictions, since the token-level hidden states have no rightside context.",
+    "sentence_index": 7,
+    "span_text": "SQuAD",
     "section": "LTR & No NSP:"
   },
   {
@@ -123,6 +175,10 @@
       "start_pos": 899,
       "end_pos": 916
     },
+    "attributes": {},
+    "sentence_context": "The LTR model performs worse than the MLM model on all tasks, with large drops on MRPC and SQuAD. For SQuAD it is intuitively clear that a LTR model will perform poorly at token predictions, since the token-level hidden states have no rightside context. In order to make a good faith attempt at strengthening the LTR system, we added a randomly initialized BiLSTM on top.",
+    "sentence_index": 8,
+    "span_text": "token predictions",
     "section": "LTR & No NSP:"
   },
   {
@@ -132,6 +188,10 @@
       "start_pos": 962,
       "end_pos": 979
     },
+    "attributes": {},
+    "sentence_context": "The LTR model performs worse than the MLM model on all tasks, with large drops on MRPC and SQuAD. For SQuAD it is intuitively clear that a LTR model will perform poorly at token predictions, since the token-level hidden states have no rightside context. In order to make a good faith attempt at strengthening the LTR system, we added a randomly initialized BiLSTM on top.",
+    "sentence_index": 8,
+    "span_text": "rightside context",
     "section": "LTR & No NSP:"
   },
   {
@@ -141,6 +201,10 @@
       "start_pos": 1084,
       "end_pos": 1090
     },
+    "attributes": {},
+    "sentence_context": "For SQuAD it is intuitively clear that a LTR model will perform poorly at token predictions, since the token-level hidden states have no rightside context. In order to make a good faith attempt at strengthening the LTR system, we added a randomly initialized BiLSTM on top. This does significantly improve results on SQuAD, but the results are still far worse than those of the pretrained bidirectional models.",
+    "sentence_index": 9,
+    "span_text": "BiLSTM",
     "section": "LTR & No NSP:"
   },
   {
@@ -150,6 +214,10 @@
       "start_pos": 1272,
       "end_pos": 1282
     },
+    "attributes": {},
+    "sentence_context": "This does significantly improve results on SQuAD, but the results are still far worse than those of the pretrained bidirectional models. The BiLSTM hurts performance on the GLUE tasks. We recognize that it would also be possible to train separate LTR and RTL models and represent each token as the concatenation of the two models, as ELMo does.",
+    "sentence_index": 11,
+    "span_text": "GLUE tasks",
     "section": "LTR & No NSP:"
   },
   {
@@ -159,6 +227,10 @@
       "start_pos": 1346,
       "end_pos": 1349
     },
+    "attributes": {},
+    "sentence_context": "The BiLSTM hurts performance on the GLUE tasks. We recognize that it would also be possible to train separate LTR and RTL models and represent each token as the concatenation of the two models, as ELMo does. However: (a) this is twice as expensive as a single bidirectional model; (b) this is non-intuitive for tasks like QA, since the RTL model would not be able to condition the answer on the question; (c) this it is strictly less powerful than a deep bidirectional model, since it can use both left and right context at every layer.",
+    "sentence_index": 12,
+    "span_text": "LTR",
     "section": "LTR & No NSP:"
   },
   {
@@ -168,6 +240,10 @@
       "start_pos": 1354,
       "end_pos": 1364
     },
+    "attributes": {},
+    "sentence_context": "The BiLSTM hurts performance on the GLUE tasks. We recognize that it would also be possible to train separate LTR and RTL models and represent each token as the concatenation of the two models, as ELMo does. However: (a) this is twice as expensive as a single bidirectional model; (b) this is non-intuitive for tasks like QA, since the RTL model would not be able to condition the answer on the question; (c) this it is strictly less powerful than a deep bidirectional model, since it can use both left and right context at every layer.",
+    "sentence_index": 12,
+    "span_text": "RTL models",
     "section": "LTR & No NSP:"
   },
   {
@@ -177,6 +253,10 @@
       "start_pos": 1433,
       "end_pos": 1437
     },
+    "attributes": {},
+    "sentence_context": "The BiLSTM hurts performance on the GLUE tasks. We recognize that it would also be possible to train separate LTR and RTL models and represent each token as the concatenation of the two models, as ELMo does. However: (a) this is twice as expensive as a single bidirectional model; (b) this is non-intuitive for tasks like QA, since the RTL model would not be able to condition the answer on the question; (c) this it is strictly less powerful than a deep bidirectional model, since it can use both left and right context at every layer.",
+    "sentence_index": 12,
+    "span_text": "ELMo",
     "section": "LTR & No NSP:"
   },
   {
@@ -186,6 +266,10 @@
       "start_pos": 1496,
       "end_pos": 1515
     },
+    "attributes": {},
+    "sentence_context": "We recognize that it would also be possible to train separate LTR and RTL models and represent each token as the concatenation of the two models, as ELMo does. However: (a) this is twice as expensive as a single bidirectional model; (b) this is non-intuitive for tasks like QA, since the RTL model would not be able to condition the answer on the question; (c) this it is strictly less powerful than a deep bidirectional model, since it can use both left and right context at every layer.",
+    "sentence_index": 13,
+    "span_text": "bidirectional model",
     "section": "LTR & No NSP:"
   },
   {
@@ -195,6 +279,10 @@
       "start_pos": 1558,
       "end_pos": 1560
     },
+    "attributes": {},
+    "sentence_context": "We recognize that it would also be possible to train separate LTR and RTL models and represent each token as the concatenation of the two models, as ELMo does. However: (a) this is twice as expensive as a single bidirectional model; (b) this is non-intuitive for tasks like QA, since the RTL model would not be able to condition the answer on the question; (c) this it is strictly less powerful than a deep bidirectional model, since it can use both left and right context at every layer.",
+    "sentence_index": 13,
+    "span_text": "QA",
     "section": "LTR & No NSP:"
   },
   {
@@ -204,6 +292,10 @@
       "start_pos": 1572,
       "end_pos": 1581
     },
+    "attributes": {},
+    "sentence_context": "We recognize that it would also be possible to train separate LTR and RTL models and represent each token as the concatenation of the two models, as ELMo does. However: (a) this is twice as expensive as a single bidirectional model; (b) this is non-intuitive for tasks like QA, since the RTL model would not be able to condition the answer on the question; (c) this it is strictly less powerful than a deep bidirectional model, since it can use both left and right context at every layer.",
+    "sentence_index": 13,
+    "span_text": "RTL model",
     "section": "LTR & No NSP:"
   },
   {
@@ -213,6 +305,10 @@
       "start_pos": 1686,
       "end_pos": 1710
     },
+    "attributes": {},
+    "sentence_context": "We recognize that it would also be possible to train separate LTR and RTL models and represent each token as the concatenation of the two models, as ELMo does. However: (a) this is twice as expensive as a single bidirectional model; (b) this is non-intuitive for tasks like QA, since the RTL model would not be able to condition the answer on the question; (c) this it is strictly less powerful than a deep bidirectional model, since it can use both left and right context at every layer.",
+    "sentence_index": 13,
+    "span_text": "deep bidirectional model",
     "section": "LTR & No NSP:"
   }
 ]
