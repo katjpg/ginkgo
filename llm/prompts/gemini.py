@@ -1,41 +1,37 @@
-RELATION_PROMPT = '''Classify the semantic relation between ENT1 and ENT2.
+RELATION_PROMPT = '''Classify the semantic relation between [ENT1] and [ENT2].
 
 Sentence: "{exemplar}"
 
 Relation types:
 
-1. uses: A method uses another method as a component or internal mechanism
+1. uses: [ENT1] uses [ENT2] as a component or internal mechanism
    Example: Transformer uses multi-head attention, LSTM uses gating mechanism
-   Do NOT use for: hardware, infrastructure, or tasks that a method solves
-   Valid: method to method (compositional only)
+   Do NOT use for: hardware, infrastructure, or tasks
+   Do NOT use if: [ENT1] and [ENT2] are listed in parallel (e.g., "A, B, and C all...")
 
-2. improves: A method achieves better performance on a specific metric or benchmark
+2. improves: [ENT1] achieves better performance on [ENT2]
    Example: Our model improves F1 score, BERT improves accuracy
-   Do NOT use for: methods evaluated on datasets, datasets improved by methods
-   Valid: method to metric
+   Do NOT use for: methods evaluated on datasets
+   Do NOT use if: [ENT1] is a metric or dataset
 
-3. evaluates: A method is tested or assessed on a dataset or benchmark
-   Example: We evaluate on ImageNet, model tested on SQuAD, parser benchmarked on WSJ
-   Do NOT use for: metrics measuring performance, methods measuring metrics
-   Valid: method to dataset
+3. evaluates: [ENT1] is tested or assessed on [ENT2]
+   Example: We evaluate on ImageNet, model tested on SQuAD
+   Do NOT use for: metrics measuring performance
+   Do NOT use if: [ENT1] is a metric or dataset
 
-4. enables: A method facilitates, supports, or makes possible a capability or task
+4. enables: [ENT1] facilitates or makes possible [ENT2]
    Example: Attention enables parallel computation, transformers enable scaling
-   Do NOT use for: methods that solve tasks (use enables only for technical capabilities)
-   Valid: method to other or method to task
+   Do NOT use for: tasks that [ENT1] solves (use this only for technical capabilities)
 
-5. proposes: Introduces or presents something as a novel contribution
+5. proposes: [ENT1] introduces or presents [ENT2] as a contribution
    Example: We propose BERT, this paper introduces a new optimizer
-   Valid: any
 
-6. related: Unclear connection or no specific relation identified
+6. related: Unclear or non-specific connection. Use this for coordinated alternatives
+   Example: If [ENT1] and [ENT2] appear in parallel lists or are competing approaches
 
 CRITICAL RULES:
-- If ENT1 is a metric or dataset, return related
-- If ENT1 solves a task, use enables or proposes, not uses
-- If ENT1 runs on hardware infrastructure, use related
-- Reverse the relation if it appears backwards in the sentence
+- If [ENT1] appears in a list like "X, Y, and Z all...", those are typically related not uses
+- If [ENT1] is a metric or dataset, return related
+- If [ENT1] is infrastructure or hardware, return related
 
-Return ONLY the relation type name, nothing else.'''
-
-
+Return ONLY the relation type name in lowercase, nothing else.'''
