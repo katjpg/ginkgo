@@ -1,12 +1,15 @@
 import numpy as np
+from dataclasses import dataclass
+
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
-from dataclasses import dataclass
-import re
 from google import genai
 from google.genai import types
+import spacy
+
 from config.llm import GeminiConfig
 from llm.prompts.gemini import RELATION_PROMPT
+from nlp.syntactic import extract_exemplar, mask_entities, find_entity_span
 
 
 @dataclass
@@ -21,8 +24,8 @@ class ExplicitRelation:
 
 
 class Explicit:
-    """Explicit relation discovery via AAP + Gemini."""
-    
+    """Explicit relation discovery via dependency extraction + AAP + Gemini."""
+
     def __init__(
         self,
         config: GeminiConfig,
@@ -31,7 +34,15 @@ class Explicit:
         max_iter: int = 200,
         conv_iter: int = 10
     ):
-        """Initialize with MPNet encoder and Gemini labeler."""
+        """Initialize with MPNet encoder and Gemini labeler.
+        
+        Args:
+            config: Gemini API configuration
+            encoder_model: SentenceTransformer model for AAP clustering
+            damping: AP damping factor (0.5–1.0)
+            max_iter: Maximum AP iterations
+            conv_iter: Iterations before checking convergence
+        """
         self.config = config
         self.client = genai.Client(api_key=config.api_key)
         self.encoder_model = encoder_model
@@ -39,109 +50,98 @@ class Explicit:
         self.max_iter = max_iter
         self.conv_iter = conv_iter
         self._encoder = None
-    
+        self.nlp = spacy.load("en_core_web_sm")
+
     @property
     def encoder(self) -> SentenceTransformer:
         """Lazy load sentence encoder."""
         if self._encoder is None:
             self._encoder = SentenceTransformer(self.encoder_model)
         return self._encoder
-    
-    def discover(
-        self,
-        candidates: list,
-        sentences: list[str],
-        entities: list[dict] | None = None
-    ) -> list[ExplicitRelation]:
-        """Discover explicit relations from candidate pairs."""
+
+    def discover(self, candidates, sentences, entities=None):
         explicit_rels = []
+        full_text = " ".join(sentences)
+        doc = self.nlp(full_text)
+        
+        exemplar_data = []
         
         for cand in candidates:
             e1 = cand.e1 if hasattr(cand, 'e1') else cand['e1']
             e2 = cand.e2 if hasattr(cand, 'e2') else cand['e2']
             
-            masked_sents = self._extract_masked_sentences(e1, e2, sentences)
-            
-            if not masked_sents:
-                continue
-            
-            if len(masked_sents) == 1:
-                exemplar = masked_sents[0]
-            else:
-                embeddings = self.encoder.encode(
-                    masked_sents,
-                    show_progress_bar=False,
-                    convert_to_numpy=True
-                )
-                exemplar_idx = self._aap_cluster(embeddings)
-                exemplar = masked_sents[exemplar_idx]
-            
-            rel_type = self._label_with_gemini(exemplar)
-            confidence = min(len(masked_sents) / 10.0, 1.0)
+            for sent in doc.sents:
+                sent_text = sent.text
+                if e1.lower() not in sent_text.lower():
+                    continue
+                if e2.lower() not in sent_text.lower():
+                    continue
+                
+                exemplar = extract_exemplar(doc, e1, e2)
+                if not exemplar:
+                    exemplar = sent_text
+                
+                masked = mask_entities(exemplar, e1, e2)
+                if not masked:
+                    continue
+                
+                support = sum(1 for s in sentences 
+                            if e1.lower() in s.lower() and e2.lower() in s.lower())
+                
+                exemplar_data.append((e1, e2, exemplar, masked, support))
+                break
+        
+        if not exemplar_data:
+            return []
+        
+        exemplars_only = [x[3] for x in exemplar_data]
+        exemplar_embeddings = self.encoder.encode(exemplars_only, show_progress_bar=False, convert_to_numpy=True)
+        exemplar_clusters = self._aap_cluster(exemplar_embeddings)
+        
+        for i, (e1, e2, orig_exemplar, masked, support) in enumerate(exemplar_data):
+            rel_type = self._label_relation(masked)
+            confidence = min(support / 10.0, 1.0)
             
             explicit_rels.append(ExplicitRelation(
                 e1=e1,
                 e2=e2,
                 rel_type=rel_type,
                 confidence=confidence,
-                exemplar=exemplar,
-                n_supporting=len(masked_sents)
+                exemplar=masked,
+                n_supporting=support
             ))
         
         return sorted(explicit_rels, key=lambda x: x.confidence, reverse=True)
-    
-    def _extract_masked_sentences(
-        self,
-        e1: str,
-        e2: str,
-        sentences: list[str]
-    ) -> list[str]:
-        """Extract sentences with both entities, replace with [ENT1]/[ENT2]."""
-        masked = []
-        e1_lower = e1.lower()
-        e2_lower = e2.lower()
+
+
+
+    def _aap_cluster(self, embeddings: np.ndarray) -> dict:
+        """Run Affinity Propagation, return cluster assignments.
         
-        for sent in sentences:
-            sent_lower = sent.lower()
-            
-            if e1_lower not in sent_lower or e2_lower not in sent_lower:
-                continue
-            
-            # using word boundaries to avoid partial matches
-            # had the issue of something like: 'ge[ENT2]alize' when [ENT2] = NER
-            pattern1 = r'\b' + re.escape(e1) + r'\b'
-            pattern2 = r'\b' + re.escape(e2) + r'\b'
-            
-            masked_sent = re.sub(pattern1, '[ENT1]', sent, flags=re.IGNORECASE, count=1)
-            masked_sent = re.sub(pattern2, '[ENT2]', masked_sent, flags=re.IGNORECASE, count=1)
-            
-            # verifying both replacements actually occurred
-            if '[ENT1]' in masked_sent and '[ENT2]' in masked_sent:
-                masked.append(masked_sent)
+        Clusters exemplar embeddings to identify representative archetypes.
+        Exemplars within cluster are semantically similar expression patterns.
         
-        return masked
-    
-    def _aap_cluster(self, embeddings: np.ndarray) -> int:
-        """Run AAP clustering, return exemplar index."""
+        Returns:
+            dict mapping exemplar index → cluster exemplar index
+        """
         m = len(embeddings)
-        
         if m == 1:
-            return 0
+            return {0: 0}
         
+        # similarity matrix (cosine distance)
         S = cosine_similarity(embeddings)
-        r = np.zeros((m, m), dtype=np.float32)
-        a = np.zeros((m, m), dtype=np.float32)
+        r = np.zeros((m, m), dtype=np.float32)  # responsibility
+        a = np.zeros((m, m), dtype=np.float32)  # availability
         
         for iteration in range(self.max_iter):
             r_old = r.copy()
             a_old = a.copy()
             
-            # update responsibilities
+            # responsibility: how well k represents i
             for i in range(m):
                 for k in range(m):
                     mask = np.ones(m, dtype=bool)
                     mask[k] = False
-                    
                     if mask.any():
                         max_val = np.max(a[i, mask] + S[i, mask])
                         r[i, k] = S[i, k] - max_val
@@ -150,7 +150,7 @@ class Explicit:
             
             r = self.damping * r + (1 - self.damping) * r_old
             
-            # update availabilities
+            # availability: how suitable i is as exemplar
             for i in range(m):
                 for k in range(m):
                     if i == k:
@@ -168,52 +168,49 @@ class Explicit:
             
             # check convergence
             if iteration >= self.conv_iter:
-                exemplars_curr = np.array([np.argmax(a[i, :] + r[i, :]) for i in range(m)])
+                exemplars = np.array([np.argmax(a[i, :] + r[i, :]) for i in range(m)])
                 if iteration > self.conv_iter:
                     exemplars_prev = np.array([np.argmax(a_old[i, :] + r_old[i, :]) for i in range(m)])
-                    if np.array_equal(exemplars_curr, exemplars_prev):
+                    if np.array_equal(exemplars, exemplars_prev):
                         break
         
-        exemplar_idx = np.argmax(np.diag(a + r))
-        return int(exemplar_idx)
-    
-    def _label_with_gemini(self, exemplar: str) -> str:
-        """Use Gemini to classify relation type from exemplar."""
-        prompt = RELATION_PROMPT.format(exemplar=exemplar)
-        
+        # final cluster assignments
+        exemplars = np.array([np.argmax(a[i, :] + r[i, :]) for i in range(m)])
+        return {i: int(exemplars[i]) for i in range(m)}
+
+    def _label_relation(self, exemplar: str) -> str:
+        """Classify relation type with Gemini, fallback to keywords."""
         try:
             config = types.GenerateContentConfig(
                 temperature=self.config.temperature,
                 top_p=self.config.top_p,
                 top_k=self.config.top_k,
-                max_output_tokens=50,  # short output needed
+                max_output_tokens=50
             )
             
+            prompt = RELATION_PROMPT.format(exemplar=exemplar)
             response = self.client.models.generate_content(
                 model=self.config.model_id,
                 contents=prompt,
                 config=config
             )
             
-            # handle potential None response
             if response and hasattr(response, 'text') and response.text:
                 rel_type = response.text.strip().lower()
-            else:
-                return self._label_with_keyword(exemplar)
-            
-            valid_types = {'uses', 'improves', 'evaluates', 'enables', 'proposes', 'related'}
-            return rel_type if rel_type in valid_types else 'related'
+                valid = {'uses', 'improves', 'evaluates', 'enables', 'proposes', 'related'}
+                return rel_type if rel_type in valid else 'related'
         
         except Exception:
-            # use keyword matching if API fails
-            return self._label_with_keyword(exemplar)
-    
-    def _label_with_keyword(self, exemplar: str) -> str:
-        """Keyword-based classification."""
+            pass
+        
+        return self._label_fallback(exemplar)
+
+    def _label_fallback(self, exemplar: str) -> str:
+        """Fallback keyword-based classification."""
         exemplar_lower = exemplar.lower()
         
         patterns = {
-            'uses': ['use', 'employ', 'apply', 'utilize', 'leverage'],
+            'uses': ['use', 'employ', 'apply', 'utilize', 'integrate'],
             'improves': ['improve', 'enhance', 'outperform', 'boost'],
             'evaluates': ['evaluate', 'test', 'benchmark', 'assess'],
             'enables': ['enable', 'allow', 'facilitate', 'support'],
@@ -226,9 +223,9 @@ class Explicit:
                     return rel_type
         
         return 'related'
-    
+
     def stats(self, relations: list[ExplicitRelation]) -> dict:
-        """Compute summary statistics."""
+        """Compute summary statistics over relations."""
         if not relations:
             return {
                 'n_explicit': 0,
@@ -240,8 +237,8 @@ class Explicit:
         
         confidences = np.array([r.confidence for r in relations])
         supports = np.array([r.n_supporting for r in relations])
-        type_dist = {}
         
+        type_dist = {}
         for r in relations:
             type_dist[r.rel_type] = type_dist.get(r.rel_type, 0) + 1
         
