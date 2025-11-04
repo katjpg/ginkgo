@@ -15,10 +15,17 @@ class TypeConfig:
             (EntityType.METHOD, EntityType.DATASET),
             (EntityType.TASK, EntityType.DATASET),
             (EntityType.METHOD, EntityType.METHOD),
-            (EntityType.OBJECT, EntityType.TASK),
+            (EntityType.OTHER, EntityType.TASK),
             (EntityType.METHOD, EntityType.METRIC),
+            
+            (EntityType.METHOD, EntityType.OTHER),    
+            (EntityType.OTHER, EntityType.OTHER),      
+            (EntityType.OTHER, EntityType.METRIC),     
+            (EntityType.OTHER, EntityType.DATASET),  
+            (EntityType.OTHER, EntityType.TASK),      
         }
         self.skip_generic = True
+
 
 
 class PairFilter:
