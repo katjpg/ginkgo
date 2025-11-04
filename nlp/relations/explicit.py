@@ -107,10 +107,17 @@ class Explicit:
             if e1_lower not in sent_lower or e2_lower not in sent_lower:
                 continue
             
-            # case-insensitive replacement
-            masked_sent = re.sub(re.escape(e1), '[ENT1]', sent, flags=re.IGNORECASE, count=1)
-            masked_sent = re.sub(re.escape(e2), '[ENT2]', masked_sent, flags=re.IGNORECASE, count=1)
-            masked.append(masked_sent)
+            # using word boundaries to avoid partial matches
+            # had the issue of something like: 'ge[ENT2]alize' when [ENT2] = NER
+            pattern1 = r'\b' + re.escape(e1) + r'\b'
+            pattern2 = r'\b' + re.escape(e2) + r'\b'
+            
+            masked_sent = re.sub(pattern1, '[ENT1]', sent, flags=re.IGNORECASE, count=1)
+            masked_sent = re.sub(pattern2, '[ENT2]', masked_sent, flags=re.IGNORECASE, count=1)
+            
+            # verifying both replacements actually occurred
+            if '[ENT1]' in masked_sent and '[ENT2]' in masked_sent:
+                masked.append(masked_sent)
         
         return masked
     
