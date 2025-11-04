@@ -1,0 +1,6414 @@
+[
+  {
+    "e1": "BERT",
+    "e2": "fine-tuning"
+  },
+  {
+    "e1": "BERT",
+    "e2": "Open AI GPT"
+  },
+  {
+    "e1": "BERT",
+    "e2": "NER"
+  },
+  {
+    "e1": "BERT",
+    "e2": "question answering"
+  },
+  {
+    "e1": "BERT",
+    "e2": "NLI"
+  },
+  {
+    "e1": "BERT",
+    "e2": "classification"
+  },
+  {
+    "e1": "BERT",
+    "e2": "training data"
+  },
+  {
+    "e1": "BERT",
+    "e2": "ELMo"
+  },
+  {
+    "e1": "BERT",
+    "e2": "MNLI"
+  },
+  {
+    "e1": "BERT",
+    "e2": "SQuAD"
+  },
+  {
+    "e1": "BERT",
+    "e2": "next sentence prediction"
+  },
+  {
+    "e1": "BERT",
+    "e2": "MRPC"
+  },
+  {
+    "e1": "BERT",
+    "e2": "Masked LM"
+  },
+  {
+    "e1": "BERT",
+    "e2": "named entity recognition"
+  },
+  {
+    "e1": "BERT",
+    "e2": "Stanford Question Answering Dataset"
+  },
+  {
+    "e1": "BERT",
+    "e2": "QNLI"
+  },
+  {
+    "e1": "BERT",
+    "e2": "sentence pairs"
+  },
+  {
+    "e1": "BERT",
+    "e2": "Dev set"
+  },
+  {
+    "e1": "BERT",
+    "e2": "Wikipedia"
+  },
+  {
+    "e1": "BERT",
+    "e2": "sentiment analysis"
+  },
+  {
+    "e1": "BERT",
+    "e2": "LTR"
+  },
+  {
+    "e1": "BERT",
+    "e2": "machine translation"
+  },
+  {
+    "e1": "BERT",
+    "e2": "paraphrasing"
+  },
+  {
+    "e1": "BERT",
+    "e2": "text generation"
+  },
+  {
+    "e1": "BERT",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "BERT",
+    "e2": "QP Quora Question Pairs"
+  },
+  {
+    "e1": "BERT",
+    "e2": "positive examples"
+  },
+  {
+    "e1": "BERT",
+    "e2": "negative examples"
+  },
+  {
+    "e1": "BERT",
+    "e2": "Stanford Sentiment Treebank"
+  },
+  {
+    "e1": "BERT",
+    "e2": "CoLA The Corpus of Linguistic Acceptability"
+  },
+  {
+    "e1": "BERT",
+    "e2": "Semantic Textual Similarity Benchmark"
+  },
+  {
+    "e1": "BERT",
+    "e2": "GLUE tasks"
+  },
+  {
+    "e1": "BERT",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "BERT",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "BERT",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "BERT",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "BERT",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "BERT",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "BERT",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "BERT",
+    "e2": "development set"
+  },
+  {
+    "e1": "BERT",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "BERT",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "BERT",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "BERT",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "BERT",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "BERT",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "BERT",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "BERT",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "BERT",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "BERT",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "BERT",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "BERT",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "BERT",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "BERT",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "BERT",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "BERT",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "BERT",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "BERT",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "BERT",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "BERT",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "BERT",
+    "e2": "Adam"
+  },
+  {
+    "e1": "BERT",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "BERT",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "BERT",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "BERT",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "BERT",
+    "e2": "training loss"
+  },
+  {
+    "e1": "BERT",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "BERT",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "BERT",
+    "e2": "LM perplexity"
+  },
+  {
+    "e1": "BERT",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "BERT",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "BERT",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "BERT",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "BERT",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "BERT",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "BERT",
+    "e2": "public data"
+  },
+  {
+    "e1": "BERT",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "BERT",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "Open AI GPT"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "NER"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "training data"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "ELMo"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "MNLI"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "SQuAD"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "MRPC"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "Masked LM"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "Stanford Question Answering Dataset"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "QNLI"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "sentence pairs"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "Dev set"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "Wikipedia"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "LTR"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "QP Quora Question Pairs"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "positive examples"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "negative examples"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "Stanford Sentiment Treebank"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "CoLA The Corpus of Linguistic Acceptability"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "Semantic Textual Similarity Benchmark"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "GLUE tasks"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "development set"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "Adam"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "public data"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "fine-tuning",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "NER"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "question answering"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "NLI"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "classification"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "training data"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "ELMo"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "MNLI"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "SQuAD"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "next sentence prediction"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "MRPC"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "Masked LM"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "named entity recognition"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "Stanford Question Answering Dataset"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "QNLI"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "sentence pairs"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "Dev set"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "Wikipedia"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "sentiment analysis"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "LTR"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "machine translation"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "paraphrasing"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "text generation"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "QP Quora Question Pairs"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "positive examples"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "negative examples"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "Stanford Sentiment Treebank"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "CoLA The Corpus of Linguistic Acceptability"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "Semantic Textual Similarity Benchmark"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "GLUE tasks"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "development set"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "Adam"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "training loss"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "LM perplexity"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "public data"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "NER",
+    "e2": "question answering"
+  },
+  {
+    "e1": "NER",
+    "e2": "NLI"
+  },
+  {
+    "e1": "NER",
+    "e2": "classification"
+  },
+  {
+    "e1": "NER",
+    "e2": "training data"
+  },
+  {
+    "e1": "NER",
+    "e2": "ELMo"
+  },
+  {
+    "e1": "NER",
+    "e2": "MNLI"
+  },
+  {
+    "e1": "NER",
+    "e2": "SQuAD"
+  },
+  {
+    "e1": "NER",
+    "e2": "next sentence prediction"
+  },
+  {
+    "e1": "NER",
+    "e2": "MRPC"
+  },
+  {
+    "e1": "NER",
+    "e2": "Masked LM"
+  },
+  {
+    "e1": "NER",
+    "e2": "named entity recognition"
+  },
+  {
+    "e1": "NER",
+    "e2": "Stanford Question Answering Dataset"
+  },
+  {
+    "e1": "NER",
+    "e2": "QNLI"
+  },
+  {
+    "e1": "NER",
+    "e2": "sentence pairs"
+  },
+  {
+    "e1": "NER",
+    "e2": "Dev set"
+  },
+  {
+    "e1": "NER",
+    "e2": "Wikipedia"
+  },
+  {
+    "e1": "NER",
+    "e2": "sentiment analysis"
+  },
+  {
+    "e1": "NER",
+    "e2": "LTR"
+  },
+  {
+    "e1": "NER",
+    "e2": "machine translation"
+  },
+  {
+    "e1": "NER",
+    "e2": "paraphrasing"
+  },
+  {
+    "e1": "NER",
+    "e2": "text generation"
+  },
+  {
+    "e1": "NER",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "NER",
+    "e2": "QP Quora Question Pairs"
+  },
+  {
+    "e1": "NER",
+    "e2": "positive examples"
+  },
+  {
+    "e1": "NER",
+    "e2": "negative examples"
+  },
+  {
+    "e1": "NER",
+    "e2": "Stanford Sentiment Treebank"
+  },
+  {
+    "e1": "NER",
+    "e2": "CoLA The Corpus of Linguistic Acceptability"
+  },
+  {
+    "e1": "NER",
+    "e2": "Semantic Textual Similarity Benchmark"
+  },
+  {
+    "e1": "NER",
+    "e2": "GLUE tasks"
+  },
+  {
+    "e1": "NER",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "NER",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "NER",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "NER",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "NER",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "NER",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "NER",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "NER",
+    "e2": "development set"
+  },
+  {
+    "e1": "NER",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "NER",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "NER",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "NER",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "NER",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "NER",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "NER",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "NER",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "NER",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "NER",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "NER",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "NER",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "NER",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "NER",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "NER",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "NER",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "NER",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "NER",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "NER",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "NER",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "NER",
+    "e2": "Adam"
+  },
+  {
+    "e1": "NER",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "NER",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "NER",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "NER",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "NER",
+    "e2": "training loss"
+  },
+  {
+    "e1": "NER",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "NER",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "NER",
+    "e2": "LM perplexity"
+  },
+  {
+    "e1": "NER",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "NER",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "NER",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "NER",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "NER",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "NER",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "NER",
+    "e2": "public data"
+  },
+  {
+    "e1": "NER",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "NER",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "question answering",
+    "e2": "training data"
+  },
+  {
+    "e1": "question answering",
+    "e2": "ELMo"
+  },
+  {
+    "e1": "question answering",
+    "e2": "MNLI"
+  },
+  {
+    "e1": "question answering",
+    "e2": "SQuAD"
+  },
+  {
+    "e1": "question answering",
+    "e2": "MRPC"
+  },
+  {
+    "e1": "question answering",
+    "e2": "Masked LM"
+  },
+  {
+    "e1": "question answering",
+    "e2": "Stanford Question Answering Dataset"
+  },
+  {
+    "e1": "question answering",
+    "e2": "QNLI"
+  },
+  {
+    "e1": "question answering",
+    "e2": "sentence pairs"
+  },
+  {
+    "e1": "question answering",
+    "e2": "Dev set"
+  },
+  {
+    "e1": "question answering",
+    "e2": "Wikipedia"
+  },
+  {
+    "e1": "question answering",
+    "e2": "LTR"
+  },
+  {
+    "e1": "question answering",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "question answering",
+    "e2": "QP Quora Question Pairs"
+  },
+  {
+    "e1": "question answering",
+    "e2": "positive examples"
+  },
+  {
+    "e1": "question answering",
+    "e2": "negative examples"
+  },
+  {
+    "e1": "question answering",
+    "e2": "Stanford Sentiment Treebank"
+  },
+  {
+    "e1": "question answering",
+    "e2": "CoLA The Corpus of Linguistic Acceptability"
+  },
+  {
+    "e1": "question answering",
+    "e2": "Semantic Textual Similarity Benchmark"
+  },
+  {
+    "e1": "question answering",
+    "e2": "GLUE tasks"
+  },
+  {
+    "e1": "question answering",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "question answering",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "question answering",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "question answering",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "question answering",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "question answering",
+    "e2": "development set"
+  },
+  {
+    "e1": "question answering",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "question answering",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "question answering",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "question answering",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "question answering",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "question answering",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "question answering",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "question answering",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "question answering",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "question answering",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "question answering",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "question answering",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "question answering",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "question answering",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "question answering",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "question answering",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "question answering",
+    "e2": "Adam"
+  },
+  {
+    "e1": "question answering",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "question answering",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "question answering",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "question answering",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "question answering",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "question answering",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "question answering",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "question answering",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "question answering",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "question answering",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "question answering",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "question answering",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "question answering",
+    "e2": "public data"
+  },
+  {
+    "e1": "question answering",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "question answering",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "NLI",
+    "e2": "training data"
+  },
+  {
+    "e1": "NLI",
+    "e2": "ELMo"
+  },
+  {
+    "e1": "NLI",
+    "e2": "MNLI"
+  },
+  {
+    "e1": "NLI",
+    "e2": "SQuAD"
+  },
+  {
+    "e1": "NLI",
+    "e2": "MRPC"
+  },
+  {
+    "e1": "NLI",
+    "e2": "Masked LM"
+  },
+  {
+    "e1": "NLI",
+    "e2": "Stanford Question Answering Dataset"
+  },
+  {
+    "e1": "NLI",
+    "e2": "QNLI"
+  },
+  {
+    "e1": "NLI",
+    "e2": "sentence pairs"
+  },
+  {
+    "e1": "NLI",
+    "e2": "Dev set"
+  },
+  {
+    "e1": "NLI",
+    "e2": "Wikipedia"
+  },
+  {
+    "e1": "NLI",
+    "e2": "LTR"
+  },
+  {
+    "e1": "NLI",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "NLI",
+    "e2": "QP Quora Question Pairs"
+  },
+  {
+    "e1": "NLI",
+    "e2": "positive examples"
+  },
+  {
+    "e1": "NLI",
+    "e2": "negative examples"
+  },
+  {
+    "e1": "NLI",
+    "e2": "Stanford Sentiment Treebank"
+  },
+  {
+    "e1": "NLI",
+    "e2": "CoLA The Corpus of Linguistic Acceptability"
+  },
+  {
+    "e1": "NLI",
+    "e2": "Semantic Textual Similarity Benchmark"
+  },
+  {
+    "e1": "NLI",
+    "e2": "GLUE tasks"
+  },
+  {
+    "e1": "NLI",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "NLI",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "NLI",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "NLI",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "NLI",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "NLI",
+    "e2": "development set"
+  },
+  {
+    "e1": "NLI",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "NLI",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "NLI",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "NLI",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "NLI",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "NLI",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "NLI",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "NLI",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "NLI",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "NLI",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "NLI",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "NLI",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "NLI",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "NLI",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "NLI",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "NLI",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "NLI",
+    "e2": "Adam"
+  },
+  {
+    "e1": "NLI",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "NLI",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "NLI",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "NLI",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "NLI",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "NLI",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "NLI",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "NLI",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "NLI",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "NLI",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "NLI",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "NLI",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "NLI",
+    "e2": "public data"
+  },
+  {
+    "e1": "NLI",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "NLI",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "classification",
+    "e2": "training data"
+  },
+  {
+    "e1": "classification",
+    "e2": "ELMo"
+  },
+  {
+    "e1": "classification",
+    "e2": "MNLI"
+  },
+  {
+    "e1": "classification",
+    "e2": "SQuAD"
+  },
+  {
+    "e1": "classification",
+    "e2": "MRPC"
+  },
+  {
+    "e1": "classification",
+    "e2": "Masked LM"
+  },
+  {
+    "e1": "classification",
+    "e2": "Stanford Question Answering Dataset"
+  },
+  {
+    "e1": "classification",
+    "e2": "QNLI"
+  },
+  {
+    "e1": "classification",
+    "e2": "sentence pairs"
+  },
+  {
+    "e1": "classification",
+    "e2": "Dev set"
+  },
+  {
+    "e1": "classification",
+    "e2": "Wikipedia"
+  },
+  {
+    "e1": "classification",
+    "e2": "LTR"
+  },
+  {
+    "e1": "classification",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "classification",
+    "e2": "QP Quora Question Pairs"
+  },
+  {
+    "e1": "classification",
+    "e2": "positive examples"
+  },
+  {
+    "e1": "classification",
+    "e2": "negative examples"
+  },
+  {
+    "e1": "classification",
+    "e2": "Stanford Sentiment Treebank"
+  },
+  {
+    "e1": "classification",
+    "e2": "CoLA The Corpus of Linguistic Acceptability"
+  },
+  {
+    "e1": "classification",
+    "e2": "Semantic Textual Similarity Benchmark"
+  },
+  {
+    "e1": "classification",
+    "e2": "GLUE tasks"
+  },
+  {
+    "e1": "classification",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "classification",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "classification",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "classification",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "classification",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "classification",
+    "e2": "development set"
+  },
+  {
+    "e1": "classification",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "classification",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "classification",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "classification",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "classification",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "classification",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "classification",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "classification",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "classification",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "classification",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "classification",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "classification",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "classification",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "classification",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "classification",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "classification",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "classification",
+    "e2": "Adam"
+  },
+  {
+    "e1": "classification",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "classification",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "classification",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "classification",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "classification",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "classification",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "classification",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "classification",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "classification",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "classification",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "classification",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "classification",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "classification",
+    "e2": "public data"
+  },
+  {
+    "e1": "classification",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "classification",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "training data",
+    "e2": "ELMo"
+  },
+  {
+    "e1": "training data",
+    "e2": "next sentence prediction"
+  },
+  {
+    "e1": "training data",
+    "e2": "Masked LM"
+  },
+  {
+    "e1": "training data",
+    "e2": "named entity recognition"
+  },
+  {
+    "e1": "training data",
+    "e2": "sentiment analysis"
+  },
+  {
+    "e1": "training data",
+    "e2": "LTR"
+  },
+  {
+    "e1": "training data",
+    "e2": "machine translation"
+  },
+  {
+    "e1": "training data",
+    "e2": "paraphrasing"
+  },
+  {
+    "e1": "training data",
+    "e2": "text generation"
+  },
+  {
+    "e1": "training data",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "training data",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "training data",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "training data",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "training data",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "training data",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "training data",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "training data",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "training data",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "training data",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "training data",
+    "e2": "Adam"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "MNLI"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "SQuAD"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "next sentence prediction"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "MRPC"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "Masked LM"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "named entity recognition"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "Stanford Question Answering Dataset"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "QNLI"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "sentence pairs"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "Dev set"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "Wikipedia"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "sentiment analysis"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "LTR"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "machine translation"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "paraphrasing"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "text generation"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "QP Quora Question Pairs"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "positive examples"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "negative examples"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "Stanford Sentiment Treebank"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "CoLA The Corpus of Linguistic Acceptability"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "Semantic Textual Similarity Benchmark"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "GLUE tasks"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "development set"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "Adam"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "training loss"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "LM perplexity"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "public data"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "ELMo",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "next sentence prediction"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "Masked LM"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "named entity recognition"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "sentiment analysis"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "LTR"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "machine translation"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "paraphrasing"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "text generation"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "MNLI",
+    "e2": "Adam"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "next sentence prediction"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "Masked LM"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "named entity recognition"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "sentiment analysis"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "LTR"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "machine translation"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "paraphrasing"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "text generation"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "SQuAD",
+    "e2": "Adam"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "MRPC"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "Masked LM"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "Stanford Question Answering Dataset"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "QNLI"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "sentence pairs"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "Dev set"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "Wikipedia"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "LTR"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "QP Quora Question Pairs"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "positive examples"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "negative examples"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "Stanford Sentiment Treebank"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "CoLA The Corpus of Linguistic Acceptability"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "Semantic Textual Similarity Benchmark"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "GLUE tasks"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "development set"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "Adam"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "public data"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "Masked LM"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "named entity recognition"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "sentiment analysis"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "LTR"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "machine translation"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "paraphrasing"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "text generation"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "MRPC",
+    "e2": "Adam"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "named entity recognition"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "Stanford Question Answering Dataset"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "QNLI"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "sentence pairs"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "Dev set"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "Wikipedia"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "sentiment analysis"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "LTR"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "machine translation"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "paraphrasing"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "text generation"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "QP Quora Question Pairs"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "positive examples"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "negative examples"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "Stanford Sentiment Treebank"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "CoLA The Corpus of Linguistic Acceptability"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "Semantic Textual Similarity Benchmark"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "GLUE tasks"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "development set"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "Adam"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "training loss"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "LM perplexity"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "public data"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "Stanford Question Answering Dataset"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "QNLI"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "sentence pairs"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "Dev set"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "Wikipedia"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "LTR"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "QP Quora Question Pairs"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "positive examples"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "negative examples"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "Stanford Sentiment Treebank"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "CoLA The Corpus of Linguistic Acceptability"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "Semantic Textual Similarity Benchmark"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "GLUE tasks"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "development set"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "Adam"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "public data"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "named entity recognition",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "Stanford Question Answering Dataset",
+    "e2": "sentiment analysis"
+  },
+  {
+    "e1": "Stanford Question Answering Dataset",
+    "e2": "LTR"
+  },
+  {
+    "e1": "Stanford Question Answering Dataset",
+    "e2": "machine translation"
+  },
+  {
+    "e1": "Stanford Question Answering Dataset",
+    "e2": "paraphrasing"
+  },
+  {
+    "e1": "Stanford Question Answering Dataset",
+    "e2": "text generation"
+  },
+  {
+    "e1": "Stanford Question Answering Dataset",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "Stanford Question Answering Dataset",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "Stanford Question Answering Dataset",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "Stanford Question Answering Dataset",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "Stanford Question Answering Dataset",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "Stanford Question Answering Dataset",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "Stanford Question Answering Dataset",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "Stanford Question Answering Dataset",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "Stanford Question Answering Dataset",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "Stanford Question Answering Dataset",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "Stanford Question Answering Dataset",
+    "e2": "Adam"
+  },
+  {
+    "e1": "QNLI",
+    "e2": "sentiment analysis"
+  },
+  {
+    "e1": "QNLI",
+    "e2": "LTR"
+  },
+  {
+    "e1": "QNLI",
+    "e2": "machine translation"
+  },
+  {
+    "e1": "QNLI",
+    "e2": "paraphrasing"
+  },
+  {
+    "e1": "QNLI",
+    "e2": "text generation"
+  },
+  {
+    "e1": "QNLI",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "QNLI",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "QNLI",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "QNLI",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "QNLI",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "QNLI",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "QNLI",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "QNLI",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "QNLI",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "QNLI",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "QNLI",
+    "e2": "Adam"
+  },
+  {
+    "e1": "sentence pairs",
+    "e2": "sentiment analysis"
+  },
+  {
+    "e1": "sentence pairs",
+    "e2": "LTR"
+  },
+  {
+    "e1": "sentence pairs",
+    "e2": "machine translation"
+  },
+  {
+    "e1": "sentence pairs",
+    "e2": "paraphrasing"
+  },
+  {
+    "e1": "sentence pairs",
+    "e2": "text generation"
+  },
+  {
+    "e1": "sentence pairs",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "sentence pairs",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "sentence pairs",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "sentence pairs",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "sentence pairs",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "sentence pairs",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "sentence pairs",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "sentence pairs",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "sentence pairs",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "sentence pairs",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "sentence pairs",
+    "e2": "Adam"
+  },
+  {
+    "e1": "Dev set",
+    "e2": "sentiment analysis"
+  },
+  {
+    "e1": "Dev set",
+    "e2": "LTR"
+  },
+  {
+    "e1": "Dev set",
+    "e2": "machine translation"
+  },
+  {
+    "e1": "Dev set",
+    "e2": "paraphrasing"
+  },
+  {
+    "e1": "Dev set",
+    "e2": "text generation"
+  },
+  {
+    "e1": "Dev set",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "Dev set",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "Dev set",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "Dev set",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "Dev set",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "Dev set",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "Dev set",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "Dev set",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "Dev set",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "Dev set",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "Dev set",
+    "e2": "Adam"
+  },
+  {
+    "e1": "Wikipedia",
+    "e2": "sentiment analysis"
+  },
+  {
+    "e1": "Wikipedia",
+    "e2": "LTR"
+  },
+  {
+    "e1": "Wikipedia",
+    "e2": "machine translation"
+  },
+  {
+    "e1": "Wikipedia",
+    "e2": "paraphrasing"
+  },
+  {
+    "e1": "Wikipedia",
+    "e2": "text generation"
+  },
+  {
+    "e1": "Wikipedia",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "Wikipedia",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "Wikipedia",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "Wikipedia",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "Wikipedia",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "Wikipedia",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "Wikipedia",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "Wikipedia",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "Wikipedia",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "Wikipedia",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "Wikipedia",
+    "e2": "Adam"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "LTR"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "QP Quora Question Pairs"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "positive examples"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "negative examples"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "Stanford Sentiment Treebank"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "CoLA The Corpus of Linguistic Acceptability"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "Semantic Textual Similarity Benchmark"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "GLUE tasks"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "development set"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "Adam"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "public data"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "sentiment analysis",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "LTR",
+    "e2": "machine translation"
+  },
+  {
+    "e1": "LTR",
+    "e2": "paraphrasing"
+  },
+  {
+    "e1": "LTR",
+    "e2": "text generation"
+  },
+  {
+    "e1": "LTR",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "LTR",
+    "e2": "QP Quora Question Pairs"
+  },
+  {
+    "e1": "LTR",
+    "e2": "positive examples"
+  },
+  {
+    "e1": "LTR",
+    "e2": "negative examples"
+  },
+  {
+    "e1": "LTR",
+    "e2": "Stanford Sentiment Treebank"
+  },
+  {
+    "e1": "LTR",
+    "e2": "CoLA The Corpus of Linguistic Acceptability"
+  },
+  {
+    "e1": "LTR",
+    "e2": "Semantic Textual Similarity Benchmark"
+  },
+  {
+    "e1": "LTR",
+    "e2": "GLUE tasks"
+  },
+  {
+    "e1": "LTR",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "LTR",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "LTR",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "LTR",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "LTR",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "LTR",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "LTR",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "LTR",
+    "e2": "development set"
+  },
+  {
+    "e1": "LTR",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "LTR",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "LTR",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "LTR",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "LTR",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "LTR",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "LTR",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "LTR",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "LTR",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "LTR",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "LTR",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "LTR",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "LTR",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "LTR",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "LTR",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "LTR",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "LTR",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "LTR",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "LTR",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "LTR",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "LTR",
+    "e2": "Adam"
+  },
+  {
+    "e1": "LTR",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "LTR",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "LTR",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "LTR",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "LTR",
+    "e2": "training loss"
+  },
+  {
+    "e1": "LTR",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "LTR",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "LTR",
+    "e2": "LM perplexity"
+  },
+  {
+    "e1": "LTR",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "LTR",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "LTR",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "LTR",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "LTR",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "LTR",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "LTR",
+    "e2": "public data"
+  },
+  {
+    "e1": "LTR",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "LTR",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "QP Quora Question Pairs"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "positive examples"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "negative examples"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "Stanford Sentiment Treebank"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "CoLA The Corpus of Linguistic Acceptability"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "Semantic Textual Similarity Benchmark"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "GLUE tasks"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "development set"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "Adam"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "public data"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "machine translation",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "QP Quora Question Pairs"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "positive examples"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "negative examples"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "Stanford Sentiment Treebank"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "CoLA The Corpus of Linguistic Acceptability"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "Semantic Textual Similarity Benchmark"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "GLUE tasks"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "development set"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "Adam"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "public data"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "text generation",
+    "e2": "BiLSTM"
+  },
+  {
+    "e1": "text generation",
+    "e2": "QP Quora Question Pairs"
+  },
+  {
+    "e1": "text generation",
+    "e2": "positive examples"
+  },
+  {
+    "e1": "text generation",
+    "e2": "negative examples"
+  },
+  {
+    "e1": "text generation",
+    "e2": "Stanford Sentiment Treebank"
+  },
+  {
+    "e1": "text generation",
+    "e2": "CoLA The Corpus of Linguistic Acceptability"
+  },
+  {
+    "e1": "text generation",
+    "e2": "Semantic Textual Similarity Benchmark"
+  },
+  {
+    "e1": "text generation",
+    "e2": "GLUE tasks"
+  },
+  {
+    "e1": "text generation",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "text generation",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "text generation",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "text generation",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "text generation",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "text generation",
+    "e2": "development set"
+  },
+  {
+    "e1": "text generation",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "text generation",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "text generation",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "text generation",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "text generation",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "text generation",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "text generation",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "text generation",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "text generation",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "text generation",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "text generation",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "text generation",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "text generation",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "text generation",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "text generation",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "text generation",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "text generation",
+    "e2": "Adam"
+  },
+  {
+    "e1": "text generation",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "text generation",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "text generation",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "text generation",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "text generation",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "text generation",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "text generation",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "text generation",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "text generation",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "text generation",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "text generation",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "text generation",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "text generation",
+    "e2": "public data"
+  },
+  {
+    "e1": "text generation",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "text generation",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "QP Quora Question Pairs"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "positive examples"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "negative examples"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "Stanford Sentiment Treebank"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "CoLA The Corpus of Linguistic Acceptability"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "Semantic Textual Similarity Benchmark"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "GLUE tasks"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "development set"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "Adam"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "training loss"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "LM perplexity"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "public data"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "QP Quora Question Pairs",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "QP Quora Question Pairs",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "QP Quora Question Pairs",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "QP Quora Question Pairs",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "QP Quora Question Pairs",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "QP Quora Question Pairs",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "QP Quora Question Pairs",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "QP Quora Question Pairs",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "QP Quora Question Pairs",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "QP Quora Question Pairs",
+    "e2": "Adam"
+  },
+  {
+    "e1": "positive examples",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "positive examples",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "positive examples",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "positive examples",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "positive examples",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "positive examples",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "positive examples",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "positive examples",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "positive examples",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "positive examples",
+    "e2": "Adam"
+  },
+  {
+    "e1": "negative examples",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "negative examples",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "negative examples",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "negative examples",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "negative examples",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "negative examples",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "negative examples",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "negative examples",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "negative examples",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "negative examples",
+    "e2": "Adam"
+  },
+  {
+    "e1": "Stanford Sentiment Treebank",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "Stanford Sentiment Treebank",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "Stanford Sentiment Treebank",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "Stanford Sentiment Treebank",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "Stanford Sentiment Treebank",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "Stanford Sentiment Treebank",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "Stanford Sentiment Treebank",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "Stanford Sentiment Treebank",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "Stanford Sentiment Treebank",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "Stanford Sentiment Treebank",
+    "e2": "Adam"
+  },
+  {
+    "e1": "CoLA The Corpus of Linguistic Acceptability",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "CoLA The Corpus of Linguistic Acceptability",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "CoLA The Corpus of Linguistic Acceptability",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "CoLA The Corpus of Linguistic Acceptability",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "CoLA The Corpus of Linguistic Acceptability",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "CoLA The Corpus of Linguistic Acceptability",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "CoLA The Corpus of Linguistic Acceptability",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "CoLA The Corpus of Linguistic Acceptability",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "CoLA The Corpus of Linguistic Acceptability",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "CoLA The Corpus of Linguistic Acceptability",
+    "e2": "Adam"
+  },
+  {
+    "e1": "Semantic Textual Similarity Benchmark",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "Semantic Textual Similarity Benchmark",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "Semantic Textual Similarity Benchmark",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "Semantic Textual Similarity Benchmark",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "Semantic Textual Similarity Benchmark",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "Semantic Textual Similarity Benchmark",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "Semantic Textual Similarity Benchmark",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "Semantic Textual Similarity Benchmark",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "Semantic Textual Similarity Benchmark",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "Semantic Textual Similarity Benchmark",
+    "e2": "Adam"
+  },
+  {
+    "e1": "GLUE tasks",
+    "e2": "language understanding"
+  },
+  {
+    "e1": "GLUE tasks",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "GLUE tasks",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "GLUE tasks",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "GLUE tasks",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "GLUE tasks",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "GLUE tasks",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "GLUE tasks",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "GLUE tasks",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "GLUE tasks",
+    "e2": "Adam"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "Books Corpus"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "development set"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "Adam"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "public data"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "language understanding",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "Books Corpus",
+    "e2": "LSTMs"
+  },
+  {
+    "e1": "Books Corpus",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "Books Corpus",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "Books Corpus",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "Books Corpus",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "Books Corpus",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "Books Corpus",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "Books Corpus",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "Books Corpus",
+    "e2": "Adam"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "labeled training examples"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "tuning data"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "development set"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "Adam"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "training loss"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "LM perplexity"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "public data"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "labeled training examples",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "labeled training examples",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "labeled training examples",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "labeled training examples",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "labeled training examples",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "labeled training examples",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "labeled training examples",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "labeled training examples",
+    "e2": "Adam"
+  },
+  {
+    "e1": "tuning data",
+    "e2": "Left-to-Right (LTR) LM"
+  },
+  {
+    "e1": "tuning data",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "tuning data",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "tuning data",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "tuning data",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "tuning data",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "tuning data",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "tuning data",
+    "e2": "Adam"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "predict a single word"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "development set"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "Adam"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "training loss"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "LM perplexity"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "public data"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "development set"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "Adam"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "public data"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "predict a single word",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "development set",
+    "e2": "ESIM+ELMo"
+  },
+  {
+    "e1": "development set",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "development set",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "development set",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "development set",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "development set",
+    "e2": "Adam"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "token predictions"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "grounded commonsense inference"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "sentence-pair completion"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "Adam"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "training loss"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "LM perplexity"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "public data"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "Adam"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "public data"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "token predictions",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "Adam"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "public data"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "grounded commonsense inference",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "Trivia QA"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "GLUE benchmark"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "Ima-ge Net"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "RTE Recognizing Textual Entailment"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "natural language inference dataset"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "GLUE webpage"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "GLUE submission"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "Dev results"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "GLUE leaderboard"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "question/answer pairs"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "GLUE data set"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "Adam"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "public data"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "sentence-pair completion",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "Trivia QA",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "Trivia QA",
+    "e2": "Adam"
+  },
+  {
+    "e1": "GLUE benchmark",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "GLUE benchmark",
+    "e2": "Adam"
+  },
+  {
+    "e1": "Ima-ge Net",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "Ima-ge Net",
+    "e2": "Adam"
+  },
+  {
+    "e1": "RTE Recognizing Textual Entailment",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "RTE Recognizing Textual Entailment",
+    "e2": "Adam"
+  },
+  {
+    "e1": "natural language inference dataset",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "natural language inference dataset",
+    "e2": "Adam"
+  },
+  {
+    "e1": "GLUE webpage",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "GLUE webpage",
+    "e2": "Adam"
+  },
+  {
+    "e1": "GLUE submission",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "GLUE submission",
+    "e2": "Adam"
+  },
+  {
+    "e1": "Dev results",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "Dev results",
+    "e2": "Adam"
+  },
+  {
+    "e1": "GLUE leaderboard",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "GLUE leaderboard",
+    "e2": "Adam"
+  },
+  {
+    "e1": "question/answer pairs",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "question/answer pairs",
+    "e2": "Adam"
+  },
+  {
+    "e1": "GLUE data set",
+    "e2": "sequence tagging"
+  },
+  {
+    "e1": "GLUE data set",
+    "e2": "Adam"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "SWAG dataset"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "pretraining data"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "fine-tuning data"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "GLUE datasets"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "Adam"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "public data"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "sequence tagging",
+    "e2": "WNLI Winograd NLI"
+  },
+  {
+    "e1": "SWAG dataset",
+    "e2": "Adam"
+  },
+  {
+    "e1": "pretraining data",
+    "e2": "Adam"
+  },
+  {
+    "e1": "fine-tuning data",
+    "e2": "Adam"
+  },
+  {
+    "e1": "GLUE datasets",
+    "e2": "Adam"
+  },
+  {
+    "e1": "Adam",
+    "e2": "English Wikipedia"
+  },
+  {
+    "e1": "Adam",
+    "e2": "document-level corpus"
+  },
+  {
+    "e1": "Adam",
+    "e2": "shuffled sentence-level corpus"
+  },
+  {
+    "e1": "Adam",
+    "e2": "Billion Word Benchmark"
+  },
+  {
+    "e1": "Adam",
+    "e2": "training loss"
+  },
+  {
+    "e1": "Adam",
+    "e2": "large data sets"
+  },
+  {
+    "e1": "Adam",
+    "e2": "small data sets"
+  },
+  {
+    "e1": "Adam",
+    "e2": "LM perplexity"
+  },
+  {
+    "e1": "Adam",
+    "e2": "large text corpus"
+  },
+  {
+    "e1": "Adam",
+    "e2": "CoNL-2003"
+  },
+  {
+    "e1": "Adam",
+    "e2": "monolingual corpus"
+  },
+  {
+    "e1": "Adam",
+    "e2": "pretraining example"
+  },
+  {
+    "e1": "Adam",
+    "e2": "unlabeled data"
+  },
+  {
+    "e1": "Adam",
+    "e2": "labeled data"
+  },
+  {
+    "e1": "Adam",
+    "e2": "public data"
+  },
+  {
+    "e1": "Adam",
+    "e2": "unlabeled sentence"
+  },
+  {
+    "e1": "Adam",
+    "e2": "WNLI Winograd NLI"
+  }
+]

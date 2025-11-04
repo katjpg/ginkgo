@@ -1,0 +1,1093 @@
+{
+  "explicit": [
+    {
+      "source": "ELMo",
+      "target": "Open AI GPT",
+      "type": "evaluates",
+      "confidence": 0.4,
+      "support": 4
+    },
+    {
+      "source": "classification",
+      "target": "sentence pairs",
+      "type": "uses",
+      "confidence": 0.3,
+      "support": 3
+    },
+    {
+      "source": "NER",
+      "target": "named entity recognition",
+      "type": "evaluates",
+      "confidence": 0.3,
+      "support": 3
+    },
+    {
+      "source": "ELMo",
+      "target": "named entity recognition",
+      "type": "proposes",
+      "confidence": 0.2,
+      "support": 2
+    },
+    {
+      "source": "NER",
+      "target": "paraphrasing",
+      "type": "uses",
+      "confidence": 0.2,
+      "support": 2
+    },
+    {
+      "source": "NER",
+      "target": "text generation",
+      "type": "improves",
+      "confidence": 0.2,
+      "support": 2
+    },
+    {
+      "source": "NER",
+      "target": "language understanding",
+      "type": "evaluates",
+      "confidence": 0.2,
+      "support": 2
+    },
+    {
+      "source": "LSTMs",
+      "target": "predict a single word",
+      "type": "uses",
+      "confidence": 0.1,
+      "support": 1
+    },
+    {
+      "source": "LTR",
+      "target": "token predictions",
+      "type": "evaluates",
+      "confidence": 0.1,
+      "support": 1
+    },
+    {
+      "source": "LSTMs",
+      "target": "sentiment analysis",
+      "type": "uses",
+      "confidence": 0.1,
+      "support": 1
+    },
+    {
+      "source": "LTR",
+      "target": "SQuAD",
+      "type": "evaluates",
+      "confidence": 0.1,
+      "support": 1
+    },
+    {
+      "source": "BiLSTM",
+      "target": "LTR",
+      "type": "uses",
+      "confidence": 0.1,
+      "support": 1
+    },
+    {
+      "source": "LTR",
+      "target": "MRPC",
+      "type": "evaluates",
+      "confidence": 0.1,
+      "support": 1
+    },
+    {
+      "source": "Masked LM",
+      "target": "unlabeled sentence",
+      "type": "uses",
+      "confidence": 0.1,
+      "support": 1
+    },
+    {
+      "source": "next sentence prediction",
+      "target": "training loss",
+      "type": "uses",
+      "confidence": 0.1,
+      "support": 1
+    },
+    {
+      "source": "ELMo",
+      "target": "LSTMs",
+      "type": "uses",
+      "confidence": 0.1,
+      "support": 1
+    },
+    {
+      "source": "ELMo",
+      "target": "predict a single word",
+      "type": "proposes",
+      "confidence": 0.1,
+      "support": 1
+    },
+    {
+      "source": "ELMo",
+      "target": "ESIM+ELMo",
+      "type": "evaluates",
+      "confidence": 0.1,
+      "support": 1
+    },
+    {
+      "source": "question answering",
+      "target": "question/answer pairs",
+      "type": "uses",
+      "confidence": 0.1,
+      "support": 1
+    },
+    {
+      "source": "BiLSTM",
+      "target": "GLUE tasks",
+      "type": "related",
+      "confidence": 0.1,
+      "support": 1
+    },
+    {
+      "source": "paraphrasing",
+      "target": "sentence pairs",
+      "type": "uses",
+      "confidence": 0.1,
+      "support": 1
+    },
+    {
+      "source": "ESIM+ELMo",
+      "target": "Open AI GPT",
+      "type": "evaluates",
+      "confidence": 0.1,
+      "support": 1
+    }
+  ],
+  "implicit": [
+    {
+      "source": "machine translation",
+      "target": "CoLA The Corpus of Linguistic Acceptability",
+      "confidence": 0.5,
+      "n_bridges": 4,
+      "bridges": [
+        "document-level corpus",
+        "large text corpus",
+        "monolingual corpus",
+        "shuffled sentence-level corpus"
+      ]
+    },
+    {
+      "source": "machine translation",
+      "target": "natural language inference dataset",
+      "confidence": 0.5,
+      "n_bridges": 4,
+      "bridges": [
+        "document-level corpus",
+        "large text corpus",
+        "monolingual corpus",
+        "shuffled sentence-level corpus"
+      ]
+    },
+    {
+      "source": "classification",
+      "target": "pretraining data",
+      "confidence": 0.375,
+      "n_bridges": 3,
+      "bridges": [
+        "labeled data",
+        "labeled training examples",
+        "training data"
+      ]
+    },
+    {
+      "source": "next sentence prediction",
+      "target": "Books Corpus",
+      "confidence": 0.375,
+      "n_bridges": 3,
+      "bridges": [
+        "machine translation",
+        "shuffled sentence-level corpus",
+        "text generation"
+      ]
+    },
+    {
+      "source": "next sentence prediction",
+      "target": "large text corpus",
+      "confidence": 0.375,
+      "n_bridges": 3,
+      "bridges": [
+        "machine translation",
+        "shuffled sentence-level corpus",
+        "text generation"
+      ]
+    },
+    {
+      "source": "named entity recognition",
+      "target": "shuffled sentence-level corpus",
+      "confidence": 0.375,
+      "n_bridges": 3,
+      "bridges": [
+        "Books Corpus",
+        "document-level corpus",
+        "large text corpus"
+      ]
+    },
+    {
+      "source": "named entity recognition",
+      "target": "monolingual corpus",
+      "confidence": 0.375,
+      "n_bridges": 3,
+      "bridges": [
+        "Books Corpus",
+        "document-level corpus",
+        "large text corpus"
+      ]
+    },
+    {
+      "source": "machine translation",
+      "target": "Stanford Sentiment Treebank",
+      "confidence": 0.375,
+      "n_bridges": 3,
+      "bridges": [
+        "document-level corpus",
+        "large text corpus",
+        "shuffled sentence-level corpus"
+      ]
+    },
+    {
+      "source": "text generation",
+      "target": "document-level corpus",
+      "confidence": 0.375,
+      "n_bridges": 3,
+      "bridges": [
+        "Books Corpus",
+        "large text corpus",
+        "machine translation"
+      ]
+    },
+    {
+      "source": "text generation",
+      "target": "shuffled sentence-level corpus",
+      "confidence": 0.375,
+      "n_bridges": 3,
+      "bridges": [
+        "Books Corpus",
+        "large text corpus",
+        "machine translation"
+      ]
+    },
+    {
+      "source": "text generation",
+      "target": "monolingual corpus",
+      "confidence": 0.375,
+      "n_bridges": 3,
+      "bridges": [
+        "Books Corpus",
+        "large text corpus",
+        "machine translation"
+      ]
+    },
+    {
+      "source": "fine-tuning",
+      "target": "training data",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "fine-tuning data",
+        "tuning data"
+      ]
+    },
+    {
+      "source": "fine-tuning",
+      "target": "pretraining data",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "fine-tuning data",
+        "tuning data"
+      ]
+    },
+    {
+      "source": "fine-tuning",
+      "target": "large data sets",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "fine-tuning data",
+        "tuning data"
+      ]
+    },
+    {
+      "source": "fine-tuning",
+      "target": "small data sets",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "fine-tuning data",
+        "tuning data"
+      ]
+    },
+    {
+      "source": "classification",
+      "target": "fine-tuning data",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "labeled data",
+        "training data"
+      ]
+    },
+    {
+      "source": "classification",
+      "target": "pretraining example",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "labeled training examples",
+        "training data"
+      ]
+    },
+    {
+      "source": "classification",
+      "target": "public data",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "labeled data",
+        "training data"
+      ]
+    },
+    {
+      "source": "next sentence prediction",
+      "target": "document-level corpus",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "machine translation",
+        "shuffled sentence-level corpus"
+      ]
+    },
+    {
+      "source": "next sentence prediction",
+      "target": "monolingual corpus",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "machine translation",
+        "shuffled sentence-level corpus"
+      ]
+    },
+    {
+      "source": "named entity recognition",
+      "target": "Stanford Sentiment Treebank",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "document-level corpus",
+        "large text corpus"
+      ]
+    },
+    {
+      "source": "named entity recognition",
+      "target": "CoLA The Corpus of Linguistic Acceptability",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "document-level corpus",
+        "large text corpus"
+      ]
+    },
+    {
+      "source": "named entity recognition",
+      "target": "natural language inference dataset",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "document-level corpus",
+        "large text corpus"
+      ]
+    },
+    {
+      "source": "sentence pairs",
+      "target": "machine translation",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "next sentence prediction",
+        "shuffled sentence-level corpus"
+      ]
+    },
+    {
+      "source": "paraphrasing",
+      "target": "shuffled sentence-level corpus",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "natural language inference dataset",
+        "sentence pairs"
+      ]
+    },
+    {
+      "source": "language understanding",
+      "target": "Books Corpus",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "machine translation",
+        "monolingual corpus"
+      ]
+    },
+    {
+      "source": "language understanding",
+      "target": "document-level corpus",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "machine translation",
+        "monolingual corpus"
+      ]
+    },
+    {
+      "source": "language understanding",
+      "target": "shuffled sentence-level corpus",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "machine translation",
+        "monolingual corpus"
+      ]
+    },
+    {
+      "source": "language understanding",
+      "target": "large text corpus",
+      "confidence": 0.25,
+      "n_bridges": 2,
+      "bridges": [
+        "machine translation",
+        "monolingual corpus"
+      ]
+    },
+    {
+      "source": "fine-tuning",
+      "target": "labeled data",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "fine-tuning data"
+      ]
+    },
+    {
+      "source": "NER",
+      "target": "Left-to-Right (LTR) LM",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "LTR"
+      ]
+    },
+    {
+      "source": "question answering",
+      "target": "sentence pairs",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "question/answer pairs"
+      ]
+    },
+    {
+      "source": "question answering",
+      "target": "QP Quora Question Pairs",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "question/answer pairs"
+      ]
+    },
+    {
+      "source": "question answering",
+      "target": "Stanford Sentiment Treebank",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "Stanford Question Answering Dataset"
+      ]
+    },
+    {
+      "source": "question answering",
+      "target": "natural language inference dataset",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "Stanford Question Answering Dataset"
+      ]
+    },
+    {
+      "source": "question answering",
+      "target": "English Wikipedia",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "language understanding"
+      ]
+    },
+    {
+      "source": "question answering",
+      "target": "monolingual corpus",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "language understanding"
+      ]
+    },
+    {
+      "source": "classification",
+      "target": "tuning data",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "training data"
+      ]
+    },
+    {
+      "source": "classification",
+      "target": "large data sets",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "training data"
+      ]
+    },
+    {
+      "source": "classification",
+      "target": "small data sets",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "training data"
+      ]
+    },
+    {
+      "source": "classification",
+      "target": "unlabeled data",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "labeled data"
+      ]
+    },
+    {
+      "source": "next sentence prediction",
+      "target": "Stanford Question Answering Dataset",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "shuffled sentence-level corpus"
+      ]
+    },
+    {
+      "source": "next sentence prediction",
+      "target": "QP Quora Question Pairs",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "sentence pairs"
+      ]
+    },
+    {
+      "source": "next sentence prediction",
+      "target": "Stanford Sentiment Treebank",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "shuffled sentence-level corpus"
+      ]
+    },
+    {
+      "source": "next sentence prediction",
+      "target": "CoLA The Corpus of Linguistic Acceptability",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "shuffled sentence-level corpus"
+      ]
+    },
+    {
+      "source": "next sentence prediction",
+      "target": "Semantic Textual Similarity Benchmark",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "shuffled sentence-level corpus"
+      ]
+    },
+    {
+      "source": "next sentence prediction",
+      "target": "natural language inference dataset",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "shuffled sentence-level corpus"
+      ]
+    },
+    {
+      "source": "next sentence prediction",
+      "target": "question/answer pairs",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "sentence pairs"
+      ]
+    },
+    {
+      "source": "next sentence prediction",
+      "target": "Billion Word Benchmark",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "predict a single word"
+      ]
+    },
+    {
+      "source": "next sentence prediction",
+      "target": "unlabeled sentence",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "sentence pairs"
+      ]
+    },
+    {
+      "source": "named entity recognition",
+      "target": "Billion Word Benchmark",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "large text corpus"
+      ]
+    },
+    {
+      "source": "named entity recognition",
+      "target": "large data sets",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "large text corpus"
+      ]
+    },
+    {
+      "source": "Stanford Question Answering Dataset",
+      "target": "sentiment analysis",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "Stanford Sentiment Treebank"
+      ]
+    },
+    {
+      "source": "Stanford Question Answering Dataset",
+      "target": "machine translation",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "shuffled sentence-level corpus"
+      ]
+    },
+    {
+      "source": "Stanford Question Answering Dataset",
+      "target": "paraphrasing",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "Stanford Question Answering Dataset",
+      "target": "language understanding",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "question answering"
+      ]
+    },
+    {
+      "source": "Stanford Question Answering Dataset",
+      "target": "grounded commonsense inference",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "sentence pairs",
+      "target": "text generation",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "next sentence prediction"
+      ]
+    },
+    {
+      "source": "sentence pairs",
+      "target": "predict a single word",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "next sentence prediction"
+      ]
+    },
+    {
+      "source": "sentence pairs",
+      "target": "token predictions",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "next sentence prediction"
+      ]
+    },
+    {
+      "source": "Wikipedia",
+      "target": "language understanding",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "English Wikipedia"
+      ]
+    },
+    {
+      "source": "sentiment analysis",
+      "target": "natural language inference dataset",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "Stanford Sentiment Treebank"
+      ]
+    },
+    {
+      "source": "machine translation",
+      "target": "Semantic Textual Similarity Benchmark",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "shuffled sentence-level corpus"
+      ]
+    },
+    {
+      "source": "machine translation",
+      "target": "English Wikipedia",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "language understanding"
+      ]
+    },
+    {
+      "source": "machine translation",
+      "target": "Billion Word Benchmark",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "large text corpus"
+      ]
+    },
+    {
+      "source": "machine translation",
+      "target": "large data sets",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "large text corpus"
+      ]
+    },
+    {
+      "source": "paraphrasing",
+      "target": "QP Quora Question Pairs",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "sentence pairs"
+      ]
+    },
+    {
+      "source": "paraphrasing",
+      "target": "Stanford Sentiment Treebank",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "paraphrasing",
+      "target": "Semantic Textual Similarity Benchmark",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "paraphrasing",
+      "target": "RTE Recognizing Textual Entailment",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "paraphrasing",
+      "target": "question/answer pairs",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "sentence pairs"
+      ]
+    },
+    {
+      "source": "paraphrasing",
+      "target": "document-level corpus",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "paraphrasing",
+      "target": "large text corpus",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "paraphrasing",
+      "target": "monolingual corpus",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "paraphrasing",
+      "target": "unlabeled sentence",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "sentence pairs"
+      ]
+    },
+    {
+      "source": "text generation",
+      "target": "Stanford Sentiment Treebank",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "large text corpus"
+      ]
+    },
+    {
+      "source": "text generation",
+      "target": "CoLA The Corpus of Linguistic Acceptability",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "large text corpus"
+      ]
+    },
+    {
+      "source": "text generation",
+      "target": "natural language inference dataset",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "large text corpus"
+      ]
+    },
+    {
+      "source": "text generation",
+      "target": "Billion Word Benchmark",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "large text corpus"
+      ]
+    },
+    {
+      "source": "text generation",
+      "target": "large data sets",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "large text corpus"
+      ]
+    },
+    {
+      "source": "QP Quora Question Pairs",
+      "target": "sentence-pair completion",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "sentence pairs"
+      ]
+    },
+    {
+      "source": "Stanford Sentiment Treebank",
+      "target": "grounded commonsense inference",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "CoLA The Corpus of Linguistic Acceptability",
+      "target": "language understanding",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "monolingual corpus"
+      ]
+    },
+    {
+      "source": "Semantic Textual Similarity Benchmark",
+      "target": "predict a single word",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "Billion Word Benchmark"
+      ]
+    },
+    {
+      "source": "Semantic Textual Similarity Benchmark",
+      "target": "grounded commonsense inference",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "language understanding",
+      "target": "natural language inference dataset",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "monolingual corpus"
+      ]
+    },
+    {
+      "source": "language understanding",
+      "target": "question/answer pairs",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "question answering"
+      ]
+    },
+    {
+      "source": "Books Corpus",
+      "target": "sequence tagging",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "named entity recognition"
+      ]
+    },
+    {
+      "source": "predict a single word",
+      "target": "large text corpus",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "Billion Word Benchmark"
+      ]
+    },
+    {
+      "source": "token predictions",
+      "target": "Billion Word Benchmark",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "predict a single word"
+      ]
+    },
+    {
+      "source": "grounded commonsense inference",
+      "target": "RTE Recognizing Textual Entailment",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "grounded commonsense inference",
+      "target": "document-level corpus",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "grounded commonsense inference",
+      "target": "shuffled sentence-level corpus",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "grounded commonsense inference",
+      "target": "large text corpus",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "grounded commonsense inference",
+      "target": "monolingual corpus",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "sentence-pair completion",
+      "target": "question/answer pairs",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "sentence pairs"
+      ]
+    },
+    {
+      "source": "sentence-pair completion",
+      "target": "shuffled sentence-level corpus",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "sentence pairs"
+      ]
+    },
+    {
+      "source": "sentence-pair completion",
+      "target": "unlabeled sentence",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "sentence pairs"
+      ]
+    },
+    {
+      "source": "sequence tagging",
+      "target": "document-level corpus",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "named entity recognition"
+      ]
+    }
+  ]
+}

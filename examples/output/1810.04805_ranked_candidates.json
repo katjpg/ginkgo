@@ -1,0 +1,362 @@
+[
+  {
+    "e1": "LSTMs",
+    "e2": "predict a single word",
+    "npmi": 1.0,
+    "cooc": 1
+  },
+  {
+    "e1": "LTR",
+    "e2": "token predictions",
+    "npmi": 1.0,
+    "cooc": 1
+  },
+  {
+    "e1": "Adam",
+    "e2": "training loss",
+    "npmi": 1.0,
+    "cooc": 1
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "sentiment analysis",
+    "npmi": 0.7872539464466369,
+    "cooc": 1
+  },
+  {
+    "e1": "LSTMs",
+    "e2": "text generation",
+    "npmi": 0.7872539464466369,
+    "cooc": 1
+  },
+  {
+    "e1": "LTR",
+    "e2": "SQuAD",
+    "npmi": 0.7872539464466369,
+    "cooc": 1
+  },
+  {
+    "e1": "Left-to-Right (LTR) LM",
+    "e2": "QNLI",
+    "npmi": 0.7872539464466369,
+    "cooc": 1
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "LTR",
+    "npmi": 0.7872539464466369,
+    "cooc": 1
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "token predictions",
+    "npmi": 0.7872539464466369,
+    "cooc": 1
+  },
+  {
+    "e1": "LM perplexity",
+    "e2": "labeled training examples",
+    "npmi": 0.7872539464466369,
+    "cooc": 1
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "CoNL-2003",
+    "npmi": 0.7872539464466369,
+    "cooc": 1
+  },
+  {
+    "e1": "language understanding",
+    "e2": "unlabeled sentence",
+    "npmi": 0.7872539464466369,
+    "cooc": 1
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "pretraining data",
+    "npmi": 0.6628054829415045,
+    "cooc": 1
+  },
+  {
+    "e1": "LTR",
+    "e2": "MRPC",
+    "npmi": 0.6628054829415045,
+    "cooc": 1
+  },
+  {
+    "e1": "LM perplexity",
+    "e2": "MRPC",
+    "npmi": 0.6628054829415045,
+    "cooc": 1
+  },
+  {
+    "e1": "GLUE tasks",
+    "e2": "LM perplexity",
+    "npmi": 0.6628054829415045,
+    "cooc": 1
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "unlabeled sentence",
+    "npmi": 0.6628054829415045,
+    "cooc": 1
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "SQuAD",
+    "npmi": 0.5745078928932738,
+    "cooc": 1
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "QNLI",
+    "npmi": 0.5745078928932738,
+    "cooc": 1
+  },
+  {
+    "e1": "Dev set",
+    "e2": "LM perplexity",
+    "npmi": 0.5745078928932738,
+    "cooc": 1
+  },
+  {
+    "e1": "Adam",
+    "e2": "next sentence prediction",
+    "npmi": 0.5745078928932738,
+    "cooc": 1
+  },
+  {
+    "e1": "next sentence prediction",
+    "e2": "training loss",
+    "npmi": 0.5745078928932738,
+    "cooc": 1
+  },
+  {
+    "e1": "classification",
+    "e2": "sentence pairs",
+    "npmi": 0.5458039329041543,
+    "cooc": 3
+  },
+  {
+    "e1": "ELMo",
+    "e2": "LSTMs",
+    "npmi": 0.5060189611780348,
+    "cooc": 1
+  },
+  {
+    "e1": "ELMo",
+    "e2": "predict a single word",
+    "npmi": 0.5060189611780348,
+    "cooc": 1
+  },
+  {
+    "e1": "ELMo",
+    "e2": "ESIM+ELMo",
+    "npmi": 0.5060189611780348,
+    "cooc": 1
+  },
+  {
+    "e1": "ELMo",
+    "e2": "grounded commonsense inference",
+    "npmi": 0.5060189611780348,
+    "cooc": 1
+  },
+  {
+    "e1": "ELMo",
+    "e2": "sentence-pair completion",
+    "npmi": 0.5060189611780348,
+    "cooc": 1
+  },
+  {
+    "e1": "ELMo",
+    "e2": "SWAG dataset",
+    "npmi": 0.5060189611780348,
+    "cooc": 1
+  },
+  {
+    "e1": "ELMo",
+    "e2": "Left-to-Right (LTR) LM",
+    "npmi": 0.5060189611780348,
+    "cooc": 1
+  },
+  {
+    "e1": "ELMo",
+    "e2": "token predictions",
+    "npmi": 0.5060189611780348,
+    "cooc": 1
+  },
+  {
+    "e1": "LTR",
+    "e2": "MNLI",
+    "npmi": 0.5060189611780348,
+    "cooc": 1
+  },
+  {
+    "e1": "ELMo",
+    "e2": "development set",
+    "npmi": 0.5060189611780348,
+    "cooc": 1
+  },
+  {
+    "e1": "ELMo",
+    "e2": "large data sets",
+    "npmi": 0.5060189611780348,
+    "cooc": 1
+  },
+  {
+    "e1": "ELMo",
+    "e2": "small data sets",
+    "npmi": 0.5060189611780348,
+    "cooc": 1
+  },
+  {
+    "e1": "ELMo",
+    "e2": "large text corpus",
+    "npmi": 0.5060189611780348,
+    "cooc": 1
+  },
+  {
+    "e1": "ELMo",
+    "e2": "named entity recognition",
+    "npmi": 0.4846854047479414,
+    "cooc": 2
+  },
+  {
+    "e1": "classification",
+    "e2": "unlabeled data",
+    "npmi": 0.45005942938814136,
+    "cooc": 1
+  },
+  {
+    "e1": "classification",
+    "e2": "labeled data",
+    "npmi": 0.45005942938814136,
+    "cooc": 1
+  },
+  {
+    "e1": "question answering",
+    "e2": "question/answer pairs",
+    "npmi": 0.45005942938814136,
+    "cooc": 1
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "MRPC",
+    "npmi": 0.45005942938814136,
+    "cooc": 1
+  },
+  {
+    "e1": "BiLSTM",
+    "e2": "GLUE tasks",
+    "npmi": 0.45005942938814136,
+    "cooc": 1
+  },
+  {
+    "e1": "Masked LM",
+    "e2": "language understanding",
+    "npmi": 0.45005942938814136,
+    "cooc": 1
+  },
+  {
+    "e1": "classification",
+    "e2": "positive examples",
+    "npmi": 0.45005942938814136,
+    "cooc": 1
+  },
+  {
+    "e1": "classification",
+    "e2": "negative examples",
+    "npmi": 0.45005942938814136,
+    "cooc": 1
+  },
+  {
+    "e1": "ELMo",
+    "e2": "Open AI GPT",
+    "npmi": 0.44755178710057447,
+    "cooc": 4
+  },
+  {
+    "e1": "NER",
+    "e2": "named entity recognition",
+    "npmi": 0.4424720603141935,
+    "cooc": 3
+  },
+  {
+    "e1": "NLI",
+    "e2": "monolingual corpus",
+    "npmi": 0.40274631940863537,
+    "cooc": 1
+  },
+  {
+    "e1": "NLI",
+    "e2": "pretraining example",
+    "npmi": 0.40274631940863537,
+    "cooc": 1
+  },
+  {
+    "e1": "LTR",
+    "e2": "training data",
+    "npmi": 0.40274631940863537,
+    "cooc": 1
+  },
+  {
+    "e1": "NER",
+    "e2": "paraphrasing",
+    "npmi": 0.3725264369246966,
+    "cooc": 2
+  },
+  {
+    "e1": "NER",
+    "e2": "sentiment analysis",
+    "npmi": 0.3725264369246966,
+    "cooc": 2
+  },
+  {
+    "e1": "NER",
+    "e2": "text generation",
+    "npmi": 0.3725264369246966,
+    "cooc": 2
+  },
+  {
+    "e1": "NER",
+    "e2": "language understanding",
+    "npmi": 0.3725264369246966,
+    "cooc": 2
+  },
+  {
+    "e1": "paraphrasing",
+    "e2": "sentence pairs",
+    "npmi": 0.3617618393399106,
+    "cooc": 1
+  },
+  {
+    "e1": "language understanding",
+    "e2": "sentence pairs",
+    "npmi": 0.3617618393399106,
+    "cooc": 1
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "labeled data",
+    "npmi": 0.3256109658830091,
+    "cooc": 1
+  },
+  {
+    "e1": "Open AI GPT",
+    "e2": "fine-tuning data",
+    "npmi": 0.3256109658830091,
+    "cooc": 1
+  },
+  {
+    "e1": "ESIM+ELMo",
+    "e2": "Open AI GPT",
+    "npmi": 0.3256109658830091,
+    "cooc": 1
+  },
+  {
+    "e1": "LTR",
+    "e2": "Open AI GPT",
+    "npmi": 0.3256109658830091,
+    "cooc": 1
+  }
+]
