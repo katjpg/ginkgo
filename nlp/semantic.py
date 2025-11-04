@@ -90,7 +90,7 @@ class EntityExtractor:
         return " ".join(s.text for s in sents[start:end])
 
     def convert_to_spans(
-        self, entities: list[dict], doc: Doc, context_size: int = 2
+        self, entities: list[dict], doc: Doc, context_size: int = 1
     ) -> list[dict[str, Any]]:
         """Convert entities to dictionaries with spans and context."""
         results = []
