@@ -7,7 +7,7 @@
       "end_pos": 11
     },
     "attributes": {},
-    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs. For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences.",
+    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs.",
     "sentence_index": 0,
     "section": "Fine-tuning BERT"
   },
@@ -19,7 +19,7 @@
       "end_pos": 64
     },
     "attributes": {},
-    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs. For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences.",
+    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs.",
     "sentence_index": 0,
     "section": "Fine-tuning BERT"
   },
@@ -31,7 +31,7 @@
       "end_pos": 83
     },
     "attributes": {},
-    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs. For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences.",
+    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs.",
     "sentence_index": 0,
     "section": "Fine-tuning BERT"
   },
@@ -43,7 +43,7 @@
       "end_pos": 95
     },
     "attributes": {},
-    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs. For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences.",
+    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs.",
     "sentence_index": 0,
     "section": "Fine-tuning BERT"
   },
@@ -55,7 +55,7 @@
       "end_pos": 120
     },
     "attributes": {},
-    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs. For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences.",
+    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs.",
     "sentence_index": 0,
     "section": "Fine-tuning BERT"
   },
@@ -67,7 +67,7 @@
       "end_pos": 172
     },
     "attributes": {},
-    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs. For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences.",
+    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs.",
     "sentence_index": 0,
     "section": "Fine-tuning BERT"
   },
@@ -79,7 +79,7 @@
       "end_pos": 364
     },
     "attributes": {},
-    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs. For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences. For each task, we simply plug in the taskspecific inputs and outputs into BERT and finetune all the parameters end-to-end.",
+    "sentence_context": "For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences.",
     "sentence_index": 1,
     "section": "Fine-tuning BERT"
   },
@@ -91,7 +91,7 @@
       "end_pos": 414
     },
     "attributes": {},
-    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs. For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences. For each task, we simply plug in the taskspecific inputs and outputs into BERT and finetune all the parameters end-to-end.",
+    "sentence_context": "For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences.",
     "sentence_index": 1,
     "section": "Fine-tuning BERT"
   },
@@ -103,7 +103,7 @@
       "end_pos": 364
     },
     "attributes": {},
-    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs. For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences. For each task, we simply plug in the taskspecific inputs and outputs into BERT and finetune all the parameters end-to-end.",
+    "sentence_context": "For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences.",
     "sentence_index": 1,
     "section": "Fine-tuning BERT"
   },
@@ -115,7 +115,7 @@
       "end_pos": 508
     },
     "attributes": {},
-    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs. For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences. For each task, we simply plug in the taskspecific inputs and outputs into BERT and finetune all the parameters end-to-end.",
+    "sentence_context": "For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences.",
     "sentence_index": 1,
     "section": "Fine-tuning BERT"
   },
@@ -127,7 +127,7 @@
       "end_pos": 172
     },
     "attributes": {},
-    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs. For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences.",
+    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs.",
     "sentence_index": 0,
     "section": "Fine-tuning BERT"
   },
@@ -139,7 +139,7 @@
       "end_pos": 559
     },
     "attributes": {},
-    "sentence_context": "Fine-tuning is straightforward since the selfattention mechanism in the Transformer allows BERT to model many downstream taskswhether they involve single text or text pairs-by swapping out the appropriate inputs and outputs. For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences. For each task, we simply plug in the taskspecific inputs and outputs into BERT and finetune all the parameters end-to-end.",
+    "sentence_context": "For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences.",
     "sentence_index": 1,
     "section": "Fine-tuning BERT"
   },
@@ -151,7 +151,7 @@
       "end_pos": 651
     },
     "attributes": {},
-    "sentence_context": "For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences. For each task, we simply plug in the taskspecific inputs and outputs into BERT and finetune all the parameters end-to-end. At the input, sentence A and sentence B from pre-training are analogous to (1) sentence pairs in paraphrasing, (2) hypothesis-premise pairs in entailment, (3) question-passage pairs in question answering, and (4) a degenerate text-\u2205 pair in text classification or sequence tagging.",
+    "sentence_context": "For each task, we simply plug in the taskspecific inputs and outputs into BERT and finetune all the parameters end-to-end.",
     "sentence_index": 2,
     "section": "Fine-tuning BERT"
   },
@@ -163,7 +163,7 @@
       "end_pos": 661
     },
     "attributes": {},
-    "sentence_context": "For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as.;.. BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences. For each task, we simply plug in the taskspecific inputs and outputs into BERT and finetune all the parameters end-to-end. At the input, sentence A and sentence B from pre-training are analogous to (1) sentence pairs in paraphrasing, (2) hypothesis-premise pairs in entailment, (3) question-passage pairs in question answering, and (4) a degenerate text-\u2205 pair in text classification or sequence tagging.",
+    "sentence_context": "For each task, we simply plug in the taskspecific inputs and outputs into BERT and finetune all the parameters end-to-end.",
     "sentence_index": 2,
     "section": "Fine-tuning BERT"
   },
@@ -175,7 +175,7 @@
       "end_pos": 986
     },
     "attributes": {},
-    "sentence_context": "For each task, we simply plug in the taskspecific inputs and outputs into BERT and finetune all the parameters end-to-end. At the input, sentence A and sentence B from pre-training are analogous to (1) sentence pairs in paraphrasing, (2) hypothesis-premise pairs in entailment, (3) question-passage pairs in question answering, and (4) a degenerate text-\u2205 pair in text classification or sequence tagging. At the output, the token representations are fed into an output layer for tokenlevel tasks, such as sequence tagging or question answering, and the [CLS] representation is fed into an output layer for classification, such as entailment or sentiment analysis.",
+    "sentence_context": "At the input, sentence A and sentence B from pre-training are analogous to (1) sentence pairs in paraphrasing, (2) hypothesis-premise pairs in entailment, (3) question-passage pairs in question answering, and (4) a degenerate text-\u2205 pair in text classification or sequence tagging.",
     "sentence_index": 3,
     "section": "Fine-tuning BERT"
   },
@@ -187,7 +187,7 @@
       "end_pos": 909
     },
     "attributes": {},
-    "sentence_context": "For each task, we simply plug in the taskspecific inputs and outputs into BERT and finetune all the parameters end-to-end. At the input, sentence A and sentence B from pre-training are analogous to (1) sentence pairs in paraphrasing, (2) hypothesis-premise pairs in entailment, (3) question-passage pairs in question answering, and (4) a degenerate text-\u2205 pair in text classification or sequence tagging. At the output, the token representations are fed into an output layer for tokenlevel tasks, such as sequence tagging or question answering, and the [CLS] representation is fed into an output layer for classification, such as entailment or sentiment analysis.",
+    "sentence_context": "At the input, sentence A and sentence B from pre-training are analogous to (1) sentence pairs in paraphrasing, (2) hypothesis-premise pairs in entailment, (3) question-passage pairs in question answering, and (4) a degenerate text-\u2205 pair in text classification or sequence tagging.",
     "sentence_index": 3,
     "section": "Fine-tuning BERT"
   },
@@ -199,7 +199,7 @@
       "end_pos": 966
     },
     "attributes": {},
-    "sentence_context": "For each task, we simply plug in the taskspecific inputs and outputs into BERT and finetune all the parameters end-to-end. At the input, sentence A and sentence B from pre-training are analogous to (1) sentence pairs in paraphrasing, (2) hypothesis-premise pairs in entailment, (3) question-passage pairs in question answering, and (4) a degenerate text-\u2205 pair in text classification or sequence tagging. At the output, the token representations are fed into an output layer for tokenlevel tasks, such as sequence tagging or question answering, and the [CLS] representation is fed into an output layer for classification, such as entailment or sentiment analysis.",
+    "sentence_context": "At the input, sentence A and sentence B from pre-training are analogous to (1) sentence pairs in paraphrasing, (2) hypothesis-premise pairs in entailment, (3) question-passage pairs in question answering, and (4) a degenerate text-\u2205 pair in text classification or sequence tagging.",
     "sentence_index": 3,
     "section": "Fine-tuning BERT"
   },
@@ -211,7 +211,7 @@
       "end_pos": 859
     },
     "attributes": {},
-    "sentence_context": "For each task, we simply plug in the taskspecific inputs and outputs into BERT and finetune all the parameters end-to-end. At the input, sentence A and sentence B from pre-training are analogous to (1) sentence pairs in paraphrasing, (2) hypothesis-premise pairs in entailment, (3) question-passage pairs in question answering, and (4) a degenerate text-\u2205 pair in text classification or sequence tagging. At the output, the token representations are fed into an output layer for tokenlevel tasks, such as sequence tagging or question answering, and the [CLS] representation is fed into an output layer for classification, such as entailment or sentiment analysis.",
+    "sentence_context": "At the input, sentence A and sentence B from pre-training are analogous to (1) sentence pairs in paraphrasing, (2) hypothesis-premise pairs in entailment, (3) question-passage pairs in question answering, and (4) a degenerate text-\u2205 pair in text classification or sequence tagging.",
     "sentence_index": 3,
     "section": "Fine-tuning BERT"
   },
@@ -223,7 +223,7 @@
       "end_pos": 1245
     },
     "attributes": {},
-    "sentence_context": "At the input, sentence A and sentence B from pre-training are analogous to (1) sentence pairs in paraphrasing, (2) hypothesis-premise pairs in entailment, (3) question-passage pairs in question answering, and (4) a degenerate text-\u2205 pair in text classification or sequence tagging. At the output, the token representations are fed into an output layer for tokenlevel tasks, such as sequence tagging or question answering, and the [CLS] representation is fed into an output layer for classification, such as entailment or sentiment analysis. Compared to pre-training, fine-tuning is relatively inexpensive.",
+    "sentence_context": "At the output, the token representations are fed into an output layer for tokenlevel tasks, such as sequence tagging or question answering, and the [CLS] representation is fed into an output layer for classification, such as entailment or sentiment analysis.",
     "sentence_index": 4,
     "section": "Fine-tuning BERT"
   },
@@ -235,7 +235,7 @@
       "end_pos": 763
     },
     "attributes": {},
-    "sentence_context": "For each task, we simply plug in the taskspecific inputs and outputs into BERT and finetune all the parameters end-to-end. At the input, sentence A and sentence B from pre-training are analogous to (1) sentence pairs in paraphrasing, (2) hypothesis-premise pairs in entailment, (3) question-passage pairs in question answering, and (4) a degenerate text-\u2205 pair in text classification or sequence tagging. At the output, the token representations are fed into an output layer for tokenlevel tasks, such as sequence tagging or question answering, and the [CLS] representation is fed into an output layer for classification, such as entailment or sentiment analysis.",
+    "sentence_context": "At the input, sentence A and sentence B from pre-training are analogous to (1) sentence pairs in paraphrasing, (2) hypothesis-premise pairs in entailment, (3) question-passage pairs in question answering, and (4) a degenerate text-\u2205 pair in text classification or sequence tagging.",
     "sentence_index": 3,
     "section": "Fine-tuning BERT"
   },
@@ -247,7 +247,7 @@
       "end_pos": 1284
     },
     "attributes": {},
-    "sentence_context": "At the output, the token representations are fed into an output layer for tokenlevel tasks, such as sequence tagging or question answering, and the [CLS] representation is fed into an output layer for classification, such as entailment or sentiment analysis. Compared to pre-training, fine-tuning is relatively inexpensive. All of the results in the paper can be replicated in at most 1 hour on a single Cloud TPU, or a few hours on a GPU, starting from the exact same pre-trained model.7We describe the task-specific details in the corresponding subsections of Section 4.",
+    "sentence_context": "Compared to pre-training, fine-tuning is relatively inexpensive.",
     "sentence_index": 5,
     "section": "Fine-tuning BERT"
   },
@@ -259,7 +259,7 @@
       "end_pos": 1474
     },
     "attributes": {},
-    "sentence_context": "Compared to pre-training, fine-tuning is relatively inexpensive. All of the results in the paper can be replicated in at most 1 hour on a single Cloud TPU, or a few hours on a GPU, starting from the exact same pre-trained model.7We describe the task-specific details in the corresponding subsections of Section 4. More details can be found in Appendix A.5.",
+    "sentence_context": "All of the results in the paper can be replicated in at most 1 hour on a single Cloud TPU, or a few hours on a GPU, starting from the exact same pre-trained model.7We describe the task-specific details in the corresponding subsections of Section 4.",
     "sentence_index": 6,
     "section": "Fine-tuning BERT"
   },
@@ -271,7 +271,7 @@
       "end_pos": 1513
     },
     "attributes": {},
-    "sentence_context": "Compared to pre-training, fine-tuning is relatively inexpensive. All of the results in the paper can be replicated in at most 1 hour on a single Cloud TPU, or a few hours on a GPU, starting from the exact same pre-trained model.7We describe the task-specific details in the corresponding subsections of Section 4. More details can be found in Appendix A.5.",
+    "sentence_context": "All of the results in the paper can be replicated in at most 1 hour on a single Cloud TPU, or a few hours on a GPU, starting from the exact same pre-trained model.7We describe the task-specific details in the corresponding subsections of Section 4.",
     "sentence_index": 6,
     "section": "Fine-tuning BERT"
   },
@@ -283,7 +283,7 @@
       "end_pos": 1559
     },
     "attributes": {},
-    "sentence_context": "Compared to pre-training, fine-tuning is relatively inexpensive. All of the results in the paper can be replicated in at most 1 hour on a single Cloud TPU, or a few hours on a GPU, starting from the exact same pre-trained model.7We describe the task-specific details in the corresponding subsections of Section 4. More details can be found in Appendix A.5.",
+    "sentence_context": "All of the results in the paper can be replicated in at most 1 hour on a single Cloud TPU, or a few hours on a GPU, starting from the exact same pre-trained model.7We describe the task-specific details in the corresponding subsections of Section 4.",
     "sentence_index": 6,
     "section": "Fine-tuning BERT"
   },
@@ -295,7 +295,7 @@
       "end_pos": 1602
     },
     "attributes": {},
-    "sentence_context": "All of the results in the paper can be replicated in at most 1 hour on a single Cloud TPU, or a few hours on a GPU, starting from the exact same pre-trained model.7We describe the task-specific details in the corresponding subsections of Section 4. More details can be found in Appendix A.5.",
+    "sentence_context": "More details can be found in Appendix A.5.",
     "sentence_index": 7,
     "section": "Fine-tuning BERT"
   }

@@ -7,7 +7,7 @@
       "end_pos": 31
     },
     "attributes": {},
-    "sentence_context": "The Stanford Sentiment Treebank is a binary single-sentence classification task consisting of sentences extracted from movie reviews with human annotations of their sentiment. CoLA The Corpus of Linguistic Acceptability is a binary single-sentence classification task, where the goal is to predict whether an English sentence is linguistically \"acceptable\" or not.",
+    "sentence_context": "The Stanford Sentiment Treebank is a binary single-sentence classification task consisting of sentences extracted from movie reviews with human annotations of their sentiment.",
     "sentence_index": 0,
     "section": "Sst-2"
   },
@@ -19,7 +19,7 @@
       "end_pos": 74
     },
     "attributes": {},
-    "sentence_context": "The Stanford Sentiment Treebank is a binary single-sentence classification task consisting of sentences extracted from movie reviews with human annotations of their sentiment. CoLA The Corpus of Linguistic Acceptability is a binary single-sentence classification task, where the goal is to predict whether an English sentence is linguistically \"acceptable\" or not.",
+    "sentence_context": "The Stanford Sentiment Treebank is a binary single-sentence classification task consisting of sentences extracted from movie reviews with human annotations of their sentiment.",
     "sentence_index": 0,
     "section": "Sst-2"
   },
@@ -31,7 +31,7 @@
       "end_pos": 219
     },
     "attributes": {},
-    "sentence_context": "The Stanford Sentiment Treebank is a binary single-sentence classification task consisting of sentences extracted from movie reviews with human annotations of their sentiment. CoLA The Corpus of Linguistic Acceptability is a binary single-sentence classification task, where the goal is to predict whether an English sentence is linguistically \"acceptable\" or not.",
+    "sentence_context": "CoLA The Corpus of Linguistic Acceptability is a binary single-sentence classification task, where the goal is to predict whether an English sentence is linguistically \"acceptable\" or not.",
     "sentence_index": 1,
     "section": "Sst-2"
   },
@@ -43,7 +43,7 @@
       "end_pos": 262
     },
     "attributes": {},
-    "sentence_context": "The Stanford Sentiment Treebank is a binary single-sentence classification task consisting of sentences extracted from movie reviews with human annotations of their sentiment. CoLA The Corpus of Linguistic Acceptability is a binary single-sentence classification task, where the goal is to predict whether an English sentence is linguistically \"acceptable\" or not.",
+    "sentence_context": "CoLA The Corpus of Linguistic Acceptability is a binary single-sentence classification task, where the goal is to predict whether an English sentence is linguistically \"acceptable\" or not.",
     "sentence_index": 1,
     "section": "Sst-2"
   }

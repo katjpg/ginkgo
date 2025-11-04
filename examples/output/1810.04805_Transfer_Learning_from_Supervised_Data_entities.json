@@ -7,7 +7,7 @@
       "end_pos": 129
     },
     "attributes": {},
-    "sentence_context": "There has also been work showing effective transfer from supervised tasks with large datasets, such as natural language inference and machine translation. Computer vision research has also demonstrated the importance of transfer learning from large pre-trained models, where an effective recipe is to fine-tune models pre-trained with Ima-ge Net.",
+    "sentence_context": "There has also been work showing effective transfer from supervised tasks with large datasets, such as natural language inference and machine translation.",
     "sentence_index": 0,
     "section": "Transfer Learning from Supervised Data"
   },
@@ -19,7 +19,7 @@
       "end_pos": 153
     },
     "attributes": {},
-    "sentence_context": "There has also been work showing effective transfer from supervised tasks with large datasets, such as natural language inference and machine translation. Computer vision research has also demonstrated the importance of transfer learning from large pre-trained models, where an effective recipe is to fine-tune models pre-trained with Ima-ge Net.",
+    "sentence_context": "There has also been work showing effective transfer from supervised tasks with large datasets, such as natural language inference and machine translation.",
     "sentence_index": 0,
     "section": "Transfer Learning from Supervised Data"
   },
@@ -31,7 +31,7 @@
       "end_pos": 237
     },
     "attributes": {},
-    "sentence_context": "There has also been work showing effective transfer from supervised tasks with large datasets, such as natural language inference and machine translation. Computer vision research has also demonstrated the importance of transfer learning from large pre-trained models, where an effective recipe is to fine-tune models pre-trained with Ima-ge Net.",
+    "sentence_context": "Computer vision research has also demonstrated the importance of transfer learning from large pre-trained models, where an effective recipe is to fine-tune models pre-trained with Ima-ge Net.",
     "sentence_index": 1,
     "section": "Transfer Learning from Supervised Data"
   },
@@ -43,7 +43,7 @@
       "end_pos": 345
     },
     "attributes": {},
-    "sentence_context": "There has also been work showing effective transfer from supervised tasks with large datasets, such as natural language inference and machine translation. Computer vision research has also demonstrated the importance of transfer learning from large pre-trained models, where an effective recipe is to fine-tune models pre-trained with Ima-ge Net.",
+    "sentence_context": "Computer vision research has also demonstrated the importance of transfer learning from large pre-trained models, where an effective recipe is to fine-tune models pre-trained with Ima-ge Net.",
     "sentence_index": 1,
     "section": "Transfer Learning from Supervised Data"
   }

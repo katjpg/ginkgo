@@ -7,7 +7,7 @@
       "end_pos": 36
     },
     "attributes": {},
-    "sentence_context": "As with the feature-based approaches, the first works in this direction only pre-trained word embedding parameters from unlabeled text. More recently, sentence or document encoders which produce contextual token representations have been pre-trained from unlabeled text and fine-tuned for a supervised downstream task.",
+    "sentence_context": "As with the feature-based approaches, the first works in this direction only pre-trained word embedding parameters from unlabeled text.",
     "sentence_index": 0,
     "section": "Unsupervised Fine-tuning Approaches"
   },
@@ -19,7 +19,7 @@
       "end_pos": 103
     },
     "attributes": {},
-    "sentence_context": "As with the feature-based approaches, the first works in this direction only pre-trained word embedding parameters from unlabeled text. More recently, sentence or document encoders which produce contextual token representations have been pre-trained from unlabeled text and fine-tuned for a supervised downstream task.",
+    "sentence_context": "As with the feature-based approaches, the first works in this direction only pre-trained word embedding parameters from unlabeled text.",
     "sentence_index": 0,
     "section": "Unsupervised Fine-tuning Approaches"
   },
@@ -31,7 +31,7 @@
       "end_pos": 159
     },
     "attributes": {},
-    "sentence_context": "As with the feature-based approaches, the first works in this direction only pre-trained word embedding parameters from unlabeled text. More recently, sentence or document encoders which produce contextual token representations have been pre-trained from unlabeled text and fine-tuned for a supervised downstream task. The advantage of these approaches is that few parameters need to be learned from scratch.",
+    "sentence_context": "More recently, sentence or document encoders which produce contextual token representations have been pre-trained from unlabeled text and fine-tuned for a supervised downstream task.",
     "sentence_index": 1,
     "section": "Unsupervised Fine-tuning Approaches"
   },
@@ -43,7 +43,7 @@
       "end_pos": 180
     },
     "attributes": {},
-    "sentence_context": "As with the feature-based approaches, the first works in this direction only pre-trained word embedding parameters from unlabeled text. More recently, sentence or document encoders which produce contextual token representations have been pre-trained from unlabeled text and fine-tuned for a supervised downstream task. The advantage of these approaches is that few parameters need to be learned from scratch.",
+    "sentence_context": "More recently, sentence or document encoders which produce contextual token representations have been pre-trained from unlabeled text and fine-tuned for a supervised downstream task.",
     "sentence_index": 1,
     "section": "Unsupervised Fine-tuning Approaches"
   },
@@ -55,7 +55,7 @@
       "end_pos": 227
     },
     "attributes": {},
-    "sentence_context": "As with the feature-based approaches, the first works in this direction only pre-trained word embedding parameters from unlabeled text. More recently, sentence or document encoders which produce contextual token representations have been pre-trained from unlabeled text and fine-tuned for a supervised downstream task. The advantage of these approaches is that few parameters need to be learned from scratch.",
+    "sentence_context": "More recently, sentence or document encoders which produce contextual token representations have been pre-trained from unlabeled text and fine-tuned for a supervised downstream task.",
     "sentence_index": 1,
     "section": "Unsupervised Fine-tuning Approaches"
   },
@@ -67,7 +67,7 @@
       "end_pos": 586
     },
     "attributes": {},
-    "sentence_context": "At least partly due to this advantage, Open AI GPT achieved previously state-of-the-art results on many sentencelevel tasks from the GLUE benchmark. Left-to-right language model-BERT BERT. ing and auto-encoder objectives have been used for pre-training such models.",
+    "sentence_context": "Left-to-right language model-BERT BERT.",
     "sentence_index": 4,
     "section": "Unsupervised Fine-tuning Approaches"
   },
@@ -79,7 +79,7 @@
       "end_pos": 459
     },
     "attributes": {},
-    "sentence_context": "The advantage of these approaches is that few parameters need to be learned from scratch. At least partly due to this advantage, Open AI GPT achieved previously state-of-the-art results on many sentencelevel tasks from the GLUE benchmark. Left-to-right language model-BERT BERT.",
+    "sentence_context": "At least partly due to this advantage, Open AI GPT achieved previously state-of-the-art results on many sentencelevel tasks from the GLUE benchmark.",
     "sentence_index": 3,
     "section": "Unsupervised Fine-tuning Approaches"
   },
@@ -91,7 +91,7 @@
       "end_pos": 317
     },
     "attributes": {},
-    "sentence_context": "As with the feature-based approaches, the first works in this direction only pre-trained word embedding parameters from unlabeled text. More recently, sentence or document encoders which produce contextual token representations have been pre-trained from unlabeled text and fine-tuned for a supervised downstream task. The advantage of these approaches is that few parameters need to be learned from scratch.",
+    "sentence_context": "More recently, sentence or document encoders which produce contextual token representations have been pre-trained from unlabeled text and fine-tuned for a supervised downstream task.",
     "sentence_index": 1,
     "section": "Unsupervised Fine-tuning Approaches"
   },
@@ -103,7 +103,7 @@
       "end_pos": 556
     },
     "attributes": {},
-    "sentence_context": "The advantage of these approaches is that few parameters need to be learned from scratch. At least partly due to this advantage, Open AI GPT achieved previously state-of-the-art results on many sentencelevel tasks from the GLUE benchmark. Left-to-right language model-BERT BERT.",
+    "sentence_context": "At least partly due to this advantage, Open AI GPT achieved previously state-of-the-art results on many sentencelevel tasks from the GLUE benchmark.",
     "sentence_index": 3,
     "section": "Unsupervised Fine-tuning Approaches"
   },
@@ -115,7 +115,7 @@
       "end_pos": 591
     },
     "attributes": {},
-    "sentence_context": "At least partly due to this advantage, Open AI GPT achieved previously state-of-the-art results on many sentencelevel tasks from the GLUE benchmark. Left-to-right language model-BERT BERT. ing and auto-encoder objectives have been used for pre-training such models.",
+    "sentence_context": "Left-to-right language model-BERT BERT.",
     "sentence_index": 4,
     "section": "Unsupervised Fine-tuning Approaches"
   },
@@ -127,7 +127,7 @@
       "end_pos": 586
     },
     "attributes": {},
-    "sentence_context": "At least partly due to this advantage, Open AI GPT achieved previously state-of-the-art results on many sentencelevel tasks from the GLUE benchmark. Left-to-right language model-BERT BERT. ing and auto-encoder objectives have been used for pre-training such models.",
+    "sentence_context": "Left-to-right language model-BERT BERT.",
     "sentence_index": 4,
     "section": "Unsupervised Fine-tuning Approaches"
   },
@@ -139,7 +139,7 @@
       "end_pos": 629
     },
     "attributes": {},
-    "sentence_context": "Left-to-right language model-BERT BERT. ing and auto-encoder objectives have been used for pre-training such models.",
+    "sentence_context": "ing and auto-encoder objectives have been used for pre-training such models.",
     "sentence_index": 5,
     "section": "Unsupervised Fine-tuning Approaches"
   }

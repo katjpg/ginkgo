@@ -7,7 +7,7 @@
       "end_pos": 97
     },
     "attributes": {},
-    "sentence_context": "The pre-training procedure largely follows the existing literature on language model pre-training. For the pre-training corpus we use the Books Corpus (800M words) and English Wikipedia (2,500M words).",
+    "sentence_context": "The pre-training procedure largely follows the existing literature on language model pre-training.",
     "sentence_index": 0,
     "section": "Pre-training data"
   },
@@ -19,7 +19,7 @@
       "end_pos": 150
     },
     "attributes": {},
-    "sentence_context": "The pre-training procedure largely follows the existing literature on language model pre-training. For the pre-training corpus we use the Books Corpus (800M words) and English Wikipedia (2,500M words). For Wikipedia we extract only the text passages and ignore lists, tables, and headers.",
+    "sentence_context": "For the pre-training corpus we use the Books Corpus (800M words) and English Wikipedia (2,500M words).",
     "sentence_index": 1,
     "section": "Pre-training data"
   },
@@ -31,7 +31,7 @@
       "end_pos": 185
     },
     "attributes": {},
-    "sentence_context": "The pre-training procedure largely follows the existing literature on language model pre-training. For the pre-training corpus we use the Books Corpus (800M words) and English Wikipedia (2,500M words). For Wikipedia we extract only the text passages and ignore lists, tables, and headers.",
+    "sentence_context": "For the pre-training corpus we use the Books Corpus (800M words) and English Wikipedia (2,500M words).",
     "sentence_index": 1,
     "section": "Pre-training data"
   },
@@ -43,7 +43,7 @@
       "end_pos": 249
     },
     "attributes": {},
-    "sentence_context": "For the pre-training corpus we use the Books Corpus (800M words) and English Wikipedia (2,500M words). For Wikipedia we extract only the text passages and ignore lists, tables, and headers. It is critical to use a document-level corpus rather than a shuffled sentence-level corpus such as the Billion Word Benchmark in order to extract long contiguous sequences.",
+    "sentence_context": "For Wikipedia we extract only the text passages and ignore lists, tables, and headers.",
     "sentence_index": 2,
     "section": "Pre-training data"
   },
@@ -55,7 +55,7 @@
       "end_pos": 334
     },
     "attributes": {},
-    "sentence_context": "For Wikipedia we extract only the text passages and ignore lists, tables, and headers. It is critical to use a document-level corpus rather than a shuffled sentence-level corpus such as the Billion Word Benchmark in order to extract long contiguous sequences.",
+    "sentence_context": "It is critical to use a document-level corpus rather than a shuffled sentence-level corpus such as the Billion Word Benchmark in order to extract long contiguous sequences.",
     "sentence_index": 3,
     "section": "Pre-training data"
   },
@@ -67,7 +67,7 @@
       "end_pos": 379
     },
     "attributes": {},
-    "sentence_context": "For Wikipedia we extract only the text passages and ignore lists, tables, and headers. It is critical to use a document-level corpus rather than a shuffled sentence-level corpus such as the Billion Word Benchmark in order to extract long contiguous sequences.",
+    "sentence_context": "It is critical to use a document-level corpus rather than a shuffled sentence-level corpus such as the Billion Word Benchmark in order to extract long contiguous sequences.",
     "sentence_index": 3,
     "section": "Pre-training data"
   },
@@ -79,7 +79,7 @@
       "end_pos": 414
     },
     "attributes": {},
-    "sentence_context": "For Wikipedia we extract only the text passages and ignore lists, tables, and headers. It is critical to use a document-level corpus rather than a shuffled sentence-level corpus such as the Billion Word Benchmark in order to extract long contiguous sequences.",
+    "sentence_context": "It is critical to use a document-level corpus rather than a shuffled sentence-level corpus such as the Billion Word Benchmark in order to extract long contiguous sequences.",
     "sentence_index": 3,
     "section": "Pre-training data"
   }

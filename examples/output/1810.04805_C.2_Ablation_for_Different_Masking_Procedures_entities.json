@@ -7,7 +7,7 @@
       "end_pos": 36
     },
     "attributes": {},
-    "sentence_context": "In Section 3.1, we mention that BERT uses a mixed strategy for masking the target tokens when pre-training with the masked language model (MLM) objective. The following is an ablation study to evaluate the effect of different masking strategies.",
+    "sentence_context": "In Section 3.1, we mention that BERT uses a mixed strategy for masking the target tokens when pre-training with the masked language model (MLM) objective.",
     "sentence_index": 0,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -19,7 +19,7 @@
       "end_pos": 137
     },
     "attributes": {},
-    "sentence_context": "In Section 3.1, we mention that BERT uses a mixed strategy for masking the target tokens when pre-training with the masked language model (MLM) objective. The following is an ablation study to evaluate the effect of different masking strategies.",
+    "sentence_context": "In Section 3.1, we mention that BERT uses a mixed strategy for masking the target tokens when pre-training with the masked language model (MLM) objective.",
     "sentence_index": 0,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -31,7 +31,7 @@
       "end_pos": 142
     },
     "attributes": {},
-    "sentence_context": "In Section 3.1, we mention that BERT uses a mixed strategy for masking the target tokens when pre-training with the masked language model (MLM) objective. The following is an ablation study to evaluate the effect of different masking strategies.",
+    "sentence_context": "In Section 3.1, we mention that BERT uses a mixed strategy for masking the target tokens when pre-training with the masked language model (MLM) objective.",
     "sentence_index": 0,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -43,7 +43,7 @@
       "end_pos": 189
     },
     "attributes": {},
-    "sentence_context": "In Section 3.1, we mention that BERT uses a mixed strategy for masking the target tokens when pre-training with the masked language model (MLM) objective. The following is an ablation study to evaluate the effect of different masking strategies. Note that the purpose of the masking strategies is to reduce the mismatch between pre-training and fine-tuning, as the [MASK] symbol never appears during the fine-tuning stage.",
+    "sentence_context": "The following is an ablation study to evaluate the effect of different masking strategies.",
     "sentence_index": 1,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -55,7 +55,7 @@
       "end_pos": 244
     },
     "attributes": {},
-    "sentence_context": "In Section 3.1, we mention that BERT uses a mixed strategy for masking the target tokens when pre-training with the masked language model (MLM) objective. The following is an ablation study to evaluate the effect of different masking strategies. Note that the purpose of the masking strategies is to reduce the mismatch between pre-training and fine-tuning, as the [MASK] symbol never appears during the fine-tuning stage.",
+    "sentence_context": "The following is an ablation study to evaluate the effect of different masking strategies.",
     "sentence_index": 1,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -67,7 +67,7 @@
       "end_pos": 356
     },
     "attributes": {},
-    "sentence_context": "The following is an ablation study to evaluate the effect of different masking strategies. Note that the purpose of the masking strategies is to reduce the mismatch between pre-training and fine-tuning, as the [MASK] symbol never appears during the fine-tuning stage. We report the Dev results for both MNLI and NER.",
+    "sentence_context": "Note that the purpose of the masking strategies is to reduce the mismatch between pre-training and fine-tuning, as the [MASK] symbol never appears during the fine-tuning stage.",
     "sentence_index": 2,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -79,7 +79,7 @@
       "end_pos": 470
     },
     "attributes": {},
-    "sentence_context": "Note that the purpose of the masking strategies is to reduce the mismatch between pre-training and fine-tuning, as the [MASK] symbol never appears during the fine-tuning stage. We report the Dev results for both MNLI and NER. For NER, we report both fine-tuning and feature-based approaches, as we expect the mismatch will be amplified for the feature-based approach as the model will not have the chance to adjust the representations.",
+    "sentence_context": "We report the Dev results for both MNLI and NER.",
     "sentence_index": 3,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -91,7 +91,7 @@
       "end_pos": 612
     },
     "attributes": {},
-    "sentence_context": "We report the Dev results for both MNLI and NER. For NER, we report both fine-tuning and feature-based approaches, as we expect the mismatch will be amplified for the feature-based approach as the model will not have the chance to adjust the representations. The results are presented in Table 8.",
+    "sentence_context": "For NER, we report both fine-tuning and feature-based approaches, as we expect the mismatch will be amplified for the feature-based approach as the model will not have the chance to adjust the representations.",
     "sentence_index": 4,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -103,7 +103,7 @@
       "end_pos": 448
     },
     "attributes": {},
-    "sentence_context": "Note that the purpose of the masking strategies is to reduce the mismatch between pre-training and fine-tuning, as the [MASK] symbol never appears during the fine-tuning stage. We report the Dev results for both MNLI and NER. For NER, we report both fine-tuning and feature-based approaches, as we expect the mismatch will be amplified for the feature-based approach as the model will not have the chance to adjust the representations.",
+    "sentence_context": "We report the Dev results for both MNLI and NER.",
     "sentence_index": 3,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -115,7 +115,7 @@
       "end_pos": 462
     },
     "attributes": {},
-    "sentence_context": "Note that the purpose of the masking strategies is to reduce the mismatch between pre-training and fine-tuning, as the [MASK] symbol never appears during the fine-tuning stage. We report the Dev results for both MNLI and NER. For NER, we report both fine-tuning and feature-based approaches, as we expect the mismatch will be amplified for the feature-based approach as the model will not have the chance to adjust the representations.",
+    "sentence_context": "We report the Dev results for both MNLI and NER.",
     "sentence_index": 3,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -127,7 +127,7 @@
       "end_pos": 470
     },
     "attributes": {},
-    "sentence_context": "Note that the purpose of the masking strategies is to reduce the mismatch between pre-training and fine-tuning, as the [MASK] symbol never appears during the fine-tuning stage. We report the Dev results for both MNLI and NER. For NER, we report both fine-tuning and feature-based approaches, as we expect the mismatch will be amplified for the feature-based approach as the model will not have the chance to adjust the representations.",
+    "sentence_context": "We report the Dev results for both MNLI and NER.",
     "sentence_index": 3,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -139,7 +139,7 @@
       "end_pos": 738
     },
     "attributes": {},
-    "sentence_context": "The results are presented in Table 8. In the table, MASK means that we replace the target token with the [MASK] symbol for MLM; SAME means that we keep the target token as is; RND means that we replace the target token with another random token. The numbers in the left part of the table represent the probabilities of the specific strategies used during MLM pre-training (BERT uses 80%, 10%, 10%).",
+    "sentence_context": "In the table, MASK means that we replace the target token with the [MASK] symbol for MLM; SAME means that we keep the target token as is; RND means that we replace the target token with another random token.",
     "sentence_index": 6,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -151,7 +151,7 @@
       "end_pos": 814
     },
     "attributes": {},
-    "sentence_context": "The results are presented in Table 8. In the table, MASK means that we replace the target token with the [MASK] symbol for MLM; SAME means that we keep the target token as is; RND means that we replace the target token with another random token. The numbers in the left part of the table represent the probabilities of the specific strategies used during MLM pre-training (BERT uses 80%, 10%, 10%).",
+    "sentence_context": "In the table, MASK means that we replace the target token with the [MASK] symbol for MLM; SAME means that we keep the target token as is; RND means that we replace the target token with another random token.",
     "sentence_index": 6,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -163,7 +163,7 @@
       "end_pos": 861
     },
     "attributes": {},
-    "sentence_context": "The results are presented in Table 8. In the table, MASK means that we replace the target token with the [MASK] symbol for MLM; SAME means that we keep the target token as is; RND means that we replace the target token with another random token. The numbers in the left part of the table represent the probabilities of the specific strategies used during MLM pre-training (BERT uses 80%, 10%, 10%).",
+    "sentence_context": "In the table, MASK means that we replace the target token with the [MASK] symbol for MLM; SAME means that we keep the target token as is; RND means that we replace the target token with another random token.",
     "sentence_index": 6,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -175,7 +175,7 @@
       "end_pos": 808
     },
     "attributes": {},
-    "sentence_context": "The results are presented in Table 8. In the table, MASK means that we replace the target token with the [MASK] symbol for MLM; SAME means that we keep the target token as is; RND means that we replace the target token with another random token. The numbers in the left part of the table represent the probabilities of the specific strategies used during MLM pre-training (BERT uses 80%, 10%, 10%).",
+    "sentence_context": "In the table, MASK means that we replace the target token with the [MASK] symbol for MLM; SAME means that we keep the target token as is; RND means that we replace the target token with another random token.",
     "sentence_index": 6,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -187,7 +187,7 @@
       "end_pos": 1131
     },
     "attributes": {},
-    "sentence_context": "The numbers in the left part of the table represent the probabilities of the specific strategies used during MLM pre-training (BERT uses 80%, 10%, 10%). The right part of the paper represents the Dev set results. For the feature-based approach, we concatenate the last 4 layers of BERT as the features, which was shown to be the best approach in Section 5.3.",
+    "sentence_context": "The right part of the paper represents the Dev set results.",
     "sentence_index": 8,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -199,7 +199,7 @@
       "end_pos": 1213
     },
     "attributes": {},
-    "sentence_context": "The right part of the paper represents the Dev set results. For the feature-based approach, we concatenate the last 4 layers of BERT as the features, which was shown to be the best approach in Section 5.3. From the table it can be seen that fine-tuning is surprisingly robust to different masking strategies.",
+    "sentence_context": "For the feature-based approach, we concatenate the last 4 layers of BERT as the features, which was shown to be the best approach in Section 5.3.",
     "sentence_index": 9,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -211,7 +211,7 @@
       "end_pos": 1440
     },
     "attributes": {},
-    "sentence_context": "From the table it can be seen that fine-tuning is surprisingly robust to different masking strategies. However, as expected, using only the MASK strategy was problematic when applying the featurebased approach to NER. Interestingly, using only the RND strategy performs much worse than our strategy as well.",
+    "sentence_context": "However, as expected, using only the MASK strategy was problematic when applying the featurebased approach to NER.",
     "sentence_index": 11,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -223,7 +223,7 @@
       "end_pos": 1503
     },
     "attributes": {},
-    "sentence_context": "From the table it can be seen that fine-tuning is surprisingly robust to different masking strategies. However, as expected, using only the MASK strategy was problematic when applying the featurebased approach to NER. Interestingly, using only the RND strategy performs much worse than our strategy as well.",
+    "sentence_context": "However, as expected, using only the MASK strategy was problematic when applying the featurebased approach to NER.",
     "sentence_index": 11,
     "section": "C.2 Ablation for Different Masking Procedures"
   },
@@ -235,7 +235,7 @@
       "end_pos": 1547
     },
     "attributes": {},
-    "sentence_context": "However, as expected, using only the MASK strategy was problematic when applying the featurebased approach to NER. Interestingly, using only the RND strategy performs much worse than our strategy as well.",
+    "sentence_context": "Interestingly, using only the RND strategy performs much worse than our strategy as well.",
     "sentence_index": 12,
     "section": "C.2 Ablation for Different Masking Procedures"
   }

@@ -7,7 +7,7 @@
       "end_pos": 41
     },
     "attributes": {},
-    "sentence_context": "The Semantic Textual Similarity Benchmark is a collection of sentence pairs drawn from news headlines and other sources. They were annotated with a score from 1 to 5 denoting how similar the two sentences are in terms of semantic meaning.",
+    "sentence_context": "The Semantic Textual Similarity Benchmark is a collection of sentence pairs drawn from news headlines and other sources.",
     "sentence_index": 0,
     "section": "Sts-b"
   },
@@ -19,7 +19,7 @@
       "end_pos": 75
     },
     "attributes": {},
-    "sentence_context": "The Semantic Textual Similarity Benchmark is a collection of sentence pairs drawn from news headlines and other sources. They were annotated with a score from 1 to 5 denoting how similar the two sentences are in terms of semantic meaning.",
+    "sentence_context": "The Semantic Textual Similarity Benchmark is a collection of sentence pairs drawn from news headlines and other sources.",
     "sentence_index": 0,
     "section": "Sts-b"
   },
@@ -31,7 +31,7 @@
       "end_pos": 280
     },
     "attributes": {},
-    "sentence_context": "They were annotated with a score from 1 to 5 denoting how similar the two sentences are in terms of semantic meaning. MRPC Microsoft Research Paraphrase Corpus consists of sentence pairs automatically extracted from online news sources, with human annotations for whether the sentences in the pair are semantically equivalent. RTE Recognizing Textual Entailment is a binary entailment task similar to MNLI, but with much less training data.",
+    "sentence_context": "MRPC Microsoft Research Paraphrase Corpus consists of sentence pairs automatically extracted from online news sources, with human annotations for whether the sentences in the pair are semantically equivalent.",
     "sentence_index": 2,
     "section": "Sts-b"
   },
@@ -43,7 +43,7 @@
       "end_pos": 307
     },
     "attributes": {},
-    "sentence_context": "They were annotated with a score from 1 to 5 denoting how similar the two sentences are in terms of semantic meaning. MRPC Microsoft Research Paraphrase Corpus consists of sentence pairs automatically extracted from online news sources, with human annotations for whether the sentences in the pair are semantically equivalent. RTE Recognizing Textual Entailment is a binary entailment task similar to MNLI, but with much less training data.",
+    "sentence_context": "MRPC Microsoft Research Paraphrase Corpus consists of sentence pairs automatically extracted from online news sources, with human annotations for whether the sentences in the pair are semantically equivalent.",
     "sentence_index": 2,
     "section": "Sts-b"
   },
@@ -55,7 +55,7 @@
       "end_pos": 482
     },
     "attributes": {},
-    "sentence_context": "MRPC Microsoft Research Paraphrase Corpus consists of sentence pairs automatically extracted from online news sources, with human annotations for whether the sentences in the pair are semantically equivalent. RTE Recognizing Textual Entailment is a binary entailment task similar to MNLI, but with much less training data. WNLI",
+    "sentence_context": "RTE Recognizing Textual Entailment is a binary entailment task similar to MNLI, but with much less training data.",
     "sentence_index": 3,
     "section": "Sts-b"
   },
@@ -67,7 +67,7 @@
       "end_pos": 510
     },
     "attributes": {},
-    "sentence_context": "MRPC Microsoft Research Paraphrase Corpus consists of sentence pairs automatically extracted from online news sources, with human annotations for whether the sentences in the pair are semantically equivalent. RTE Recognizing Textual Entailment is a binary entailment task similar to MNLI, but with much less training data. WNLI",
+    "sentence_context": "RTE Recognizing Textual Entailment is a binary entailment task similar to MNLI, but with much less training data.",
     "sentence_index": 3,
     "section": "Sts-b"
   },
@@ -79,7 +79,7 @@
       "end_pos": 526
     },
     "attributes": {},
-    "sentence_context": "MRPC Microsoft Research Paraphrase Corpus consists of sentence pairs automatically extracted from online news sources, with human annotations for whether the sentences in the pair are semantically equivalent. RTE Recognizing Textual Entailment is a binary entailment task similar to MNLI, but with much less training data. WNLI",
+    "sentence_context": "RTE Recognizing Textual Entailment is a binary entailment task similar to MNLI, but with much less training data.",
     "sentence_index": 3,
     "section": "Sts-b"
   },
@@ -91,7 +91,7 @@
       "end_pos": 560
     },
     "attributes": {},
-    "sentence_context": "MRPC Microsoft Research Paraphrase Corpus consists of sentence pairs automatically extracted from online news sources, with human annotations for whether the sentences in the pair are semantically equivalent. RTE Recognizing Textual Entailment is a binary entailment task similar to MNLI, but with much less training data. WNLI",
+    "sentence_context": "RTE Recognizing Textual Entailment is a binary entailment task similar to MNLI, but with much less training data.",
     "sentence_index": 3,
     "section": "Sts-b"
   },
@@ -115,7 +115,7 @@
       "end_pos": 625
     },
     "attributes": {},
-    "sentence_context": "WNLI Winograd NLI is a small natural language inference dataset. The GLUE webpage notes that there are issues with the construction of this dataset, 15 and every trained system that's been submitted to GLUE has performed worse than the 65.1 baseline accuracy of predicting the majority class.",
+    "sentence_context": "Winograd NLI is a small natural language inference dataset.",
     "sentence_index": 5,
     "section": "Sts-b"
   },
@@ -127,7 +127,7 @@
       "end_pos": 643
     },
     "attributes": {},
-    "sentence_context": "Winograd NLI is a small natural language inference dataset. The GLUE webpage notes that there are issues with the construction of this dataset, 15 and every trained system that's been submitted to GLUE has performed worse than the 65.1 baseline accuracy of predicting the majority class. We therefore exclude this set to be fair to Open AI GPT.",
+    "sentence_context": "The GLUE webpage notes that there are issues with the construction of this dataset, 15 and every trained system that's been submitted to GLUE has performed worse than the 65.1 baseline accuracy of predicting the majority class.",
     "sentence_index": 6,
     "section": "Sts-b"
   },
@@ -139,7 +139,7 @@
       "end_pos": 820
     },
     "attributes": {},
-    "sentence_context": "Winograd NLI is a small natural language inference dataset. The GLUE webpage notes that there are issues with the construction of this dataset, 15 and every trained system that's been submitted to GLUE has performed worse than the 65.1 baseline accuracy of predicting the majority class. We therefore exclude this set to be fair to Open AI GPT.",
+    "sentence_context": "The GLUE webpage notes that there are issues with the construction of this dataset, 15 and every trained system that's been submitted to GLUE has performed worse than the 65.1 baseline accuracy of predicting the majority class.",
     "sentence_index": 6,
     "section": "Sts-b"
   },
@@ -151,7 +151,7 @@
       "end_pos": 884
     },
     "attributes": {},
-    "sentence_context": "The GLUE webpage notes that there are issues with the construction of this dataset, 15 and every trained system that's been submitted to GLUE has performed worse than the 65.1 baseline accuracy of predicting the majority class. We therefore exclude this set to be fair to Open AI GPT. For our GLUE submission, we always predicted the ma-jority class.",
+    "sentence_context": "We therefore exclude this set to be fair to Open AI GPT.",
     "sentence_index": 7,
     "section": "Sts-b"
   },
@@ -163,7 +163,7 @@
       "end_pos": 935
     },
     "attributes": {},
-    "sentence_context": "We therefore exclude this set to be fair to Open AI GPT. For our GLUE submission, we always predicted the ma-jority class.",
+    "sentence_context": "For our GLUE submission, we always predicted the ma-jority class.",
     "sentence_index": 8,
     "section": "Sts-b"
   }

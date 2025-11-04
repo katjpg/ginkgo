@@ -7,7 +7,7 @@
       "end_pos": 15
     },
     "attributes": {},
-    "sentence_context": "All of the BERT results presented so far have used the fine-tuning approach, where a simple classification layer is added to the pre-trained model, and all parameters are jointly fine-tuned on a downstream task. However, the feature-based approach, where fixed features are extracted from the pretrained model, has certain advantages.",
+    "sentence_context": "All of the BERT results presented so far have used the fine-tuning approach, where a simple classification layer is added to the pre-trained model, and all parameters are jointly fine-tuned on a downstream task.",
     "sentence_index": 0,
     "section": "Feature-based Approach with BERT"
   },
@@ -19,7 +19,7 @@
       "end_pos": 75
     },
     "attributes": {},
-    "sentence_context": "All of the BERT results presented so far have used the fine-tuning approach, where a simple classification layer is added to the pre-trained model, and all parameters are jointly fine-tuned on a downstream task. However, the feature-based approach, where fixed features are extracted from the pretrained model, has certain advantages.",
+    "sentence_context": "All of the BERT results presented so far have used the fine-tuning approach, where a simple classification layer is added to the pre-trained model, and all parameters are jointly fine-tuned on a downstream task.",
     "sentence_index": 0,
     "section": "Feature-based Approach with BERT"
   },
@@ -31,7 +31,7 @@
       "end_pos": 112
     },
     "attributes": {},
-    "sentence_context": "All of the BERT results presented so far have used the fine-tuning approach, where a simple classification layer is added to the pre-trained model, and all parameters are jointly fine-tuned on a downstream task. However, the feature-based approach, where fixed features are extracted from the pretrained model, has certain advantages.",
+    "sentence_context": "All of the BERT results presented so far have used the fine-tuning approach, where a simple classification layer is added to the pre-trained model, and all parameters are jointly fine-tuned on a downstream task.",
     "sentence_index": 0,
     "section": "Feature-based Approach with BERT"
   },
@@ -43,7 +43,7 @@
       "end_pos": 146
     },
     "attributes": {},
-    "sentence_context": "All of the BERT results presented so far have used the fine-tuning approach, where a simple classification layer is added to the pre-trained model, and all parameters are jointly fine-tuned on a downstream task. However, the feature-based approach, where fixed features are extracted from the pretrained model, has certain advantages.",
+    "sentence_context": "All of the BERT results presented so far have used the fine-tuning approach, where a simple classification layer is added to the pre-trained model, and all parameters are jointly fine-tuned on a downstream task.",
     "sentence_index": 0,
     "section": "Feature-based Approach with BERT"
   },
@@ -55,7 +55,7 @@
       "end_pos": 247
     },
     "attributes": {},
-    "sentence_context": "All of the BERT results presented so far have used the fine-tuning approach, where a simple classification layer is added to the pre-trained model, and all parameters are jointly fine-tuned on a downstream task. However, the feature-based approach, where fixed features are extracted from the pretrained model, has certain advantages. First, not all tasks can be easily represented by a Transformer encoder architecture, and therefore require a task-specific model architecture to be added.",
+    "sentence_context": "However, the feature-based approach, where fixed features are extracted from the pretrained model, has certain advantages.",
     "sentence_index": 1,
     "section": "Feature-based Approach with BERT"
   },
@@ -67,7 +67,7 @@
       "end_pos": 419
     },
     "attributes": {},
-    "sentence_context": "However, the feature-based approach, where fixed features are extracted from the pretrained model, has certain advantages. First, not all tasks can be easily represented by a Transformer encoder architecture, and therefore require a task-specific model architecture to be added. Second, there are major computational benefits to pre-compute an expensive representation of the training data once and then run many experiments with cheaper models on top of this representation.",
+    "sentence_context": "First, not all tasks can be easily represented by a Transformer encoder architecture, and therefore require a task-specific model architecture to be added.",
     "sentence_index": 2,
     "section": "Feature-based Approach with BERT"
   },
@@ -79,7 +79,7 @@
       "end_pos": 477
     },
     "attributes": {},
-    "sentence_context": "However, the feature-based approach, where fixed features are extracted from the pretrained model, has certain advantages. First, not all tasks can be easily represented by a Transformer encoder architecture, and therefore require a task-specific model architecture to be added. Second, there are major computational benefits to pre-compute an expensive representation of the training data once and then run many experiments with cheaper models on top of this representation.",
+    "sentence_context": "First, not all tasks can be easily represented by a Transformer encoder architecture, and therefore require a task-specific model architecture to be added.",
     "sentence_index": 2,
     "section": "Feature-based Approach with BERT"
   },
@@ -91,7 +91,7 @@
       "end_pos": 601
     },
     "attributes": {},
-    "sentence_context": "First, not all tasks can be easily represented by a Transformer encoder architecture, and therefore require a task-specific model architecture to be added. Second, there are major computational benefits to pre-compute an expensive representation of the training data once and then run many experiments with cheaper models on top of this representation. In this section, we compare the two approaches by applying BERT to the CoNL-2003 Named Entity Recognition (NER) task.",
+    "sentence_context": "Second, there are major computational benefits to pre-compute an expensive representation of the training data once and then run many experiments with cheaper models on top of this representation.",
     "sentence_index": 3,
     "section": "Feature-based Approach with BERT"
   },
@@ -103,7 +103,7 @@
       "end_pos": 793
     },
     "attributes": {},
-    "sentence_context": "Second, there are major computational benefits to pre-compute an expensive representation of the training data once and then run many experiments with cheaper models on top of this representation. In this section, we compare the two approaches by applying BERT to the CoNL-2003 Named Entity Recognition (NER) task. In the input to BERT, we use a case-preserving Word Piece model, and we include the maximal document context provided by the data.",
+    "sentence_context": "In this section, we compare the two approaches by applying BERT to the CoNL-2003 Named Entity Recognition (NER) task.",
     "sentence_index": 4,
     "section": "Feature-based Approach with BERT"
   },
@@ -115,7 +115,7 @@
       "end_pos": 768
     },
     "attributes": {},
-    "sentence_context": "Second, there are major computational benefits to pre-compute an expensive representation of the training data once and then run many experiments with cheaper models on top of this representation. In this section, we compare the two approaches by applying BERT to the CoNL-2003 Named Entity Recognition (NER) task. In the input to BERT, we use a case-preserving Word Piece model, and we include the maximal document context provided by the data.",
+    "sentence_context": "In this section, we compare the two approaches by applying BERT to the CoNL-2003 Named Entity Recognition (NER) task.",
     "sentence_index": 4,
     "section": "Feature-based Approach with BERT"
   },
@@ -127,7 +127,7 @@
       "end_pos": 798
     },
     "attributes": {},
-    "sentence_context": "Second, there are major computational benefits to pre-compute an expensive representation of the training data once and then run many experiments with cheaper models on top of this representation. In this section, we compare the two approaches by applying BERT to the CoNL-2003 Named Entity Recognition (NER) task. In the input to BERT, we use a case-preserving Word Piece model, and we include the maximal document context provided by the data.",
+    "sentence_context": "In this section, we compare the two approaches by applying BERT to the CoNL-2003 Named Entity Recognition (NER) task.",
     "sentence_index": 4,
     "section": "Feature-based Approach with BERT"
   },
@@ -139,7 +139,7 @@
       "end_pos": 869
     },
     "attributes": {},
-    "sentence_context": "In this section, we compare the two approaches by applying BERT to the CoNL-2003 Named Entity Recognition (NER) task. In the input to BERT, we use a case-preserving Word Piece model, and we include the maximal document context provided by the data. Following standard practice, we formulate this as a tagging task but do not use a CRF layer in the output.",
+    "sentence_context": "In the input to BERT, we use a case-preserving Word Piece model, and we include the maximal document context provided by the data.",
     "sentence_index": 5,
     "section": "Feature-based Approach with BERT"
   },
@@ -151,7 +151,7 @@
       "end_pos": 935
     },
     "attributes": {},
-    "sentence_context": "In this section, we compare the two approaches by applying BERT to the CoNL-2003 Named Entity Recognition (NER) task. In the input to BERT, we use a case-preserving Word Piece model, and we include the maximal document context provided by the data. Following standard practice, we formulate this as a tagging task but do not use a CRF layer in the output.",
+    "sentence_context": "In the input to BERT, we use a case-preserving Word Piece model, and we include the maximal document context provided by the data.",
     "sentence_index": 5,
     "section": "Feature-based Approach with BERT"
   },
@@ -163,7 +163,7 @@
       "end_pos": 1001
     },
     "attributes": {},
-    "sentence_context": "In the input to BERT, we use a case-preserving Word Piece model, and we include the maximal document context provided by the data. Following standard practice, we formulate this as a tagging task but do not use a CRF layer in the output. We use the representation of the first sub-token as the input to the token-level classifier over the NER label set.",
+    "sentence_context": "Following standard practice, we formulate this as a tagging task but do not use a CRF layer in the output.",
     "sentence_index": 6,
     "section": "Feature-based Approach with BERT"
   },
@@ -175,7 +175,7 @@
       "end_pos": 1028
     },
     "attributes": {},
-    "sentence_context": "In the input to BERT, we use a case-preserving Word Piece model, and we include the maximal document context provided by the data. Following standard practice, we formulate this as a tagging task but do not use a CRF layer in the output. We use the representation of the first sub-token as the input to the token-level classifier over the NER label set.",
+    "sentence_context": "Following standard practice, we formulate this as a tagging task but do not use a CRF layer in the output.",
     "sentence_index": 6,
     "section": "Feature-based Approach with BERT"
   },
@@ -187,7 +187,7 @@
       "end_pos": 1135
     },
     "attributes": {},
-    "sentence_context": "Following standard practice, we formulate this as a tagging task but do not use a CRF layer in the output. We use the representation of the first sub-token as the input to the token-level classifier over the NER label set. To ablate the fine-tuning approach, we apply the feature-based approach by extracting the activations from one or more layers without fine-tuning any parameters of BERT.",
+    "sentence_context": "We use the representation of the first sub-token as the input to the token-level classifier over the NER label set.",
     "sentence_index": 7,
     "section": "Feature-based Approach with BERT"
   },
@@ -199,7 +199,7 @@
       "end_pos": 1158
     },
     "attributes": {},
-    "sentence_context": "Following standard practice, we formulate this as a tagging task but do not use a CRF layer in the output. We use the representation of the first sub-token as the input to the token-level classifier over the NER label set. To ablate the fine-tuning approach, we apply the feature-based approach by extracting the activations from one or more layers without fine-tuning any parameters of BERT.",
+    "sentence_context": "We use the representation of the first sub-token as the input to the token-level classifier over the NER label set.",
     "sentence_index": 7,
     "section": "Feature-based Approach with BERT"
   },
@@ -211,7 +211,7 @@
       "end_pos": 1231
     },
     "attributes": {},
-    "sentence_context": "We use the representation of the first sub-token as the input to the token-level classifier over the NER label set. To ablate the fine-tuning approach, we apply the feature-based approach by extracting the activations from one or more layers without fine-tuning any parameters of BERT. These contextual embeddings are used as input to a randomly initialized two-layer 768-dimensional BiLSTM before the classification layer.",
+    "sentence_context": "To ablate the fine-tuning approach, we apply the feature-based approach by extracting the activations from one or more layers without fine-tuning any parameters of BERT.",
     "sentence_index": 8,
     "section": "Feature-based Approach with BERT"
   },
@@ -223,7 +223,7 @@
       "end_pos": 1328
     },
     "attributes": {},
-    "sentence_context": "We use the representation of the first sub-token as the input to the token-level classifier over the NER label set. To ablate the fine-tuning approach, we apply the feature-based approach by extracting the activations from one or more layers without fine-tuning any parameters of BERT. These contextual embeddings are used as input to a randomly initialized two-layer 768-dimensional BiLSTM before the classification layer.",
+    "sentence_context": "To ablate the fine-tuning approach, we apply the feature-based approach by extracting the activations from one or more layers without fine-tuning any parameters of BERT.",
     "sentence_index": 8,
     "section": "Feature-based Approach with BERT"
   },
@@ -235,7 +235,7 @@
       "end_pos": 1357
     },
     "attributes": {},
-    "sentence_context": "To ablate the fine-tuning approach, we apply the feature-based approach by extracting the activations from one or more layers without fine-tuning any parameters of BERT. These contextual embeddings are used as input to a randomly initialized two-layer 768-dimensional BiLSTM before the classification layer. Results are presented in Table 7.",
+    "sentence_context": "These contextual embeddings are used as input to a randomly initialized two-layer 768-dimensional BiLSTM before the classification layer.",
     "sentence_index": 9,
     "section": "Feature-based Approach with BERT"
   },
@@ -247,7 +247,7 @@
       "end_pos": 1434
     },
     "attributes": {},
-    "sentence_context": "To ablate the fine-tuning approach, we apply the feature-based approach by extracting the activations from one or more layers without fine-tuning any parameters of BERT. These contextual embeddings are used as input to a randomly initialized two-layer 768-dimensional BiLSTM before the classification layer. Results are presented in Table 7.",
+    "sentence_context": "These contextual embeddings are used as input to a randomly initialized two-layer 768-dimensional BiLSTM before the classification layer.",
     "sentence_index": 9,
     "section": "Feature-based Approach with BERT"
   },
@@ -259,7 +259,7 @@
       "end_pos": 1466
     },
     "attributes": {},
-    "sentence_context": "To ablate the fine-tuning approach, we apply the feature-based approach by extracting the activations from one or more layers without fine-tuning any parameters of BERT. These contextual embeddings are used as input to a randomly initialized two-layer 768-dimensional BiLSTM before the classification layer. Results are presented in Table 7.",
+    "sentence_context": "These contextual embeddings are used as input to a randomly initialized two-layer 768-dimensional BiLSTM before the classification layer.",
     "sentence_index": 9,
     "section": "Feature-based Approach with BERT"
   },
@@ -271,7 +271,7 @@
       "end_pos": 1512
     },
     "attributes": {},
-    "sentence_context": "Results are presented in Table 7. BERT LARGE performs competitively with state-of-the-art methods. The best performing method concatenates the token representations from the top four hidden layers of the pre-trained Transformer, which is only 0.3 F 1 behind fine-tuning the entire model.",
+    "sentence_context": "BERT LARGE performs competitively with state-of-the-art methods.",
     "sentence_index": 11,
     "section": "Feature-based Approach with BERT"
   },
@@ -283,7 +283,7 @@
       "end_pos": 1565
     },
     "attributes": {},
-    "sentence_context": "Results are presented in Table 7. BERT LARGE performs competitively with state-of-the-art methods. The best performing method concatenates the token representations from the top four hidden layers of the pre-trained Transformer, which is only 0.3 F 1 behind fine-tuning the entire model.",
+    "sentence_context": "BERT LARGE performs competitively with state-of-the-art methods.",
     "sentence_index": 11,
     "section": "Feature-based Approach with BERT"
   },
@@ -295,7 +295,7 @@
       "end_pos": 1632
     },
     "attributes": {},
-    "sentence_context": "BERT LARGE performs competitively with state-of-the-art methods. The best performing method concatenates the token representations from the top four hidden layers of the pre-trained Transformer, which is only 0.3 F 1 behind fine-tuning the entire model. This demonstrates that BERT is effective for both finetuning and feature-based approaches.",
+    "sentence_context": "The best performing method concatenates the token representations from the top four hidden layers of the pre-trained Transformer, which is only 0.3 F 1 behind fine-tuning the entire model.",
     "sentence_index": 12,
     "section": "Feature-based Approach with BERT"
   },
@@ -307,7 +307,7 @@
       "end_pos": 1695
     },
     "attributes": {},
-    "sentence_context": "BERT LARGE performs competitively with state-of-the-art methods. The best performing method concatenates the token representations from the top four hidden layers of the pre-trained Transformer, which is only 0.3 F 1 behind fine-tuning the entire model. This demonstrates that BERT is effective for both finetuning and feature-based approaches.",
+    "sentence_context": "The best performing method concatenates the token representations from the top four hidden layers of the pre-trained Transformer, which is only 0.3 F 1 behind fine-tuning the entire model.",
     "sentence_index": 12,
     "section": "Feature-based Approach with BERT"
   },
@@ -319,7 +319,7 @@
       "end_pos": 1718
     },
     "attributes": {},
-    "sentence_context": "BERT LARGE performs competitively with state-of-the-art methods. The best performing method concatenates the token representations from the top four hidden layers of the pre-trained Transformer, which is only 0.3 F 1 behind fine-tuning the entire model. This demonstrates that BERT is effective for both finetuning and feature-based approaches.",
+    "sentence_context": "The best performing method concatenates the token representations from the top four hidden layers of the pre-trained Transformer, which is only 0.3 F 1 behind fine-tuning the entire model.",
     "sentence_index": 12,
     "section": "Feature-based Approach with BERT"
   },
@@ -331,7 +331,7 @@
       "end_pos": 1737
     },
     "attributes": {},
-    "sentence_context": "BERT LARGE performs competitively with state-of-the-art methods. The best performing method concatenates the token representations from the top four hidden layers of the pre-trained Transformer, which is only 0.3 F 1 behind fine-tuning the entire model. This demonstrates that BERT is effective for both finetuning and feature-based approaches.",
+    "sentence_context": "The best performing method concatenates the token representations from the top four hidden layers of the pre-trained Transformer, which is only 0.3 F 1 behind fine-tuning the entire model.",
     "sentence_index": 12,
     "section": "Feature-based Approach with BERT"
   },
@@ -343,7 +343,7 @@
       "end_pos": 1783
     },
     "attributes": {},
-    "sentence_context": "The best performing method concatenates the token representations from the top four hidden layers of the pre-trained Transformer, which is only 0.3 F 1 behind fine-tuning the entire model. This demonstrates that BERT is effective for both finetuning and feature-based approaches.",
+    "sentence_context": "This demonstrates that BERT is effective for both finetuning and feature-based approaches.",
     "sentence_index": 13,
     "section": "Feature-based Approach with BERT"
   }

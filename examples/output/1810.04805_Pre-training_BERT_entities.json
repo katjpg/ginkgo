@@ -7,7 +7,7 @@
       "end_pos": 112
     },
     "attributes": {},
-    "sentence_context": ". and Radford et al., we do not use traditional left-to-right or right-to-left language models to pre-train BERT. Instead, we pre-train BERT using two unsupervised tasks, described in this section.",
+    "sentence_context": "and Radford et al., we do not use traditional left-to-right or right-to-left language models to pre-train BERT.",
     "sentence_index": 1,
     "section": "Pre-training BERT"
   },
@@ -19,7 +19,7 @@
       "end_pos": 269
     },
     "attributes": {},
-    "sentence_context": "This step is presented in the left part of Figure 1. Task #1: Masked LM Intuitively, it is reasonable to believe that a deep bidirectional model is strictly more powerful than either a left-to-right model or the shallow concatenation of a left-toright and a right-to-left model.",
+    "sentence_context": "Task #1: Masked LM",
     "sentence_index": 4,
     "section": "Pre-training BERT"
   },
@@ -31,7 +31,7 @@
       "end_pos": 799
     },
     "attributes": {},
-    "sentence_context": "Unfortunately, standard conditional language models can only be trained left-to-right or right-to-left, since bidirectional conditioning would allow each word to indirectly \"see itself\", and the model could trivially predict the target word in a multi-layered context. former is often referred to as a \"Transformer encoder\" while the left-context-only version is referred to as a \"Transformer decoder\" since it can be used for text generation. In order to train a deep bidirectional representation, we simply mask some percentage of the input tokens at random, and then predict those masked tokens.",
+    "sentence_context": "former is often referred to as a \"Transformer encoder\" while the left-context-only version is referred to as a \"Transformer decoder\" since it can be used for text generation.",
     "sentence_index": 7,
     "section": "Pre-training BERT"
   },
@@ -43,7 +43,7 @@
       "end_pos": 877
     },
     "attributes": {},
-    "sentence_context": "Unfortunately, standard conditional language models can only be trained left-to-right or right-to-left, since bidirectional conditioning would allow each word to indirectly \"see itself\", and the model could trivially predict the target word in a multi-layered context. former is often referred to as a \"Transformer encoder\" while the left-context-only version is referred to as a \"Transformer decoder\" since it can be used for text generation. In order to train a deep bidirectional representation, we simply mask some percentage of the input tokens at random, and then predict those masked tokens.",
+    "sentence_context": "former is often referred to as a \"Transformer encoder\" while the left-context-only version is referred to as a \"Transformer decoder\" since it can be used for text generation.",
     "sentence_index": 7,
     "section": "Pre-training BERT"
   },
@@ -55,7 +55,7 @@
       "end_pos": 919
     },
     "attributes": {},
-    "sentence_context": "Unfortunately, standard conditional language models can only be trained left-to-right or right-to-left, since bidirectional conditioning would allow each word to indirectly \"see itself\", and the model could trivially predict the target word in a multi-layered context. former is often referred to as a \"Transformer encoder\" while the left-context-only version is referred to as a \"Transformer decoder\" since it can be used for text generation. In order to train a deep bidirectional representation, we simply mask some percentage of the input tokens at random, and then predict those masked tokens.",
+    "sentence_context": "former is often referred to as a \"Transformer encoder\" while the left-context-only version is referred to as a \"Transformer decoder\" since it can be used for text generation.",
     "sentence_index": 7,
     "section": "Pre-training BERT"
   },
@@ -67,7 +67,7 @@
       "end_pos": 1118
     },
     "attributes": {},
-    "sentence_context": "In order to train a deep bidirectional representation, we simply mask some percentage of the input tokens at random, and then predict those masked tokens. We refer to this procedure as a \"masked LM\" (MLM), although it is often referred to as a Cloze task in the literature. In this case, the final hidden vectors corresponding to the mask tokens are fed into an output softmax over the vocabulary, as in a standard LM.",
+    "sentence_context": "We refer to this procedure as a \"masked LM\" (MLM), although it is often referred to as a Cloze task in the literature.",
     "sentence_index": 9,
     "section": "Pre-training BERT"
   },
@@ -79,7 +79,7 @@
       "end_pos": 1175
     },
     "attributes": {},
-    "sentence_context": "In order to train a deep bidirectional representation, we simply mask some percentage of the input tokens at random, and then predict those masked tokens. We refer to this procedure as a \"masked LM\" (MLM), although it is often referred to as a Cloze task in the literature. In this case, the final hidden vectors corresponding to the mask tokens are fed into an output softmax over the vocabulary, as in a standard LM.",
+    "sentence_context": "We refer to this procedure as a \"masked LM\" (MLM), although it is often referred to as a Cloze task in the literature.",
     "sentence_index": 9,
     "section": "Pre-training BERT"
   },
@@ -91,7 +91,7 @@
       "end_pos": 1470
     },
     "attributes": {},
-    "sentence_context": "In all of our experiments, we mask 15% of all Word Piece tokens in each sequence at random. In contrast to denoising auto-encoders, we only predict the masked words rather than reconstructing the entire input. Although this allows us to obtain a bidirectional pre-trained model, a downside is that we are creating a mismatch between pre-training and fine-tuning, since the [MASK] token does not appear during fine-tuning.",
+    "sentence_context": "In contrast to denoising auto-encoders, we only predict the masked words rather than reconstructing the entire input.",
     "sentence_index": 12,
     "section": "Pre-training BERT"
   },
@@ -103,7 +103,7 @@
       "end_pos": 1617
     },
     "attributes": {},
-    "sentence_context": "In contrast to denoising auto-encoders, we only predict the masked words rather than reconstructing the entire input. Although this allows us to obtain a bidirectional pre-trained model, a downside is that we are creating a mismatch between pre-training and fine-tuning, since the [MASK] token does not appear during fine-tuning. To mitigate this, we do not always replace \"masked\" words with the actual [MASK] token.",
+    "sentence_context": "Although this allows us to obtain a bidirectional pre-trained model, a downside is that we are creating a mismatch between pre-training and fine-tuning, since the [MASK] token does not appear during fine-tuning.",
     "sentence_index": 13,
     "section": "Pre-training BERT"
   },
@@ -115,7 +115,7 @@
       "end_pos": 1867
     },
     "attributes": {},
-    "sentence_context": "To mitigate this, we do not always replace \"masked\" words with the actual [MASK] token. The training data generator chooses 15% of the token positions at random for prediction. If the i-th token is chosen, we replace the i-th token with (1) the [MASK] token 80% of the time (2) a random token 10% of the time (3) the unchanged i-th token 10% of the time.",
+    "sentence_context": "The training data generator chooses 15% of the token positions at random for prediction.",
     "sentence_index": 15,
     "section": "Pre-training BERT"
   },
@@ -127,7 +127,7 @@
       "end_pos": 2285
     },
     "attributes": {},
-    "sentence_context": "We compare variations of this procedure in Appendix C.2. Task #2: Next Sentence Prediction (NSP) Many important downstream tasks such as Question Answering (QA) and Natural Language Inference (NLI) are based on understanding the relationship between two sentences, which is not directly captured by language modeling.",
+    "sentence_context": "Task #2: Next Sentence Prediction (NSP)",
     "sentence_index": 19,
     "section": "Pre-training BERT"
   },
@@ -139,7 +139,7 @@
       "end_pos": 2350
     },
     "attributes": {},
-    "sentence_context": "Task #2: Next Sentence Prediction (NSP) Many important downstream tasks such as Question Answering (QA) and Natural Language Inference (NLI) are based on understanding the relationship between two sentences, which is not directly captured by language modeling. In order to train a model that understands sentence relationships, we pre-train for a binarized next sentence prediction task that can be trivially generated from any monolingual corpus.",
+    "sentence_context": "Many important downstream tasks such as Question Answering (QA) and Natural Language Inference (NLI) are based on understanding the relationship between two sentences, which is not directly captured by language modeling.",
     "sentence_index": 20,
     "section": "Pre-training BERT"
   },
@@ -151,7 +151,7 @@
       "end_pos": 2386
     },
     "attributes": {},
-    "sentence_context": "Task #2: Next Sentence Prediction (NSP) Many important downstream tasks such as Question Answering (QA) and Natural Language Inference (NLI) are based on understanding the relationship between two sentences, which is not directly captured by language modeling. In order to train a model that understands sentence relationships, we pre-train for a binarized next sentence prediction task that can be trivially generated from any monolingual corpus.",
+    "sentence_context": "Many important downstream tasks such as Question Answering (QA) and Natural Language Inference (NLI) are based on understanding the relationship between two sentences, which is not directly captured by language modeling.",
     "sentence_index": 20,
     "section": "Pre-training BERT"
   },
@@ -163,7 +163,7 @@
       "end_pos": 2698
     },
     "attributes": {},
-    "sentence_context": "Many important downstream tasks such as Question Answering (QA) and Natural Language Inference (NLI) are based on understanding the relationship between two sentences, which is not directly captured by language modeling. In order to train a model that understands sentence relationships, we pre-train for a binarized next sentence prediction task that can be trivially generated from any monolingual corpus. Specifically, when choosing the sentences A and B for each pretraining example, 50% of the time B is the actual next sentence that follows A (labeled as IsNext), and 50% of the time it is a random sentence from the corpus (labeled as Not Next).",
+    "sentence_context": "In order to train a model that understands sentence relationships, we pre-train for a binarized next sentence prediction task that can be trivially generated from any monolingual corpus.",
     "sentence_index": 21,
     "section": "Pre-training BERT"
   },
@@ -175,7 +175,7 @@
       "end_pos": 2778
     },
     "attributes": {},
-    "sentence_context": "In order to train a model that understands sentence relationships, we pre-train for a binarized next sentence prediction task that can be trivially generated from any monolingual corpus. Specifically, when choosing the sentences A and B for each pretraining example, 50% of the time B is the actual next sentence that follows A (labeled as IsNext), and 50% of the time it is a random sentence from the corpus (labeled as Not Next). As we show in Figure 1, C is used for next sentence prediction (NSP).",
+    "sentence_context": "Specifically, when choosing the sentences A and B for each pretraining example, 50% of the time B is the actual next sentence that follows A (labeled as IsNext), and 50% of the time it is a random sentence from the corpus (labeled as Not Next).",
     "sentence_index": 22,
     "section": "Pre-training BERT"
   },
@@ -187,7 +187,7 @@
       "end_pos": 3007
     },
     "attributes": {},
-    "sentence_context": "Specifically, when choosing the sentences A and B for each pretraining example, 50% of the time B is the actual next sentence that follows A (labeled as IsNext), and 50% of the time it is a random sentence from the corpus (labeled as Not Next). As we show in Figure 1, C is used for next sentence prediction (NSP). Despite its simplicity, we demonstrate in Section 5.1 that pre-training towards this task is very beneficial to both QA and NLI.",
+    "sentence_context": "As we show in Figure 1, C is used for next sentence prediction (NSP).",
     "sentence_index": 23,
     "section": "Pre-training BERT"
   },
@@ -199,7 +199,7 @@
       "end_pos": 2921
     },
     "attributes": {},
-    "sentence_context": "In order to train a model that understands sentence relationships, we pre-train for a binarized next sentence prediction task that can be trivially generated from any monolingual corpus. Specifically, when choosing the sentences A and B for each pretraining example, 50% of the time B is the actual next sentence that follows A (labeled as IsNext), and 50% of the time it is a random sentence from the corpus (labeled as Not Next). As we show in Figure 1, C is used for next sentence prediction (NSP).",
+    "sentence_context": "Specifically, when choosing the sentences A and B for each pretraining example, 50% of the time B is the actual next sentence that follows A (labeled as IsNext), and 50% of the time it is a random sentence from the corpus (labeled as Not Next).",
     "sentence_index": 22,
     "section": "Pre-training BERT"
   },
@@ -211,7 +211,7 @@
       "end_pos": 3007
     },
     "attributes": {},
-    "sentence_context": "Specifically, when choosing the sentences A and B for each pretraining example, 50% of the time B is the actual next sentence that follows A (labeled as IsNext), and 50% of the time it is a random sentence from the corpus (labeled as Not Next). As we show in Figure 1, C is used for next sentence prediction (NSP). Despite its simplicity, we demonstrate in Section 5.1 that pre-training towards this task is very beneficial to both QA and NLI.",
+    "sentence_context": "As we show in Figure 1, C is used for next sentence prediction (NSP).",
     "sentence_index": 23,
     "section": "Pre-training BERT"
   },
@@ -223,7 +223,7 @@
       "end_pos": 3134
     },
     "attributes": {},
-    "sentence_context": "As we show in Figure 1, C is used for next sentence prediction (NSP). Despite its simplicity, we demonstrate in Section 5.1 that pre-training towards this task is very beneficial to both QA and NLI. Position Embeddings",
+    "sentence_context": "Despite its simplicity, we demonstrate in Section 5.1 that pre-training towards this task is very beneficial to both QA and NLI.",
     "sentence_index": 24,
     "section": "Pre-training BERT"
   },
@@ -235,7 +235,7 @@
       "end_pos": 3142
     },
     "attributes": {},
-    "sentence_context": "As we show in Figure 1, C is used for next sentence prediction (NSP). Despite its simplicity, we demonstrate in Section 5.1 that pre-training towards this task is very beneficial to both QA and NLI. Position Embeddings",
+    "sentence_context": "Despite its simplicity, we demonstrate in Section 5.1 that pre-training towards this task is very beneficial to both QA and NLI.",
     "sentence_index": 24,
     "section": "Pre-training BERT"
   },
@@ -247,7 +247,7 @@
       "end_pos": 3163
     },
     "attributes": {},
-    "sentence_context": "Despite its simplicity, we demonstrate in Section 5.1 that pre-training towards this task is very beneficial to both QA and NLI. Position Embeddings The NSP task is closely related to representationlearning objectives used in Jernite et al. and Logeswaran and Lee.",
+    "sentence_context": "Position Embeddings",
     "sentence_index": 25,
     "section": "Pre-training BERT"
   },
@@ -259,7 +259,7 @@
       "end_pos": 3176
     },
     "attributes": {},
-    "sentence_context": "Position Embeddings The NSP task is closely related to representationlearning objectives used in Jernite et al. and Logeswaran and Lee. However, in prior work, only sentence embeddings are transferred to down-stream tasks, where BERT transfers all parameters to initialize end-task model parameters.",
+    "sentence_context": "The NSP task is closely related to representationlearning objectives used in Jernite et al. and Logeswaran and Lee.",
     "sentence_index": 26,
     "section": "Pre-training BERT"
   }

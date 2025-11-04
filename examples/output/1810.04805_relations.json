@@ -1,164 +1,76 @@
 {
   "explicit": [
     {
-      "source": "BERT",
-      "target": "Open AI GPT",
-      "type": "evaluates",
-      "confidence": 0.7,
-      "support": 7,
-      "exemplar": "On the official GLUE leaderboard 10, [ENT1] LARGE obtains a score of 80.5, compared to [ENT2], which obtains 72.8 as of the date of writing."
-    },
-    {
-      "source": "ELMo",
-      "target": "Open AI GPT",
-      "type": "evaluates",
-      "confidence": 0.3,
-      "support": 3,
-      "exemplar": "A.4 Comparison of BERT, [ENT1],and [ENT2] Here we studies the differences in recent popular representation learning models including ELMo, Open AI GPT and BERT."
-    },
-    {
-      "source": "LTR",
-      "target": "SQuAD",
-      "type": "evaluates",
+      "source": "Books Corpus",
+      "target": "Wikipedia",
+      "type": "uses",
       "confidence": 0.2,
       "support": 2,
-      "exemplar": "The [ENT1] model performs worse than the MLM model on all tasks, with large drops on MRPC and [ENT2]."
-    },
-    {
-      "source": "LSTMs",
-      "target": "predict a single word",
-      "type": "uses",
-      "confidence": 0.1,
-      "support": 1,
-      "exemplar": "When integrating contextual word embeddings with existing task-specific architectures, ELMo advances the state of the art for several major NLP benchmarks including question answering, sentiment analysis, and named entity recognition.. proposed learning contextual representations through a task to [ENT2] from both left and right context using [ENT1]."
-    },
-    {
-      "source": "LSTMs",
-      "target": "sentiment analysis",
-      "type": "uses",
-      "confidence": 0.1,
-      "support": 1,
-      "exemplar": "When integrating contextual word embeddings with existing task-specific architectures, ELMo advances the state of the art for several major NLP benchmarks including question answering, [ENT2], and named entity recognition.. proposed learning contextual representations through a task to predict a single word from both left and right context using [ENT1]."
-    },
-    {
-      "source": "LTR",
-      "target": "token predictions",
-      "type": "evaluates",
-      "confidence": 0.1,
-      "support": 1,
-      "exemplar": "For SQuAD it is intuitively clear that a [ENT1] model will perform poorly at [ENT2], since the token-level hidden states have no rightside context."
-    },
-    {
-      "source": "ELMo",
-      "target": "LSTMs",
-      "type": "proposes",
-      "confidence": 0.1,
-      "support": 1,
-      "exemplar": "When integrating contextual word embeddings with existing task-specific architectures, [ENT1] advances the state of the art for several major NLP benchmarks including question answering, sentiment analysis, and named entity recognition.. proposed learning contextual representations through a task to predict a single word from both left and right context using [ENT2]."
-    },
-    {
-      "source": "ELMo",
-      "target": "predict a single word",
-      "type": "proposes",
-      "confidence": 0.1,
-      "support": 1,
-      "exemplar": "When integrating contextual word embeddings with existing task-specific architectures, [ENT1] advances the state of the art for several major NLP benchmarks including question answering, sentiment analysis, and named entity recognition.. proposed learning contextual representations through a task to [ENT2] from both left and right context using LSTMs."
-    },
-    {
-      "source": "BiLSTM",
-      "target": "GLUE tasks",
-      "type": "related",
-      "confidence": 0.1,
-      "support": 1,
-      "exemplar": "The [ENT1] hurts performance on the [ENT2]."
+      "exemplar": "use the [ENT1] (800M words) and English [ENT2]"
     },
     {
       "source": "paraphrasing",
-      "target": "sentence pairs",
+      "target": "question answering",
+      "type": "related",
+      "confidence": 0.2,
+      "support": 2,
+      "exemplar": "include sentence-level tasks such as natural language inference and [ENT1], which aim to predict the relationships between sentences by analyzing them holistically, as well as token-level tasks such as named entity recognition and [ENT2]"
+    },
+    {
+      "source": "named entity recognition",
+      "target": "question answering",
+      "type": "related",
+      "confidence": 0.2,
+      "support": 2,
+      "exemplar": "include sentence-level tasks such as natural language inference and paraphrasing, which aim to predict the relationships between sentences by analyzing them holistically, as well as token-level tasks such as [ENT1] and [ENT2]"
+    },
+    {
+      "source": "LSTMs",
+      "target": "predict a single word",
       "type": "uses",
       "confidence": 0.1,
       "support": 1,
-      "exemplar": "At the input, sentence A and sentence B from pre-training are analogous to (1) [ENT2] in [ENT1], (2) hypothesis-premise pairs in entailment, (3) question-passage pairs in question answering, and (4) a degenerate text-\u2205 pair in text classification or sequence tagging."
+      "exemplar": "advances the state of the art for several major NLP benchmarks including question answering, sentiment analysis, and named entity recognition.. proposed learning contextual representations through a task to [ENT2] from both left and right context using [ENT1]"
     },
     {
-      "source": "ESIM+ELMo",
-      "target": "Open AI GPT",
+      "source": "grounded commonsense inference",
+      "target": "sentence-pair completion",
       "type": "evaluates",
       "confidence": 0.1,
       "support": 1,
-      "exemplar": "BERT LARGE outperforms the authors' baseline [ENT1] system by +27.1% and [ENT2] by 8.3%.\n\n"
+      "exemplar": "contains 113k [ENT2] examples that evaluate [ENT1]"
     },
     {
-      "source": "ELMo",
-      "target": "sentiment analysis",
-      "type": "proposes",
+      "source": "negative examples",
+      "target": "positive examples",
+      "type": "related",
       "confidence": 0.1,
       "support": 1,
-      "exemplar": "When integrating contextual word embeddings with existing task-specific architectures, [ENT1] advances the state of the art for several major NLP benchmarks including question answering, [ENT2], and named entity recognition.. proposed learning contextual representations through a task to predict a single word from both left and right context using LSTMs."
+      "exemplar": "[ENT2] are (question, sentence) pairs which do contain the correct answer, and the [ENT1] are"
+    },
+    {
+      "source": "LSTMs",
+      "target": "sentiment analysis",
+      "type": "uses",
+      "confidence": 0.1,
+      "support": 1,
+      "exemplar": "advances the state of the art for several major NLP benchmarks including question answering, [ENT2], and named entity recognition.. proposed learning contextual representations through a task to predict a single word from both left and right context using [ENT1]"
     },
     {
       "source": "LTR",
-      "target": "MRPC",
-      "type": "evaluates",
-      "confidence": 0.1,
-      "support": 1,
-      "exemplar": "The [ENT1] model performs worse than the MLM model on all tasks, with large drops on [ENT2] and SQuAD."
-    },
-    {
-      "source": "BiLSTM",
-      "target": "LTR",
+      "target": "Left-to-Right (LTR) LM",
       "type": "uses",
       "confidence": 0.1,
       "support": 1,
-      "exemplar": "In order to make a good faith attempt at strengthening the [ENT2] system, we added a randomly initialized [ENT1] on top."
+      "exemplar": "only model which is trained using a standard[ENT1]NT2]"
     },
     {
-      "source": "ELMo",
-      "target": "named entity recognition",
-      "type": "proposes",
+      "source": "SQuAD",
+      "target": "Stanford Question Answering Dataset",
+      "type": "related",
       "confidence": 0.1,
       "support": 1,
-      "exemplar": "When integrating contextual word embeddings with existing task-specific architectures, [ENT1] advances the state of the art for several major NLP benchmarks including question answering, sentiment analysis, and [ENT2].. proposed learning contextual representations through a task to predict a single word from both left and right context using LSTMs."
-    },
-    {
-      "source": "question answering",
-      "target": "sentence pairs",
-      "type": "uses",
-      "confidence": 0.1,
-      "support": 1,
-      "exemplar": "At the input, sentence A and sentence B from pre-training are analogous to (1) [ENT2] in paraphrasing, (2) hypothesis-premise pairs in entailment, (3) question-passage pairs in [ENT1], and (4) a degenerate text-\u2205 pair in text classification or sequence tagging."
-    },
-    {
-      "source": "BERT",
-      "target": "ESIM+ELMo",
-      "type": "evaluates",
-      "confidence": 0.1,
-      "support": 1,
-      "exemplar": "[ENT1] LARGE outperforms the authors' baseline [ENT2] system by +27.1% and Open AI GPT by 8.3%.\n\n"
-    },
-    {
-      "source": "NER",
-      "target": "named entity recognition",
-      "type": "evaluates",
-      "confidence": 0.1,
-      "support": 1,
-      "exemplar": "In this section, we compare the two approaches by applying BERT to the CoNL-2003 [ENT2] ([ENT1]) task."
-    },
-    {
-      "source": "classification",
-      "target": "sentence pairs",
-      "type": "uses",
-      "confidence": 0.1,
-      "support": 1,
-      "exemplar": "At the input, sentence A and sentence B from pre-training are analogous to (1) [ENT2] in paraphrasing, (2) hypothesis-premise pairs in entailment, (3) question-passage pairs in question answering, and (4) a degenerate text-\u2205 pair in text [ENT1] or sequence tagging."
-    },
-    {
-      "source": "ELMo",
-      "target": "question answering",
-      "type": "proposes",
-      "confidence": 0.1,
-      "support": 1,
-      "exemplar": "When integrating contextual word embeddings with existing task-specific architectures, [ENT1] advances the state of the art for several major NLP benchmarks including [ENT2], sentiment analysis, and named entity recognition.. proposed learning contextual representations through a task to predict a single word from both left and right context using LSTMs."
+      "exemplar": "[ENT2] ([ENT1] v 1.1) is"
     }
   ],
   "implicit": [
@@ -170,420 +82,6 @@
       "bridges": [
         "machine translation",
         "text generation"
-      ]
-    },
-    {
-      "source": "fine-tuning",
-      "target": "training data",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "tuning data"
-      ]
-    },
-    {
-      "source": "NER",
-      "target": "Left-to-Right (LTR) LM",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "LTR"
-      ]
-    },
-    {
-      "source": "question answering",
-      "target": "machine translation",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "language understanding"
-      ]
-    },
-    {
-      "source": "question answering",
-      "target": "Stanford Sentiment Treebank",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "Stanford Question Answering Dataset"
-      ]
-    },
-    {
-      "source": "question answering",
-      "target": "natural language inference dataset",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "Stanford Question Answering Dataset"
-      ]
-    },
-    {
-      "source": "classification",
-      "target": "tuning data",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "training data"
-      ]
-    },
-    {
-      "source": "next sentence prediction",
-      "target": "paraphrasing",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "sentence pairs"
-      ]
-    },
-    {
-      "source": "next sentence prediction",
-      "target": "QP Quora Question Pairs",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "sentence pairs"
-      ]
-    },
-    {
-      "source": "next sentence prediction",
-      "target": "language understanding",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "machine translation"
-      ]
-    },
-    {
-      "source": "named entity recognition",
-      "target": "machine translation",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "Books Corpus"
-      ]
-    },
-    {
-      "source": "named entity recognition",
-      "target": "text generation",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "Books Corpus"
-      ]
-    },
-    {
-      "source": "Stanford Question Answering Dataset",
-      "target": "sentiment analysis",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "Stanford Sentiment Treebank"
-      ]
-    },
-    {
-      "source": "Stanford Question Answering Dataset",
-      "target": "paraphrasing",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "natural language inference dataset"
-      ]
-    },
-    {
-      "source": "Stanford Question Answering Dataset",
-      "target": "Semantic Textual Similarity Benchmark",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "natural language inference dataset"
-      ]
-    },
-    {
-      "source": "Stanford Question Answering Dataset",
-      "target": "language understanding",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "question answering"
-      ]
-    },
-    {
-      "source": "Stanford Question Answering Dataset",
-      "target": "grounded commonsense inference",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "natural language inference dataset"
-      ]
-    },
-    {
-      "source": "Stanford Question Answering Dataset",
-      "target": "RTE Recognizing Textual Entailment",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "natural language inference dataset"
-      ]
-    },
-    {
-      "source": "sentence pairs",
-      "target": "machine translation",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "next sentence prediction"
-      ]
-    },
-    {
-      "source": "sentence pairs",
-      "target": "text generation",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "next sentence prediction"
-      ]
-    },
-    {
-      "source": "sentence pairs",
-      "target": "predict a single word",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "next sentence prediction"
-      ]
-    },
-    {
-      "source": "sentence pairs",
-      "target": "token predictions",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "next sentence prediction"
-      ]
-    },
-    {
-      "source": "sentence pairs",
-      "target": "natural language inference dataset",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "paraphrasing"
-      ]
-    },
-    {
-      "source": "sentiment analysis",
-      "target": "natural language inference dataset",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "Stanford Sentiment Treebank"
-      ]
-    },
-    {
-      "source": "machine translation",
-      "target": "predict a single word",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "next sentence prediction"
-      ]
-    },
-    {
-      "source": "machine translation",
-      "target": "token predictions",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "next sentence prediction"
-      ]
-    },
-    {
-      "source": "machine translation",
-      "target": "sentence-pair completion",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "next sentence prediction"
-      ]
-    },
-    {
-      "source": "paraphrasing",
-      "target": "QP Quora Question Pairs",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "sentence pairs"
-      ]
-    },
-    {
-      "source": "paraphrasing",
-      "target": "Stanford Sentiment Treebank",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "natural language inference dataset"
-      ]
-    },
-    {
-      "source": "paraphrasing",
-      "target": "Semantic Textual Similarity Benchmark",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "natural language inference dataset"
-      ]
-    },
-    {
-      "source": "paraphrasing",
-      "target": "grounded commonsense inference",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "natural language inference dataset"
-      ]
-    },
-    {
-      "source": "paraphrasing",
-      "target": "sentence-pair completion",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "sentence pairs"
-      ]
-    },
-    {
-      "source": "paraphrasing",
-      "target": "RTE Recognizing Textual Entailment",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "natural language inference dataset"
-      ]
-    },
-    {
-      "source": "text generation",
-      "target": "language understanding",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "machine translation"
-      ]
-    },
-    {
-      "source": "text generation",
-      "target": "predict a single word",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "next sentence prediction"
-      ]
-    },
-    {
-      "source": "text generation",
-      "target": "token predictions",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "next sentence prediction"
-      ]
-    },
-    {
-      "source": "text generation",
-      "target": "sentence-pair completion",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "next sentence prediction"
-      ]
-    },
-    {
-      "source": "QP Quora Question Pairs",
-      "target": "sentence-pair completion",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "sentence pairs"
-      ]
-    },
-    {
-      "source": "Stanford Sentiment Treebank",
-      "target": "Semantic Textual Similarity Benchmark",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "natural language inference dataset"
-      ]
-    },
-    {
-      "source": "Stanford Sentiment Treebank",
-      "target": "grounded commonsense inference",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "natural language inference dataset"
-      ]
-    },
-    {
-      "source": "Stanford Sentiment Treebank",
-      "target": "RTE Recognizing Textual Entailment",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "natural language inference dataset"
-      ]
-    },
-    {
-      "source": "Semantic Textual Similarity Benchmark",
-      "target": "grounded commonsense inference",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "natural language inference dataset"
-      ]
-    },
-    {
-      "source": "language understanding",
-      "target": "Books Corpus",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "machine translation"
-      ]
-    },
-    {
-      "source": "labeled training examples",
-      "target": "tuning data",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "training data"
-      ]
-    },
-    {
-      "source": "predict a single word",
-      "target": "sentence-pair completion",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "next sentence prediction"
-      ]
-    },
-    {
-      "source": "token predictions",
-      "target": "sentence-pair completion",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "next sentence prediction"
-      ]
-    },
-    {
-      "source": "grounded commonsense inference",
-      "target": "RTE Recognizing Textual Entailment",
-      "confidence": 0.125,
-      "n_bridges": 1,
-      "bridges": [
-        "natural language inference dataset"
       ]
     }
   ]
