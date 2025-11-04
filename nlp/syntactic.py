@@ -458,7 +458,6 @@ def verbalize_path(t1: Token, t2: Token) -> str:
     
 def extract_exemplar(doc: Doc, e1: str, e2: str) -> str | None:
     """Extract exemplar containing both entities."""
-    
     e1_lower = e1.lower()
     e2_lower = e2.lower()
     
@@ -470,13 +469,21 @@ def extract_exemplar(doc: Doc, e1: str, e2: str) -> str | None:
             continue
         
         tokens = list(sent)
+        
         if len(tokens) <= 30:
             return sent_text
         
+        e1_idx = -1
+        e2_idx = -1
+        
         for i, token in enumerate(tokens):
-            if token.text.lower() == e1_lower or token.text.lower() == e2_lower:
-                e1_idx = i if token.text.lower() == e1_lower else e1_idx
-                e2_idx = i if token.text.lower() == e2_lower else e2_idx
+            if token.text.lower() == e1_lower:
+                e1_idx = i
+            if token.text.lower() == e2_lower:
+                e2_idx = i
+        
+        if e1_idx == -1 or e2_idx == -1:
+            return sent_text
         
         start = max(0, min(e1_idx, e2_idx) - 5)
         end = min(len(tokens), max(e1_idx, e2_idx) + 6)
@@ -484,6 +491,7 @@ def extract_exemplar(doc: Doc, e1: str, e2: str) -> str | None:
         return " ".join(t.text for t in tokens[start:end])
     
     return None
+
 
 
 
