@@ -405,7 +405,7 @@ def filter_lexical(entities: list[dict]) -> list[dict]:
     return filtered
 
 
-def filter_type(entities: list[dict], exclude_other: bool = True) -> list[dict]:
+def filter_type(entities: list[dict], exclude_other: bool = False) -> list[dict]:
     """Keep meaningful entity types."""
     valid = {"method", "task", "dataset", "metric", "model"}
     
