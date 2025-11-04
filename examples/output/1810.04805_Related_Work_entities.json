@@ -9,7 +9,6 @@
     "attributes": {},
     "sentence_context": "There is a long history of pre-training general language representations, and we briefly review the most widely-used approaches in this section.",
     "sentence_index": 0,
-    "span_text": "pre-training",
     "section": "Related Work"
   },
   {
@@ -22,7 +21,6 @@
     "attributes": {},
     "sentence_context": "There is a long history of pre-training general language representations, and we briefly review the most widely-used approaches in this section.",
     "sentence_index": 0,
-    "span_text": "language representations",
     "section": "Related Work"
   }
 ]

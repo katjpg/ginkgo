@@ -59,7 +59,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		</fileDesc>
 		<encodingDesc>
 			<appInfo>
-				<application version="0.8.2-SNAPSHOT" ident="GROBID" when="2025-11-03T06:25+0000">
+				<application version="0.8.2-SNAPSHOT" ident="GROBID" when="2025-11-04T04:31+0000">
 					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
 					<ref target="https://github.com/kermitt2/grobid"/>
 				</application>
@@ -362,7 +362,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct xml:id="b8">
-	<monogr>
+	<analytic>
+		<title level="a" type="main">One billion word benchmark for measuring progress in statistical language modeling</title>
 		<author>
 			<persName><forename type="first">Ciprian</forename><surname>Chelba</surname></persName>
 		</author>
@@ -384,9 +385,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Tony</forename><surname>Robinson</surname></persName>
 		</author>
+		<idno type="DOI">10.21437/interspeech.2014-564</idno>
 		<idno type="arXiv">arXiv:1312.3005</idno>
-		<title level="m">One billion word benchmark for measuring progress in statistical language modeling</title>
+	</analytic>
+	<monogr>
+		<title level="m">Interspeech 2014</title>
 		<imprint>
+			<publisher>ISCA</publisher>
 			<date type="published" when="2013">2013</date>
 		</imprint>
 	</monogr>
@@ -416,20 +421,17 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct xml:id="b10">
 	<analytic>
-		<title level="a" type="main">Simple and Effective Multi-Paragraph Reading Comprehension</title>
+		<title level="a" type="main">Simple and effective multi-paragraph reading comprehension</title>
 		<author>
 			<persName><forename type="first">Christopher</forename><surname>Clark</surname></persName>
 		</author>
 		<author>
 			<persName><forename type="first">Matt</forename><surname>Gardner</surname></persName>
 		</author>
-		<idno type="DOI">10.18653/v1/p18-1078</idno>
 	</analytic>
 	<monogr>
-		<title level="m">Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</title>
-		<meeting>the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</meeting>
+		<title level="m">ACL</title>
 		<imprint>
-			<publisher>Association for Computational Linguistics</publisher>
 			<date type="published" when="2018">2018</date>
 		</imprint>
 	</monogr>
@@ -795,19 +797,21 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct xml:id="b25">
 	<analytic>
-		<title level="a" type="main">Distributed representations of sentences and documents</title>
+		<title level="a" type="main">Copyright pages</title>
 		<author>
 			<persName><forename type="first">Quoc</forename><surname>Le</surname></persName>
 		</author>
 		<author>
 			<persName><forename type="first">Tomas</forename><surname>Mikolov</surname></persName>
 		</author>
+		<idno type="DOI">10.1109/icmlc.2014.7009078</idno>
 	</analytic>
 	<monogr>
-		<title level="m">International Conference on Machine Learning</title>
+		<title level="m">2014 International Conference on Machine Learning and Cybernetics</title>
 		<imprint>
-			<date type="published" when="2014">2014</date>
-			<biblScope unit="page" from="1188" to="1196" />
+			<publisher>IEEE</publisher>
+			<date type="published" when="2014-07">2014</date>
+			<biblScope unit="page" from="I" to="II" />
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -879,7 +883,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct xml:id="b29">
 	<analytic>
-		<title level="a" type="main">context2vec: Learning Generic Context Embedding with Bidirectional LSTM</title>
+		<title level="a" type="main">context2vec: Learning generic context embedding with bidirectional LSTM</title>
 		<author>
 			<persName><forename type="first">Oren</forename><surname>Melamud</surname></persName>
 		</author>
@@ -889,13 +893,10 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Ido</forename><surname>Dagan</surname></persName>
 		</author>
-		<idno type="DOI">10.18653/v1/k16-1006</idno>
 	</analytic>
 	<monogr>
-		<title level="m">Proceedings of The 20th SIGNLL Conference on Computational Natural Language Learning</title>
-		<meeting>The 20th SIGNLL Conference on Computational Natural Language Learning</meeting>
+		<title level="m">CoNLL</title>
 		<imprint>
-			<publisher>Association for Computational Linguistics</publisher>
 			<date type="published" when="2016">2016</date>
 		</imprint>
 	</monogr>
@@ -1058,13 +1059,10 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Russell</forename><surname>Power</surname></persName>
 		</author>
-		<idno type="DOI">10.18653/v1/p17-1161</idno>
 	</analytic>
 	<monogr>
-		<title level="m">Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</title>
-		<meeting>the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</meeting>
+		<title level="m">ACL</title>
 		<imprint>
-			<publisher>Association for Computational Linguistics</publisher>
 			<date type="published" when="2017">2017</date>
 		</imprint>
 	</monogr>
@@ -1385,12 +1383,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName><forename type="first">Pierre-Antoine</forename><surname>Manzagol</surname></persName>
 		</author>
+		<idno type="DOI">10.1145/1390156.1390294</idno>
 	</analytic>
 	<monogr>
-		<title level="m">Proceedings of the 25th international conference on Machine learning</title>
-		<meeting>the 25th international conference on Machine learning</meeting>
+		<title level="m">Proceedings of the 25th international conference on Machine learning - ICML &apos;08</title>
+		<meeting>the 25th international conference on Machine learning - ICML &apos;08</meeting>
 		<imprint>
-			<publisher>ACM</publisher>
+			<publisher>ACM Press</publisher>
 			<date type="published" when="2008">2008</date>
 			<biblScope unit="page" from="1096" to="1103" />
 		</imprint>

@@ -9,7 +9,6 @@
     "attributes": {},
     "sentence_context": "In this section, we present BERT fine-tuning results on 11 NLP tasks.",
     "sentence_index": 0,
-    "span_text": "BERT",
     "section": "Experiments"
   },
   {
@@ -22,7 +21,6 @@
     "attributes": {},
     "sentence_context": "In this section, we present BERT fine-tuning results on 11 NLP tasks.",
     "sentence_index": 0,
-    "span_text": "NLP tasks",
     "section": "Experiments"
   }
 ]

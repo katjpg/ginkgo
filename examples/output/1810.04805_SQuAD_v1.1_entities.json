@@ -9,7 +9,6 @@
     "attributes": {},
     "sentence_context": "The Stanford Question Answering Dataset (SQuAD v 1.1) is a collection of 100k crowdsourced question/answer pairs. Given a question and a passage from 9",
     "sentence_index": 0,
-    "span_text": "Stanford Question Answering Dataset",
     "section": "SQuAD v1.1"
   },
   {
@@ -22,7 +21,6 @@
     "attributes": {},
     "sentence_context": "The Stanford Question Answering Dataset (SQuAD v 1.1) is a collection of 100k crowdsourced question/answer pairs. Given a question and a passage from 9",
     "sentence_index": 0,
-    "span_text": "SQuAD v 1.1",
     "section": "SQuAD v1.1"
   },
   {
@@ -35,7 +33,6 @@
     "attributes": {},
     "sentence_context": "The Stanford Question Answering Dataset (SQuAD v 1.1) is a collection of 100k crowdsourced question/answer pairs. Given a question and a passage from 9",
     "sentence_index": 0,
-    "span_text": "question/answer pairs",
     "section": "SQuAD v1.1"
   },
   {
@@ -48,7 +45,6 @@
     "attributes": {},
     "sentence_context": "Given a question and a passage from 9 The GLUE data set distribution does not include the Test labels, and we only made a single GLUE evaluation server submission for each of BERTBASE and BERTLARGE. 10 Wikipedia containing the answer, the task is to predict the answer text span in the passage.",
     "sentence_index": 2,
-    "span_text": "GLUE data set",
     "section": "SQuAD v1.1"
   },
   {
@@ -61,7 +57,6 @@
     "attributes": {},
     "sentence_context": "The GLUE data set distribution does not include the Test labels, and we only made a single GLUE evaluation server submission for each of BERTBASE and BERTLARGE. 10 Wikipedia containing the answer, the task is to predict the answer text span in the passage. As shown in Figure 1, in the question answering task, we represent the input question and passage as a single packed sequence, with the question using the A embedding and the passage using the B embedding.",
     "sentence_index": 3,
-    "span_text": "Wikipedia",
     "section": "SQuAD v1.1"
   },
   {
@@ -74,7 +69,6 @@
     "attributes": {},
     "sentence_context": "10 Wikipedia containing the answer, the task is to predict the answer text span in the passage. As shown in Figure 1, in the question answering task, we represent the input question and passage as a single packed sequence, with the question using the A embedding and the passage using the B embedding. We only introduce a start vector S \u2208 R H and an end vector E \u2208 R H during fine-tuning.",
     "sentence_index": 4,
-    "span_text": "question answering",
     "section": "SQuAD v1.1"
   },
   {
@@ -87,7 +81,6 @@
     "attributes": {},
     "sentence_context": "10 Wikipedia containing the answer, the task is to predict the answer text span in the passage. As shown in Figure 1, in the question answering task, we represent the input question and passage as a single packed sequence, with the question using the A embedding and the passage using the B embedding. We only introduce a start vector S \u2208 R H and an end vector E \u2208 R H during fine-tuning.",
     "sentence_index": 4,
-    "span_text": "A embedding",
     "section": "SQuAD v1.1"
   },
   {
@@ -100,7 +93,6 @@
     "attributes": {},
     "sentence_context": "10 Wikipedia containing the answer, the task is to predict the answer text span in the passage. As shown in Figure 1, in the question answering task, we represent the input question and passage as a single packed sequence, with the question using the A embedding and the passage using the B embedding. We only introduce a start vector S \u2208 R H and an end vector E \u2208 R H during fine-tuning.",
     "sentence_index": 4,
-    "span_text": "B embedding",
     "section": "SQuAD v1.1"
   },
   {
@@ -113,7 +105,6 @@
     "attributes": {},
     "sentence_context": "As shown in Figure 1, in the question answering task, we represent the input question and passage as a single packed sequence, with the question using the A embedding and the passage using the B embedding. We only introduce a start vector S \u2208 R H and an end vector E \u2208 R H during fine-tuning. The probability of word i being the start of the answer span is computed as a dot product between T i and S followed by a softmax over all of the words in the paragraph: P i = e ST",
     "sentence_index": 5,
-    "span_text": "start vector",
     "section": "SQuAD v1.1"
   },
   {
@@ -126,7 +117,6 @@
     "attributes": {},
     "sentence_context": "As shown in Figure 1, in the question answering task, we represent the input question and passage as a single packed sequence, with the question using the A embedding and the passage using the B embedding. We only introduce a start vector S \u2208 R H and an end vector E \u2208 R H during fine-tuning. The probability of word i being the start of the answer span is computed as a dot product between T i and S followed by a softmax over all of the words in the paragraph: P i = e ST",
     "sentence_index": 5,
-    "span_text": "end vector",
     "section": "SQuAD v1.1"
   },
   {
@@ -139,7 +129,6 @@
     "attributes": {},
     "sentence_context": "We only introduce a start vector S \u2208 R H and an end vector E \u2208 R H during fine-tuning. The probability of word i being the start of the answer span is computed as a dot product between T i and S followed by a softmax over all of the words in the paragraph: P i = e ST i j e ST j.",
     "sentence_index": 6,
-    "span_text": "softmax",
     "section": "SQuAD v1.1"
   },
   {
@@ -152,7 +141,6 @@
     "attributes": {},
     "sentence_context": "We only introduce a start vector S \u2208 R H and an end vector E \u2208 R H during fine-tuning. The probability of word i being the start of the answer span is computed as a dot product between T i and S followed by a softmax over all of the words in the paragraph: P i = e ST i j e ST j.",
     "sentence_index": 6,
-    "span_text": "start of the answer span",
     "section": "SQuAD v1.1"
   },
   {
@@ -165,7 +153,6 @@
     "attributes": {},
     "sentence_context": "i j e ST j. The analogous formula is used for the end of the answer span. The score of a candidate span from position i to position j is defined as ST i + ET j, and the maximum scoring span where j \u2265 i is used as a prediction.",
     "sentence_index": 8,
-    "span_text": "end of the answer span",
     "section": "SQuAD v1.1"
   },
   {
@@ -178,7 +165,6 @@
     "attributes": {},
     "sentence_context": "The analogous formula is used for the end of the answer span. The score of a candidate span from position i to position j is defined as ST i + ET j, and the maximum scoring span where j \u2265 i is used as a prediction. The training objective is the sum of the log-likelihoods of the correct start and end positions.",
     "sentence_index": 9,
-    "span_text": "candidate span",
     "section": "SQuAD v1.1"
   },
   {
@@ -191,7 +177,6 @@
     "attributes": {},
     "sentence_context": "The score of a candidate span from position i to position j is defined as ST i + ET j, and the maximum scoring span where j \u2265 i is used as a prediction. The training objective is the sum of the log-likelihoods of the correct start and end positions. We fine-tune for 3 epochs with a learning rate of 5e-5 and a batch size of 32.",
     "sentence_index": 10,
-    "span_text": "training objective",
     "section": "SQuAD v1.1"
   },
   {
@@ -204,7 +189,6 @@
     "attributes": {},
     "sentence_context": "The score of a candidate span from position i to position j is defined as ST i + ET j, and the maximum scoring span where j \u2265 i is used as a prediction. The training objective is the sum of the log-likelihoods of the correct start and end positions. We fine-tune for 3 epochs with a learning rate of 5e-5 and a batch size of 32.",
     "sentence_index": 10,
-    "span_text": "log-likelihoods",
     "section": "SQuAD v1.1"
   },
   {
@@ -217,7 +201,6 @@
     "attributes": {},
     "sentence_context": "The score of a candidate span from position i to position j is defined as ST i + ET j, and the maximum scoring span where j \u2265 i is used as a prediction. The training objective is the sum of the log-likelihoods of the correct start and end positions. We fine-tune for 3 epochs with a learning rate of 5e-5 and a batch size of 32.",
     "sentence_index": 10,
-    "span_text": "correct start and end positions",
     "section": "SQuAD v1.1"
   },
   {
@@ -230,7 +213,6 @@
     "attributes": {},
     "sentence_context": "Table 2 shows top leaderboard entries as well as results from top published systems. The top results from the SQuAD leaderboard do not have up-to-date public system descriptions available, and are allowed to use any public data when training their systems. We therefore use modest data augmentation in our system by first fine-tuning on Trivia QA befor fine-tuning on SQuAD.",
     "sentence_index": 13,
-    "span_text": "SQuAD",
     "section": "SQuAD v1.1"
   },
   {
@@ -243,7 +225,6 @@
     "attributes": {},
     "sentence_context": "Table 2 shows top leaderboard entries as well as results from top published systems. The top results from the SQuAD leaderboard do not have up-to-date public system descriptions available, and are allowed to use any public data when training their systems. We therefore use modest data augmentation in our system by first fine-tuning on Trivia QA befor fine-tuning on SQuAD.",
     "sentence_index": 13,
-    "span_text": "public data",
     "section": "SQuAD v1.1"
   },
   {
@@ -256,7 +237,6 @@
     "attributes": {},
     "sentence_context": "The top results from the SQuAD leaderboard do not have up-to-date public system descriptions available, and are allowed to use any public data when training their systems. We therefore use modest data augmentation in our system by first fine-tuning on Trivia QA befor fine-tuning on SQuAD. Our best performing system outperforms the top leaderboard system by +1.5 F 1 in ensembling and +1.3 F 1 as a single system.",
     "sentence_index": 14,
-    "span_text": "Trivia QA",
     "section": "SQuAD v1.1"
   },
   {
@@ -269,7 +249,6 @@
     "attributes": {},
     "sentence_context": "The top results from the SQuAD leaderboard do not have up-to-date public system descriptions available, and are allowed to use any public data when training their systems. We therefore use modest data augmentation in our system by first fine-tuning on Trivia QA befor fine-tuning on SQuAD. Our best performing system outperforms the top leaderboard system by +1.5 F 1 in ensembling and +1.3 F 1 as a single system.",
     "sentence_index": 14,
-    "span_text": "SQuAD",
     "section": "SQuAD v1.1"
   },
   {
@@ -282,7 +261,6 @@
     "attributes": {},
     "sentence_context": "Our best performing system outperforms the top leaderboard system by +1.5 F 1 in ensembling and +1.3 F 1 as a single system. In fact, our single BERT model outperforms the top ensemble system in terms of F 1 score.tuning data, we only lose 0.1-0.4F 1, still outperforming all existing systems by a wide margin. 124.3 SQuAD v 2.0",
     "sentence_index": 16,
-    "span_text": "BERT",
     "section": "SQuAD v1.1"
   },
   {
@@ -295,7 +273,6 @@
     "attributes": {},
     "sentence_context": "We therefore use modest data augmentation in our system by first fine-tuning on Trivia QA befor fine-tuning on SQuAD. Our best performing system outperforms the top leaderboard system by +1.5 F 1 in ensembling and +1.3 F 1 as a single system. In fact, our single BERT model outperforms the top ensemble system in terms of F 1 score.tuning data, we only lose 0.1-0.4F 1, still outperforming all existing systems by a wide margin.",
     "sentence_index": 15,
-    "span_text": "F 1",
     "section": "SQuAD v1.1"
   },
   {
@@ -308,7 +285,6 @@
     "attributes": {},
     "sentence_context": "We therefore use modest data augmentation in our system by first fine-tuning on Trivia QA befor fine-tuning on SQuAD. Our best performing system outperforms the top leaderboard system by +1.5 F 1 in ensembling and +1.3 F 1 as a single system. In fact, our single BERT model outperforms the top ensemble system in terms of F 1 score.tuning data, we only lose 0.1-0.4F 1, still outperforming all existing systems by a wide margin.",
     "sentence_index": 15,
-    "span_text": "F 1",
     "section": "SQuAD v1.1"
   },
   {
@@ -321,7 +297,6 @@
     "attributes": {},
     "sentence_context": "Our best performing system outperforms the top leaderboard system by +1.5 F 1 in ensembling and +1.3 F 1 as a single system. In fact, our single BERT model outperforms the top ensemble system in terms of F 1 score.tuning data, we only lose 0.1-0.4F 1, still outperforming all existing systems by a wide margin. 124.3 SQuAD v 2.0",
     "sentence_index": 16,
-    "span_text": "F 1",
     "section": "SQuAD v1.1"
   },
   {
@@ -334,7 +309,6 @@
     "attributes": {},
     "sentence_context": "Our best performing system outperforms the top leaderboard system by +1.5 F 1 in ensembling and +1.3 F 1 as a single system. In fact, our single BERT model outperforms the top ensemble system in terms of F 1 score.tuning data, we only lose 0.1-0.4F 1, still outperforming all existing systems by a wide margin. 124.3 SQuAD v 2.0",
     "sentence_index": 16,
-    "span_text": "score.tuning data",
     "section": "SQuAD v1.1"
   },
   {
@@ -347,7 +321,6 @@
     "attributes": {},
     "sentence_context": "Our best performing system outperforms the top leaderboard system by +1.5 F 1 in ensembling and +1.3 F 1 as a single system. In fact, our single BERT model outperforms the top ensemble system in terms of F 1 score.tuning data, we only lose 0.1-0.4F 1, still outperforming all existing systems by a wide margin. 124.3 SQuAD v 2.0",
     "sentence_index": 16,
-    "span_text": "0.4F 1",
     "section": "SQuAD v1.1"
   },
   {
@@ -360,7 +333,6 @@
     "attributes": {},
     "sentence_context": "In fact, our single BERT model outperforms the top ensemble system in terms of F 1 score.tuning data, we only lose 0.1-0.4F 1, still outperforming all existing systems by a wide margin. 124.3 SQuAD v 2.0 The SQuAD 2.0 task extends the SQuAD 1.1 problem definition by allowing for the possibility that no short answer exists in the provided paragraph, making the problem more realistic.",
     "sentence_index": 17,
-    "span_text": "SQuAD v 2.0",
     "section": "SQuAD v1.1"
   },
   {
@@ -373,7 +345,6 @@
     "attributes": {},
     "sentence_context": "124.3 SQuAD v 2.0 The SQuAD 2.0 task extends the SQuAD 1.1 problem definition by allowing for the possibility that no short answer exists in the provided paragraph, making the problem more realistic. We use a simple approach to extend the SQuAD v 1.1 BERT model for this task.",
     "sentence_index": 18,
-    "span_text": "SQuAD 1.1",
     "section": "SQuAD v1.1"
   },
   {
@@ -386,7 +357,6 @@
     "attributes": {},
     "sentence_context": "Our best performing system outperforms the top leaderboard system by +1.5 F 1 in ensembling and +1.3 F 1 as a single system. In fact, our single BERT model outperforms the top ensemble system in terms of F 1 score.tuning data, we only lose 0.1-0.4F 1, still outperforming all existing systems by a wide margin. 124.3 SQuAD v 2.0",
     "sentence_index": 16,
-    "span_text": "BERT",
     "section": "SQuAD v1.1"
   },
   {
@@ -399,7 +369,6 @@
     "attributes": {},
     "sentence_context": "The SQuAD 2.0 task extends the SQuAD 1.1 problem definition by allowing for the possibility that no short answer exists in the provided paragraph, making the problem more realistic. We use a simple approach to extend the SQuAD v 1.1 BERT model for this task. We treat questions that do not have an answer as having an answer span with start and end at the [CLS] token.",
     "sentence_index": 19,
-    "span_text": "SQuAD v 1.1",
     "section": "SQuAD v1.1"
   },
   {
@@ -412,7 +381,6 @@
     "attributes": {},
     "sentence_context": "The probability space for the start and end answer span positions is extended to include the position of the [CLS] token. For prediction, we compare the score of the no-answer span: s null = SC + EC to the score of the best non-null span 12 The Trivia QA data we used consists of paragraphs from Trivia QA-Wiki formed of the first 400 tokens in documents, that contain at least one of the provided possible answers.\u015d i,j = max j\u2265i ST i + ET j. We predict a non-null answer when \u015d i,j > s null + \u03c4, where the threshold \u03c4 is selected on the dev set to maximize F 1.",
     "sentence_index": 22,
-    "span_text": "Trivia QA",
     "section": "SQuAD v1.1"
   },
   {
@@ -425,7 +393,6 @@
     "attributes": {},
     "sentence_context": "The probability space for the start and end answer span positions is extended to include the position of the [CLS] token. For prediction, we compare the score of the no-answer span: s null = SC + EC to the score of the best non-null span 12 The Trivia QA data we used consists of paragraphs from Trivia QA-Wiki formed of the first 400 tokens in documents, that contain at least one of the provided possible answers.\u015d i,j = max j\u2265i ST i + ET j. We predict a non-null answer when \u015d i,j > s null + \u03c4, where the threshold \u03c4 is selected on the dev set to maximize F 1.",
     "sentence_index": 22,
-    "span_text": "Trivia QA-Wiki",
     "section": "SQuAD v1.1"
   },
   {
@@ -438,7 +405,6 @@
     "attributes": {},
     "sentence_context": "For prediction, we compare the score of the no-answer span: s null = SC + EC to the score of the best non-null span 12 The Trivia QA data we used consists of paragraphs from Trivia QA-Wiki formed of the first 400 tokens in documents, that contain at least one of the provided possible answers.\u015d i,j = max j\u2265i ST i + ET j. We predict a non-null answer when \u015d i,j > s null + \u03c4, where the threshold \u03c4 is selected on the dev set to maximize F 1. We did not use Trivia QA data for this model.",
     "sentence_index": 23,
-    "span_text": "F 1",
     "section": "SQuAD v1.1"
   },
   {
@@ -451,7 +417,6 @@
     "attributes": {},
     "sentence_context": "For prediction, we compare the score of the no-answer span: s null = SC + EC to the score of the best non-null span 12 The Trivia QA data we used consists of paragraphs from Trivia QA-Wiki formed of the first 400 tokens in documents, that contain at least one of the provided possible answers.\u015d i,j = max j\u2265i ST i + ET j. We predict a non-null answer when \u015d i,j > s null + \u03c4, where the threshold \u03c4 is selected on the dev set to maximize F 1. We did not use Trivia QA data for this model.",
     "sentence_index": 23,
-    "span_text": "dev set",
     "section": "SQuAD v1.1"
   },
   {
@@ -464,7 +429,6 @@
     "attributes": {},
     "sentence_context": "We predict a non-null answer when \u015d i,j > s null + \u03c4, where the threshold \u03c4 is selected on the dev set to maximize F 1. We did not use Trivia QA data for this model. We fine-tuned for 2 epochs with a learning rate of 5e-5 and a batch size of 48.",
     "sentence_index": 24,
-    "span_text": "Trivia QA data",
     "section": "SQuAD v1.1"
   }
 ]

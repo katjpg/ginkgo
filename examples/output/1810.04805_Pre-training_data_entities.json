@@ -9,7 +9,6 @@
     "attributes": {},
     "sentence_context": "The pre-training procedure largely follows the existing literature on language model pre-training. For the pre-training corpus we use the Books Corpus (800M words) and English Wikipedia (2,500M words).",
     "sentence_index": 0,
-    "span_text": "language model pre-training",
     "section": "Pre-training data"
   },
   {
@@ -22,7 +21,6 @@
     "attributes": {},
     "sentence_context": "The pre-training procedure largely follows the existing literature on language model pre-training. For the pre-training corpus we use the Books Corpus (800M words) and English Wikipedia (2,500M words). For Wikipedia we extract only the text passages and ignore lists, tables, and headers.",
     "sentence_index": 1,
-    "span_text": "Books Corpus",
     "section": "Pre-training data"
   },
   {
@@ -35,7 +33,6 @@
     "attributes": {},
     "sentence_context": "The pre-training procedure largely follows the existing literature on language model pre-training. For the pre-training corpus we use the Books Corpus (800M words) and English Wikipedia (2,500M words). For Wikipedia we extract only the text passages and ignore lists, tables, and headers.",
     "sentence_index": 1,
-    "span_text": "English Wikipedia",
     "section": "Pre-training data"
   },
   {
@@ -48,7 +45,6 @@
     "attributes": {},
     "sentence_context": "For the pre-training corpus we use the Books Corpus (800M words) and English Wikipedia (2,500M words). For Wikipedia we extract only the text passages and ignore lists, tables, and headers. It is critical to use a document-level corpus rather than a shuffled sentence-level corpus such as the Billion Word Benchmark in order to extract long contiguous sequences.",
     "sentence_index": 2,
-    "span_text": "text passages",
     "section": "Pre-training data"
   },
   {
@@ -61,7 +57,6 @@
     "attributes": {},
     "sentence_context": "For Wikipedia we extract only the text passages and ignore lists, tables, and headers. It is critical to use a document-level corpus rather than a shuffled sentence-level corpus such as the Billion Word Benchmark in order to extract long contiguous sequences.",
     "sentence_index": 3,
-    "span_text": "document-level corpus",
     "section": "Pre-training data"
   },
   {
@@ -74,7 +69,6 @@
     "attributes": {},
     "sentence_context": "For Wikipedia we extract only the text passages and ignore lists, tables, and headers. It is critical to use a document-level corpus rather than a shuffled sentence-level corpus such as the Billion Word Benchmark in order to extract long contiguous sequences.",
     "sentence_index": 3,
-    "span_text": "shuffled sentence-level corpus",
     "section": "Pre-training data"
   },
   {
@@ -87,7 +81,6 @@
     "attributes": {},
     "sentence_context": "For Wikipedia we extract only the text passages and ignore lists, tables, and headers. It is critical to use a document-level corpus rather than a shuffled sentence-level corpus such as the Billion Word Benchmark in order to extract long contiguous sequences.",
     "sentence_index": 3,
-    "span_text": "Billion Word Benchmark",
     "section": "Pre-training data"
   }
 ]

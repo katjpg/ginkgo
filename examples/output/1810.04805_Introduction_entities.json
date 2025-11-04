@@ -9,7 +9,6 @@
     "attributes": {},
     "sentence_context": "Language model pre-training has been shown to be effective for improving many natural language processing tasks. These include sentence-level tasks such as natural language inference and paraphrasing, which aim to predict the relationships between sentences by analyzing them holistically, as well as token-level tasks such as named entity recognition and question answering, where models are required to produce fine-grained output at the token level.",
     "sentence_index": 0,
-    "span_text": "natural language processing tasks",
     "section": "Introduction"
   },
   {
@@ -22,7 +21,6 @@
     "attributes": {},
     "sentence_context": "Language model pre-training has been shown to be effective for improving many natural language processing tasks. These include sentence-level tasks such as natural language inference and paraphrasing, which aim to predict the relationships between sentences by analyzing them holistically, as well as token-level tasks such as named entity recognition and question answering, where models are required to produce fine-grained output at the token level. There are two existing strategies for applying pre-trained language representations to downstream tasks: feature-based and fine-tuning.",
     "sentence_index": 1,
-    "span_text": "sentence-level tasks",
     "section": "Introduction"
   },
   {
@@ -35,7 +33,6 @@
     "attributes": {},
     "sentence_context": "Language model pre-training has been shown to be effective for improving many natural language processing tasks. These include sentence-level tasks such as natural language inference and paraphrasing, which aim to predict the relationships between sentences by analyzing them holistically, as well as token-level tasks such as named entity recognition and question answering, where models are required to produce fine-grained output at the token level. There are two existing strategies for applying pre-trained language representations to downstream tasks: feature-based and fine-tuning.",
     "sentence_index": 1,
-    "span_text": "natural language inference",
     "section": "Introduction"
   },
   {
@@ -48,7 +45,6 @@
     "attributes": {},
     "sentence_context": "Language model pre-training has been shown to be effective for improving many natural language processing tasks. These include sentence-level tasks such as natural language inference and paraphrasing, which aim to predict the relationships between sentences by analyzing them holistically, as well as token-level tasks such as named entity recognition and question answering, where models are required to produce fine-grained output at the token level. There are two existing strategies for applying pre-trained language representations to downstream tasks: feature-based and fine-tuning.",
     "sentence_index": 1,
-    "span_text": "paraphrasing",
     "section": "Introduction"
   },
   {
@@ -61,7 +57,6 @@
     "attributes": {},
     "sentence_context": "Language model pre-training has been shown to be effective for improving many natural language processing tasks. These include sentence-level tasks such as natural language inference and paraphrasing, which aim to predict the relationships between sentences by analyzing them holistically, as well as token-level tasks such as named entity recognition and question answering, where models are required to produce fine-grained output at the token level. There are two existing strategies for applying pre-trained language representations to downstream tasks: feature-based and fine-tuning.",
     "sentence_index": 1,
-    "span_text": "token-level tasks",
     "section": "Introduction"
   },
   {
@@ -74,7 +69,6 @@
     "attributes": {},
     "sentence_context": "Language model pre-training has been shown to be effective for improving many natural language processing tasks. These include sentence-level tasks such as natural language inference and paraphrasing, which aim to predict the relationships between sentences by analyzing them holistically, as well as token-level tasks such as named entity recognition and question answering, where models are required to produce fine-grained output at the token level. There are two existing strategies for applying pre-trained language representations to downstream tasks: feature-based and fine-tuning.",
     "sentence_index": 1,
-    "span_text": "named entity recognition",
     "section": "Introduction"
   },
   {
@@ -87,7 +81,6 @@
     "attributes": {},
     "sentence_context": "Language model pre-training has been shown to be effective for improving many natural language processing tasks. These include sentence-level tasks such as natural language inference and paraphrasing, which aim to predict the relationships between sentences by analyzing them holistically, as well as token-level tasks such as named entity recognition and question answering, where models are required to produce fine-grained output at the token level. There are two existing strategies for applying pre-trained language representations to downstream tasks: feature-based and fine-tuning.",
     "sentence_index": 1,
-    "span_text": "question answering",
     "section": "Introduction"
   },
   {
@@ -100,7 +93,6 @@
     "attributes": {},
     "sentence_context": "These include sentence-level tasks such as natural language inference and paraphrasing, which aim to predict the relationships between sentences by analyzing them holistically, as well as token-level tasks such as named entity recognition and question answering, where models are required to produce fine-grained output at the token level. There are two existing strategies for applying pre-trained language representations to downstream tasks: feature-based and fine-tuning. The feature-based approach, such as ELMo, uses task-specific architectures that include the pre-trained representations as additional features.",
     "sentence_index": 2,
-    "span_text": "pre-trained language representations",
     "section": "Introduction"
   },
   {
@@ -113,7 +105,6 @@
     "attributes": {},
     "sentence_context": "These include sentence-level tasks such as natural language inference and paraphrasing, which aim to predict the relationships between sentences by analyzing them holistically, as well as token-level tasks such as named entity recognition and question answering, where models are required to produce fine-grained output at the token level. There are two existing strategies for applying pre-trained language representations to downstream tasks: feature-based and fine-tuning. The feature-based approach, such as ELMo, uses task-specific architectures that include the pre-trained representations as additional features.",
     "sentence_index": 2,
-    "span_text": "feature-based",
     "section": "Introduction"
   },
   {
@@ -126,7 +117,6 @@
     "attributes": {},
     "sentence_context": "These include sentence-level tasks such as natural language inference and paraphrasing, which aim to predict the relationships between sentences by analyzing them holistically, as well as token-level tasks such as named entity recognition and question answering, where models are required to produce fine-grained output at the token level. There are two existing strategies for applying pre-trained language representations to downstream tasks: feature-based and fine-tuning. The feature-based approach, such as ELMo, uses task-specific architectures that include the pre-trained representations as additional features.",
     "sentence_index": 2,
-    "span_text": "fine-tuning",
     "section": "Introduction"
   },
   {
@@ -139,7 +129,6 @@
     "attributes": {},
     "sentence_context": "There are two existing strategies for applying pre-trained language representations to downstream tasks: feature-based and fine-tuning. The feature-based approach, such as ELMo, uses task-specific architectures that include the pre-trained representations as additional features. The fine-tuning approach, such as the Generative Pre-trained Transformer (Open AI GPT), introduces minimal task-specific parameters, and is trained on the downstream tasks by simply fine-tuning all pretrained parameters.",
     "sentence_index": 3,
-    "span_text": "ELMo",
     "section": "Introduction"
   },
   {
@@ -152,7 +141,6 @@
     "attributes": {},
     "sentence_context": "The feature-based approach, such as ELMo, uses task-specific architectures that include the pre-trained representations as additional features. The fine-tuning approach, such as the Generative Pre-trained Transformer (Open AI GPT), introduces minimal task-specific parameters, and is trained on the downstream tasks by simply fine-tuning all pretrained parameters. The two approaches share the same objective function during pre-training, where they use unidirectional language models to learn general language representations.",
     "sentence_index": 4,
-    "span_text": "Generative Pre-trained Transformer",
     "section": "Introduction"
   },
   {
@@ -165,7 +153,6 @@
     "attributes": {},
     "sentence_context": "The fine-tuning approach, such as the Generative Pre-trained Transformer (Open AI GPT), introduces minimal task-specific parameters, and is trained on the downstream tasks by simply fine-tuning all pretrained parameters. The two approaches share the same objective function during pre-training, where they use unidirectional language models to learn general language representations. We argue that current techniques restrict the power of the pre-trained representations, especially for the fine-tuning approaches.",
     "sentence_index": 5,
-    "span_text": "language models",
     "section": "Introduction"
   },
   {
@@ -178,7 +165,6 @@
     "attributes": {},
     "sentence_context": "The major limitation is that standard language models are unidirectional, and this limits the choice of architectures that can be used during pre-training. For example, in Open AI GPT, the authors use a left-toright architecture, where every token can only attend to previous tokens in the self-attention layers of the Transformer. Such restrictions are sub-optimal for sentence-level tasks, and could be very harmful when applying finetuning based approaches to token-level tasks such as question answering, where it is crucial to incorporate context from both directions.",
     "sentence_index": 8,
-    "span_text": "Open AI GPT",
     "section": "Introduction"
   },
   {
@@ -191,7 +177,6 @@
     "attributes": {},
     "sentence_context": "The major limitation is that standard language models are unidirectional, and this limits the choice of architectures that can be used during pre-training. For example, in Open AI GPT, the authors use a left-toright architecture, where every token can only attend to previous tokens in the self-attention layers of the Transformer. Such restrictions are sub-optimal for sentence-level tasks, and could be very harmful when applying finetuning based approaches to token-level tasks such as question answering, where it is crucial to incorporate context from both directions.",
     "sentence_index": 8,
-    "span_text": "left-toright architecture",
     "section": "Introduction"
   },
   {
@@ -204,7 +189,6 @@
     "attributes": {},
     "sentence_context": "The major limitation is that standard language models are unidirectional, and this limits the choice of architectures that can be used during pre-training. For example, in Open AI GPT, the authors use a left-toright architecture, where every token can only attend to previous tokens in the self-attention layers of the Transformer. Such restrictions are sub-optimal for sentence-level tasks, and could be very harmful when applying finetuning based approaches to token-level tasks such as question answering, where it is crucial to incorporate context from both directions.",
     "sentence_index": 8,
-    "span_text": "self-attention",
     "section": "Introduction"
   },
   {
@@ -217,7 +201,6 @@
     "attributes": {},
     "sentence_context": "The major limitation is that standard language models are unidirectional, and this limits the choice of architectures that can be used during pre-training. For example, in Open AI GPT, the authors use a left-toright architecture, where every token can only attend to previous tokens in the self-attention layers of the Transformer. Such restrictions are sub-optimal for sentence-level tasks, and could be very harmful when applying finetuning based approaches to token-level tasks such as question answering, where it is crucial to incorporate context from both directions.",
     "sentence_index": 8,
-    "span_text": "Transformer",
     "section": "Introduction"
   },
   {
@@ -230,7 +213,6 @@
     "attributes": {},
     "sentence_context": "For example, in Open AI GPT, the authors use a left-toright architecture, where every token can only attend to previous tokens in the self-attention layers of the Transformer. Such restrictions are sub-optimal for sentence-level tasks, and could be very harmful when applying finetuning based approaches to token-level tasks such as question answering, where it is crucial to incorporate context from both directions. In this paper, we improve the fine-tuning based approaches by proposing BERT: Bidirectional Encoder Representations from Transformers.",
     "sentence_index": 9,
-    "span_text": "sentence-level tasks",
     "section": "Introduction"
   },
   {
@@ -243,7 +225,6 @@
     "attributes": {},
     "sentence_context": "For example, in Open AI GPT, the authors use a left-toright architecture, where every token can only attend to previous tokens in the self-attention layers of the Transformer. Such restrictions are sub-optimal for sentence-level tasks, and could be very harmful when applying finetuning based approaches to token-level tasks such as question answering, where it is crucial to incorporate context from both directions. In this paper, we improve the fine-tuning based approaches by proposing BERT: Bidirectional Encoder Representations from Transformers.",
     "sentence_index": 9,
-    "span_text": "finetuning based approaches",
     "section": "Introduction"
   },
   {
@@ -256,7 +237,6 @@
     "attributes": {},
     "sentence_context": "For example, in Open AI GPT, the authors use a left-toright architecture, where every token can only attend to previous tokens in the self-attention layers of the Transformer. Such restrictions are sub-optimal for sentence-level tasks, and could be very harmful when applying finetuning based approaches to token-level tasks such as question answering, where it is crucial to incorporate context from both directions. In this paper, we improve the fine-tuning based approaches by proposing BERT: Bidirectional Encoder Representations from Transformers.",
     "sentence_index": 9,
-    "span_text": "token-level tasks",
     "section": "Introduction"
   },
   {
@@ -269,7 +249,6 @@
     "attributes": {},
     "sentence_context": "For example, in Open AI GPT, the authors use a left-toright architecture, where every token can only attend to previous tokens in the self-attention layers of the Transformer. Such restrictions are sub-optimal for sentence-level tasks, and could be very harmful when applying finetuning based approaches to token-level tasks such as question answering, where it is crucial to incorporate context from both directions. In this paper, we improve the fine-tuning based approaches by proposing BERT: Bidirectional Encoder Representations from Transformers.",
     "sentence_index": 9,
-    "span_text": "question answering",
     "section": "Introduction"
   },
   {
@@ -282,7 +261,6 @@
     "attributes": {},
     "sentence_context": "Such restrictions are sub-optimal for sentence-level tasks, and could be very harmful when applying finetuning based approaches to token-level tasks such as question answering, where it is crucial to incorporate context from both directions. In this paper, we improve the fine-tuning based approaches by proposing BERT: Bidirectional Encoder Representations from Transformers. BERT alleviates the previously mentioned unidirectionality constraint by using a \"masked language model\" (MLM) pre-training objective, inspired by the Cloze task.",
     "sentence_index": 10,
-    "span_text": "BERT",
     "section": "Introduction"
   },
   {
@@ -295,7 +273,6 @@
     "attributes": {},
     "sentence_context": "Such restrictions are sub-optimal for sentence-level tasks, and could be very harmful when applying finetuning based approaches to token-level tasks such as question answering, where it is crucial to incorporate context from both directions. In this paper, we improve the fine-tuning based approaches by proposing BERT: Bidirectional Encoder Representations from Transformers. BERT alleviates the previously mentioned unidirectionality constraint by using a \"masked language model\" (MLM) pre-training objective, inspired by the Cloze task.",
     "sentence_index": 10,
-    "span_text": "Bidirectional Encoder Representations from Transformers",
     "section": "Introduction"
   },
   {
@@ -308,7 +285,6 @@
     "attributes": {},
     "sentence_context": "In this paper, we improve the fine-tuning based approaches by proposing BERT: Bidirectional Encoder Representations from Transformers. BERT alleviates the previously mentioned unidirectionality constraint by using a \"masked language model\" (MLM) pre-training objective, inspired by the Cloze task. The masked language model randomly masks some of the tokens from the input, and the objective is to predict the original vocabulary id of the masked word based only on its context.",
     "sentence_index": 11,
-    "span_text": "masked language model",
     "section": "Introduction"
   },
   {
@@ -321,7 +297,6 @@
     "attributes": {},
     "sentence_context": "In this paper, we improve the fine-tuning based approaches by proposing BERT: Bidirectional Encoder Representations from Transformers. BERT alleviates the previously mentioned unidirectionality constraint by using a \"masked language model\" (MLM) pre-training objective, inspired by the Cloze task. The masked language model randomly masks some of the tokens from the input, and the objective is to predict the original vocabulary id of the masked word based only on its context.",
     "sentence_index": 11,
-    "span_text": "Cloze task",
     "section": "Introduction"
   },
   {
@@ -334,7 +309,6 @@
     "attributes": {},
     "sentence_context": "The masked language model randomly masks some of the tokens from the input, and the objective is to predict the original vocabulary id of the masked word based only on its context. Unlike left-toright language model pre-training, the MLM objective enables the representation to fuse the left and the right context, which allows us to pretrain a deep bidirectional Transformer. In addition to the masked language model, we also use a \"next sentence prediction\" task that jointly pretrains text-pair representations.",
     "sentence_index": 13,
-    "span_text": "MLM objective",
     "section": "Introduction"
   },
   {
@@ -347,7 +321,6 @@
     "attributes": {},
     "sentence_context": "The masked language model randomly masks some of the tokens from the input, and the objective is to predict the original vocabulary id of the masked word based only on its context. Unlike left-toright language model pre-training, the MLM objective enables the representation to fuse the left and the right context, which allows us to pretrain a deep bidirectional Transformer. In addition to the masked language model, we also use a \"next sentence prediction\" task that jointly pretrains text-pair representations.",
     "sentence_index": 13,
-    "span_text": "left and the right context",
     "section": "Introduction"
   },
   {
@@ -360,7 +333,6 @@
     "attributes": {},
     "sentence_context": "The masked language model randomly masks some of the tokens from the input, and the objective is to predict the original vocabulary id of the masked word based only on its context. Unlike left-toright language model pre-training, the MLM objective enables the representation to fuse the left and the right context, which allows us to pretrain a deep bidirectional Transformer. In addition to the masked language model, we also use a \"next sentence prediction\" task that jointly pretrains text-pair representations.",
     "sentence_index": 13,
-    "span_text": "deep bidirectional Transformer",
     "section": "Introduction"
   },
   {
@@ -373,7 +345,6 @@
     "attributes": {},
     "sentence_context": "Unlike left-toright language model pre-training, the MLM objective enables the representation to fuse the left and the right context, which allows us to pretrain a deep bidirectional Transformer. In addition to the masked language model, we also use a \"next sentence prediction\" task that jointly pretrains text-pair representations. The contributions of our paper are as follows: We demonstrate the importance of bidirectional pre-training for language representations.., which uses unidirectional language models for pre-training, BERT uses masked language models to enable pretrained deep bidirectional representations.",
     "sentence_index": 14,
-    "span_text": "next sentence prediction",
     "section": "Introduction"
   },
   {
@@ -386,7 +357,6 @@
     "attributes": {},
     "sentence_context": "In addition to the masked language model, we also use a \"next sentence prediction\" task that jointly pretrains text-pair representations. The contributions of our paper are as follows: We demonstrate the importance of bidirectional pre-training for language representations.., which uses unidirectional language models for pre-training, BERT uses masked language models to enable pretrained deep bidirectional representations. This is also in contrast to Peters et al., which uses a shallow concatenation of independently trained left-to-right and right-to-left LMs.",
     "sentence_index": 15,
-    "span_text": "bidirectional pre-training",
     "section": "Introduction"
   },
   {
@@ -399,7 +369,6 @@
     "attributes": {},
     "sentence_context": "In addition to the masked language model, we also use a \"next sentence prediction\" task that jointly pretrains text-pair representations. The contributions of our paper are as follows: We demonstrate the importance of bidirectional pre-training for language representations.., which uses unidirectional language models for pre-training, BERT uses masked language models to enable pretrained deep bidirectional representations. This is also in contrast to Peters et al., which uses a shallow concatenation of independently trained left-to-right and right-to-left LMs.",
     "sentence_index": 15,
-    "span_text": "language representations",
     "section": "Introduction"
   },
   {
@@ -412,7 +381,6 @@
     "attributes": {},
     "sentence_context": "In addition to the masked language model, we also use a \"next sentence prediction\" task that jointly pretrains text-pair representations. The contributions of our paper are as follows: We demonstrate the importance of bidirectional pre-training for language representations.., which uses unidirectional language models for pre-training, BERT uses masked language models to enable pretrained deep bidirectional representations. This is also in contrast to Peters et al., which uses a shallow concatenation of independently trained left-to-right and right-to-left LMs.",
     "sentence_index": 15,
-    "span_text": "language models",
     "section": "Introduction"
   },
   {
@@ -425,7 +393,6 @@
     "attributes": {},
     "sentence_context": "In addition to the masked language model, we also use a \"next sentence prediction\" task that jointly pretrains text-pair representations. The contributions of our paper are as follows: We demonstrate the importance of bidirectional pre-training for language representations.., which uses unidirectional language models for pre-training, BERT uses masked language models to enable pretrained deep bidirectional representations. This is also in contrast to Peters et al., which uses a shallow concatenation of independently trained left-to-right and right-to-left LMs.",
     "sentence_index": 15,
-    "span_text": "BERT",
     "section": "Introduction"
   },
   {
@@ -438,7 +405,6 @@
     "attributes": {},
     "sentence_context": "In addition to the masked language model, we also use a \"next sentence prediction\" task that jointly pretrains text-pair representations. The contributions of our paper are as follows: We demonstrate the importance of bidirectional pre-training for language representations.., which uses unidirectional language models for pre-training, BERT uses masked language models to enable pretrained deep bidirectional representations. This is also in contrast to Peters et al., which uses a shallow concatenation of independently trained left-to-right and right-to-left LMs.",
     "sentence_index": 15,
-    "span_text": "masked language models",
     "section": "Introduction"
   },
   {
@@ -451,7 +417,6 @@
     "attributes": {},
     "sentence_context": "In addition to the masked language model, we also use a \"next sentence prediction\" task that jointly pretrains text-pair representations. The contributions of our paper are as follows: We demonstrate the importance of bidirectional pre-training for language representations.., which uses unidirectional language models for pre-training, BERT uses masked language models to enable pretrained deep bidirectional representations. This is also in contrast to Peters et al., which uses a shallow concatenation of independently trained left-to-right and right-to-left LMs.",
     "sentence_index": 15,
-    "span_text": "deep bidirectional representations",
     "section": "Introduction"
   },
   {
@@ -464,7 +429,6 @@
     "attributes": {},
     "sentence_context": "The contributions of our paper are as follows: We demonstrate the importance of bidirectional pre-training for language representations.., which uses unidirectional language models for pre-training, BERT uses masked language models to enable pretrained deep bidirectional representations. This is also in contrast to Peters et al., which uses a shallow concatenation of independently trained left-to-right and right-to-left LMs. We show that pre-trained representations reduce the need for many heavily-engineered taskspecific architectures.",
     "sentence_index": 16,
-    "span_text": "LMs",
     "section": "Introduction"
   },
   {
@@ -477,7 +441,6 @@
     "attributes": {},
     "sentence_context": "This is also in contrast to Peters et al., which uses a shallow concatenation of independently trained left-to-right and right-to-left LMs. We show that pre-trained representations reduce the need for many heavily-engineered taskspecific architectures. BERT is the first finetuning based representation model that achieves state-of-the-art performance on a large suite of sentence-level and token-level tasks, outperforming many task-specific architectures.",
     "sentence_index": 17,
-    "span_text": "pre-trained representations",
     "section": "Introduction"
   },
   {
@@ -490,7 +453,6 @@
     "attributes": {},
     "sentence_context": "This is also in contrast to Peters et al., which uses a shallow concatenation of independently trained left-to-right and right-to-left LMs. We show that pre-trained representations reduce the need for many heavily-engineered taskspecific architectures. BERT is the first finetuning based representation model that achieves state-of-the-art performance on a large suite of sentence-level and token-level tasks, outperforming many task-specific architectures.",
     "sentence_index": 17,
-    "span_text": "taskspecific architectures",
     "section": "Introduction"
   },
   {
@@ -503,7 +465,6 @@
     "attributes": {},
     "sentence_context": "We show that pre-trained representations reduce the need for many heavily-engineered taskspecific architectures. BERT is the first finetuning based representation model that achieves state-of-the-art performance on a large suite of sentence-level and token-level tasks, outperforming many task-specific architectures. BERT advances the state of the art for eleven NLP tasks.",
     "sentence_index": 18,
-    "span_text": "BERT",
     "section": "Introduction"
   },
   {
@@ -516,7 +477,6 @@
     "attributes": {},
     "sentence_context": "We show that pre-trained representations reduce the need for many heavily-engineered taskspecific architectures. BERT is the first finetuning based representation model that achieves state-of-the-art performance on a large suite of sentence-level and token-level tasks, outperforming many task-specific architectures. BERT advances the state of the art for eleven NLP tasks.",
     "sentence_index": 18,
-    "span_text": "representation model",
     "section": "Introduction"
   },
   {
@@ -529,7 +489,6 @@
     "attributes": {},
     "sentence_context": "We show that pre-trained representations reduce the need for many heavily-engineered taskspecific architectures. BERT is the first finetuning based representation model that achieves state-of-the-art performance on a large suite of sentence-level and token-level tasks, outperforming many task-specific architectures. BERT advances the state of the art for eleven NLP tasks.",
     "sentence_index": 18,
-    "span_text": "sentence-level",
     "section": "Introduction"
   },
   {
@@ -542,7 +501,6 @@
     "attributes": {},
     "sentence_context": "We show that pre-trained representations reduce the need for many heavily-engineered taskspecific architectures. BERT is the first finetuning based representation model that achieves state-of-the-art performance on a large suite of sentence-level and token-level tasks, outperforming many task-specific architectures. BERT advances the state of the art for eleven NLP tasks.",
     "sentence_index": 18,
-    "span_text": "token-level tasks",
     "section": "Introduction"
   },
   {
@@ -555,7 +513,6 @@
     "attributes": {},
     "sentence_context": "In addition to the masked language model, we also use a \"next sentence prediction\" task that jointly pretrains text-pair representations. The contributions of our paper are as follows: We demonstrate the importance of bidirectional pre-training for language representations.., which uses unidirectional language models for pre-training, BERT uses masked language models to enable pretrained deep bidirectional representations. This is also in contrast to Peters et al., which uses a shallow concatenation of independently trained left-to-right and right-to-left LMs.",
     "sentence_index": 15,
-    "span_text": "BERT",
     "section": "Introduction"
   },
   {
@@ -568,7 +525,6 @@
     "attributes": {},
     "sentence_context": "We show that pre-trained representations reduce the need for many heavily-engineered taskspecific architectures. BERT is the first finetuning based representation model that achieves state-of-the-art performance on a large suite of sentence-level and token-level tasks, outperforming many task-specific architectures. BERT advances the state of the art for eleven NLP tasks.",
     "sentence_index": 18,
-    "span_text": "task-specific architectures",
     "section": "Introduction"
   }
 ]

@@ -9,7 +9,6 @@
     "attributes": {},
     "sentence_context": "There has also been work showing effective transfer from supervised tasks with large datasets, such as natural language inference and machine translation. Computer vision research has also demonstrated the importance of transfer learning from large pre-trained models, where an effective recipe is to fine-tune models pre-trained with Ima-ge Net.",
     "sentence_index": 0,
-    "span_text": "natural language inference",
     "section": "Transfer Learning from Supervised Data"
   },
   {
@@ -22,7 +21,6 @@
     "attributes": {},
     "sentence_context": "There has also been work showing effective transfer from supervised tasks with large datasets, such as natural language inference and machine translation. Computer vision research has also demonstrated the importance of transfer learning from large pre-trained models, where an effective recipe is to fine-tune models pre-trained with Ima-ge Net.",
     "sentence_index": 0,
-    "span_text": "machine translation",
     "section": "Transfer Learning from Supervised Data"
   },
   {
@@ -35,7 +33,6 @@
     "attributes": {},
     "sentence_context": "There has also been work showing effective transfer from supervised tasks with large datasets, such as natural language inference and machine translation. Computer vision research has also demonstrated the importance of transfer learning from large pre-trained models, where an effective recipe is to fine-tune models pre-trained with Ima-ge Net.",
     "sentence_index": 1,
-    "span_text": "transfer learning",
     "section": "Transfer Learning from Supervised Data"
   },
   {
@@ -48,7 +45,6 @@
     "attributes": {},
     "sentence_context": "There has also been work showing effective transfer from supervised tasks with large datasets, such as natural language inference and machine translation. Computer vision research has also demonstrated the importance of transfer learning from large pre-trained models, where an effective recipe is to fine-tune models pre-trained with Ima-ge Net.",
     "sentence_index": 1,
-    "span_text": "Ima-ge Net",
     "section": "Transfer Learning from Supervised Data"
   }
 ]

@@ -9,7 +9,6 @@
     "attributes": {},
     "sentence_context": "The illustration of fine-tuning BERT on different tasks can be seen in Figure 4. Our task-specific models are formed by incorporating BERT with one additional output layer, so a minimal number of parameters need to be learned from scratch.",
     "sentence_index": 0,
-    "span_text": "BERT",
     "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
   },
   {
@@ -22,7 +21,6 @@
     "attributes": {},
     "sentence_context": "Our task-specific models are formed by incorporating BERT with one additional output layer, so a minimal number of parameters need to be learned from scratch. MNLI Multi-Genre Natural Language Inference is a large-scale, crowdsourced entailment classification task. Given a pair of sentences, the goal is to predict whether the second sentence is an entailment, contradiction, or neutral with respect to the first one.",
     "sentence_index": 2,
-    "span_text": "entailment classification",
     "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
   },
   {
@@ -35,7 +33,6 @@
     "attributes": {},
     "sentence_context": "Our task-specific models are formed by incorporating BERT with one additional output layer, so a minimal number of parameters need to be learned from scratch. MNLI Multi-Genre Natural Language Inference is a large-scale, crowdsourced entailment classification task. Given a pair of sentences, the goal is to predict whether the second sentence is an entailment, contradiction, or neutral with respect to the first one.",
     "sentence_index": 2,
-    "span_text": "MNLI Multi-Genre Natural Language Inference",
     "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
   },
   {
@@ -48,7 +45,6 @@
     "attributes": {},
     "sentence_context": "Given a pair of sentences, the goal is to predict whether the second sentence is an entailment, contradiction, or neutral with respect to the first one. QP Quora Question Pairs is a binary classification task where the goal is to determine if two questions asked on Quora are semantically equivalent. QNLI Question Natural Language Inference is a version of the Stanford Question Answering Dataset which has been converted to a binary classification task.",
     "sentence_index": 4,
-    "span_text": "binary classification",
     "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
   },
   {
@@ -61,7 +57,6 @@
     "attributes": {},
     "sentence_context": "Given a pair of sentences, the goal is to predict whether the second sentence is an entailment, contradiction, or neutral with respect to the first one. QP Quora Question Pairs is a binary classification task where the goal is to determine if two questions asked on Quora are semantically equivalent. QNLI Question Natural Language Inference is a version of the Stanford Question Answering Dataset which has been converted to a binary classification task.",
     "sentence_index": 4,
-    "span_text": "QP Quora Question Pairs",
     "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
   },
   {
@@ -74,7 +69,6 @@
     "attributes": {},
     "sentence_context": "Given a pair of sentences, the goal is to predict whether the second sentence is an entailment, contradiction, or neutral with respect to the first one. QP Quora Question Pairs is a binary classification task where the goal is to determine if two questions asked on Quora are semantically equivalent. QNLI Question Natural Language Inference is a version of the Stanford Question Answering Dataset which has been converted to a binary classification task.",
     "sentence_index": 4,
-    "span_text": "binary classification",
     "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
   },
   {
@@ -87,7 +81,6 @@
     "attributes": {},
     "sentence_context": "QP Quora Question Pairs is a binary classification task where the goal is to determine if two questions asked on Quora are semantically equivalent. QNLI Question Natural Language Inference is a version of the Stanford Question Answering Dataset which has been converted to a binary classification task. The positive examples are (question, sentence) pairs which do contain the correct answer, and the negative examples are (question, sentence) from the same paragraph which do not contain the answer.",
     "sentence_index": 5,
-    "span_text": "QNLI Question Natural Language Inference",
     "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
   },
   {
@@ -100,7 +93,6 @@
     "attributes": {},
     "sentence_context": "QP Quora Question Pairs is a binary classification task where the goal is to determine if two questions asked on Quora are semantically equivalent. QNLI Question Natural Language Inference is a version of the Stanford Question Answering Dataset which has been converted to a binary classification task. The positive examples are (question, sentence) pairs which do contain the correct answer, and the negative examples are (question, sentence) from the same paragraph which do not contain the answer.",
     "sentence_index": 5,
-    "span_text": "Stanford Question Answering Dataset",
     "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
   },
   {
@@ -113,7 +105,6 @@
     "attributes": {},
     "sentence_context": "QNLI Question Natural Language Inference is a version of the Stanford Question Answering Dataset which has been converted to a binary classification task. The positive examples are (question, sentence) pairs which do contain the correct answer, and the negative examples are (question, sentence) from the same paragraph which do not contain the answer.",
     "sentence_index": 6,
-    "span_text": "positive examples",
     "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
   },
   {
@@ -126,7 +117,6 @@
     "attributes": {},
     "sentence_context": "QNLI Question Natural Language Inference is a version of the Stanford Question Answering Dataset which has been converted to a binary classification task. The positive examples are (question, sentence) pairs which do contain the correct answer, and the negative examples are (question, sentence) from the same paragraph which do not contain the answer.",
     "sentence_index": 6,
-    "span_text": "negative examples",
     "section": "A.5 Illustrations of Fine-tuning on Different Tasks"
   }
 ]

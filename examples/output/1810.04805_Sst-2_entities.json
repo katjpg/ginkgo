@@ -9,7 +9,6 @@
     "attributes": {},
     "sentence_context": "The Stanford Sentiment Treebank is a binary single-sentence classification task consisting of sentences extracted from movie reviews with human annotations of their sentiment. CoLA The Corpus of Linguistic Acceptability is a binary single-sentence classification task, where the goal is to predict whether an English sentence is linguistically \"acceptable\" or not.",
     "sentence_index": 0,
-    "span_text": "Stanford Sentiment Treebank",
     "section": "Sst-2"
   },
   {
@@ -22,7 +21,6 @@
     "attributes": {},
     "sentence_context": "The Stanford Sentiment Treebank is a binary single-sentence classification task consisting of sentences extracted from movie reviews with human annotations of their sentiment. CoLA The Corpus of Linguistic Acceptability is a binary single-sentence classification task, where the goal is to predict whether an English sentence is linguistically \"acceptable\" or not.",
     "sentence_index": 0,
-    "span_text": "binary single-sentence classification",
     "section": "Sst-2"
   },
   {
@@ -35,7 +33,6 @@
     "attributes": {},
     "sentence_context": "The Stanford Sentiment Treebank is a binary single-sentence classification task consisting of sentences extracted from movie reviews with human annotations of their sentiment. CoLA The Corpus of Linguistic Acceptability is a binary single-sentence classification task, where the goal is to predict whether an English sentence is linguistically \"acceptable\" or not.",
     "sentence_index": 1,
-    "span_text": "CoLA The Corpus of Linguistic Acceptability",
     "section": "Sst-2"
   },
   {
@@ -48,7 +45,6 @@
     "attributes": {},
     "sentence_context": "The Stanford Sentiment Treebank is a binary single-sentence classification task consisting of sentences extracted from movie reviews with human annotations of their sentiment. CoLA The Corpus of Linguistic Acceptability is a binary single-sentence classification task, where the goal is to predict whether an English sentence is linguistically \"acceptable\" or not.",
     "sentence_index": 1,
-    "span_text": "binary single-sentence classification",
     "section": "Sst-2"
   }
 ]

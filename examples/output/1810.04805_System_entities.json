@@ -9,7 +9,6 @@
     "attributes": {},
     "sentence_context": "The results compared to prior leaderboard entries and top published work are shown in Table 3, excluding systems that use BERT as one of their components. We observe a +5.1 F 1 improvement over the previous best system.",
     "sentence_index": 1,
-    "span_text": "F 1",
     "section": "System"
   }
 ]
