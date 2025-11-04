@@ -135,7 +135,7 @@ def extract_entities(
     doc: Doc,
     section_config: SectionConfig,
     langextract_config: LangExtractConfig,
-    context_size: int = 2,
+    context_size: int = 1,
 ) -> dict[str, Any]:
     """Extract entities from text section."""
     extractor = EntityExtractor(langextract_config)
