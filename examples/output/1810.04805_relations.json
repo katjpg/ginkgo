@@ -83,6 +83,420 @@
         "machine translation",
         "text generation"
       ]
+    },
+    {
+      "source": "fine-tuning",
+      "target": "training data",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "tuning data"
+      ]
+    },
+    {
+      "source": "NER",
+      "target": "Left-to-Right (LTR) LM",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "LTR"
+      ]
+    },
+    {
+      "source": "question answering",
+      "target": "machine translation",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "language understanding"
+      ]
+    },
+    {
+      "source": "question answering",
+      "target": "Stanford Sentiment Treebank",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "Stanford Question Answering Dataset"
+      ]
+    },
+    {
+      "source": "question answering",
+      "target": "natural language inference dataset",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "Stanford Question Answering Dataset"
+      ]
+    },
+    {
+      "source": "classification",
+      "target": "tuning data",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "training data"
+      ]
+    },
+    {
+      "source": "next sentence prediction",
+      "target": "paraphrasing",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "sentence pairs"
+      ]
+    },
+    {
+      "source": "next sentence prediction",
+      "target": "QP Quora Question Pairs",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "sentence pairs"
+      ]
+    },
+    {
+      "source": "next sentence prediction",
+      "target": "language understanding",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "machine translation"
+      ]
+    },
+    {
+      "source": "named entity recognition",
+      "target": "machine translation",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "Books Corpus"
+      ]
+    },
+    {
+      "source": "named entity recognition",
+      "target": "text generation",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "Books Corpus"
+      ]
+    },
+    {
+      "source": "Stanford Question Answering Dataset",
+      "target": "sentiment analysis",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "Stanford Sentiment Treebank"
+      ]
+    },
+    {
+      "source": "Stanford Question Answering Dataset",
+      "target": "paraphrasing",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "Stanford Question Answering Dataset",
+      "target": "Semantic Textual Similarity Benchmark",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "Stanford Question Answering Dataset",
+      "target": "language understanding",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "question answering"
+      ]
+    },
+    {
+      "source": "Stanford Question Answering Dataset",
+      "target": "grounded commonsense inference",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "Stanford Question Answering Dataset",
+      "target": "RTE Recognizing Textual Entailment",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "sentence pairs",
+      "target": "machine translation",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "next sentence prediction"
+      ]
+    },
+    {
+      "source": "sentence pairs",
+      "target": "text generation",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "next sentence prediction"
+      ]
+    },
+    {
+      "source": "sentence pairs",
+      "target": "predict a single word",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "next sentence prediction"
+      ]
+    },
+    {
+      "source": "sentence pairs",
+      "target": "token predictions",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "next sentence prediction"
+      ]
+    },
+    {
+      "source": "sentence pairs",
+      "target": "natural language inference dataset",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "paraphrasing"
+      ]
+    },
+    {
+      "source": "sentiment analysis",
+      "target": "natural language inference dataset",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "Stanford Sentiment Treebank"
+      ]
+    },
+    {
+      "source": "machine translation",
+      "target": "predict a single word",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "next sentence prediction"
+      ]
+    },
+    {
+      "source": "machine translation",
+      "target": "token predictions",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "next sentence prediction"
+      ]
+    },
+    {
+      "source": "machine translation",
+      "target": "sentence-pair completion",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "next sentence prediction"
+      ]
+    },
+    {
+      "source": "paraphrasing",
+      "target": "QP Quora Question Pairs",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "sentence pairs"
+      ]
+    },
+    {
+      "source": "paraphrasing",
+      "target": "Stanford Sentiment Treebank",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "paraphrasing",
+      "target": "Semantic Textual Similarity Benchmark",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "paraphrasing",
+      "target": "grounded commonsense inference",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "paraphrasing",
+      "target": "sentence-pair completion",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "sentence pairs"
+      ]
+    },
+    {
+      "source": "paraphrasing",
+      "target": "RTE Recognizing Textual Entailment",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "text generation",
+      "target": "language understanding",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "machine translation"
+      ]
+    },
+    {
+      "source": "text generation",
+      "target": "predict a single word",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "next sentence prediction"
+      ]
+    },
+    {
+      "source": "text generation",
+      "target": "token predictions",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "next sentence prediction"
+      ]
+    },
+    {
+      "source": "text generation",
+      "target": "sentence-pair completion",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "next sentence prediction"
+      ]
+    },
+    {
+      "source": "QP Quora Question Pairs",
+      "target": "sentence-pair completion",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "sentence pairs"
+      ]
+    },
+    {
+      "source": "Stanford Sentiment Treebank",
+      "target": "Semantic Textual Similarity Benchmark",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "Stanford Sentiment Treebank",
+      "target": "grounded commonsense inference",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "Stanford Sentiment Treebank",
+      "target": "RTE Recognizing Textual Entailment",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "Semantic Textual Similarity Benchmark",
+      "target": "grounded commonsense inference",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
+    },
+    {
+      "source": "language understanding",
+      "target": "Books Corpus",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "machine translation"
+      ]
+    },
+    {
+      "source": "labeled training examples",
+      "target": "tuning data",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "training data"
+      ]
+    },
+    {
+      "source": "predict a single word",
+      "target": "sentence-pair completion",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "next sentence prediction"
+      ]
+    },
+    {
+      "source": "token predictions",
+      "target": "sentence-pair completion",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "next sentence prediction"
+      ]
+    },
+    {
+      "source": "grounded commonsense inference",
+      "target": "RTE Recognizing Textual Entailment",
+      "confidence": 0.125,
+      "n_bridges": 1,
+      "bridges": [
+        "natural language inference dataset"
+      ]
     }
   ]
 }
