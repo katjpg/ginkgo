@@ -455,3 +455,111 @@ def verbalize_path(t1: Token, t2: Token) -> str:
         return "; ".join(parts)
     else:
         return "direct connection"
+    
+def extract_exemplar(doc: Doc, e1: str, e2: str) -> str | None:
+    """Extract exemplar containing both entities."""
+    
+    e1_lower = e1.lower()
+    e2_lower = e2.lower()
+    
+    for sent in doc.sents:
+        sent_text = sent.text
+        if e1_lower not in sent_text.lower():
+            continue
+        if e2_lower not in sent_text.lower():
+            continue
+        
+        tokens = list(sent)
+        if len(tokens) <= 30:
+            return sent_text
+        
+        for i, token in enumerate(tokens):
+            if token.text.lower() == e1_lower or token.text.lower() == e2_lower:
+                e1_idx = i if token.text.lower() == e1_lower else e1_idx
+                e2_idx = i if token.text.lower() == e2_lower else e2_idx
+        
+        start = max(0, min(e1_idx, e2_idx) - 5)
+        end = min(len(tokens), max(e1_idx, e2_idx) + 6)
+        
+        return " ".join(t.text for t in tokens[start:end])
+    
+    return None
+
+
+
+def mask_entities(text: str, e1: str, e2: str) -> str | None:
+    """Replace entity mentions with [ENT1] and [ENT2]."""
+    
+    if not text or not e1 or not e2:
+        return None
+    
+    text_lower = text.lower()
+    e1_lower = e1.lower()
+    e2_lower = e2.lower()
+    
+    if e1_lower not in text_lower or e2_lower not in text_lower:
+        return None
+    
+    idx1 = text_lower.find(e1_lower)
+    idx2 = text_lower.find(e2_lower)
+    
+    if idx1 == -1 or idx2 == -1:
+        return None
+    
+    if idx1 < idx2:
+        before = text[:idx1]
+        after = text[idx1 + len(e1):]
+        masked = before + "[ENT1]" + after
+        
+        idx2_adj = idx2 - (len(e1) - len("[ENT1]"))
+        e2_end = idx2 + len(e2)
+        before2 = masked[:idx2_adj]
+        after2 = masked[e2_end - (len(e1) - len("[ENT1]")):]
+        masked = before2 + "[ENT2]" + after2
+    else:
+        before = text[:idx2]
+        after = text[idx2 + len(e2):]
+        masked = before + "[ENT2]" + after
+        
+        idx1_adj = idx1 - (len(e2) - len("[ENT2]"))
+        e1_end = idx1 + len(e1)
+        before1 = masked[:idx1_adj]
+        after1 = masked[e1_end - (len(e2) - len("[ENT2]")):]
+        masked = before1 + "[ENT1]" + after1
+    
+    return masked
+
+
+def find_entity_span(doc: Doc, entity_text: str) -> Span | None:
+    """Find entity span in doc via substring matching."""
+    
+    if not entity_text:
+        return None
+    
+    entity_lower = entity_text.lower()
+    
+    for token in doc:
+        if token.text.lower() == entity_lower:
+            return doc[token.i:token.i + 1]
+    
+    for i in range(len(doc)):
+        candidate = doc[i:min(i + 10, len(doc))]
+        if candidate.text.lower() == entity_lower:
+            return candidate
+    
+    doc_lower = doc.text.lower()
+    if entity_lower in doc_lower:
+        idx = doc_lower.find(entity_lower)
+        start_token = None
+        for token in doc:
+            if token.idx <= idx < token.idx + len(token.text):
+                start_token = token.i
+                break
+        
+        if start_token is not None:
+            end_char = idx + len(entity_text)
+            for token in doc[start_token:]:
+                if token.idx + len(token.text) >= end_char:
+                    return doc[start_token:token.i + 1]
+    
+    return None
